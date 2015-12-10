@@ -343,6 +343,7 @@
 				TargetAttributes = {
 					0AC607841C189B36006EECA7 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = S7BT87895F;
 					};
 					0AC6079A1C189B36006EECA7 = {
 						CreatedOnToolsVersion = 7.2;
@@ -631,6 +632,7 @@
 			baseConfigurationReference = 04573E61435B391F9524E97B /* Pods-SplatPal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SplatPal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -644,6 +646,7 @@
 			baseConfigurationReference = 3297FDF7A703D876943BE2E6 /* Pods-SplatPal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SplatPal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
