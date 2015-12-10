@@ -36,10 +36,10 @@ func epochDateString(input: NSTimeInterval) -> String {
     return dateFormatter.stringFromDate(date)
 }
 
-func epochTimeString(input: NSTimeInterval, format: String) -> String {
+func epochTimeString(input: NSTimeInterval) -> String {
     let date = NSDate(timeIntervalSince1970: input)
     let dateFormatter = NSDateFormatter()
-    dateFormatter.dateFormat = format
+    dateFormatter.dateFormat = "HH:mm"
     dateFormatter.timeZone = NSTimeZone()
     
     return dateFormatter.stringFromDate(date)

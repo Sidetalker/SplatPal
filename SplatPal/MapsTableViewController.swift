@@ -7,19 +7,18 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class MapsTableViewController: UITableViewController {
     
-    var startTimes = [NSTimeInterval]()
-    var endTimes = [NSTimeInterval]()
-    var turfMaps = [String]()
-    var rankedMaps = [String]()
-    var rankedModes = [String]()
+    var mapData: JSON?
+    var mapsUpdating = false
+    
+    var liveLabel: UILabel?
+    var liveLabelTimer: NSTimer?
+    var liveLabelUpdating = false
     
     var viewLoaded = false
-    var liveLabelUpdating = false
-    var liveLabelTimer: NSTimer?
-    var liveLabel: UILabel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,11 +52,11 @@ class MapsTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return viewLoaded ? 3 : 0
+        return viewLoaded && mapData != nil ? 3 : 0
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewLoaded ? 6 : 0
+        return viewLoaded && mapData != nil ? 6 : 0
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -68,15 +67,15 @@ class MapsTableViewController: UITableViewController {
             cell.backgroundColor = UIColor.clearColor()
             
             let lbl = cell.viewWithTag(1) as! UILabel
-            lbl.text = indexPath.row == 0 ? rankedModes[indexPath.section] : "Turf Wars"
+            lbl.text = indexPath.row == 0 ? mapData!["rankedModes"][indexPath.section].stringValue : "Turf Wars"
         }
         else {
             cell = tableView.dequeueReusableCellWithIdentifier("cellMap", forIndexPath: indexPath)
             cell.backgroundColor = UIColor.clearColor()
             
             let mapName = [1, 2].contains(indexPath.row) ?
-                rankedMaps[indexPath.row - 1 + indexPath.section * 2] :
-                turfMaps[indexPath.row - 4 + indexPath.section * 2]
+                mapData!["rankedMaps"][indexPath.row - 1 + indexPath.section * 2].stringValue :
+                mapData!["turfMaps"][indexPath.row - 4 + indexPath.section * 2].stringValue
             
             let imgMap = cell.viewWithTag(1) as! UIImageView
             imgMap.layer.cornerRadius = 5
@@ -103,8 +102,10 @@ class MapsTableViewController: UITableViewController {
             lblHeader.text = "Time Until Next Rotation"
             if !liveLabelUpdating { startUpdatingLabel(lblFooter) }
         } else {
-            lblHeader.text = epochDateString(startTimes[section])
-            lblFooter.text = "\(epochTimeString(startTimes[section], format: "HH:ss")) - \(epochTimeString(endTimes[section], format: "HH:ss"))"
+            let startTime = mapData!["startTimes"][section].doubleValue
+            let endTime = mapData!["endTimes"][section].doubleValue
+            lblHeader.text = epochDateString(startTime)
+            lblFooter.text = "\(epochTimeString(startTime)) - \(epochTimeString(endTime))"
         }
         
         return cell.contentView
@@ -146,13 +147,13 @@ class MapsTableViewController: UITableViewController {
     }
     
     func updateLabel() {
-        var seconds = Int(endTimes[0] - NSDate().timeIntervalSince1970)
+        var seconds = Int(mapData!["endTimes"][0].doubleValue - NSDate().timeIntervalSince1970)
         var minutes = seconds / 60
         let hours = minutes / 60
         seconds -= minutes * 60
         minutes -= hours * 60
-        
         let secondsText = seconds < 10 ? "0\(seconds)" : "\(seconds)"
-        liveLabel?.text = "\(hours):\(minutes):\(secondsText)"
+        let minutesText = minutes < 10 && hours > 0 ? "0\(minutes)" : "\(minutes)"
+        liveLabel?.text = hours > 0 ? "\(hours):\(minutesText):\(secondsText)" : "\(minutesText):\(secondsText)"
     }
 }
