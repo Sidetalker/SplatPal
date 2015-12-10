@@ -46,6 +46,7 @@
 		0AC607F91C191F09006EECA7 /* squid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607F61C191F09006EECA7 /* squid@2x.png */; };
 		0AC607FA1C191F09006EECA7 /* squid@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607F71C191F09006EECA7 /* squid@3x.png */; };
 		0AC607FC1C192211006EECA7 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC607FB1C192211006EECA7 /* LoadingViewController.swift */; };
+		0AC607FE1C194ACE006EECA7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC607FD1C194ACE006EECA7 /* Helpers.swift */; };
 		A80951C10B13C21AEA494E71 /* Pods_SplatPal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBDCB17D189739D652437DA /* Pods_SplatPal.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +114,7 @@
 		0AC607F61C191F09006EECA7 /* squid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "squid@2x.png"; path = "Images/squid@2x.png"; sourceTree = "<group>"; };
 		0AC607F71C191F09006EECA7 /* squid@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "squid@3x.png"; path = "Images/squid@3x.png"; sourceTree = "<group>"; };
 		0AC607FB1C192211006EECA7 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		0AC607FD1C194ACE006EECA7 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		3297FDF7A703D876943BE2E6 /* Pods-SplatPal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatPal.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplatPal/Pods-SplatPal.release.xcconfig"; sourceTree = "<group>"; };
 		8FBDCB17D189739D652437DA /* Pods_SplatPal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplatPal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -172,6 +174,7 @@
 				0AC607881C189B36006EECA7 /* AppDelegate.swift */,
 				0AC607B81C189BD8006EECA7 /* MapsTableViewController.swift */,
 				0AC607FB1C192211006EECA7 /* LoadingViewController.swift */,
+				0AC607FD1C194ACE006EECA7 /* Helpers.swift */,
 				0AC6078E1C189B36006EECA7 /* Main.storyboard */,
 				0AC607931C189B36006EECA7 /* LaunchScreen.storyboard */,
 			);
@@ -485,6 +488,7 @@
 				0AC607B91C189BD8006EECA7 /* MapsTableViewController.swift in Sources */,
 				0AC607891C189B36006EECA7 /* AppDelegate.swift in Sources */,
 				0AC607FC1C192211006EECA7 /* LoadingViewController.swift in Sources */,
+				0AC607FE1C194ACE006EECA7 /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

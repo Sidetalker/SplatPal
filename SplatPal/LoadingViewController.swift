@@ -7,23 +7,18 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
-func delay(delay:Double, closure:()->()) {
-    dispatch_after(
-        dispatch_time(
-            DISPATCH_TIME_NOW,
-            Int64(delay * Double(NSEC_PER_SEC))
-        ),
-        dispatch_get_main_queue(), closure)
-}
+let APIString = "https://splatoon.ink/schedule.json"
 
 class LoadingViewController: UIViewController {
     
-    var rankedModes = [Int]()
-    var rankedMaps = [String]()
-    var rankedTimes = [String]()
+    var startTimes = [NSTimeInterval]()
+    var endTimes = [NSTimeInterval]()
     var turfMaps = [String]()
-    var turfTimes = [String]()
+    var rankedMaps = [String]()
+    var rankedModes = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,12 +27,39 @@ class LoadingViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        delay(1.0, closure: {
-            self.performSegueWithIdentifier("segueInitial", sender: self)
-        })
+        request(.GET, APIString, encoding: .URL, parameters: nil)
+            .responseJSON { response in
+                // Handle request failure
+                if response.result.isFailure {
+                    log.error("Error Loading Schedule: \(response.result.error)")
+                    debugPrint(response)
+                } else {
+                    let json = JSON(response.result.value!)
+                    
+                    if json["splatfest"].boolValue { log.warning("Splatfest, IDK WHAT TO DO!!!") }
+                    
+                    for entry in json["schedule"].arrayValue {
+                        self.startTimes.append(entry["startTime"].doubleValue / 1000)
+                        self.endTimes.append(entry["endTime"].doubleValue / 1000)
+                        self.turfMaps.append(entry["regular"]["maps"][0]["nameEN"].stringValue)
+                        self.turfMaps.append(entry["regular"]["maps"][1]["nameEN"].stringValue)
+                        self.rankedMaps.append(entry["ranked"]["maps"][0]["nameEN"].stringValue)
+                        self.rankedMaps.append(entry["ranked"]["maps"][1]["nameEN"].stringValue)
+                        self.rankedModes.append(entry["ranked"]["rulesEN"].stringValue)
+                    }
+                }
+                
+                self.performSegueWithIdentifier("segueInitial", sender: self)
+        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        return
+        let tabBarController = segue.destinationViewController as! UITabBarController
+        let mapsTab = tabBarController.viewControllers![0] as! MapsTableViewController
+        mapsTab.startTimes = startTimes
+        mapsTab.endTimes = endTimes
+        mapsTab.turfMaps = turfMaps
+        mapsTab.rankedMaps = rankedMaps
+        mapsTab.rankedModes = rankedModes
     }
 }

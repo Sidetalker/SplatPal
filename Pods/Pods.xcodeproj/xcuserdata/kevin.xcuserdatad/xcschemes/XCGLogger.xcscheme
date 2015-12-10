@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D6C99F3BF734A327BC1CF719'
-               BlueprintName = 'Pods-SplatPal'
+               BlueprintIdentifier = 'CD026EF6FD0F412187C8D791'
+               BlueprintName = 'XCGLogger'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_SplatPal.framework'>
+               BuildableName = 'XCGLogger.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
