@@ -8,13 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		0AC607891C189B36006EECA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC607881C189B36006EECA7 /* AppDelegate.swift */; };
-		0AC6078B1C189B36006EECA7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6078A1C189B36006EECA7 /* FirstViewController.swift */; };
-		0AC6078D1C189B36006EECA7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6078C1C189B36006EECA7 /* SecondViewController.swift */; };
 		0AC607901C189B36006EECA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC6078E1C189B36006EECA7 /* Main.storyboard */; };
 		0AC607921C189B36006EECA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607911C189B36006EECA7 /* Assets.xcassets */; };
 		0AC607951C189B36006EECA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607931C189B36006EECA7 /* LaunchScreen.storyboard */; };
 		0AC607A01C189B36006EECA7 /* SplatPalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6079F1C189B36006EECA7 /* SplatPalTests.swift */; };
 		0AC607AB1C189B36006EECA7 /* SplatPalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC607AA1C189B36006EECA7 /* SplatPalUITests.swift */; };
+		0AC607B91C189BD8006EECA7 /* MapsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC607B81C189BD8006EECA7 /* MapsTableViewController.swift */; };
+		0AC607BD1C189ED0006EECA7 /* mapIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607BA1C189ED0006EECA7 /* mapIcon.png */; };
+		0AC607BE1C189ED0006EECA7 /* mapIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607BB1C189ED0006EECA7 /* mapIcon@2x.png */; };
+		0AC607BF1C189ED0006EECA7 /* mapIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607BC1C189ED0006EECA7 /* mapIcon@3x.png */; };
+		0AC607D01C18A629006EECA7 /* StageArowanaMall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607C21C18A629006EECA7 /* StageArowanaMall.jpg */; };
+		0AC607D11C18A629006EECA7 /* StageBlackbellySkatepark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607C31C18A629006EECA7 /* StageBlackbellySkatepark.jpg */; };
+		0AC607D21C18A629006EECA7 /* StageBluefinDepot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607C41C18A629006EECA7 /* StageBluefinDepot.jpg */; };
+		0AC607D31C18A629006EECA7 /* StageFlounderHeights.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607C51C18A629006EECA7 /* StageFlounderHeights.jpg */; };
+		0AC607D41C18A629006EECA7 /* StageHammerheadBridge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607C61C18A629006EECA7 /* StageHammerheadBridge.jpg */; };
+		0AC607D51C18A629006EECA7 /* StageKelpDome.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607C71C18A629006EECA7 /* StageKelpDome.jpg */; };
+		0AC607D61C18A629006EECA7 /* StageMahi-MahiResort.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607C81C18A629006EECA7 /* StageMahi-MahiResort.jpg */; };
+		0AC607D71C18A629006EECA7 /* StageMorayTowers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607C91C18A629006EECA7 /* StageMorayTowers.jpg */; };
+		0AC607D81C18A629006EECA7 /* StageMuseumD'Alfonsino.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607CA1C18A629006EECA7 /* StageMuseumD'Alfonsino.jpg */; };
+		0AC607D91C18A629006EECA7 /* StagePortMackerel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607CB1C18A629006EECA7 /* StagePortMackerel.jpg */; };
+		0AC607DA1C18A629006EECA7 /* StageSaltsprayRig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607CC1C18A629006EECA7 /* StageSaltsprayRig.jpg */; };
+		0AC607DB1C18A629006EECA7 /* StageUrchinUnderpass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607CD1C18A629006EECA7 /* StageUrchinUnderpass.jpg */; };
+		0AC607DC1C18A629006EECA7 /* StageWalleyeWarehouse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607CE1C18A629006EECA7 /* StageWalleyeWarehouse.jpg */; };
+		0AC607DD1C18A629006EECA7 /* StageCampTriggerfish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607CF1C18A629006EECA7 /* StageCampTriggerfish.jpg */; };
+		0AC607E01C18ACF7006EECA7 /* Paintball_Beta_4a.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607DF1C18ACF7006EECA7 /* Paintball_Beta_4a.otf */; };
+		0AC607E41C18E8A1006EECA7 /* rankedBadge.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607E11C18E8A1006EECA7 /* rankedBadge.png */; };
+		0AC607E51C18E8A1006EECA7 /* rankedBadge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607E21C18E8A1006EECA7 /* rankedBadge@2x.png */; };
+		0AC607E61C18E8A1006EECA7 /* rankedBadge@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607E31C18E8A1006EECA7 /* rankedBadge@3x.png */; };
+		0AC607ED1C191405006EECA7 /* rankedBadgeAlt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607E71C191405006EECA7 /* rankedBadgeAlt.png */; };
+		0AC607EE1C191405006EECA7 /* rankedBadgeAlt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607E81C191405006EECA7 /* rankedBadgeAlt@2x.png */; };
+		0AC607EF1C191405006EECA7 /* rankedBadgeAlt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607E91C191405006EECA7 /* rankedBadgeAlt@3x.png */; };
+		0AC607F01C191405006EECA7 /* turfWarBadge.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607EA1C191405006EECA7 /* turfWarBadge.png */; };
+		0AC607F11C191405006EECA7 /* turfWarBadge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607EB1C191405006EECA7 /* turfWarBadge@2x.png */; };
+		0AC607F21C191405006EECA7 /* turfWarBadge@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607EC1C191405006EECA7 /* turfWarBadge@3x.png */; };
+		0AC607F41C19174B006EECA7 /* backgroundTile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607F31C19174B006EECA7 /* backgroundTile.jpg */; };
+		0AC607F81C191F09006EECA7 /* squid.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607F51C191F09006EECA7 /* squid.png */; };
+		0AC607F91C191F09006EECA7 /* squid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607F61C191F09006EECA7 /* squid@2x.png */; };
+		0AC607FA1C191F09006EECA7 /* squid@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607F71C191F09006EECA7 /* squid@3x.png */; };
+		0AC607FC1C192211006EECA7 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC607FB1C192211006EECA7 /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +68,6 @@
 /* Begin PBXFileReference section */
 		0AC607851C189B36006EECA7 /* SplatPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplatPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC607881C189B36006EECA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0AC6078A1C189B36006EECA7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		0AC6078C1C189B36006EECA7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		0AC6078F1C189B36006EECA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AC607911C189B36006EECA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AC607941C189B36006EECA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +78,39 @@
 		0AC607A61C189B36006EECA7 /* SplatPalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplatPalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC607AA1C189B36006EECA7 /* SplatPalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplatPalUITests.swift; sourceTree = "<group>"; };
 		0AC607AC1C189B36006EECA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AC607B81C189BD8006EECA7 /* MapsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsTableViewController.swift; sourceTree = "<group>"; };
+		0AC607BA1C189ED0006EECA7 /* mapIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mapIcon.png; path = Images/mapIcon.png; sourceTree = "<group>"; };
+		0AC607BB1C189ED0006EECA7 /* mapIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mapIcon@2x.png"; path = "Images/mapIcon@2x.png"; sourceTree = "<group>"; };
+		0AC607BC1C189ED0006EECA7 /* mapIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mapIcon@3x.png"; path = "Images/mapIcon@3x.png"; sourceTree = "<group>"; };
+		0AC607C21C18A629006EECA7 /* StageArowanaMall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StageArowanaMall.jpg; path = Images/Stages/StageArowanaMall.jpg; sourceTree = "<group>"; };
+		0AC607C31C18A629006EECA7 /* StageBlackbellySkatepark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StageBlackbellySkatepark.jpg; path = Images/Stages/StageBlackbellySkatepark.jpg; sourceTree = "<group>"; };
+		0AC607C41C18A629006EECA7 /* StageBluefinDepot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StageBluefinDepot.jpg; path = Images/Stages/StageBluefinDepot.jpg; sourceTree = "<group>"; };
+		0AC607C51C18A629006EECA7 /* StageFlounderHeights.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StageFlounderHeights.jpg; path = Images/Stages/StageFlounderHeights.jpg; sourceTree = "<group>"; };
+		0AC607C61C18A629006EECA7 /* StageHammerheadBridge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StageHammerheadBridge.jpg; path = Images/Stages/StageHammerheadBridge.jpg; sourceTree = "<group>"; };
+		0AC607C71C18A629006EECA7 /* StageKelpDome.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StageKelpDome.jpg; path = Images/Stages/StageKelpDome.jpg; sourceTree = "<group>"; };
+		0AC607C81C18A629006EECA7 /* StageMahi-MahiResort.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "StageMahi-MahiResort.jpg"; path = "Images/Stages/StageMahi-MahiResort.jpg"; sourceTree = "<group>"; };
+		0AC607C91C18A629006EECA7 /* StageMorayTowers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StageMorayTowers.jpg; path = Images/Stages/StageMorayTowers.jpg; sourceTree = "<group>"; };
+		0AC607CA1C18A629006EECA7 /* StageMuseumD'Alfonsino.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "StageMuseumD'Alfonsino.jpg"; path = "Images/Stages/StageMuseumD'Alfonsino.jpg"; sourceTree = "<group>"; };
+		0AC607CB1C18A629006EECA7 /* StagePortMackerel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StagePortMackerel.jpg; path = Images/Stages/StagePortMackerel.jpg; sourceTree = "<group>"; };
+		0AC607CC1C18A629006EECA7 /* StageSaltsprayRig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StageSaltsprayRig.jpg; path = Images/Stages/StageSaltsprayRig.jpg; sourceTree = "<group>"; };
+		0AC607CD1C18A629006EECA7 /* StageUrchinUnderpass.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StageUrchinUnderpass.jpg; path = Images/Stages/StageUrchinUnderpass.jpg; sourceTree = "<group>"; };
+		0AC607CE1C18A629006EECA7 /* StageWalleyeWarehouse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StageWalleyeWarehouse.jpg; path = Images/Stages/StageWalleyeWarehouse.jpg; sourceTree = "<group>"; };
+		0AC607CF1C18A629006EECA7 /* StageCampTriggerfish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StageCampTriggerfish.jpg; path = Images/Stages/StageCampTriggerfish.jpg; sourceTree = "<group>"; };
+		0AC607DF1C18ACF7006EECA7 /* Paintball_Beta_4a.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Paintball_Beta_4a.otf; path = Resources/Paintball_Beta_4a.otf; sourceTree = "<group>"; };
+		0AC607E11C18E8A1006EECA7 /* rankedBadge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rankedBadge.png; path = Images/rankedBadge.png; sourceTree = "<group>"; };
+		0AC607E21C18E8A1006EECA7 /* rankedBadge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rankedBadge@2x.png"; path = "Images/rankedBadge@2x.png"; sourceTree = "<group>"; };
+		0AC607E31C18E8A1006EECA7 /* rankedBadge@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rankedBadge@3x.png"; path = "Images/rankedBadge@3x.png"; sourceTree = "<group>"; };
+		0AC607E71C191405006EECA7 /* rankedBadgeAlt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rankedBadgeAlt.png; path = Images/rankedBadgeAlt.png; sourceTree = "<group>"; };
+		0AC607E81C191405006EECA7 /* rankedBadgeAlt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rankedBadgeAlt@2x.png"; path = "Images/rankedBadgeAlt@2x.png"; sourceTree = "<group>"; };
+		0AC607E91C191405006EECA7 /* rankedBadgeAlt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rankedBadgeAlt@3x.png"; path = "Images/rankedBadgeAlt@3x.png"; sourceTree = "<group>"; };
+		0AC607EA1C191405006EECA7 /* turfWarBadge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = turfWarBadge.png; path = Images/turfWarBadge.png; sourceTree = "<group>"; };
+		0AC607EB1C191405006EECA7 /* turfWarBadge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "turfWarBadge@2x.png"; path = "Images/turfWarBadge@2x.png"; sourceTree = "<group>"; };
+		0AC607EC1C191405006EECA7 /* turfWarBadge@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "turfWarBadge@3x.png"; path = "Images/turfWarBadge@3x.png"; sourceTree = "<group>"; };
+		0AC607F31C19174B006EECA7 /* backgroundTile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = backgroundTile.jpg; path = Images/backgroundTile.jpg; sourceTree = "<group>"; };
+		0AC607F51C191F09006EECA7 /* squid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = squid.png; path = Images/squid.png; sourceTree = "<group>"; };
+		0AC607F61C191F09006EECA7 /* squid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "squid@2x.png"; path = "Images/squid@2x.png"; sourceTree = "<group>"; };
+		0AC607F71C191F09006EECA7 /* squid@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "squid@3x.png"; path = "Images/squid@3x.png"; sourceTree = "<group>"; };
+		0AC607FB1C192211006EECA7 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +161,12 @@
 		0AC607871C189B36006EECA7 /* SplatPal */ = {
 			isa = PBXGroup;
 			children = (
+				0AC607C01C189ED4006EECA7 /* Resources */,
 				0AC607881C189B36006EECA7 /* AppDelegate.swift */,
-				0AC6078A1C189B36006EECA7 /* FirstViewController.swift */,
-				0AC6078C1C189B36006EECA7 /* SecondViewController.swift */,
+				0AC607B81C189BD8006EECA7 /* MapsTableViewController.swift */,
+				0AC607FB1C192211006EECA7 /* LoadingViewController.swift */,
 				0AC6078E1C189B36006EECA7 /* Main.storyboard */,
-				0AC607911C189B36006EECA7 /* Assets.xcassets */,
 				0AC607931C189B36006EECA7 /* LaunchScreen.storyboard */,
-				0AC607961C189B36006EECA7 /* Info.plist */,
 			);
 			path = SplatPal;
 			sourceTree = "<group>";
@@ -126,6 +187,62 @@
 				0AC607AC1C189B36006EECA7 /* Info.plist */,
 			);
 			path = SplatPalUITests;
+			sourceTree = "<group>";
+		};
+		0AC607C01C189ED4006EECA7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0AC607961C189B36006EECA7 /* Info.plist */,
+				0AC607DF1C18ACF7006EECA7 /* Paintball_Beta_4a.otf */,
+				0AC607911C189B36006EECA7 /* Assets.xcassets */,
+				0AC607DE1C18AAA6006EECA7 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0AC607C11C18A61E006EECA7 /* Stages */ = {
+			isa = PBXGroup;
+			children = (
+				0AC607C21C18A629006EECA7 /* StageArowanaMall.jpg */,
+				0AC607C31C18A629006EECA7 /* StageBlackbellySkatepark.jpg */,
+				0AC607C41C18A629006EECA7 /* StageBluefinDepot.jpg */,
+				0AC607C51C18A629006EECA7 /* StageFlounderHeights.jpg */,
+				0AC607C61C18A629006EECA7 /* StageHammerheadBridge.jpg */,
+				0AC607C71C18A629006EECA7 /* StageKelpDome.jpg */,
+				0AC607C81C18A629006EECA7 /* StageMahi-MahiResort.jpg */,
+				0AC607C91C18A629006EECA7 /* StageMorayTowers.jpg */,
+				0AC607CA1C18A629006EECA7 /* StageMuseumD'Alfonsino.jpg */,
+				0AC607CB1C18A629006EECA7 /* StagePortMackerel.jpg */,
+				0AC607CC1C18A629006EECA7 /* StageSaltsprayRig.jpg */,
+				0AC607CD1C18A629006EECA7 /* StageUrchinUnderpass.jpg */,
+				0AC607CE1C18A629006EECA7 /* StageWalleyeWarehouse.jpg */,
+				0AC607CF1C18A629006EECA7 /* StageCampTriggerfish.jpg */,
+			);
+			name = Stages;
+			sourceTree = "<group>";
+		};
+		0AC607DE1C18AAA6006EECA7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0AC607F51C191F09006EECA7 /* squid.png */,
+				0AC607F61C191F09006EECA7 /* squid@2x.png */,
+				0AC607F71C191F09006EECA7 /* squid@3x.png */,
+				0AC607F31C19174B006EECA7 /* backgroundTile.jpg */,
+				0AC607E71C191405006EECA7 /* rankedBadgeAlt.png */,
+				0AC607E81C191405006EECA7 /* rankedBadgeAlt@2x.png */,
+				0AC607E91C191405006EECA7 /* rankedBadgeAlt@3x.png */,
+				0AC607EA1C191405006EECA7 /* turfWarBadge.png */,
+				0AC607EB1C191405006EECA7 /* turfWarBadge@2x.png */,
+				0AC607EC1C191405006EECA7 /* turfWarBadge@3x.png */,
+				0AC607E11C18E8A1006EECA7 /* rankedBadge.png */,
+				0AC607E21C18E8A1006EECA7 /* rankedBadge@2x.png */,
+				0AC607E31C18E8A1006EECA7 /* rankedBadge@3x.png */,
+				0AC607BA1C189ED0006EECA7 /* mapIcon.png */,
+				0AC607BB1C189ED0006EECA7 /* mapIcon@2x.png */,
+				0AC607BC1C189ED0006EECA7 /* mapIcon@3x.png */,
+				0AC607C11C18A61E006EECA7 /* Stages */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +349,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AC607E61C18E8A1006EECA7 /* rankedBadge@3x.png in Resources */,
+				0AC607BE1C189ED0006EECA7 /* mapIcon@2x.png in Resources */,
+				0AC607F81C191F09006EECA7 /* squid.png in Resources */,
+				0AC607D91C18A629006EECA7 /* StagePortMackerel.jpg in Resources */,
+				0AC607E51C18E8A1006EECA7 /* rankedBadge@2x.png in Resources */,
+				0AC607D51C18A629006EECA7 /* StageKelpDome.jpg in Resources */,
+				0AC607E01C18ACF7006EECA7 /* Paintball_Beta_4a.otf in Resources */,
+				0AC607ED1C191405006EECA7 /* rankedBadgeAlt.png in Resources */,
+				0AC607D41C18A629006EECA7 /* StageHammerheadBridge.jpg in Resources */,
+				0AC607D81C18A629006EECA7 /* StageMuseumD'Alfonsino.jpg in Resources */,
+				0AC607DC1C18A629006EECA7 /* StageWalleyeWarehouse.jpg in Resources */,
+				0AC607DA1C18A629006EECA7 /* StageSaltsprayRig.jpg in Resources */,
+				0AC607D21C18A629006EECA7 /* StageBluefinDepot.jpg in Resources */,
+				0AC607DB1C18A629006EECA7 /* StageUrchinUnderpass.jpg in Resources */,
+				0AC607F11C191405006EECA7 /* turfWarBadge@2x.png in Resources */,
+				0AC607F91C191F09006EECA7 /* squid@2x.png in Resources */,
+				0AC607BF1C189ED0006EECA7 /* mapIcon@3x.png in Resources */,
+				0AC607DD1C18A629006EECA7 /* StageCampTriggerfish.jpg in Resources */,
+				0AC607D11C18A629006EECA7 /* StageBlackbellySkatepark.jpg in Resources */,
 				0AC607951C189B36006EECA7 /* LaunchScreen.storyboard in Resources */,
+				0AC607BD1C189ED0006EECA7 /* mapIcon.png in Resources */,
+				0AC607D31C18A629006EECA7 /* StageFlounderHeights.jpg in Resources */,
+				0AC607D71C18A629006EECA7 /* StageMorayTowers.jpg in Resources */,
+				0AC607D61C18A629006EECA7 /* StageMahi-MahiResort.jpg in Resources */,
+				0AC607F01C191405006EECA7 /* turfWarBadge.png in Resources */,
+				0AC607EE1C191405006EECA7 /* rankedBadgeAlt@2x.png in Resources */,
+				0AC607D01C18A629006EECA7 /* StageArowanaMall.jpg in Resources */,
+				0AC607EF1C191405006EECA7 /* rankedBadgeAlt@3x.png in Resources */,
+				0AC607F41C19174B006EECA7 /* backgroundTile.jpg in Resources */,
 				0AC607921C189B36006EECA7 /* Assets.xcassets in Resources */,
+				0AC607F21C191405006EECA7 /* turfWarBadge@3x.png in Resources */,
+				0AC607E41C18E8A1006EECA7 /* rankedBadge.png in Resources */,
+				0AC607FA1C191F09006EECA7 /* squid@3x.png in Resources */,
 				0AC607901C189B36006EECA7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,9 +407,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AC6078D1C189B36006EECA7 /* SecondViewController.swift in Sources */,
+				0AC607B91C189BD8006EECA7 /* MapsTableViewController.swift in Sources */,
 				0AC607891C189B36006EECA7 /* AppDelegate.swift in Sources */,
-				0AC6078B1C189B36006EECA7 /* FirstViewController.swift in Sources */,
+				0AC607FC1C192211006EECA7 /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
