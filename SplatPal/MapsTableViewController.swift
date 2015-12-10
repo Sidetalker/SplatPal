@@ -10,6 +10,12 @@ import UIKit
 
 class MapsTableViewController: UITableViewController {
     
+    var rankedModes = [Int]()
+    var rankedMaps = [String]()
+    var rankedTimes = [String]()
+    var turfMaps = [String]()
+    var turfTimes = [String]()
+    
     var viewLoaded = false
 
     override func viewDidLoad() {

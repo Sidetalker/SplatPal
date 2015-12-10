@@ -46,6 +46,7 @@
 		0AC607F91C191F09006EECA7 /* squid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607F61C191F09006EECA7 /* squid@2x.png */; };
 		0AC607FA1C191F09006EECA7 /* squid@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607F71C191F09006EECA7 /* squid@3x.png */; };
 		0AC607FC1C192211006EECA7 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC607FB1C192211006EECA7 /* LoadingViewController.swift */; };
+		A80951C10B13C21AEA494E71 /* Pods_SplatPal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBDCB17D189739D652437DA /* Pods_SplatPal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04573E61435B391F9524E97B /* Pods-SplatPal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatPal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplatPal/Pods-SplatPal.debug.xcconfig"; sourceTree = "<group>"; };
 		0AC607851C189B36006EECA7 /* SplatPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplatPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC607881C189B36006EECA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AC6078F1C189B36006EECA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -111,6 +113,8 @@
 		0AC607F61C191F09006EECA7 /* squid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "squid@2x.png"; path = "Images/squid@2x.png"; sourceTree = "<group>"; };
 		0AC607F71C191F09006EECA7 /* squid@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "squid@3x.png"; path = "Images/squid@3x.png"; sourceTree = "<group>"; };
 		0AC607FB1C192211006EECA7 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		3297FDF7A703D876943BE2E6 /* Pods-SplatPal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatPal.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplatPal/Pods-SplatPal.release.xcconfig"; sourceTree = "<group>"; };
+		8FBDCB17D189739D652437DA /* Pods_SplatPal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplatPal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A80951C10B13C21AEA494E71 /* Pods_SplatPal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +150,8 @@
 				0AC6079E1C189B36006EECA7 /* SplatPalTests */,
 				0AC607A91C189B36006EECA7 /* SplatPalUITests */,
 				0AC607861C189B36006EECA7 /* Products */,
+				B81E0E35C30F8CE205ED4CC2 /* Pods */,
+				E826F755AD1976281175B248 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -245,6 +252,23 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		B81E0E35C30F8CE205ED4CC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04573E61435B391F9524E97B /* Pods-SplatPal.debug.xcconfig */,
+				3297FDF7A703D876943BE2E6 /* Pods-SplatPal.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E826F755AD1976281175B248 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FBDCB17D189739D652437DA /* Pods_SplatPal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,9 +276,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AC607AF1C189B36006EECA7 /* Build configuration list for PBXNativeTarget "SplatPal" */;
 			buildPhases = (
+				DF3E91F8ADCBFC5CCA76D8C5 /* Check Pods Manifest.lock */,
 				0AC607811C189B36006EECA7 /* Sources */,
 				0AC607821C189B36006EECA7 /* Frameworks */,
 				0AC607831C189B36006EECA7 /* Resources */,
+				F40E3C39911A168DC9236B4F /* Embed Pods Frameworks */,
+				6DE13733E107E53992802EEA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -401,6 +428,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DE13733E107E53992802EEA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplatPal/Pods-SplatPal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF3E91F8ADCBFC5CCA76D8C5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F40E3C39911A168DC9236B4F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplatPal/Pods-SplatPal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0AC607811C189B36006EECA7 /* Sources */ = {
@@ -549,9 +624,11 @@
 		};
 		0AC607B01C189B36006EECA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04573E61435B391F9524E97B /* Pods-SplatPal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SplatPal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sideapps.SplatPal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -560,9 +637,11 @@
 		};
 		0AC607B11C189B36006EECA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3297FDF7A703D876943BE2E6 /* Pods-SplatPal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SplatPal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sideapps.SplatPal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -636,6 +715,7 @@
 				0AC607B11C189B36006EECA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AC607B21C189B36006EECA7 /* Build configuration list for PBXNativeTarget "SplatPalTests" */ = {
 			isa = XCConfigurationList;
@@ -644,6 +724,7 @@
 				0AC607B41C189B36006EECA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AC607B51C189B36006EECA7 /* Build configuration list for PBXNativeTarget "SplatPalUITests" */ = {
 			isa = XCConfigurationList;
@@ -652,6 +733,7 @@
 				0AC607B71C189B36006EECA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -18,6 +18,12 @@ func delay(delay:Double, closure:()->()) {
 }
 
 class LoadingViewController: UIViewController {
+    
+    var rankedModes = [Int]()
+    var rankedMaps = [String]()
+    var rankedTimes = [String]()
+    var turfMaps = [String]()
+    var turfTimes = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,5 +35,9 @@ class LoadingViewController: UIViewController {
         delay(1.0, closure: {
             self.performSegueWithIdentifier("segueInitial", sender: self)
         })
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        return
     }
 }
