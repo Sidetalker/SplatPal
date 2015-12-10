@@ -7,46 +7,6 @@
 //
 
 import UIKit
-import Alamofire
-import SwiftyJSON
-
-let APIString = "https://splatoon.ink/schedule.json"
-
-func loadMaps(completion:(JSON?) -> ()) {
-    request(.GET, APIString, encoding: .URL, headers: ["Cache-Control" : "max-age=0"])
-        .responseJSON { response in
-            // Handle request failure
-            if response.result.isFailure {
-                log.error("Error Loading Schedule: \(response.result.error)")
-                
-                completion(nil)
-            } else {
-                let json = JSON(response.result.value!)
-                
-                if json["splatfest"].boolValue { log.warning("Splatfest, IDK WHAT TO DO!!!") }
-                
-                var startTimes = [NSTimeInterval]()
-                var endTimes = [NSTimeInterval]()
-                var turfMaps = [String]()
-                var rankedMaps = [String]()
-                var rankedModes = [String]()
-                
-                for entry in json["schedule"].arrayValue {
-                    startTimes.append(entry["startTime"].doubleValue / 1000)
-                    endTimes.append(entry["endTime"].doubleValue / 1000)
-                    turfMaps.append(entry["regular"]["maps"][0]["nameEN"].stringValue)
-                    turfMaps.append(entry["regular"]["maps"][1]["nameEN"].stringValue)
-                    rankedMaps.append(entry["ranked"]["maps"][0]["nameEN"].stringValue)
-                    rankedMaps.append(entry["ranked"]["maps"][1]["nameEN"].stringValue)
-                    rankedModes.append(entry["ranked"]["rulesEN"].stringValue)
-                }
-                
-                let dataDict = ["startTimes" : startTimes, "endTimes" : endTimes, "turfMaps" : turfMaps, "rankedMaps" : rankedMaps, "rankedModes" : rankedModes]
-                
-                completion(JSON(dataDict))
-            }
-    }
-}
 
 class LoadingViewController: UIViewController {
     
