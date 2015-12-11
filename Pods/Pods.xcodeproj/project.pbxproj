@@ -7,42 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03F494989CC1A8857B68A317D5D6860F /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8488F49A7D5591F7D8A784DE325DD8 /* Response.swift */; };
-		0681ADC8BAE2C3185F13487BAAB4D9DD /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E28DF8B02FB9A7665E2168F481E9C07 /* Upload.swift */; };
+		03F494989CC1A8857B68A317D5D6860F /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA260C8989840677869AAA208C65163 /* Response.swift */; };
+		0681ADC8BAE2C3185F13487BAAB4D9DD /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B94426C98679DDA518A0477928EDA8 /* Upload.swift */; };
 		0C97F00BE79118208239A6CA358A35C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
 		0F3D4D9F06973584E66D1FB92F3503F4 /* Pods-SplatPal-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A43B85E816116EE6866A05229BA7CC9 /* Pods-SplatPal-dummy.m */; };
-		2C5450AC69398958CF6F7539EF7D99E5 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8A2D84CCE89D29B1AC88B388ADC9DFD /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C5450AC69398958CF6F7539EF7D99E5 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FDDB685B87AD695442F7C24680F0E8C /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30CBC2B629D3BD289D76D9E5FDD859AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
 		35873499B1DDF8ACB95B8CFF8A208847 /* Pods-SplatPal-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D119837C01B4D77B4D5602A7647B4F93 /* Pods-SplatPal-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39725D8AC77460BB172F872D4D14D87F /* Doorbell.h in Headers */ = {isa = PBXBuildFile; fileRef = 256B352EC3F9111BBF3F364B6E0613D0 /* Doorbell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AC7F0670A4E5BC483C018E1E1A232EB /* XCGLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDEAD1CB76CA0BB9F9E0B9CD02563842 /* XCGLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4DCEDEE697C397C9F05E4857CB3694F9 /* DoorbellDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = E9FCF4AA82B1F490F68242237B5217F9 /* DoorbellDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4DE5FCC41D100B113B6645EA64410F16 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C852C0BE96D8DB6A09C4B2759E7313E /* ParameterEncoding.swift */; };
-		5314C6E7B1158D5C0FEFE9371A266102 /* Doorbell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA088C594981DAC73E044CD5DA26C240 /* Doorbell-dummy.m */; };
-		80F496237530D382A045A29654D8C11C /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD26A744605BE2D0CC37366C0F4EBBE8 /* ServerTrustPolicy.swift */; };
-		82971968CBDAB224212EEB4607C9FB8D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AEE60851EB3543724B21FD78B59ED5 /* Result.swift */; };
-		8399DBEE3E2D98EB1F466132E476F4D9 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D88474C29214A51F65AD8239107370 /* MultipartFormData.swift */; };
-		8701ED87849FF81A247E48FE5A2D5A38 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F16B80AFED08AD5C0B4A3023EC8254 /* SwiftyJSON.swift */; };
+		39725D8AC77460BB172F872D4D14D87F /* Doorbell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E1FAD67DBF8DC807AB3C828F11C547F /* Doorbell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AC7F0670A4E5BC483C018E1E1A232EB /* XCGLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 647F039BC4E26A8B46C560A352F716D5 /* XCGLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DCEDEE697C397C9F05E4857CB3694F9 /* DoorbellDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = E6F7D23ADF43E67CEFE745F4FA854780 /* DoorbellDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DE5FCC41D100B113B6645EA64410F16 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1999EEECA79623726BFBC4B407BF0D2 /* ParameterEncoding.swift */; };
+		5314C6E7B1158D5C0FEFE9371A266102 /* Doorbell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9E58DE77426155C674C31828E5F12E /* Doorbell-dummy.m */; };
+		80F496237530D382A045A29654D8C11C /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A171944A45B185C6EDDD8AF28AFA52 /* ServerTrustPolicy.swift */; };
+		82971968CBDAB224212EEB4607C9FB8D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11391FA9676354517A66955E601A3ED0 /* Result.swift */; };
+		8399DBEE3E2D98EB1F466132E476F4D9 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2748E0E373524D1A81FECC66D3AEB0 /* MultipartFormData.swift */; };
+		8701ED87849FF81A247E48FE5A2D5A38 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC2CFD7634F42AE8BB697E721A697F3 /* SwiftyJSON.swift */; };
 		8A279B0BD7DCBC8654D3968F49C1671D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */; };
 		96D99D0C2472535A169DED65CB231CD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
-		9D5832378F3AA5EBD1C9B8DA9190DAA8 /* XCGLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5824708D999F3BA790653D12988C2170 /* XCGLogger-dummy.m */; };
-		A2C172FE407C0BC3478ADCA91A6C9CEC /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34EEC995ED5D6B01E5BAE78F7D44D04 /* Manager.swift */; };
-		A3505FA2FB3067D53847AD288AC04F03 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CD3AF34468E68AAD0E75A99E9E7477 /* Download.swift */; };
-		B05C48F2276035CA4AD3A46487C51943 /* XCGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB603DBE25993366353C0290740394DA /* XCGLogger.swift */; };
-		B0FB4B01682814B9E3D32F9DC4A5E762 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7AFA5E49F0DC64E02C42C32E87EC /* Alamofire.swift */; };
-		B55ECD738A55D59DF9AB8995B11B4D64 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DC99D62B90586EE2981FB5A410A584 /* SwiftyJSON-dummy.m */; };
-		B6D2DC3E3DA44CD382B9B425F40E11C1 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E113CBF2FAABFA7C1DAFE3561EC95E03 /* Alamofire-dummy.m */; };
-		B7DDD04940E414A517EE1B07CD276BFC /* Doorbell.m in Sources */ = {isa = PBXBuildFile; fileRef = 576D4215E9D1C91560F1C183A286141C /* Doorbell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C75519F0450166A6F28126ECC7664E9C /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8412ADFF9723547F5D863F232B44C5 /* Validation.swift */; };
-		D21B7325B3642887BFBE977E021F2D26 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60C12E28D2EF246F8191009740EA977 /* ResponseSerialization.swift */; };
-		D75CA395D510E08C404E55F5BDAE55CE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310CDCC01A90B57ACB97206D9F4BC0CF /* Error.swift */; };
-		DE0753490BE734BD8572B9A2A56CE158 /* DoorbellDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AA86C42A0F3634A1C21FDFACC21679 /* DoorbellDialog.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		DF8D7FB8F69064349E33B7F743A072CD /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C33DCE3699C6A70A25366494B7BD41 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2743540CCC65CF9E37A9130906BA355 /* Doorbell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 351A4418F3EC72333192BC184CA03F26 /* Doorbell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D5832378F3AA5EBD1C9B8DA9190DAA8 /* XCGLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0FFCBA579033FF9487ABB397AD3F0A /* XCGLogger-dummy.m */; };
+		A2C172FE407C0BC3478ADCA91A6C9CEC /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE802772CCCD80859B52FEA5977DCB16 /* Manager.swift */; };
+		A3505FA2FB3067D53847AD288AC04F03 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338CC37A662E18391E99BBE9DA4EBE24 /* Download.swift */; };
+		B05C48F2276035CA4AD3A46487C51943 /* XCGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373F44F73E3B8CCCB97CB5BC92E00452 /* XCGLogger.swift */; };
+		B0FB4B01682814B9E3D32F9DC4A5E762 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956AFBE4628BC439CCECC6BE75382B14 /* Alamofire.swift */; };
+		B55ECD738A55D59DF9AB8995B11B4D64 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D969C3986F21A407CF4939FDF7D3D379 /* SwiftyJSON-dummy.m */; };
+		B6D2DC3E3DA44CD382B9B425F40E11C1 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B31BF1AC304158E885993E052C15376A /* Alamofire-dummy.m */; };
+		B7DDD04940E414A517EE1B07CD276BFC /* Doorbell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0AB7F73E69A36759D8A96B3AD92536 /* Doorbell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C75519F0450166A6F28126ECC7664E9C /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954DC314422A9C8FE0F04113C2B548C1 /* Validation.swift */; };
+		D21B7325B3642887BFBE977E021F2D26 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED0BAA58716AD68D9C7ABF05C6D042 /* ResponseSerialization.swift */; };
+		D75CA395D510E08C404E55F5BDAE55CE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71D9821526C1337B639BA817362990D /* Error.swift */; };
+		DE0753490BE734BD8572B9A2A56CE158 /* DoorbellDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 266F465D08A82A53CEFA91DD60641784 /* DoorbellDialog.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DF8D7FB8F69064349E33B7F743A072CD /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 501E41A2CCDE4E861A9ACEF0981B290A /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2743540CCC65CF9E37A9130906BA355 /* Doorbell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55796EB2CF54CB5E166B3AE159C063DC /* Doorbell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E417A6E833B6B96183043D947875C418 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
 		F984E35050E7B5DAAC54134C6AA01A25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
-		FC14480CECE872865A9C6E584F886DA3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E63CBF309CE401149C8D91AD879B9F /* Request.swift */; };
-		FEF0D7653948988B804226129471C1EC /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA09A3778214D7B6077DDF3BD8C707FE /* Stream.swift */; };
+		FC14480CECE872865A9C6E584F886DA3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C68458885BA4F3DB633B5D69DB16548 /* Request.swift */; };
+		FEF0D7653948988B804226129471C1EC /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7DC26AA48ECA9196D2178E17D25AC /* Stream.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,68 +77,70 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05F16B80AFED08AD5C0B4A3023EC8254 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		086627BDA13759AE3694A8F433C691C0 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		09969C3B4BE9F8A0C6CF8AA8B17328FC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C68458885BA4F3DB633B5D69DB16548 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		0FDDB685B87AD695442F7C24680F0E8C /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		11391FA9676354517A66955E601A3ED0 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		14ED0BAA58716AD68D9C7ABF05C6D042 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		154DF484ACEA56C9F5239FFA9AA63D66 /* XCGLogger.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XCGLogger.xcconfig; sourceTree = "<group>"; };
 		1557364C0D6DBA880331F0FF100E3357 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		194E93BA39FF9568D8235E47B3FD1FDB /* Pods-SplatPal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SplatPal.release.xcconfig"; sourceTree = "<group>"; };
-		1E8488F49A7D5591F7D8A784DE325DD8 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		22AEE60851EB3543724B21FD78B59ED5 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		254C2C749108C6493A10EF3F624575A8 /* XCGLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCGLogger-prefix.pch"; sourceTree = "<group>"; };
-		256B352EC3F9111BBF3F364B6E0613D0 /* Doorbell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Doorbell.h; path = Classes/Doorbell.h; sourceTree = "<group>"; };
+		1ECA75251A6DD89C1EEDB22773EDF257 /* Doorbell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Doorbell.modulemap; sourceTree = "<group>"; };
 		258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		26DC99D62B90586EE2981FB5A410A584 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		266F465D08A82A53CEFA91DD60641784 /* DoorbellDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoorbellDialog.m; path = Classes/DoorbellDialog.m; sourceTree = "<group>"; };
 		2A43B85E816116EE6866A05229BA7CC9 /* Pods-SplatPal-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SplatPal-dummy.m"; sourceTree = "<group>"; };
-		2D59AE3B8EE09BADF2A6185B2228B858 /* XCGLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = XCGLogger.modulemap; sourceTree = "<group>"; };
-		310CDCC01A90B57ACB97206D9F4BC0CF /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
-		351A4418F3EC72333192BC184CA03F26 /* Doorbell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Doorbell-umbrella.h"; sourceTree = "<group>"; };
-		38CD3AF34468E68AAD0E75A99E9E7477 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		2D7333EE363736C758E57E24141DDC01 /* XCGLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCGLogger-prefix.pch"; sourceTree = "<group>"; };
+		2E1FAD67DBF8DC807AB3C828F11C547F /* Doorbell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Doorbell.h; path = Classes/Doorbell.h; sourceTree = "<group>"; };
+		3316FFC6C716BB45971677D39327E5EF /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		338CC37A662E18391E99BBE9DA4EBE24 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		373F44F73E3B8CCCB97CB5BC92E00452 /* XCGLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCGLogger.swift; path = XCGLogger/Library/XCGLogger/XCGLogger.swift; sourceTree = "<group>"; };
 		3970BCFA0C1312A5D97FDE8B3BC45C50 /* Pods-SplatPal-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SplatPal-resources.sh"; sourceTree = "<group>"; };
-		3C852C0BE96D8DB6A09C4B2759E7313E /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		3D378097B420CE6F9A58BC47394CF345 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		3DC2CFD7634F42AE8BB697E721A697F3 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		3E71F2A8CC7F193773758259A608480C /* Pods_SplatPal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplatPal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		46584F133F997A41979499A48A34DC3B /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		47A017B89A4FBF4158FEA08FE3E06186 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		4974EB3E907D2CBF09DC728A0E182E23 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49D88474C29214A51F65AD8239107370 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		54C33DCE3699C6A70A25366494B7BD41 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		576D4215E9D1C91560F1C183A286141C /* Doorbell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Doorbell.m; path = Classes/Doorbell.m; sourceTree = "<group>"; };
-		5824708D999F3BA790653D12988C2170 /* XCGLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCGLogger-dummy.m"; sourceTree = "<group>"; };
-		5D8412ADFF9723547F5D863F232B44C5 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		4A49A2394E35DC02B1BC9D163CB2D837 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
+		501E41A2CCDE4E861A9ACEF0981B290A /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		55796EB2CF54CB5E166B3AE159C063DC /* Doorbell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Doorbell-umbrella.h"; sourceTree = "<group>"; };
+		5D32BBAFAC637D2DFF8909B1DAEC8D53 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		5DA260C8989840677869AAA208C65163 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		647F039BC4E26A8B46C560A352F716D5 /* XCGLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCGLogger-umbrella.h"; sourceTree = "<group>"; };
 		6604BEFD8BDA4715630C33FD2B2AE1FE /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		735C6F833A473C00896D9554301FDBF4 /* Doorbell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Doorbell-prefix.pch"; sourceTree = "<group>"; };
+		732D5035F4E27B386BE36880D77C01C3 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		73B550352C7A54289F86F751CEF6116B /* XCGLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCGLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		76FA875A31283BFCB8736A15052B9819 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		790F7AFA5E49F0DC64E02C42C32E87EC /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		7FB7DEABCE25C560C66705F688EA8645 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		867668756530C3C24921B61728383FD0 /* Doorbell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Doorbell.xcconfig; sourceTree = "<group>"; };
-		8E28DF8B02FB9A7665E2168F481E9C07 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
-		9363DB2FD12D81835BD4D20A01ECF511 /* Doorbell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Doorbell.modulemap; sourceTree = "<group>"; };
-		A1AA86C42A0F3634A1C21FDFACC21679 /* DoorbellDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoorbellDialog.m; path = Classes/DoorbellDialog.m; sourceTree = "<group>"; };
+		80A171944A45B185C6EDDD8AF28AFA52 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		8A0AB7F73E69A36759D8A96B3AD92536 /* Doorbell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Doorbell.m; path = Classes/Doorbell.m; sourceTree = "<group>"; };
+		954DC314422A9C8FE0F04113C2B548C1 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		956AFBE4628BC439CCECC6BE75382B14 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		9C6A567BBE2CF071F2D3FE2BF01E1B8F /* XCGLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = XCGLogger.modulemap; sourceTree = "<group>"; };
+		A1C7DC26AA48ECA9196D2178E17D25AC /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
 		A42A40DED95AA35CA0D058577D588B0B /* Pods-SplatPal-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SplatPal-acknowledgements.plist"; sourceTree = "<group>"; };
-		A8A2D84CCE89D29B1AC88B388ADC9DFD /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		AE802772CCCD80859B52FEA5977DCB16 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		AEC17EB455EE561EA9F4375BA717084C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		B1999EEECA79623726BFBC4B407BF0D2 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		B31BF1AC304158E885993E052C15376A /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		B3B94426C98679DDA518A0477928EDA8 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		B3D0B41A03D62786B554B9BD3985C85C /* Doorbell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Doorbell.xcconfig; sourceTree = "<group>"; };
 		B6AF5B64EF760C026083B76F9BF0B359 /* Doorbell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Doorbell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B786EF2359BBD2326C00113A38644A0B /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BAEC7AC2E19CE89744E19BBA3F22DFCF /* XCGLogger.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XCGLogger.xcconfig; sourceTree = "<group>"; };
-		BB603DBE25993366353C0290740394DA /* XCGLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCGLogger.swift; path = XCGLogger/Library/XCGLogger/XCGLogger.swift; sourceTree = "<group>"; };
-		BD26A744605BE2D0CC37366C0F4EBBE8 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		BBEA70CD9E0D9D6D5707633B482EFAD0 /* Doorbell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Doorbell-prefix.pch"; sourceTree = "<group>"; };
 		C0668E9D0346681A14C5837AD595C3B9 /* Pods-SplatPal-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SplatPal-frameworks.sh"; sourceTree = "<group>"; };
-		C3D2B6E1A8FEE1AAD9B5850EE9C7598F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C758F49A49D82DE08F393E2EE47F3AD2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA088C594981DAC73E044CD5DA26C240 /* Doorbell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Doorbell-dummy.m"; sourceTree = "<group>"; };
+		C4F7F31B959A287188C0E37630C442D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D119837C01B4D77B4D5602A7647B4F93 /* Pods-SplatPal-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SplatPal-umbrella.h"; sourceTree = "<group>"; };
-		D289DD74773F4E6FC4075DB904486294 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		D33D75DED21323C4E3849EC66A482392 /* Pods-SplatPal.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SplatPal.modulemap"; sourceTree = "<group>"; };
-		D3E63CBF309CE401149C8D91AD879B9F /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		D42E9E6A548F46F8DC06FB32763D0776 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E113CBF2FAABFA7C1DAFE3561EC95E03 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		D969C3986F21A407CF4939FDF7D3D379 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		E2378A43C5CE6B03A18965D197341332 /* Pods-SplatPal-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SplatPal-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E60C12E28D2EF246F8191009740EA977 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		E9FCF4AA82B1F490F68242237B5217F9 /* DoorbellDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoorbellDialog.h; path = Classes/DoorbellDialog.h; sourceTree = "<group>"; };
-		EA09A3778214D7B6077DDF3BD8C707FE /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
-		EB18BB7BFE594B41119325272F8A0AD7 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		EDEAD1CB76CA0BB9F9E0B9CD02563842 /* XCGLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCGLogger-umbrella.h"; sourceTree = "<group>"; };
+		E6F7D23ADF43E67CEFE745F4FA854780 /* DoorbellDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoorbellDialog.h; path = Classes/DoorbellDialog.h; sourceTree = "<group>"; };
+		EB0FFCBA579033FF9487ABB397AD3F0A /* XCGLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCGLogger-dummy.m"; sourceTree = "<group>"; };
+		EC9E58DE77426155C674C31828E5F12E /* Doorbell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Doorbell-dummy.m"; sourceTree = "<group>"; };
+		EDE4F53B7129E697171EABCC22894BB5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE2748E0E373524D1A81FECC66D3AEB0 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		F1AA1E48CC536FF203F715F5D8DC77E1 /* Pods-SplatPal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SplatPal.debug.xcconfig"; sourceTree = "<group>"; };
-		F34EEC995ED5D6B01E5BAE78F7D44D04 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		F6E2581569E4897109E330994F413114 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F71D9821526C1337B639BA817362990D /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		F8ED955472134ACCB34824FB5B2B5173 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C3C978F1FF82662A95116FADEB495F9 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				956AFBE4628BC439CCECC6BE75382B14 /* Alamofire.swift */,
+				338CC37A662E18391E99BBE9DA4EBE24 /* Download.swift */,
+				F71D9821526C1337B639BA817362990D /* Error.swift */,
+				AE802772CCCD80859B52FEA5977DCB16 /* Manager.swift */,
+				EE2748E0E373524D1A81FECC66D3AEB0 /* MultipartFormData.swift */,
+				B1999EEECA79623726BFBC4B407BF0D2 /* ParameterEncoding.swift */,
+				0C68458885BA4F3DB633B5D69DB16548 /* Request.swift */,
+				5DA260C8989840677869AAA208C65163 /* Response.swift */,
+				14ED0BAA58716AD68D9C7ABF05C6D042 /* ResponseSerialization.swift */,
+				11391FA9676354517A66955E601A3ED0 /* Result.swift */,
+				80A171944A45B185C6EDDD8AF28AFA52 /* ServerTrustPolicy.swift */,
+				A1C7DC26AA48ECA9196D2178E17D25AC /* Stream.swift */,
+				B3B94426C98679DDA518A0477928EDA8 /* Upload.swift */,
+				954DC314422A9C8FE0F04113C2B548C1 /* Validation.swift */,
+				240E25E07D87D59BE04A79F243D3A66A /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		240E25E07D87D59BE04A79F243D3A66A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				086627BDA13759AE3694A8F433C691C0 /* Alamofire.modulemap */,
+				3316FFC6C716BB45971677D39327E5EF /* Alamofire.xcconfig */,
+				B31BF1AC304158E885993E052C15376A /* Alamofire-dummy.m */,
+				B786EF2359BBD2326C00113A38644A0B /* Alamofire-prefix.pch */,
+				0FDDB685B87AD695442F7C24680F0E8C /* Alamofire-umbrella.h */,
+				AEC17EB455EE561EA9F4375BA717084C /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		297CC5B4CA9DE9FBF14C1B12F9360D2F /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				997B598691C95C31B4B390696953CE37 /* Frameworks */,
+			);
+			path = Fabric;
+			sourceTree = "<group>";
+		};
 		3926C638AD0708942C88C2BC89261735 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,54 +249,73 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		48FECD4141623968A5F5BBBCE09BB587 /* Support Files */ = {
+		455F6AEFF8B77AF1E99AD045371006E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C758F49A49D82DE08F393E2EE47F3AD2 /* Info.plist */,
-				46584F133F997A41979499A48A34DC3B /* SwiftyJSON.modulemap */,
-				47A017B89A4FBF4158FEA08FE3E06186 /* SwiftyJSON.xcconfig */,
-				26DC99D62B90586EE2981FB5A410A584 /* SwiftyJSON-dummy.m */,
-				D289DD74773F4E6FC4075DB904486294 /* SwiftyJSON-prefix.pch */,
-				54C33DCE3699C6A70A25366494B7BD41 /* SwiftyJSON-umbrella.h */,
+				4A49A2394E35DC02B1BC9D163CB2D837 /* Crashlytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		683DCCF6BF15A619E865541985B5C4A8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1ECA75251A6DD89C1EEDB22773EDF257 /* Doorbell.modulemap */,
+				B3D0B41A03D62786B554B9BD3985C85C /* Doorbell.xcconfig */,
+				EC9E58DE77426155C674C31828E5F12E /* Doorbell-dummy.m */,
+				BBEA70CD9E0D9D6D5707633B482EFAD0 /* Doorbell-prefix.pch */,
+				55796EB2CF54CB5E166B3AE159C063DC /* Doorbell-umbrella.h */,
+				F6E2581569E4897109E330994F413114 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Doorbell";
+			sourceTree = "<group>";
+		};
+		6E243DC2E86698A6DE796F6F690E07EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C3C978F1FF82662A95116FADEB495F9 /* Alamofire */,
+				79D06FD38A0134872C72F6E571F61C00 /* Crashlytics */,
+				76E142E9D137888AAEDE3FC12A492E09 /* Doorbell */,
+				297CC5B4CA9DE9FBF14C1B12F9360D2F /* Fabric */,
+				98495EBA65983E856F984D2DE09C4DE1 /* SwiftyJSON */,
+				C9B1E00F52A20A3EE2419E2231EF8C7E /* XCGLogger */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		72C1AF5A86F81671E0735C993E5E9A9B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDE4F53B7129E697171EABCC22894BB5 /* Info.plist */,
+				732D5035F4E27B386BE36880D77C01C3 /* SwiftyJSON.modulemap */,
+				F8ED955472134ACCB34824FB5B2B5173 /* SwiftyJSON.xcconfig */,
+				D969C3986F21A407CF4939FDF7D3D379 /* SwiftyJSON-dummy.m */,
+				3D378097B420CE6F9A58BC47394CF345 /* SwiftyJSON-prefix.pch */,
+				501E41A2CCDE4E861A9ACEF0981B290A /* SwiftyJSON-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
-		53D444D8EEA670D63910CF38A548F24A /* Support Files */ = {
+		76E142E9D137888AAEDE3FC12A492E09 /* Doorbell */ = {
 			isa = PBXGroup;
 			children = (
-				7FB7DEABCE25C560C66705F688EA8645 /* Alamofire.modulemap */,
-				76FA875A31283BFCB8736A15052B9819 /* Alamofire.xcconfig */,
-				E113CBF2FAABFA7C1DAFE3561EC95E03 /* Alamofire-dummy.m */,
-				EB18BB7BFE594B41119325272F8A0AD7 /* Alamofire-prefix.pch */,
-				A8A2D84CCE89D29B1AC88B388ADC9DFD /* Alamofire-umbrella.h */,
-				D42E9E6A548F46F8DC06FB32763D0776 /* Info.plist */,
+				2E1FAD67DBF8DC807AB3C828F11C547F /* Doorbell.h */,
+				8A0AB7F73E69A36759D8A96B3AD92536 /* Doorbell.m */,
+				E6F7D23ADF43E67CEFE745F4FA854780 /* DoorbellDialog.h */,
+				266F465D08A82A53CEFA91DD60641784 /* DoorbellDialog.m */,
+				683DCCF6BF15A619E865541985B5C4A8 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
+			path = Doorbell;
 			sourceTree = "<group>";
 		};
-		6FC14BF508574744632511E14FE76CDD /* Alamofire */ = {
+		79D06FD38A0134872C72F6E571F61C00 /* Crashlytics */ = {
 			isa = PBXGroup;
 			children = (
-				790F7AFA5E49F0DC64E02C42C32E87EC /* Alamofire.swift */,
-				38CD3AF34468E68AAD0E75A99E9E7477 /* Download.swift */,
-				310CDCC01A90B57ACB97206D9F4BC0CF /* Error.swift */,
-				F34EEC995ED5D6B01E5BAE78F7D44D04 /* Manager.swift */,
-				49D88474C29214A51F65AD8239107370 /* MultipartFormData.swift */,
-				3C852C0BE96D8DB6A09C4B2759E7313E /* ParameterEncoding.swift */,
-				D3E63CBF309CE401149C8D91AD879B9F /* Request.swift */,
-				1E8488F49A7D5591F7D8A784DE325DD8 /* Response.swift */,
-				E60C12E28D2EF246F8191009740EA977 /* ResponseSerialization.swift */,
-				22AEE60851EB3543724B21FD78B59ED5 /* Result.swift */,
-				BD26A744605BE2D0CC37366C0F4EBBE8 /* ServerTrustPolicy.swift */,
-				EA09A3778214D7B6077DDF3BD8C707FE /* Stream.swift */,
-				8E28DF8B02FB9A7665E2168F481E9C07 /* Upload.swift */,
-				5D8412ADFF9723547F5D863F232B44C5 /* Validation.swift */,
-				53D444D8EEA670D63910CF38A548F24A /* Support Files */,
+				455F6AEFF8B77AF1E99AD045371006E6 /* Frameworks */,
 			);
-			path = Alamofire;
+			path = Crashlytics;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -258,51 +323,27 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				9116E50D8D25B17D626FD4352872B58B /* Pods */,
+				6E243DC2E86698A6DE796F6F690E07EC /* Pods */,
 				DC58B6336C7EDBBE462BB6D7342F0D50 /* Products */,
 				BAB2DEA632EFD5F411B3A57BF89B8F07 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		848ED8BDE3ED721F60E82232FC57E8C7 /* SwiftyJSON */ = {
+		98495EBA65983E856F984D2DE09C4DE1 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				05F16B80AFED08AD5C0B4A3023EC8254 /* SwiftyJSON.swift */,
-				48FECD4141623968A5F5BBBCE09BB587 /* Support Files */,
+				3DC2CFD7634F42AE8BB697E721A697F3 /* SwiftyJSON.swift */,
+				72C1AF5A86F81671E0735C993E5E9A9B /* Support Files */,
 			);
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
-		8910CB60FD84BCD29C0E2EA32B8C3F94 /* XCGLogger */ = {
+		997B598691C95C31B4B390696953CE37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BB603DBE25993366353C0290740394DA /* XCGLogger.swift */,
-				E9E83662DD62951B058774DDBC750379 /* Support Files */,
+				5D32BBAFAC637D2DFF8909B1DAEC8D53 /* Fabric.framework */,
 			);
-			path = XCGLogger;
-			sourceTree = "<group>";
-		};
-		9116E50D8D25B17D626FD4352872B58B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6FC14BF508574744632511E14FE76CDD /* Alamofire */,
-				AB59395371D55964C805DB1E4A6DE49C /* Doorbell */,
-				848ED8BDE3ED721F60E82232FC57E8C7 /* SwiftyJSON */,
-				8910CB60FD84BCD29C0E2EA32B8C3F94 /* XCGLogger */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		AB59395371D55964C805DB1E4A6DE49C /* Doorbell */ = {
-			isa = PBXGroup;
-			children = (
-				256B352EC3F9111BBF3F364B6E0613D0 /* Doorbell.h */,
-				576D4215E9D1C91560F1C183A286141C /* Doorbell.m */,
-				E9FCF4AA82B1F490F68242237B5217F9 /* DoorbellDialog.h */,
-				A1AA86C42A0F3634A1C21FDFACC21679 /* DoorbellDialog.m */,
-				ECBB8CF9E2CD125F84439B5AEA57791C /* Support Files */,
-			);
-			path = Doorbell;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BAB2DEA632EFD5F411B3A57BF89B8F07 /* Targets Support Files */ = {
@@ -311,6 +352,29 @@
 				F04F85DA1829E4873E18EF866E66AC48 /* Pods-SplatPal */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C9B1E00F52A20A3EE2419E2231EF8C7E /* XCGLogger */ = {
+			isa = PBXGroup;
+			children = (
+				373F44F73E3B8CCCB97CB5BC92E00452 /* XCGLogger.swift */,
+				D67C91829B342A22AC63522A7A794B53 /* Support Files */,
+			);
+			path = XCGLogger;
+			sourceTree = "<group>";
+		};
+		D67C91829B342A22AC63522A7A794B53 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4F7F31B959A287188C0E37630C442D4 /* Info.plist */,
+				9C6A567BBE2CF071F2D3FE2BF01E1B8F /* XCGLogger.modulemap */,
+				154DF484ACEA56C9F5239FFA9AA63D66 /* XCGLogger.xcconfig */,
+				EB0FFCBA579033FF9487ABB397AD3F0A /* XCGLogger-dummy.m */,
+				2D7333EE363736C758E57E24141DDC01 /* XCGLogger-prefix.pch */,
+				647F039BC4E26A8B46C560A352F716D5 /* XCGLogger-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XCGLogger";
 			sourceTree = "<group>";
 		};
 		DC58B6336C7EDBBE462BB6D7342F0D50 /* Products */ = {
@@ -323,34 +387,6 @@
 				73B550352C7A54289F86F751CEF6116B /* XCGLogger.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		E9E83662DD62951B058774DDBC750379 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C3D2B6E1A8FEE1AAD9B5850EE9C7598F /* Info.plist */,
-				2D59AE3B8EE09BADF2A6185B2228B858 /* XCGLogger.modulemap */,
-				BAEC7AC2E19CE89744E19BBA3F22DFCF /* XCGLogger.xcconfig */,
-				5824708D999F3BA790653D12988C2170 /* XCGLogger-dummy.m */,
-				254C2C749108C6493A10EF3F624575A8 /* XCGLogger-prefix.pch */,
-				EDEAD1CB76CA0BB9F9E0B9CD02563842 /* XCGLogger-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/XCGLogger";
-			sourceTree = "<group>";
-		};
-		ECBB8CF9E2CD125F84439B5AEA57791C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9363DB2FD12D81835BD4D20A01ECF511 /* Doorbell.modulemap */,
-				867668756530C3C24921B61728383FD0 /* Doorbell.xcconfig */,
-				CA088C594981DAC73E044CD5DA26C240 /* Doorbell-dummy.m */,
-				735C6F833A473C00896D9554301FDBF4 /* Doorbell-prefix.pch */,
-				351A4418F3EC72333192BC184CA03F26 /* Doorbell-umbrella.h */,
-				4974EB3E907D2CBF09DC728A0E182E23 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Doorbell";
 			sourceTree = "<group>";
 		};
 		F04F85DA1829E4873E18EF866E66AC48 /* Pods-SplatPal */ = {
@@ -629,7 +665,7 @@
 /* Begin XCBuildConfiguration section */
 		2395C9728BAC2508940558059A2512DE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 867668756530C3C24921B61728383FD0 /* Doorbell.xcconfig */;
+			baseConfigurationReference = B3D0B41A03D62786B554B9BD3985C85C /* Doorbell.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -686,7 +722,7 @@
 		};
 		5ABF74FAB2AAC426C0096BB7221B6E8F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47A017B89A4FBF4158FEA08FE3E06186 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = F8ED955472134ACCB34824FB5B2B5173 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -714,7 +750,7 @@
 		};
 		8E631545FBE71093F9883937351050B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 867668756530C3C24921B61728383FD0 /* Doorbell.xcconfig */;
+			baseConfigurationReference = B3D0B41A03D62786B554B9BD3985C85C /* Doorbell.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -741,7 +777,7 @@
 		};
 		A3427C918F24207B5FD3A44958345D7E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76FA875A31283BFCB8736A15052B9819 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 3316FFC6C716BB45971677D39327E5EF /* Alamofire.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -807,7 +843,7 @@
 		};
 		BB38F532F1AF6A748685C9A08DF193D0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47A017B89A4FBF4158FEA08FE3E06186 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = F8ED955472134ACCB34824FB5B2B5173 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -834,7 +870,7 @@
 		};
 		C12A67E6FC23E9437CB25E8CA3568690 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAEC7AC2E19CE89744E19BBA3F22DFCF /* XCGLogger.xcconfig */;
+			baseConfigurationReference = 154DF484ACEA56C9F5239FFA9AA63D66 /* XCGLogger.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -862,7 +898,7 @@
 		};
 		C993D8405F342C8E23BAD4EDF32D79E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76FA875A31283BFCB8736A15052B9819 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 3316FFC6C716BB45971677D39327E5EF /* Alamofire.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -890,7 +926,7 @@
 		};
 		CB739C10033B5B595E8E9D97EADCFE86 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAEC7AC2E19CE89744E19BBA3F22DFCF /* XCGLogger.xcconfig */;
+			baseConfigurationReference = 154DF484ACEA56C9F5239FFA9AA63D66 /* XCGLogger.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;

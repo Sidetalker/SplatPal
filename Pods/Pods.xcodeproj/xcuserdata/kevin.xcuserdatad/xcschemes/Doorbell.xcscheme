@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4AB43CD2DE4DE44E10F7369E'
+               BlueprintIdentifier = '896989788C21BD06F647D855'
                BlueprintName = 'Doorbell'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Doorbell.framework'>

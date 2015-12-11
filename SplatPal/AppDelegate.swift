@@ -9,6 +9,8 @@
 import UIKit
 import XCGLogger
 import Doorbell
+import Fabric
+import Crashlytics
 
 let log = XCGLogger.defaultInstance()
 let feedback = Doorbell(apiKey: "huNJHAdBmvWXZKIMHrdYjdZ0XZJEL03aReY71ASNWY8hhguVXb2oZhLMD5ji8ERv", appId: "2756")
@@ -19,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        Fabric.with([Crashlytics.self])
         log.setup(.Debug, showLogIdentifier: false, showFunctionName: false, showThreadName: false, showLogLevel: true, showFileNames: true, showLineNumbers: false, showDate: false, writeToFile: nil, fileLogLevel: nil)
         
         return true
