@@ -9,6 +9,8 @@
 import UIKit
 
 let brands = ["amiibo", "Cuttlegear", "Famitsu", "Firefin", "Forge", "Inkline", "Krak-On", "Rockenberg", "Skalop", "Splash Mob", "SquidForce", "Takoroka", "Tentatek", "The SQUID GIRL", "Zekko", "Zink"]
+let icons = ["Bomb Range Up", "Bomb Sniffer", "Cold Blooded", "Comeback", "Damage Up", "Defense Up", "Haunt", "InkRecoveryUp", "Ink Resistance Up", "Ink Saver (Main)", "Ink Saver (Sub)", "Last-Ditch Effort", "Ninja Squid", "Opening Gambit", "Quick Respawn", "Quick Super Jump", "Recon", "Run Speed Up", "Special Charge Up", "Special Duration Up", "Special Saver", "Stealth Jump", "Swim Speed Up", "Tenacity"]
+let iconsRestricted = [icons[4], icons[5], icons[7], icons[9], icons[10], icons[14], icons[15], icons[17], icons[18], icons[19], icons[20], icons[22]]
 
 protocol IconSelectionViewDelegate {
     func iconSelectionViewClear(view: IconSelectionView, sender: AnyObject)
@@ -55,7 +57,7 @@ protocol IconSelectionViewDelegate {
         collectionView.backgroundColor = UIColor.clearColor()
         
         brandsSelected = Array(count: 16, repeatedValue: false)
-        abilitiesSelected = Array(count: 10, repeatedValue: false)
+        abilitiesSelected = Array(count: 12, repeatedValue: false)
     }
     
     func switchTypes(newType: String) {
@@ -80,6 +82,7 @@ protocol IconSelectionViewDelegate {
     @IBAction func clearTapped(sender: AnyObject) {
         delegate?.iconSelectionViewClear(self, sender: sender)
         brandsSelected = brandsSelected.map { _ in false }
+        abilitiesSelected = abilitiesSelected.map { _ in false }
         collectionView.reloadData()
     }
     
@@ -108,7 +111,6 @@ protocol IconSelectionViewDelegate {
         switch viewType {
         case "brands":
             let cell = collectionView.dequeueReusableCellWithReuseIdentifier("brandCell", forIndexPath: indexPath) as! BrandCell
-            cell.clipsToBounds = false
             cell.backgroundColor = UIColor.clearColor()
             cell.brandName = brands[indexPath.row]
             cell.pressed = brandsSelected[indexPath.row]
@@ -118,6 +120,7 @@ protocol IconSelectionViewDelegate {
         case "abilities":
             let cell = collectionView.dequeueReusableCellWithReuseIdentifier("abilityCell", forIndexPath: indexPath) as! AbilityCell
             cell.pressed = abilitiesSelected[indexPath.row]
+            cell.index = indexPath.row
             cell.update()
             
             return cell
@@ -138,7 +141,9 @@ protocol IconSelectionViewDelegate {
 }
 
 class AbilityCell: UICollectionViewCell {
+    var imageView: UIImageView!
     var pressed = false
+    var index = -1
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -151,15 +156,14 @@ class AbilityCell: UICollectionViewCell {
     }
     
     func configure() {
-        let imageView = UIImageView(frame: CGRectMake(5, 6, 54, 54))
-        imageView.image = UIImage(named: "abilityTenacity.png")
-        self.addSubview(imageView)
-        
+        imageView = UIImageView(frame: CGRectMake(5, 6, 54, 54))
+        addSubview(imageView)
     }
     
     func update() {
         let image: UIImage = pressed ? SplatAppStyle.imageOfAbilityContainerSelected: SplatAppStyle.imageOfAbilityContainerUnselected
-        self.backgroundColor = UIColor(patternImage: image)
+        backgroundColor = UIColor(patternImage: image)
+        imageView.image = UIImage(named: "ability\(iconsRestricted[index].removeWhitespace()).png")
     }
 }
 
@@ -169,6 +173,7 @@ class BrandCell: UICollectionViewCell {
     let fillA = SplatAppStyle.brandPressedFill
     let fillB = UIColor.whiteColor()
     
+    var index = -1
     var brandName = ""
     var pressed = false
     
