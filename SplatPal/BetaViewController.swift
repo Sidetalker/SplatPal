@@ -14,17 +14,20 @@ class BetaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let path = NSBundle.mainBundle().pathForResource("changelog", ofType: "txt")
+        let changeLogPath = NSBundle.mainBundle().pathForResource("changelog", ofType: "txt")
         do {
-            let log = try String(contentsOfFile:path!, encoding: NSUTF8StringEncoding)
-            let logLines = log.characters.split{$0 == "\n"}.map(String.init)
+            let logString = try String(contentsOfFile:changeLogPath!, encoding: NSUTF8StringEncoding)
+            let logLines = logString.characters.split{$0 == "\n"}.map(String.init)
             let logDisplay = NSMutableAttributedString()
+            var firstLine = true
             
+            // Bold and add newlines between version lines
             for line in logLines {
                 let attrLine = line.rangeOfString("Version") != nil ?
-                    NSAttributedString(string: "\n\(line)\n", attributes: [NSFontAttributeName : UIFont.boldSystemFontOfSize(17.0)]) :
-                    NSAttributedString(string: "\(line)\n", attributes: [NSFontAttributeName : UIFont.systemFontOfSize(17.0)])
+                    NSAttributedString(string: "\(firstLine ? "" : "\n")\(line)\n", attributes: [NSFontAttributeName : UIFont.boldSystemFontOfSize(15.0)]) :
+                    NSAttributedString(string: "\(line)\n", attributes: [NSFontAttributeName : UIFont.systemFontOfSize(15.0)])
                 logDisplay.appendAttributedString(attrLine)
+                if firstLine { firstLine = false }
             }
             
             txtChangeLog.attributedText = logDisplay
@@ -37,6 +40,8 @@ class BetaViewController: UIViewController {
     }
     
     @IBAction func btnFeedbackTapped(sender: AnyObject) {
-        
+        feedback.showFeedbackDialogInViewController(self, completion: { error, isCanceled in
+            if error != nil { log.error("Feedback error: \(error)") }
+        })
     }
 }
