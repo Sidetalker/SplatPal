@@ -18,11 +18,14 @@ protocol IconSelectionViewDelegate {
 @IBDesignable class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
+    @IBOutlet weak var btnClear: UIButton!
+    @IBOutlet weak var btnClose: UIButton!
     
     var delegate: IconSelectionViewDelegate?
     var view: UIView!
     var viewType = ""
     var brandsSelected = [Bool]()
+    var abilitiesSelected = [Bool]()
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -47,10 +50,31 @@ protocol IconSelectionViewDelegate {
         view.frame = bounds
         self.addSubview(view)
         
-        collectionView.registerClass(IconCell.self, forCellWithReuseIdentifier: "brandCell")
+        collectionView.registerClass(BrandCell.self, forCellWithReuseIdentifier: "brandCell")
+        collectionView.registerClass(AbilityCell.self, forCellWithReuseIdentifier: "abilityCell")
         collectionView.backgroundColor = UIColor.clearColor()
         
         brandsSelected = Array(count: 16, repeatedValue: false)
+        abilitiesSelected = Array(count: 10, repeatedValue: false)
+    }
+    
+    func switchTypes(newType: String) {
+        viewType = newType
+        collectionView.reloadData()
+        
+        switch newType {
+        case "brands":
+            view.backgroundColor = UIColor.whiteColor()
+            collectionView.backgroundColor = UIColor.whiteColor()
+            btnClear.setTitleColor(UIColor.blackColor(), forState: .Normal)
+            btnClose.setTitleColor(UIColor.blackColor(), forState: .Normal)
+        case "abilities":
+            view.backgroundColor = UIColor.blackColor()
+            collectionView.backgroundColor = UIColor.blackColor()
+            btnClear.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            btnClose.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        default: break
+        }
     }
     
     @IBAction func clearTapped(sender: AnyObject) {
@@ -69,34 +93,77 @@ protocol IconSelectionViewDelegate {
         return viewType == "" ? 0 : 1
     }
     
-    
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch viewType {
         case "brands":
             return 16
+        case "abilities":
+            return 10
         default:
             return 0
         }
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("brandCell", forIndexPath: indexPath) as! IconCell
-        cell.clipsToBounds = false
-        cell.backgroundColor = UIColor.clearColor()
-        cell.brandName = brands[indexPath.row]
-        cell.pressed = brandsSelected[indexPath.row]
-        cell.setNeedsDisplay()
-        
-        return cell
+        switch viewType {
+        case "brands":
+            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("brandCell", forIndexPath: indexPath) as! BrandCell
+            cell.clipsToBounds = false
+            cell.backgroundColor = UIColor.clearColor()
+            cell.brandName = brands[indexPath.row]
+            cell.pressed = brandsSelected[indexPath.row]
+            cell.setNeedsDisplay()
+            
+            return cell
+        case "abilities":
+            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("abilityCell", forIndexPath: indexPath) as! AbilityCell
+            cell.pressed = abilitiesSelected[indexPath.row]
+            cell.update()
+            
+            return cell
+        default:
+            return UICollectionViewCell()
+        }
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        brandsSelected[indexPath.row] = !brandsSelected[indexPath.row]
+        switch viewType {
+        case "brands": brandsSelected[indexPath.row] = !brandsSelected[indexPath.row]
+        case "abilities": abilitiesSelected[indexPath.row] = !abilitiesSelected[indexPath.row]
+        default: break
+        }
+        
         collectionView.reloadData()
     }
 }
 
-class IconCell: UICollectionViewCell {
+class AbilityCell: UICollectionViewCell {
+    var pressed = false
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        configure()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        configure()
+    }
+    
+    func configure() {
+        let imageView = UIImageView(frame: CGRectMake(5, 6, 54, 54))
+        imageView.image = UIImage(named: "abilityTenacity.png")
+        self.addSubview(imageView)
+        
+    }
+    
+    func update() {
+        let image: UIImage = pressed ? SplatAppStyle.imageOfAbilityContainerSelected: SplatAppStyle.imageOfAbilityContainerUnselected
+        self.backgroundColor = UIColor(patternImage: image)
+    }
+}
+
+class BrandCell: UICollectionViewCell {
     let shadowA = SplatAppStyle.shadowSelected
     let shadowB = SplatAppStyle.shadowUnselected
     let fillA = SplatAppStyle.brandPressedFill

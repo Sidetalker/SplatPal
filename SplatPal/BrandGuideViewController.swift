@@ -32,12 +32,16 @@ class BrandGuideViewController: UIViewController, IconSelectionViewDelegate {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        iconViewHeight.constant = iconView.collectionView.collectionViewLayout.collectionViewContentSize().height + 50 // + Button Height
+        iconViewHeight.constant = getIconViewHeight()
         iconViewXLoc.constant = -iconViewHeight.constant - tabBarHeight
     }
 
     override func prefersStatusBarHidden() -> Bool {
         return true
+    }
+    
+    func getIconViewHeight() -> CGFloat {
+        return iconView.collectionView.collectionViewLayout.collectionViewContentSize().height + 50
     }
     
     func toggleIconView(show: Bool) {
@@ -49,10 +53,16 @@ class BrandGuideViewController: UIViewController, IconSelectionViewDelegate {
     }
     
     @IBAction func filterBrandsTapped(sender: AnyObject) {
+        iconView.switchTypes("brands")
+        iconViewHeight.constant = getIconViewHeight()
+        self.view.layoutIfNeeded()
         toggleIconView(true)
     }
     
     @IBAction func filterAbilitiesTapped(sender: AnyObject) {
+        iconView.switchTypes("abilities")
+        iconViewHeight.constant = getIconViewHeight()
+        self.view.layoutIfNeeded()
         toggleIconView(true)
     }
     

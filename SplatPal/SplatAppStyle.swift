@@ -20,6 +20,10 @@ public class SplatAppStyle : NSObject {
         static let brandPressedFill: UIColor = UIColor(red: 0.911, green: 0.911, blue: 0.911, alpha: 1.000)
         static let shadowSelected: NSShadow = NSShadow(color: UIColor.blackColor(), offset: CGSizeMake(0.1, -0.1), blurRadius: 2)
         static let shadowUnselected: NSShadow = NSShadow(color: UIColor.blackColor(), offset: CGSizeMake(0.1, -0.1), blurRadius: 5)
+        static var imageOfAbilityContainerSelected: UIImage?
+        static var abilityContainerSelectedTargets: [AnyObject]?
+        static var imageOfAbilityContainerUnselected: UIImage?
+        static var abilityContainerUnselectedTargets: [AnyObject]?
     }
 
     //// Colors
@@ -3896,6 +3900,90 @@ public class SplatAppStyle : NSObject {
 
         fillColor59.setFill()
         bezier16Path.fill()
+    }
+
+    public class func drawAbilityContainerSelected() {
+
+        //// Oval Drawing
+        let ovalPath = UIBezierPath(ovalInRect: CGRectMake(5, 6, 54, 54))
+        UIColor.blackColor().setFill()
+        ovalPath.fill()
+        UIColor.whiteColor().setStroke()
+        ovalPath.lineWidth = 5
+        ovalPath.stroke()
+    }
+
+    public class func drawAbilityContainerUnselected() {
+        //// General Declarations
+        let context = UIGraphicsGetCurrentContext()
+
+
+        //// Shadow Declarations
+        let shadowWhite = NSShadow(color: UIColor.whiteColor(), offset: CGSizeMake(0.1, -0.1), blurRadius: 5)
+
+        //// Oval Drawing
+        let ovalPath = UIBezierPath(ovalInRect: CGRectMake(5, 6, 54, 54))
+        CGContextSaveGState(context)
+        CGContextSetShadowWithColor(context, shadowWhite.shadowOffset, shadowWhite.shadowBlurRadius, (shadowWhite.shadowColor as! UIColor).CGColor)
+        UIColor.blackColor().setFill()
+        ovalPath.fill()
+        CGContextRestoreGState(context)
+
+        UIColor.whiteColor().setStroke()
+        ovalPath.lineWidth = 1
+        ovalPath.stroke()
+    }
+
+    //// Generated Images
+
+    public class var imageOfAbilityContainerSelected: UIImage {
+        if Cache.imageOfAbilityContainerSelected != nil {
+            return Cache.imageOfAbilityContainerSelected!
+        }
+
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(65, 65), false, 0)
+            SplatAppStyle.drawAbilityContainerSelected()
+
+        Cache.imageOfAbilityContainerSelected = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+
+        return Cache.imageOfAbilityContainerSelected!
+    }
+
+    public class var imageOfAbilityContainerUnselected: UIImage {
+        if Cache.imageOfAbilityContainerUnselected != nil {
+            return Cache.imageOfAbilityContainerUnselected!
+        }
+
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(65, 65), false, 0)
+            SplatAppStyle.drawAbilityContainerUnselected()
+
+        Cache.imageOfAbilityContainerUnselected = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+
+        return Cache.imageOfAbilityContainerUnselected!
+    }
+
+    //// Customization Infrastructure
+
+    @IBOutlet var abilityContainerSelectedTargets: [AnyObject]! {
+        get { return Cache.abilityContainerSelectedTargets }
+        set {
+            Cache.abilityContainerSelectedTargets = newValue
+            for target: AnyObject in newValue {
+                target.performSelector("setImage:", withObject: SplatAppStyle.imageOfAbilityContainerSelected)
+            }
+        }
+    }
+
+    @IBOutlet var abilityContainerUnselectedTargets: [AnyObject]! {
+        get { return Cache.abilityContainerUnselectedTargets }
+        set {
+            Cache.abilityContainerUnselectedTargets = newValue
+            for target: AnyObject in newValue {
+                target.performSelector("setImage:", withObject: SplatAppStyle.imageOfAbilityContainerUnselected)
+            }
+        }
     }
 
 }

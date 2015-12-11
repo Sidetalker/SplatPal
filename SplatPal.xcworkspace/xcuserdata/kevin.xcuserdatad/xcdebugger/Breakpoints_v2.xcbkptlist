@@ -120,11 +120,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SplatPal/IconSelectionView.swift"
-            timestampString = "471492584.872601"
+            timestampString = "471500296.888019"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "configure()"
             landmarkType = "5">
          </BreakpointContent>
@@ -136,11 +136,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SplatPal/IconSelectionView.swift"
-            timestampString = "471492584.872601"
+            timestampString = "471500296.888019"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "configure()"
             landmarkType = "5">
          </BreakpointContent>
@@ -152,11 +152,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SplatPal/IconSelectionView.swift"
-            timestampString = "471492584.872601"
+            timestampString = "471500296.888019"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "configure()"
             landmarkType = "5">
          </BreakpointContent>
@@ -168,11 +168,59 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SplatPal/IconSelectionView.swift"
-            timestampString = "471495455.527901"
+            timestampString = "471501014.631441"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "switchTypes(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SplatPal/BrandGuideViewController.swift"
+            timestampString = "471499956.055673"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "filterAbilitiesTapped(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SplatPal/BrandGuideViewController.swift"
+            timestampString = "471499957.416504"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "filterBrandsTapped(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SplatPal/IconSelectionView.swift"
+            timestampString = "471501084.487679"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "collectionView(_:cellForItemAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -184,12 +232,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SplatPal/IconSelectionView.swift"
-            timestampString = "471495455.527901"
+            timestampString = "471501104.11487"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
-            landmarkName = "collectionView(_:cellForItemAtIndexPath:)"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "collectionView(_:didSelectItemAtIndexPath:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SplatPal.IconSelectionView.collectionView (SplatPal.IconSelectionView)(__ObjC.UICollectionView, didSelectItemAtIndexPath : __ObjC.NSIndexPath) -&gt; ()"
+                  moduleName = "SplatPal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/Documents/github/SplatPal/SplatPal/IconSelectionView.swift"
+                  timestampString = "471501104.11679"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "132"
+                  endingLineNumber = "132"
+                  offsetFromSymbolStart = "683">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SplatPal.IconSelectionView.collectionView (SplatPal.IconSelectionView)(__ObjC.UICollectionView, didSelectItemAtIndexPath : __ObjC.NSIndexPath) -&gt; ()"
+                  moduleName = "SplatPal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevin/Documents/github/SplatPal/SplatPal/IconSelectionView.swift"
+                  timestampString = "471501104.116912"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "132"
+                  endingLineNumber = "132"
+                  offsetFromSymbolStart = "901">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SplatPal/IconSelectionView.swift"
+            timestampString = "471501758.493648"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
+            landmarkName = "configure()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SplatPal/IconSelectionView.swift"
+            timestampString = "471501765.011181"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
+            landmarkName = "update()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

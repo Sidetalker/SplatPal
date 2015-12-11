@@ -215,20 +215,41 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zhx-Er-VvO" customClass="IconSelectionView" customModule="SplatPal" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="378" width="600" height="222"/>
+                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="222" id="Br9-ZM-Zwf"/>
+                                    <constraint firstAttribute="height" constant="50" id="Br9-ZM-Zwf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3pw-2R-rMv" customClass="AbilityCell" customModule="SplatPal" customModuleProvider="target">
+                                <rect key="frame" x="20" y="28" width="65" height="65"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abilityBombRangeUp.png" translatesAutoresizingMaskIntoConstraints="NO" id="LiK-GM-Asn">
+                                        <rect key="frame" x="5" y="6" width="54" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="LiK-GM-Asn" secondAttribute="height" multiplier="1:1" id="B7i-Al-uUp"/>
+                                            <constraint firstAttribute="width" constant="54" id="z6H-vw-Ia6"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="Cza-Xt-fhV"/>
+                                    <constraint firstAttribute="width" secondItem="3pw-2R-rMv" secondAttribute="height" multiplier="1:1" id="QpC-gf-IQ3"/>
+                                    <constraint firstItem="LiK-GM-Asn" firstAttribute="centerY" secondItem="3pw-2R-rMv" secondAttribute="centerY" id="ZUo-a8-Gte"/>
+                                    <constraint firstItem="LiK-GM-Asn" firstAttribute="centerX" secondItem="3pw-2R-rMv" secondAttribute="centerX" id="bsl-sf-z93"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="3pw-2R-rMv" firstAttribute="top" secondItem="p9f-99-aCv" secondAttribute="bottom" constant="8" id="MFe-Sg-YiG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ugl-9A-fo3" secondAttribute="trailing" constant="-20" id="OIM-q5-SYV"/>
                             <constraint firstItem="lVq-ps-AV9" firstAttribute="top" secondItem="NWb-Cp-fOA" secondAttribute="bottom" id="PWN-a9-HGV"/>
                             <constraint firstItem="NWb-Cp-fOA" firstAttribute="leading" secondItem="Bx9-gK-8MU" secondAttribute="leadingMargin" constant="-20" id="QZc-GP-Ncy"/>
                             <constraint firstItem="Zhx-Er-VvO" firstAttribute="leading" secondItem="Bx9-gK-8MU" secondAttribute="leadingMargin" constant="-20" id="R5v-0j-Xf9"/>
                             <constraint firstItem="lVq-ps-AV9" firstAttribute="top" secondItem="Zhx-Er-VvO" secondAttribute="bottom" constant="-49" id="T35-69-qdD"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="3pw-2R-rMv" secondAttribute="leading" id="ZNt-mS-66s"/>
                             <constraint firstItem="ugl-9A-fo3" firstAttribute="top" secondItem="NWb-Cp-fOA" secondAttribute="top" id="e3M-WI-glb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Zhx-Er-VvO" secondAttribute="trailing" constant="-20" id="fTW-5k-eiC"/>
                             <constraint firstItem="NWb-Cp-fOA" firstAttribute="width" secondItem="Bx9-gK-8MU" secondAttribute="width" multiplier="0.5" id="fZQ-gj-Hyg"/>
@@ -308,6 +329,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="abilityBombRangeUp.png" width="125" height="125"/>
         <image name="backgroundTile.jpg" width="1024" height="1024"/>
         <image name="brandsIcon.png" width="25" height="25"/>
         <image name="mapIcon.png" width="25" height="25"/>

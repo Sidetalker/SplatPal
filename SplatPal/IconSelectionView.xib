@@ -14,6 +14,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IconSelectionView" customModule="SplatPal" customModuleProvider="target">
             <connections>
+                <outlet property="btnClear" destination="dCU-gY-Rn7" id="7fJ-H6-c7e"/>
+                <outlet property="btnClose" destination="GFm-4C-RPV" id="LCT-M3-P3p"/>
                 <outlet property="collectionView" destination="s3Z-GJ-g9y" id="LLV-Wb-Kw5"/>
                 <outlet property="flowLayout" destination="GXS-1N-lKX" id="ez0-29-35Z"/>
             </connections>

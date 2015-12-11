@@ -17,6 +17,30 @@
 		0AA23DAE1C1A3A330002BCC2 /* IconSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA23DAD1C1A3A330002BCC2 /* IconSelectionView.swift */; };
 		0AA23DB01C1A3CD10002BCC2 /* IconSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DAF1C1A3CD10002BCC2 /* IconSelectionView.xib */; };
 		0AA23DB41C1A59630002BCC2 /* BrandGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA23DB31C1A59630002BCC2 /* BrandGuideViewController.swift */; };
+		0AA23DCE1C1A7E310002BCC2 /* abilityTenacity.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DB61C1A7E300002BCC2 /* abilityTenacity.png */; };
+		0AA23DCF1C1A7E310002BCC2 /* abilitySwimSpeedUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DB71C1A7E300002BCC2 /* abilitySwimSpeedUp.png */; };
+		0AA23DD01C1A7E310002BCC2 /* abilityStealthJump.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DB81C1A7E300002BCC2 /* abilityStealthJump.png */; };
+		0AA23DD11C1A7E310002BCC2 /* abilitySpecialSaver.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DB91C1A7E310002BCC2 /* abilitySpecialSaver.png */; };
+		0AA23DD21C1A7E310002BCC2 /* abilitySpecialDurationUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DBA1C1A7E310002BCC2 /* abilitySpecialDurationUp.png */; };
+		0AA23DD31C1A7E310002BCC2 /* abilitySpecialChargeUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DBB1C1A7E310002BCC2 /* abilitySpecialChargeUp.png */; };
+		0AA23DD41C1A7E310002BCC2 /* abilityRunSpeedUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DBC1C1A7E310002BCC2 /* abilityRunSpeedUp.png */; };
+		0AA23DD51C1A7E310002BCC2 /* abilityRecon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DBD1C1A7E310002BCC2 /* abilityRecon.png */; };
+		0AA23DD61C1A7E310002BCC2 /* abilityQuickSuperJump.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DBE1C1A7E310002BCC2 /* abilityQuickSuperJump.png */; };
+		0AA23DD71C1A7E310002BCC2 /* abilityQuickRespawn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DBF1C1A7E310002BCC2 /* abilityQuickRespawn.png */; };
+		0AA23DD81C1A7E310002BCC2 /* abilityOpeningGambit.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DC01C1A7E310002BCC2 /* abilityOpeningGambit.png */; };
+		0AA23DD91C1A7E310002BCC2 /* abilityNinjaSquid.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DC11C1A7E310002BCC2 /* abilityNinjaSquid.png */; };
+		0AA23DDA1C1A7E310002BCC2 /* abilityLast-DitchEffort.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DC21C1A7E310002BCC2 /* abilityLast-DitchEffort.png */; };
+		0AA23DDB1C1A7E310002BCC2 /* abilityInkSaver(Sub).png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DC31C1A7E310002BCC2 /* abilityInkSaver(Sub).png */; };
+		0AA23DDC1C1A7E310002BCC2 /* abilityInkSaver(Main).png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DC41C1A7E310002BCC2 /* abilityInkSaver(Main).png */; };
+		0AA23DDD1C1A7E310002BCC2 /* abilityInkResistanceUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DC51C1A7E310002BCC2 /* abilityInkResistanceUp.png */; };
+		0AA23DDE1C1A7E310002BCC2 /* abilityInkRecoveryUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DC61C1A7E310002BCC2 /* abilityInkRecoveryUp.png */; };
+		0AA23DDF1C1A7E310002BCC2 /* abilityHaunt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DC71C1A7E310002BCC2 /* abilityHaunt.png */; };
+		0AA23DE01C1A7E310002BCC2 /* abilityDefenseUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DC81C1A7E310002BCC2 /* abilityDefenseUp.png */; };
+		0AA23DE11C1A7E310002BCC2 /* abilityDamageUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DC91C1A7E310002BCC2 /* abilityDamageUp.png */; };
+		0AA23DE21C1A7E310002BCC2 /* abilityComeback.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DCA1C1A7E310002BCC2 /* abilityComeback.png */; };
+		0AA23DE31C1A7E310002BCC2 /* abilityColdBlooded.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DCB1C1A7E310002BCC2 /* abilityColdBlooded.png */; };
+		0AA23DE41C1A7E310002BCC2 /* abilityBombSniffer.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DCC1C1A7E310002BCC2 /* abilityBombSniffer.png */; };
+		0AA23DE51C1A7E310002BCC2 /* abilityBombRangeUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DCD1C1A7E310002BCC2 /* abilityBombRangeUp.png */; };
 		0AC607891C189B36006EECA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC607881C189B36006EECA7 /* AppDelegate.swift */; };
 		0AC607901C189B36006EECA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC6078E1C189B36006EECA7 /* Main.storyboard */; };
 		0AC607921C189B36006EECA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607911C189B36006EECA7 /* Assets.xcassets */; };
@@ -89,6 +113,30 @@
 		0AA23DAD1C1A3A330002BCC2 /* IconSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconSelectionView.swift; sourceTree = "<group>"; };
 		0AA23DAF1C1A3CD10002BCC2 /* IconSelectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IconSelectionView.xib; sourceTree = "<group>"; };
 		0AA23DB31C1A59630002BCC2 /* BrandGuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrandGuideViewController.swift; sourceTree = "<group>"; };
+		0AA23DB61C1A7E300002BCC2 /* abilityTenacity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilityTenacity.png; path = Images/abilities/abilityTenacity.png; sourceTree = "<group>"; };
+		0AA23DB71C1A7E300002BCC2 /* abilitySwimSpeedUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilitySwimSpeedUp.png; path = Images/abilities/abilitySwimSpeedUp.png; sourceTree = "<group>"; };
+		0AA23DB81C1A7E300002BCC2 /* abilityStealthJump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilityStealthJump.png; path = Images/abilities/abilityStealthJump.png; sourceTree = "<group>"; };
+		0AA23DB91C1A7E310002BCC2 /* abilitySpecialSaver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilitySpecialSaver.png; path = Images/abilities/abilitySpecialSaver.png; sourceTree = "<group>"; };
+		0AA23DBA1C1A7E310002BCC2 /* abilitySpecialDurationUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilitySpecialDurationUp.png; path = Images/abilities/abilitySpecialDurationUp.png; sourceTree = "<group>"; };
+		0AA23DBB1C1A7E310002BCC2 /* abilitySpecialChargeUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilitySpecialChargeUp.png; path = Images/abilities/abilitySpecialChargeUp.png; sourceTree = "<group>"; };
+		0AA23DBC1C1A7E310002BCC2 /* abilityRunSpeedUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilityRunSpeedUp.png; path = Images/abilities/abilityRunSpeedUp.png; sourceTree = "<group>"; };
+		0AA23DBD1C1A7E310002BCC2 /* abilityRecon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilityRecon.png; path = Images/abilities/abilityRecon.png; sourceTree = "<group>"; };
+		0AA23DBE1C1A7E310002BCC2 /* abilityQuickSuperJump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilityQuickSuperJump.png; path = Images/abilities/abilityQuickSuperJump.png; sourceTree = "<group>"; };
+		0AA23DBF1C1A7E310002BCC2 /* abilityQuickRespawn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilityQuickRespawn.png; path = Images/abilities/abilityQuickRespawn.png; sourceTree = "<group>"; };
+		0AA23DC01C1A7E310002BCC2 /* abilityOpeningGambit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilityOpeningGambit.png; path = Images/abilities/abilityOpeningGambit.png; sourceTree = "<group>"; };
+		0AA23DC11C1A7E310002BCC2 /* abilityNinjaSquid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilityNinjaSquid.png; path = Images/abilities/abilityNinjaSquid.png; sourceTree = "<group>"; };
+		0AA23DC21C1A7E310002BCC2 /* abilityLast-DitchEffort.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "abilityLast-DitchEffort.png"; path = "Images/abilities/abilityLast-DitchEffort.png"; sourceTree = "<group>"; };
+		0AA23DC31C1A7E310002BCC2 /* abilityInkSaver(Sub).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "abilityInkSaver(Sub).png"; path = "Images/abilities/abilityInkSaver(Sub).png"; sourceTree = "<group>"; };
+		0AA23DC41C1A7E310002BCC2 /* abilityInkSaver(Main).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "abilityInkSaver(Main).png"; path = "Images/abilities/abilityInkSaver(Main).png"; sourceTree = "<group>"; };
+		0AA23DC51C1A7E310002BCC2 /* abilityInkResistanceUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilityInkResistanceUp.png; path = Images/abilities/abilityInkResistanceUp.png; sourceTree = "<group>"; };
+		0AA23DC61C1A7E310002BCC2 /* abilityInkRecoveryUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilityInkRecoveryUp.png; path = Images/abilities/abilityInkRecoveryUp.png; sourceTree = "<group>"; };
+		0AA23DC71C1A7E310002BCC2 /* abilityHaunt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilityHaunt.png; path = Images/abilities/abilityHaunt.png; sourceTree = "<group>"; };
+		0AA23DC81C1A7E310002BCC2 /* abilityDefenseUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilityDefenseUp.png; path = Images/abilities/abilityDefenseUp.png; sourceTree = "<group>"; };
+		0AA23DC91C1A7E310002BCC2 /* abilityDamageUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilityDamageUp.png; path = Images/abilities/abilityDamageUp.png; sourceTree = "<group>"; };
+		0AA23DCA1C1A7E310002BCC2 /* abilityComeback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilityComeback.png; path = Images/abilities/abilityComeback.png; sourceTree = "<group>"; };
+		0AA23DCB1C1A7E310002BCC2 /* abilityColdBlooded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilityColdBlooded.png; path = Images/abilities/abilityColdBlooded.png; sourceTree = "<group>"; };
+		0AA23DCC1C1A7E310002BCC2 /* abilityBombSniffer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilityBombSniffer.png; path = Images/abilities/abilityBombSniffer.png; sourceTree = "<group>"; };
+		0AA23DCD1C1A7E310002BCC2 /* abilityBombRangeUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilityBombRangeUp.png; path = Images/abilities/abilityBombRangeUp.png; sourceTree = "<group>"; };
 		0AC607851C189B36006EECA7 /* SplatPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplatPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC607881C189B36006EECA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AC6078F1C189B36006EECA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -179,6 +227,37 @@
 				0AC607BC1C189ED0006EECA7 /* mapIcon@3x.png */,
 			);
 			name = "TabBar Icons";
+			sourceTree = "<group>";
+		};
+		0AA23DB51C1A7E1A0002BCC2 /* Abilities */ = {
+			isa = PBXGroup;
+			children = (
+				0AA23DB61C1A7E300002BCC2 /* abilityTenacity.png */,
+				0AA23DB71C1A7E300002BCC2 /* abilitySwimSpeedUp.png */,
+				0AA23DB81C1A7E300002BCC2 /* abilityStealthJump.png */,
+				0AA23DB91C1A7E310002BCC2 /* abilitySpecialSaver.png */,
+				0AA23DBA1C1A7E310002BCC2 /* abilitySpecialDurationUp.png */,
+				0AA23DBB1C1A7E310002BCC2 /* abilitySpecialChargeUp.png */,
+				0AA23DBC1C1A7E310002BCC2 /* abilityRunSpeedUp.png */,
+				0AA23DBD1C1A7E310002BCC2 /* abilityRecon.png */,
+				0AA23DBE1C1A7E310002BCC2 /* abilityQuickSuperJump.png */,
+				0AA23DBF1C1A7E310002BCC2 /* abilityQuickRespawn.png */,
+				0AA23DC01C1A7E310002BCC2 /* abilityOpeningGambit.png */,
+				0AA23DC11C1A7E310002BCC2 /* abilityNinjaSquid.png */,
+				0AA23DC21C1A7E310002BCC2 /* abilityLast-DitchEffort.png */,
+				0AA23DC31C1A7E310002BCC2 /* abilityInkSaver(Sub).png */,
+				0AA23DC41C1A7E310002BCC2 /* abilityInkSaver(Main).png */,
+				0AA23DC51C1A7E310002BCC2 /* abilityInkResistanceUp.png */,
+				0AA23DC61C1A7E310002BCC2 /* abilityInkRecoveryUp.png */,
+				0AA23DC71C1A7E310002BCC2 /* abilityHaunt.png */,
+				0AA23DC81C1A7E310002BCC2 /* abilityDefenseUp.png */,
+				0AA23DC91C1A7E310002BCC2 /* abilityDamageUp.png */,
+				0AA23DCA1C1A7E310002BCC2 /* abilityComeback.png */,
+				0AA23DCB1C1A7E310002BCC2 /* abilityColdBlooded.png */,
+				0AA23DCC1C1A7E310002BCC2 /* abilityBombSniffer.png */,
+				0AA23DCD1C1A7E310002BCC2 /* abilityBombRangeUp.png */,
+			);
+			name = Abilities;
 			sourceTree = "<group>";
 		};
 		0AC6077C1C189B36006EECA7 = {
@@ -274,6 +353,7 @@
 		0AC607DE1C18AAA6006EECA7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0AA23DB51C1A7E1A0002BCC2 /* Abilities */,
 				0AC607C11C18A61E006EECA7 /* Stages */,
 				0AA23DA41C1A26A90002BCC2 /* TabBar Icons */,
 				0AC607F51C191F09006EECA7 /* squid.png */,
@@ -419,31 +499,49 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AC607E61C18E8A1006EECA7 /* rankedBadge@3x.png in Resources */,
+				0AA23DD81C1A7E310002BCC2 /* abilityOpeningGambit.png in Resources */,
 				0AC607BE1C189ED0006EECA7 /* mapIcon@2x.png in Resources */,
+				0AA23DE21C1A7E310002BCC2 /* abilityComeback.png in Resources */,
+				0AA23DE41C1A7E310002BCC2 /* abilityBombSniffer.png in Resources */,
 				0AC607F81C191F09006EECA7 /* squid.png in Resources */,
 				0AC607D91C18A629006EECA7 /* StagePortMackerel.jpg in Resources */,
 				0AC607E51C18E8A1006EECA7 /* rankedBadge@2x.png in Resources */,
 				0AC607D51C18A629006EECA7 /* StageKelpDome.jpg in Resources */,
 				0AC607E01C18ACF7006EECA7 /* Paintball_Beta_4a.otf in Resources */,
+				0AA23DCE1C1A7E310002BCC2 /* abilityTenacity.png in Resources */,
 				0AA23DA11C1A20BB0002BCC2 /* weaponsIcon.png in Resources */,
+				0AA23DD71C1A7E310002BCC2 /* abilityQuickRespawn.png in Resources */,
 				0AC607ED1C191405006EECA7 /* rankedBadgeAlt.png in Resources */,
 				0AA23DA21C1A20BB0002BCC2 /* weaponsIcon@2x.png in Resources */,
 				0AA23DAA1C1A26BB0002BCC2 /* brandsIcon@3x.png in Resources */,
 				0AC607D41C18A629006EECA7 /* StageHammerheadBridge.jpg in Resources */,
+				0AA23DD91C1A7E310002BCC2 /* abilityNinjaSquid.png in Resources */,
 				0AC607D81C18A629006EECA7 /* StageMuseumD'Alfonsino.jpg in Resources */,
 				0AA23DA81C1A26BB0002BCC2 /* brandsIcon.png in Resources */,
+				0AA23DE51C1A7E310002BCC2 /* abilityBombRangeUp.png in Resources */,
+				0AA23DD51C1A7E310002BCC2 /* abilityRecon.png in Resources */,
 				0AC607DC1C18A629006EECA7 /* StageWalleyeWarehouse.jpg in Resources */,
 				0AC607DA1C18A629006EECA7 /* StageSaltsprayRig.jpg in Resources */,
+				0AA23DD41C1A7E310002BCC2 /* abilityRunSpeedUp.png in Resources */,
 				0AC607D21C18A629006EECA7 /* StageBluefinDepot.jpg in Resources */,
 				0AC607DB1C18A629006EECA7 /* StageUrchinUnderpass.jpg in Resources */,
+				0AA23DDF1C1A7E310002BCC2 /* abilityHaunt.png in Resources */,
 				0AC607F11C191405006EECA7 /* turfWarBadge@2x.png in Resources */,
+				0AA23DD01C1A7E310002BCC2 /* abilityStealthJump.png in Resources */,
 				0AC607F91C191F09006EECA7 /* squid@2x.png in Resources */,
 				0AC607BF1C189ED0006EECA7 /* mapIcon@3x.png in Resources */,
+				0AA23DE31C1A7E310002BCC2 /* abilityColdBlooded.png in Resources */,
 				0AA23DB01C1A3CD10002BCC2 /* IconSelectionView.xib in Resources */,
+				0AA23DE11C1A7E310002BCC2 /* abilityDamageUp.png in Resources */,
 				0AC607DD1C18A629006EECA7 /* StageCampTriggerfish.jpg in Resources */,
 				0AC607D11C18A629006EECA7 /* StageBlackbellySkatepark.jpg in Resources */,
+				0AA23DDB1C1A7E310002BCC2 /* abilityInkSaver(Sub).png in Resources */,
 				0AC607951C189B36006EECA7 /* LaunchScreen.storyboard in Resources */,
 				0AC607BD1C189ED0006EECA7 /* mapIcon.png in Resources */,
+				0AA23DD11C1A7E310002BCC2 /* abilitySpecialSaver.png in Resources */,
+				0AA23DE01C1A7E310002BCC2 /* abilityDefenseUp.png in Resources */,
+				0AA23DDE1C1A7E310002BCC2 /* abilityInkRecoveryUp.png in Resources */,
+				0AA23DDD1C1A7E310002BCC2 /* abilityInkResistanceUp.png in Resources */,
 				0AC607D31C18A629006EECA7 /* StageFlounderHeights.jpg in Resources */,
 				0AA23DA31C1A20BB0002BCC2 /* weaponsIcon@3x.png in Resources */,
 				0AC607D71C18A629006EECA7 /* StageMorayTowers.jpg in Resources */,
@@ -452,13 +550,19 @@
 				0AC607EE1C191405006EECA7 /* rankedBadgeAlt@2x.png in Resources */,
 				0AC607D01C18A629006EECA7 /* StageArowanaMall.jpg in Resources */,
 				0AC607EF1C191405006EECA7 /* rankedBadgeAlt@3x.png in Resources */,
+				0AA23DDC1C1A7E310002BCC2 /* abilityInkSaver(Main).png in Resources */,
 				0AC607F41C19174B006EECA7 /* backgroundTile.jpg in Resources */,
+				0AA23DDA1C1A7E310002BCC2 /* abilityLast-DitchEffort.png in Resources */,
 				0AC607921C189B36006EECA7 /* Assets.xcassets in Resources */,
 				0AC607F21C191405006EECA7 /* turfWarBadge@3x.png in Resources */,
+				0AA23DD31C1A7E310002BCC2 /* abilitySpecialChargeUp.png in Resources */,
 				0AC607E41C18E8A1006EECA7 /* rankedBadge.png in Resources */,
+				0AA23DD21C1A7E310002BCC2 /* abilitySpecialDurationUp.png in Resources */,
 				0AC607FA1C191F09006EECA7 /* squid@3x.png in Resources */,
 				0AC607901C189B36006EECA7 /* Main.storyboard in Resources */,
 				0AA23DA91C1A26BB0002BCC2 /* brandsIcon@2x.png in Resources */,
+				0AA23DD61C1A7E310002BCC2 /* abilityQuickSuperJump.png in Resources */,
+				0AA23DCF1C1A7E310002BCC2 /* abilitySwimSpeedUp.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
