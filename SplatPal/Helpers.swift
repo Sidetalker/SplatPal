@@ -12,6 +12,22 @@ import SwiftyJSON
 
 let splatoonAPIString = "https://splatoon.ink/schedule.json"
 
+class PlaceholderView: UIView {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        configure()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        configure()
+    }
+    
+    func configure() {
+        self.backgroundColor = UIColor.clearColor()
+    }
+}
+
 extension String {
     func replace(string: String, replacement: String) -> String {
         return self.stringByReplacingOccurrencesOfString(string, withString: replacement, options: NSStringCompareOptions.LiteralSearch, range: nil)
@@ -19,6 +35,23 @@ extension String {
     
     func removeWhitespace() -> String {
         return self.replace(" ", replacement: "")
+    }
+}
+
+extension Array {
+    // Returns a subset of the array based on the boolean array passed
+    func booleanFilter<T : Equatable>(boolArr: [Bool]) -> [T]? {
+        if self.count != boolArr.count {
+            log.warning("Array.booleanFilter provided a boolArr of incorrect size - returning nil")
+            return nil
+        }
+        
+        var returnArr = [T]()
+        for i in 0...self.count - 1 {
+            if boolArr[i] { returnArr.append(self[i] as! T) }
+        }
+        
+        return returnArr
     }
 }
 
