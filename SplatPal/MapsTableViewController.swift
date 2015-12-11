@@ -36,6 +36,8 @@ class MapsTableViewController: UITableViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
+        if viewLoaded { return }
+        
         var rows = [NSIndexPath]()
         for section in 0...2 {
             for row in 0...5 { rows.append(NSIndexPath(forRow: row, inSection: section)) }}

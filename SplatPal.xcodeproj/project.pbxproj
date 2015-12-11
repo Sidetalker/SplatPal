@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AA23DA11C1A20BB0002BCC2 /* weaponsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23D9E1C1A20BB0002BCC2 /* weaponsIcon.png */; };
+		0AA23DA21C1A20BB0002BCC2 /* weaponsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23D9F1C1A20BB0002BCC2 /* weaponsIcon@2x.png */; };
+		0AA23DA31C1A20BB0002BCC2 /* weaponsIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DA01C1A20BB0002BCC2 /* weaponsIcon@3x.png */; };
+		0AA23DA81C1A26BB0002BCC2 /* brandsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DA51C1A26BB0002BCC2 /* brandsIcon.png */; };
+		0AA23DA91C1A26BB0002BCC2 /* brandsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DA61C1A26BB0002BCC2 /* brandsIcon@2x.png */; };
+		0AA23DAA1C1A26BB0002BCC2 /* brandsIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DA71C1A26BB0002BCC2 /* brandsIcon@3x.png */; };
+		0AA23DAC1C1A39D50002BCC2 /* SplatAppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA23DAB1C1A39D50002BCC2 /* SplatAppStyle.swift */; };
+		0AA23DAE1C1A3A330002BCC2 /* IconSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA23DAD1C1A3A330002BCC2 /* IconSelectionView.swift */; };
+		0AA23DB01C1A3CD10002BCC2 /* IconSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DAF1C1A3CD10002BCC2 /* IconSelectionView.xib */; };
 		0AC607891C189B36006EECA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC607881C189B36006EECA7 /* AppDelegate.swift */; };
 		0AC607901C189B36006EECA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC6078E1C189B36006EECA7 /* Main.storyboard */; };
 		0AC607921C189B36006EECA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607911C189B36006EECA7 /* Assets.xcassets */; };
@@ -69,6 +78,15 @@
 
 /* Begin PBXFileReference section */
 		04573E61435B391F9524E97B /* Pods-SplatPal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatPal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplatPal/Pods-SplatPal.debug.xcconfig"; sourceTree = "<group>"; };
+		0AA23D9E1C1A20BB0002BCC2 /* weaponsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponsIcon.png; path = Images/weaponsIcon.png; sourceTree = "<group>"; };
+		0AA23D9F1C1A20BB0002BCC2 /* weaponsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weaponsIcon@2x.png"; path = "Images/weaponsIcon@2x.png"; sourceTree = "<group>"; };
+		0AA23DA01C1A20BB0002BCC2 /* weaponsIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weaponsIcon@3x.png"; path = "Images/weaponsIcon@3x.png"; sourceTree = "<group>"; };
+		0AA23DA51C1A26BB0002BCC2 /* brandsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brandsIcon.png; path = Images/brandsIcon.png; sourceTree = "<group>"; };
+		0AA23DA61C1A26BB0002BCC2 /* brandsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "brandsIcon@2x.png"; path = "Images/brandsIcon@2x.png"; sourceTree = "<group>"; };
+		0AA23DA71C1A26BB0002BCC2 /* brandsIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "brandsIcon@3x.png"; path = "Images/brandsIcon@3x.png"; sourceTree = "<group>"; };
+		0AA23DAB1C1A39D50002BCC2 /* SplatAppStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplatAppStyle.swift; sourceTree = "<group>"; };
+		0AA23DAD1C1A3A330002BCC2 /* IconSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconSelectionView.swift; sourceTree = "<group>"; };
+		0AA23DAF1C1A3CD10002BCC2 /* IconSelectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IconSelectionView.xib; sourceTree = "<group>"; };
 		0AC607851C189B36006EECA7 /* SplatPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplatPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC607881C189B36006EECA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AC6078F1C189B36006EECA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -145,6 +163,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AA23DA41C1A26A90002BCC2 /* TabBar Icons */ = {
+			isa = PBXGroup;
+			children = (
+				0AA23DA51C1A26BB0002BCC2 /* brandsIcon.png */,
+				0AA23DA61C1A26BB0002BCC2 /* brandsIcon@2x.png */,
+				0AA23DA71C1A26BB0002BCC2 /* brandsIcon@3x.png */,
+				0AA23D9E1C1A20BB0002BCC2 /* weaponsIcon.png */,
+				0AA23D9F1C1A20BB0002BCC2 /* weaponsIcon@2x.png */,
+				0AA23DA01C1A20BB0002BCC2 /* weaponsIcon@3x.png */,
+				0AC607BA1C189ED0006EECA7 /* mapIcon.png */,
+				0AC607BB1C189ED0006EECA7 /* mapIcon@2x.png */,
+				0AC607BC1C189ED0006EECA7 /* mapIcon@3x.png */,
+			);
+			name = "TabBar Icons";
+			sourceTree = "<group>";
+		};
 		0AC6077C1C189B36006EECA7 = {
 			isa = PBXGroup;
 			children = (
@@ -171,8 +205,11 @@
 			isa = PBXGroup;
 			children = (
 				0AC607C01C189ED4006EECA7 /* Resources */,
+				0AA23DAB1C1A39D50002BCC2 /* SplatAppStyle.swift */,
 				0AC607881C189B36006EECA7 /* AppDelegate.swift */,
 				0AC607B81C189BD8006EECA7 /* MapsTableViewController.swift */,
+				0AA23DAD1C1A3A330002BCC2 /* IconSelectionView.swift */,
+				0AA23DAF1C1A3CD10002BCC2 /* IconSelectionView.xib */,
 				0AC607FB1C192211006EECA7 /* LoadingViewController.swift */,
 				0AC607FD1C194ACE006EECA7 /* Helpers.swift */,
 				0AC6078E1C189B36006EECA7 /* Main.storyboard */,
@@ -234,6 +271,8 @@
 		0AC607DE1C18AAA6006EECA7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0AC607C11C18A61E006EECA7 /* Stages */,
+				0AA23DA41C1A26A90002BCC2 /* TabBar Icons */,
 				0AC607F51C191F09006EECA7 /* squid.png */,
 				0AC607F61C191F09006EECA7 /* squid@2x.png */,
 				0AC607F71C191F09006EECA7 /* squid@3x.png */,
@@ -247,10 +286,6 @@
 				0AC607E11C18E8A1006EECA7 /* rankedBadge.png */,
 				0AC607E21C18E8A1006EECA7 /* rankedBadge@2x.png */,
 				0AC607E31C18E8A1006EECA7 /* rankedBadge@3x.png */,
-				0AC607BA1C189ED0006EECA7 /* mapIcon.png */,
-				0AC607BB1C189ED0006EECA7 /* mapIcon@2x.png */,
-				0AC607BC1C189ED0006EECA7 /* mapIcon@3x.png */,
-				0AC607C11C18A61E006EECA7 /* Stages */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -387,9 +422,13 @@
 				0AC607E51C18E8A1006EECA7 /* rankedBadge@2x.png in Resources */,
 				0AC607D51C18A629006EECA7 /* StageKelpDome.jpg in Resources */,
 				0AC607E01C18ACF7006EECA7 /* Paintball_Beta_4a.otf in Resources */,
+				0AA23DA11C1A20BB0002BCC2 /* weaponsIcon.png in Resources */,
 				0AC607ED1C191405006EECA7 /* rankedBadgeAlt.png in Resources */,
+				0AA23DA21C1A20BB0002BCC2 /* weaponsIcon@2x.png in Resources */,
+				0AA23DAA1C1A26BB0002BCC2 /* brandsIcon@3x.png in Resources */,
 				0AC607D41C18A629006EECA7 /* StageHammerheadBridge.jpg in Resources */,
 				0AC607D81C18A629006EECA7 /* StageMuseumD'Alfonsino.jpg in Resources */,
+				0AA23DA81C1A26BB0002BCC2 /* brandsIcon.png in Resources */,
 				0AC607DC1C18A629006EECA7 /* StageWalleyeWarehouse.jpg in Resources */,
 				0AC607DA1C18A629006EECA7 /* StageSaltsprayRig.jpg in Resources */,
 				0AC607D21C18A629006EECA7 /* StageBluefinDepot.jpg in Resources */,
@@ -397,11 +436,13 @@
 				0AC607F11C191405006EECA7 /* turfWarBadge@2x.png in Resources */,
 				0AC607F91C191F09006EECA7 /* squid@2x.png in Resources */,
 				0AC607BF1C189ED0006EECA7 /* mapIcon@3x.png in Resources */,
+				0AA23DB01C1A3CD10002BCC2 /* IconSelectionView.xib in Resources */,
 				0AC607DD1C18A629006EECA7 /* StageCampTriggerfish.jpg in Resources */,
 				0AC607D11C18A629006EECA7 /* StageBlackbellySkatepark.jpg in Resources */,
 				0AC607951C189B36006EECA7 /* LaunchScreen.storyboard in Resources */,
 				0AC607BD1C189ED0006EECA7 /* mapIcon.png in Resources */,
 				0AC607D31C18A629006EECA7 /* StageFlounderHeights.jpg in Resources */,
+				0AA23DA31C1A20BB0002BCC2 /* weaponsIcon@3x.png in Resources */,
 				0AC607D71C18A629006EECA7 /* StageMorayTowers.jpg in Resources */,
 				0AC607D61C18A629006EECA7 /* StageMahi-MahiResort.jpg in Resources */,
 				0AC607F01C191405006EECA7 /* turfWarBadge.png in Resources */,
@@ -414,6 +455,7 @@
 				0AC607E41C18E8A1006EECA7 /* rankedBadge.png in Resources */,
 				0AC607FA1C191F09006EECA7 /* squid@3x.png in Resources */,
 				0AC607901C189B36006EECA7 /* Main.storyboard in Resources */,
+				0AA23DA91C1A26BB0002BCC2 /* brandsIcon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,9 +529,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AC607B91C189BD8006EECA7 /* MapsTableViewController.swift in Sources */,
+				0AA23DAE1C1A3A330002BCC2 /* IconSelectionView.swift in Sources */,
 				0AC607891C189B36006EECA7 /* AppDelegate.swift in Sources */,
 				0AC607FC1C192211006EECA7 /* LoadingViewController.swift in Sources */,
 				0AC607FE1C194ACE006EECA7 /* Helpers.swift in Sources */,
+				0AA23DAC1C1A39D50002BCC2 /* SplatAppStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
