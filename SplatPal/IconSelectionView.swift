@@ -8,13 +8,16 @@
 
 import UIKit
 
-let brands = ["amiibo", "Cuttlegear", "Famitsu", "Firefin", "Forge", "Inkline", "Krak-On", "Rockenberg", "Skalop", "Splash Mob", "SquidForce", "Takoroka", "Tentatek", "The SQUID GIRL", "Zekko", "Zink"]
-let icons = ["Bomb Range Up", "Bomb Sniffer", "Cold Blooded", "Comeback", "Damage Up", "Defense Up", "Haunt", "InkRecoveryUp", "Ink Resistance Up", "Ink Saver (Main)", "Ink Saver (Sub)", "Last-Ditch Effort", "Ninja Squid", "Opening Gambit", "Quick Respawn", "Quick Super Jump", "Recon", "Run Speed Up", "Special Charge Up", "Special Duration Up", "Special Saver", "Stealth Jump", "Swim Speed Up", "Tenacity"]
-let iconsRestricted = [icons[4], icons[5], icons[7], icons[9], icons[10], icons[14], icons[15], icons[17], icons[18], icons[19], icons[20], icons[22]]
+let brands = ["amiibo", "Cuttlegear", "Famitsu", "Firefin", "Forge", "KOG", "Inkline", "Krak-On", "Rockenberg", "Skalop", "Splash Mob", "SquidForce", "Takoroka", "Tentatek", "The SQUID GIRL", "Zekko", "Zink"]
+let abilities = ["Bomb Range Up", "Bomb Sniffer", "Cold Blooded", "Comeback", "Damage Up", "Defence Up", "Haunt", "Ink Recovery Up", "Ink Resistance Up", "Ink Saver (Main)", "Ink Saver (Sub)", "Last-Ditch Effort", "Ninja Squid", "Opening Gambit", "Quick Respawn", "Quick Super Jump", "Recon", "Run Speed Up", "Special Charge Up", "Special Duration Up", "Special Saver", "Stealth Jump", "Swim Speed Up", "Tenacity"]
+let abilitiesRestricted = [abilities[4], abilities[5], abilities[7], abilities[9], abilities[10], abilities[14], abilities[15], abilities[17], abilities[18], abilities[19], abilities[20], abilities[22]]
+
+// MARK: - IconSelectionView
 
 protocol IconSelectionViewDelegate {
-    func iconSelectionViewClear(view: IconSelectionView, sender: AnyObject)
     func iconSelectionViewClose(view: IconSelectionView, sender: AnyObject)
+    func iconSelectionViewBrandsUpdated(view: IconSelectionView, brands: [String])
+    func iconSelectionViewAbilitiesUpdated(view: IconSelectionView, abilities: [String])
 }
 
 @IBDesignable class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -80,9 +83,16 @@ protocol IconSelectionViewDelegate {
     }
     
     @IBAction func clearTapped(sender: AnyObject) {
-        delegate?.iconSelectionViewClear(self, sender: sender)
-        brandsSelected = brandsSelected.map { _ in false }
-        abilitiesSelected = abilitiesSelected.map { _ in false }
+        switch viewType {
+        case "brands":
+            brandsSelected = brandsSelected.map { _ in false }
+            delegate?.iconSelectionViewBrandsUpdated(self, brands: [String]())
+        case "abilities":
+            abilitiesSelected = abilitiesSelected.map { _ in false }
+            delegate?.iconSelectionViewAbilitiesUpdated(self, abilities: [String]())
+        default: break
+        }
+        
         collectionView.reloadData()
     }
     
@@ -131,14 +141,20 @@ protocol IconSelectionViewDelegate {
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         switch viewType {
-        case "brands": brandsSelected[indexPath.row] = !brandsSelected[indexPath.row]
-        case "abilities": abilitiesSelected[indexPath.row] = !abilitiesSelected[indexPath.row]
+        case "brands":
+            brandsSelected[indexPath.row] = !brandsSelected[indexPath.row]
+            delegate?.iconSelectionViewBrandsUpdated(self, brands: brands.booleanFilter(brandsSelected)!)
+        case "abilities":
+            abilitiesSelected[indexPath.row] = !abilitiesSelected[indexPath.row]
+            delegate?.iconSelectionViewAbilitiesUpdated(self, abilities: abilities.booleanFilter(abilitiesSelected)!)
         default: break
         }
         
         collectionView.reloadData()
     }
 }
+
+// MARK: - AbilityCell
 
 class AbilityCell: UICollectionViewCell {
     var imageView: UIImageView!
@@ -163,9 +179,11 @@ class AbilityCell: UICollectionViewCell {
     func update() {
         let image: UIImage = pressed ? SplatAppStyle.imageOfAbilityContainerSelected: SplatAppStyle.imageOfAbilityContainerUnselected
         backgroundColor = UIColor(patternImage: image)
-        imageView.image = UIImage(named: "ability\(iconsRestricted[index].removeWhitespace()).png")
+        imageView.image = UIImage(named: "ability\(abilitiesRestricted[index].removeWhitespace()).png")
     }
 }
+
+// MARK: - BrandCell
 
 class BrandCell: UICollectionViewCell {
     let shadowA = SplatAppStyle.shadowSelected
@@ -191,6 +209,8 @@ class BrandCell: UICollectionViewCell {
             SplatAppStyle.drawBrandForge(frame: rect, brandFill: pressed ? fillA : fillB, shadow: pressed ? shadowA : shadowB)
         case "Inkline":
             SplatAppStyle.drawBrandInkline(frame: rect, brandFill: pressed ? fillA : fillB, shadow: pressed ? shadowA : shadowB)
+        case "KOG":
+            SplatAppStyle.drawBrandKOG(frame: rect, brandFill: pressed ? fillA : fillB, shadow: pressed ? shadowA : shadowB)
         case "Krak-On":
             SplatAppStyle.drawBrandKrakOn(frame: rect, brandFill: pressed ? fillA : fillB, shadow: pressed ? shadowA : shadowB)
         case "Rockenberg":

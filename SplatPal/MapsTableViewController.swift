@@ -95,7 +95,6 @@ class MapsTableViewController: UITableViewController {
         return cell
     }
     
-    
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         guard cell.reuseIdentifier == "cellMap" else { return }
         
