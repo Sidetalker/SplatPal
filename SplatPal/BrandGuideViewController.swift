@@ -11,27 +11,7 @@ import SwiftyJSON
 
 let tabBarHeight: CGFloat = 49
 
-//let brandData = JSON([
-//    "amiibo" : ["name" : "amiibo", "abilityUp" : "None", "abilityDown" : "None"],
-//    "Cuttlegear" : ["name" : "Cuttlegear", "abilityUp" : "None", "abilityDown" : "None"],
-//    "Famitsu" : ["name" : "Famitsu", "abilityUp" : "None", "abilityDown" : "None"],
-//    "Firefin" : ["name" : "Firefin", "abilityUp" : "Ink Saver (Sub)", "abilityDown" : "Ink Recovery Up"],
-//    "Forge" : ["name" : "Forge", "abilityUp" : "Special Duration Up", "abilityDown" : "Ink Saver (Sub)"],
-//    "Inkline" : ["name" : "Inkline", "abilityUp" : "Defence Up", "abilityDown" : "Damage Up"],
-//    "KOG" : ["name" : "KOG", "abilityUp" : "None", "abilityDown" : "None"],
-//    "Krak-On" : ["name" : "Krak-On", "abilityUp" : "Swim Speed Up", "abilityDown" : "Defence Up"],
-//    "Rockenberg" : ["name" : "Rockenberg", "abilityUp" : "Run Speed Up", "abilityDown" : "Swim Speed Up"],
-//    "Skalop" : ["name" : "Skalop", "abilityUp" : "Quick Respawn", "abilityDown" : "Special Saver"],
-//    "Splash Mob" : ["name" : "Splash Mob", "abilityUp" : "Ink Saver (Main)", "abilityDown" : "Run Speed Up"],
-//    "SquidForce" : ["name" : "SquidForce", "abilityUp" : "Damage Up", "abilityDown" : "Ink Saver (Main)"],
-//    "Takoroka" : ["name" : "Takoroka", "abilityUp" : "Special Charge Up", "abilityDown" : "Special Duration Up"],
-//    "Tentatek" : ["name" : "Tentatek", "abilityUp" : "Ink Recovery Up", "abilityDown" : "Quick Super Jump"],
-//    "The SQUID GIRL" : ["name" : "The SQUID GIRL", "abilityUp" : "None", "abilityDown" : "None"],
-//    "Zekko" : ["name" : "Zekko", "abilityUp" : "Special Saver", "abilityDown" : "Special Charge Up"],
-//    "Zink" : ["name" : "Zink", "abilityUp" : "Quick Super Jump", "abilityDown" : "Quick Respawn"]
-//])
-
-let brandData = JSON([
+let brandData: [JSON] = [
     ["brand" : "amiibo", "abilityUp" : "None", "abilityDown" : "None"],
     ["brand" : "Cuttlegear", "abilityUp" : "None", "abilityDown" : "None"],
     ["brand" : "Famitsu", "abilityUp" : "None", "abilityDown" : "None"],
@@ -49,7 +29,9 @@ let brandData = JSON([
     ["brand" : "The SQUID GIRL", "abilityUp" : "None", "abilityDown" : "None"],
     ["brand" : "Zekko", "abilityUp" : "Special Saver", "abilityDown" : "Special Charge Up"],
     ["brand" : "Zink", "abilityUp" : "Quick Super Jump", "abilityDown" : "Quick Respawn"],
-])
+]
+
+// MARK: - BrandView
 
 class BrandView: UIView {
     var brandName = ""
@@ -110,7 +92,10 @@ class BrandView: UIView {
     }
 }
 
+// MARK: - BrandTableViewController
+
 class BrandTableViewController: UITableViewController {
+    var brandDisplayData = [JSON]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -123,7 +108,7 @@ class BrandTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 17
+        return brandDisplayData.count
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -136,21 +121,25 @@ class BrandTableViewController: UITableViewController {
         let abilityUpImage = cell.viewWithTag(2) as! UIImageView
         let abilityDownImage = cell.viewWithTag(3) as! UIImageView
         
-        brandIcon.brandName = brandData[indexPath.row]["brand"].stringValue
+        brandIcon.brandName = brandDisplayData[indexPath.row]["brand"].stringValue
         brandIcon.setNeedsDisplay()
-        abilityUpImage.image = UIImage(named: "ability\(brandData[indexPath.row]["abilityUp"].stringValue.removeWhitespace()).png")
-        abilityDownImage.image = UIImage(named: "ability\(brandData[indexPath.row]["abilityDown"].stringValue.removeWhitespace()).png")
+        abilityUpImage.image = UIImage(named: "ability\(brandDisplayData[indexPath.row]["abilityUp"].stringValue.removeWhitespace()).png")
+        abilityDownImage.image = UIImage(named: "ability\(brandDisplayData[indexPath.row]["abilityDown"].stringValue.removeWhitespace()).png")
         
         return cell
     }
 }
 
+// MARK: - BrandGuideViewController
+
 class BrandGuideViewController: UIViewController, IconSelectionViewDelegate {
     @IBOutlet weak var iconView: IconSelectionView!
     @IBOutlet weak var iconViewHeight: NSLayoutConstraint!
     @IBOutlet weak var iconViewXLoc: NSLayoutConstraint!
-    
     var iconViewFullHeight: CGFloat = 0
+    
+    var brandTable: BrandTableViewController?
+    var filterType = "brands"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -175,6 +164,14 @@ class BrandGuideViewController: UIViewController, IconSelectionViewDelegate {
         return true
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "segueBrandTable" {
+            brandTable = segue.destinationViewController as? BrandTableViewController
+            brandTable?.brandDisplayData = brandData
+            brandTable?.tableView.reloadData()
+        }
+    }
+    
     func getIconViewHeight() -> CGFloat {
         return iconView.collectionView.collectionViewLayout.collectionViewContentSize().height + 50
     }
@@ -182,7 +179,7 @@ class BrandGuideViewController: UIViewController, IconSelectionViewDelegate {
     func toggleIconView(show: Bool) {
         iconViewXLoc.constant = show ? 0 : -iconViewHeight.constant - tabBarHeight
         
-        UIView.animateWithDuration(0.5, animations: {
+        UIView.animateWithDuration(0.3, animations: {
             self.view.layoutIfNeeded()
         })
     }
@@ -205,11 +202,37 @@ class BrandGuideViewController: UIViewController, IconSelectionViewDelegate {
         toggleIconView(false)
     }
     
-    func iconSelectionViewBrandsUpdated(view: IconSelectionView, brands: [String]) {
+    func iconSelectionViewBrandsUpdated(view: IconSelectionView, selectedBrands: [String]) {
+        iconView.abilitiesSelected = iconView.abilitiesSelected.map() { _ in false }
         
+        if selectedBrands.count == 0 {
+            brandTable?.brandDisplayData = brandData
+        } else {
+            var updatedBrandData = [JSON]()
+            for data in brandData {
+                if selectedBrands.contains(data["brand"].stringValue) { updatedBrandData.append(data) }}
+            
+            brandTable?.brandDisplayData = updatedBrandData
+        }
+        
+        brandTable?.tableView.reloadData()
     }
     
-    func iconSelectionViewAbilitiesUpdated(view: IconSelectionView, abilities: [String]) {
+    func iconSelectionViewAbilitiesUpdated(view: IconSelectionView, selectedAbilities: [String]) {
+        iconView.brandsSelected = iconView.brandsSelected.map() { _ in false }
         
+        if selectedAbilities.count == 0 {
+            brandTable?.brandDisplayData = brandData
+        } else {
+            var updatedAbilityData = [JSON]()
+            for data in brandData {
+                if selectedAbilities.contains(data["abilityUp"].stringValue) ||
+                    selectedAbilities.contains(data["abilityDown"].stringValue)
+                { updatedAbilityData.append(data) }}
+            
+            brandTable?.brandDisplayData = updatedAbilityData
+        }
+        
+        brandTable?.tableView.reloadData()
     }
 }

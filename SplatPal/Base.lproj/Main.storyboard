@@ -222,6 +222,13 @@
                                     <segue destination="VpA-QW-LNt" kind="embed" identifier="segueBrandTable" id="nv4-o1-26T"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ChG-wb-rIh">
+                                <rect key="frame" x="0.0" y="505" width="600" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="GsE-Kn-cNk"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zhx-Er-VvO" customClass="IconSelectionView" customModule="SplatPal" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="550" width="600" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -232,8 +239,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="NWb-Cp-fOA" firstAttribute="top" secondItem="ChG-wb-rIh" secondAttribute="bottom" id="Ap4-WD-YnI"/>
                             <constraint firstItem="ugl-9A-fo3" firstAttribute="top" secondItem="6U5-2M-nem" secondAttribute="bottom" id="FK1-Xm-adV"/>
+                            <constraint firstItem="ChG-wb-rIh" firstAttribute="trailing" secondItem="6U5-2M-nem" secondAttribute="trailing" id="GO3-lc-PdE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ugl-9A-fo3" secondAttribute="trailing" constant="-20" id="OIM-q5-SYV"/>
+                            <constraint firstItem="ChG-wb-rIh" firstAttribute="leading" secondItem="6U5-2M-nem" secondAttribute="leading" id="OSX-U3-Qat"/>
                             <constraint firstItem="lVq-ps-AV9" firstAttribute="top" secondItem="NWb-Cp-fOA" secondAttribute="bottom" id="PWN-a9-HGV"/>
                             <constraint firstItem="6U5-2M-nem" firstAttribute="top" secondItem="p9f-99-aCv" secondAttribute="bottom" id="QKd-Ph-BQE"/>
                             <constraint firstItem="NWb-Cp-fOA" firstAttribute="leading" secondItem="Bx9-gK-8MU" secondAttribute="leadingMargin" constant="-20" id="QZc-GP-Ncy"/>
@@ -434,6 +444,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-268" y="-424"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GvG-cG-Ier">
+            <objects>
+                <viewController id="xvr-yH-U4u" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sw0-GH-Q8t"/>
+                        <viewControllerLayoutGuide type="bottom" id="wej-0a-w1d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lXA-ee-oIx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lm6-we-SKy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-268" y="316"/>
         </scene>
         <!--Loading View Controller-->
         <scene sceneID="CEi-5N-sOG">

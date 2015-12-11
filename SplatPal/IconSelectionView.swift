@@ -9,15 +9,15 @@
 import UIKit
 
 let brands = ["amiibo", "Cuttlegear", "Famitsu", "Firefin", "Forge", "KOG", "Inkline", "Krak-On", "Rockenberg", "Skalop", "Splash Mob", "SquidForce", "Takoroka", "Tentatek", "The SQUID GIRL", "Zekko", "Zink"]
-let abilities = ["Bomb Range Up", "Bomb Sniffer", "Cold Blooded", "Comeback", "Damage Up", "Defence Up", "Haunt", "Ink Recovery Up", "Ink Resistance Up", "Ink Saver (Main)", "Ink Saver (Sub)", "Last-Ditch Effort", "Ninja Squid", "Opening Gambit", "Quick Respawn", "Quick Super Jump", "Recon", "Run Speed Up", "Special Charge Up", "Special Duration Up", "Special Saver", "Stealth Jump", "Swim Speed Up", "Tenacity"]
-let abilitiesRestricted = [abilities[4], abilities[5], abilities[7], abilities[9], abilities[10], abilities[14], abilities[15], abilities[17], abilities[18], abilities[19], abilities[20], abilities[22]]
+let abilities = ["Bomb Range Up", "Bomb Sniffer", "Cold Blooded", "Comeback", "Damage Up", "Defence Up", "Haunt", "Ink Recovery Up", "Ink Resistance Up", "Ink Saver (Main)", "Ink Saver (Sub)", "Last-Ditch Effort", "Ninja Squid", "Opening Gambit", "Quick Respawn", "Quick Super Jump", "Recon", "Run Speed Up", "Special Charge Up", "Special Duration Up", "Special Saver", "Stealth Jump", "Swim Speed Up", "Tenacity", "None"]
+let abilitiesRestricted = [abilities[4], abilities[5], abilities[7], abilities[9], abilities[10], abilities[14], abilities[15], abilities[17], abilities[18], abilities[19], abilities[20], abilities[22], abilities[24]]
 
 // MARK: - IconSelectionView
 
 protocol IconSelectionViewDelegate {
     func iconSelectionViewClose(view: IconSelectionView, sender: AnyObject)
-    func iconSelectionViewBrandsUpdated(view: IconSelectionView, brands: [String])
-    func iconSelectionViewAbilitiesUpdated(view: IconSelectionView, abilities: [String])
+    func iconSelectionViewBrandsUpdated(view: IconSelectionView, selectedBrands: [String])
+    func iconSelectionViewAbilitiesUpdated(view: IconSelectionView, selectedAbilities: [String])
 }
 
 @IBDesignable class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -59,8 +59,8 @@ protocol IconSelectionViewDelegate {
         collectionView.registerClass(AbilityCell.self, forCellWithReuseIdentifier: "abilityCell")
         collectionView.backgroundColor = UIColor.clearColor()
         
-        brandsSelected = Array(count: 16, repeatedValue: false)
-        abilitiesSelected = Array(count: 12, repeatedValue: false)
+        brandsSelected = Array(count: brands.count, repeatedValue: false)
+        abilitiesSelected = Array(count: abilitiesRestricted.count, repeatedValue: false)
     }
     
     func switchTypes(newType: String) {
@@ -86,10 +86,10 @@ protocol IconSelectionViewDelegate {
         switch viewType {
         case "brands":
             brandsSelected = brandsSelected.map { _ in false }
-            delegate?.iconSelectionViewBrandsUpdated(self, brands: [String]())
+            delegate?.iconSelectionViewBrandsUpdated(self, selectedBrands: [String]())
         case "abilities":
             abilitiesSelected = abilitiesSelected.map { _ in false }
-            delegate?.iconSelectionViewAbilitiesUpdated(self, abilities: [String]())
+            delegate?.iconSelectionViewAbilitiesUpdated(self, selectedAbilities: [String]())
         default: break
         }
         
@@ -109,9 +109,9 @@ protocol IconSelectionViewDelegate {
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch viewType {
         case "brands":
-            return 16
+            return brands.count
         case "abilities":
-            return 10
+            return abilitiesRestricted.count
         default:
             return 0
         }
@@ -143,10 +143,10 @@ protocol IconSelectionViewDelegate {
         switch viewType {
         case "brands":
             brandsSelected[indexPath.row] = !brandsSelected[indexPath.row]
-            delegate?.iconSelectionViewBrandsUpdated(self, brands: brands.booleanFilter(brandsSelected)!)
+            delegate?.iconSelectionViewBrandsUpdated(self, selectedBrands: brands.booleanFilter(brandsSelected)!)
         case "abilities":
             abilitiesSelected[indexPath.row] = !abilitiesSelected[indexPath.row]
-            delegate?.iconSelectionViewAbilitiesUpdated(self, abilities: abilities.booleanFilter(abilitiesSelected)!)
+            delegate?.iconSelectionViewAbilitiesUpdated(self, selectedAbilities: abilitiesRestricted.booleanFilter(abilitiesSelected)!)
         default: break
         }
         
