@@ -45,6 +45,8 @@
 		0AA23E381C1B6E280002BCC2 /* abilityStealthJump.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23E1F1C1B6E280002BCC2 /* abilityStealthJump.png */; };
 		0AA23E391C1B6E280002BCC2 /* abilitySwimSpeedUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23E201C1B6E280002BCC2 /* abilitySwimSpeedUp.png */; };
 		0AA23E3A1C1B6E280002BCC2 /* abilityTenacity.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23E211C1B6E280002BCC2 /* abilityTenacity.png */; };
+		0AA23E421C1B78450002BCC2 /* BetaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA23E411C1B78450002BCC2 /* BetaViewController.swift */; };
+		0AA23E441C1B7A760002BCC2 /* changelog.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23E431C1B7A760002BCC2 /* changelog.txt */; };
 		0AC607891C189B36006EECA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC607881C189B36006EECA7 /* AppDelegate.swift */; };
 		0AC607901C189B36006EECA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC6078E1C189B36006EECA7 /* Main.storyboard */; };
 		0AC607921C189B36006EECA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607911C189B36006EECA7 /* Assets.xcassets */; };
@@ -146,6 +148,8 @@
 		0AA23E201C1B6E280002BCC2 /* abilitySwimSpeedUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilitySwimSpeedUp.png; path = Images/abilities/abilitySwimSpeedUp.png; sourceTree = "<group>"; };
 		0AA23E211C1B6E280002BCC2 /* abilityTenacity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abilityTenacity.png; path = Images/abilities/abilityTenacity.png; sourceTree = "<group>"; };
 		0AA23E3B1C1B72B90002BCC2 /* SplatPal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SplatPal-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		0AA23E411C1B78450002BCC2 /* BetaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetaViewController.swift; sourceTree = "<group>"; };
+		0AA23E431C1B7A760002BCC2 /* changelog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = changelog.txt; path = Resources/changelog.txt; sourceTree = "<group>"; };
 		0AC607851C189B36006EECA7 /* SplatPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplatPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC607881C189B36006EECA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AC6078F1C189B36006EECA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -286,6 +290,7 @@
 				0AC607FB1C192211006EECA7 /* LoadingViewController.swift */,
 				0AC607B81C189BD8006EECA7 /* MapsTableViewController.swift */,
 				0AA23E001C1B6DB90002BCC2 /* BrandGuideViewController.swift */,
+				0AA23E411C1B78450002BCC2 /* BetaViewController.swift */,
 				0AA23E011C1B6DB90002BCC2 /* IconSelectionView.swift */,
 				0AA23E021C1B6DB90002BCC2 /* IconSelectionView.xib */,
 				0AC6078E1C189B36006EECA7 /* Main.storyboard */,
@@ -315,6 +320,7 @@
 		0AC607C01C189ED4006EECA7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0AA23E431C1B7A760002BCC2 /* changelog.txt */,
 				0AA23E3B1C1B72B90002BCC2 /* SplatPal-Bridging-Header.h */,
 				0AC607961C189B36006EECA7 /* Info.plist */,
 				0AC607DF1C18ACF7006EECA7 /* Paintball_Beta_4a.otf */,
@@ -550,6 +556,7 @@
 				0AC607D31C18A629006EECA7 /* StageFlounderHeights.jpg in Resources */,
 				0AC607D71C18A629006EECA7 /* StageMorayTowers.jpg in Resources */,
 				0AC607D61C18A629006EECA7 /* StageMahi-MahiResort.jpg in Resources */,
+				0AA23E441C1B7A760002BCC2 /* changelog.txt in Resources */,
 				0AC607F01C191405006EECA7 /* turfWarBadge.png in Resources */,
 				0AC607EE1C191405006EECA7 /* rankedBadgeAlt@2x.png in Resources */,
 				0AA23DFD1C1B6D870002BCC2 /* weaponsIcon.png in Resources */,
@@ -666,6 +673,7 @@
 				0AC607FC1C192211006EECA7 /* LoadingViewController.swift in Sources */,
 				0AA23E071C1B6DB90002BCC2 /* SplatAppStyle.swift in Sources */,
 				0AA23E041C1B6DB90002BCC2 /* BrandGuideViewController.swift in Sources */,
+				0AA23E421C1B78450002BCC2 /* BetaViewController.swift in Sources */,
 				0AC607FE1C194ACE006EECA7 /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
