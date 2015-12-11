@@ -25,7 +25,7 @@
 		0AC607D51C18A629006EECA7 /* StageKelpDome.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607C71C18A629006EECA7 /* StageKelpDome.jpg */; };
 		0AC607D61C18A629006EECA7 /* StageMahi-MahiResort.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607C81C18A629006EECA7 /* StageMahi-MahiResort.jpg */; };
 		0AC607D71C18A629006EECA7 /* StageMorayTowers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607C91C18A629006EECA7 /* StageMorayTowers.jpg */; };
-		0AC607D81C18A629006EECA7 /* StageMuseumD'Alfonsino.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607CA1C18A629006EECA7 /* StageMuseumD'Alfonsino.jpg */; };
+		0AC607D81C18A629006EECA7 /* StageMuseumd'Alfonsino.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607CA1C18A629006EECA7 /* StageMuseumd'Alfonsino.jpg */; };
 		0AC607D91C18A629006EECA7 /* StagePortMackerel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607CB1C18A629006EECA7 /* StagePortMackerel.jpg */; };
 		0AC607DA1C18A629006EECA7 /* StageSaltsprayRig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607CC1C18A629006EECA7 /* StageSaltsprayRig.jpg */; };
 		0AC607DB1C18A629006EECA7 /* StageUrchinUnderpass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607CD1C18A629006EECA7 /* StageUrchinUnderpass.jpg */; };
@@ -93,7 +93,7 @@
 		0AC607C71C18A629006EECA7 /* StageKelpDome.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StageKelpDome.jpg; path = Images/Stages/StageKelpDome.jpg; sourceTree = "<group>"; };
 		0AC607C81C18A629006EECA7 /* StageMahi-MahiResort.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "StageMahi-MahiResort.jpg"; path = "Images/Stages/StageMahi-MahiResort.jpg"; sourceTree = "<group>"; };
 		0AC607C91C18A629006EECA7 /* StageMorayTowers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StageMorayTowers.jpg; path = Images/Stages/StageMorayTowers.jpg; sourceTree = "<group>"; };
-		0AC607CA1C18A629006EECA7 /* StageMuseumD'Alfonsino.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "StageMuseumD'Alfonsino.jpg"; path = "Images/Stages/StageMuseumD'Alfonsino.jpg"; sourceTree = "<group>"; };
+		0AC607CA1C18A629006EECA7 /* StageMuseumd'Alfonsino.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "StageMuseumd'Alfonsino.jpg"; path = "Images/Stages/StageMuseumd'Alfonsino.jpg"; sourceTree = "<group>"; };
 		0AC607CB1C18A629006EECA7 /* StagePortMackerel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StagePortMackerel.jpg; path = Images/Stages/StagePortMackerel.jpg; sourceTree = "<group>"; };
 		0AC607CC1C18A629006EECA7 /* StageSaltsprayRig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StageSaltsprayRig.jpg; path = Images/Stages/StageSaltsprayRig.jpg; sourceTree = "<group>"; };
 		0AC607CD1C18A629006EECA7 /* StageUrchinUnderpass.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StageUrchinUnderpass.jpg; path = Images/Stages/StageUrchinUnderpass.jpg; sourceTree = "<group>"; };
@@ -221,7 +221,7 @@
 				0AC607C71C18A629006EECA7 /* StageKelpDome.jpg */,
 				0AC607C81C18A629006EECA7 /* StageMahi-MahiResort.jpg */,
 				0AC607C91C18A629006EECA7 /* StageMorayTowers.jpg */,
-				0AC607CA1C18A629006EECA7 /* StageMuseumD'Alfonsino.jpg */,
+				0AC607CA1C18A629006EECA7 /* StageMuseumd'Alfonsino.jpg */,
 				0AC607CB1C18A629006EECA7 /* StagePortMackerel.jpg */,
 				0AC607CC1C18A629006EECA7 /* StageSaltsprayRig.jpg */,
 				0AC607CD1C18A629006EECA7 /* StageUrchinUnderpass.jpg */,
@@ -389,7 +389,7 @@
 				0AC607E01C18ACF7006EECA7 /* Paintball_Beta_4a.otf in Resources */,
 				0AC607ED1C191405006EECA7 /* rankedBadgeAlt.png in Resources */,
 				0AC607D41C18A629006EECA7 /* StageHammerheadBridge.jpg in Resources */,
-				0AC607D81C18A629006EECA7 /* StageMuseumD'Alfonsino.jpg in Resources */,
+				0AC607D81C18A629006EECA7 /* StageMuseumd'Alfonsino.jpg in Resources */,
 				0AC607DC1C18A629006EECA7 /* StageWalleyeWarehouse.jpg in Resources */,
 				0AC607DA1C18A629006EECA7 /* StageSaltsprayRig.jpg in Resources */,
 				0AC607D21C18A629006EECA7 /* StageBluefinDepot.jpg in Resources */,
