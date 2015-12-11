@@ -3,7 +3,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Paintball_Beta_4a.otf">
+            <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IconSelectionView" customModule="SplatPal" customModuleProvider="target">
             <connections>
@@ -17,25 +24,55 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="s3Z-GJ-g9y">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="550"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GXS-1N-lKX">
-                        <size key="itemSize" width="50" height="50"/>
+                        <size key="itemSize" width="65" height="65"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="sectionInset" minX="15" minY="5" maxX="15" maxY="5"/>
                     </collectionViewFlowLayout>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="f5l-mu-2KN"/>
                         <outlet property="delegate" destination="-1" id="xJ3-ar-Ui8"/>
                     </connections>
                 </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCU-gY-Rn7">
+                    <rect key="frame" x="0.0" y="550" width="300" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="hlP-th-as9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="30"/>
+                    <state key="normal" title="Clear">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="clearTapped:" destination="-1" eventType="touchUpInside" id="4mV-tq-OUg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFm-4C-RPV">
+                    <rect key="frame" x="300" y="550" width="300" height="50"/>
+                    <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="30"/>
+                    <state key="normal" title="Close">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="closeTapped:" destination="-1" eventType="touchUpInside" id="LRZ-ah-sRG"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="GFm-4C-RPV" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="KQ6-Bt-pDz"/>
+                <constraint firstItem="dCU-gY-Rn7" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="ONj-kM-1Tb"/>
+                <constraint firstAttribute="trailing" secondItem="GFm-4C-RPV" secondAttribute="trailing" id="SCK-Rd-oLy"/>
+                <constraint firstAttribute="bottom" secondItem="dCU-gY-Rn7" secondAttribute="bottom" id="Txn-tw-Xm4"/>
                 <constraint firstItem="s3Z-GJ-g9y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cyK-w4-H2h"/>
-                <constraint firstAttribute="bottom" secondItem="s3Z-GJ-g9y" secondAttribute="bottom" id="e6m-OT-NeA"/>
+                <constraint firstAttribute="bottom" secondItem="GFm-4C-RPV" secondAttribute="bottom" id="fK0-o6-n8J"/>
+                <constraint firstItem="GFm-4C-RPV" firstAttribute="height" secondItem="dCU-gY-Rn7" secondAttribute="height" id="fdf-kK-LOI"/>
                 <constraint firstItem="s3Z-GJ-g9y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nKM-IP-VBa"/>
                 <constraint firstAttribute="trailing" secondItem="s3Z-GJ-g9y" secondAttribute="trailing" id="sZw-CS-9eK"/>
+                <constraint firstItem="dCU-gY-Rn7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vhc-ol-kvV"/>
+                <constraint firstAttribute="bottom" secondItem="s3Z-GJ-g9y" secondAttribute="bottom" constant="50" id="ygW-9o-xnd"/>
             </constraints>
             <point key="canvasLocation" x="347" y="376"/>
         </view>

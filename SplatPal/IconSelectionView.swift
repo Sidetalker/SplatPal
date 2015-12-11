@@ -10,31 +10,28 @@ import UIKit
 
 let brands = ["amiibo", "Cuttlegear", "Famitsu", "Firefin", "Forge", "Inkline", "Krak-On", "Rockenberg", "Skalop", "Splash Mob", "SquidForce", "Takoroka", "Tentatek", "The SQUID GIRL", "Zekko", "Zink"]
 
-class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+protocol IconSelectionViewDelegate {
+    func iconSelectionViewClear(view: IconSelectionView, sender: AnyObject)
+    func iconSelectionViewClose(view: IconSelectionView, sender: AnyObject)
+}
+
+@IBDesignable class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     
+    var delegate: IconSelectionViewDelegate?
     var view: UIView!
-    var type = ""
+    var viewType = ""
+    var brandsSelected = [Bool]()
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        xibSetup()
+        configure()
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        xibSetup()
-    }
-    
-    func xibSetup() {
-        view = loadViewFromNib()
-        view.frame = bounds
-        self.addSubview(view)
-        collectionView.reloadData()
-        
-        collectionView.registerClass(IconCell.self, forCellWithReuseIdentifier: "brandCell")
-        collectionView.backgroundColor = UIColor.clearColor()
+        configure()
     }
     
     func loadViewFromNib() -> UIView {
@@ -45,13 +42,36 @@ class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataS
         return view
     }
     
+    func configure() {
+        view = loadViewFromNib()
+        view.frame = bounds
+        self.addSubview(view)
+        
+        collectionView.registerClass(IconCell.self, forCellWithReuseIdentifier: "brandCell")
+        collectionView.backgroundColor = UIColor.clearColor()
+        
+        brandsSelected = Array(count: 16, repeatedValue: false)
+    }
+    
+    @IBAction func clearTapped(sender: AnyObject) {
+        delegate?.iconSelectionViewClear(self, sender: sender)
+        brandsSelected = brandsSelected.map { _ in false }
+        collectionView.reloadData()
+    }
+    
+    @IBAction func closeTapped(sender: AnyObject) {
+        delegate?.iconSelectionViewClose(self, sender: sender)
+    }
+    
+    // MARK: - UICollectionView functions
+    
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return type == "" ? 0 : 1
+        return viewType == "" ? 0 : 1
     }
     
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        switch type {
+        switch viewType {
         case "brands":
             return 16
         default:
@@ -61,34 +81,26 @@ class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("brandCell", forIndexPath: indexPath) as! IconCell
+        cell.clipsToBounds = false
         cell.backgroundColor = UIColor.clearColor()
         cell.brandName = brands[indexPath.row]
+        cell.pressed = brandsSelected[indexPath.row]
+        cell.setNeedsDisplay()
         
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSizeMake(65, 65)
-    }
-    
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-        return UIEdgeInsetsMake(5, 15, 5, 15)
-    }
-    
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
-        return 10
-    }
-    
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
-        return 10
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        brandsSelected[indexPath.row] = !brandsSelected[indexPath.row]
+        collectionView.reloadData()
     }
 }
 
 class IconCell: UICollectionViewCell {
-    let fillA = UIColor.lightTextColor()
-    let fillB = UIColor.whiteColor()
     let shadowA = SplatAppStyle.shadowSelected
     let shadowB = SplatAppStyle.shadowUnselected
+    let fillA = SplatAppStyle.brandPressedFill
+    let fillB = UIColor.whiteColor()
     
     var brandName = ""
     var pressed = false

@@ -16,6 +16,7 @@
 		0AA23DAC1C1A39D50002BCC2 /* SplatAppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA23DAB1C1A39D50002BCC2 /* SplatAppStyle.swift */; };
 		0AA23DAE1C1A3A330002BCC2 /* IconSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA23DAD1C1A3A330002BCC2 /* IconSelectionView.swift */; };
 		0AA23DB01C1A3CD10002BCC2 /* IconSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DAF1C1A3CD10002BCC2 /* IconSelectionView.xib */; };
+		0AA23DB41C1A59630002BCC2 /* BrandGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA23DB31C1A59630002BCC2 /* BrandGuideViewController.swift */; };
 		0AC607891C189B36006EECA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC607881C189B36006EECA7 /* AppDelegate.swift */; };
 		0AC607901C189B36006EECA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC6078E1C189B36006EECA7 /* Main.storyboard */; };
 		0AC607921C189B36006EECA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607911C189B36006EECA7 /* Assets.xcassets */; };
@@ -87,6 +88,7 @@
 		0AA23DAB1C1A39D50002BCC2 /* SplatAppStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplatAppStyle.swift; sourceTree = "<group>"; };
 		0AA23DAD1C1A3A330002BCC2 /* IconSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconSelectionView.swift; sourceTree = "<group>"; };
 		0AA23DAF1C1A3CD10002BCC2 /* IconSelectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IconSelectionView.xib; sourceTree = "<group>"; };
+		0AA23DB31C1A59630002BCC2 /* BrandGuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrandGuideViewController.swift; sourceTree = "<group>"; };
 		0AC607851C189B36006EECA7 /* SplatPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplatPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC607881C189B36006EECA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AC6078F1C189B36006EECA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -206,12 +208,13 @@
 			children = (
 				0AC607C01C189ED4006EECA7 /* Resources */,
 				0AA23DAB1C1A39D50002BCC2 /* SplatAppStyle.swift */,
+				0AC607FD1C194ACE006EECA7 /* Helpers.swift */,
 				0AC607881C189B36006EECA7 /* AppDelegate.swift */,
+				0AC607FB1C192211006EECA7 /* LoadingViewController.swift */,
 				0AC607B81C189BD8006EECA7 /* MapsTableViewController.swift */,
+				0AA23DB31C1A59630002BCC2 /* BrandGuideViewController.swift */,
 				0AA23DAD1C1A3A330002BCC2 /* IconSelectionView.swift */,
 				0AA23DAF1C1A3CD10002BCC2 /* IconSelectionView.xib */,
-				0AC607FB1C192211006EECA7 /* LoadingViewController.swift */,
-				0AC607FD1C194ACE006EECA7 /* Helpers.swift */,
 				0AC6078E1C189B36006EECA7 /* Main.storyboard */,
 				0AC607931C189B36006EECA7 /* LaunchScreen.storyboard */,
 			);
@@ -532,6 +535,7 @@
 				0AA23DAE1C1A3A330002BCC2 /* IconSelectionView.swift in Sources */,
 				0AC607891C189B36006EECA7 /* AppDelegate.swift in Sources */,
 				0AC607FC1C192211006EECA7 /* LoadingViewController.swift in Sources */,
+				0AA23DB41C1A59630002BCC2 /* BrandGuideViewController.swift in Sources */,
 				0AC607FE1C194ACE006EECA7 /* Helpers.swift in Sources */,
 				0AA23DAC1C1A39D50002BCC2 /* SplatAppStyle.swift in Sources */,
 			);
