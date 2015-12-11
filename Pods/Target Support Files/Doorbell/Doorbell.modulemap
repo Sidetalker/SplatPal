@@ -1,0 +1,6 @@
+framework module Doorbell {
+  umbrella header "Doorbell-umbrella.h"
+
+  export *
+  module * { export * }
+}

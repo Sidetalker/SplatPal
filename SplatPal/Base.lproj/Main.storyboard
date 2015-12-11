@@ -19,6 +19,8 @@
             <string>ProjectPaintball</string>
             <string>ProjectPaintball</string>
             <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -439,16 +441,17 @@
                     <connections>
                         <segue destination="Spt-Db-0Ga" kind="relationship" relationship="viewControllers" id="usC-aU-Frt"/>
                         <segue destination="r0e-A2-1Fy" kind="relationship" relationship="viewControllers" id="kE0-1Q-fl9"/>
+                        <segue destination="xvr-yH-U4u" kind="relationship" relationship="viewControllers" id="UuD-mr-d9g"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-268" y="-424"/>
         </scene>
-        <!--View Controller-->
+        <!--Beta-->
         <scene sceneID="GvG-cG-Ier">
             <objects>
-                <viewController id="xvr-yH-U4u" sceneMemberID="viewController">
+                <viewController id="xvr-yH-U4u" customClass="BetaViewController" customModule="SplatPal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sw0-GH-Q8t"/>
                         <viewControllerLayoutGuide type="bottom" id="wej-0a-w1d"/>
@@ -456,8 +459,53 @@
                     <view key="view" contentMode="scaleToFill" id="lXA-ee-oIx">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Log" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGY-DZ-bug">
+                                <rect key="frame" x="214" y="40" width="172.5" height="33"/>
+                                <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DrU-dw-t2r">
+                                <rect key="frame" x="20" y="81" width="560" height="397"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Changelog text">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8w-TH-miR">
+                                <rect key="frame" x="189" y="486" width="222" height="45"/>
+                                <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="30"/>
+                                <state key="normal" title="Send Feedback">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFeedbackTapped:" destination="xvr-yH-U4u" eventType="touchUpInside" id="MWp-lY-DQB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="DrU-dw-t2r" secondAttribute="leading" id="0eX-ON-mPR"/>
+                            <constraint firstItem="DrU-dw-t2r" firstAttribute="top" secondItem="yGY-DZ-bug" secondAttribute="bottom" constant="8" id="CAP-fD-osD"/>
+                            <constraint firstItem="yGY-DZ-bug" firstAttribute="centerX" secondItem="lXA-ee-oIx" secondAttribute="centerX" id="QBO-Il-4Gk"/>
+                            <constraint firstItem="X8w-TH-miR" firstAttribute="centerX" secondItem="lXA-ee-oIx" secondAttribute="centerX" id="Qd3-5U-bSf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DrU-dw-t2r" secondAttribute="trailing" id="bVP-gO-FCU"/>
+                            <constraint firstItem="X8w-TH-miR" firstAttribute="top" secondItem="DrU-dw-t2r" secondAttribute="bottom" constant="8" id="brD-L3-WRt"/>
+                            <constraint firstItem="yGY-DZ-bug" firstAttribute="top" secondItem="sw0-GH-Q8t" secondAttribute="bottom" constant="20" id="gB2-Qi-BDw"/>
+                            <constraint firstItem="wej-0a-w1d" firstAttribute="top" secondItem="X8w-TH-miR" secondAttribute="bottom" constant="20" id="yO5-39-sGb"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Beta" image="betaIcon.png" id="vrq-Sp-pjh"/>
+                    <connections>
+                        <outlet property="txtChangeLog" destination="DrU-dw-t2r" id="TAb-eB-jNL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lm6-we-SKy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -509,6 +557,7 @@
         <image name="abilityBombRangeUp.png" width="125" height="125"/>
         <image name="abilityNone.png" width="125" height="125"/>
         <image name="backgroundTile.jpg" width="1024" height="1024"/>
+        <image name="betaIcon.png" width="25" height="25"/>
         <image name="brandsIcon.png" width="25" height="25"/>
         <image name="mapIcon.png" width="25" height="25"/>
         <image name="rankedBadge.png" width="40" height="40"/>

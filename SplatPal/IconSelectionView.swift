@@ -20,7 +20,7 @@ protocol IconSelectionViewDelegate {
     func iconSelectionViewAbilitiesUpdated(view: IconSelectionView, selectedAbilities: [String])
 }
 
-@IBDesignable class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     @IBOutlet weak var btnClear: UIButton!

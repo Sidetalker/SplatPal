@@ -189,7 +189,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "209"
             endingLineNumber = "209"
-            landmarkName = "filterAbilitiesTapped(_:)"
+            landmarkName = "iconSelectionViewBrandsUpdated(_:selectedBrands:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

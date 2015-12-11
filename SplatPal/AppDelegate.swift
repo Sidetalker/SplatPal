@@ -8,8 +8,10 @@
 
 import UIKit
 import XCGLogger
+import Doorbell
 
 let log = XCGLogger.defaultInstance()
+let feedback = Doorbell(apiKey: "huNJHAdBmvWXZKIMHrdYjdZ0XZJEL03aReY71ASNWY8hhguVXb2oZhLMD5ji8ERv", appId: "2756")
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
