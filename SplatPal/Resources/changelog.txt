@@ -1,0 +1,15 @@
+Beta 0.2.0
+- Brand guide tab
+    - Filter by brand
+    - Filter by ability
+- Beta section tab
+    - Doorbell.io for in-app feedback
+
+Beta 0.1.0 Build 2
+- Bugfix: Museum d'Alfonso now displays properly
+
+Beta 0.1.0 Build 1
+- Initial release
+- Map rotation tab
+    - Current and upcoming map rotations
+    - Tap and hold header to refresh

@@ -439,13 +439,14 @@
                     <connections>
                         <segue destination="Spt-Db-0Ga" kind="relationship" relationship="viewControllers" id="usC-aU-Frt"/>
                         <segue destination="r0e-A2-1Fy" kind="relationship" relationship="viewControllers" id="kE0-1Q-fl9"/>
+                        <segue destination="xvr-yH-U4u" kind="relationship" relationship="viewControllers" id="UuD-mr-d9g"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-268" y="-424"/>
         </scene>
-        <!--View Controller-->
+        <!--Beta-->
         <scene sceneID="GvG-cG-Ier">
             <objects>
                 <viewController id="xvr-yH-U4u" sceneMemberID="viewController">
@@ -458,6 +459,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Beta" image="betaIcon.png" id="vrq-Sp-pjh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lm6-we-SKy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -509,6 +511,7 @@
         <image name="abilityBombRangeUp.png" width="125" height="125"/>
         <image name="abilityNone.png" width="125" height="125"/>
         <image name="backgroundTile.jpg" width="1024" height="1024"/>
+        <image name="betaIcon.png" width="25" height="25"/>
         <image name="brandsIcon.png" width="25" height="25"/>
         <image name="mapIcon.png" width="25" height="25"/>
         <image name="rankedBadge.png" width="40" height="40"/>
