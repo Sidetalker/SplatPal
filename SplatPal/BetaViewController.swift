@@ -35,6 +35,10 @@ class BetaViewController: UIViewController {
         } catch _ as NSError { log.error("Couldn't read changelog") }
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        txtChangeLog.scrollRangeToVisible(NSMakeRange(0,0))
+    }
     override func prefersStatusBarHidden() -> Bool {
         return true
     }

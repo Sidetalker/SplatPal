@@ -55,14 +55,14 @@ extension Array {
     }
 }
 
-func loadMaps(completion: (JSON?) -> ()) {
+func loadMaps(completion: (JSON) -> ()) {
     request(.GET, splatoonAPIString, encoding: .URL, headers: ["Cache-Control" : "max-age=0"])
         .responseJSON { response in
             // Handle request failure
             if response.result.isFailure {
                 log.error("Error Loading Schedule: \(response.result.error)")
                 
-                completion(nil)
+                completion(JSON(["errorCode" : response.result.error!.code, "errorMessage" : response.result.error!.localizedDescription]))
             } else {
                 let json = JSON(response.result.value!)
                 

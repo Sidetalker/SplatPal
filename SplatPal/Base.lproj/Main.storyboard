@@ -46,8 +46,8 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2:23:12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8it-8C-Q7e">
-                                            <rect key="frame" x="225" y="41" width="151" height="46"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2:23:12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="8it-8C-Q7e">
+                                            <rect key="frame" x="38" y="41" width="524" height="46"/>
                                             <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="42"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -55,9 +55,11 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottomMargin" secondItem="8it-8C-Q7e" secondAttribute="bottom" constant="-10" id="BGG-a4-Fne"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="8it-8C-Q7e" secondAttribute="trailing" constant="30" id="CDs-rW-lIB"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="5j7-3q-UyO" secondAttribute="trailing" constant="30" id="GoV-V6-LiG"/>
                                         <constraint firstItem="8it-8C-Q7e" firstAttribute="centerX" secondItem="Lj8-LW-Bku" secondAttribute="centerX" id="Q6M-le-ePy"/>
                                         <constraint firstItem="8it-8C-Q7e" firstAttribute="top" secondItem="5j7-3q-UyO" secondAttribute="bottom" id="Rw6-CP-KPG"/>
+                                        <constraint firstItem="8it-8C-Q7e" firstAttribute="leading" secondItem="Lj8-LW-Bku" secondAttribute="leadingMargin" constant="30" id="i8z-cX-yMc"/>
                                         <constraint firstItem="5j7-3q-UyO" firstAttribute="leading" secondItem="Lj8-LW-Bku" secondAttribute="leadingMargin" constant="30" id="lgG-VS-6kO"/>
                                         <constraint firstAttribute="topMargin" secondItem="5j7-3q-UyO" secondAttribute="top" id="yOP-FS-bSz"/>
                                     </constraints>

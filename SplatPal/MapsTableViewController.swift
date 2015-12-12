@@ -9,16 +9,19 @@
 import UIKit
 import SwiftyJSON
 
+let mapRefreshCooldown = 60
+
 class MapsTableViewController: UITableViewController {
     
     var mapData: JSON?
     var mapsUpdating = false
     var mapsUpdateCooldown = -1
+    var mapError = false
+    var mapErrorCode = -1
+    var mapErrorMessage = ""
     
     var liveLabel: UILabel?
     var liveLabelTimer: NSTimer!
-    
-    var viewLoaded = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,24 +32,9 @@ class MapsTableViewController: UITableViewController {
         tableView.estimatedRowHeight = 200
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.backgroundView = backgroundView
+        tableView.reloadData()
         
         liveLabelTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateLabel", userInfo: nil, repeats: true)
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        if viewLoaded { return }
-        
-        var rows = [NSIndexPath]()
-        for section in 0...2 {
-            for row in 0...5 { rows.append(NSIndexPath(forRow: row, inSection: section)) }}
-        
-        tableView.beginUpdates()
-        viewLoaded = true
-        tableView.insertSections(NSIndexSet(indexesInRange: NSMakeRange(0, 3)), withRowAnimation: .Fade)
-        tableView.insertRowsAtIndexPaths(rows, withRowAnimation: .Fade)
-        tableView.endUpdates()
     }
     
     override func prefersStatusBarHidden() -> Bool {
@@ -56,11 +44,23 @@ class MapsTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return viewLoaded && mapData != nil ? 3 : 0
+        if let
+            errorCode = mapData?["errorCode"].int,
+            errorMessage = mapData?["errorMessage"].string
+        {
+            mapError = true
+            mapErrorCode = errorCode
+            mapErrorMessage = errorMessage
+            
+            return 1
+        } else {
+            mapError = false
+            return 3
+        }
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewLoaded && mapData != nil ? 6 : 0
+        return mapError ? 0 : 6
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -135,15 +135,19 @@ class MapsTableViewController: UITableViewController {
             if cell.contentView.gestureRecognizers?.count == 1 {
                 cell.contentView.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: "topHeaderLongPress:"))
             }
-            
-            if mapsUpdating {
-                lblHeader.text = "Retrieving Updates"
-                lblFooter.text = "· · ·"
-            }
-            else {
-                liveLabel = lblFooter
-                updateLabel()
-                lblHeader.text = mapsUpdateCooldown > 0 ? "Retrieving Updates" : "Time Until Next Rotation"
+            if mapError && !mapsUpdating {
+                lblHeader.text = "Error Loading Data"
+                lblFooter.text = "Tap + Hold to Refresh"
+            } else {
+                if mapsUpdating {
+                    lblHeader.text = "Retrieving Updates"
+                    lblFooter.text = "· · ·"
+                }
+                else {
+                    liveLabel = lblFooter
+                    updateLabel()
+                    lblHeader.text = mapsUpdateCooldown > 0 ? "Retrieving Updates" : "Time Until Next Rotation"
+                }
             }
         } else {
             let startTime = mapData!["startTimes"][section].doubleValue
@@ -179,7 +183,7 @@ class MapsTableViewController: UITableViewController {
     }
     
     func updateLabel() {
-        guard liveLabel != nil else { return }
+        guard liveLabel != nil && !mapError else { return }
         
         if mapsUpdateCooldown >= 0 {
             liveLabel?.text = "Waiting \(mapsUpdateCooldown)"
@@ -190,7 +194,7 @@ class MapsTableViewController: UITableViewController {
             }
         } else {
             let timeRemainingSeconds = getTimeRemainingSeconds()
-            if timeRemainingSeconds <= 0 { updateMaps(false) }
+            if timeRemainingSeconds <= 0 && !mapError { updateMaps(false) }
             else { liveLabel?.text = getTimeRemainingText(timeRemainingSeconds) }
         }
     }
@@ -200,24 +204,16 @@ class MapsTableViewController: UITableViewController {
         tableView.reloadData()
         
         loadMaps({ data in
-            self.tableView.beginUpdates()
             self.mapsUpdating = false
             
             if self.mapData == data {
-                self.mapsUpdateCooldown = manually ? -1 : 10
-                self.tableView.reloadSections(NSIndexSet(index: 0), withRowAnimation: .None)
+                self.mapsUpdateCooldown = manually ? -1 : mapRefreshCooldown
             }
             else {
-                var paths = [NSIndexPath]()
-                for section in 0...2 {
-                    for row in 0...5 { paths.append(NSIndexPath(forRow: row, inSection: section)) }
-                }
-                
                 self.mapData = data
-                self.tableView.reloadRowsAtIndexPaths(paths, withRowAnimation: .None)
-                self.tableView.reloadSections(NSIndexSet(indexesInRange: NSMakeRange(0, 2)), withRowAnimation: .None)
             }
-            self.tableView.endUpdates()
+            
+            self.tableView.reloadData()
         })
     }
 }
