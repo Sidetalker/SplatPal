@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A948AC11C1CBEC600CCC4DB /* brandData.min.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A948AC01C1CBEC600CCC4DB /* brandData.min.json */; };
+		0A948AC31C1CC4F700CCC4DB /* data.min.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A948AC21C1CC4F700CCC4DB /* data.min.json */; };
 		0AA23DF71C1B6D870002BCC2 /* betaIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DEE1C1B6D870002BCC2 /* betaIcon.png */; };
 		0AA23DF81C1B6D870002BCC2 /* betaIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DEF1C1B6D870002BCC2 /* betaIcon@2x.png */; };
 		0AA23DF91C1B6D870002BCC2 /* betaIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DF01C1B6D870002BCC2 /* betaIcon@3x.png */; };
@@ -110,7 +110,7 @@
 
 /* Begin PBXFileReference section */
 		04573E61435B391F9524E97B /* Pods-SplatPal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatPal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplatPal/Pods-SplatPal.debug.xcconfig"; sourceTree = "<group>"; };
-		0A948AC01C1CBEC600CCC4DB /* brandData.min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = brandData.min.json; path = Resources/brandData.min.json; sourceTree = "<group>"; };
+		0A948AC21C1CC4F700CCC4DB /* data.min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.min.json; path = Resources/data.min.json; sourceTree = "<group>"; };
 		0AA23DEE1C1B6D870002BCC2 /* betaIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = betaIcon.png; path = Images/betaIcon.png; sourceTree = "<group>"; };
 		0AA23DEF1C1B6D870002BCC2 /* betaIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "betaIcon@2x.png"; path = "Images/betaIcon@2x.png"; sourceTree = "<group>"; };
 		0AA23DF01C1B6D870002BCC2 /* betaIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "betaIcon@3x.png"; path = "Images/betaIcon@3x.png"; sourceTree = "<group>"; };
@@ -322,11 +322,11 @@
 		0AC607C01C189ED4006EECA7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0A948AC01C1CBEC600CCC4DB /* brandData.min.json */,
+				0A948AC21C1CC4F700CCC4DB /* data.min.json */,
 				0AA23E431C1B7A760002BCC2 /* changelog.txt */,
-				0AA23E3B1C1B72B90002BCC2 /* SplatPal-Bridging-Header.h */,
 				0AC607961C189B36006EECA7 /* Info.plist */,
 				0AC607DF1C18ACF7006EECA7 /* Paintball_Beta_4a.otf */,
+				0AA23E3B1C1B72B90002BCC2 /* SplatPal-Bridging-Header.h */,
 				0AC607911C189B36006EECA7 /* Assets.xcassets */,
 				0AC607DE1C18AAA6006EECA7 /* Images */,
 			);
@@ -558,7 +558,6 @@
 				0AC607951C189B36006EECA7 /* LaunchScreen.storyboard in Resources */,
 				0AC607BD1C189ED0006EECA7 /* mapIcon.png in Resources */,
 				0AC607D31C18A629006EECA7 /* StageFlounderHeights.jpg in Resources */,
-				0A948AC11C1CBEC600CCC4DB /* brandData.min.json in Resources */,
 				0AC607D71C18A629006EECA7 /* StageMorayTowers.jpg in Resources */,
 				0AC607D61C18A629006EECA7 /* StageMahi-MahiResort.jpg in Resources */,
 				0AA23E441C1B7A760002BCC2 /* changelog.txt in Resources */,
@@ -581,6 +580,7 @@
 				0AA23E381C1B6E280002BCC2 /* abilityStealthJump.png in Resources */,
 				0AA23E341C1B6E280002BCC2 /* abilityRunSpeedUp.png in Resources */,
 				0AA23E061C1B6DB90002BCC2 /* IconSelectionView.xib in Resources */,
+				0A948AC31C1CC4F700CCC4DB /* data.min.json in Resources */,
 				0AC607FA1C191F09006EECA7 /* squid@3x.png in Resources */,
 				0AA23E301C1B6E280002BCC2 /* abilityOpeningGambit.png in Resources */,
 				0AA23E311C1B6E280002BCC2 /* abilityQuickRespawn.png in Resources */,

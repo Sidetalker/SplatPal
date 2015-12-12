@@ -21,6 +21,9 @@
             <string>ProjectPaintball</string>
             <string>ProjectPaintball</string>
             <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -281,7 +284,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cellBrand" rowHeight="124" id="cUa-cm-dfJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cellBrand" rowHeight="124" id="cUa-cm-dfJ">
                                 <rect key="frame" x="0.0" y="28" width="600" height="124"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cUa-cm-dfJ" id="QnU-Mu-Z4w">
@@ -415,6 +418,116 @@
                                     <variation key="default">
                                         <mask key="constraints">
                                             <exclude reference="7Xh-Cs-Soh"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cellBrandDetail" rowHeight="216" id="BBM-QA-y2O">
+                                <rect key="frame" x="0.0" y="152" width="600" height="216"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BBM-QA-y2O" id="M3u-m4-W50">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="215.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abilityNone.png" translatesAutoresizingMaskIntoConstraints="NO" id="96c-Ab-QTd">
+                                            <rect key="frame" x="80" y="85" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="96c-Ab-QTd" secondAttribute="height" multiplier="1:1" id="SjC-p4-16h"/>
+                                                <constraint firstAttribute="height" constant="50" id="lXt-2T-54T"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="SjC-p4-16h"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abilityBombRangeUp.png" translatesAutoresizingMaskIntoConstraints="NO" id="Syc-Vn-2wa">
+                                            <rect key="frame" x="80" y="143" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Syc-Vn-2wa" secondAttribute="height" multiplier="1:1" id="0KC-XK-yC4"/>
+                                                <constraint firstAttribute="height" constant="50" id="oIB-IZ-aCg"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="0KC-XK-yC4"/>
+                                                    <exclude reference="oIB-IZ-aCg"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is some really long text ok just tell me when I can stop typing any minute now is ok yeah?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MqR-gZ-RzF">
+                                            <rect key="frame" x="138" y="85" width="444" height="50"/>
+                                            <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="18"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here is some less long text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BZ4-5B-Ls2">
+                                            <rect key="frame" x="138" y="143" width="444" height="50"/>
+                                            <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="18"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X2t-Ko-4Kx" customClass="PlaceholderView" customModule="SplatPal" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="0.0" width="117" height="90"/>
+                                            <subviews>
+                                                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y1L-8k-hsi" customClass="BrandView" customModule="SplatPal" customModuleProvider="target">
+                                                    <rect key="frame" x="52" y="0.0" width="90" height="90"/>
+                                                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="y1L-8k-hsi" secondAttribute="height" multiplier="1:1" id="l3X-Gp-CTY"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.98594826459999996" green="0.0" blue="0.026950567960000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="y1L-8k-hsi" secondAttribute="trailing" constant="-25" id="KtR-Mo-y5E"/>
+                                                <constraint firstAttribute="height" constant="90" id="jtM-0k-c6b"/>
+                                                <constraint firstItem="y1L-8k-hsi" firstAttribute="centerY" secondItem="X2t-Ko-4Kx" secondAttribute="centerY" id="rOD-hO-My1"/>
+                                                <constraint firstItem="y1L-8k-hsi" firstAttribute="height" secondItem="X2t-Ko-4Kx" secondAttribute="height" id="szA-Rf-Fjc"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJ2-Ib-3v8" customClass="PlaceholderView" customModule="SplatPal" customModuleProvider="target">
+                                            <rect key="frame" x="125" y="0.0" width="467" height="90"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eLd-ex-ee1">
+                                                    <rect key="frame" x="30" y="28.5" width="417" height="33"/>
+                                                    <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="30"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="eLd-ex-ee1" firstAttribute="centerY" secondItem="IJ2-Ib-3v8" secondAttribute="centerY" id="8Iw-Nx-Vyd"/>
+                                                <constraint firstAttribute="trailing" secondItem="eLd-ex-ee1" secondAttribute="trailing" constant="20" id="Kvk-sT-t1i"/>
+                                                <constraint firstItem="eLd-ex-ee1" firstAttribute="leading" secondItem="IJ2-Ib-3v8" secondAttribute="leading" constant="30" id="oO1-ZU-1l1"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="X2t-Ko-4Kx" firstAttribute="width" secondItem="IJ2-Ib-3v8" secondAttribute="width" multiplier="0.25" id="3wV-9u-Bg3"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="MqR-gZ-RzF" secondAttribute="trailing" constant="10" id="7Cs-ee-wgP"/>
+                                        <constraint firstItem="Syc-Vn-2wa" firstAttribute="width" secondItem="Syc-Vn-2wa" secondAttribute="height" multiplier="1:1" id="Aqh-JR-82o"/>
+                                        <constraint firstItem="X2t-Ko-4Kx" firstAttribute="height" secondItem="IJ2-Ib-3v8" secondAttribute="height" id="BOb-2X-TaH"/>
+                                        <constraint firstItem="96c-Ab-QTd" firstAttribute="top" secondItem="y1L-8k-hsi" secondAttribute="bottom" constant="-5" id="Fo0-mP-kr4"/>
+                                        <constraint firstItem="IJ2-Ib-3v8" firstAttribute="top" secondItem="X2t-Ko-4Kx" secondAttribute="top" id="Jlv-qI-GcS"/>
+                                        <constraint firstItem="BZ4-5B-Ls2" firstAttribute="leading" secondItem="Syc-Vn-2wa" secondAttribute="trailing" constant="8" id="LVt-fy-NTQ"/>
+                                        <constraint firstItem="IJ2-Ib-3v8" firstAttribute="leading" secondItem="X2t-Ko-4Kx" secondAttribute="trailing" id="NCT-iJ-Plw"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="IJ2-Ib-3v8" secondAttribute="trailing" id="OzK-SG-k3c"/>
+                                        <constraint firstItem="96c-Ab-QTd" firstAttribute="centerX" secondItem="y1L-8k-hsi" secondAttribute="centerX" id="WVY-xr-ZhS"/>
+                                        <constraint firstItem="MqR-gZ-RzF" firstAttribute="leading" secondItem="96c-Ab-QTd" secondAttribute="trailing" constant="8" id="Znc-eg-VB9"/>
+                                        <constraint firstAttribute="topMargin" secondItem="IJ2-Ib-3v8" secondAttribute="top" id="cK4-nF-f22"/>
+                                        <constraint firstAttribute="topMargin" secondItem="X2t-Ko-4Kx" secondAttribute="top" constant="8" id="ckc-es-fEU"/>
+                                        <constraint firstItem="MqR-gZ-RzF" firstAttribute="centerY" secondItem="96c-Ab-QTd" secondAttribute="centerY" id="dmq-6o-PEx"/>
+                                        <constraint firstItem="BZ4-5B-Ls2" firstAttribute="centerY" secondItem="Syc-Vn-2wa" secondAttribute="centerY" id="es3-3b-eDs"/>
+                                        <constraint firstItem="Syc-Vn-2wa" firstAttribute="top" secondItem="96c-Ab-QTd" secondAttribute="bottom" constant="8" id="krh-B7-nDZ"/>
+                                        <constraint firstItem="BZ4-5B-Ls2" firstAttribute="height" secondItem="Syc-Vn-2wa" secondAttribute="height" id="pNN-PP-Tc5"/>
+                                        <constraint firstItem="MqR-gZ-RzF" firstAttribute="height" secondItem="96c-Ab-QTd" secondAttribute="height" id="qMs-c0-3UF"/>
+                                        <constraint firstItem="Syc-Vn-2wa" firstAttribute="height" secondItem="96c-Ab-QTd" secondAttribute="height" id="tWb-2L-ltZ"/>
+                                        <constraint firstItem="Syc-Vn-2wa" firstAttribute="centerX" secondItem="96c-Ab-QTd" secondAttribute="centerX" id="uie-iA-wJZ"/>
+                                        <constraint firstItem="96c-Ab-QTd" firstAttribute="width" secondItem="96c-Ab-QTd" secondAttribute="height" multiplier="1:1" id="xqd-cL-BVB"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="X2t-Ko-4Kx" secondAttribute="leading" id="ycw-5y-J5u"/>
+                                        <constraint firstItem="BZ4-5B-Ls2" firstAttribute="trailing" secondItem="MqR-gZ-RzF" secondAttribute="trailing" id="ynO-tF-xFP"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="cK4-nF-f22"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>

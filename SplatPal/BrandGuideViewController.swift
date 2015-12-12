@@ -76,9 +76,16 @@ class BrandView: UIView {
 
 class BrandTableViewController: UITableViewController {
     var brandDisplayData = [JSON]()
+    var brandDetailDisplaying = [Bool]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    func updateDisplay(newData: [JSON]) {
+        brandDisplayData = newData
+        brandDetailDisplaying = Array(count: newData.count, repeatedValue: false)
+        tableView.reloadData()
     }
     
     // MARK: - Table view data source
@@ -92,21 +99,51 @@ class BrandTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 90
+        return brandDetailDisplaying[indexPath.row] ? 215 : 90
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cellBrand", forIndexPath: indexPath)
-        let brandIcon = cell.viewWithTag(1) as! BrandView
-        let abilityUpImage = cell.viewWithTag(2) as! UIImageView
-        let abilityDownImage = cell.viewWithTag(3) as! UIImageView
+        var cell = UITableViewCell()
+        let data = brandDisplayData[indexPath.row]
         
-        brandIcon.brandName = brandDisplayData[indexPath.row]["name"].stringValue
-        brandIcon.setNeedsDisplay()
-        abilityUpImage.image = UIImage(named: "ability\(brandDisplayData[indexPath.row]["abilityUp"]["name"].stringValue.removeWhitespace()).png")
-        abilityDownImage.image = UIImage(named: "ability\(brandDisplayData[indexPath.row]["abilityDown"]["name"].stringValue.removeWhitespace()).png")
+        if brandDetailDisplaying[indexPath.row] {
+            cell = tableView.dequeueReusableCellWithIdentifier("cellBrandDetail", forIndexPath: indexPath)
+            let brandIcon = cell.viewWithTag(1) as! BrandView
+            let abilityUpImage = cell.viewWithTag(2) as! UIImageView
+            let abilityDownImage = cell.viewWithTag(3) as! UIImageView
+            let lblBrandName = cell.viewWithTag(4) as! UILabel
+            let lblAbilityUpDesc = cell.viewWithTag(5) as! UILabel
+            let lblAbilityDownDesc = cell.viewWithTag(6) as! UILabel
+            
+            brandIcon.brandName = brandDisplayData[indexPath.row]["name"].stringValue
+            brandIcon.setNeedsDisplay()
+            abilityUpImage.image = UIImage(named: "ability\(data["abilityUp"]["name"].stringValue.removeWhitespace()).png")
+            abilityDownImage.image = UIImage(named: "ability\(data["abilityDown"]["name"].stringValue.removeWhitespace()).png")
+            lblBrandName.text = data["name"].stringValue
+            lblAbilityUpDesc.text = data["abilityUp"]["description"].stringValue
+            lblAbilityDownDesc.text = data["abilityDown"]["description"].stringValue
+        }
+        else {
+            cell = tableView.dequeueReusableCellWithIdentifier("cellBrand", forIndexPath: indexPath)
+            let brandIcon = cell.viewWithTag(1) as! BrandView
+            let abilityUpImage = cell.viewWithTag(2) as! UIImageView
+            let abilityDownImage = cell.viewWithTag(3) as! UIImageView
+            
+            brandIcon.brandName = brandDisplayData[indexPath.row]["name"].stringValue
+            brandIcon.setNeedsDisplay()
+            abilityUpImage.image = UIImage(named: "ability\(data["abilityUp"]["name"].stringValue.removeWhitespace()).png")
+            abilityDownImage.image = UIImage(named: "ability\(data["abilityDown"]["name"].stringValue.removeWhitespace()).png")
+        }
         
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        brandDetailDisplaying[indexPath.row] = !brandDetailDisplaying[indexPath.row]
+        
+        tableView.beginUpdates()
+        tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        tableView.endUpdates()
     }
 }
 
@@ -147,8 +184,7 @@ class BrandGuideViewController: UIViewController, IconSelectionViewDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "segueBrandTable" {
             brandTable = segue.destinationViewController as? BrandTableViewController
-            brandTable?.brandDisplayData = brandData
-            brandTable?.tableView.reloadData()
+            brandTable?.updateDisplay(brandData)
         }
     }
     
@@ -186,33 +222,29 @@ class BrandGuideViewController: UIViewController, IconSelectionViewDelegate {
         iconView.abilitiesSelected = iconView.abilitiesSelected.map() { _ in false }
         
         if selectedBrands.count == 0 {
-            brandTable?.brandDisplayData = brandData
+            brandTable?.updateDisplay(brandData)
         } else {
             var updatedBrandData = [JSON]()
             for data in brandData {
-                if selectedBrands.contains(data["brand"].stringValue) { updatedBrandData.append(data) }}
+                if selectedBrands.contains(data["name"].stringValue) { updatedBrandData.append(data) }}
             
-            brandTable?.brandDisplayData = updatedBrandData
+            brandTable?.updateDisplay(updatedBrandData)
         }
-        
-        brandTable?.tableView.reloadData()
     }
     
     func iconSelectionViewAbilitiesUpdated(view: IconSelectionView, selectedAbilities: [String]) {
         iconView.brandsSelected = iconView.brandsSelected.map() { _ in false }
         
         if selectedAbilities.count == 0 {
-            brandTable?.brandDisplayData = brandData
+            brandTable?.updateDisplay(brandData)
         } else {
             var updatedAbilityData = [JSON]()
             for data in brandData {
-                if selectedAbilities.contains(data["abilityUp"].stringValue) ||
-                    selectedAbilities.contains(data["abilityDown"].stringValue)
+                if selectedAbilities.contains(data["abilityUp"]["name"].stringValue) ||
+                    selectedAbilities.contains(data["abilityDown"]["name"].stringValue)
                 { updatedAbilityData.append(data) }}
             
-            brandTable?.brandDisplayData = updatedAbilityData
+            brandTable?.updateDisplay(updatedAbilityData)
         }
-        
-        brandTable?.tableView.reloadData()
     }
 }

@@ -38,7 +38,7 @@ class LoadingViewController: UIViewController {
     
     func loadJSONData() {
         if let
-            brandPath = NSBundle.mainBundle().pathForResource("brandData.min", ofType: "json"),
+            brandPath = NSBundle.mainBundle().pathForResource("data.min", ofType: "json"),
             jsonData = NSData(contentsOfFile: brandPath)
         {
             let jsonResult = JSON(data: jsonData)
