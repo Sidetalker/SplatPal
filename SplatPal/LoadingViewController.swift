@@ -9,6 +9,8 @@
 import UIKit
 import SwiftyJSON
 
+var brandData = [JSON]()
+
 class LoadingViewController: UIViewController {
     
     var mapData: JSON?
@@ -20,6 +22,8 @@ class LoadingViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
+        loadJSONData()
+        
         loadMaps({ data in
             self.mapData = data
             self.performSegueWithIdentifier("segueLoading", sender: self)
@@ -30,5 +34,16 @@ class LoadingViewController: UIViewController {
         let tabBarController = segue.destinationViewController as! UITabBarController
         let mapsTab = tabBarController.viewControllers![0] as! MapsTableViewController
         mapsTab.mapData = mapData
+    }
+    
+    func loadJSONData() {
+        if let
+            brandPath = NSBundle.mainBundle().pathForResource("brandData.min", ofType: "json"),
+            jsonData = NSData(contentsOfFile: brandPath)
+        {
+            let jsonResult = JSON(data: jsonData)
+            
+            brandData = jsonResult["brands"].arrayValue
+        }
     }
 }

@@ -1,0 +1,191 @@
+{
+    "brands": [
+        {
+            "name": "amiibo",
+            "abilityUp": {
+                "name": "None",
+                "description": "None"
+            },
+            "abilityDown": {
+                "name": "None",
+                "description": "None"
+            }
+        },
+        {
+            "name": "Cuttlegear",
+            "abilityUp": {
+                "name": "None",
+                "description": "None"
+            },
+            "abilityDown": {
+                "name": "None",
+                "description": "None"
+            }
+        },
+        {
+            "name": "Famitsu",
+            "abilityUp": {
+                "name": "None",
+                "description": "None"
+            },
+            "abilityDown": {
+                "name": "None",
+                "description": "None"
+            }
+        },
+        {
+            "name": "Firefin",
+            "abilityUp": {
+                "name": "Ink Saver (Sub)",
+                "description": "Reduces the amount of ink consumed by your Sub weapon."
+            },
+            "abilityDown": {
+                "name": "Ink Recovery Up",
+                "description": "Increases Ink tank refill rate while submerged in Squid form."
+            }
+        },
+        {
+            "name": "Forge",
+            "abilityUp": {
+                "name": "Special Duration Up",
+                "description": "Increases usage time of Special weapons."
+            },
+            "abilityDown": {
+                "name": "Ink Saver (Sub)",
+                "description": "Reduces the amount of ink consumed by your Sub weapon."
+            }
+        },
+        {
+            "name": "Inkline",
+            "abilityUp": {
+                "name": "Defence Up",
+                "description": "Reduces damage taken from all attacks."
+            },
+            "abilityDown": {
+                "name": "Damage Up",
+                "description": "Increases the Attack of all your Main, Sub and Special weapons."
+            }
+        },
+        {
+            "name": "KOG",
+            "abilityUp": {
+                "name": "None",
+                "description": "None"
+            },
+            "abilityDown": {
+                "name": "None",
+                "description": "None"
+            }
+        },
+        {
+            "name": "Krak-On",
+            "abilityUp": {
+                "name": "Swim Speed Up",
+                "description": "Increases movement speed while in Squid form."
+            },
+            "abilityDown": {
+                "name": "Defence Up",
+                "description": "Reduces damage taken from all attacks."
+            }
+        },
+        {
+            "name": "Rockenberg",
+            "abilityUp": {
+                "name": "Run Speed Up",
+                "description": "Increases movement speed while in Inkling form."
+            },
+            "abilityDown": {
+                "name": "Swim Speed Up",
+                "description": "Increases movement speed while in Squid form."
+            }
+        },
+        {
+            "name": "Skalop",
+            "abilityUp": {
+                "name": "Quick Respawn",
+                "description": "Decreases respawn time after getting splatted."
+            },
+            "abilityDown": {
+                "name": "Special Saver",
+                "description": "Reduces the amount your Special Gauge decreases after getting splatted."
+            }
+        },
+        {
+            "name": "Splash Mob",
+            "abilityUp": {
+                "name": "Ink Saver (Main)",
+                "description": "Reduces the amount of ink consumed by your Main weapon."
+            },
+            "abilityDown": {
+                "name": "Run Speed Up",
+                "description": "Increases movement speed while in Inkling form."
+            }
+        },
+        {
+            "name": "SquidForce",
+            "abilityUp": {
+                "name": "Damage Up",
+                "description": "Increases the Attack of all your Main, Sub and Special weapons."
+            },
+            "abilityDown": {
+                "name": "Ink Saver (Main)",
+                "description": "Reduces the amount of ink consumed by your Main weapon."
+            }
+        },
+        {
+            "name": "Takoroka",
+            "abilityUp": {
+                "name": "Special Charge Up",
+                "description": "Increases Special Gauge recharge rate."
+            },
+            "abilityDown": {
+                "name": "Special Duration Up",
+                "description": "Increases usage time of Special weapons."
+            }
+        },
+        {
+            "name": "Tentatek",
+            "abilityUp": {
+                "name": "Ink Recovery Up",
+                "description": "Increases Ink tank refill rate while submerged in Squid form."
+            },
+            "abilityDown": {
+                "name": "Quick Super Jump",
+                "description": "Makes your Super Jumps faster."
+            }
+        },
+        {
+            "name": "The SQUID GIRL",
+            "abilityUp": {
+                "name": "None",
+                "description": "None"
+            },
+            "abilityDown": {
+                "name": "None",
+                "description": "None"
+            }
+        },
+        {
+            "name": "Zekko",
+            "abilityUp": {
+                "name": "Special Saver",
+                "description": "Reduces the amount your Special Gauge decreases after getting splatted."
+            },
+            "abilityDown": {
+                "name": "Special Charge Up",
+                "description": "Increases Special Gauge recharge rate."
+            }
+        },
+        {
+            "name": "Zink",
+            "abilityUp": {
+                "name": "Quick Super Jump",
+                "description": "Makes your Super Jumps faster."
+            },
+            "abilityDown": {
+                "name": "Quick Respawn",
+                "description": "Decreases respawn time after getting splatted."
+            }
+        }
+    ]
+}

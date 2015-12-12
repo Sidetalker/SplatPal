@@ -11,26 +11,6 @@ import SwiftyJSON
 
 let tabBarHeight: CGFloat = 49
 
-let brandData: [JSON] = [
-    ["brand" : "amiibo", "abilityUp" : "None", "abilityDown" : "None"],
-    ["brand" : "Cuttlegear", "abilityUp" : "None", "abilityDown" : "None"],
-    ["brand" : "Famitsu", "abilityUp" : "None", "abilityDown" : "None"],
-    ["brand" : "Firefin", "abilityUp" : "Ink Saver (Sub)", "abilityDown" : "Ink Recovery Up"],
-    ["brand" : "Forge", "abilityUp" : "Special Duration Up", "abilityDown" : "Ink Saver (Sub)"],
-    ["brand" : "Inkline", "abilityUp" : "Defence Up", "abilityDown" : "Damage Up"],
-    ["brand" : "KOG", "abilityUp" : "None", "abilityDown" : "None"],
-    ["brand" : "Krak-On", "abilityUp" : "Swim Speed Up", "abilityDown" : "Defence Up"],
-    ["brand" : "Rockenberg", "abilityUp" : "Run Speed Up", "abilityDown" : "Swim Speed Up"],
-    ["brand" : "Skalop", "abilityUp" : "Quick Respawn", "abilityDown" : "Special Saver"],
-    ["brand" : "Splash Mob", "abilityUp" : "Ink Saver (Main)", "abilityDown" : "Run Speed Up"],
-    ["brand" : "SquidForce", "abilityUp" : "Damage Up", "abilityDown" : "Ink Saver (Main)"],
-    ["brand" : "Takoroka", "abilityUp" : "Special Charge Up", "abilityDown" : "Special Duration Up"],
-    ["brand" : "Tentatek", "abilityUp" : "Ink Recovery Up", "abilityDown" : "Quick Super Jump"],
-    ["brand" : "The SQUID GIRL", "abilityUp" : "None", "abilityDown" : "None"],
-    ["brand" : "Zekko", "abilityUp" : "Special Saver", "abilityDown" : "Special Charge Up"],
-    ["brand" : "Zink", "abilityUp" : "Quick Super Jump", "abilityDown" : "Quick Respawn"],
-]
-
 // MARK: - BrandView
 
 class BrandView: UIView {
@@ -121,10 +101,10 @@ class BrandTableViewController: UITableViewController {
         let abilityUpImage = cell.viewWithTag(2) as! UIImageView
         let abilityDownImage = cell.viewWithTag(3) as! UIImageView
         
-        brandIcon.brandName = brandDisplayData[indexPath.row]["brand"].stringValue
+        brandIcon.brandName = brandDisplayData[indexPath.row]["name"].stringValue
         brandIcon.setNeedsDisplay()
-        abilityUpImage.image = UIImage(named: "ability\(brandDisplayData[indexPath.row]["abilityUp"].stringValue.removeWhitespace()).png")
-        abilityDownImage.image = UIImage(named: "ability\(brandDisplayData[indexPath.row]["abilityDown"].stringValue.removeWhitespace()).png")
+        abilityUpImage.image = UIImage(named: "ability\(brandDisplayData[indexPath.row]["abilityUp"]["name"].stringValue.removeWhitespace()).png")
+        abilityDownImage.image = UIImage(named: "ability\(brandDisplayData[indexPath.row]["abilityDown"]["name"].stringValue.removeWhitespace()).png")
         
         return cell
     }

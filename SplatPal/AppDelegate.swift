@@ -22,7 +22,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         Fabric.with([Crashlytics.self])
+        
         log.setup(.Debug, showLogIdentifier: false, showFunctionName: false, showThreadName: false, showLogLevel: true, showFileNames: true, showLineNumbers: false, showDate: false, writeToFile: nil, fileLogLevel: nil)
+        
+        let version = NSBundle.mainBundle().infoDictionary?["CFBundleShortVersionString"] as! String
+        let build = NSBundle.mainBundle().infoDictionary?[kCFBundleVersionKey as String] as! String
+
+        feedback.addPropertyWithName("Version", andValue: "\(version) (\(build))")
         
         return true
     }

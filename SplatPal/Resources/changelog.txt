@@ -1,3 +1,14 @@
+Version 0.2.0 (?)
+- Bugfix: Launch image displays properly
+
+Version 0.2.0 (53)
+- Minor changes
+    - Tweaks to fix the beta install error
+    - Added version designator to Doorbell.io
+
+Version 0.2.0 (45)
+- Bugfix: Updating map data no longer crashes app if unsuccessful
+
 Version 0.2.0 (19)
 - Crashlytics added for crash logging
 

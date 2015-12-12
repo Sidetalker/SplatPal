@@ -22,7 +22,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundTile.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fbB-yx-VaJ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="squid.png" translatesAutoresizingMaskIntoConstraints="NO" id="6tB-Hd-aqu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="squid.png" translatesAutoresizingMaskIntoConstraints="NO" id="6tB-Hd-aqu">
                                 <rect key="frame" x="225" y="225" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6tB-Hd-aqu" secondAttribute="height" multiplier="1:1" id="bbR-x6-HZa"/>
