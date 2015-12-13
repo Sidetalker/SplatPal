@@ -79,11 +79,12 @@ class GearTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        gearDetailDisplaying[indexPath.row] = !gearDetailDisplaying[indexPath.row]
-        
-        tableView.beginUpdates()
-        tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        tableView.endUpdates()
+        self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+//        gearDetailDisplaying[indexPath.row] = !gearDetailDisplaying[indexPath.row]
+//        
+//        tableView.beginUpdates()
+//        tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+//        tableView.endUpdates()
     }
 }
 
@@ -92,13 +93,24 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
     @IBOutlet weak var iconViewHeight: NSLayoutConstraint!
     @IBOutlet weak var iconViewXLoc: NSLayoutConstraint!
     
+    @IBOutlet weak var imgMain: UIImageView!
+    @IBOutlet weak var imgSub: UIImageView!
+    @IBOutlet weak var lblType: UILabel!
+    
     var gearTable: GearTableViewController?
+    
+    // 0 for main, 1 for sub
+    var selectionFlag = -1
+    var mainAbility = "None"
+    var subAbility = "None"
+    var category = "All"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         iconView.delegate = self
         iconView.clipsToBounds = false
+        iconView.singleSelection = true
         iconView.layer.shadowColor = UIColor.blackColor().CGColor
         iconView.layer.shadowOffset = CGSizeZero
         iconView.layer.shadowOpacity = 0.5
@@ -109,7 +121,7 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
         super.viewWillAppear(animated)
         
         iconView.updateDisplay(false, displayTitle: true)
-        iconViewHeight.constant = getIconViewHeight()
+        iconViewHeight.constant = iconView.getProperHeight()
         iconViewXLoc.constant = -iconViewHeight.constant - tabBarHeight
     }
     
@@ -124,10 +136,6 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
         }
     }
     
-    func getIconViewHeight() -> CGFloat {
-        return iconView.collectionView.collectionViewLayout.collectionViewContentSize().height + 30
-    }
-    
     func toggleIconView(show: Bool) {
         iconViewXLoc.constant = show ? 0 : -iconViewHeight.constant - tabBarHeight
         
@@ -137,11 +145,57 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
     }
     
     func iconSelectionViewAbilitiesUpdated(view: IconSelectionView, selectedAbilities: [String]) {
+        let abilityImage = UIImage(named: "ability\(selectedAbilities[0].removeWhitespace()).png")
+        
+        if selectionFlag == 0 {
+            mainAbility = selectedAbilities[0]
+            imgMain.image = abilityImage
+        }
+        else if selectionFlag == 1 {
+            subAbility = selectedAbilities[0]
+            imgSub.image = abilityImage
+        }
+        
+        var newGear = [JSON]()
+        for gear in gearData {
+            var valid = true
+            
+            if gear["ability"].stringValue != mainAbility && mainAbility != "None" { valid = false }
+            if abilityUpForBrand(gear["brand"].stringValue) != subAbility && subAbility != "None" { valid = false }
+            if gear["category"].stringValue != category && category != "All" { valid = false }
+            
+            if valid { newGear.append(gear) }
+            
+//            Clothing - Hat
+//            Headgear - Shirt
+//            Shoes
+        }
+        
+        gearTable?.gearDisplayData = newGear
+        gearTable?.tableView.reloadData()
         toggleIconView(false)
     }
     
     @IBAction func mainButtonTapped(sender: AnyObject) {
+        selectionFlag = 0
+        iconView.toggleLimitedAbilities(false)
+        iconView.currentSelection = -1
+        iconView.lblTitle.text = "Select Main Ability"
+        iconViewHeight.constant = iconView.getProperHeight() > view.frame.height * 3 / 4 ? view.frame.height * 3 / 4 : iconView.getProperHeight()
         toggleIconView(true)
+    }
+    
+    @IBAction func subButtonTapped(sender: AnyObject) {
+        selectionFlag = 1
+        iconView.toggleLimitedAbilities(true)
+        iconView.currentSelection = -1
+        iconView.lblTitle.text = "Select Sub Ability"
+        iconViewHeight.constant = iconView.getProperHeight()
+        toggleIconView(true)
+    }
+    
+    @IBAction func typeButtonTapped(sender: AnyObject) {
+        
     }
     
     func iconSelectionViewClose(view: IconSelectionView, sender: AnyObject) {

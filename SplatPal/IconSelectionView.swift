@@ -35,6 +35,9 @@ class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataS
     var viewType = ""
     var showButtons = true
     var showTitle = true
+    var singleSelection = false
+    var currentSelection = -1
+    var limitedAbilities = true
     var brandsSelected = [Bool]()
     var abilitiesSelected = [Bool]()
     
@@ -66,7 +69,13 @@ class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataS
         collectionView.backgroundColor = UIColor.clearColor()
         
         brandsSelected = Array(count: brands.count, repeatedValue: false)
-        abilitiesSelected = Array(count: abilitiesRestricted.count, repeatedValue: false)
+        abilitiesSelected = Array(count: limitedAbilities ? abilitiesRestricted.count : abilities.count, repeatedValue: false)
+    }
+    
+    func toggleLimitedAbilities(onOrOff: Bool) {
+        limitedAbilities = onOrOff
+        abilitiesSelected = Array(count: limitedAbilities ? abilitiesRestricted.count : abilities.count, repeatedValue: false)
+        collectionView.reloadData()
     }
     
     func updateDisplay(displayButtons: Bool, displayTitle: Bool) {
@@ -131,7 +140,7 @@ class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataS
         case "brands":
             return brands.count
         case "abilities":
-            return abilitiesRestricted.count
+            return limitedAbilities ? abilitiesRestricted.count : abilities.count
         default:
             return 0
         }
@@ -143,14 +152,15 @@ class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataS
             let cell = collectionView.dequeueReusableCellWithReuseIdentifier("brandCell", forIndexPath: indexPath) as! BrandCell
             cell.backgroundColor = UIColor.clearColor()
             cell.brandName = brands[indexPath.row]
-            cell.pressed = brandsSelected[indexPath.row]
+            cell.pressed = singleSelection ? indexPath.row == currentSelection : brandsSelected[indexPath.row]
             cell.setNeedsDisplay()
             
             return cell
         case "abilities":
             let cell = collectionView.dequeueReusableCellWithReuseIdentifier("abilityCell", forIndexPath: indexPath) as! AbilityCell
-            cell.pressed = abilitiesSelected[indexPath.row]
+            cell.pressed = singleSelection ? indexPath.row == currentSelection : abilitiesSelected[indexPath.row]
             cell.index = indexPath.row
+            cell.restricted = limitedAbilities
             cell.update()
             
             return cell
@@ -163,10 +173,23 @@ class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataS
         switch viewType {
         case "brands":
             brandsSelected[indexPath.row] = !brandsSelected[indexPath.row]
-            delegate?.iconSelectionViewBrandsUpdated(self, selectedBrands: brands.booleanFilter(brandsSelected)!)
+            currentSelection = indexPath.row
+            
+            if singleSelection {
+                delegate?.iconSelectionViewBrandsUpdated(self, selectedBrands: [brands[currentSelection]])
+            } else {
+                delegate?.iconSelectionViewBrandsUpdated(self, selectedBrands: brands.booleanFilter(brandsSelected)!)
+            }
         case "abilities":
             abilitiesSelected[indexPath.row] = !abilitiesSelected[indexPath.row]
-            delegate?.iconSelectionViewAbilitiesUpdated(self, selectedAbilities: abilitiesRestricted.booleanFilter(abilitiesSelected)!)
+            currentSelection = indexPath.row
+            let abilityData = limitedAbilities ? abilitiesRestricted : abilities
+            
+            if singleSelection {
+                delegate?.iconSelectionViewAbilitiesUpdated(self, selectedAbilities: [abilityData[currentSelection]])
+            } else {
+                delegate?.iconSelectionViewAbilitiesUpdated(self, selectedAbilities: abilityData.booleanFilter(abilitiesSelected)!)
+            }
         default: break
         }
         
@@ -178,6 +201,7 @@ class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataS
 
 class AbilityCell: UICollectionViewCell {
     var imageView: UIImageView!
+    var restricted = true
     var pressed = false
     var index = -1
     
@@ -199,7 +223,9 @@ class AbilityCell: UICollectionViewCell {
     func update() {
         let image: UIImage = pressed ? SplatAppStyle.imageOfAbilityContainerSelected: SplatAppStyle.imageOfAbilityContainerUnselected
         backgroundColor = UIColor(patternImage: image)
-        imageView.image = UIImage(named: "ability\(abilitiesRestricted[index].removeWhitespace()).png")
+        
+        let ability = restricted ? abilitiesRestricted[index] : abilities[index]
+        imageView.image = UIImage(named: "ability\(ability.removeWhitespace()).png")
     }
 }
 
