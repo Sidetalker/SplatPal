@@ -24,6 +24,11 @@
             <string>ProjectPaintball</string>
             <string>ProjectPaintball</string>
             <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -191,6 +196,203 @@
             </objects>
             <point key="canvasLocation" x="440" y="-424"/>
         </scene>
+        <!--Gear Guide-->
+        <scene sceneID="Chr-R9-XcE">
+            <objects>
+                <viewController id="qB1-1u-vDb" customClass="GearGuideViewController" customModule="SplatPal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L6g-Mt-Oeb"/>
+                        <viewControllerLayoutGuide type="bottom" id="7kX-ol-aa8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CFx-hj-Tad">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jPo-py-4X0">
+                                <rect key="frame" x="0.0" y="20" width="600" height="471"/>
+                                <connections>
+                                    <segue destination="98L-Ij-DPb" kind="embed" identifier="segueGearTable" id="tsJ-0N-bYe"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FT1-A8-bZu">
+                                <rect key="frame" x="0.0" y="491" width="200" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abilityTenacity.png" translatesAutoresizingMaskIntoConstraints="NO" id="9NL-Ax-cYv">
+                                        <rect key="frame" x="78" y="15" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="WZL-p1-qdP"/>
+                                            <constraint firstAttribute="width" secondItem="9NL-Ax-cYv" secondAttribute="height" multiplier="1:1" id="ZEF-ib-Zjk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBd-AU-bAv">
+                                        <rect key="frame" x="82" y="0.0" width="36" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="NBd-AU-bAv" firstAttribute="top" secondItem="FT1-A8-bZu" secondAttribute="top" id="FaQ-m0-mSU"/>
+                                    <constraint firstAttribute="height" constant="60" id="H14-XE-Iz7"/>
+                                    <constraint firstItem="9NL-Ax-cYv" firstAttribute="centerX" secondItem="FT1-A8-bZu" secondAttribute="centerX" id="SB4-xA-ZVb"/>
+                                    <constraint firstItem="NBd-AU-bAv" firstAttribute="centerX" secondItem="FT1-A8-bZu" secondAttribute="centerX" id="XWp-Eh-oaJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="9NL-Ax-cYv" secondAttribute="bottom" id="les-vc-X0h"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k94-AX-a63">
+                                <rect key="frame" x="200" y="491" width="200" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abilityBombRangeUp.png" translatesAutoresizingMaskIntoConstraints="NO" id="OqM-xK-6Sl">
+                                        <rect key="frame" x="78" y="14" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="OqM-xK-6Sl" secondAttribute="height" multiplier="1:1" id="RY0-gF-OX0"/>
+                                            <constraint firstAttribute="width" constant="45" id="ZVh-HJ-m0n"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="RY0-gF-OX0"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODN-k3-87o">
+                                        <rect key="frame" x="87" y="0.0" width="27" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ODN-k3-87o" firstAttribute="centerX" secondItem="k94-AX-a63" secondAttribute="centerX" id="RnE-Ye-8ra"/>
+                                    <constraint firstItem="OqM-xK-6Sl" firstAttribute="centerX" secondItem="k94-AX-a63" secondAttribute="centerX" id="T4R-SE-1ru"/>
+                                    <constraint firstAttribute="bottom" secondItem="OqM-xK-6Sl" secondAttribute="bottom" constant="0.5" id="aud-in-LpN"/>
+                                    <constraint firstItem="ODN-k3-87o" firstAttribute="top" secondItem="k94-AX-a63" secondAttribute="top" id="fur-mZ-SaC"/>
+                                    <constraint firstItem="OqM-xK-6Sl" firstAttribute="width" secondItem="OqM-xK-6Sl" secondAttribute="height" multiplier="1:1" id="hMh-Ev-0o0"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRI-mS-c9D">
+                                <rect key="frame" x="400" y="491" width="200" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UH-Td-Ic5">
+                                        <rect key="frame" x="82" y="0.0" width="36" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shirt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="GN2-iF-UFb">
+                                        <rect key="frame" x="5" y="23" width="190" height="24"/>
+                                        <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="22"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="GN2-iF-UFb" firstAttribute="centerX" secondItem="tRI-mS-c9D" secondAttribute="centerX" id="UHm-6l-cy7"/>
+                                    <constraint firstItem="0UH-Td-Ic5" firstAttribute="centerX" secondItem="tRI-mS-c9D" secondAttribute="centerX" id="Ydz-Ba-oAI"/>
+                                    <constraint firstAttribute="trailing" secondItem="GN2-iF-UFb" secondAttribute="trailing" constant="5" id="aoA-10-nmI"/>
+                                    <constraint firstItem="GN2-iF-UFb" firstAttribute="leading" secondItem="tRI-mS-c9D" secondAttribute="leading" constant="5" id="dPm-sj-dbO"/>
+                                    <constraint firstItem="GN2-iF-UFb" firstAttribute="centerY" secondItem="tRI-mS-c9D" secondAttribute="centerY" constant="5" id="e00-6P-rit"/>
+                                    <constraint firstItem="0UH-Td-Ic5" firstAttribute="top" secondItem="tRI-mS-c9D" secondAttribute="top" id="elz-oU-w64"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tRI-mS-c9D" firstAttribute="width" secondItem="FT1-A8-bZu" secondAttribute="width" id="5B0-VE-bnC"/>
+                            <constraint firstItem="k94-AX-a63" firstAttribute="top" secondItem="jPo-py-4X0" secondAttribute="bottom" id="5h1-Gd-XFN"/>
+                            <constraint firstItem="k94-AX-a63" firstAttribute="leading" secondItem="FT1-A8-bZu" secondAttribute="trailing" id="5s5-Bh-H3W"/>
+                            <constraint firstAttribute="width" secondItem="FT1-A8-bZu" secondAttribute="width" multiplier="3" priority="999" id="Gm1-YF-qtY"/>
+                            <constraint firstItem="tRI-mS-c9D" firstAttribute="top" secondItem="FT1-A8-bZu" secondAttribute="top" id="K7v-ZU-ok8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tRI-mS-c9D" secondAttribute="trailing" constant="-20" id="LiX-kJ-iaY"/>
+                            <constraint firstItem="FT1-A8-bZu" firstAttribute="leading" secondItem="CFx-hj-Tad" secondAttribute="leadingMargin" constant="-20" id="Mjl-pb-iQF"/>
+                            <constraint firstItem="tRI-mS-c9D" firstAttribute="leading" secondItem="k94-AX-a63" secondAttribute="trailing" id="Rdy-6w-HWR"/>
+                            <constraint firstItem="jPo-py-4X0" firstAttribute="top" secondItem="L6g-Mt-Oeb" secondAttribute="bottom" id="eUQ-Z1-AzU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jPo-py-4X0" secondAttribute="trailing" constant="-20" id="ey0-dp-Kdg"/>
+                            <constraint firstItem="k94-AX-a63" firstAttribute="width" secondItem="FT1-A8-bZu" secondAttribute="width" id="faZ-WA-ueE"/>
+                            <constraint firstItem="k94-AX-a63" firstAttribute="bottom" secondItem="FT1-A8-bZu" secondAttribute="bottom" id="j3Z-mb-F4Y"/>
+                            <constraint firstItem="jPo-py-4X0" firstAttribute="leading" secondItem="CFx-hj-Tad" secondAttribute="leadingMargin" constant="-20" id="jq4-Ve-tbQ"/>
+                            <constraint firstItem="7kX-ol-aa8" firstAttribute="top" secondItem="FT1-A8-bZu" secondAttribute="bottom" id="kct-5j-54E"/>
+                            <constraint firstItem="k94-AX-a63" firstAttribute="top" secondItem="FT1-A8-bZu" secondAttribute="top" id="nQa-5V-DJw"/>
+                            <constraint firstItem="tRI-mS-c9D" firstAttribute="bottom" secondItem="FT1-A8-bZu" secondAttribute="bottom" id="vx7-1A-ABf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gear Guide" image="clothesIcon.png" id="CTD-RU-NxD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sgc-eu-sWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-268" y="994"/>
+        </scene>
+        <!--Gear Table View Controller-->
+        <scene sceneID="2ou-7N-2DK">
+            <objects>
+                <tableViewController id="98L-Ij-DPb" customClass="GearTableViewController" customModule="SplatPal" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="74" sectionHeaderHeight="28" sectionFooterHeight="28" id="2E5-qi-Bg6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="471"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellGear" rowHeight="70" id="gE9-Xh-ncI">
+                                <rect key="frame" x="0.0" y="28" width="600" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gE9-Xh-ncI" id="B1u-60-GFU">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gear18KAviators.png" translatesAutoresizingMaskIntoConstraints="NO" id="ADb-Ad-G8v">
+                                            <rect key="frame" x="8" y="8" width="45" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="ADb-Ad-G8v" secondAttribute="height" multiplier="1:1" id="2EG-ID-9A8"/>
+                                                <constraint firstAttribute="width" constant="45" id="lY9-ct-L5s"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abilityBombRangeUp.png" translatesAutoresizingMaskIntoConstraints="NO" id="JII-z1-VPu">
+                                            <rect key="frame" x="547" y="8" width="45" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="JII-z1-VPu" secondAttribute="height" multiplier="1:1" id="j6S-g3-A8z"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abilityTenacity.png" translatesAutoresizingMaskIntoConstraints="NO" id="9R2-3K-jFe">
+                                            <rect key="frame" x="494" y="8" width="45" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="9R2-3K-jFe" secondAttribute="height" multiplier="1:1" id="Rf9-3V-zsq"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18K Aviators" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="7E6-Rd-C5q">
+                                            <rect key="frame" x="61" y="8" width="425" height="45"/>
+                                            <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="22"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="leadingMargin" secondItem="ADb-Ad-G8v" secondAttribute="leading" id="5Co-pY-55w"/>
+                                        <constraint firstItem="ADb-Ad-G8v" firstAttribute="top" secondItem="9R2-3K-jFe" secondAttribute="top" id="8AX-bt-fyk"/>
+                                        <constraint firstItem="JII-z1-VPu" firstAttribute="leading" secondItem="9R2-3K-jFe" secondAttribute="trailing" constant="8" id="AwV-qc-dpr"/>
+                                        <constraint firstItem="7E6-Rd-C5q" firstAttribute="bottom" secondItem="ADb-Ad-G8v" secondAttribute="bottom" id="ED9-6W-RLT"/>
+                                        <constraint firstItem="7E6-Rd-C5q" firstAttribute="top" secondItem="ADb-Ad-G8v" secondAttribute="top" id="ETR-BC-w7z"/>
+                                        <constraint firstAttribute="topMargin" secondItem="ADb-Ad-G8v" secondAttribute="top" id="LZ4-M8-WJf"/>
+                                        <constraint firstItem="JII-z1-VPu" firstAttribute="width" secondItem="ADb-Ad-G8v" secondAttribute="width" id="LfE-Mf-zB8"/>
+                                        <constraint firstItem="ADb-Ad-G8v" firstAttribute="top" secondItem="JII-z1-VPu" secondAttribute="top" id="dYe-ew-5DB"/>
+                                        <constraint firstItem="7E6-Rd-C5q" firstAttribute="leading" secondItem="ADb-Ad-G8v" secondAttribute="trailing" constant="8" id="ffn-9F-3f3"/>
+                                        <constraint firstItem="9R2-3K-jFe" firstAttribute="leading" secondItem="7E6-Rd-C5q" secondAttribute="trailing" constant="8" id="iGi-74-n8v"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="JII-z1-VPu" secondAttribute="trailing" id="l5d-t8-wPf"/>
+                                        <constraint firstItem="9R2-3K-jFe" firstAttribute="width" secondItem="ADb-Ad-G8v" secondAttribute="width" id="vHH-eE-K5e"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="98L-Ij-DPb" id="CkT-Qa-KV9"/>
+                            <outlet property="delegate" destination="98L-Ij-DPb" id="16W-dg-ikz"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="teX-yL-NBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="920"/>
+        </scene>
         <!--Brand Guide-->
         <scene sceneID="Vpq-Vg-kuC">
             <objects>
@@ -200,7 +402,7 @@
                         <viewControllerLayoutGuide type="bottom" id="lVq-ps-AV9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Bx9-gK-8MU">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWb-Cp-fOA">
@@ -541,14 +743,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ucx-P2-auf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1155" y="316"/>
+            <point key="canvasLocation" x="1145" y="259"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -556,7 +758,7 @@
                     <connections>
                         <segue destination="Spt-Db-0Ga" kind="relationship" relationship="viewControllers" id="usC-aU-Frt"/>
                         <segue destination="r0e-A2-1Fy" kind="relationship" relationship="viewControllers" id="kE0-1Q-fl9"/>
-                        <segue destination="kDg-NK-tKE" kind="relationship" relationship="viewControllers" id="9e9-tJ-Bdq"/>
+                        <segue destination="qB1-1u-vDb" kind="relationship" relationship="viewControllers" id="Atf-O0-JzW"/>
                         <segue destination="xvr-yH-U4u" kind="relationship" relationship="viewControllers" id="UuD-mr-d9g"/>
                     </connections>
                 </tabBarController>
@@ -573,7 +775,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wej-0a-w1d"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lXA-ee-oIx">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Log" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGY-DZ-bug">
@@ -627,25 +829,6 @@
             </objects>
             <point key="canvasLocation" x="-268" y="316"/>
         </scene>
-        <!--Clothing Guide-->
-        <scene sceneID="jxm-Oi-YRs">
-            <objects>
-                <viewController id="kDg-NK-tKE" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mA7-4k-oVI"/>
-                        <viewControllerLayoutGuide type="bottom" id="3y2-hN-ZhT"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="stC-aF-Mpe">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Clothing Guide" image="clothesIcon.png" id="tFi-6I-SRL"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Oz8-Sh-W1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-268" y="1008"/>
-        </scene>
         <!--Loading View Controller-->
         <scene sceneID="CEi-5N-sOG">
             <objects>
@@ -691,10 +874,12 @@
     <resources>
         <image name="abilityBombRangeUp.png" width="125" height="125"/>
         <image name="abilityNone.png" width="125" height="125"/>
+        <image name="abilityTenacity.png" width="125" height="125"/>
         <image name="backgroundTile.jpg" width="1024" height="1024"/>
         <image name="betaIcon.png" width="25" height="25"/>
         <image name="brandsIcon.png" width="25" height="25"/>
         <image name="clothesIcon.png" width="25" height="25"/>
+        <image name="gear18KAviators.png" width="128" height="128"/>
         <image name="mapIcon.png" width="25" height="25"/>
         <image name="rankedBadge.png" width="40" height="40"/>
         <image name="squid.png" width="150" height="150"/>

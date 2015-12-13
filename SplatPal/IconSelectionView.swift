@@ -26,6 +26,9 @@ class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataS
     @IBOutlet weak var btnClear: UIButton!
     @IBOutlet weak var btnClose: UIButton!
     
+    @IBOutlet weak var constraintBottom: NSLayoutConstraint!
+    @IBOutlet weak var constraintTop: NSLayoutConstraint!
+    
     var delegate: IconSelectionViewDelegate?
     var view: UIView!
     var viewType = ""

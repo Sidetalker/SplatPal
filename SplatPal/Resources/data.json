@@ -1,4 +1,4 @@
-{  
+{
    "brands":[  
       {  
          "name":"amiibo",
@@ -271,7 +271,7 @@
       },
       {  
          "category":"Clothing",
-         "ability":"Defense Up",
+         "ability":"Defence Up",
          "brand":"Splash Mob",
          "rarity":"2",
          "cost":"2,200",
@@ -335,7 +335,7 @@
       },
       {  
          "category":"Clothing",
-         "ability":"Defense Up",
+         "ability":"Defence Up",
          "brand":"Firefin",
          "rarity":"1",
          "cost":"600",
@@ -447,7 +447,7 @@
       },
       {  
          "category":"Shoes",
-         "ability":"Defense Up",
+         "ability":"Defence Up",
          "brand":"Zekko",
          "rarity":"1",
          "cost":"800",
@@ -551,7 +551,7 @@
       },
       {  
          "category":"Clothing",
-         "ability":"Defense Up",
+         "ability":"Defence Up",
          "brand":"Firefin",
          "rarity":"1",
          "cost":"500",
@@ -639,7 +639,7 @@
       },
       {  
          "category":"Headgear",
-         "ability":"Defense Up",
+         "ability":"Defence Up",
          "brand":"Tentatek",
          "rarity":"2",
          "cost":"2,400",
@@ -647,7 +647,7 @@
       },
       {  
          "category":"Clothing",
-         "ability":"Defense Up",
+         "ability":"Defence Up",
          "brand":"Tentatek",
          "rarity":"2",
          "cost":"2,400",
@@ -1039,7 +1039,7 @@
       },
       {  
          "category":"Clothing",
-         "ability":"Defense Up",
+         "ability":"Defence Up",
          "brand":"Skalop",
          "rarity":"1",
          "cost":"400",
@@ -1255,7 +1255,7 @@
       },
       {  
          "category":"Headgear",
-         "ability":"Defense Up",
+         "ability":"Defence Up",
          "brand":"amiibo",
          "rarity":"2",
          "cost":"Missing",
@@ -1415,7 +1415,7 @@
       },
       {  
          "category":"Clothing",
-         "ability":"Defense Up",
+         "ability":"Defence Up",
          "brand":"SquidForce",
          "rarity":"3",
          "cost":"9,000",
@@ -1423,7 +1423,7 @@
       },
       {  
          "category":"Shoes",
-         "ability":"Defense Up",
+         "ability":"Defence Up",
          "brand":"Rockenberg",
          "rarity":"1",
          "cost":"700",
@@ -1486,11 +1486,11 @@
          "name":"SQUID GIRL Tunic"
       },
       {  
-         "category":"Missing",
-         "ability":"Missing",
-         "brand":"Missing",
-         "rarity":"Missing",
-         "cost":"Missing",
+         "category":"Headgear",
+         "ability":"Last-Ditch Effort",
+         "brand":"Forge",
+         "rarity":"2",
+         "cost":"2300",
          "name":"Safari Hat"
       },
       {  
@@ -1615,7 +1615,7 @@
       },
       {  
          "category":"Clothing",
-         "ability":"Defense Up",
+         "ability":"Defence Up",
          "brand":"Takoroka",
          "rarity":"2",
          "cost":"1,800",
@@ -1663,7 +1663,7 @@
       },
       {  
          "category":"Headgear",
-         "ability":"Defense Up",
+         "ability":"Defence Up",
          "brand":"Forge",
          "rarity":"2",
          "cost":"2,800",
@@ -1711,7 +1711,7 @@
       },
       {  
          "category":"Shoes",
-         "ability":"Defense Up",
+         "ability":"Defence Up",
          "brand":"Krak-On",
          "rarity":"2",
          "cost":"1,500",
@@ -1887,7 +1887,7 @@
       },
       {  
          "category":"Headgear",
-         "ability":"Defense Up",
+         "ability":"Defence Up",
          "brand":"Takoroka",
          "rarity":"1",
          "cost":"400",
@@ -2199,7 +2199,7 @@
       },
       {  
          "category":"Clothing",
-         "ability":"Defense Up",
+         "ability":"Defence Up",
          "brand":"Zekko",
          "rarity":"1",
          "cost":"800",
