@@ -87,11 +87,30 @@ class GearTableViewController: UITableViewController {
     }
 }
 
-class GearGuideViewController: UIViewController {
+class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
+    @IBOutlet weak var iconView: IconSelectionView!
+    @IBOutlet weak var iconViewHeight: NSLayoutConstraint!
+    @IBOutlet weak var iconViewXLoc: NSLayoutConstraint!
+    
     var gearTable: GearTableViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        iconView.delegate = self
+        iconView.clipsToBounds = false
+        iconView.layer.shadowColor = UIColor.blackColor().CGColor
+        iconView.layer.shadowOffset = CGSizeZero
+        iconView.layer.shadowOpacity = 0.5
+        iconView.switchTypes("abilities")
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        iconView.updateDisplay(false, displayTitle: true)
+        iconViewHeight.constant = getIconViewHeight()
+        iconViewXLoc.constant = -iconViewHeight.constant - tabBarHeight
     }
     
     override func prefersStatusBarHidden() -> Bool {
@@ -103,5 +122,33 @@ class GearGuideViewController: UIViewController {
             gearTable = segue.destinationViewController as? GearTableViewController
             gearTable?.updateDisplay(gearData)
         }
+    }
+    
+    func getIconViewHeight() -> CGFloat {
+        return iconView.collectionView.collectionViewLayout.collectionViewContentSize().height + 30
+    }
+    
+    func toggleIconView(show: Bool) {
+        iconViewXLoc.constant = show ? 0 : -iconViewHeight.constant - tabBarHeight
+        
+        UIView.animateWithDuration(0.3, animations: {
+            self.view.layoutIfNeeded()
+        })
+    }
+    
+    func iconSelectionViewAbilitiesUpdated(view: IconSelectionView, selectedAbilities: [String]) {
+        toggleIconView(false)
+    }
+    
+    @IBAction func mainButtonTapped(sender: AnyObject) {
+        toggleIconView(true)
+    }
+    
+    func iconSelectionViewClose(view: IconSelectionView, sender: AnyObject) {
+        return
+    }
+    
+    func iconSelectionViewBrandsUpdated(view: IconSelectionView, selectedBrands: [String]) {
+        return
     }
 }

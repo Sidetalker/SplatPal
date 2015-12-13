@@ -230,12 +230,22 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3L-dT-ieg">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="60"/>
+                                        <connections>
+                                            <action selector="mainButtonTapped:" destination="qB1-1u-vDb" eventType="touchUpInside" id="55r-7n-9wz"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="W3L-dT-ieg" firstAttribute="top" secondItem="FT1-A8-bZu" secondAttribute="top" id="4eu-jf-ZAd"/>
+                                    <constraint firstItem="W3L-dT-ieg" firstAttribute="leading" secondItem="FT1-A8-bZu" secondAttribute="leading" id="8fj-DJ-cGB"/>
                                     <constraint firstItem="NBd-AU-bAv" firstAttribute="top" secondItem="FT1-A8-bZu" secondAttribute="top" id="FaQ-m0-mSU"/>
                                     <constraint firstAttribute="height" constant="60" id="H14-XE-Iz7"/>
+                                    <constraint firstAttribute="trailing" secondItem="W3L-dT-ieg" secondAttribute="trailing" id="HeQ-GT-Mza"/>
                                     <constraint firstItem="9NL-Ax-cYv" firstAttribute="centerX" secondItem="FT1-A8-bZu" secondAttribute="centerX" id="SB4-xA-ZVb"/>
+                                    <constraint firstAttribute="bottom" secondItem="W3L-dT-ieg" secondAttribute="bottom" id="Ucz-bu-Ad0"/>
                                     <constraint firstItem="NBd-AU-bAv" firstAttribute="centerX" secondItem="FT1-A8-bZu" secondAttribute="centerX" id="XWp-Eh-oaJ"/>
                                     <constraint firstAttribute="bottom" secondItem="9NL-Ax-cYv" secondAttribute="bottom" id="les-vc-X0h"/>
                                 </constraints>
@@ -297,9 +307,17 @@
                                     <constraint firstItem="0UH-Td-Ic5" firstAttribute="top" secondItem="tRI-mS-c9D" secondAttribute="top" id="elz-oU-w64"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QsW-pQ-EgM" customClass="IconSelectionView" customModule="SplatPal" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="561" width="600" height="10"/>
+                                <color key="backgroundColor" red="0.98594826459999996" green="0.0" blue="0.026950567960000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="sGa-dc-8B7"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="QsW-pQ-EgM" firstAttribute="leading" secondItem="CFx-hj-Tad" secondAttribute="leadingMargin" constant="-20" id="1Ko-NR-qo7"/>
                             <constraint firstItem="tRI-mS-c9D" firstAttribute="width" secondItem="FT1-A8-bZu" secondAttribute="width" id="5B0-VE-bnC"/>
                             <constraint firstItem="k94-AX-a63" firstAttribute="top" secondItem="jPo-py-4X0" secondAttribute="bottom" id="5h1-Gd-XFN"/>
                             <constraint firstItem="k94-AX-a63" firstAttribute="leading" secondItem="FT1-A8-bZu" secondAttribute="trailing" id="5s5-Bh-H3W"/>
@@ -308,6 +326,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="tRI-mS-c9D" secondAttribute="trailing" constant="-20" id="LiX-kJ-iaY"/>
                             <constraint firstItem="FT1-A8-bZu" firstAttribute="leading" secondItem="CFx-hj-Tad" secondAttribute="leadingMargin" constant="-20" id="Mjl-pb-iQF"/>
                             <constraint firstItem="tRI-mS-c9D" firstAttribute="leading" secondItem="k94-AX-a63" secondAttribute="trailing" id="Rdy-6w-HWR"/>
+                            <constraint firstItem="7kX-ol-aa8" firstAttribute="top" secondItem="QsW-pQ-EgM" secondAttribute="bottom" constant="-20" id="YYW-V5-oRw"/>
                             <constraint firstItem="jPo-py-4X0" firstAttribute="top" secondItem="L6g-Mt-Oeb" secondAttribute="bottom" id="eUQ-Z1-AzU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jPo-py-4X0" secondAttribute="trailing" constant="-20" id="ey0-dp-Kdg"/>
                             <constraint firstItem="k94-AX-a63" firstAttribute="width" secondItem="FT1-A8-bZu" secondAttribute="width" id="faZ-WA-ueE"/>
@@ -315,10 +334,16 @@
                             <constraint firstItem="jPo-py-4X0" firstAttribute="leading" secondItem="CFx-hj-Tad" secondAttribute="leadingMargin" constant="-20" id="jq4-Ve-tbQ"/>
                             <constraint firstItem="7kX-ol-aa8" firstAttribute="top" secondItem="FT1-A8-bZu" secondAttribute="bottom" id="kct-5j-54E"/>
                             <constraint firstItem="k94-AX-a63" firstAttribute="top" secondItem="FT1-A8-bZu" secondAttribute="top" id="nQa-5V-DJw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QsW-pQ-EgM" secondAttribute="trailing" constant="-20" id="vmk-LK-o2L"/>
                             <constraint firstItem="tRI-mS-c9D" firstAttribute="bottom" secondItem="FT1-A8-bZu" secondAttribute="bottom" id="vx7-1A-ABf"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Gear Guide" image="clothesIcon.png" id="CTD-RU-NxD"/>
+                    <connections>
+                        <outlet property="iconView" destination="QsW-pQ-EgM" id="ovE-dj-9v3"/>
+                        <outlet property="iconViewHeight" destination="sGa-dc-8B7" id="OEl-m7-aeV"/>
+                        <outlet property="iconViewXLoc" destination="YYW-V5-oRw" id="WeD-ID-Zjd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sgc-eu-sWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -362,7 +387,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18K Aviators" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="7E6-Rd-C5q">
                                             <rect key="frame" x="61" y="8" width="425" height="45"/>
                                             <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="22"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -409,7 +434,7 @@
                                 <rect key="frame" x="0.0" y="506" width="300" height="45"/>
                                 <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="30"/>
                                 <state key="normal" title="Brands">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="filterBrandsTapped:" destination="r0e-A2-1Fy" eventType="touchUpInside" id="oCe-78-hZs"/>
@@ -419,7 +444,7 @@
                                 <rect key="frame" x="300" y="506" width="300" height="45"/>
                                 <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="30"/>
                                 <state key="normal" title="Abilities">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="filterAbilitiesTapped:" destination="r0e-A2-1Fy" eventType="touchUpInside" id="JJY-C8-4Tj"/>
@@ -781,7 +806,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Log" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGY-DZ-bug">
                                 <rect key="frame" x="214" y="40" width="172.5" height="33"/>
                                 <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DrU-dw-t2r">

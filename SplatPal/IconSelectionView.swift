@@ -25,6 +25,7 @@ class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataS
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     @IBOutlet weak var btnClear: UIButton!
     @IBOutlet weak var btnClose: UIButton!
+    @IBOutlet weak var lblTitle: UILabel!
     
     @IBOutlet weak var constraintBottom: NSLayoutConstraint!
     @IBOutlet weak var constraintTop: NSLayoutConstraint!
@@ -32,6 +33,8 @@ class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataS
     var delegate: IconSelectionViewDelegate?
     var view: UIView!
     var viewType = ""
+    var showButtons = true
+    var showTitle = true
     var brandsSelected = [Bool]()
     var abilitiesSelected = [Bool]()
     
@@ -66,6 +69,16 @@ class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataS
         abilitiesSelected = Array(count: abilitiesRestricted.count, repeatedValue: false)
     }
     
+    func updateDisplay(displayButtons: Bool, displayTitle: Bool) {
+        showButtons = displayButtons
+        showTitle = displayTitle
+        
+        constraintBottom.constant = showButtons ? 50 : 0
+        constraintTop.constant = showTitle ? 30 : 0
+        
+        self.setNeedsLayout()
+    }
+    
     func switchTypes(newType: String) {
         viewType = newType
         collectionView.reloadData()
@@ -83,6 +96,10 @@ class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataS
             btnClose.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         default: break
         }
+    }
+    
+    func getProperHeight() -> CGFloat {
+        return self.collectionView.collectionViewLayout.collectionViewContentSize().height + (showButtons ? 50 : 0) + (showTitle ? 30 : 0)
     }
     
     @IBAction func clearTapped(sender: AnyObject) {
