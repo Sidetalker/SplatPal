@@ -9,6 +9,7 @@
         <mutableArray key="Paintball_Beta_4a.otf">
             <string>ProjectPaintball</string>
             <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
         </mutableArray>
     </customFonts>
     <objects>
@@ -17,7 +18,10 @@
                 <outlet property="btnClear" destination="dCU-gY-Rn7" id="7fJ-H6-c7e"/>
                 <outlet property="btnClose" destination="GFm-4C-RPV" id="LCT-M3-P3p"/>
                 <outlet property="collectionView" destination="s3Z-GJ-g9y" id="LLV-Wb-Kw5"/>
+                <outlet property="constraintBottom" destination="ygW-9o-xnd" id="wUT-wm-AQz"/>
+                <outlet property="constraintTop" destination="cyK-w4-H2h" id="s68-2h-614"/>
                 <outlet property="flowLayout" destination="GXS-1N-lKX" id="ez0-29-35Z"/>
+                <outlet property="lblTitle" destination="Few-qf-ZNh" id="cmD-sH-NAn"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -25,8 +29,41 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFm-4C-RPV">
+                    <rect key="frame" x="300" y="550" width="300" height="50"/>
+                    <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="30"/>
+                    <state key="normal" title="Close">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="closeTapped:" destination="-1" eventType="touchUpInside" id="LRZ-ah-sRG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCU-gY-Rn7">
+                    <rect key="frame" x="0.0" y="550" width="300" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="hlP-th-as9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="30"/>
+                    <state key="normal" title="Clear">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clearTapped:" destination="-1" eventType="touchUpInside" id="4mV-tq-OUg"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Main Ability" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Few-qf-ZNh">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="8P6-gx-jpx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="s3Z-GJ-g9y">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="550"/>
+                    <rect key="frame" x="0.0" y="50" width="600" height="500"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GXS-1N-lKX">
                         <size key="itemSize" width="65" height="65"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -38,43 +75,23 @@
                         <outlet property="delegate" destination="-1" id="xJ3-ar-Ui8"/>
                     </connections>
                 </collectionView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCU-gY-Rn7">
-                    <rect key="frame" x="0.0" y="550" width="300" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="hlP-th-as9"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="30"/>
-                    <state key="normal" title="Clear">
-                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                    </state>
-                    <connections>
-                        <action selector="clearTapped:" destination="-1" eventType="touchUpInside" id="4mV-tq-OUg"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFm-4C-RPV">
-                    <rect key="frame" x="300" y="550" width="300" height="50"/>
-                    <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="30"/>
-                    <state key="normal" title="Close">
-                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                    </state>
-                    <connections>
-                        <action selector="closeTapped:" destination="-1" eventType="touchUpInside" id="LRZ-ah-sRG"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="GFm-4C-RPV" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="KQ6-Bt-pDz"/>
+                <constraint firstAttribute="trailing" secondItem="Few-qf-ZNh" secondAttribute="trailing" id="LNu-Xk-DPE"/>
                 <constraint firstItem="dCU-gY-Rn7" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="ONj-kM-1Tb"/>
                 <constraint firstAttribute="trailing" secondItem="GFm-4C-RPV" secondAttribute="trailing" id="SCK-Rd-oLy"/>
                 <constraint firstAttribute="bottom" secondItem="dCU-gY-Rn7" secondAttribute="bottom" id="Txn-tw-Xm4"/>
-                <constraint firstItem="s3Z-GJ-g9y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cyK-w4-H2h"/>
+                <constraint firstItem="s3Z-GJ-g9y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="cyK-w4-H2h"/>
+                <constraint firstItem="Few-qf-ZNh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dse-tA-KI1"/>
                 <constraint firstAttribute="bottom" secondItem="GFm-4C-RPV" secondAttribute="bottom" id="fK0-o6-n8J"/>
                 <constraint firstItem="GFm-4C-RPV" firstAttribute="height" secondItem="dCU-gY-Rn7" secondAttribute="height" id="fdf-kK-LOI"/>
                 <constraint firstItem="s3Z-GJ-g9y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nKM-IP-VBa"/>
+                <constraint firstItem="Few-qf-ZNh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qve-XI-4Xc"/>
                 <constraint firstAttribute="trailing" secondItem="s3Z-GJ-g9y" secondAttribute="trailing" id="sZw-CS-9eK"/>
                 <constraint firstItem="dCU-gY-Rn7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vhc-ol-kvV"/>
-                <constraint firstAttribute="bottom" secondItem="s3Z-GJ-g9y" secondAttribute="bottom" constant="50" id="ygW-9o-xnd"/>
+                <constraint firstAttribute="bottom" secondItem="s3Z-GJ-g9y" secondAttribute="bottom" priority="999" constant="50" id="ygW-9o-xnd"/>
             </constraints>
             <point key="canvasLocation" x="347" y="376"/>
         </view>

@@ -3,6 +3,9 @@ use_frameworks!
 
 target 'SplatPal' do
 
+pod 'Fabric'
+pod 'Crashlytics'
+
 pod 'Alamofire', '~> 3.0'
 pod 'SwiftyJSON', '~> 2.0'
 pod 'XCGLogger', '~> 3.0'
