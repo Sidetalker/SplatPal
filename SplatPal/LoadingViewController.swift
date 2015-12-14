@@ -10,6 +10,7 @@ import UIKit
 import SwiftyJSON
 
 var brandData = [JSON]()
+var gearData = [JSON]()
 
 class LoadingViewController: UIViewController {
     
@@ -17,6 +18,7 @@ class LoadingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        UITabBar.appearance().tintColor = UIColor.whiteColor()
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -44,6 +46,7 @@ class LoadingViewController: UIViewController {
             let jsonResult = JSON(data: jsonData)
             
             brandData = jsonResult["brands"].arrayValue
+            gearData = jsonResult["gear"].arrayValue
         }
     }
 }

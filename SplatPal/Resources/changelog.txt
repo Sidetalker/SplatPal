@@ -1,15 +1,26 @@
-Version 0.2.0 (?)
+Version 0.3.0 (132)
+- Minor changes
+    - Fixed wording
+
+Version 0.3.0 (131)
+- Bugfix: "Any" gear was not displaying after tapped
+
+Version 0.3.0 (128)
+- Gear Guide added
+
+Version 0.2.4 (84)
+- Tapping a brand toggles a more detailed view
 - Bugfix: Launch image displays properly
 
-Version 0.2.0 (53)
+Version 0.2.3 (53)
 - Minor changes
     - Tweaks to fix the beta install error
     - Added version designator to Doorbell.io
 
-Version 0.2.0 (45)
+Version 0.2.2 (45)
 - Bugfix: Updating map data no longer crashes app if unsuccessful
 
-Version 0.2.0 (19)
+Version 0.2.1 (19)
 - Crashlytics added for crash logging
 
 Version 0.2.0 (14)

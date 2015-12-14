@@ -1,0 +1,526 @@
+(lp0
+S'Aloha Shirt'
+p1
+aS'Anchor Sweat'
+p2
+aS'Armor Jacket Replica'
+p3
+aS'B-ball Jersey (Away)'
+p4
+aS'B-ball Jersey (Home)'
+p5
+aS'Baby-Jelly Shirt'
+p6
+aS'Baseball Jersey'
+p7
+aS'Basic Tee'
+p8
+aS'Berry Ski Jacket'
+p9
+aS'Black 8-Bit FishFry'
+p10
+aS'Black Anchor Tee'
+p11
+aS'Black Baseball LS'
+p12
+aS'Black Inky Rider'
+p13
+aS'Black Layered LS'
+p14
+aS'Black LS'
+p15
+aS'Black Pipe Tee'
+p16
+aS'Black Polo'
+p17
+aS'Black Squideye'
+p18
+aS'Black Tee'
+p19
+aS'Blue Peaks Tee'
+p20
+aS'Blue Sailor Suit'
+p21
+aS'Camo Layered LS'
+p22
+aS'Camo Zip Hoodie'
+p23
+aS'Carnivore Tee'
+p24
+aS'Choco Layered LS'
+p25
+aS'Cycle King Jersey'
+p26
+aS'Cycling Shirt'
+p27
+aS'Dark Urban Vest'
+p28
+aS'FC Albacore'
+p29
+aS'Firefin Navy Sweat'
+p30
+aS'Forest Vest'
+p31
+aS'Forge Inkling Parka'
+p32
+aS'Forge Octarian Jacket'
+p33
+aS'Fugu Tee'
+p34
+aS'Grape Tee'
+p35
+aS'Gray College Sweat'
+p36
+aS'Gray Mixed Shirt'
+p37
+aS'Gray Vector Tee'
+p38
+aS'Green Cardigan'
+p39
+aS'Green Striped LS'
+p40
+aS'Green Tee'
+p41
+aS'Green Zip Hoodie'
+p42
+aS'Green-Check Shirt'
+p43
+aS'Herbivore Tee'
+p44
+aS'Hero Jacket Replica'
+p45
+aS'Ivory Peaks Tee'
+p46
+aS'Krak-On 528'
+p47
+aS'Layered Anchor LS'
+p48
+aS'Layered Vector LS'
+p49
+aS'Linen Shirt'
+p50
+aS'Logo Aloha Shirt'
+p51
+aS'Lumberjack Shirt'
+p52
+aS'Mint Tee'
+p53
+aS'Mountain Vest'
+p54
+aS'Navy College Sweat'
+p55
+aS'Navy Striped LS'
+p56
+aS'Octo Tee'
+p57
+aS'Octoling Armor'
+p58
+aS'Olive Ski Jacket'
+p59
+aS'Orange Cardigan'
+p60
+aS'Part-Time Pirate'
+p61
+aS'Pearl Tee'
+p62
+aS'Pirate-Stripe Tee'
+p63
+aS'Power Armor'
+p64
+aS'Purple Camo LS'
+p65
+aS'Rainy-Day Tee'
+p66
+aS'Red Vector Tee'
+p67
+aS'Red-Check Shirt'
+p68
+aS'Reel Sweat'
+p69
+aS'Reggae Tee'
+p70
+aS'Retro Gamer Jersey'
+p71
+aS'Retro Sweat'
+p72
+aS'Rockenberg Black'
+p73
+aS'Rockenberg White'
+p74
+aS'Rodeo Shirt'
+p75
+aS'Round-Collar Shirt'
+p76
+aS'Sage Polo'
+p77
+aS'Sailor-Stripe Tee'
+p78
+aS'Samurai Jacket'
+p79
+aS'School Jersey'
+p80
+aS'School Uniform'
+p81
+aS'Shirt & Tie'
+p82
+aS'Shirtstravaganza'
+p83
+aS'Shrimp-Pink Polo'
+p84
+aS'Sky-Blue Squideye'
+p85
+aS'Slipstream United'
+p86
+aS'Splatfest Tee'
+p87
+aS'SQUID GIRL Tunic'
+p88
+aS'Squid Satin Jacket'
+p89
+aS'Squid-Pattern Waistcoat'
+p90
+aS'Squid-Stitch Tee'
+p91
+aS'SquidForce White'
+p92
+aS'Squidmark LS'
+p93
+aS'Squidmark Sweat'
+p94
+aS'Squidstar Waistcoat'
+p95
+aS'Striped Peaks LS'
+p96
+aS'Striped Rugby'
+p97
+aS'Striped Shirt'
+p98
+aS'Sunny-Day Tee'
+p99
+aS'Traditional Apron'
+p100
+aS'Tricolor Rugby'
+p101
+aS'Urchins Jersey'
+p102
+aS'Varsity Baseball LS'
+p103
+aS'Varsity Hoodie'
+p104
+aS'Varsity Jacket'
+p105
+aS'Vintage Check Shirt'
+p106
+aS'White 8-Bit FishFry'
+p107
+aS'White Anchor Tee'
+p108
+aS'White Baseball LS'
+p109
+aS'White Inky Rider'
+p110
+aS'White Layered LS'
+p111
+aS'White Line Tee'
+p112
+aS'White LS'
+p113
+aS'White Puffer Tee'
+p114
+aS'White Sailor Suit'
+p115
+aS'White Shirt'
+p116
+aS'White Striped LS'
+p117
+aS'White Tee'
+p118
+aS'Yellow Layered LS'
+p119
+aS'Yellow Urban Vest'
+p120
+aS'Zapfish Satin Jacket'
+p121
+aS'Zekko Baseball LS'
+p122
+aS'Zekko Hoodie'
+p123
+aS'Zink Layered LS'
+p124
+aS'Zink LS'
+p125
+aS'18K Aviators'
+p126
+aS'Armor Helmet Replica'
+p127
+aS'B-ball Headband'
+p128
+aS'Backwards Cap'
+p129
+aS'Bamboo Hat'
+p130
+aS'Bike Helmet'
+p131
+aS'Black Arrowbands'
+p132
+aS'Blowfish Bell Hat'
+p133
+aS'Bobble Hat'
+p134
+aS'Camo Mesh'
+p135
+aS'Camping Hat'
+p136
+aS'Classic Straw Boater'
+p137
+aS'Cycle King Cap'
+p138
+aS'Cycling Cap'
+p139
+aS'Designer Headphones'
+p140
+aS'Fake Contacts'
+p141
+aS'FishFry Visor'
+p142
+aS'Five-Panel Cap'
+p143
+aS'Full Moon Glasses'
+p144
+aS'Gas Mask'
+p145
+aS'Golf Visor'
+p146
+aS'Hero Headset Replica'
+p147
+aS'Jet Cap'
+p148
+aS'Jogging Headband'
+p149
+aS'Jungle Hat'
+p150
+aS'Legendary Cap'
+p151
+aS'Lightweight Cap'
+p152
+aS'Noise Cancelers'
+p153
+aS'Octoglasses'
+p154
+aS'Octoling Goggles'
+p155
+aS'Paintball Mask'
+p156
+aS'Paisley Bandana'
+p157
+aS'Pilot Goggles'
+p158
+aS'Power Mask'
+p159
+aS'Retro Specs'
+p160
+aS'Safari Hat'
+p161
+aS'Samurai Helmet'
+p162
+aS'Short Beanie'
+p163
+aS'Skate Helmet'
+p164
+aS'Skull Bandana'
+p165
+aS'Snorkel Mask'
+p166
+aS'Soccer Headband'
+p167
+aS'Special Forces Beret'
+p168
+aS'Splash Goggles'
+p169
+aS'Sporty Bobble Hat'
+p170
+aS'Squash Headband'
+p171
+aS'SQUID GIRL Hat'
+p172
+aS'Squid Hairclip'
+p173
+aS'Squid Nordic'
+p174
+aS'Squid-Stitch Cap'
+p175
+aS'Squidvader Cap'
+p176
+aS'Stealth Goggles'
+p177
+aS'Straw Boater'
+p178
+aS'Streetstyle Cap'
+p179
+aS'Striped Beanie'
+p180
+aS'Studio Headphones'
+p181
+aS'Sun Visor'
+p182
+aS'Takoroka Mesh'
+p183
+aS'Tennis Headband'
+p184
+aS'Tentacles Helmet'
+p185
+aS'Tinted Shades'
+p186
+aS'Traditional Headband'
+p187
+aS'Treasure Hunter'
+p188
+aS'Two-Stripe Mesh'
+p189
+aS'Urchins Cap'
+p190
+aS'Visor Skate Helmet'
+p191
+aS'Warrior Headdress'
+p192
+aS'White Arrowbands'
+p193
+aS'White Headband'
+p194
+aS'Zekko Mesh'
+p195
+aS'Acerola Rain Boots'
+p196
+aS'Armor Boot Replicas'
+p197
+aS'Banana Basics'
+p198
+aS'Black Seahorses'
+p199
+aS'Black Trainers'
+p200
+aS'Blue Lo-Tops'
+p201
+aS'Blue Moto Boots'
+p202
+aS'Blue Sea Slugs'
+p203
+aS'Blue Slip-Ons'
+p204
+aS'Blueberry Casuals'
+p205
+aS'Bubble Rain Boots'
+p206
+aS'Cherry Kicks'
+p207
+aS'Choco Clogs'
+p208
+aS'Clownfish Basics'
+p209
+aS'Crazy Arrows'
+p210
+aS'Cream Basics'
+p211
+aS'Cream Hi-Tops'
+p212
+aS'Custom Trail Boots'
+p213
+aS'Cyan Trainers'
+p214
+aS'Gold Hi-Horses'
+p215
+aS'Green Rain Boots'
+p216
+aS'Hero Runner Replicas'
+p217
+aS'Hunter Hi-Tops'
+p218
+aS'Icy Down Boots'
+p219
+aS'LE Lo-Tops'
+p220
+aS'LE Soccer Cleats'
+p221
+aS'Mawcasins'
+p222
+aS'Moto Boots'
+p223
+aS'Neon Sea Slugs'
+p224
+aS'Octoling Boots'
+p225
+aS'Orange Arrows'
+p226
+aS'Orange Lo-Tops'
+p227
+aS'Oyster Clogs'
+p228
+aS'Pink Trainers'
+p229
+aS'Plum Casuals'
+p230
+aS'Power Boots'
+p231
+aS'Pro Trail Boots'
+p232
+aS'Punk Cherries'
+p233
+aS'Punk Whites'
+p234
+aS'Punk Yellows'
+p235
+aS'Purple Hi-Horses'
+p236
+aS'Purple Sea Slugs'
+p237
+aS'Red Hi-Horses'
+p238
+aS'Red Hi-Tops'
+p239
+aS'Red Sea Slugs'
+p240
+aS'Red Slip-Ons'
+p241
+aS'Red Work Boots'
+p242
+aS'Roasted Brogues'
+p243
+aS'Samurai Shoes'
+p244
+aS'School Shoes'
+p245
+aS'Shark Moccasins'
+p246
+aS'Snowy Down Boots'
+p247
+aS'Soccer Cleats'
+p248
+aS'SQUID GIRL Shoes'
+p249
+aS'Squid-Stitch Slip-Ons'
+p250
+aS'Squink Wingtips'
+p251
+aS'Strapping Reds'
+p252
+aS'Strapping Whites'
+p253
+aS'Tan Work Boots'
+p254
+aS'Traditional Sandals'
+p255
+aS'Trail Boots'
+p256
+aS'Turquoise Kicks'
+p257
+aS'White Arrows'
+p258
+aS'White Kicks'
+p259
+aS'White Seahorses'
+p260
+aS'Yellow Seahorses'
+p261
+aS'Zombie Hi-Horses'
+p262
+a.

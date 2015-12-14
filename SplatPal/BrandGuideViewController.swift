@@ -161,19 +161,19 @@ class BrandGuideViewController: UIViewController, IconSelectionViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        iconView.viewType = "brands"
         iconView.delegate = self
         iconView.clipsToBounds = false
         iconView.layer.shadowColor = UIColor.blackColor().CGColor
         iconView.layer.shadowOffset = CGSizeZero
         iconView.layer.shadowOpacity = 0.5
-        iconView.collectionView.reloadData()
+        iconView.switchTypes("brands")
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        iconViewHeight.constant = getIconViewHeight()
+        iconView.updateDisplay(true, displayTitle: false)
+        iconViewHeight.constant = iconView.getProperHeight()
         iconViewXLoc.constant = -iconViewHeight.constant - tabBarHeight
     }
 
@@ -188,10 +188,6 @@ class BrandGuideViewController: UIViewController, IconSelectionViewDelegate {
         }
     }
     
-    func getIconViewHeight() -> CGFloat {
-        return iconView.collectionView.collectionViewLayout.collectionViewContentSize().height + 50
-    }
-    
     func toggleIconView(show: Bool) {
         iconViewXLoc.constant = show ? 0 : -iconViewHeight.constant - tabBarHeight
         
@@ -202,14 +198,14 @@ class BrandGuideViewController: UIViewController, IconSelectionViewDelegate {
     
     @IBAction func filterBrandsTapped(sender: AnyObject) {
         iconView.switchTypes("brands")
-        iconViewHeight.constant = getIconViewHeight()
+        iconViewHeight.constant = iconView.getProperHeight()
         self.view.layoutIfNeeded()
         toggleIconView(true)
     }
     
     @IBAction func filterAbilitiesTapped(sender: AnyObject) {
         iconView.switchTypes("abilities")
-        iconViewHeight.constant = getIconViewHeight()
+        iconViewHeight.constant = iconView.getProperHeight()
         self.view.layoutIfNeeded()
         toggleIconView(true)
     }

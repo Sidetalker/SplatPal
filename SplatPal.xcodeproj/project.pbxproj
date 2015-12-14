@@ -88,6 +88,272 @@
 		0AC607FA1C191F09006EECA7 /* squid@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607F71C191F09006EECA7 /* squid@3x.png */; };
 		0AC607FC1C192211006EECA7 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC607FB1C192211006EECA7 /* LoadingViewController.swift */; };
 		0AC607FE1C194ACE006EECA7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC607FD1C194ACE006EECA7 /* Helpers.swift */; };
+		0ADF9AA11C1D1255002D7E81 /* clothesIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9A9E1C1D1255002D7E81 /* clothesIcon.png */; };
+		0ADF9AA21C1D1255002D7E81 /* clothesIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9A9F1C1D1255002D7E81 /* clothesIcon@2x.png */; };
+		0ADF9AA31C1D1255002D7E81 /* clothesIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AA01C1D1255002D7E81 /* clothesIcon@3x.png */; };
+		0ADF9AA51C1DF135002D7E81 /* GearGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADF9AA41C1DF135002D7E81 /* GearGuideViewController.swift */; };
+		0ADF9BAD1C1DF2DE002D7E81 /* gear18KAviators.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AA71C1DF2DD002D7E81 /* gear18KAviators.png */; };
+		0ADF9BAE1C1DF2DE002D7E81 /* gearAcerolaRainBoots.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AA81C1DF2DD002D7E81 /* gearAcerolaRainBoots.png */; };
+		0ADF9BAF1C1DF2DE002D7E81 /* gearAlohaShirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AA91C1DF2DD002D7E81 /* gearAlohaShirt.png */; };
+		0ADF9BB01C1DF2DE002D7E81 /* gearAnchorSweat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AAA1C1DF2DD002D7E81 /* gearAnchorSweat.png */; };
+		0ADF9BB11C1DF2DE002D7E81 /* gearArmorBootReplicas.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AAB1C1DF2DD002D7E81 /* gearArmorBootReplicas.png */; };
+		0ADF9BB21C1DF2DE002D7E81 /* gearArmorHelmetReplica.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AAC1C1DF2DD002D7E81 /* gearArmorHelmetReplica.png */; };
+		0ADF9BB31C1DF2DE002D7E81 /* gearArmorJacketReplica.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AAD1C1DF2DD002D7E81 /* gearArmorJacketReplica.png */; };
+		0ADF9BB41C1DF2DE002D7E81 /* gearB-ballHeadband.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AAE1C1DF2DD002D7E81 /* gearB-ballHeadband.png */; };
+		0ADF9BB51C1DF2DE002D7E81 /* gearB-ballJersey(Away).png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AAF1C1DF2DD002D7E81 /* gearB-ballJersey(Away).png */; };
+		0ADF9BB61C1DF2DE002D7E81 /* gearB-ballJersey(Home).png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AB01C1DF2DD002D7E81 /* gearB-ballJersey(Home).png */; };
+		0ADF9BB71C1DF2DE002D7E81 /* gearBaby-JellyShirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AB11C1DF2DD002D7E81 /* gearBaby-JellyShirt.png */; };
+		0ADF9BB81C1DF2DE002D7E81 /* gearBackwardsCap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AB21C1DF2DD002D7E81 /* gearBackwardsCap.png */; };
+		0ADF9BB91C1DF2DE002D7E81 /* gearBambooHat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AB31C1DF2DD002D7E81 /* gearBambooHat.png */; };
+		0ADF9BBA1C1DF2DE002D7E81 /* gearBananaBasics.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AB41C1DF2DD002D7E81 /* gearBananaBasics.png */; };
+		0ADF9BBB1C1DF2DE002D7E81 /* gearBaseballJersey.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AB51C1DF2DD002D7E81 /* gearBaseballJersey.png */; };
+		0ADF9BBC1C1DF2DE002D7E81 /* gearBasicTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AB61C1DF2DD002D7E81 /* gearBasicTee.png */; };
+		0ADF9BBD1C1DF2DE002D7E81 /* gearBerrySkiJacket.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AB71C1DF2DD002D7E81 /* gearBerrySkiJacket.png */; };
+		0ADF9BBE1C1DF2DE002D7E81 /* gearBikeHelmet.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AB81C1DF2DD002D7E81 /* gearBikeHelmet.png */; };
+		0ADF9BBF1C1DF2DE002D7E81 /* gearBlack8-BitFishFry.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AB91C1DF2DD002D7E81 /* gearBlack8-BitFishFry.png */; };
+		0ADF9BC01C1DF2DE002D7E81 /* gearBlackAnchorTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9ABA1C1DF2DD002D7E81 /* gearBlackAnchorTee.png */; };
+		0ADF9BC11C1DF2DE002D7E81 /* gearBlackArrowbands.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9ABB1C1DF2DD002D7E81 /* gearBlackArrowbands.png */; };
+		0ADF9BC21C1DF2DE002D7E81 /* gearBlackBaseballLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9ABC1C1DF2DD002D7E81 /* gearBlackBaseballLS.png */; };
+		0ADF9BC31C1DF2DE002D7E81 /* gearBlackInkyRider.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9ABD1C1DF2DD002D7E81 /* gearBlackInkyRider.png */; };
+		0ADF9BC41C1DF2DE002D7E81 /* gearBlackLayeredLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9ABE1C1DF2DD002D7E81 /* gearBlackLayeredLS.png */; };
+		0ADF9BC51C1DF2DE002D7E81 /* gearBlackLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9ABF1C1DF2DD002D7E81 /* gearBlackLS.png */; };
+		0ADF9BC61C1DF2DE002D7E81 /* gearBlackPipeTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AC01C1DF2DD002D7E81 /* gearBlackPipeTee.png */; };
+		0ADF9BC71C1DF2DE002D7E81 /* gearBlackPolo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AC11C1DF2DD002D7E81 /* gearBlackPolo.png */; };
+		0ADF9BC81C1DF2DE002D7E81 /* gearBlackSeahorses.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AC21C1DF2DD002D7E81 /* gearBlackSeahorses.png */; };
+		0ADF9BC91C1DF2DE002D7E81 /* gearBlackSquideye.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AC31C1DF2DD002D7E81 /* gearBlackSquideye.png */; };
+		0ADF9BCA1C1DF2DE002D7E81 /* gearBlackTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AC41C1DF2DD002D7E81 /* gearBlackTee.png */; };
+		0ADF9BCB1C1DF2DE002D7E81 /* gearBlackTrainers.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AC51C1DF2DD002D7E81 /* gearBlackTrainers.png */; };
+		0ADF9BCC1C1DF2DE002D7E81 /* gearBlowfishBellHat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AC61C1DF2DD002D7E81 /* gearBlowfishBellHat.png */; };
+		0ADF9BCD1C1DF2DE002D7E81 /* gearBlueberryCasuals.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AC71C1DF2DD002D7E81 /* gearBlueberryCasuals.png */; };
+		0ADF9BCE1C1DF2DE002D7E81 /* gearBlueLo-Tops.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AC81C1DF2DD002D7E81 /* gearBlueLo-Tops.png */; };
+		0ADF9BCF1C1DF2DE002D7E81 /* gearBlueMotoBoots.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AC91C1DF2DD002D7E81 /* gearBlueMotoBoots.png */; };
+		0ADF9BD01C1DF2DE002D7E81 /* gearBluePeaksTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9ACA1C1DF2DD002D7E81 /* gearBluePeaksTee.png */; };
+		0ADF9BD11C1DF2DE002D7E81 /* gearBlueSailorSuit.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9ACB1C1DF2DD002D7E81 /* gearBlueSailorSuit.png */; };
+		0ADF9BD21C1DF2DE002D7E81 /* gearBlueSeaSlugs.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9ACC1C1DF2DD002D7E81 /* gearBlueSeaSlugs.png */; };
+		0ADF9BD31C1DF2DE002D7E81 /* gearBlueSlip-Ons.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9ACD1C1DF2DD002D7E81 /* gearBlueSlip-Ons.png */; };
+		0ADF9BD41C1DF2DE002D7E81 /* gearBobbleHat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9ACE1C1DF2DD002D7E81 /* gearBobbleHat.png */; };
+		0ADF9BD51C1DF2DE002D7E81 /* gearBubbleRainBoots.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9ACF1C1DF2DD002D7E81 /* gearBubbleRainBoots.png */; };
+		0ADF9BD61C1DF2DE002D7E81 /* gearCamoLayeredLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AD01C1DF2DD002D7E81 /* gearCamoLayeredLS.png */; };
+		0ADF9BD71C1DF2DE002D7E81 /* gearCamoMesh.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AD11C1DF2DD002D7E81 /* gearCamoMesh.png */; };
+		0ADF9BD81C1DF2DE002D7E81 /* gearCamoZipHoodie.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AD21C1DF2DD002D7E81 /* gearCamoZipHoodie.png */; };
+		0ADF9BD91C1DF2DE002D7E81 /* gearCampingHat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AD31C1DF2DD002D7E81 /* gearCampingHat.png */; };
+		0ADF9BDA1C1DF2DE002D7E81 /* gearCarnivoreTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AD41C1DF2DD002D7E81 /* gearCarnivoreTee.png */; };
+		0ADF9BDB1C1DF2DE002D7E81 /* gearCherryKicks.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AD51C1DF2DD002D7E81 /* gearCherryKicks.png */; };
+		0ADF9BDC1C1DF2DE002D7E81 /* gearChocoClogs.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AD61C1DF2DD002D7E81 /* gearChocoClogs.png */; };
+		0ADF9BDD1C1DF2DE002D7E81 /* gearChocoLayeredLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AD71C1DF2DD002D7E81 /* gearChocoLayeredLS.png */; };
+		0ADF9BDE1C1DF2DE002D7E81 /* gearClassicStrawBoater.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AD81C1DF2DD002D7E81 /* gearClassicStrawBoater.png */; };
+		0ADF9BDF1C1DF2DE002D7E81 /* gearClownfishBasics.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AD91C1DF2DD002D7E81 /* gearClownfishBasics.png */; };
+		0ADF9BE01C1DF2DE002D7E81 /* gearCrazyArrows.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9ADA1C1DF2DD002D7E81 /* gearCrazyArrows.png */; };
+		0ADF9BE11C1DF2DE002D7E81 /* gearCreamBasics.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9ADB1C1DF2DD002D7E81 /* gearCreamBasics.png */; };
+		0ADF9BE21C1DF2DE002D7E81 /* gearCreamHi-Tops.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9ADC1C1DF2DD002D7E81 /* gearCreamHi-Tops.png */; };
+		0ADF9BE31C1DF2DE002D7E81 /* gearCustomTrailBoots.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9ADD1C1DF2DD002D7E81 /* gearCustomTrailBoots.png */; };
+		0ADF9BE41C1DF2DE002D7E81 /* gearCyanTrainers.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9ADE1C1DF2DD002D7E81 /* gearCyanTrainers.png */; };
+		0ADF9BE51C1DF2DE002D7E81 /* gearCycleKingCap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9ADF1C1DF2DD002D7E81 /* gearCycleKingCap.png */; };
+		0ADF9BE61C1DF2DE002D7E81 /* gearCycleKingJersey.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AE01C1DF2DD002D7E81 /* gearCycleKingJersey.png */; };
+		0ADF9BE71C1DF2DE002D7E81 /* gearCyclingCap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AE11C1DF2DD002D7E81 /* gearCyclingCap.png */; };
+		0ADF9BE81C1DF2DE002D7E81 /* gearCyclingShirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AE21C1DF2DD002D7E81 /* gearCyclingShirt.png */; };
+		0ADF9BE91C1DF2DE002D7E81 /* gearDarkUrbanVest.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AE31C1DF2DD002D7E81 /* gearDarkUrbanVest.png */; };
+		0ADF9BEA1C1DF2DE002D7E81 /* gearDesignerHeadphones.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AE41C1DF2DD002D7E81 /* gearDesignerHeadphones.png */; };
+		0ADF9BEB1C1DF2DE002D7E81 /* gearFakeContacts.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AE51C1DF2DD002D7E81 /* gearFakeContacts.png */; };
+		0ADF9BEC1C1DF2DE002D7E81 /* gearFCAlbacore.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AE61C1DF2DD002D7E81 /* gearFCAlbacore.png */; };
+		0ADF9BED1C1DF2DE002D7E81 /* gearFirefinNavySweat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AE71C1DF2DD002D7E81 /* gearFirefinNavySweat.png */; };
+		0ADF9BEE1C1DF2DE002D7E81 /* gearFishFryVisor.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AE81C1DF2DD002D7E81 /* gearFishFryVisor.png */; };
+		0ADF9BEF1C1DF2DE002D7E81 /* gearFive-PanelCap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AE91C1DF2DD002D7E81 /* gearFive-PanelCap.png */; };
+		0ADF9BF01C1DF2DE002D7E81 /* gearForestVest.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AEA1C1DF2DD002D7E81 /* gearForestVest.png */; };
+		0ADF9BF11C1DF2DE002D7E81 /* gearForgeInklingParka.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AEB1C1DF2DD002D7E81 /* gearForgeInklingParka.png */; };
+		0ADF9BF21C1DF2DE002D7E81 /* gearForgeOctarianJacket.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AEC1C1DF2DD002D7E81 /* gearForgeOctarianJacket.png */; };
+		0ADF9BF31C1DF2DE002D7E81 /* gearFuguTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AED1C1DF2DD002D7E81 /* gearFuguTee.png */; };
+		0ADF9BF41C1DF2DE002D7E81 /* gearFullMoonGlasses.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AEE1C1DF2DD002D7E81 /* gearFullMoonGlasses.png */; };
+		0ADF9BF51C1DF2DE002D7E81 /* gearGasMask.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AEF1C1DF2DD002D7E81 /* gearGasMask.png */; };
+		0ADF9BF61C1DF2DE002D7E81 /* gearGoldHi-Horses.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AF01C1DF2DD002D7E81 /* gearGoldHi-Horses.png */; };
+		0ADF9BF71C1DF2DE002D7E81 /* gearGolfVisor.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AF11C1DF2DD002D7E81 /* gearGolfVisor.png */; };
+		0ADF9BF81C1DF2DE002D7E81 /* gearGrapeTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AF21C1DF2DD002D7E81 /* gearGrapeTee.png */; };
+		0ADF9BF91C1DF2DE002D7E81 /* gearGrayCollegeSweat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AF31C1DF2DD002D7E81 /* gearGrayCollegeSweat.png */; };
+		0ADF9BFA1C1DF2DE002D7E81 /* gearGrayMixedShirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AF41C1DF2DD002D7E81 /* gearGrayMixedShirt.png */; };
+		0ADF9BFB1C1DF2DE002D7E81 /* gearGrayVectorTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AF51C1DF2DD002D7E81 /* gearGrayVectorTee.png */; };
+		0ADF9BFC1C1DF2DE002D7E81 /* gearGreen-CheckShirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AF61C1DF2DD002D7E81 /* gearGreen-CheckShirt.png */; };
+		0ADF9BFD1C1DF2DE002D7E81 /* gearGreenCardigan.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AF71C1DF2DD002D7E81 /* gearGreenCardigan.png */; };
+		0ADF9BFE1C1DF2DE002D7E81 /* gearGreenRainBoots.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AF81C1DF2DD002D7E81 /* gearGreenRainBoots.png */; };
+		0ADF9BFF1C1DF2DE002D7E81 /* gearGreenStripedLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AF91C1DF2DD002D7E81 /* gearGreenStripedLS.png */; };
+		0ADF9C001C1DF2DE002D7E81 /* gearGreenTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AFA1C1DF2DD002D7E81 /* gearGreenTee.png */; };
+		0ADF9C011C1DF2DE002D7E81 /* gearGreenZipHoodie.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AFB1C1DF2DD002D7E81 /* gearGreenZipHoodie.png */; };
+		0ADF9C021C1DF2DE002D7E81 /* gearHerbivoreTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AFC1C1DF2DD002D7E81 /* gearHerbivoreTee.png */; };
+		0ADF9C031C1DF2DE002D7E81 /* gearHeroHeadsetReplica.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AFD1C1DF2DD002D7E81 /* gearHeroHeadsetReplica.png */; };
+		0ADF9C041C1DF2DE002D7E81 /* gearHeroJacketReplica.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AFE1C1DF2DD002D7E81 /* gearHeroJacketReplica.png */; };
+		0ADF9C051C1DF2DE002D7E81 /* gearHeroRunnerReplicas.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9AFF1C1DF2DD002D7E81 /* gearHeroRunnerReplicas.png */; };
+		0ADF9C061C1DF2DE002D7E81 /* gearHunterHi-Tops.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B001C1DF2DD002D7E81 /* gearHunterHi-Tops.png */; };
+		0ADF9C071C1DF2DE002D7E81 /* gearIcyDownBoots.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B011C1DF2DD002D7E81 /* gearIcyDownBoots.png */; };
+		0ADF9C081C1DF2DE002D7E81 /* gearIvoryPeaksTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B021C1DF2DD002D7E81 /* gearIvoryPeaksTee.png */; };
+		0ADF9C091C1DF2DE002D7E81 /* gearJetCap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B031C1DF2DD002D7E81 /* gearJetCap.png */; };
+		0ADF9C0A1C1DF2DE002D7E81 /* gearJoggingHeadband.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B041C1DF2DD002D7E81 /* gearJoggingHeadband.png */; };
+		0ADF9C0B1C1DF2DE002D7E81 /* gearJungleHat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B051C1DF2DD002D7E81 /* gearJungleHat.png */; };
+		0ADF9C0C1C1DF2DE002D7E81 /* gearKrak-On528.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B061C1DF2DD002D7E81 /* gearKrak-On528.png */; };
+		0ADF9C0D1C1DF2DE002D7E81 /* gearLayeredAnchorLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B071C1DF2DD002D7E81 /* gearLayeredAnchorLS.png */; };
+		0ADF9C0E1C1DF2DE002D7E81 /* gearLayeredVectorLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B081C1DF2DD002D7E81 /* gearLayeredVectorLS.png */; };
+		0ADF9C0F1C1DF2DE002D7E81 /* gearLegendaryCap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B091C1DF2DD002D7E81 /* gearLegendaryCap.png */; };
+		0ADF9C101C1DF2DE002D7E81 /* gearLELo-Tops.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B0A1C1DF2DD002D7E81 /* gearLELo-Tops.png */; };
+		0ADF9C111C1DF2DE002D7E81 /* gearLESoccerCleats.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B0B1C1DF2DD002D7E81 /* gearLESoccerCleats.png */; };
+		0ADF9C121C1DF2DE002D7E81 /* gearLightweightCap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B0C1C1DF2DD002D7E81 /* gearLightweightCap.png */; };
+		0ADF9C131C1DF2DE002D7E81 /* gearLinenShirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B0D1C1DF2DD002D7E81 /* gearLinenShirt.png */; };
+		0ADF9C141C1DF2DE002D7E81 /* gearLogoAlohaShirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B0E1C1DF2DD002D7E81 /* gearLogoAlohaShirt.png */; };
+		0ADF9C151C1DF2DE002D7E81 /* gearLumberjackShirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B0F1C1DF2DD002D7E81 /* gearLumberjackShirt.png */; };
+		0ADF9C161C1DF2DE002D7E81 /* gearMawcasins.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B101C1DF2DD002D7E81 /* gearMawcasins.png */; };
+		0ADF9C171C1DF2DE002D7E81 /* gearMintTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B111C1DF2DD002D7E81 /* gearMintTee.png */; };
+		0ADF9C181C1DF2DE002D7E81 /* gearMotoBoots.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B121C1DF2DD002D7E81 /* gearMotoBoots.png */; };
+		0ADF9C191C1DF2DE002D7E81 /* gearMountainVest.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B131C1DF2DD002D7E81 /* gearMountainVest.png */; };
+		0ADF9C1A1C1DF2DE002D7E81 /* gearNavyCollegeSweat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B141C1DF2DD002D7E81 /* gearNavyCollegeSweat.png */; };
+		0ADF9C1B1C1DF2DE002D7E81 /* gearNavyStripedLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B151C1DF2DD002D7E81 /* gearNavyStripedLS.png */; };
+		0ADF9C1C1C1DF2DE002D7E81 /* gearNeonSeaSlugs.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B161C1DF2DD002D7E81 /* gearNeonSeaSlugs.png */; };
+		0ADF9C1D1C1DF2DE002D7E81 /* gearNoiseCancelers.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B171C1DF2DD002D7E81 /* gearNoiseCancelers.png */; };
+		0ADF9C1E1C1DF2DE002D7E81 /* gearOctoglasses.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B181C1DF2DD002D7E81 /* gearOctoglasses.png */; };
+		0ADF9C1F1C1DF2DE002D7E81 /* gearOctolingArmor.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B191C1DF2DD002D7E81 /* gearOctolingArmor.png */; };
+		0ADF9C201C1DF2DE002D7E81 /* gearOctolingBoots.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B1A1C1DF2DD002D7E81 /* gearOctolingBoots.png */; };
+		0ADF9C211C1DF2DE002D7E81 /* gearOctolingGoggles.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B1B1C1DF2DD002D7E81 /* gearOctolingGoggles.png */; };
+		0ADF9C221C1DF2DE002D7E81 /* gearOctoTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B1C1C1DF2DD002D7E81 /* gearOctoTee.png */; };
+		0ADF9C231C1DF2DE002D7E81 /* gearOliveSkiJacket.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B1D1C1DF2DD002D7E81 /* gearOliveSkiJacket.png */; };
+		0ADF9C241C1DF2DE002D7E81 /* gearOrangeArrows.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B1E1C1DF2DD002D7E81 /* gearOrangeArrows.png */; };
+		0ADF9C251C1DF2DE002D7E81 /* gearOrangeCardigan.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B1F1C1DF2DD002D7E81 /* gearOrangeCardigan.png */; };
+		0ADF9C261C1DF2DE002D7E81 /* gearOrangeLo-Tops.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B201C1DF2DD002D7E81 /* gearOrangeLo-Tops.png */; };
+		0ADF9C271C1DF2DE002D7E81 /* gearOysterClogs.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B211C1DF2DD002D7E81 /* gearOysterClogs.png */; };
+		0ADF9C281C1DF2DE002D7E81 /* gearPaintballMask.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B221C1DF2DD002D7E81 /* gearPaintballMask.png */; };
+		0ADF9C291C1DF2DE002D7E81 /* gearPaisleyBandana.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B231C1DF2DD002D7E81 /* gearPaisleyBandana.png */; };
+		0ADF9C2A1C1DF2DE002D7E81 /* gearPart-TimePirate.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B241C1DF2DD002D7E81 /* gearPart-TimePirate.png */; };
+		0ADF9C2B1C1DF2DE002D7E81 /* gearPearlTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B251C1DF2DD002D7E81 /* gearPearlTee.png */; };
+		0ADF9C2C1C1DF2DE002D7E81 /* gearPilotGoggles.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B261C1DF2DD002D7E81 /* gearPilotGoggles.png */; };
+		0ADF9C2D1C1DF2DE002D7E81 /* gearPinkTrainers.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B271C1DF2DD002D7E81 /* gearPinkTrainers.png */; };
+		0ADF9C2E1C1DF2DE002D7E81 /* gearPirate-StripeTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B281C1DF2DD002D7E81 /* gearPirate-StripeTee.png */; };
+		0ADF9C2F1C1DF2DE002D7E81 /* gearPlumCasuals.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B291C1DF2DD002D7E81 /* gearPlumCasuals.png */; };
+		0ADF9C301C1DF2DE002D7E81 /* gearPowerArmor.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B2A1C1DF2DD002D7E81 /* gearPowerArmor.png */; };
+		0ADF9C311C1DF2DE002D7E81 /* gearPowerBoots.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B2B1C1DF2DD002D7E81 /* gearPowerBoots.png */; };
+		0ADF9C321C1DF2DE002D7E81 /* gearPowerMask.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B2C1C1DF2DD002D7E81 /* gearPowerMask.png */; };
+		0ADF9C331C1DF2DE002D7E81 /* gearProTrailBoots.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B2D1C1DF2DD002D7E81 /* gearProTrailBoots.png */; };
+		0ADF9C341C1DF2DE002D7E81 /* gearPunkCherries.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B2E1C1DF2DD002D7E81 /* gearPunkCherries.png */; };
+		0ADF9C351C1DF2DE002D7E81 /* gearPunkWhites.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B2F1C1DF2DD002D7E81 /* gearPunkWhites.png */; };
+		0ADF9C361C1DF2DE002D7E81 /* gearPunkYellows.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B301C1DF2DD002D7E81 /* gearPunkYellows.png */; };
+		0ADF9C371C1DF2DE002D7E81 /* gearPurpleCamoLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B311C1DF2DD002D7E81 /* gearPurpleCamoLS.png */; };
+		0ADF9C381C1DF2DE002D7E81 /* gearPurpleHi-Horses.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B321C1DF2DD002D7E81 /* gearPurpleHi-Horses.png */; };
+		0ADF9C391C1DF2DE002D7E81 /* gearPurpleSeaSlugs.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B331C1DF2DD002D7E81 /* gearPurpleSeaSlugs.png */; };
+		0ADF9C3A1C1DF2DE002D7E81 /* gearRainy-DayTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B341C1DF2DD002D7E81 /* gearRainy-DayTee.png */; };
+		0ADF9C3B1C1DF2DE002D7E81 /* gearRed-CheckShirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B351C1DF2DD002D7E81 /* gearRed-CheckShirt.png */; };
+		0ADF9C3C1C1DF2DE002D7E81 /* gearRedHi-Horses.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B361C1DF2DD002D7E81 /* gearRedHi-Horses.png */; };
+		0ADF9C3D1C1DF2DE002D7E81 /* gearRedHi-Tops.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B371C1DF2DD002D7E81 /* gearRedHi-Tops.png */; };
+		0ADF9C3E1C1DF2DE002D7E81 /* gearRedSeaSlugs.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B381C1DF2DD002D7E81 /* gearRedSeaSlugs.png */; };
+		0ADF9C3F1C1DF2DE002D7E81 /* gearRedSlip-Ons.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B391C1DF2DD002D7E81 /* gearRedSlip-Ons.png */; };
+		0ADF9C401C1DF2DE002D7E81 /* gearRedVectorTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B3A1C1DF2DE002D7E81 /* gearRedVectorTee.png */; };
+		0ADF9C411C1DF2DE002D7E81 /* gearRedWorkBoots.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B3B1C1DF2DE002D7E81 /* gearRedWorkBoots.png */; };
+		0ADF9C421C1DF2DE002D7E81 /* gearReelSweat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B3C1C1DF2DE002D7E81 /* gearReelSweat.png */; };
+		0ADF9C431C1DF2DE002D7E81 /* gearReggaeTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B3D1C1DF2DE002D7E81 /* gearReggaeTee.png */; };
+		0ADF9C441C1DF2DE002D7E81 /* gearRetroGamerJersey.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B3E1C1DF2DE002D7E81 /* gearRetroGamerJersey.png */; };
+		0ADF9C451C1DF2DE002D7E81 /* gearRetroSpecs.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B3F1C1DF2DE002D7E81 /* gearRetroSpecs.png */; };
+		0ADF9C461C1DF2DE002D7E81 /* gearRetroSweat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B401C1DF2DE002D7E81 /* gearRetroSweat.png */; };
+		0ADF9C471C1DF2DE002D7E81 /* gearRoastedBrogues.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B411C1DF2DE002D7E81 /* gearRoastedBrogues.png */; };
+		0ADF9C481C1DF2DE002D7E81 /* gearRockenbergBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B421C1DF2DE002D7E81 /* gearRockenbergBlack.png */; };
+		0ADF9C491C1DF2DE002D7E81 /* gearRockenbergWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B431C1DF2DE002D7E81 /* gearRockenbergWhite.png */; };
+		0ADF9C4A1C1DF2DE002D7E81 /* gearRodeoShirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B441C1DF2DE002D7E81 /* gearRodeoShirt.png */; };
+		0ADF9C4B1C1DF2DE002D7E81 /* gearRound-CollarShirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B451C1DF2DE002D7E81 /* gearRound-CollarShirt.png */; };
+		0ADF9C4C1C1DF2DE002D7E81 /* gearSafariHat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B461C1DF2DE002D7E81 /* gearSafariHat.png */; };
+		0ADF9C4D1C1DF2DE002D7E81 /* gearSagePolo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B471C1DF2DE002D7E81 /* gearSagePolo.png */; };
+		0ADF9C4E1C1DF2DE002D7E81 /* gearSailor-StripeTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B481C1DF2DE002D7E81 /* gearSailor-StripeTee.png */; };
+		0ADF9C4F1C1DF2DE002D7E81 /* gearSamuraiHelmet.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B491C1DF2DE002D7E81 /* gearSamuraiHelmet.png */; };
+		0ADF9C501C1DF2DE002D7E81 /* gearSamuraiJacket.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B4A1C1DF2DE002D7E81 /* gearSamuraiJacket.png */; };
+		0ADF9C511C1DF2DE002D7E81 /* gearSamuraiShoes.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B4B1C1DF2DE002D7E81 /* gearSamuraiShoes.png */; };
+		0ADF9C521C1DF2DE002D7E81 /* gearSchoolJersey.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B4C1C1DF2DE002D7E81 /* gearSchoolJersey.png */; };
+		0ADF9C531C1DF2DE002D7E81 /* gearSchoolShoes.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B4D1C1DF2DE002D7E81 /* gearSchoolShoes.png */; };
+		0ADF9C541C1DF2DE002D7E81 /* gearSchoolUniform.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B4E1C1DF2DE002D7E81 /* gearSchoolUniform.png */; };
+		0ADF9C551C1DF2DE002D7E81 /* gearSharkMoccasins.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B4F1C1DF2DE002D7E81 /* gearSharkMoccasins.png */; };
+		0ADF9C561C1DF2DE002D7E81 /* gearShirt&Tie.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B501C1DF2DE002D7E81 /* gearShirt&Tie.png */; };
+		0ADF9C571C1DF2DE002D7E81 /* gearShirtstravaganza.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B511C1DF2DE002D7E81 /* gearShirtstravaganza.png */; };
+		0ADF9C581C1DF2DE002D7E81 /* gearShortBeanie.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B521C1DF2DE002D7E81 /* gearShortBeanie.png */; };
+		0ADF9C591C1DF2DE002D7E81 /* gearShrimp-PinkPolo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B531C1DF2DE002D7E81 /* gearShrimp-PinkPolo.png */; };
+		0ADF9C5A1C1DF2DE002D7E81 /* gearSkateHelmet.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B541C1DF2DE002D7E81 /* gearSkateHelmet.png */; };
+		0ADF9C5B1C1DF2DE002D7E81 /* gearSkullBandana.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B551C1DF2DE002D7E81 /* gearSkullBandana.png */; };
+		0ADF9C5C1C1DF2DE002D7E81 /* gearSky-BlueSquideye.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B561C1DF2DE002D7E81 /* gearSky-BlueSquideye.png */; };
+		0ADF9C5D1C1DF2DE002D7E81 /* gearSlipstreamUnited.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B571C1DF2DE002D7E81 /* gearSlipstreamUnited.png */; };
+		0ADF9C5E1C1DF2DE002D7E81 /* gearSnorkelMask.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B581C1DF2DE002D7E81 /* gearSnorkelMask.png */; };
+		0ADF9C5F1C1DF2DE002D7E81 /* gearSnowyDownBoots.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B591C1DF2DE002D7E81 /* gearSnowyDownBoots.png */; };
+		0ADF9C601C1DF2DE002D7E81 /* gearSoccerCleats.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B5A1C1DF2DE002D7E81 /* gearSoccerCleats.png */; };
+		0ADF9C611C1DF2DE002D7E81 /* gearSoccerHeadband.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B5B1C1DF2DE002D7E81 /* gearSoccerHeadband.png */; };
+		0ADF9C621C1DF2DE002D7E81 /* gearSpecialForcesBeret.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B5C1C1DF2DE002D7E81 /* gearSpecialForcesBeret.png */; };
+		0ADF9C631C1DF2DE002D7E81 /* gearSplashGoggles.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B5D1C1DF2DE002D7E81 /* gearSplashGoggles.png */; };
+		0ADF9C641C1DF2DE002D7E81 /* gearSplatfestTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B5E1C1DF2DE002D7E81 /* gearSplatfestTee.png */; };
+		0ADF9C651C1DF2DE002D7E81 /* gearSportyBobbleHat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B5F1C1DF2DE002D7E81 /* gearSportyBobbleHat.png */; };
+		0ADF9C661C1DF2DE002D7E81 /* gearSquashHeadband.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B601C1DF2DE002D7E81 /* gearSquashHeadband.png */; };
+		0ADF9C671C1DF2DE002D7E81 /* gearSquid-PatternWaistcoat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B611C1DF2DE002D7E81 /* gearSquid-PatternWaistcoat.png */; };
+		0ADF9C681C1DF2DE002D7E81 /* gearSquid-StitchCap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B621C1DF2DE002D7E81 /* gearSquid-StitchCap.png */; };
+		0ADF9C691C1DF2DE002D7E81 /* gearSquid-StitchSlip-Ons.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B631C1DF2DE002D7E81 /* gearSquid-StitchSlip-Ons.png */; };
+		0ADF9C6A1C1DF2DE002D7E81 /* gearSquid-StitchTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B641C1DF2DE002D7E81 /* gearSquid-StitchTee.png */; };
+		0ADF9C6B1C1DF2DE002D7E81 /* gearSquidForceWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B651C1DF2DE002D7E81 /* gearSquidForceWhite.png */; };
+		0ADF9C6C1C1DF2DE002D7E81 /* gearSQUIDGIRLHat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B661C1DF2DE002D7E81 /* gearSQUIDGIRLHat.png */; };
+		0ADF9C6D1C1DF2DE002D7E81 /* gearSQUIDGIRLShoes.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B671C1DF2DE002D7E81 /* gearSQUIDGIRLShoes.png */; };
+		0ADF9C6E1C1DF2DE002D7E81 /* gearSQUIDGIRLTunic.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B681C1DF2DE002D7E81 /* gearSQUIDGIRLTunic.png */; };
+		0ADF9C6F1C1DF2DE002D7E81 /* gearSquidHairclip.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B691C1DF2DE002D7E81 /* gearSquidHairclip.png */; };
+		0ADF9C701C1DF2DE002D7E81 /* gearSquidmarkLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B6A1C1DF2DE002D7E81 /* gearSquidmarkLS.png */; };
+		0ADF9C711C1DF2DE002D7E81 /* gearSquidmarkSweat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B6B1C1DF2DE002D7E81 /* gearSquidmarkSweat.png */; };
+		0ADF9C721C1DF2DE002D7E81 /* gearSquidNordic.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B6C1C1DF2DE002D7E81 /* gearSquidNordic.png */; };
+		0ADF9C731C1DF2DE002D7E81 /* gearSquidSatinJacket.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B6D1C1DF2DE002D7E81 /* gearSquidSatinJacket.png */; };
+		0ADF9C741C1DF2DE002D7E81 /* gearSquidstarWaistcoat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B6E1C1DF2DE002D7E81 /* gearSquidstarWaistcoat.png */; };
+		0ADF9C751C1DF2DE002D7E81 /* gearSquidvaderCap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B6F1C1DF2DE002D7E81 /* gearSquidvaderCap.png */; };
+		0ADF9C761C1DF2DE002D7E81 /* gearSquinkWingtips.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B701C1DF2DE002D7E81 /* gearSquinkWingtips.png */; };
+		0ADF9C771C1DF2DE002D7E81 /* gearStealthGoggles.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B711C1DF2DE002D7E81 /* gearStealthGoggles.png */; };
+		0ADF9C781C1DF2DE002D7E81 /* gearStrappingReds.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B721C1DF2DE002D7E81 /* gearStrappingReds.png */; };
+		0ADF9C791C1DF2DE002D7E81 /* gearStrappingWhites.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B731C1DF2DE002D7E81 /* gearStrappingWhites.png */; };
+		0ADF9C7A1C1DF2DE002D7E81 /* gearStrawBoater.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B741C1DF2DE002D7E81 /* gearStrawBoater.png */; };
+		0ADF9C7B1C1DF2DE002D7E81 /* gearStreetstyleCap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B751C1DF2DE002D7E81 /* gearStreetstyleCap.png */; };
+		0ADF9C7C1C1DF2DE002D7E81 /* gearStripedBeanie.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B761C1DF2DE002D7E81 /* gearStripedBeanie.png */; };
+		0ADF9C7D1C1DF2DE002D7E81 /* gearStripedPeaksLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B771C1DF2DE002D7E81 /* gearStripedPeaksLS.png */; };
+		0ADF9C7E1C1DF2DE002D7E81 /* gearStripedRugby.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B781C1DF2DE002D7E81 /* gearStripedRugby.png */; };
+		0ADF9C7F1C1DF2DE002D7E81 /* gearStripedShirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B791C1DF2DE002D7E81 /* gearStripedShirt.png */; };
+		0ADF9C801C1DF2DE002D7E81 /* gearStudioHeadphones.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B7A1C1DF2DE002D7E81 /* gearStudioHeadphones.png */; };
+		0ADF9C811C1DF2DE002D7E81 /* gearSunny-DayTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B7B1C1DF2DE002D7E81 /* gearSunny-DayTee.png */; };
+		0ADF9C821C1DF2DE002D7E81 /* gearSunVisor.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B7C1C1DF2DE002D7E81 /* gearSunVisor.png */; };
+		0ADF9C831C1DF2DE002D7E81 /* gearTakorokaMesh.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B7D1C1DF2DE002D7E81 /* gearTakorokaMesh.png */; };
+		0ADF9C841C1DF2DE002D7E81 /* gearTanWorkBoots.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B7E1C1DF2DE002D7E81 /* gearTanWorkBoots.png */; };
+		0ADF9C851C1DF2DE002D7E81 /* gearTennisHeadband.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B7F1C1DF2DE002D7E81 /* gearTennisHeadband.png */; };
+		0ADF9C861C1DF2DE002D7E81 /* gearTentaclesHelmet.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B801C1DF2DE002D7E81 /* gearTentaclesHelmet.png */; };
+		0ADF9C871C1DF2DE002D7E81 /* gearTintedShades.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B811C1DF2DE002D7E81 /* gearTintedShades.png */; };
+		0ADF9C881C1DF2DE002D7E81 /* gearTraditionalApron.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B821C1DF2DE002D7E81 /* gearTraditionalApron.png */; };
+		0ADF9C891C1DF2DE002D7E81 /* gearTraditionalHeadband.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B831C1DF2DE002D7E81 /* gearTraditionalHeadband.png */; };
+		0ADF9C8A1C1DF2DE002D7E81 /* gearTraditionalSandals.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B841C1DF2DE002D7E81 /* gearTraditionalSandals.png */; };
+		0ADF9C8B1C1DF2DE002D7E81 /* gearTrailBoots.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B851C1DF2DE002D7E81 /* gearTrailBoots.png */; };
+		0ADF9C8C1C1DF2DE002D7E81 /* gearTreasureHunter.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B861C1DF2DE002D7E81 /* gearTreasureHunter.png */; };
+		0ADF9C8D1C1DF2DE002D7E81 /* gearTricolorRugby.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B871C1DF2DE002D7E81 /* gearTricolorRugby.png */; };
+		0ADF9C8E1C1DF2DE002D7E81 /* gearTurquoiseKicks.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B881C1DF2DE002D7E81 /* gearTurquoiseKicks.png */; };
+		0ADF9C8F1C1DF2DE002D7E81 /* gearTwo-StripeMesh.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B891C1DF2DE002D7E81 /* gearTwo-StripeMesh.png */; };
+		0ADF9C901C1DF2DE002D7E81 /* gearUrchinsCap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B8A1C1DF2DE002D7E81 /* gearUrchinsCap.png */; };
+		0ADF9C911C1DF2DE002D7E81 /* gearUrchinsJersey.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B8B1C1DF2DE002D7E81 /* gearUrchinsJersey.png */; };
+		0ADF9C921C1DF2DE002D7E81 /* gearVarsityBaseballLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B8C1C1DF2DE002D7E81 /* gearVarsityBaseballLS.png */; };
+		0ADF9C931C1DF2DE002D7E81 /* gearVarsityHoodie.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B8D1C1DF2DE002D7E81 /* gearVarsityHoodie.png */; };
+		0ADF9C941C1DF2DE002D7E81 /* gearVarsityJacket.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B8E1C1DF2DE002D7E81 /* gearVarsityJacket.png */; };
+		0ADF9C951C1DF2DE002D7E81 /* gearVintageCheckShirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B8F1C1DF2DE002D7E81 /* gearVintageCheckShirt.png */; };
+		0ADF9C961C1DF2DE002D7E81 /* gearVisorSkateHelmet.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B901C1DF2DE002D7E81 /* gearVisorSkateHelmet.png */; };
+		0ADF9C971C1DF2DE002D7E81 /* gearWarriorHeaddress.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B911C1DF2DE002D7E81 /* gearWarriorHeaddress.png */; };
+		0ADF9C981C1DF2DE002D7E81 /* gearWhite8-BitFishFry.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B921C1DF2DE002D7E81 /* gearWhite8-BitFishFry.png */; };
+		0ADF9C991C1DF2DE002D7E81 /* gearWhiteAnchorTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B931C1DF2DE002D7E81 /* gearWhiteAnchorTee.png */; };
+		0ADF9C9A1C1DF2DE002D7E81 /* gearWhiteArrowbands.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B941C1DF2DE002D7E81 /* gearWhiteArrowbands.png */; };
+		0ADF9C9B1C1DF2DE002D7E81 /* gearWhiteArrows.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B951C1DF2DE002D7E81 /* gearWhiteArrows.png */; };
+		0ADF9C9C1C1DF2DE002D7E81 /* gearWhiteBaseballLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B961C1DF2DE002D7E81 /* gearWhiteBaseballLS.png */; };
+		0ADF9C9D1C1DF2DE002D7E81 /* gearWhiteHeadband.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B971C1DF2DE002D7E81 /* gearWhiteHeadband.png */; };
+		0ADF9C9E1C1DF2DE002D7E81 /* gearWhiteInkyRider.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B981C1DF2DE002D7E81 /* gearWhiteInkyRider.png */; };
+		0ADF9C9F1C1DF2DE002D7E81 /* gearWhiteKicks.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B991C1DF2DE002D7E81 /* gearWhiteKicks.png */; };
+		0ADF9CA01C1DF2DE002D7E81 /* gearWhiteLayeredLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B9A1C1DF2DE002D7E81 /* gearWhiteLayeredLS.png */; };
+		0ADF9CA11C1DF2DE002D7E81 /* gearWhiteLineTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B9B1C1DF2DE002D7E81 /* gearWhiteLineTee.png */; };
+		0ADF9CA21C1DF2DE002D7E81 /* gearWhiteLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B9C1C1DF2DE002D7E81 /* gearWhiteLS.png */; };
+		0ADF9CA31C1DF2DE002D7E81 /* gearWhitePufferTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B9D1C1DF2DE002D7E81 /* gearWhitePufferTee.png */; };
+		0ADF9CA41C1DF2DE002D7E81 /* gearWhiteSailorSuit.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B9E1C1DF2DE002D7E81 /* gearWhiteSailorSuit.png */; };
+		0ADF9CA51C1DF2DE002D7E81 /* gearWhiteSeahorses.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9B9F1C1DF2DE002D7E81 /* gearWhiteSeahorses.png */; };
+		0ADF9CA61C1DF2DE002D7E81 /* gearWhiteShirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9BA01C1DF2DE002D7E81 /* gearWhiteShirt.png */; };
+		0ADF9CA71C1DF2DE002D7E81 /* gearWhiteStripedLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9BA11C1DF2DE002D7E81 /* gearWhiteStripedLS.png */; };
+		0ADF9CA81C1DF2DE002D7E81 /* gearWhiteTee.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9BA21C1DF2DE002D7E81 /* gearWhiteTee.png */; };
+		0ADF9CA91C1DF2DE002D7E81 /* gearYellowLayeredLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9BA31C1DF2DE002D7E81 /* gearYellowLayeredLS.png */; };
+		0ADF9CAA1C1DF2DE002D7E81 /* gearYellowSeahorses.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9BA41C1DF2DE002D7E81 /* gearYellowSeahorses.png */; };
+		0ADF9CAB1C1DF2DE002D7E81 /* gearYellowUrbanVest.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9BA51C1DF2DE002D7E81 /* gearYellowUrbanVest.png */; };
+		0ADF9CAC1C1DF2DE002D7E81 /* gearZapfishSatinJacket.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9BA61C1DF2DE002D7E81 /* gearZapfishSatinJacket.png */; };
+		0ADF9CAD1C1DF2DE002D7E81 /* gearZekkoBaseballLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9BA71C1DF2DE002D7E81 /* gearZekkoBaseballLS.png */; };
+		0ADF9CAE1C1DF2DE002D7E81 /* gearZekkoHoodie.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9BA81C1DF2DE002D7E81 /* gearZekkoHoodie.png */; };
+		0ADF9CAF1C1DF2DE002D7E81 /* gearZekkoMesh.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9BA91C1DF2DE002D7E81 /* gearZekkoMesh.png */; };
+		0ADF9CB01C1DF2DE002D7E81 /* gearZinkLayeredLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9BAA1C1DF2DE002D7E81 /* gearZinkLayeredLS.png */; };
+		0ADF9CB11C1DF2DE002D7E81 /* gearZinkLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9BAB1C1DF2DE002D7E81 /* gearZinkLS.png */; };
+		0ADF9CB21C1DF2DE002D7E81 /* gearZombieHi-Horses.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9BAC1C1DF2DE002D7E81 /* gearZombieHi-Horses.png */; };
 		A80951C10B13C21AEA494E71 /* Pods_SplatPal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBDCB17D189739D652437DA /* Pods_SplatPal.framework */; };
 /* End PBXBuildFile section */
 
@@ -198,6 +464,272 @@
 		0AC607F71C191F09006EECA7 /* squid@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "squid@3x.png"; path = "Images/squid@3x.png"; sourceTree = "<group>"; };
 		0AC607FB1C192211006EECA7 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		0AC607FD1C194ACE006EECA7 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		0ADF9A9E1C1D1255002D7E81 /* clothesIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clothesIcon.png; path = Images/clothesIcon.png; sourceTree = "<group>"; };
+		0ADF9A9F1C1D1255002D7E81 /* clothesIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "clothesIcon@2x.png"; path = "Images/clothesIcon@2x.png"; sourceTree = "<group>"; };
+		0ADF9AA01C1D1255002D7E81 /* clothesIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "clothesIcon@3x.png"; path = "Images/clothesIcon@3x.png"; sourceTree = "<group>"; };
+		0ADF9AA41C1DF135002D7E81 /* GearGuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GearGuideViewController.swift; sourceTree = "<group>"; };
+		0ADF9AA71C1DF2DD002D7E81 /* gear18KAviators.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gear18KAviators.png; path = Images/gear/gear18KAviators.png; sourceTree = "<group>"; };
+		0ADF9AA81C1DF2DD002D7E81 /* gearAcerolaRainBoots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearAcerolaRainBoots.png; path = Images/gear/gearAcerolaRainBoots.png; sourceTree = "<group>"; };
+		0ADF9AA91C1DF2DD002D7E81 /* gearAlohaShirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearAlohaShirt.png; path = Images/gear/gearAlohaShirt.png; sourceTree = "<group>"; };
+		0ADF9AAA1C1DF2DD002D7E81 /* gearAnchorSweat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearAnchorSweat.png; path = Images/gear/gearAnchorSweat.png; sourceTree = "<group>"; };
+		0ADF9AAB1C1DF2DD002D7E81 /* gearArmorBootReplicas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearArmorBootReplicas.png; path = Images/gear/gearArmorBootReplicas.png; sourceTree = "<group>"; };
+		0ADF9AAC1C1DF2DD002D7E81 /* gearArmorHelmetReplica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearArmorHelmetReplica.png; path = Images/gear/gearArmorHelmetReplica.png; sourceTree = "<group>"; };
+		0ADF9AAD1C1DF2DD002D7E81 /* gearArmorJacketReplica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearArmorJacketReplica.png; path = Images/gear/gearArmorJacketReplica.png; sourceTree = "<group>"; };
+		0ADF9AAE1C1DF2DD002D7E81 /* gearB-ballHeadband.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearB-ballHeadband.png"; path = "Images/gear/gearB-ballHeadband.png"; sourceTree = "<group>"; };
+		0ADF9AAF1C1DF2DD002D7E81 /* gearB-ballJersey(Away).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearB-ballJersey(Away).png"; path = "Images/gear/gearB-ballJersey(Away).png"; sourceTree = "<group>"; };
+		0ADF9AB01C1DF2DD002D7E81 /* gearB-ballJersey(Home).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearB-ballJersey(Home).png"; path = "Images/gear/gearB-ballJersey(Home).png"; sourceTree = "<group>"; };
+		0ADF9AB11C1DF2DD002D7E81 /* gearBaby-JellyShirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearBaby-JellyShirt.png"; path = "Images/gear/gearBaby-JellyShirt.png"; sourceTree = "<group>"; };
+		0ADF9AB21C1DF2DD002D7E81 /* gearBackwardsCap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBackwardsCap.png; path = Images/gear/gearBackwardsCap.png; sourceTree = "<group>"; };
+		0ADF9AB31C1DF2DD002D7E81 /* gearBambooHat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBambooHat.png; path = Images/gear/gearBambooHat.png; sourceTree = "<group>"; };
+		0ADF9AB41C1DF2DD002D7E81 /* gearBananaBasics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBananaBasics.png; path = Images/gear/gearBananaBasics.png; sourceTree = "<group>"; };
+		0ADF9AB51C1DF2DD002D7E81 /* gearBaseballJersey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBaseballJersey.png; path = Images/gear/gearBaseballJersey.png; sourceTree = "<group>"; };
+		0ADF9AB61C1DF2DD002D7E81 /* gearBasicTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBasicTee.png; path = Images/gear/gearBasicTee.png; sourceTree = "<group>"; };
+		0ADF9AB71C1DF2DD002D7E81 /* gearBerrySkiJacket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBerrySkiJacket.png; path = Images/gear/gearBerrySkiJacket.png; sourceTree = "<group>"; };
+		0ADF9AB81C1DF2DD002D7E81 /* gearBikeHelmet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBikeHelmet.png; path = Images/gear/gearBikeHelmet.png; sourceTree = "<group>"; };
+		0ADF9AB91C1DF2DD002D7E81 /* gearBlack8-BitFishFry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearBlack8-BitFishFry.png"; path = "Images/gear/gearBlack8-BitFishFry.png"; sourceTree = "<group>"; };
+		0ADF9ABA1C1DF2DD002D7E81 /* gearBlackAnchorTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBlackAnchorTee.png; path = Images/gear/gearBlackAnchorTee.png; sourceTree = "<group>"; };
+		0ADF9ABB1C1DF2DD002D7E81 /* gearBlackArrowbands.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBlackArrowbands.png; path = Images/gear/gearBlackArrowbands.png; sourceTree = "<group>"; };
+		0ADF9ABC1C1DF2DD002D7E81 /* gearBlackBaseballLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBlackBaseballLS.png; path = Images/gear/gearBlackBaseballLS.png; sourceTree = "<group>"; };
+		0ADF9ABD1C1DF2DD002D7E81 /* gearBlackInkyRider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBlackInkyRider.png; path = Images/gear/gearBlackInkyRider.png; sourceTree = "<group>"; };
+		0ADF9ABE1C1DF2DD002D7E81 /* gearBlackLayeredLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBlackLayeredLS.png; path = Images/gear/gearBlackLayeredLS.png; sourceTree = "<group>"; };
+		0ADF9ABF1C1DF2DD002D7E81 /* gearBlackLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBlackLS.png; path = Images/gear/gearBlackLS.png; sourceTree = "<group>"; };
+		0ADF9AC01C1DF2DD002D7E81 /* gearBlackPipeTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBlackPipeTee.png; path = Images/gear/gearBlackPipeTee.png; sourceTree = "<group>"; };
+		0ADF9AC11C1DF2DD002D7E81 /* gearBlackPolo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBlackPolo.png; path = Images/gear/gearBlackPolo.png; sourceTree = "<group>"; };
+		0ADF9AC21C1DF2DD002D7E81 /* gearBlackSeahorses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBlackSeahorses.png; path = Images/gear/gearBlackSeahorses.png; sourceTree = "<group>"; };
+		0ADF9AC31C1DF2DD002D7E81 /* gearBlackSquideye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBlackSquideye.png; path = Images/gear/gearBlackSquideye.png; sourceTree = "<group>"; };
+		0ADF9AC41C1DF2DD002D7E81 /* gearBlackTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBlackTee.png; path = Images/gear/gearBlackTee.png; sourceTree = "<group>"; };
+		0ADF9AC51C1DF2DD002D7E81 /* gearBlackTrainers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBlackTrainers.png; path = Images/gear/gearBlackTrainers.png; sourceTree = "<group>"; };
+		0ADF9AC61C1DF2DD002D7E81 /* gearBlowfishBellHat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBlowfishBellHat.png; path = Images/gear/gearBlowfishBellHat.png; sourceTree = "<group>"; };
+		0ADF9AC71C1DF2DD002D7E81 /* gearBlueberryCasuals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBlueberryCasuals.png; path = Images/gear/gearBlueberryCasuals.png; sourceTree = "<group>"; };
+		0ADF9AC81C1DF2DD002D7E81 /* gearBlueLo-Tops.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearBlueLo-Tops.png"; path = "Images/gear/gearBlueLo-Tops.png"; sourceTree = "<group>"; };
+		0ADF9AC91C1DF2DD002D7E81 /* gearBlueMotoBoots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBlueMotoBoots.png; path = Images/gear/gearBlueMotoBoots.png; sourceTree = "<group>"; };
+		0ADF9ACA1C1DF2DD002D7E81 /* gearBluePeaksTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBluePeaksTee.png; path = Images/gear/gearBluePeaksTee.png; sourceTree = "<group>"; };
+		0ADF9ACB1C1DF2DD002D7E81 /* gearBlueSailorSuit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBlueSailorSuit.png; path = Images/gear/gearBlueSailorSuit.png; sourceTree = "<group>"; };
+		0ADF9ACC1C1DF2DD002D7E81 /* gearBlueSeaSlugs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBlueSeaSlugs.png; path = Images/gear/gearBlueSeaSlugs.png; sourceTree = "<group>"; };
+		0ADF9ACD1C1DF2DD002D7E81 /* gearBlueSlip-Ons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearBlueSlip-Ons.png"; path = "Images/gear/gearBlueSlip-Ons.png"; sourceTree = "<group>"; };
+		0ADF9ACE1C1DF2DD002D7E81 /* gearBobbleHat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBobbleHat.png; path = Images/gear/gearBobbleHat.png; sourceTree = "<group>"; };
+		0ADF9ACF1C1DF2DD002D7E81 /* gearBubbleRainBoots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearBubbleRainBoots.png; path = Images/gear/gearBubbleRainBoots.png; sourceTree = "<group>"; };
+		0ADF9AD01C1DF2DD002D7E81 /* gearCamoLayeredLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearCamoLayeredLS.png; path = Images/gear/gearCamoLayeredLS.png; sourceTree = "<group>"; };
+		0ADF9AD11C1DF2DD002D7E81 /* gearCamoMesh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearCamoMesh.png; path = Images/gear/gearCamoMesh.png; sourceTree = "<group>"; };
+		0ADF9AD21C1DF2DD002D7E81 /* gearCamoZipHoodie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearCamoZipHoodie.png; path = Images/gear/gearCamoZipHoodie.png; sourceTree = "<group>"; };
+		0ADF9AD31C1DF2DD002D7E81 /* gearCampingHat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearCampingHat.png; path = Images/gear/gearCampingHat.png; sourceTree = "<group>"; };
+		0ADF9AD41C1DF2DD002D7E81 /* gearCarnivoreTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearCarnivoreTee.png; path = Images/gear/gearCarnivoreTee.png; sourceTree = "<group>"; };
+		0ADF9AD51C1DF2DD002D7E81 /* gearCherryKicks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearCherryKicks.png; path = Images/gear/gearCherryKicks.png; sourceTree = "<group>"; };
+		0ADF9AD61C1DF2DD002D7E81 /* gearChocoClogs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearChocoClogs.png; path = Images/gear/gearChocoClogs.png; sourceTree = "<group>"; };
+		0ADF9AD71C1DF2DD002D7E81 /* gearChocoLayeredLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearChocoLayeredLS.png; path = Images/gear/gearChocoLayeredLS.png; sourceTree = "<group>"; };
+		0ADF9AD81C1DF2DD002D7E81 /* gearClassicStrawBoater.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearClassicStrawBoater.png; path = Images/gear/gearClassicStrawBoater.png; sourceTree = "<group>"; };
+		0ADF9AD91C1DF2DD002D7E81 /* gearClownfishBasics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearClownfishBasics.png; path = Images/gear/gearClownfishBasics.png; sourceTree = "<group>"; };
+		0ADF9ADA1C1DF2DD002D7E81 /* gearCrazyArrows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearCrazyArrows.png; path = Images/gear/gearCrazyArrows.png; sourceTree = "<group>"; };
+		0ADF9ADB1C1DF2DD002D7E81 /* gearCreamBasics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearCreamBasics.png; path = Images/gear/gearCreamBasics.png; sourceTree = "<group>"; };
+		0ADF9ADC1C1DF2DD002D7E81 /* gearCreamHi-Tops.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearCreamHi-Tops.png"; path = "Images/gear/gearCreamHi-Tops.png"; sourceTree = "<group>"; };
+		0ADF9ADD1C1DF2DD002D7E81 /* gearCustomTrailBoots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearCustomTrailBoots.png; path = Images/gear/gearCustomTrailBoots.png; sourceTree = "<group>"; };
+		0ADF9ADE1C1DF2DD002D7E81 /* gearCyanTrainers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearCyanTrainers.png; path = Images/gear/gearCyanTrainers.png; sourceTree = "<group>"; };
+		0ADF9ADF1C1DF2DD002D7E81 /* gearCycleKingCap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearCycleKingCap.png; path = Images/gear/gearCycleKingCap.png; sourceTree = "<group>"; };
+		0ADF9AE01C1DF2DD002D7E81 /* gearCycleKingJersey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearCycleKingJersey.png; path = Images/gear/gearCycleKingJersey.png; sourceTree = "<group>"; };
+		0ADF9AE11C1DF2DD002D7E81 /* gearCyclingCap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearCyclingCap.png; path = Images/gear/gearCyclingCap.png; sourceTree = "<group>"; };
+		0ADF9AE21C1DF2DD002D7E81 /* gearCyclingShirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearCyclingShirt.png; path = Images/gear/gearCyclingShirt.png; sourceTree = "<group>"; };
+		0ADF9AE31C1DF2DD002D7E81 /* gearDarkUrbanVest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearDarkUrbanVest.png; path = Images/gear/gearDarkUrbanVest.png; sourceTree = "<group>"; };
+		0ADF9AE41C1DF2DD002D7E81 /* gearDesignerHeadphones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearDesignerHeadphones.png; path = Images/gear/gearDesignerHeadphones.png; sourceTree = "<group>"; };
+		0ADF9AE51C1DF2DD002D7E81 /* gearFakeContacts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearFakeContacts.png; path = Images/gear/gearFakeContacts.png; sourceTree = "<group>"; };
+		0ADF9AE61C1DF2DD002D7E81 /* gearFCAlbacore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearFCAlbacore.png; path = Images/gear/gearFCAlbacore.png; sourceTree = "<group>"; };
+		0ADF9AE71C1DF2DD002D7E81 /* gearFirefinNavySweat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearFirefinNavySweat.png; path = Images/gear/gearFirefinNavySweat.png; sourceTree = "<group>"; };
+		0ADF9AE81C1DF2DD002D7E81 /* gearFishFryVisor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearFishFryVisor.png; path = Images/gear/gearFishFryVisor.png; sourceTree = "<group>"; };
+		0ADF9AE91C1DF2DD002D7E81 /* gearFive-PanelCap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearFive-PanelCap.png"; path = "Images/gear/gearFive-PanelCap.png"; sourceTree = "<group>"; };
+		0ADF9AEA1C1DF2DD002D7E81 /* gearForestVest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearForestVest.png; path = Images/gear/gearForestVest.png; sourceTree = "<group>"; };
+		0ADF9AEB1C1DF2DD002D7E81 /* gearForgeInklingParka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearForgeInklingParka.png; path = Images/gear/gearForgeInklingParka.png; sourceTree = "<group>"; };
+		0ADF9AEC1C1DF2DD002D7E81 /* gearForgeOctarianJacket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearForgeOctarianJacket.png; path = Images/gear/gearForgeOctarianJacket.png; sourceTree = "<group>"; };
+		0ADF9AED1C1DF2DD002D7E81 /* gearFuguTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearFuguTee.png; path = Images/gear/gearFuguTee.png; sourceTree = "<group>"; };
+		0ADF9AEE1C1DF2DD002D7E81 /* gearFullMoonGlasses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearFullMoonGlasses.png; path = Images/gear/gearFullMoonGlasses.png; sourceTree = "<group>"; };
+		0ADF9AEF1C1DF2DD002D7E81 /* gearGasMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearGasMask.png; path = Images/gear/gearGasMask.png; sourceTree = "<group>"; };
+		0ADF9AF01C1DF2DD002D7E81 /* gearGoldHi-Horses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearGoldHi-Horses.png"; path = "Images/gear/gearGoldHi-Horses.png"; sourceTree = "<group>"; };
+		0ADF9AF11C1DF2DD002D7E81 /* gearGolfVisor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearGolfVisor.png; path = Images/gear/gearGolfVisor.png; sourceTree = "<group>"; };
+		0ADF9AF21C1DF2DD002D7E81 /* gearGrapeTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearGrapeTee.png; path = Images/gear/gearGrapeTee.png; sourceTree = "<group>"; };
+		0ADF9AF31C1DF2DD002D7E81 /* gearGrayCollegeSweat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearGrayCollegeSweat.png; path = Images/gear/gearGrayCollegeSweat.png; sourceTree = "<group>"; };
+		0ADF9AF41C1DF2DD002D7E81 /* gearGrayMixedShirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearGrayMixedShirt.png; path = Images/gear/gearGrayMixedShirt.png; sourceTree = "<group>"; };
+		0ADF9AF51C1DF2DD002D7E81 /* gearGrayVectorTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearGrayVectorTee.png; path = Images/gear/gearGrayVectorTee.png; sourceTree = "<group>"; };
+		0ADF9AF61C1DF2DD002D7E81 /* gearGreen-CheckShirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearGreen-CheckShirt.png"; path = "Images/gear/gearGreen-CheckShirt.png"; sourceTree = "<group>"; };
+		0ADF9AF71C1DF2DD002D7E81 /* gearGreenCardigan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearGreenCardigan.png; path = Images/gear/gearGreenCardigan.png; sourceTree = "<group>"; };
+		0ADF9AF81C1DF2DD002D7E81 /* gearGreenRainBoots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearGreenRainBoots.png; path = Images/gear/gearGreenRainBoots.png; sourceTree = "<group>"; };
+		0ADF9AF91C1DF2DD002D7E81 /* gearGreenStripedLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearGreenStripedLS.png; path = Images/gear/gearGreenStripedLS.png; sourceTree = "<group>"; };
+		0ADF9AFA1C1DF2DD002D7E81 /* gearGreenTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearGreenTee.png; path = Images/gear/gearGreenTee.png; sourceTree = "<group>"; };
+		0ADF9AFB1C1DF2DD002D7E81 /* gearGreenZipHoodie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearGreenZipHoodie.png; path = Images/gear/gearGreenZipHoodie.png; sourceTree = "<group>"; };
+		0ADF9AFC1C1DF2DD002D7E81 /* gearHerbivoreTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearHerbivoreTee.png; path = Images/gear/gearHerbivoreTee.png; sourceTree = "<group>"; };
+		0ADF9AFD1C1DF2DD002D7E81 /* gearHeroHeadsetReplica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearHeroHeadsetReplica.png; path = Images/gear/gearHeroHeadsetReplica.png; sourceTree = "<group>"; };
+		0ADF9AFE1C1DF2DD002D7E81 /* gearHeroJacketReplica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearHeroJacketReplica.png; path = Images/gear/gearHeroJacketReplica.png; sourceTree = "<group>"; };
+		0ADF9AFF1C1DF2DD002D7E81 /* gearHeroRunnerReplicas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearHeroRunnerReplicas.png; path = Images/gear/gearHeroRunnerReplicas.png; sourceTree = "<group>"; };
+		0ADF9B001C1DF2DD002D7E81 /* gearHunterHi-Tops.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearHunterHi-Tops.png"; path = "Images/gear/gearHunterHi-Tops.png"; sourceTree = "<group>"; };
+		0ADF9B011C1DF2DD002D7E81 /* gearIcyDownBoots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearIcyDownBoots.png; path = Images/gear/gearIcyDownBoots.png; sourceTree = "<group>"; };
+		0ADF9B021C1DF2DD002D7E81 /* gearIvoryPeaksTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearIvoryPeaksTee.png; path = Images/gear/gearIvoryPeaksTee.png; sourceTree = "<group>"; };
+		0ADF9B031C1DF2DD002D7E81 /* gearJetCap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearJetCap.png; path = Images/gear/gearJetCap.png; sourceTree = "<group>"; };
+		0ADF9B041C1DF2DD002D7E81 /* gearJoggingHeadband.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearJoggingHeadband.png; path = Images/gear/gearJoggingHeadband.png; sourceTree = "<group>"; };
+		0ADF9B051C1DF2DD002D7E81 /* gearJungleHat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearJungleHat.png; path = Images/gear/gearJungleHat.png; sourceTree = "<group>"; };
+		0ADF9B061C1DF2DD002D7E81 /* gearKrak-On528.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearKrak-On528.png"; path = "Images/gear/gearKrak-On528.png"; sourceTree = "<group>"; };
+		0ADF9B071C1DF2DD002D7E81 /* gearLayeredAnchorLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearLayeredAnchorLS.png; path = Images/gear/gearLayeredAnchorLS.png; sourceTree = "<group>"; };
+		0ADF9B081C1DF2DD002D7E81 /* gearLayeredVectorLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearLayeredVectorLS.png; path = Images/gear/gearLayeredVectorLS.png; sourceTree = "<group>"; };
+		0ADF9B091C1DF2DD002D7E81 /* gearLegendaryCap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearLegendaryCap.png; path = Images/gear/gearLegendaryCap.png; sourceTree = "<group>"; };
+		0ADF9B0A1C1DF2DD002D7E81 /* gearLELo-Tops.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearLELo-Tops.png"; path = "Images/gear/gearLELo-Tops.png"; sourceTree = "<group>"; };
+		0ADF9B0B1C1DF2DD002D7E81 /* gearLESoccerCleats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearLESoccerCleats.png; path = Images/gear/gearLESoccerCleats.png; sourceTree = "<group>"; };
+		0ADF9B0C1C1DF2DD002D7E81 /* gearLightweightCap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearLightweightCap.png; path = Images/gear/gearLightweightCap.png; sourceTree = "<group>"; };
+		0ADF9B0D1C1DF2DD002D7E81 /* gearLinenShirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearLinenShirt.png; path = Images/gear/gearLinenShirt.png; sourceTree = "<group>"; };
+		0ADF9B0E1C1DF2DD002D7E81 /* gearLogoAlohaShirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearLogoAlohaShirt.png; path = Images/gear/gearLogoAlohaShirt.png; sourceTree = "<group>"; };
+		0ADF9B0F1C1DF2DD002D7E81 /* gearLumberjackShirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearLumberjackShirt.png; path = Images/gear/gearLumberjackShirt.png; sourceTree = "<group>"; };
+		0ADF9B101C1DF2DD002D7E81 /* gearMawcasins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearMawcasins.png; path = Images/gear/gearMawcasins.png; sourceTree = "<group>"; };
+		0ADF9B111C1DF2DD002D7E81 /* gearMintTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearMintTee.png; path = Images/gear/gearMintTee.png; sourceTree = "<group>"; };
+		0ADF9B121C1DF2DD002D7E81 /* gearMotoBoots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearMotoBoots.png; path = Images/gear/gearMotoBoots.png; sourceTree = "<group>"; };
+		0ADF9B131C1DF2DD002D7E81 /* gearMountainVest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearMountainVest.png; path = Images/gear/gearMountainVest.png; sourceTree = "<group>"; };
+		0ADF9B141C1DF2DD002D7E81 /* gearNavyCollegeSweat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearNavyCollegeSweat.png; path = Images/gear/gearNavyCollegeSweat.png; sourceTree = "<group>"; };
+		0ADF9B151C1DF2DD002D7E81 /* gearNavyStripedLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearNavyStripedLS.png; path = Images/gear/gearNavyStripedLS.png; sourceTree = "<group>"; };
+		0ADF9B161C1DF2DD002D7E81 /* gearNeonSeaSlugs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearNeonSeaSlugs.png; path = Images/gear/gearNeonSeaSlugs.png; sourceTree = "<group>"; };
+		0ADF9B171C1DF2DD002D7E81 /* gearNoiseCancelers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearNoiseCancelers.png; path = Images/gear/gearNoiseCancelers.png; sourceTree = "<group>"; };
+		0ADF9B181C1DF2DD002D7E81 /* gearOctoglasses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearOctoglasses.png; path = Images/gear/gearOctoglasses.png; sourceTree = "<group>"; };
+		0ADF9B191C1DF2DD002D7E81 /* gearOctolingArmor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearOctolingArmor.png; path = Images/gear/gearOctolingArmor.png; sourceTree = "<group>"; };
+		0ADF9B1A1C1DF2DD002D7E81 /* gearOctolingBoots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearOctolingBoots.png; path = Images/gear/gearOctolingBoots.png; sourceTree = "<group>"; };
+		0ADF9B1B1C1DF2DD002D7E81 /* gearOctolingGoggles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearOctolingGoggles.png; path = Images/gear/gearOctolingGoggles.png; sourceTree = "<group>"; };
+		0ADF9B1C1C1DF2DD002D7E81 /* gearOctoTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearOctoTee.png; path = Images/gear/gearOctoTee.png; sourceTree = "<group>"; };
+		0ADF9B1D1C1DF2DD002D7E81 /* gearOliveSkiJacket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearOliveSkiJacket.png; path = Images/gear/gearOliveSkiJacket.png; sourceTree = "<group>"; };
+		0ADF9B1E1C1DF2DD002D7E81 /* gearOrangeArrows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearOrangeArrows.png; path = Images/gear/gearOrangeArrows.png; sourceTree = "<group>"; };
+		0ADF9B1F1C1DF2DD002D7E81 /* gearOrangeCardigan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearOrangeCardigan.png; path = Images/gear/gearOrangeCardigan.png; sourceTree = "<group>"; };
+		0ADF9B201C1DF2DD002D7E81 /* gearOrangeLo-Tops.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearOrangeLo-Tops.png"; path = "Images/gear/gearOrangeLo-Tops.png"; sourceTree = "<group>"; };
+		0ADF9B211C1DF2DD002D7E81 /* gearOysterClogs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearOysterClogs.png; path = Images/gear/gearOysterClogs.png; sourceTree = "<group>"; };
+		0ADF9B221C1DF2DD002D7E81 /* gearPaintballMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearPaintballMask.png; path = Images/gear/gearPaintballMask.png; sourceTree = "<group>"; };
+		0ADF9B231C1DF2DD002D7E81 /* gearPaisleyBandana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearPaisleyBandana.png; path = Images/gear/gearPaisleyBandana.png; sourceTree = "<group>"; };
+		0ADF9B241C1DF2DD002D7E81 /* gearPart-TimePirate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearPart-TimePirate.png"; path = "Images/gear/gearPart-TimePirate.png"; sourceTree = "<group>"; };
+		0ADF9B251C1DF2DD002D7E81 /* gearPearlTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearPearlTee.png; path = Images/gear/gearPearlTee.png; sourceTree = "<group>"; };
+		0ADF9B261C1DF2DD002D7E81 /* gearPilotGoggles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearPilotGoggles.png; path = Images/gear/gearPilotGoggles.png; sourceTree = "<group>"; };
+		0ADF9B271C1DF2DD002D7E81 /* gearPinkTrainers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearPinkTrainers.png; path = Images/gear/gearPinkTrainers.png; sourceTree = "<group>"; };
+		0ADF9B281C1DF2DD002D7E81 /* gearPirate-StripeTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearPirate-StripeTee.png"; path = "Images/gear/gearPirate-StripeTee.png"; sourceTree = "<group>"; };
+		0ADF9B291C1DF2DD002D7E81 /* gearPlumCasuals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearPlumCasuals.png; path = Images/gear/gearPlumCasuals.png; sourceTree = "<group>"; };
+		0ADF9B2A1C1DF2DD002D7E81 /* gearPowerArmor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearPowerArmor.png; path = Images/gear/gearPowerArmor.png; sourceTree = "<group>"; };
+		0ADF9B2B1C1DF2DD002D7E81 /* gearPowerBoots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearPowerBoots.png; path = Images/gear/gearPowerBoots.png; sourceTree = "<group>"; };
+		0ADF9B2C1C1DF2DD002D7E81 /* gearPowerMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearPowerMask.png; path = Images/gear/gearPowerMask.png; sourceTree = "<group>"; };
+		0ADF9B2D1C1DF2DD002D7E81 /* gearProTrailBoots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearProTrailBoots.png; path = Images/gear/gearProTrailBoots.png; sourceTree = "<group>"; };
+		0ADF9B2E1C1DF2DD002D7E81 /* gearPunkCherries.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearPunkCherries.png; path = Images/gear/gearPunkCherries.png; sourceTree = "<group>"; };
+		0ADF9B2F1C1DF2DD002D7E81 /* gearPunkWhites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearPunkWhites.png; path = Images/gear/gearPunkWhites.png; sourceTree = "<group>"; };
+		0ADF9B301C1DF2DD002D7E81 /* gearPunkYellows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearPunkYellows.png; path = Images/gear/gearPunkYellows.png; sourceTree = "<group>"; };
+		0ADF9B311C1DF2DD002D7E81 /* gearPurpleCamoLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearPurpleCamoLS.png; path = Images/gear/gearPurpleCamoLS.png; sourceTree = "<group>"; };
+		0ADF9B321C1DF2DD002D7E81 /* gearPurpleHi-Horses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearPurpleHi-Horses.png"; path = "Images/gear/gearPurpleHi-Horses.png"; sourceTree = "<group>"; };
+		0ADF9B331C1DF2DD002D7E81 /* gearPurpleSeaSlugs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearPurpleSeaSlugs.png; path = Images/gear/gearPurpleSeaSlugs.png; sourceTree = "<group>"; };
+		0ADF9B341C1DF2DD002D7E81 /* gearRainy-DayTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearRainy-DayTee.png"; path = "Images/gear/gearRainy-DayTee.png"; sourceTree = "<group>"; };
+		0ADF9B351C1DF2DD002D7E81 /* gearRed-CheckShirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearRed-CheckShirt.png"; path = "Images/gear/gearRed-CheckShirt.png"; sourceTree = "<group>"; };
+		0ADF9B361C1DF2DD002D7E81 /* gearRedHi-Horses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearRedHi-Horses.png"; path = "Images/gear/gearRedHi-Horses.png"; sourceTree = "<group>"; };
+		0ADF9B371C1DF2DD002D7E81 /* gearRedHi-Tops.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearRedHi-Tops.png"; path = "Images/gear/gearRedHi-Tops.png"; sourceTree = "<group>"; };
+		0ADF9B381C1DF2DD002D7E81 /* gearRedSeaSlugs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearRedSeaSlugs.png; path = Images/gear/gearRedSeaSlugs.png; sourceTree = "<group>"; };
+		0ADF9B391C1DF2DD002D7E81 /* gearRedSlip-Ons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearRedSlip-Ons.png"; path = "Images/gear/gearRedSlip-Ons.png"; sourceTree = "<group>"; };
+		0ADF9B3A1C1DF2DE002D7E81 /* gearRedVectorTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearRedVectorTee.png; path = Images/gear/gearRedVectorTee.png; sourceTree = "<group>"; };
+		0ADF9B3B1C1DF2DE002D7E81 /* gearRedWorkBoots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearRedWorkBoots.png; path = Images/gear/gearRedWorkBoots.png; sourceTree = "<group>"; };
+		0ADF9B3C1C1DF2DE002D7E81 /* gearReelSweat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearReelSweat.png; path = Images/gear/gearReelSweat.png; sourceTree = "<group>"; };
+		0ADF9B3D1C1DF2DE002D7E81 /* gearReggaeTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearReggaeTee.png; path = Images/gear/gearReggaeTee.png; sourceTree = "<group>"; };
+		0ADF9B3E1C1DF2DE002D7E81 /* gearRetroGamerJersey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearRetroGamerJersey.png; path = Images/gear/gearRetroGamerJersey.png; sourceTree = "<group>"; };
+		0ADF9B3F1C1DF2DE002D7E81 /* gearRetroSpecs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearRetroSpecs.png; path = Images/gear/gearRetroSpecs.png; sourceTree = "<group>"; };
+		0ADF9B401C1DF2DE002D7E81 /* gearRetroSweat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearRetroSweat.png; path = Images/gear/gearRetroSweat.png; sourceTree = "<group>"; };
+		0ADF9B411C1DF2DE002D7E81 /* gearRoastedBrogues.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearRoastedBrogues.png; path = Images/gear/gearRoastedBrogues.png; sourceTree = "<group>"; };
+		0ADF9B421C1DF2DE002D7E81 /* gearRockenbergBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearRockenbergBlack.png; path = Images/gear/gearRockenbergBlack.png; sourceTree = "<group>"; };
+		0ADF9B431C1DF2DE002D7E81 /* gearRockenbergWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearRockenbergWhite.png; path = Images/gear/gearRockenbergWhite.png; sourceTree = "<group>"; };
+		0ADF9B441C1DF2DE002D7E81 /* gearRodeoShirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearRodeoShirt.png; path = Images/gear/gearRodeoShirt.png; sourceTree = "<group>"; };
+		0ADF9B451C1DF2DE002D7E81 /* gearRound-CollarShirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearRound-CollarShirt.png"; path = "Images/gear/gearRound-CollarShirt.png"; sourceTree = "<group>"; };
+		0ADF9B461C1DF2DE002D7E81 /* gearSafariHat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSafariHat.png; path = Images/gear/gearSafariHat.png; sourceTree = "<group>"; };
+		0ADF9B471C1DF2DE002D7E81 /* gearSagePolo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSagePolo.png; path = Images/gear/gearSagePolo.png; sourceTree = "<group>"; };
+		0ADF9B481C1DF2DE002D7E81 /* gearSailor-StripeTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearSailor-StripeTee.png"; path = "Images/gear/gearSailor-StripeTee.png"; sourceTree = "<group>"; };
+		0ADF9B491C1DF2DE002D7E81 /* gearSamuraiHelmet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSamuraiHelmet.png; path = Images/gear/gearSamuraiHelmet.png; sourceTree = "<group>"; };
+		0ADF9B4A1C1DF2DE002D7E81 /* gearSamuraiJacket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSamuraiJacket.png; path = Images/gear/gearSamuraiJacket.png; sourceTree = "<group>"; };
+		0ADF9B4B1C1DF2DE002D7E81 /* gearSamuraiShoes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSamuraiShoes.png; path = Images/gear/gearSamuraiShoes.png; sourceTree = "<group>"; };
+		0ADF9B4C1C1DF2DE002D7E81 /* gearSchoolJersey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSchoolJersey.png; path = Images/gear/gearSchoolJersey.png; sourceTree = "<group>"; };
+		0ADF9B4D1C1DF2DE002D7E81 /* gearSchoolShoes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSchoolShoes.png; path = Images/gear/gearSchoolShoes.png; sourceTree = "<group>"; };
+		0ADF9B4E1C1DF2DE002D7E81 /* gearSchoolUniform.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSchoolUniform.png; path = Images/gear/gearSchoolUniform.png; sourceTree = "<group>"; };
+		0ADF9B4F1C1DF2DE002D7E81 /* gearSharkMoccasins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSharkMoccasins.png; path = Images/gear/gearSharkMoccasins.png; sourceTree = "<group>"; };
+		0ADF9B501C1DF2DE002D7E81 /* gearShirt&Tie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearShirt&Tie.png"; path = "Images/gear/gearShirt&Tie.png"; sourceTree = "<group>"; };
+		0ADF9B511C1DF2DE002D7E81 /* gearShirtstravaganza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearShirtstravaganza.png; path = Images/gear/gearShirtstravaganza.png; sourceTree = "<group>"; };
+		0ADF9B521C1DF2DE002D7E81 /* gearShortBeanie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearShortBeanie.png; path = Images/gear/gearShortBeanie.png; sourceTree = "<group>"; };
+		0ADF9B531C1DF2DE002D7E81 /* gearShrimp-PinkPolo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearShrimp-PinkPolo.png"; path = "Images/gear/gearShrimp-PinkPolo.png"; sourceTree = "<group>"; };
+		0ADF9B541C1DF2DE002D7E81 /* gearSkateHelmet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSkateHelmet.png; path = Images/gear/gearSkateHelmet.png; sourceTree = "<group>"; };
+		0ADF9B551C1DF2DE002D7E81 /* gearSkullBandana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSkullBandana.png; path = Images/gear/gearSkullBandana.png; sourceTree = "<group>"; };
+		0ADF9B561C1DF2DE002D7E81 /* gearSky-BlueSquideye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearSky-BlueSquideye.png"; path = "Images/gear/gearSky-BlueSquideye.png"; sourceTree = "<group>"; };
+		0ADF9B571C1DF2DE002D7E81 /* gearSlipstreamUnited.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSlipstreamUnited.png; path = Images/gear/gearSlipstreamUnited.png; sourceTree = "<group>"; };
+		0ADF9B581C1DF2DE002D7E81 /* gearSnorkelMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSnorkelMask.png; path = Images/gear/gearSnorkelMask.png; sourceTree = "<group>"; };
+		0ADF9B591C1DF2DE002D7E81 /* gearSnowyDownBoots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSnowyDownBoots.png; path = Images/gear/gearSnowyDownBoots.png; sourceTree = "<group>"; };
+		0ADF9B5A1C1DF2DE002D7E81 /* gearSoccerCleats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSoccerCleats.png; path = Images/gear/gearSoccerCleats.png; sourceTree = "<group>"; };
+		0ADF9B5B1C1DF2DE002D7E81 /* gearSoccerHeadband.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSoccerHeadband.png; path = Images/gear/gearSoccerHeadband.png; sourceTree = "<group>"; };
+		0ADF9B5C1C1DF2DE002D7E81 /* gearSpecialForcesBeret.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSpecialForcesBeret.png; path = Images/gear/gearSpecialForcesBeret.png; sourceTree = "<group>"; };
+		0ADF9B5D1C1DF2DE002D7E81 /* gearSplashGoggles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSplashGoggles.png; path = Images/gear/gearSplashGoggles.png; sourceTree = "<group>"; };
+		0ADF9B5E1C1DF2DE002D7E81 /* gearSplatfestTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSplatfestTee.png; path = Images/gear/gearSplatfestTee.png; sourceTree = "<group>"; };
+		0ADF9B5F1C1DF2DE002D7E81 /* gearSportyBobbleHat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSportyBobbleHat.png; path = Images/gear/gearSportyBobbleHat.png; sourceTree = "<group>"; };
+		0ADF9B601C1DF2DE002D7E81 /* gearSquashHeadband.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSquashHeadband.png; path = Images/gear/gearSquashHeadband.png; sourceTree = "<group>"; };
+		0ADF9B611C1DF2DE002D7E81 /* gearSquid-PatternWaistcoat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearSquid-PatternWaistcoat.png"; path = "Images/gear/gearSquid-PatternWaistcoat.png"; sourceTree = "<group>"; };
+		0ADF9B621C1DF2DE002D7E81 /* gearSquid-StitchCap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearSquid-StitchCap.png"; path = "Images/gear/gearSquid-StitchCap.png"; sourceTree = "<group>"; };
+		0ADF9B631C1DF2DE002D7E81 /* gearSquid-StitchSlip-Ons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearSquid-StitchSlip-Ons.png"; path = "Images/gear/gearSquid-StitchSlip-Ons.png"; sourceTree = "<group>"; };
+		0ADF9B641C1DF2DE002D7E81 /* gearSquid-StitchTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearSquid-StitchTee.png"; path = "Images/gear/gearSquid-StitchTee.png"; sourceTree = "<group>"; };
+		0ADF9B651C1DF2DE002D7E81 /* gearSquidForceWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSquidForceWhite.png; path = Images/gear/gearSquidForceWhite.png; sourceTree = "<group>"; };
+		0ADF9B661C1DF2DE002D7E81 /* gearSQUIDGIRLHat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSQUIDGIRLHat.png; path = Images/gear/gearSQUIDGIRLHat.png; sourceTree = "<group>"; };
+		0ADF9B671C1DF2DE002D7E81 /* gearSQUIDGIRLShoes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSQUIDGIRLShoes.png; path = Images/gear/gearSQUIDGIRLShoes.png; sourceTree = "<group>"; };
+		0ADF9B681C1DF2DE002D7E81 /* gearSQUIDGIRLTunic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSQUIDGIRLTunic.png; path = Images/gear/gearSQUIDGIRLTunic.png; sourceTree = "<group>"; };
+		0ADF9B691C1DF2DE002D7E81 /* gearSquidHairclip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSquidHairclip.png; path = Images/gear/gearSquidHairclip.png; sourceTree = "<group>"; };
+		0ADF9B6A1C1DF2DE002D7E81 /* gearSquidmarkLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSquidmarkLS.png; path = Images/gear/gearSquidmarkLS.png; sourceTree = "<group>"; };
+		0ADF9B6B1C1DF2DE002D7E81 /* gearSquidmarkSweat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSquidmarkSweat.png; path = Images/gear/gearSquidmarkSweat.png; sourceTree = "<group>"; };
+		0ADF9B6C1C1DF2DE002D7E81 /* gearSquidNordic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSquidNordic.png; path = Images/gear/gearSquidNordic.png; sourceTree = "<group>"; };
+		0ADF9B6D1C1DF2DE002D7E81 /* gearSquidSatinJacket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSquidSatinJacket.png; path = Images/gear/gearSquidSatinJacket.png; sourceTree = "<group>"; };
+		0ADF9B6E1C1DF2DE002D7E81 /* gearSquidstarWaistcoat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSquidstarWaistcoat.png; path = Images/gear/gearSquidstarWaistcoat.png; sourceTree = "<group>"; };
+		0ADF9B6F1C1DF2DE002D7E81 /* gearSquidvaderCap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSquidvaderCap.png; path = Images/gear/gearSquidvaderCap.png; sourceTree = "<group>"; };
+		0ADF9B701C1DF2DE002D7E81 /* gearSquinkWingtips.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSquinkWingtips.png; path = Images/gear/gearSquinkWingtips.png; sourceTree = "<group>"; };
+		0ADF9B711C1DF2DE002D7E81 /* gearStealthGoggles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearStealthGoggles.png; path = Images/gear/gearStealthGoggles.png; sourceTree = "<group>"; };
+		0ADF9B721C1DF2DE002D7E81 /* gearStrappingReds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearStrappingReds.png; path = Images/gear/gearStrappingReds.png; sourceTree = "<group>"; };
+		0ADF9B731C1DF2DE002D7E81 /* gearStrappingWhites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearStrappingWhites.png; path = Images/gear/gearStrappingWhites.png; sourceTree = "<group>"; };
+		0ADF9B741C1DF2DE002D7E81 /* gearStrawBoater.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearStrawBoater.png; path = Images/gear/gearStrawBoater.png; sourceTree = "<group>"; };
+		0ADF9B751C1DF2DE002D7E81 /* gearStreetstyleCap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearStreetstyleCap.png; path = Images/gear/gearStreetstyleCap.png; sourceTree = "<group>"; };
+		0ADF9B761C1DF2DE002D7E81 /* gearStripedBeanie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearStripedBeanie.png; path = Images/gear/gearStripedBeanie.png; sourceTree = "<group>"; };
+		0ADF9B771C1DF2DE002D7E81 /* gearStripedPeaksLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearStripedPeaksLS.png; path = Images/gear/gearStripedPeaksLS.png; sourceTree = "<group>"; };
+		0ADF9B781C1DF2DE002D7E81 /* gearStripedRugby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearStripedRugby.png; path = Images/gear/gearStripedRugby.png; sourceTree = "<group>"; };
+		0ADF9B791C1DF2DE002D7E81 /* gearStripedShirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearStripedShirt.png; path = Images/gear/gearStripedShirt.png; sourceTree = "<group>"; };
+		0ADF9B7A1C1DF2DE002D7E81 /* gearStudioHeadphones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearStudioHeadphones.png; path = Images/gear/gearStudioHeadphones.png; sourceTree = "<group>"; };
+		0ADF9B7B1C1DF2DE002D7E81 /* gearSunny-DayTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearSunny-DayTee.png"; path = "Images/gear/gearSunny-DayTee.png"; sourceTree = "<group>"; };
+		0ADF9B7C1C1DF2DE002D7E81 /* gearSunVisor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearSunVisor.png; path = Images/gear/gearSunVisor.png; sourceTree = "<group>"; };
+		0ADF9B7D1C1DF2DE002D7E81 /* gearTakorokaMesh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearTakorokaMesh.png; path = Images/gear/gearTakorokaMesh.png; sourceTree = "<group>"; };
+		0ADF9B7E1C1DF2DE002D7E81 /* gearTanWorkBoots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearTanWorkBoots.png; path = Images/gear/gearTanWorkBoots.png; sourceTree = "<group>"; };
+		0ADF9B7F1C1DF2DE002D7E81 /* gearTennisHeadband.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearTennisHeadband.png; path = Images/gear/gearTennisHeadband.png; sourceTree = "<group>"; };
+		0ADF9B801C1DF2DE002D7E81 /* gearTentaclesHelmet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearTentaclesHelmet.png; path = Images/gear/gearTentaclesHelmet.png; sourceTree = "<group>"; };
+		0ADF9B811C1DF2DE002D7E81 /* gearTintedShades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearTintedShades.png; path = Images/gear/gearTintedShades.png; sourceTree = "<group>"; };
+		0ADF9B821C1DF2DE002D7E81 /* gearTraditionalApron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearTraditionalApron.png; path = Images/gear/gearTraditionalApron.png; sourceTree = "<group>"; };
+		0ADF9B831C1DF2DE002D7E81 /* gearTraditionalHeadband.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearTraditionalHeadband.png; path = Images/gear/gearTraditionalHeadband.png; sourceTree = "<group>"; };
+		0ADF9B841C1DF2DE002D7E81 /* gearTraditionalSandals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearTraditionalSandals.png; path = Images/gear/gearTraditionalSandals.png; sourceTree = "<group>"; };
+		0ADF9B851C1DF2DE002D7E81 /* gearTrailBoots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearTrailBoots.png; path = Images/gear/gearTrailBoots.png; sourceTree = "<group>"; };
+		0ADF9B861C1DF2DE002D7E81 /* gearTreasureHunter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearTreasureHunter.png; path = Images/gear/gearTreasureHunter.png; sourceTree = "<group>"; };
+		0ADF9B871C1DF2DE002D7E81 /* gearTricolorRugby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearTricolorRugby.png; path = Images/gear/gearTricolorRugby.png; sourceTree = "<group>"; };
+		0ADF9B881C1DF2DE002D7E81 /* gearTurquoiseKicks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearTurquoiseKicks.png; path = Images/gear/gearTurquoiseKicks.png; sourceTree = "<group>"; };
+		0ADF9B891C1DF2DE002D7E81 /* gearTwo-StripeMesh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearTwo-StripeMesh.png"; path = "Images/gear/gearTwo-StripeMesh.png"; sourceTree = "<group>"; };
+		0ADF9B8A1C1DF2DE002D7E81 /* gearUrchinsCap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearUrchinsCap.png; path = Images/gear/gearUrchinsCap.png; sourceTree = "<group>"; };
+		0ADF9B8B1C1DF2DE002D7E81 /* gearUrchinsJersey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearUrchinsJersey.png; path = Images/gear/gearUrchinsJersey.png; sourceTree = "<group>"; };
+		0ADF9B8C1C1DF2DE002D7E81 /* gearVarsityBaseballLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearVarsityBaseballLS.png; path = Images/gear/gearVarsityBaseballLS.png; sourceTree = "<group>"; };
+		0ADF9B8D1C1DF2DE002D7E81 /* gearVarsityHoodie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearVarsityHoodie.png; path = Images/gear/gearVarsityHoodie.png; sourceTree = "<group>"; };
+		0ADF9B8E1C1DF2DE002D7E81 /* gearVarsityJacket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearVarsityJacket.png; path = Images/gear/gearVarsityJacket.png; sourceTree = "<group>"; };
+		0ADF9B8F1C1DF2DE002D7E81 /* gearVintageCheckShirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearVintageCheckShirt.png; path = Images/gear/gearVintageCheckShirt.png; sourceTree = "<group>"; };
+		0ADF9B901C1DF2DE002D7E81 /* gearVisorSkateHelmet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearVisorSkateHelmet.png; path = Images/gear/gearVisorSkateHelmet.png; sourceTree = "<group>"; };
+		0ADF9B911C1DF2DE002D7E81 /* gearWarriorHeaddress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearWarriorHeaddress.png; path = Images/gear/gearWarriorHeaddress.png; sourceTree = "<group>"; };
+		0ADF9B921C1DF2DE002D7E81 /* gearWhite8-BitFishFry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearWhite8-BitFishFry.png"; path = "Images/gear/gearWhite8-BitFishFry.png"; sourceTree = "<group>"; };
+		0ADF9B931C1DF2DE002D7E81 /* gearWhiteAnchorTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearWhiteAnchorTee.png; path = Images/gear/gearWhiteAnchorTee.png; sourceTree = "<group>"; };
+		0ADF9B941C1DF2DE002D7E81 /* gearWhiteArrowbands.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearWhiteArrowbands.png; path = Images/gear/gearWhiteArrowbands.png; sourceTree = "<group>"; };
+		0ADF9B951C1DF2DE002D7E81 /* gearWhiteArrows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearWhiteArrows.png; path = Images/gear/gearWhiteArrows.png; sourceTree = "<group>"; };
+		0ADF9B961C1DF2DE002D7E81 /* gearWhiteBaseballLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearWhiteBaseballLS.png; path = Images/gear/gearWhiteBaseballLS.png; sourceTree = "<group>"; };
+		0ADF9B971C1DF2DE002D7E81 /* gearWhiteHeadband.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearWhiteHeadband.png; path = Images/gear/gearWhiteHeadband.png; sourceTree = "<group>"; };
+		0ADF9B981C1DF2DE002D7E81 /* gearWhiteInkyRider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearWhiteInkyRider.png; path = Images/gear/gearWhiteInkyRider.png; sourceTree = "<group>"; };
+		0ADF9B991C1DF2DE002D7E81 /* gearWhiteKicks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearWhiteKicks.png; path = Images/gear/gearWhiteKicks.png; sourceTree = "<group>"; };
+		0ADF9B9A1C1DF2DE002D7E81 /* gearWhiteLayeredLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearWhiteLayeredLS.png; path = Images/gear/gearWhiteLayeredLS.png; sourceTree = "<group>"; };
+		0ADF9B9B1C1DF2DE002D7E81 /* gearWhiteLineTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearWhiteLineTee.png; path = Images/gear/gearWhiteLineTee.png; sourceTree = "<group>"; };
+		0ADF9B9C1C1DF2DE002D7E81 /* gearWhiteLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearWhiteLS.png; path = Images/gear/gearWhiteLS.png; sourceTree = "<group>"; };
+		0ADF9B9D1C1DF2DE002D7E81 /* gearWhitePufferTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearWhitePufferTee.png; path = Images/gear/gearWhitePufferTee.png; sourceTree = "<group>"; };
+		0ADF9B9E1C1DF2DE002D7E81 /* gearWhiteSailorSuit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearWhiteSailorSuit.png; path = Images/gear/gearWhiteSailorSuit.png; sourceTree = "<group>"; };
+		0ADF9B9F1C1DF2DE002D7E81 /* gearWhiteSeahorses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearWhiteSeahorses.png; path = Images/gear/gearWhiteSeahorses.png; sourceTree = "<group>"; };
+		0ADF9BA01C1DF2DE002D7E81 /* gearWhiteShirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearWhiteShirt.png; path = Images/gear/gearWhiteShirt.png; sourceTree = "<group>"; };
+		0ADF9BA11C1DF2DE002D7E81 /* gearWhiteStripedLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearWhiteStripedLS.png; path = Images/gear/gearWhiteStripedLS.png; sourceTree = "<group>"; };
+		0ADF9BA21C1DF2DE002D7E81 /* gearWhiteTee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearWhiteTee.png; path = Images/gear/gearWhiteTee.png; sourceTree = "<group>"; };
+		0ADF9BA31C1DF2DE002D7E81 /* gearYellowLayeredLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearYellowLayeredLS.png; path = Images/gear/gearYellowLayeredLS.png; sourceTree = "<group>"; };
+		0ADF9BA41C1DF2DE002D7E81 /* gearYellowSeahorses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearYellowSeahorses.png; path = Images/gear/gearYellowSeahorses.png; sourceTree = "<group>"; };
+		0ADF9BA51C1DF2DE002D7E81 /* gearYellowUrbanVest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearYellowUrbanVest.png; path = Images/gear/gearYellowUrbanVest.png; sourceTree = "<group>"; };
+		0ADF9BA61C1DF2DE002D7E81 /* gearZapfishSatinJacket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearZapfishSatinJacket.png; path = Images/gear/gearZapfishSatinJacket.png; sourceTree = "<group>"; };
+		0ADF9BA71C1DF2DE002D7E81 /* gearZekkoBaseballLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearZekkoBaseballLS.png; path = Images/gear/gearZekkoBaseballLS.png; sourceTree = "<group>"; };
+		0ADF9BA81C1DF2DE002D7E81 /* gearZekkoHoodie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearZekkoHoodie.png; path = Images/gear/gearZekkoHoodie.png; sourceTree = "<group>"; };
+		0ADF9BA91C1DF2DE002D7E81 /* gearZekkoMesh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearZekkoMesh.png; path = Images/gear/gearZekkoMesh.png; sourceTree = "<group>"; };
+		0ADF9BAA1C1DF2DE002D7E81 /* gearZinkLayeredLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearZinkLayeredLS.png; path = Images/gear/gearZinkLayeredLS.png; sourceTree = "<group>"; };
+		0ADF9BAB1C1DF2DE002D7E81 /* gearZinkLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearZinkLS.png; path = Images/gear/gearZinkLS.png; sourceTree = "<group>"; };
+		0ADF9BAC1C1DF2DE002D7E81 /* gearZombieHi-Horses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearZombieHi-Horses.png"; path = "Images/gear/gearZombieHi-Horses.png"; sourceTree = "<group>"; };
 		3297FDF7A703D876943BE2E6 /* Pods-SplatPal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatPal.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplatPal/Pods-SplatPal.release.xcconfig"; sourceTree = "<group>"; };
 		8FBDCB17D189739D652437DA /* Pods_SplatPal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplatPal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -292,6 +824,7 @@
 				0AC607FB1C192211006EECA7 /* LoadingViewController.swift */,
 				0AC607B81C189BD8006EECA7 /* MapsTableViewController.swift */,
 				0AA23E001C1B6DB90002BCC2 /* BrandGuideViewController.swift */,
+				0ADF9AA41C1DF135002D7E81 /* GearGuideViewController.swift */,
 				0AA23E411C1B78450002BCC2 /* BetaViewController.swift */,
 				0AA23E011C1B6DB90002BCC2 /* IconSelectionView.swift */,
 				0AA23E021C1B6DB90002BCC2 /* IconSelectionView.xib */,
@@ -359,15 +892,8 @@
 			children = (
 				0AC607C11C18A61E006EECA7 /* Stages */,
 				0AA23E081C1B6E140002BCC2 /* Abilities */,
-				0AA23DEE1C1B6D870002BCC2 /* betaIcon.png */,
-				0AA23DEF1C1B6D870002BCC2 /* betaIcon@2x.png */,
-				0AA23DF01C1B6D870002BCC2 /* betaIcon@3x.png */,
-				0AA23DF11C1B6D870002BCC2 /* brandsIcon.png */,
-				0AA23DF21C1B6D870002BCC2 /* brandsIcon@2x.png */,
-				0AA23DF31C1B6D870002BCC2 /* brandsIcon@3x.png */,
-				0AA23DF41C1B6D870002BCC2 /* weaponsIcon.png */,
-				0AA23DF51C1B6D870002BCC2 /* weaponsIcon@2x.png */,
-				0AA23DF61C1B6D870002BCC2 /* weaponsIcon@3x.png */,
+				0ADF9A9D1C1D1246002D7E81 /* Bar Icons */,
+				0ADF9AA61C1DF2CD002D7E81 /* Gear */,
 				0AC607F51C191F09006EECA7 /* squid.png */,
 				0AC607F61C191F09006EECA7 /* squid@2x.png */,
 				0AC607F71C191F09006EECA7 /* squid@3x.png */,
@@ -381,11 +907,299 @@
 				0AC607E11C18E8A1006EECA7 /* rankedBadge.png */,
 				0AC607E21C18E8A1006EECA7 /* rankedBadge@2x.png */,
 				0AC607E31C18E8A1006EECA7 /* rankedBadge@3x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		0ADF9A9D1C1D1246002D7E81 /* Bar Icons */ = {
+			isa = PBXGroup;
+			children = (
+				0ADF9A9E1C1D1255002D7E81 /* clothesIcon.png */,
+				0ADF9A9F1C1D1255002D7E81 /* clothesIcon@2x.png */,
+				0ADF9AA01C1D1255002D7E81 /* clothesIcon@3x.png */,
+				0AA23DEE1C1B6D870002BCC2 /* betaIcon.png */,
+				0AA23DEF1C1B6D870002BCC2 /* betaIcon@2x.png */,
+				0AA23DF01C1B6D870002BCC2 /* betaIcon@3x.png */,
+				0AA23DF11C1B6D870002BCC2 /* brandsIcon.png */,
+				0AA23DF21C1B6D870002BCC2 /* brandsIcon@2x.png */,
+				0AA23DF31C1B6D870002BCC2 /* brandsIcon@3x.png */,
+				0AA23DF41C1B6D870002BCC2 /* weaponsIcon.png */,
+				0AA23DF51C1B6D870002BCC2 /* weaponsIcon@2x.png */,
+				0AA23DF61C1B6D870002BCC2 /* weaponsIcon@3x.png */,
 				0AC607BA1C189ED0006EECA7 /* mapIcon.png */,
 				0AC607BB1C189ED0006EECA7 /* mapIcon@2x.png */,
 				0AC607BC1C189ED0006EECA7 /* mapIcon@3x.png */,
 			);
-			name = Images;
+			name = "Bar Icons";
+			sourceTree = "<group>";
+		};
+		0ADF9AA61C1DF2CD002D7E81 /* Gear */ = {
+			isa = PBXGroup;
+			children = (
+				0ADF9AA71C1DF2DD002D7E81 /* gear18KAviators.png */,
+				0ADF9AA81C1DF2DD002D7E81 /* gearAcerolaRainBoots.png */,
+				0ADF9AA91C1DF2DD002D7E81 /* gearAlohaShirt.png */,
+				0ADF9AAA1C1DF2DD002D7E81 /* gearAnchorSweat.png */,
+				0ADF9AAB1C1DF2DD002D7E81 /* gearArmorBootReplicas.png */,
+				0ADF9AAC1C1DF2DD002D7E81 /* gearArmorHelmetReplica.png */,
+				0ADF9AAD1C1DF2DD002D7E81 /* gearArmorJacketReplica.png */,
+				0ADF9AAE1C1DF2DD002D7E81 /* gearB-ballHeadband.png */,
+				0ADF9AAF1C1DF2DD002D7E81 /* gearB-ballJersey(Away).png */,
+				0ADF9AB01C1DF2DD002D7E81 /* gearB-ballJersey(Home).png */,
+				0ADF9AB11C1DF2DD002D7E81 /* gearBaby-JellyShirt.png */,
+				0ADF9AB21C1DF2DD002D7E81 /* gearBackwardsCap.png */,
+				0ADF9AB31C1DF2DD002D7E81 /* gearBambooHat.png */,
+				0ADF9AB41C1DF2DD002D7E81 /* gearBananaBasics.png */,
+				0ADF9AB51C1DF2DD002D7E81 /* gearBaseballJersey.png */,
+				0ADF9AB61C1DF2DD002D7E81 /* gearBasicTee.png */,
+				0ADF9AB71C1DF2DD002D7E81 /* gearBerrySkiJacket.png */,
+				0ADF9AB81C1DF2DD002D7E81 /* gearBikeHelmet.png */,
+				0ADF9AB91C1DF2DD002D7E81 /* gearBlack8-BitFishFry.png */,
+				0ADF9ABA1C1DF2DD002D7E81 /* gearBlackAnchorTee.png */,
+				0ADF9ABB1C1DF2DD002D7E81 /* gearBlackArrowbands.png */,
+				0ADF9ABC1C1DF2DD002D7E81 /* gearBlackBaseballLS.png */,
+				0ADF9ABD1C1DF2DD002D7E81 /* gearBlackInkyRider.png */,
+				0ADF9ABE1C1DF2DD002D7E81 /* gearBlackLayeredLS.png */,
+				0ADF9ABF1C1DF2DD002D7E81 /* gearBlackLS.png */,
+				0ADF9AC01C1DF2DD002D7E81 /* gearBlackPipeTee.png */,
+				0ADF9AC11C1DF2DD002D7E81 /* gearBlackPolo.png */,
+				0ADF9AC21C1DF2DD002D7E81 /* gearBlackSeahorses.png */,
+				0ADF9AC31C1DF2DD002D7E81 /* gearBlackSquideye.png */,
+				0ADF9AC41C1DF2DD002D7E81 /* gearBlackTee.png */,
+				0ADF9AC51C1DF2DD002D7E81 /* gearBlackTrainers.png */,
+				0ADF9AC61C1DF2DD002D7E81 /* gearBlowfishBellHat.png */,
+				0ADF9AC71C1DF2DD002D7E81 /* gearBlueberryCasuals.png */,
+				0ADF9AC81C1DF2DD002D7E81 /* gearBlueLo-Tops.png */,
+				0ADF9AC91C1DF2DD002D7E81 /* gearBlueMotoBoots.png */,
+				0ADF9ACA1C1DF2DD002D7E81 /* gearBluePeaksTee.png */,
+				0ADF9ACB1C1DF2DD002D7E81 /* gearBlueSailorSuit.png */,
+				0ADF9ACC1C1DF2DD002D7E81 /* gearBlueSeaSlugs.png */,
+				0ADF9ACD1C1DF2DD002D7E81 /* gearBlueSlip-Ons.png */,
+				0ADF9ACE1C1DF2DD002D7E81 /* gearBobbleHat.png */,
+				0ADF9ACF1C1DF2DD002D7E81 /* gearBubbleRainBoots.png */,
+				0ADF9AD01C1DF2DD002D7E81 /* gearCamoLayeredLS.png */,
+				0ADF9AD11C1DF2DD002D7E81 /* gearCamoMesh.png */,
+				0ADF9AD21C1DF2DD002D7E81 /* gearCamoZipHoodie.png */,
+				0ADF9AD31C1DF2DD002D7E81 /* gearCampingHat.png */,
+				0ADF9AD41C1DF2DD002D7E81 /* gearCarnivoreTee.png */,
+				0ADF9AD51C1DF2DD002D7E81 /* gearCherryKicks.png */,
+				0ADF9AD61C1DF2DD002D7E81 /* gearChocoClogs.png */,
+				0ADF9AD71C1DF2DD002D7E81 /* gearChocoLayeredLS.png */,
+				0ADF9AD81C1DF2DD002D7E81 /* gearClassicStrawBoater.png */,
+				0ADF9AD91C1DF2DD002D7E81 /* gearClownfishBasics.png */,
+				0ADF9ADA1C1DF2DD002D7E81 /* gearCrazyArrows.png */,
+				0ADF9ADB1C1DF2DD002D7E81 /* gearCreamBasics.png */,
+				0ADF9ADC1C1DF2DD002D7E81 /* gearCreamHi-Tops.png */,
+				0ADF9ADD1C1DF2DD002D7E81 /* gearCustomTrailBoots.png */,
+				0ADF9ADE1C1DF2DD002D7E81 /* gearCyanTrainers.png */,
+				0ADF9ADF1C1DF2DD002D7E81 /* gearCycleKingCap.png */,
+				0ADF9AE01C1DF2DD002D7E81 /* gearCycleKingJersey.png */,
+				0ADF9AE11C1DF2DD002D7E81 /* gearCyclingCap.png */,
+				0ADF9AE21C1DF2DD002D7E81 /* gearCyclingShirt.png */,
+				0ADF9AE31C1DF2DD002D7E81 /* gearDarkUrbanVest.png */,
+				0ADF9AE41C1DF2DD002D7E81 /* gearDesignerHeadphones.png */,
+				0ADF9AE51C1DF2DD002D7E81 /* gearFakeContacts.png */,
+				0ADF9AE61C1DF2DD002D7E81 /* gearFCAlbacore.png */,
+				0ADF9AE71C1DF2DD002D7E81 /* gearFirefinNavySweat.png */,
+				0ADF9AE81C1DF2DD002D7E81 /* gearFishFryVisor.png */,
+				0ADF9AE91C1DF2DD002D7E81 /* gearFive-PanelCap.png */,
+				0ADF9AEA1C1DF2DD002D7E81 /* gearForestVest.png */,
+				0ADF9AEB1C1DF2DD002D7E81 /* gearForgeInklingParka.png */,
+				0ADF9AEC1C1DF2DD002D7E81 /* gearForgeOctarianJacket.png */,
+				0ADF9AED1C1DF2DD002D7E81 /* gearFuguTee.png */,
+				0ADF9AEE1C1DF2DD002D7E81 /* gearFullMoonGlasses.png */,
+				0ADF9AEF1C1DF2DD002D7E81 /* gearGasMask.png */,
+				0ADF9AF01C1DF2DD002D7E81 /* gearGoldHi-Horses.png */,
+				0ADF9AF11C1DF2DD002D7E81 /* gearGolfVisor.png */,
+				0ADF9AF21C1DF2DD002D7E81 /* gearGrapeTee.png */,
+				0ADF9AF31C1DF2DD002D7E81 /* gearGrayCollegeSweat.png */,
+				0ADF9AF41C1DF2DD002D7E81 /* gearGrayMixedShirt.png */,
+				0ADF9AF51C1DF2DD002D7E81 /* gearGrayVectorTee.png */,
+				0ADF9AF61C1DF2DD002D7E81 /* gearGreen-CheckShirt.png */,
+				0ADF9AF71C1DF2DD002D7E81 /* gearGreenCardigan.png */,
+				0ADF9AF81C1DF2DD002D7E81 /* gearGreenRainBoots.png */,
+				0ADF9AF91C1DF2DD002D7E81 /* gearGreenStripedLS.png */,
+				0ADF9AFA1C1DF2DD002D7E81 /* gearGreenTee.png */,
+				0ADF9AFB1C1DF2DD002D7E81 /* gearGreenZipHoodie.png */,
+				0ADF9AFC1C1DF2DD002D7E81 /* gearHerbivoreTee.png */,
+				0ADF9AFD1C1DF2DD002D7E81 /* gearHeroHeadsetReplica.png */,
+				0ADF9AFE1C1DF2DD002D7E81 /* gearHeroJacketReplica.png */,
+				0ADF9AFF1C1DF2DD002D7E81 /* gearHeroRunnerReplicas.png */,
+				0ADF9B001C1DF2DD002D7E81 /* gearHunterHi-Tops.png */,
+				0ADF9B011C1DF2DD002D7E81 /* gearIcyDownBoots.png */,
+				0ADF9B021C1DF2DD002D7E81 /* gearIvoryPeaksTee.png */,
+				0ADF9B031C1DF2DD002D7E81 /* gearJetCap.png */,
+				0ADF9B041C1DF2DD002D7E81 /* gearJoggingHeadband.png */,
+				0ADF9B051C1DF2DD002D7E81 /* gearJungleHat.png */,
+				0ADF9B061C1DF2DD002D7E81 /* gearKrak-On528.png */,
+				0ADF9B071C1DF2DD002D7E81 /* gearLayeredAnchorLS.png */,
+				0ADF9B081C1DF2DD002D7E81 /* gearLayeredVectorLS.png */,
+				0ADF9B091C1DF2DD002D7E81 /* gearLegendaryCap.png */,
+				0ADF9B0A1C1DF2DD002D7E81 /* gearLELo-Tops.png */,
+				0ADF9B0B1C1DF2DD002D7E81 /* gearLESoccerCleats.png */,
+				0ADF9B0C1C1DF2DD002D7E81 /* gearLightweightCap.png */,
+				0ADF9B0D1C1DF2DD002D7E81 /* gearLinenShirt.png */,
+				0ADF9B0E1C1DF2DD002D7E81 /* gearLogoAlohaShirt.png */,
+				0ADF9B0F1C1DF2DD002D7E81 /* gearLumberjackShirt.png */,
+				0ADF9B101C1DF2DD002D7E81 /* gearMawcasins.png */,
+				0ADF9B111C1DF2DD002D7E81 /* gearMintTee.png */,
+				0ADF9B121C1DF2DD002D7E81 /* gearMotoBoots.png */,
+				0ADF9B131C1DF2DD002D7E81 /* gearMountainVest.png */,
+				0ADF9B141C1DF2DD002D7E81 /* gearNavyCollegeSweat.png */,
+				0ADF9B151C1DF2DD002D7E81 /* gearNavyStripedLS.png */,
+				0ADF9B161C1DF2DD002D7E81 /* gearNeonSeaSlugs.png */,
+				0ADF9B171C1DF2DD002D7E81 /* gearNoiseCancelers.png */,
+				0ADF9B181C1DF2DD002D7E81 /* gearOctoglasses.png */,
+				0ADF9B191C1DF2DD002D7E81 /* gearOctolingArmor.png */,
+				0ADF9B1A1C1DF2DD002D7E81 /* gearOctolingBoots.png */,
+				0ADF9B1B1C1DF2DD002D7E81 /* gearOctolingGoggles.png */,
+				0ADF9B1C1C1DF2DD002D7E81 /* gearOctoTee.png */,
+				0ADF9B1D1C1DF2DD002D7E81 /* gearOliveSkiJacket.png */,
+				0ADF9B1E1C1DF2DD002D7E81 /* gearOrangeArrows.png */,
+				0ADF9B1F1C1DF2DD002D7E81 /* gearOrangeCardigan.png */,
+				0ADF9B201C1DF2DD002D7E81 /* gearOrangeLo-Tops.png */,
+				0ADF9B211C1DF2DD002D7E81 /* gearOysterClogs.png */,
+				0ADF9B221C1DF2DD002D7E81 /* gearPaintballMask.png */,
+				0ADF9B231C1DF2DD002D7E81 /* gearPaisleyBandana.png */,
+				0ADF9B241C1DF2DD002D7E81 /* gearPart-TimePirate.png */,
+				0ADF9B251C1DF2DD002D7E81 /* gearPearlTee.png */,
+				0ADF9B261C1DF2DD002D7E81 /* gearPilotGoggles.png */,
+				0ADF9B271C1DF2DD002D7E81 /* gearPinkTrainers.png */,
+				0ADF9B281C1DF2DD002D7E81 /* gearPirate-StripeTee.png */,
+				0ADF9B291C1DF2DD002D7E81 /* gearPlumCasuals.png */,
+				0ADF9B2A1C1DF2DD002D7E81 /* gearPowerArmor.png */,
+				0ADF9B2B1C1DF2DD002D7E81 /* gearPowerBoots.png */,
+				0ADF9B2C1C1DF2DD002D7E81 /* gearPowerMask.png */,
+				0ADF9B2D1C1DF2DD002D7E81 /* gearProTrailBoots.png */,
+				0ADF9B2E1C1DF2DD002D7E81 /* gearPunkCherries.png */,
+				0ADF9B2F1C1DF2DD002D7E81 /* gearPunkWhites.png */,
+				0ADF9B301C1DF2DD002D7E81 /* gearPunkYellows.png */,
+				0ADF9B311C1DF2DD002D7E81 /* gearPurpleCamoLS.png */,
+				0ADF9B321C1DF2DD002D7E81 /* gearPurpleHi-Horses.png */,
+				0ADF9B331C1DF2DD002D7E81 /* gearPurpleSeaSlugs.png */,
+				0ADF9B341C1DF2DD002D7E81 /* gearRainy-DayTee.png */,
+				0ADF9B351C1DF2DD002D7E81 /* gearRed-CheckShirt.png */,
+				0ADF9B361C1DF2DD002D7E81 /* gearRedHi-Horses.png */,
+				0ADF9B371C1DF2DD002D7E81 /* gearRedHi-Tops.png */,
+				0ADF9B381C1DF2DD002D7E81 /* gearRedSeaSlugs.png */,
+				0ADF9B391C1DF2DD002D7E81 /* gearRedSlip-Ons.png */,
+				0ADF9B3A1C1DF2DE002D7E81 /* gearRedVectorTee.png */,
+				0ADF9B3B1C1DF2DE002D7E81 /* gearRedWorkBoots.png */,
+				0ADF9B3C1C1DF2DE002D7E81 /* gearReelSweat.png */,
+				0ADF9B3D1C1DF2DE002D7E81 /* gearReggaeTee.png */,
+				0ADF9B3E1C1DF2DE002D7E81 /* gearRetroGamerJersey.png */,
+				0ADF9B3F1C1DF2DE002D7E81 /* gearRetroSpecs.png */,
+				0ADF9B401C1DF2DE002D7E81 /* gearRetroSweat.png */,
+				0ADF9B411C1DF2DE002D7E81 /* gearRoastedBrogues.png */,
+				0ADF9B421C1DF2DE002D7E81 /* gearRockenbergBlack.png */,
+				0ADF9B431C1DF2DE002D7E81 /* gearRockenbergWhite.png */,
+				0ADF9B441C1DF2DE002D7E81 /* gearRodeoShirt.png */,
+				0ADF9B451C1DF2DE002D7E81 /* gearRound-CollarShirt.png */,
+				0ADF9B461C1DF2DE002D7E81 /* gearSafariHat.png */,
+				0ADF9B471C1DF2DE002D7E81 /* gearSagePolo.png */,
+				0ADF9B481C1DF2DE002D7E81 /* gearSailor-StripeTee.png */,
+				0ADF9B491C1DF2DE002D7E81 /* gearSamuraiHelmet.png */,
+				0ADF9B4A1C1DF2DE002D7E81 /* gearSamuraiJacket.png */,
+				0ADF9B4B1C1DF2DE002D7E81 /* gearSamuraiShoes.png */,
+				0ADF9B4C1C1DF2DE002D7E81 /* gearSchoolJersey.png */,
+				0ADF9B4D1C1DF2DE002D7E81 /* gearSchoolShoes.png */,
+				0ADF9B4E1C1DF2DE002D7E81 /* gearSchoolUniform.png */,
+				0ADF9B4F1C1DF2DE002D7E81 /* gearSharkMoccasins.png */,
+				0ADF9B501C1DF2DE002D7E81 /* gearShirt&Tie.png */,
+				0ADF9B511C1DF2DE002D7E81 /* gearShirtstravaganza.png */,
+				0ADF9B521C1DF2DE002D7E81 /* gearShortBeanie.png */,
+				0ADF9B531C1DF2DE002D7E81 /* gearShrimp-PinkPolo.png */,
+				0ADF9B541C1DF2DE002D7E81 /* gearSkateHelmet.png */,
+				0ADF9B551C1DF2DE002D7E81 /* gearSkullBandana.png */,
+				0ADF9B561C1DF2DE002D7E81 /* gearSky-BlueSquideye.png */,
+				0ADF9B571C1DF2DE002D7E81 /* gearSlipstreamUnited.png */,
+				0ADF9B581C1DF2DE002D7E81 /* gearSnorkelMask.png */,
+				0ADF9B591C1DF2DE002D7E81 /* gearSnowyDownBoots.png */,
+				0ADF9B5A1C1DF2DE002D7E81 /* gearSoccerCleats.png */,
+				0ADF9B5B1C1DF2DE002D7E81 /* gearSoccerHeadband.png */,
+				0ADF9B5C1C1DF2DE002D7E81 /* gearSpecialForcesBeret.png */,
+				0ADF9B5D1C1DF2DE002D7E81 /* gearSplashGoggles.png */,
+				0ADF9B5E1C1DF2DE002D7E81 /* gearSplatfestTee.png */,
+				0ADF9B5F1C1DF2DE002D7E81 /* gearSportyBobbleHat.png */,
+				0ADF9B601C1DF2DE002D7E81 /* gearSquashHeadband.png */,
+				0ADF9B611C1DF2DE002D7E81 /* gearSquid-PatternWaistcoat.png */,
+				0ADF9B621C1DF2DE002D7E81 /* gearSquid-StitchCap.png */,
+				0ADF9B631C1DF2DE002D7E81 /* gearSquid-StitchSlip-Ons.png */,
+				0ADF9B641C1DF2DE002D7E81 /* gearSquid-StitchTee.png */,
+				0ADF9B651C1DF2DE002D7E81 /* gearSquidForceWhite.png */,
+				0ADF9B661C1DF2DE002D7E81 /* gearSQUIDGIRLHat.png */,
+				0ADF9B671C1DF2DE002D7E81 /* gearSQUIDGIRLShoes.png */,
+				0ADF9B681C1DF2DE002D7E81 /* gearSQUIDGIRLTunic.png */,
+				0ADF9B691C1DF2DE002D7E81 /* gearSquidHairclip.png */,
+				0ADF9B6A1C1DF2DE002D7E81 /* gearSquidmarkLS.png */,
+				0ADF9B6B1C1DF2DE002D7E81 /* gearSquidmarkSweat.png */,
+				0ADF9B6C1C1DF2DE002D7E81 /* gearSquidNordic.png */,
+				0ADF9B6D1C1DF2DE002D7E81 /* gearSquidSatinJacket.png */,
+				0ADF9B6E1C1DF2DE002D7E81 /* gearSquidstarWaistcoat.png */,
+				0ADF9B6F1C1DF2DE002D7E81 /* gearSquidvaderCap.png */,
+				0ADF9B701C1DF2DE002D7E81 /* gearSquinkWingtips.png */,
+				0ADF9B711C1DF2DE002D7E81 /* gearStealthGoggles.png */,
+				0ADF9B721C1DF2DE002D7E81 /* gearStrappingReds.png */,
+				0ADF9B731C1DF2DE002D7E81 /* gearStrappingWhites.png */,
+				0ADF9B741C1DF2DE002D7E81 /* gearStrawBoater.png */,
+				0ADF9B751C1DF2DE002D7E81 /* gearStreetstyleCap.png */,
+				0ADF9B761C1DF2DE002D7E81 /* gearStripedBeanie.png */,
+				0ADF9B771C1DF2DE002D7E81 /* gearStripedPeaksLS.png */,
+				0ADF9B781C1DF2DE002D7E81 /* gearStripedRugby.png */,
+				0ADF9B791C1DF2DE002D7E81 /* gearStripedShirt.png */,
+				0ADF9B7A1C1DF2DE002D7E81 /* gearStudioHeadphones.png */,
+				0ADF9B7B1C1DF2DE002D7E81 /* gearSunny-DayTee.png */,
+				0ADF9B7C1C1DF2DE002D7E81 /* gearSunVisor.png */,
+				0ADF9B7D1C1DF2DE002D7E81 /* gearTakorokaMesh.png */,
+				0ADF9B7E1C1DF2DE002D7E81 /* gearTanWorkBoots.png */,
+				0ADF9B7F1C1DF2DE002D7E81 /* gearTennisHeadband.png */,
+				0ADF9B801C1DF2DE002D7E81 /* gearTentaclesHelmet.png */,
+				0ADF9B811C1DF2DE002D7E81 /* gearTintedShades.png */,
+				0ADF9B821C1DF2DE002D7E81 /* gearTraditionalApron.png */,
+				0ADF9B831C1DF2DE002D7E81 /* gearTraditionalHeadband.png */,
+				0ADF9B841C1DF2DE002D7E81 /* gearTraditionalSandals.png */,
+				0ADF9B851C1DF2DE002D7E81 /* gearTrailBoots.png */,
+				0ADF9B861C1DF2DE002D7E81 /* gearTreasureHunter.png */,
+				0ADF9B871C1DF2DE002D7E81 /* gearTricolorRugby.png */,
+				0ADF9B881C1DF2DE002D7E81 /* gearTurquoiseKicks.png */,
+				0ADF9B891C1DF2DE002D7E81 /* gearTwo-StripeMesh.png */,
+				0ADF9B8A1C1DF2DE002D7E81 /* gearUrchinsCap.png */,
+				0ADF9B8B1C1DF2DE002D7E81 /* gearUrchinsJersey.png */,
+				0ADF9B8C1C1DF2DE002D7E81 /* gearVarsityBaseballLS.png */,
+				0ADF9B8D1C1DF2DE002D7E81 /* gearVarsityHoodie.png */,
+				0ADF9B8E1C1DF2DE002D7E81 /* gearVarsityJacket.png */,
+				0ADF9B8F1C1DF2DE002D7E81 /* gearVintageCheckShirt.png */,
+				0ADF9B901C1DF2DE002D7E81 /* gearVisorSkateHelmet.png */,
+				0ADF9B911C1DF2DE002D7E81 /* gearWarriorHeaddress.png */,
+				0ADF9B921C1DF2DE002D7E81 /* gearWhite8-BitFishFry.png */,
+				0ADF9B931C1DF2DE002D7E81 /* gearWhiteAnchorTee.png */,
+				0ADF9B941C1DF2DE002D7E81 /* gearWhiteArrowbands.png */,
+				0ADF9B951C1DF2DE002D7E81 /* gearWhiteArrows.png */,
+				0ADF9B961C1DF2DE002D7E81 /* gearWhiteBaseballLS.png */,
+				0ADF9B971C1DF2DE002D7E81 /* gearWhiteHeadband.png */,
+				0ADF9B981C1DF2DE002D7E81 /* gearWhiteInkyRider.png */,
+				0ADF9B991C1DF2DE002D7E81 /* gearWhiteKicks.png */,
+				0ADF9B9A1C1DF2DE002D7E81 /* gearWhiteLayeredLS.png */,
+				0ADF9B9B1C1DF2DE002D7E81 /* gearWhiteLineTee.png */,
+				0ADF9B9C1C1DF2DE002D7E81 /* gearWhiteLS.png */,
+				0ADF9B9D1C1DF2DE002D7E81 /* gearWhitePufferTee.png */,
+				0ADF9B9E1C1DF2DE002D7E81 /* gearWhiteSailorSuit.png */,
+				0ADF9B9F1C1DF2DE002D7E81 /* gearWhiteSeahorses.png */,
+				0ADF9BA01C1DF2DE002D7E81 /* gearWhiteShirt.png */,
+				0ADF9BA11C1DF2DE002D7E81 /* gearWhiteStripedLS.png */,
+				0ADF9BA21C1DF2DE002D7E81 /* gearWhiteTee.png */,
+				0ADF9BA31C1DF2DE002D7E81 /* gearYellowLayeredLS.png */,
+				0ADF9BA41C1DF2DE002D7E81 /* gearYellowSeahorses.png */,
+				0ADF9BA51C1DF2DE002D7E81 /* gearYellowUrbanVest.png */,
+				0ADF9BA61C1DF2DE002D7E81 /* gearZapfishSatinJacket.png */,
+				0ADF9BA71C1DF2DE002D7E81 /* gearZekkoBaseballLS.png */,
+				0ADF9BA81C1DF2DE002D7E81 /* gearZekkoHoodie.png */,
+				0ADF9BA91C1DF2DE002D7E81 /* gearZekkoMesh.png */,
+				0ADF9BAA1C1DF2DE002D7E81 /* gearZinkLayeredLS.png */,
+				0ADF9BAB1C1DF2DE002D7E81 /* gearZinkLS.png */,
+				0ADF9BAC1C1DF2DE002D7E81 /* gearZombieHi-Horses.png */,
+			);
+			name = Gear;
 			sourceTree = "<group>";
 		};
 		B81E0E35C30F8CE205ED4CC2 /* Pods */ = {
@@ -516,76 +1330,341 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AC607E61C18E8A1006EECA7 /* rankedBadge@3x.png in Resources */,
+				0ADF9C211C1DF2DE002D7E81 /* gearOctolingGoggles.png in Resources */,
+				0ADF9C8F1C1DF2DE002D7E81 /* gearTwo-StripeMesh.png in Resources */,
+				0ADF9C4C1C1DF2DE002D7E81 /* gearSafariHat.png in Resources */,
+				0ADF9C1F1C1DF2DE002D7E81 /* gearOctolingArmor.png in Resources */,
+				0ADF9C5A1C1DF2DE002D7E81 /* gearSkateHelmet.png in Resources */,
+				0ADF9BDF1C1DF2DE002D7E81 /* gearClownfishBasics.png in Resources */,
+				0ADF9BFF1C1DF2DE002D7E81 /* gearGreenStripedLS.png in Resources */,
+				0ADF9BC91C1DF2DE002D7E81 /* gearBlackSquideye.png in Resources */,
+				0ADF9C3B1C1DF2DE002D7E81 /* gearRed-CheckShirt.png in Resources */,
+				0ADF9BF21C1DF2DE002D7E81 /* gearForgeOctarianJacket.png in Resources */,
+				0ADF9C641C1DF2DE002D7E81 /* gearSplatfestTee.png in Resources */,
+				0ADF9CAB1C1DF2DE002D7E81 /* gearYellowUrbanVest.png in Resources */,
 				0AA23E391C1B6E280002BCC2 /* abilitySwimSpeedUp.png in Resources */,
+				0ADF9BBE1C1DF2DE002D7E81 /* gearBikeHelmet.png in Resources */,
+				0ADF9BB01C1DF2DE002D7E81 /* gearAnchorSweat.png in Resources */,
+				0ADF9C941C1DF2DE002D7E81 /* gearVarsityJacket.png in Resources */,
+				0ADF9C3D1C1DF2DE002D7E81 /* gearRedHi-Tops.png in Resources */,
+				0ADF9BD21C1DF2DE002D7E81 /* gearBlueSeaSlugs.png in Resources */,
+				0ADF9C0E1C1DF2DE002D7E81 /* gearLayeredVectorLS.png in Resources */,
+				0ADF9BB71C1DF2DE002D7E81 /* gearBaby-JellyShirt.png in Resources */,
+				0ADF9C4A1C1DF2DE002D7E81 /* gearRodeoShirt.png in Resources */,
+				0ADF9BAE1C1DF2DE002D7E81 /* gearAcerolaRainBoots.png in Resources */,
+				0ADF9CAD1C1DF2DE002D7E81 /* gearZekkoBaseballLS.png in Resources */,
+				0ADF9C571C1DF2DE002D7E81 /* gearShirtstravaganza.png in Resources */,
+				0ADF9C4E1C1DF2DE002D7E81 /* gearSailor-StripeTee.png in Resources */,
 				0AC607BE1C189ED0006EECA7 /* mapIcon@2x.png in Resources */,
+				0ADF9C8D1C1DF2DE002D7E81 /* gearTricolorRugby.png in Resources */,
+				0ADF9BF11C1DF2DE002D7E81 /* gearForgeInklingParka.png in Resources */,
+				0ADF9C511C1DF2DE002D7E81 /* gearSamuraiShoes.png in Resources */,
+				0ADF9C8C1C1DF2DE002D7E81 /* gearTreasureHunter.png in Resources */,
+				0ADF9C551C1DF2DE002D7E81 /* gearSharkMoccasins.png in Resources */,
+				0ADF9C101C1DF2DE002D7E81 /* gearLELo-Tops.png in Resources */,
+				0ADF9C1A1C1DF2DE002D7E81 /* gearNavyCollegeSweat.png in Resources */,
 				0AA23DF91C1B6D870002BCC2 /* betaIcon@3x.png in Resources */,
 				0AC607F81C191F09006EECA7 /* squid.png in Resources */,
 				0AA23E321C1B6E280002BCC2 /* abilityQuickSuperJump.png in Resources */,
 				0AC607D91C18A629006EECA7 /* StagePortMackerel.jpg in Resources */,
+				0ADF9BC51C1DF2DE002D7E81 /* gearBlackLS.png in Resources */,
+				0ADF9BED1C1DF2DE002D7E81 /* gearFirefinNavySweat.png in Resources */,
+				0ADF9C411C1DF2DE002D7E81 /* gearRedWorkBoots.png in Resources */,
+				0ADF9C5F1C1DF2DE002D7E81 /* gearSnowyDownBoots.png in Resources */,
+				0ADF9BE11C1DF2DE002D7E81 /* gearCreamBasics.png in Resources */,
 				0AC607E51C18E8A1006EECA7 /* rankedBadge@2x.png in Resources */,
+				0ADF9C831C1DF2DE002D7E81 /* gearTakorokaMesh.png in Resources */,
+				0ADF9CA61C1DF2DE002D7E81 /* gearWhiteShirt.png in Resources */,
 				0AC607D51C18A629006EECA7 /* StageKelpDome.jpg in Resources */,
+				0ADF9BE21C1DF2DE002D7E81 /* gearCreamHi-Tops.png in Resources */,
+				0ADF9BCF1C1DF2DE002D7E81 /* gearBlueMotoBoots.png in Resources */,
 				0AA23E2D1C1B6E280002BCC2 /* abilityLast-DitchEffort.png in Resources */,
 				0AA23E291C1B6E280002BCC2 /* abilityInkRecoveryUp.png in Resources */,
+				0ADF9BBD1C1DF2DE002D7E81 /* gearBerrySkiJacket.png in Resources */,
 				0AA23E281C1B6E280002BCC2 /* abilityHaunt.png in Resources */,
+				0ADF9C431C1DF2DE002D7E81 /* gearReggaeTee.png in Resources */,
+				0ADF9C541C1DF2DE002D7E81 /* gearSchoolUniform.png in Resources */,
+				0ADF9BEC1C1DF2DE002D7E81 /* gearFCAlbacore.png in Resources */,
+				0ADF9C501C1DF2DE002D7E81 /* gearSamuraiJacket.png in Resources */,
+				0ADF9C401C1DF2DE002D7E81 /* gearRedVectorTee.png in Resources */,
+				0ADF9BFA1C1DF2DE002D7E81 /* gearGrayMixedShirt.png in Resources */,
+				0ADF9C491C1DF2DE002D7E81 /* gearRockenbergWhite.png in Resources */,
+				0ADF9BCE1C1DF2DE002D7E81 /* gearBlueLo-Tops.png in Resources */,
+				0ADF9BE81C1DF2DE002D7E81 /* gearCyclingShirt.png in Resources */,
+				0ADF9C0B1C1DF2DE002D7E81 /* gearJungleHat.png in Resources */,
+				0ADF9BC71C1DF2DE002D7E81 /* gearBlackPolo.png in Resources */,
+				0ADF9C061C1DF2DE002D7E81 /* gearHunterHi-Tops.png in Resources */,
+				0ADF9C801C1DF2DE002D7E81 /* gearStudioHeadphones.png in Resources */,
+				0ADF9C671C1DF2DE002D7E81 /* gearSquid-PatternWaistcoat.png in Resources */,
+				0ADF9C5E1C1DF2DE002D7E81 /* gearSnorkelMask.png in Resources */,
+				0ADF9CA21C1DF2DE002D7E81 /* gearWhiteLS.png in Resources */,
+				0ADF9BF71C1DF2DE002D7E81 /* gearGolfVisor.png in Resources */,
+				0ADF9C261C1DF2DE002D7E81 /* gearOrangeLo-Tops.png in Resources */,
+				0ADF9BE31C1DF2DE002D7E81 /* gearCustomTrailBoots.png in Resources */,
+				0ADF9C0F1C1DF2DE002D7E81 /* gearLegendaryCap.png in Resources */,
+				0ADF9BB51C1DF2DE002D7E81 /* gearB-ballJersey(Away).png in Resources */,
+				0ADF9BCA1C1DF2DE002D7E81 /* gearBlackTee.png in Resources */,
 				0AA23E351C1B6E280002BCC2 /* abilitySpecialChargeUp.png in Resources */,
+				0ADF9BE71C1DF2DE002D7E81 /* gearCyclingCap.png in Resources */,
+				0ADF9C8A1C1DF2DE002D7E81 /* gearTraditionalSandals.png in Resources */,
+				0ADF9C621C1DF2DE002D7E81 /* gearSpecialForcesBeret.png in Resources */,
+				0ADF9C2C1C1DF2DE002D7E81 /* gearPilotGoggles.png in Resources */,
+				0ADF9AA11C1D1255002D7E81 /* clothesIcon.png in Resources */,
 				0AA23E361C1B6E280002BCC2 /* abilitySpecialDurationUp.png in Resources */,
+				0ADF9BF51C1DF2DE002D7E81 /* gearGasMask.png in Resources */,
 				0AC607E01C18ACF7006EECA7 /* Paintball_Beta_4a.otf in Resources */,
+				0ADF9BE91C1DF2DE002D7E81 /* gearDarkUrbanVest.png in Resources */,
+				0ADF9CA91C1DF2DE002D7E81 /* gearYellowLayeredLS.png in Resources */,
+				0ADF9BAD1C1DF2DE002D7E81 /* gear18KAviators.png in Resources */,
 				0AC607ED1C191405006EECA7 /* rankedBadgeAlt.png in Resources */,
 				0AC607D41C18A629006EECA7 /* StageHammerheadBridge.jpg in Resources */,
+				0ADF9C051C1DF2DE002D7E81 /* gearHeroRunnerReplicas.png in Resources */,
 				0AA23E371C1B6E280002BCC2 /* abilitySpecialSaver.png in Resources */,
 				0AA23DFC1C1B6D870002BCC2 /* brandsIcon@3x.png in Resources */,
 				0AC607D81C18A629006EECA7 /* StageMuseumd'Alfonsino.jpg in Resources */,
 				0AA23E231C1B6E280002BCC2 /* abilityBombSniffer.png in Resources */,
+				0ADF9BD61C1DF2DE002D7E81 /* gearCamoLayeredLS.png in Resources */,
+				0ADF9BEA1C1DF2DE002D7E81 /* gearDesignerHeadphones.png in Resources */,
+				0ADF9C3C1C1DF2DE002D7E81 /* gearRedHi-Horses.png in Resources */,
 				0AC607DC1C18A629006EECA7 /* StageWalleyeWarehouse.jpg in Resources */,
 				0AA23DFA1C1B6D870002BCC2 /* brandsIcon.png in Resources */,
+				0ADF9BFC1C1DF2DE002D7E81 /* gearGreen-CheckShirt.png in Resources */,
+				0ADF9C4B1C1DF2DE002D7E81 /* gearRound-CollarShirt.png in Resources */,
 				0AC607DA1C18A629006EECA7 /* StageSaltsprayRig.jpg in Resources */,
+				0ADF9C931C1DF2DE002D7E81 /* gearVarsityHoodie.png in Resources */,
+				0ADF9BD01C1DF2DE002D7E81 /* gearBluePeaksTee.png in Resources */,
+				0ADF9C081C1DF2DE002D7E81 /* gearIvoryPeaksTee.png in Resources */,
+				0ADF9C561C1DF2DE002D7E81 /* gearShirt&Tie.png in Resources */,
+				0ADF9BB21C1DF2DE002D7E81 /* gearArmorHelmetReplica.png in Resources */,
 				0AA23E221C1B6E280002BCC2 /* abilityBombRangeUp.png in Resources */,
+				0ADF9BD11C1DF2DE002D7E81 /* gearBlueSailorSuit.png in Resources */,
+				0ADF9BC01C1DF2DE002D7E81 /* gearBlackAnchorTee.png in Resources */,
+				0ADF9C891C1DF2DE002D7E81 /* gearTraditionalHeadband.png in Resources */,
 				0AA23DFE1C1B6D870002BCC2 /* weaponsIcon@2x.png in Resources */,
+				0ADF9C601C1DF2DE002D7E81 /* gearSoccerCleats.png in Resources */,
+				0ADF9CA31C1DF2DE002D7E81 /* gearWhitePufferTee.png in Resources */,
 				0AC607D21C18A629006EECA7 /* StageBluefinDepot.jpg in Resources */,
 				0AC607DB1C18A629006EECA7 /* StageUrchinUnderpass.jpg in Resources */,
+				0ADF9BB31C1DF2DE002D7E81 /* gearArmorJacketReplica.png in Resources */,
+				0ADF9C131C1DF2DE002D7E81 /* gearLinenShirt.png in Resources */,
+				0ADF9BC31C1DF2DE002D7E81 /* gearBlackInkyRider.png in Resources */,
+				0ADF9C191C1DF2DE002D7E81 /* gearMountainVest.png in Resources */,
+				0ADF9CB01C1DF2DE002D7E81 /* gearZinkLayeredLS.png in Resources */,
+				0ADF9BBA1C1DF2DE002D7E81 /* gearBananaBasics.png in Resources */,
+				0ADF9C3A1C1DF2DE002D7E81 /* gearRainy-DayTee.png in Resources */,
+				0ADF9BD41C1DF2DE002D7E81 /* gearBobbleHat.png in Resources */,
+				0ADF9C2D1C1DF2DE002D7E81 /* gearPinkTrainers.png in Resources */,
+				0ADF9C121C1DF2DE002D7E81 /* gearLightweightCap.png in Resources */,
 				0AC607F11C191405006EECA7 /* turfWarBadge@2x.png in Resources */,
+				0ADF9BB91C1DF2DE002D7E81 /* gearBambooHat.png in Resources */,
+				0ADF9C001C1DF2DE002D7E81 /* gearGreenTee.png in Resources */,
+				0ADF9BD91C1DF2DE002D7E81 /* gearCampingHat.png in Resources */,
 				0AA23E2F1C1B6E280002BCC2 /* abilityNone.png in Resources */,
+				0ADF9C7A1C1DF2DE002D7E81 /* gearStrawBoater.png in Resources */,
+				0ADF9C7D1C1DF2DE002D7E81 /* gearStripedPeaksLS.png in Resources */,
+				0ADF9C021C1DF2DE002D7E81 /* gearHerbivoreTee.png in Resources */,
+				0ADF9C3E1C1DF2DE002D7E81 /* gearRedSeaSlugs.png in Resources */,
+				0ADF9CA81C1DF2DE002D7E81 /* gearWhiteTee.png in Resources */,
+				0ADF9C951C1DF2DE002D7E81 /* gearVintageCheckShirt.png in Resources */,
+				0ADF9C471C1DF2DE002D7E81 /* gearRoastedBrogues.png in Resources */,
+				0ADF9C381C1DF2DE002D7E81 /* gearPurpleHi-Horses.png in Resources */,
 				0AA23E241C1B6E280002BCC2 /* abilityColdBlooded.png in Resources */,
+				0ADF9C4F1C1DF2DE002D7E81 /* gearSamuraiHelmet.png in Resources */,
+				0ADF9C161C1DF2DE002D7E81 /* gearMawcasins.png in Resources */,
+				0ADF9C1D1C1DF2DE002D7E81 /* gearNoiseCancelers.png in Resources */,
+				0ADF9BE51C1DF2DE002D7E81 /* gearCycleKingCap.png in Resources */,
+				0ADF9BC11C1DF2DE002D7E81 /* gearBlackArrowbands.png in Resources */,
+				0ADF9C0D1C1DF2DE002D7E81 /* gearLayeredAnchorLS.png in Resources */,
+				0ADF9BC41C1DF2DE002D7E81 /* gearBlackLayeredLS.png in Resources */,
 				0AC607F91C191F09006EECA7 /* squid@2x.png in Resources */,
 				0AC607BF1C189ED0006EECA7 /* mapIcon@3x.png in Resources */,
+				0ADF9BCD1C1DF2DE002D7E81 /* gearBlueberryCasuals.png in Resources */,
+				0ADF9C581C1DF2DE002D7E81 /* gearShortBeanie.png in Resources */,
 				0AA23DF81C1B6D870002BCC2 /* betaIcon@2x.png in Resources */,
+				0ADF9BC81C1DF2DE002D7E81 /* gearBlackSeahorses.png in Resources */,
+				0ADF9BF81C1DF2DE002D7E81 /* gearGrapeTee.png in Resources */,
+				0ADF9C5B1C1DF2DE002D7E81 /* gearSkullBandana.png in Resources */,
+				0ADF9C751C1DF2DE002D7E81 /* gearSquidvaderCap.png in Resources */,
 				0AA23E2A1C1B6E280002BCC2 /* abilityInkResistanceUp.png in Resources */,
+				0ADF9C731C1DF2DE002D7E81 /* gearSquidSatinJacket.png in Resources */,
+				0ADF9C2E1C1DF2DE002D7E81 /* gearPirate-StripeTee.png in Resources */,
 				0AA23E261C1B6E280002BCC2 /* abilityDamageUp.png in Resources */,
+				0ADF9C721C1DF2DE002D7E81 /* gearSquidNordic.png in Resources */,
+				0ADF9C2F1C1DF2DE002D7E81 /* gearPlumCasuals.png in Resources */,
 				0AC607DD1C18A629006EECA7 /* StageCampTriggerfish.jpg in Resources */,
+				0ADF9BE61C1DF2DE002D7E81 /* gearCycleKingJersey.png in Resources */,
+				0ADF9C761C1DF2DE002D7E81 /* gearSquinkWingtips.png in Resources */,
 				0AC607D11C18A629006EECA7 /* StageBlackbellySkatepark.jpg in Resources */,
+				0ADF9C611C1DF2DE002D7E81 /* gearSoccerHeadband.png in Resources */,
+				0ADF9C6F1C1DF2DE002D7E81 /* gearSquidHairclip.png in Resources */,
+				0ADF9C7E1C1DF2DE002D7E81 /* gearStripedRugby.png in Resources */,
+				0ADF9C451C1DF2DE002D7E81 /* gearRetroSpecs.png in Resources */,
+				0ADF9C811C1DF2DE002D7E81 /* gearSunny-DayTee.png in Resources */,
+				0ADF9C1E1C1DF2DE002D7E81 /* gearOctoglasses.png in Resources */,
+				0ADF9C991C1DF2DE002D7E81 /* gearWhiteAnchorTee.png in Resources */,
+				0ADF9C181C1DF2DE002D7E81 /* gearMotoBoots.png in Resources */,
 				0AA23E2C1C1B6E280002BCC2 /* abilityInkSaver(Sub).png in Resources */,
+				0ADF9BB41C1DF2DE002D7E81 /* gearB-ballHeadband.png in Resources */,
+				0ADF9C481C1DF2DE002D7E81 /* gearRockenbergBlack.png in Resources */,
+				0ADF9C6B1C1DF2DE002D7E81 /* gearSquidForceWhite.png in Resources */,
+				0ADF9CA01C1DF2DE002D7E81 /* gearWhiteLayeredLS.png in Resources */,
 				0AA23E271C1B6E280002BCC2 /* abilityDefenceUp.png in Resources */,
+				0ADF9BEB1C1DF2DE002D7E81 /* gearFakeContacts.png in Resources */,
+				0ADF9BBB1C1DF2DE002D7E81 /* gearBaseballJersey.png in Resources */,
 				0AC607951C189B36006EECA7 /* LaunchScreen.storyboard in Resources */,
+				0ADF9C9E1C1DF2DE002D7E81 /* gearWhiteInkyRider.png in Resources */,
+				0ADF9C311C1DF2DE002D7E81 /* gearPowerBoots.png in Resources */,
 				0AC607BD1C189ED0006EECA7 /* mapIcon.png in Resources */,
 				0AC607D31C18A629006EECA7 /* StageFlounderHeights.jpg in Resources */,
+				0ADF9C201C1DF2DE002D7E81 /* gearOctolingBoots.png in Resources */,
+				0ADF9BD31C1DF2DE002D7E81 /* gearBlueSlip-Ons.png in Resources */,
+				0ADF9BDC1C1DF2DE002D7E81 /* gearChocoClogs.png in Resources */,
+				0ADF9C681C1DF2DE002D7E81 /* gearSquid-StitchCap.png in Resources */,
+				0ADF9C821C1DF2DE002D7E81 /* gearSunVisor.png in Resources */,
 				0AC607D71C18A629006EECA7 /* StageMorayTowers.jpg in Resources */,
+				0ADF9C5C1C1DF2DE002D7E81 /* gearSky-BlueSquideye.png in Resources */,
+				0ADF9CAE1C1DF2DE002D7E81 /* gearZekkoHoodie.png in Resources */,
+				0ADF9AA21C1D1255002D7E81 /* clothesIcon@2x.png in Resources */,
+				0ADF9BF61C1DF2DE002D7E81 /* gearGoldHi-Horses.png in Resources */,
 				0AC607D61C18A629006EECA7 /* StageMahi-MahiResort.jpg in Resources */,
 				0AA23E441C1B7A760002BCC2 /* changelog.txt in Resources */,
 				0AC607F01C191405006EECA7 /* turfWarBadge.png in Resources */,
 				0AC607EE1C191405006EECA7 /* rankedBadgeAlt@2x.png in Resources */,
+				0ADF9C041C1DF2DE002D7E81 /* gearHeroJacketReplica.png in Resources */,
+				0ADF9C651C1DF2DE002D7E81 /* gearSportyBobbleHat.png in Resources */,
 				0AA23DFD1C1B6D870002BCC2 /* weaponsIcon.png in Resources */,
+				0ADF9BBF1C1DF2DE002D7E81 /* gearBlack8-BitFishFry.png in Resources */,
+				0ADF9C141C1DF2DE002D7E81 /* gearLogoAlohaShirt.png in Resources */,
+				0ADF9C781C1DF2DE002D7E81 /* gearStrappingReds.png in Resources */,
+				0ADF9C981C1DF2DE002D7E81 /* gearWhite8-BitFishFry.png in Resources */,
+				0ADF9C791C1DF2DE002D7E81 /* gearStrappingWhites.png in Resources */,
+				0ADF9BFE1C1DF2DE002D7E81 /* gearGreenRainBoots.png in Resources */,
+				0ADF9BB61C1DF2DE002D7E81 /* gearB-ballJersey(Home).png in Resources */,
+				0ADF9C361C1DF2DE002D7E81 /* gearPunkYellows.png in Resources */,
+				0ADF9BF91C1DF2DE002D7E81 /* gearGrayCollegeSweat.png in Resources */,
+				0ADF9C971C1DF2DE002D7E81 /* gearWarriorHeaddress.png in Resources */,
+				0ADF9CAF1C1DF2DE002D7E81 /* gearZekkoMesh.png in Resources */,
+				0ADF9C521C1DF2DE002D7E81 /* gearSchoolJersey.png in Resources */,
+				0ADF9BDA1C1DF2DE002D7E81 /* gearCarnivoreTee.png in Resources */,
+				0ADF9C691C1DF2DE002D7E81 /* gearSquid-StitchSlip-Ons.png in Resources */,
+				0ADF9BCC1C1DF2DE002D7E81 /* gearBlowfishBellHat.png in Resources */,
 				0AA23E331C1B6E280002BCC2 /* abilityRecon.png in Resources */,
+				0ADF9C7B1C1DF2DE002D7E81 /* gearStreetstyleCap.png in Resources */,
+				0ADF9C3F1C1DF2DE002D7E81 /* gearRedSlip-Ons.png in Resources */,
 				0AA23E3A1C1B6E280002BCC2 /* abilityTenacity.png in Resources */,
 				0AC607D01C18A629006EECA7 /* StageArowanaMall.jpg in Resources */,
+				0ADF9C371C1DF2DE002D7E81 /* gearPurpleCamoLS.png in Resources */,
+				0ADF9BE41C1DF2DE002D7E81 /* gearCyanTrainers.png in Resources */,
+				0ADF9C881C1DF2DE002D7E81 /* gearTraditionalApron.png in Resources */,
+				0ADF9C1B1C1DF2DE002D7E81 /* gearNavyStripedLS.png in Resources */,
+				0ADF9BD81C1DF2DE002D7E81 /* gearCamoZipHoodie.png in Resources */,
+				0ADF9C741C1DF2DE002D7E81 /* gearSquidstarWaistcoat.png in Resources */,
+				0ADF9C071C1DF2DE002D7E81 /* gearIcyDownBoots.png in Resources */,
+				0ADF9C9C1C1DF2DE002D7E81 /* gearWhiteBaseballLS.png in Resources */,
+				0ADF9BBC1C1DF2DE002D7E81 /* gearBasicTee.png in Resources */,
+				0ADF9BD51C1DF2DE002D7E81 /* gearBubbleRainBoots.png in Resources */,
+				0ADF9CA71C1DF2DE002D7E81 /* gearWhiteStripedLS.png in Resources */,
+				0ADF9BEE1C1DF2DE002D7E81 /* gearFishFryVisor.png in Resources */,
+				0ADF9C0C1C1DF2DE002D7E81 /* gearKrak-On528.png in Resources */,
+				0ADF9BF41C1DF2DE002D7E81 /* gearFullMoonGlasses.png in Resources */,
+				0ADF9C301C1DF2DE002D7E81 /* gearPowerArmor.png in Resources */,
+				0ADF9C8E1C1DF2DE002D7E81 /* gearTurquoiseKicks.png in Resources */,
 				0AC607EF1C191405006EECA7 /* rankedBadgeAlt@3x.png in Resources */,
+				0ADF9C221C1DF2DE002D7E81 /* gearOctoTee.png in Resources */,
+				0ADF9BFD1C1DF2DE002D7E81 /* gearGreenCardigan.png in Resources */,
+				0ADF9C7C1C1DF2DE002D7E81 /* gearStripedBeanie.png in Resources */,
+				0ADF9C631C1DF2DE002D7E81 /* gearSplashGoggles.png in Resources */,
+				0ADF9C961C1DF2DE002D7E81 /* gearVisorSkateHelmet.png in Resources */,
 				0AA23DFF1C1B6D870002BCC2 /* weaponsIcon@3x.png in Resources */,
 				0AC607F41C19174B006EECA7 /* backgroundTile.jpg in Resources */,
+				0ADF9C2A1C1DF2DE002D7E81 /* gearPart-TimePirate.png in Resources */,
+				0ADF9BDB1C1DF2DE002D7E81 /* gearCherryKicks.png in Resources */,
+				0ADF9C591C1DF2DE002D7E81 /* gearShrimp-PinkPolo.png in Resources */,
+				0ADF9C341C1DF2DE002D7E81 /* gearPunkCherries.png in Resources */,
+				0ADF9BF01C1DF2DE002D7E81 /* gearForestVest.png in Resources */,
+				0ADF9BD71C1DF2DE002D7E81 /* gearCamoMesh.png in Resources */,
+				0ADF9C421C1DF2DE002D7E81 /* gearReelSweat.png in Resources */,
+				0ADF9C6A1C1DF2DE002D7E81 /* gearSquid-StitchTee.png in Resources */,
+				0ADF9C271C1DF2DE002D7E81 /* gearOysterClogs.png in Resources */,
+				0ADF9C911C1DF2DE002D7E81 /* gearUrchinsJersey.png in Resources */,
 				0AC607921C189B36006EECA7 /* Assets.xcassets in Resources */,
+				0ADF9C031C1DF2DE002D7E81 /* gearHeroHeadsetReplica.png in Resources */,
+				0ADF9C331C1DF2DE002D7E81 /* gearProTrailBoots.png in Resources */,
+				0ADF9C8B1C1DF2DE002D7E81 /* gearTrailBoots.png in Resources */,
+				0ADF9C091C1DF2DE002D7E81 /* gearJetCap.png in Resources */,
+				0ADF9C2B1C1DF2DE002D7E81 /* gearPearlTee.png in Resources */,
+				0ADF9C6D1C1DF2DE002D7E81 /* gearSQUIDGIRLShoes.png in Resources */,
+				0ADF9C861C1DF2DE002D7E81 /* gearTentaclesHelmet.png in Resources */,
+				0ADF9C661C1DF2DE002D7E81 /* gearSquashHeadband.png in Resources */,
+				0ADF9C241C1DF2DE002D7E81 /* gearOrangeArrows.png in Resources */,
+				0ADF9CB11C1DF2DE002D7E81 /* gearZinkLS.png in Resources */,
+				0ADF9C701C1DF2DE002D7E81 /* gearSquidmarkLS.png in Resources */,
+				0ADF9BB11C1DF2DE002D7E81 /* gearArmorBootReplicas.png in Resources */,
 				0AC607F21C191405006EECA7 /* turfWarBadge@3x.png in Resources */,
 				0AA23E2E1C1B6E280002BCC2 /* abilityNinjaSquid.png in Resources */,
+				0ADF9BCB1C1DF2DE002D7E81 /* gearBlackTrainers.png in Resources */,
 				0AA23E251C1B6E280002BCC2 /* abilityComeback.png in Resources */,
+				0ADF9C841C1DF2DE002D7E81 /* gearTanWorkBoots.png in Resources */,
+				0ADF9C9B1C1DF2DE002D7E81 /* gearWhiteArrows.png in Resources */,
+				0ADF9C151C1DF2DE002D7E81 /* gearLumberjackShirt.png in Resources */,
+				0ADF9BC61C1DF2DE002D7E81 /* gearBlackPipeTee.png in Resources */,
+				0ADF9BEF1C1DF2DE002D7E81 /* gearFive-PanelCap.png in Resources */,
 				0AC607E41C18E8A1006EECA7 /* rankedBadge.png in Resources */,
+				0ADF9C771C1DF2DE002D7E81 /* gearStealthGoggles.png in Resources */,
 				0AA23DF71C1B6D870002BCC2 /* betaIcon.png in Resources */,
+				0ADF9BDE1C1DF2DE002D7E81 /* gearClassicStrawBoater.png in Resources */,
+				0ADF9C281C1DF2DE002D7E81 /* gearPaintballMask.png in Resources */,
+				0ADF9C851C1DF2DE002D7E81 /* gearTennisHeadband.png in Resources */,
+				0ADF9C5D1C1DF2DE002D7E81 /* gearSlipstreamUnited.png in Resources */,
+				0ADF9CA41C1DF2DE002D7E81 /* gearWhiteSailorSuit.png in Resources */,
+				0ADF9C111C1DF2DE002D7E81 /* gearLESoccerCleats.png in Resources */,
+				0ADF9CB21C1DF2DE002D7E81 /* gearZombieHi-Horses.png in Resources */,
+				0ADF9CA51C1DF2DE002D7E81 /* gearWhiteSeahorses.png in Resources */,
+				0ADF9C6C1C1DF2DE002D7E81 /* gearSQUIDGIRLHat.png in Resources */,
+				0ADF9C531C1DF2DE002D7E81 /* gearSchoolShoes.png in Resources */,
 				0AA23E2B1C1B6E280002BCC2 /* abilityInkSaver(Main).png in Resources */,
+				0ADF9CA11C1DF2DE002D7E81 /* gearWhiteLineTee.png in Resources */,
+				0ADF9C871C1DF2DE002D7E81 /* gearTintedShades.png in Resources */,
+				0ADF9C901C1DF2DE002D7E81 /* gearUrchinsCap.png in Resources */,
+				0ADF9C391C1DF2DE002D7E81 /* gearPurpleSeaSlugs.png in Resources */,
+				0ADF9C0A1C1DF2DE002D7E81 /* gearJoggingHeadband.png in Resources */,
+				0ADF9C6E1C1DF2DE002D7E81 /* gearSQUIDGIRLTunic.png in Resources */,
 				0AA23E381C1B6E280002BCC2 /* abilityStealthJump.png in Resources */,
+				0ADF9C921C1DF2DE002D7E81 /* gearVarsityBaseballLS.png in Resources */,
+				0ADF9BF31C1DF2DE002D7E81 /* gearFuguTee.png in Resources */,
+				0ADF9BE01C1DF2DE002D7E81 /* gearCrazyArrows.png in Resources */,
+				0ADF9C711C1DF2DE002D7E81 /* gearSquidmarkSweat.png in Resources */,
+				0ADF9C171C1DF2DE002D7E81 /* gearMintTee.png in Resources */,
+				0ADF9C321C1DF2DE002D7E81 /* gearPowerMask.png in Resources */,
 				0AA23E341C1B6E280002BCC2 /* abilityRunSpeedUp.png in Resources */,
 				0AA23E061C1B6DB90002BCC2 /* IconSelectionView.xib in Resources */,
+				0ADF9C4D1C1DF2DE002D7E81 /* gearSagePolo.png in Resources */,
+				0ADF9BAF1C1DF2DE002D7E81 /* gearAlohaShirt.png in Resources */,
 				0A948AC31C1CC4F700CCC4DB /* data.min.json in Resources */,
 				0AC607FA1C191F09006EECA7 /* squid@3x.png in Resources */,
+				0ADF9AA31C1D1255002D7E81 /* clothesIcon@3x.png in Resources */,
+				0ADF9BDD1C1DF2DE002D7E81 /* gearChocoLayeredLS.png in Resources */,
+				0ADF9C7F1C1DF2DE002D7E81 /* gearStripedShirt.png in Resources */,
+				0ADF9C1C1C1DF2DE002D7E81 /* gearNeonSeaSlugs.png in Resources */,
+				0ADF9C011C1DF2DE002D7E81 /* gearGreenZipHoodie.png in Resources */,
+				0ADF9C441C1DF2DE002D7E81 /* gearRetroGamerJersey.png in Resources */,
+				0ADF9C9D1C1DF2DE002D7E81 /* gearWhiteHeadband.png in Resources */,
+				0ADF9CAC1C1DF2DE002D7E81 /* gearZapfishSatinJacket.png in Resources */,
 				0AA23E301C1B6E280002BCC2 /* abilityOpeningGambit.png in Resources */,
+				0ADF9C251C1DF2DE002D7E81 /* gearOrangeCardigan.png in Resources */,
+				0ADF9C9F1C1DF2DE002D7E81 /* gearWhiteKicks.png in Resources */,
+				0ADF9C351C1DF2DE002D7E81 /* gearPunkWhites.png in Resources */,
+				0ADF9C291C1DF2DE002D7E81 /* gearPaisleyBandana.png in Resources */,
+				0ADF9C461C1DF2DE002D7E81 /* gearRetroSweat.png in Resources */,
+				0ADF9C231C1DF2DE002D7E81 /* gearOliveSkiJacket.png in Resources */,
+				0ADF9BC21C1DF2DE002D7E81 /* gearBlackBaseballLS.png in Resources */,
+				0ADF9BB81C1DF2DE002D7E81 /* gearBackwardsCap.png in Resources */,
+				0ADF9CAA1C1DF2DE002D7E81 /* gearYellowSeahorses.png in Resources */,
 				0AA23E311C1B6E280002BCC2 /* abilityQuickRespawn.png in Resources */,
 				0AC607901C189B36006EECA7 /* Main.storyboard in Resources */,
+				0ADF9C9A1C1DF2DE002D7E81 /* gearWhiteArrowbands.png in Resources */,
 				0AA23DFB1C1B6D870002BCC2 /* brandsIcon@2x.png in Resources */,
+				0ADF9BFB1C1DF2DE002D7E81 /* gearGrayVectorTee.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,6 +1768,7 @@
 				0AA23E051C1B6DB90002BCC2 /* IconSelectionView.swift in Sources */,
 				0AC607B91C189BD8006EECA7 /* MapsTableViewController.swift in Sources */,
 				0AC607891C189B36006EECA7 /* AppDelegate.swift in Sources */,
+				0ADF9AA51C1DF135002D7E81 /* GearGuideViewController.swift in Sources */,
 				0AC607FC1C192211006EECA7 /* LoadingViewController.swift in Sources */,
 				0AA23E071C1B6DB90002BCC2 /* SplatAppStyle.swift in Sources */,
 				0AA23E041C1B6DB90002BCC2 /* BrandGuideViewController.swift in Sources */,
