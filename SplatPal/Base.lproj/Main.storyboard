@@ -29,6 +29,11 @@
             <string>ProjectPaintball</string>
             <string>ProjectPaintball</string>
             <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -300,7 +305,7 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Any" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="GN2-iF-UFb">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="GN2-iF-UFb">
                                         <rect key="frame" x="5" y="23" width="190" height="24"/>
                                         <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="22"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -334,9 +339,74 @@
                                     <constraint firstAttribute="height" constant="10" id="sGa-dc-8B7"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Wz-Cj-Yly">
-                                <rect key="frame" x="149" y="218" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Wz-Cj-Yly">
+                                <rect key="frame" x="0.0" y="711" width="600" height="240"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Gear Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2p-Oa-m2f">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="9d1-k7-90k"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="22"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzL-PQ-YJH">
+                                        <rect key="frame" x="263" y="38" width="74" height="40"/>
+                                        <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="25"/>
+                                        <state key="normal" title="Shoes">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="shoesTapped:" destination="qB1-1u-vDb" eventType="touchUpInside" id="i2b-4U-4Xi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTS-0A-y5V">
+                                        <rect key="frame" x="269" y="86" width="63" height="40"/>
+                                        <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="25"/>
+                                        <state key="normal" title="Shirt">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="shirtTapped:" destination="qB1-1u-vDb" eventType="touchUpInside" id="nJ9-yp-aOF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMu-OF-Lh3">
+                                        <rect key="frame" x="278" y="134" width="44" height="40"/>
+                                        <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="25"/>
+                                        <state key="normal" title="Hat">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hatTapped:" destination="qB1-1u-vDb" eventType="touchUpInside" id="MVg-ah-Etc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlU-hk-4hr">
+                                        <rect key="frame" x="277" y="182" width="47" height="40"/>
+                                        <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="25"/>
+                                        <state key="normal" title="All">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="anyTapped:" destination="qB1-1u-vDb" eventType="touchUpInside" id="8bd-0Y-N8J"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="fzL-PQ-YJH" firstAttribute="top" secondItem="U2p-Oa-m2f" secondAttribute="bottom" constant="8" id="27C-FN-xYl"/>
+                                    <constraint firstItem="U2p-Oa-m2f" firstAttribute="leading" secondItem="5Wz-Cj-Yly" secondAttribute="leading" id="6Kg-zb-UXZ"/>
+                                    <constraint firstItem="U2p-Oa-m2f" firstAttribute="top" secondItem="5Wz-Cj-Yly" secondAttribute="top" id="9DJ-6S-Waf"/>
+                                    <constraint firstItem="LTS-0A-y5V" firstAttribute="centerX" secondItem="5Wz-Cj-Yly" secondAttribute="centerX" id="BuA-1S-rmx"/>
+                                    <constraint firstItem="aMu-OF-Lh3" firstAttribute="centerX" secondItem="5Wz-Cj-Yly" secondAttribute="centerX" id="ETT-5Q-ab2"/>
+                                    <constraint firstItem="hlU-hk-4hr" firstAttribute="top" secondItem="aMu-OF-Lh3" secondAttribute="bottom" constant="8" id="W4N-Dy-QLe"/>
+                                    <constraint firstItem="aMu-OF-Lh3" firstAttribute="top" secondItem="LTS-0A-y5V" secondAttribute="bottom" constant="8" id="ZHl-7f-64g"/>
+                                    <constraint firstAttribute="height" constant="240" id="cfG-z5-MmH"/>
+                                    <constraint firstItem="fzL-PQ-YJH" firstAttribute="centerX" secondItem="5Wz-Cj-Yly" secondAttribute="centerX" id="hko-X7-KAD"/>
+                                    <constraint firstAttribute="trailing" secondItem="U2p-Oa-m2f" secondAttribute="trailing" id="oUw-vV-2OT"/>
+                                    <constraint firstItem="LTS-0A-y5V" firstAttribute="top" secondItem="fzL-PQ-YJH" secondAttribute="bottom" constant="8" id="udz-Ch-tnp"/>
+                                    <constraint firstItem="hlU-hk-4hr" firstAttribute="centerX" secondItem="5Wz-Cj-Yly" secondAttribute="centerX" id="wsu-Q5-dpN"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -345,6 +415,8 @@
                             <constraint firstItem="tRI-mS-c9D" firstAttribute="width" secondItem="FT1-A8-bZu" secondAttribute="width" id="5B0-VE-bnC"/>
                             <constraint firstItem="k94-AX-a63" firstAttribute="top" secondItem="jPo-py-4X0" secondAttribute="bottom" id="5h1-Gd-XFN"/>
                             <constraint firstItem="k94-AX-a63" firstAttribute="leading" secondItem="FT1-A8-bZu" secondAttribute="trailing" id="5s5-Bh-H3W"/>
+                            <constraint firstItem="5Wz-Cj-Yly" firstAttribute="leading" secondItem="CFx-hj-Tad" secondAttribute="leadingMargin" constant="-20" id="CgQ-0Q-RbP"/>
+                            <constraint firstItem="7kX-ol-aa8" firstAttribute="top" secondItem="5Wz-Cj-Yly" secondAttribute="bottom" constant="-400" id="F4d-tB-mOC"/>
                             <constraint firstAttribute="width" secondItem="FT1-A8-bZu" secondAttribute="width" multiplier="3" priority="999" id="Gm1-YF-qtY"/>
                             <constraint firstItem="tRI-mS-c9D" firstAttribute="top" secondItem="FT1-A8-bZu" secondAttribute="top" id="K7v-ZU-ok8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tRI-mS-c9D" secondAttribute="trailing" constant="-20" id="LiX-kJ-iaY"/>
@@ -354,6 +426,7 @@
                             <constraint firstItem="jPo-py-4X0" firstAttribute="top" secondItem="L6g-Mt-Oeb" secondAttribute="bottom" id="eUQ-Z1-AzU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jPo-py-4X0" secondAttribute="trailing" constant="-20" id="ey0-dp-Kdg"/>
                             <constraint firstItem="k94-AX-a63" firstAttribute="width" secondItem="FT1-A8-bZu" secondAttribute="width" id="faZ-WA-ueE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Wz-Cj-Yly" secondAttribute="trailing" constant="-20" id="gVT-HY-WKa"/>
                             <constraint firstItem="k94-AX-a63" firstAttribute="bottom" secondItem="FT1-A8-bZu" secondAttribute="bottom" id="j3Z-mb-F4Y"/>
                             <constraint firstItem="jPo-py-4X0" firstAttribute="leading" secondItem="CFx-hj-Tad" secondAttribute="leadingMargin" constant="-20" id="jq4-Ve-tbQ"/>
                             <constraint firstItem="7kX-ol-aa8" firstAttribute="top" secondItem="FT1-A8-bZu" secondAttribute="bottom" id="kct-5j-54E"/>
@@ -370,6 +443,7 @@
                         <outlet property="imgMain" destination="9NL-Ax-cYv" id="pDx-80-kly"/>
                         <outlet property="imgSub" destination="OqM-xK-6Sl" id="xku-Mp-W87"/>
                         <outlet property="lblType" destination="GN2-iF-UFb" id="Rsy-D0-MhJ"/>
+                        <outlet property="typeViewX" destination="F4d-tB-mOC" id="ciL-7S-BTr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sgc-eu-sWU" userLabel="First Responder" sceneMemberID="firstResponder"/>

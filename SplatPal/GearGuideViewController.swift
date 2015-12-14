@@ -92,12 +92,15 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
     @IBOutlet weak var iconView: IconSelectionView!
     @IBOutlet weak var iconViewHeight: NSLayoutConstraint!
     @IBOutlet weak var iconViewXLoc: NSLayoutConstraint!
+    @IBOutlet weak var typeViewX: NSLayoutConstraint!
     
     @IBOutlet weak var imgMain: UIImageView!
     @IBOutlet weak var imgSub: UIImageView!
     @IBOutlet weak var lblType: UILabel!
     
     var gearTable: GearTableViewController?
+    
+    let typeViewHeight: CGFloat = 240
     
     // 0 for main, 1 for sub
     var selectionFlag = -1
@@ -144,6 +147,14 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
         })
     }
     
+    func toggleTypeView(show: Bool) {
+        typeViewX.constant = show ? 0 : -typeViewHeight - tabBarHeight
+        
+        UIView.animateWithDuration(0.3, animations: {
+            self.view.layoutIfNeeded()
+        })
+    }
+    
     func iconSelectionViewAbilitiesUpdated(view: IconSelectionView, selectedAbilities: [String]) {
         let abilityImage = UIImage(named: "ability\(selectedAbilities[0].removeWhitespace()).png")
         
@@ -156,6 +167,11 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
             imgSub.image = abilityImage
         }
         
+        updateTable()
+        toggleIconView(false)
+    }
+    
+    func updateTable() {
         var newGear = [JSON]()
         for gear in gearData {
             var valid = true
@@ -165,15 +181,10 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
             if gear["category"].stringValue != category && category != "All" { valid = false }
             
             if valid { newGear.append(gear) }
-            
-//            Clothing - Hat
-//            Headgear - Shirt
-//            Shoes
         }
         
         gearTable?.gearDisplayData = newGear
         gearTable?.tableView.reloadData()
-        toggleIconView(false)
     }
     
     @IBAction func mainButtonTapped(sender: AnyObject) {
@@ -195,7 +206,35 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
     }
     
     @IBAction func typeButtonTapped(sender: AnyObject) {
-        
+        toggleTypeView(true)
+    }
+    
+    @IBAction func shoesTapped(sender: AnyObject) {
+        lblType.text = "Shoes"
+        category = "Shoes"
+        updateTable()
+        toggleTypeView(false)
+    }
+    
+    @IBAction func shirtTapped(sender: AnyObject) {
+        lblType.text = "Shirt"
+        category = "Clothing"
+        updateTable()
+        toggleTypeView(false)
+    }
+    
+    @IBAction func hatTapped(sender: AnyObject) {
+        lblType.text = "Hat"
+        category = "Headgear"
+        updateTable()
+        toggleTypeView(false)
+    }
+    
+    @IBAction func anyTapped(sender: AnyObject) {
+        lblType.text = "All"
+        category = "All"
+        updateTable()
+        toggleTypeView(false)
     }
     
     func iconSelectionViewClose(view: IconSelectionView, sender: AnyObject) {
