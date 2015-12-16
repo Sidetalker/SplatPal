@@ -34,6 +34,11 @@
             <string>ProjectPaintball</string>
             <string>ProjectPaintball</string>
             <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -381,8 +386,8 @@
                                             <action selector="hatTapped:" destination="qB1-1u-vDb" eventType="touchUpInside" id="MVg-ah-Etc"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlU-hk-4hr">
-                                        <rect key="frame" x="277" y="182" width="47" height="40"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlU-hk-4hr">
+                                        <rect key="frame" x="284" y="182" width="33" height="40"/>
                                         <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="25"/>
                                         <state key="normal" title="All">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -459,11 +464,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellGear" rowHeight="70" id="gE9-Xh-ncI">
-                                <rect key="frame" x="0.0" y="28" width="600" height="70"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellGear" rowHeight="60" id="gE9-Xh-ncI">
+                                <rect key="frame" x="0.0" y="28" width="600" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gE9-Xh-ncI" id="B1u-60-GFU">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gear18KAviators.png" translatesAutoresizingMaskIntoConstraints="NO" id="ADb-Ad-G8v">
@@ -508,6 +513,130 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellGearDetail" rowHeight="224" id="GC5-yZ-QcE">
+                                <rect key="frame" x="0.0" y="88" width="600" height="224"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GC5-yZ-QcE" id="0TT-tO-xZU">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="223.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gear18KAviators.png" translatesAutoresizingMaskIntoConstraints="NO" id="SDx-x9-Z3E">
+                                            <rect key="frame" x="8" y="8" width="45" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="SDx-x9-Z3E" secondAttribute="height" multiplier="1:1" id="3wH-th-AP1"/>
+                                                <constraint firstAttribute="width" constant="45" id="Zya-Ry-jhh"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18K Aviators" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="bn2-pj-Zqv">
+                                            <rect key="frame" x="61" y="8" width="425" height="45"/>
+                                            <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="22"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" tag="9" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.png" translatesAutoresizingMaskIntoConstraints="NO" id="HcE-cq-Bvw">
+                                            <rect key="frame" x="494" y="15" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="WRE-0j-RtM"/>
+                                                <constraint firstAttribute="width" secondItem="HcE-cq-Bvw" secondAttribute="height" multiplier="1:1" id="h4G-GD-xBF"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.png" translatesAutoresizingMaskIntoConstraints="NO" id="D97-5F-UfV">
+                                            <rect key="frame" x="528" y="15" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="D97-5F-UfV" secondAttribute="height" multiplier="1:1" id="xiG-hy-VXl"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" tag="11" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.png" translatesAutoresizingMaskIntoConstraints="NO" id="TyE-px-5zd">
+                                            <rect key="frame" x="562" y="15" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="TyE-px-5zd" secondAttribute="height" multiplier="1:1" id="9Qj-j3-CcK"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abilityTenacity.png" translatesAutoresizingMaskIntoConstraints="NO" id="zkz-7K-b1K">
+                                            <rect key="frame" x="8" y="61" width="45" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="zkz-7K-b1K" secondAttribute="height" multiplier="1:1" id="sEs-o8-L2B"/>
+                                                <constraint firstAttribute="width" constant="45" id="xTj-Ru-8MM"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="sEs-o8-L2B"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abilityBombRangeUp.png" translatesAutoresizingMaskIntoConstraints="NO" id="vGJ-fo-ZW4">
+                                            <rect key="frame" x="8" y="114" width="45" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="vGJ-fo-ZW4" secondAttribute="height" multiplier="1:1" id="LZP-tJ-ctR"/>
+                                                <constraint firstAttribute="width" constant="45" id="b1m-bk-hoi"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="LZP-tJ-ctR"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18K Aviators" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="1H9-1k-q45">
+                                            <rect key="frame" x="61" y="61" width="521" height="45"/>
+                                            <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="18"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18K Aviators" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="eDQ-hv-4nZ">
+                                            <rect key="frame" x="61" y="114" width="521" height="45"/>
+                                            <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="18"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="7" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost: 2300" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="qTT-Vk-VYf">
+                                            <rect key="frame" x="8" y="167" width="96.5" height="20"/>
+                                            <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="18"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="8" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brand: Zink" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="Qxj-YN-CtL">
+                                            <rect key="frame" x="8" y="195" width="103" height="20"/>
+                                            <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="18"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="TyE-px-5zd" secondAttribute="trailing" id="0E3-zg-8lI"/>
+                                        <constraint firstItem="zkz-7K-b1K" firstAttribute="top" secondItem="SDx-x9-Z3E" secondAttribute="bottom" constant="8" id="0jB-Tq-9cJ"/>
+                                        <constraint firstItem="D97-5F-UfV" firstAttribute="top" secondItem="0TT-tO-xZU" secondAttribute="topMargin" constant="7" id="2Li-15-Rh6"/>
+                                        <constraint firstItem="Qxj-YN-CtL" firstAttribute="top" secondItem="qTT-Vk-VYf" secondAttribute="bottom" constant="8" id="3QB-fh-Rb8"/>
+                                        <constraint firstItem="TyE-px-5zd" firstAttribute="top" secondItem="0TT-tO-xZU" secondAttribute="topMargin" constant="7" id="5yE-on-h3y"/>
+                                        <constraint firstItem="vGJ-fo-ZW4" firstAttribute="top" secondItem="zkz-7K-b1K" secondAttribute="bottom" constant="8" id="Bqh-Hi-2uz"/>
+                                        <constraint firstItem="qTT-Vk-VYf" firstAttribute="top" secondItem="vGJ-fo-ZW4" secondAttribute="bottom" constant="8" id="Brc-FT-D05"/>
+                                        <constraint firstItem="bn2-pj-Zqv" firstAttribute="top" secondItem="SDx-x9-Z3E" secondAttribute="top" id="D6I-fg-C7q"/>
+                                        <constraint firstItem="eDQ-hv-4nZ" firstAttribute="top" secondItem="vGJ-fo-ZW4" secondAttribute="top" id="Elh-OI-7lY"/>
+                                        <constraint firstItem="eDQ-hv-4nZ" firstAttribute="bottom" secondItem="vGJ-fo-ZW4" secondAttribute="bottom" id="HhU-c8-hi1"/>
+                                        <constraint firstItem="HcE-cq-Bvw" firstAttribute="width" secondItem="TyE-px-5zd" secondAttribute="width" id="O48-UJ-VU9"/>
+                                        <constraint firstItem="bn2-pj-Zqv" firstAttribute="bottom" secondItem="SDx-x9-Z3E" secondAttribute="bottom" id="P3B-pm-Ofb"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="SDx-x9-Z3E" secondAttribute="leading" id="S2S-Dw-y44"/>
+                                        <constraint firstItem="zkz-7K-b1K" firstAttribute="top" secondItem="1H9-1k-q45" secondAttribute="top" id="Ucr-aj-XV6"/>
+                                        <constraint firstItem="HcE-cq-Bvw" firstAttribute="top" secondItem="0TT-tO-xZU" secondAttribute="topMargin" constant="7" id="Yg6-jf-3IG"/>
+                                        <constraint firstItem="zkz-7K-b1K" firstAttribute="width" secondItem="zkz-7K-b1K" secondAttribute="height" multiplier="1:1" id="Yiv-9Q-thO"/>
+                                        <constraint firstItem="vGJ-fo-ZW4" firstAttribute="width" secondItem="vGJ-fo-ZW4" secondAttribute="height" multiplier="1:1" id="ZbQ-D9-cwU"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="vGJ-fo-ZW4" secondAttribute="leading" id="Zmb-LT-emM"/>
+                                        <constraint firstItem="eDQ-hv-4nZ" firstAttribute="leading" secondItem="vGJ-fo-ZW4" secondAttribute="trailing" constant="8" id="aZC-pN-MMd"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="eDQ-hv-4nZ" secondAttribute="trailing" constant="10" id="cFZ-H8-1eM"/>
+                                        <constraint firstItem="HcE-cq-Bvw" firstAttribute="width" secondItem="D97-5F-UfV" secondAttribute="width" id="dny-HH-nFM"/>
+                                        <constraint firstItem="HcE-cq-Bvw" firstAttribute="leading" secondItem="bn2-pj-Zqv" secondAttribute="trailing" constant="8" id="eJG-YC-tjb"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="qTT-Vk-VYf" secondAttribute="leading" id="gK8-iP-eN1"/>
+                                        <constraint firstItem="zkz-7K-b1K" firstAttribute="bottom" secondItem="1H9-1k-q45" secondAttribute="bottom" id="gKA-99-rnr"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="1H9-1k-q45" secondAttribute="trailing" constant="10" id="hbu-IL-nX4"/>
+                                        <constraint firstItem="bn2-pj-Zqv" firstAttribute="leading" secondItem="SDx-x9-Z3E" secondAttribute="trailing" constant="8" id="hnB-Lj-17B"/>
+                                        <constraint firstItem="D97-5F-UfV" firstAttribute="leading" secondItem="HcE-cq-Bvw" secondAttribute="trailing" constant="4" id="iwl-M0-gYm"/>
+                                        <constraint firstAttribute="topMargin" secondItem="SDx-x9-Z3E" secondAttribute="top" id="jKW-XB-Djw"/>
+                                        <constraint firstItem="1H9-1k-q45" firstAttribute="leading" secondItem="zkz-7K-b1K" secondAttribute="trailing" constant="8" id="jKw-XC-Z5f"/>
+                                        <constraint firstItem="TyE-px-5zd" firstAttribute="leading" secondItem="D97-5F-UfV" secondAttribute="trailing" constant="4" id="p2n-zS-YQ6"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="Qxj-YN-CtL" secondAttribute="leading" id="uE0-Iy-qAM"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="zkz-7K-b1K" secondAttribute="leading" id="x37-o6-OKP"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="98L-Ij-DPb" id="CkT-Qa-KV9"/>
@@ -517,7 +646,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="teX-yL-NBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="440" y="920"/>
+            <point key="canvasLocation" x="440" y="919.5"/>
         </scene>
         <!--Brand Guide-->
         <scene sceneID="Vpq-Vg-kuC">
@@ -1009,5 +1138,6 @@
         <image name="mapIcon.png" width="25" height="25"/>
         <image name="rankedBadge.png" width="40" height="40"/>
         <image name="squid.png" width="150" height="150"/>
+        <image name="star.png" width="30" height="30"/>
     </resources>
 </document>

@@ -1,0 +1,48 @@
+Bomb Range Up
+Makes bombs, Point Sensors, and Disruptors travel farther when thrown.
+Bomb Sniffer
+Reveals traps and hidden bombs placed by your opponent.
+Cold-Blooded
+Shortens the effect of attacks that let enemies track your position, such as Point Sensors.
+Comeback
+Boosts some of your abilities a short time after respawning.
+Damage Up
+Increases damage of your main, sub,s and special weapons.
+Defense Up
+Reduces damage taken from all attacks.
+Haunt
+Reveals the position of any player who splats you to your team for a short time.
+Ink Recovery Up
+Increases ink-tank refill rate while submerged in squid form.
+Ink Resistance Up
+Reduces damage and movement penalties incurred when moving through enemy ink.
+Ink Saver (Main)
+Decreases amount of ink consumed by your main weapon.
+Ink Saver (Sub)
+Decreases amount of ink consumed by your sub weapon.
+Last-Ditch Effort
+Boosts ink recovery rate and weapon ink efficiency for the last 30 seconds of battle.
+Ninja Squid
+Leaves no trace when swimming on inked ground, but reduces swim speed slightly.
+Opening Gambit
+Boosts your speed in both inkling and squid form for the first 30 seconds of battle.
+Quick Respawn
+Decreases respawn time after getting splatted.
+Quick Super Jump
+Increases super jump speed.
+Recon
+Allows you to see the opposing team on the map while standing on your spawn point.
+Run Speed Up
+Increases movement speed in Inkling form.
+Special Charge Up
+Increases special-gauge fill rate.
+Special Duration Up
+Increases usage time of special weapons.
+Special Saver
+Reduces special-gauge decrease after getting splatted.
+Stealth Jump
+Hides your Super Jump landing points, but also makes your Super Jump slightly slower.
+Swim Speed Up
+Increases movement speed while swimming in squid form.
+Tenacity
+Fills special gauge automatically if your team has fewer active players than the enemy.

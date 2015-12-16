@@ -11,6 +11,7 @@ import SwiftyJSON
 
 var brandData = [JSON]()
 var gearData = [JSON]()
+var abilityData = [String : JSON]()
 
 class LoadingViewController: UIViewController {
     
@@ -47,6 +48,7 @@ class LoadingViewController: UIViewController {
             
             brandData = jsonResult["brands"].arrayValue
             gearData = jsonResult["gear"].arrayValue
+            abilityData = jsonResult["abilities"].dictionaryValue
         }
     }
 }

@@ -48,6 +48,9 @@
 		0AA23E3A1C1B6E280002BCC2 /* abilityTenacity.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23E211C1B6E280002BCC2 /* abilityTenacity.png */; };
 		0AA23E421C1B78450002BCC2 /* BetaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA23E411C1B78450002BCC2 /* BetaViewController.swift */; };
 		0AA23E441C1B7A760002BCC2 /* changelog.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23E431C1B7A760002BCC2 /* changelog.txt */; };
+		0AB09B3B1C205F2700A8A682 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB09B381C205F2700A8A682 /* star.png */; };
+		0AB09B3C1C205F2700A8A682 /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB09B391C205F2700A8A682 /* star@2x.png */; };
+		0AB09B3D1C205F2700A8A682 /* star@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB09B3A1C205F2700A8A682 /* star@3x.png */; };
 		0AC607891C189B36006EECA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC607881C189B36006EECA7 /* AppDelegate.swift */; };
 		0AC607901C189B36006EECA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC6078E1C189B36006EECA7 /* Main.storyboard */; };
 		0AC607921C189B36006EECA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607911C189B36006EECA7 /* Assets.xcassets */; };
@@ -418,6 +421,9 @@
 		0AA23E3B1C1B72B90002BCC2 /* SplatPal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SplatPal-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		0AA23E411C1B78450002BCC2 /* BetaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetaViewController.swift; sourceTree = "<group>"; };
 		0AA23E431C1B7A760002BCC2 /* changelog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = changelog.txt; path = Resources/changelog.txt; sourceTree = "<group>"; };
+		0AB09B381C205F2700A8A682 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = Images/star.png; sourceTree = "<group>"; };
+		0AB09B391C205F2700A8A682 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star@2x.png"; path = "Images/star@2x.png"; sourceTree = "<group>"; };
+		0AB09B3A1C205F2700A8A682 /* star@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star@3x.png"; path = "Images/star@3x.png"; sourceTree = "<group>"; };
 		0AC607851C189B36006EECA7 /* SplatPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplatPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC607881C189B36006EECA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AC6078F1C189B36006EECA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -890,6 +896,9 @@
 		0AC607DE1C18AAA6006EECA7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0AB09B381C205F2700A8A682 /* star.png */,
+				0AB09B391C205F2700A8A682 /* star@2x.png */,
+				0AB09B3A1C205F2700A8A682 /* star@3x.png */,
 				0AC607C11C18A61E006EECA7 /* Stages */,
 				0AA23E081C1B6E140002BCC2 /* Abilities */,
 				0ADF9A9D1C1D1246002D7E81 /* Bar Icons */,
@@ -1395,6 +1404,7 @@
 				0ADF9BC71C1DF2DE002D7E81 /* gearBlackPolo.png in Resources */,
 				0ADF9C061C1DF2DE002D7E81 /* gearHunterHi-Tops.png in Resources */,
 				0ADF9C801C1DF2DE002D7E81 /* gearStudioHeadphones.png in Resources */,
+				0AB09B3D1C205F2700A8A682 /* star@3x.png in Resources */,
 				0ADF9C671C1DF2DE002D7E81 /* gearSquid-PatternWaistcoat.png in Resources */,
 				0ADF9C5E1C1DF2DE002D7E81 /* gearSnorkelMask.png in Resources */,
 				0ADF9CA21C1DF2DE002D7E81 /* gearWhiteLS.png in Resources */,
@@ -1613,6 +1623,7 @@
 				0ADF9C771C1DF2DE002D7E81 /* gearStealthGoggles.png in Resources */,
 				0AA23DF71C1B6D870002BCC2 /* betaIcon.png in Resources */,
 				0ADF9BDE1C1DF2DE002D7E81 /* gearClassicStrawBoater.png in Resources */,
+				0AB09B3B1C205F2700A8A682 /* star.png in Resources */,
 				0ADF9C281C1DF2DE002D7E81 /* gearPaintballMask.png in Resources */,
 				0ADF9C851C1DF2DE002D7E81 /* gearTennisHeadband.png in Resources */,
 				0ADF9C5D1C1DF2DE002D7E81 /* gearSlipstreamUnited.png in Resources */,
@@ -1648,6 +1659,7 @@
 				0ADF9C1C1C1DF2DE002D7E81 /* gearNeonSeaSlugs.png in Resources */,
 				0ADF9C011C1DF2DE002D7E81 /* gearGreenZipHoodie.png in Resources */,
 				0ADF9C441C1DF2DE002D7E81 /* gearRetroGamerJersey.png in Resources */,
+				0AB09B3C1C205F2700A8A682 /* star@2x.png in Resources */,
 				0ADF9C9D1C1DF2DE002D7E81 /* gearWhiteHeadband.png in Resources */,
 				0ADF9CAC1C1DF2DE002D7E81 /* gearZapfishSatinJacket.png in Resources */,
 				0AA23E301C1B6E280002BCC2 /* abilityOpeningGambit.png in Resources */,

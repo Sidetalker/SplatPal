@@ -52,7 +52,7 @@ class GearTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return gearDetailDisplaying[indexPath.row] ? 0 : 60
+        return gearDetailDisplaying[indexPath.row] ? 224 : 60
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -61,6 +61,42 @@ class GearTableViewController: UITableViewController {
         
         if gearDetailDisplaying[indexPath.row] {
             cell = tableView.dequeueReusableCellWithIdentifier("cellGearDetail", forIndexPath: indexPath)
+            let lblName = cell.viewWithTag(1) as! UILabel
+            let imgGear = cell.viewWithTag(2) as! UIImageView
+            let imgAbilityMain = cell.viewWithTag(3) as! UIImageView
+            let imgAbilityBrand = cell.viewWithTag(4) as! UIImageView
+            let lblAbilityMain = cell.viewWithTag(5) as! UILabel
+            let lblAbilityBrand = cell.viewWithTag(6) as! UILabel
+            let lblCost = cell.viewWithTag(7) as! UILabel
+            let lblBrand = cell.viewWithTag(8) as! UILabel
+            let imgStar1 = cell.viewWithTag(9) as! UIImageView
+            let imgStar2 = cell.viewWithTag(10) as! UIImageView
+            let imgStar3 = cell.viewWithTag(11) as! UIImageView
+            
+            let abilityUp = data["ability"].stringValue
+            let abilityBrand = abilityUpForBrand(data["brand"].stringValue)
+            
+            lblName.text = data["name"].stringValue
+            imgGear.image = UIImage(named: "gear\(data["name"].stringValue.removeWhitespace()).png")
+            imgAbilityMain.image = UIImage(named: "ability\(abilityUp.removeWhitespace()).png")
+            imgAbilityBrand.image = UIImage(named: "ability\(abilityBrand.removeWhitespace()).png")
+            lblAbilityMain.text = abilityData[abilityUp]?.stringValue
+            lblAbilityBrand.text = abilityData[abilityBrand]?.stringValue
+            lblCost.text = "Cost: \(data["cost"].stringValue)"
+            lblBrand.text = "Brand: \(data["brand"].stringValue)"
+            
+            if data["rarity"].intValue == 1 {
+                imgStar2.image = nil
+                imgStar3.image = nil
+            }
+            if data["rarity"].intValue == 2 {
+                imgStar2.image = UIImage(named: "star.png")
+                imgStar3.image = nil
+            }
+            if data["rarity"].intValue == 3 {
+                imgStar2.image = UIImage(named: "star.png")
+                imgStar3.image = UIImage(named: "star.png")
+            }
             
         } else {
             cell = tableView.dequeueReusableCellWithIdentifier("cellGear", forIndexPath: indexPath)
@@ -80,11 +116,11 @@ class GearTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
-//        gearDetailDisplaying[indexPath.row] = !gearDetailDisplaying[indexPath.row]
-//        
-//        tableView.beginUpdates()
-//        tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-//        tableView.endUpdates()
+        gearDetailDisplaying[indexPath.row] = !gearDetailDisplaying[indexPath.row]
+        
+        tableView.beginUpdates()
+        tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        tableView.endUpdates()
     }
 }
 
@@ -183,8 +219,7 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
             if valid { newGear.append(gear) }
         }
         
-        gearTable?.gearDisplayData = newGear
-        gearTable?.tableView.reloadData()
+        gearTable?.updateDisplay(newGear)
     }
     
     @IBAction func mainButtonTapped(sender: AnyObject) {

@@ -1,4 +1,31 @@
 {
+   "abilities":{  
+      "Ink Saver (Main)":"Decreases amount of ink consumed by your main weapon.",
+      "Special Duration Up":"Increases usage time of special weapons.",
+      "Quick Respawn":"Decreases respawn time after getting splatted.",
+      "Swim Speed Up":"Increases movement speed while swimming in squid form.",
+      "Bomb Range Up":"Makes bombs, Point Sensors, and Disruptors travel farther when thrown.",
+      "Cold Blooded":"Shortens the effect of attacks that let enemies track your position, such as Point Sensors.",
+      "Quick Super Jump":"Increases super jump speed.",
+      "Recon":"Allows you to see the opposing team on the map while standing on your spawn point.",
+      "Haunt":"Reveals the position of any player who splats you to your team for a short time.",
+      "Tenacity":"Fills special gauge automatically if your team has fewer active players than the enemy.",
+      "Special Saver":"Reduces special-gauge decrease after getting splatted.",
+      "Defence Up":"Reduces damage taken from all attacks.",
+      "Special Charge Up":"Increases special-gauge fill rate.",
+      "Last-Ditch Effort":"Boosts ink recovery rate and weapon ink efficiency for the last 30 seconds of battle.",
+      "Ink Resistance Up":"Reduces damage and movement penalties incurred when moving through enemy ink.",
+      "Ninja Squid":"Leaves no trace when swimming on inked ground, but reduces swim speed slightly.",
+      "Opening Gambit":"Boosts your speed in both inkling and squid form for the first 30 seconds of battle.",
+      "Comeback":"Boosts some of your abilities a short time after respawning.",
+      "Stealth Jump":"Hides your Super Jump landing points, but also makes your Super Jump slightly slower.",
+      "Damage Up":"Increases damage of your main, subs, and special weapons.",
+      "Ink Saver (Sub)":"Decreases amount of ink consumed by your sub weapon.",
+      "Bomb Sniffer":"Reveals traps and hidden bombs placed by your opponent.",
+      "Run Speed Up":"Increases movement speed in Inkling form.",
+      "Ink Recovery Up":"Increases ink-tank refill rate while submerged in squid form.",
+      "None":"None"
+   },
    "brands":[  
       {  
          "name":"amiibo",
