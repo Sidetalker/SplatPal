@@ -52,7 +52,7 @@ class GearTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return gearDetailDisplaying[indexPath.row] ? 224 : 60
+        return gearDetailDisplaying[indexPath.row] ? 195 : 60
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -69,7 +69,6 @@ class GearTableViewController: UITableViewController {
             let lblAbilityBrand = cell.viewWithTag(6) as! UILabel
             let lblCost = cell.viewWithTag(7) as! UILabel
             let lblBrand = cell.viewWithTag(8) as! UILabel
-            let imgStar1 = cell.viewWithTag(9) as! UIImageView
             let imgStar2 = cell.viewWithTag(10) as! UIImageView
             let imgStar3 = cell.viewWithTag(11) as! UIImageView
             

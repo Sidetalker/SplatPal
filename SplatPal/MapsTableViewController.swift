@@ -22,12 +22,19 @@ class MapsTableViewController: UITableViewController {
     
     var liveLabel: UILabel?
     var liveLabelTimer: NSTimer!
+    
+    let sectionMask = UIView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let backgroundView = UIView(frame: tableView.frame)
-        backgroundView.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
+        let patternColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
+        backgroundView.backgroundColor = patternColor
+        
+        sectionMask.backgroundColor = patternColor
+        sectionMask.frame = tableView.dequeueReusableCellWithIdentifier("cellTimeRemaining")!.contentView.bounds
+        tableView.addSubview(sectionMask)
         
         tableView.estimatedRowHeight = 200
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -35,6 +42,11 @@ class MapsTableViewController: UITableViewController {
         tableView.reloadData()
         
         liveLabelTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateLabel", userInfo: nil, repeats: true)
+        NSRunLoop.currentRunLoop().addTimer(liveLabelTimer, forMode: NSRunLoopCommonModes)
+    }
+    
+    override func scrollViewDidScroll(scrollView: UIScrollView) {
+        sectionMask.frame.origin.y = scrollView.contentOffset.y
     }
     
     override func prefersStatusBarHidden() -> Bool {
@@ -126,15 +138,18 @@ class MapsTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellTimeRemaining")!
-        cell.contentView.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
+//        cell.contentView.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
+        cell.contentView.backgroundColor = UIColor.clearColor()
         
         let lblHeader = cell.viewWithTag(1) as! UILabel
         let lblFooter = cell.viewWithTag(2) as! UILabel
         
+        for gestureRecognizer in cell.contentView.gestureRecognizers! {
+            cell.contentView.removeGestureRecognizer(gestureRecognizer) }
+        
         if section == 0 {
-            if cell.contentView.gestureRecognizers?.count == 1 {
-                cell.contentView.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: "topHeaderLongPress:"))
-            }
+            cell.contentView.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: "topHeaderLongPress:"))
+            
             if mapError && !mapsUpdating {
                 lblHeader.text = "Error Loading Data"
                 lblFooter.text = "Tap + Hold to Refresh"

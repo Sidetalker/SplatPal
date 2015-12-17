@@ -253,7 +253,7 @@
          "ability":"Ink Saver (Main)",
          "brand":"Cuttlegear",
          "rarity":"3",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"Armor Boot Replicas"
       },
       {  
@@ -261,7 +261,7 @@
          "ability":"Tenacity",
          "brand":"Cuttlegear",
          "rarity":"3",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"Armor Helmet Replica"
       },
       {  
@@ -269,7 +269,7 @@
          "ability":"Special Charge Up",
          "brand":"Cuttlegear",
          "rarity":"3",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"Armor Jacket Replica"
       },
       {  
@@ -341,7 +341,7 @@
          "ability":"Quick Respawn",
          "brand":"SquidForce",
          "rarity":"1",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"Basic Tee"
       },
       {  
@@ -909,7 +909,7 @@
          "ability":"Run Speed Up",
          "brand":"Cuttlegear",
          "rarity":"2",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"Hero Headset Replica"
       },
       {  
@@ -917,7 +917,7 @@
          "ability":"Swim Speed Up",
          "brand":"Cuttlegear",
          "rarity":"2",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"Hero Jacket Replica"
       },
       {  
@@ -925,7 +925,7 @@
          "ability":"Quick Super Jump",
          "brand":"Cuttlegear",
          "rarity":"2",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"Hero Runner Replicas"
       },
       {  
@@ -1021,7 +1021,7 @@
          "ability":"Damage Up",
          "brand":"Cuttlegear",
          "rarity":"3",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"Legendary Cap"
       },
       {  
@@ -1125,7 +1125,7 @@
          "ability":"Haunt",
          "brand":"Cuttlegear",
          "rarity":"3",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"Octo Tee"
       },
       {  
@@ -1141,7 +1141,7 @@
          "ability":"Ink Saver (Sub)",
          "brand":"Cuttlegear",
          "rarity":"2",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"Octoling Armor"
       },
       {  
@@ -1149,7 +1149,7 @@
          "ability":"Special Saver",
          "brand":"Cuttlegear",
          "rarity":"2",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"Octoling Boots"
       },
       {  
@@ -1157,7 +1157,7 @@
          "ability":"Bomb Range Up",
          "brand":"Cuttlegear",
          "rarity":"2",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"Octoling Goggles"
       },
       {  
@@ -1269,7 +1269,7 @@
          "ability":"Quick Respawn",
          "brand":"amiibo",
          "rarity":"2",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"Power Armor"
       },
       {  
@@ -1277,7 +1277,7 @@
          "ability":"Ink Saver (Main)",
          "brand":"amiibo",
          "rarity":"2",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"Power Boots"
       },
       {  
@@ -1285,7 +1285,7 @@
          "ability":"Defence Up",
          "brand":"amiibo",
          "rarity":"2",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"Power Mask"
       },
       {  
@@ -1309,7 +1309,7 @@
          "ability":"Special Charge Up",
          "brand":"Rockenberg",
          "rarity":"2",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"Punk Whites"
       },
       {  
@@ -1541,7 +1541,7 @@
          "ability":"Damage Up",
          "brand":"amiibo",
          "rarity":"2",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"Samurai Helmet"
       },
       {  
@@ -1549,7 +1549,7 @@
          "ability":"Special Charge Up",
          "brand":"amiibo",
          "rarity":"2",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"Samurai Jacket"
       },
       {  
@@ -1557,7 +1557,7 @@
          "ability":"Special Duration Up",
          "brand":"amiibo",
          "rarity":"2",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"Samurai Shoes"
       },
       {  
@@ -1573,7 +1573,7 @@
          "ability":"Ink Saver (Sub)",
          "brand":"amiibo",
          "rarity":"2",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"School Shoes"
       },
       {  
@@ -1581,7 +1581,7 @@
          "ability":"Ink Recovery Up",
          "brand":"amiibo",
          "rarity":"2",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"School Uniform"
       },
       {  
@@ -1701,7 +1701,7 @@
          "ability":"Special Saver",
          "brand":"SquidForce",
          "rarity":"3",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"Splatfest Tee"
       },
       {  
@@ -1757,7 +1757,7 @@
          "ability":"Swim Speed Up",
          "brand":"amiibo",
          "rarity":"2",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"Squid Hairclip"
       },
       {  
@@ -2109,7 +2109,7 @@
          "ability":"Ink Recovery Up",
          "brand":"SquidForce",
          "rarity":"1",
-         "cost":"Missing",
+         "cost":"N/A",
          "name":"White Headband"
       },
       {  
