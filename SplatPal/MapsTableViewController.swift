@@ -13,7 +13,7 @@ let mapRefreshCooldown = 60
 
 class MapsTableViewController: UITableViewController {
     
-    var mapData: JSON?
+    var matchData: JSON?
     var mapsUpdating = false
     var mapsUpdateCooldown = -1
     var mapError = false
@@ -22,12 +22,19 @@ class MapsTableViewController: UITableViewController {
     
     var liveLabel: UILabel?
     var liveLabelTimer: NSTimer!
+    
+    let sectionMask = UIView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let backgroundView = UIView(frame: tableView.frame)
-        backgroundView.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
+        let patternColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
+        backgroundView.backgroundColor = patternColor
+        
+        sectionMask.backgroundColor = patternColor
+        sectionMask.frame = tableView.dequeueReusableCellWithIdentifier("cellTimeRemaining")!.contentView.bounds
+        tableView.addSubview(sectionMask)
         
         tableView.estimatedRowHeight = 200
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -35,6 +42,13 @@ class MapsTableViewController: UITableViewController {
         tableView.reloadData()
         
         liveLabelTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateLabel", userInfo: nil, repeats: true)
+        NSRunLoop.currentRunLoop().addTimer(liveLabelTimer, forMode: NSRunLoopCommonModes)
+        
+        scheduleNotifications()
+    }
+    
+    override func scrollViewDidScroll(scrollView: UIScrollView) {
+        sectionMask.frame.origin.y = scrollView.contentOffset.y
     }
     
     override func prefersStatusBarHidden() -> Bool {
@@ -45,8 +59,8 @@ class MapsTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         if let
-            errorCode = mapData?["errorCode"].int,
-            errorMessage = mapData?["errorMessage"].string
+            errorCode = matchData?["errorCode"].int,
+            errorMessage = matchData?["errorMessage"].string
         {
             mapError = true
             mapErrorCode = errorCode
@@ -71,15 +85,15 @@ class MapsTableViewController: UITableViewController {
             cell.backgroundColor = UIColor.clearColor()
             
             let lbl = cell.viewWithTag(1) as! UILabel
-            lbl.text = indexPath.row == 0 ? mapData!["rankedModes"][indexPath.section].stringValue : "Turf Wars"
+            lbl.text = indexPath.row == 0 ? matchData!["rankedModes"][indexPath.section].stringValue : "Turf Wars"
         }
         else {
             cell = tableView.dequeueReusableCellWithIdentifier("cellMap", forIndexPath: indexPath)
             cell.backgroundColor = UIColor.clearColor()
             
             let mapName = [1, 2].contains(indexPath.row) ?
-                mapData!["rankedMaps"][indexPath.row - 1 + indexPath.section * 2].stringValue :
-                mapData!["turfMaps"][indexPath.row - 4 + indexPath.section * 2].stringValue
+                matchData!["rankedMaps"][indexPath.row - 1 + indexPath.section * 2].stringValue :
+                matchData!["turfMaps"][indexPath.row - 4 + indexPath.section * 2].stringValue
             
             let imgMap = cell.viewWithTag(1) as! UIImageView
             imgMap.layer.cornerRadius = 5
@@ -126,15 +140,17 @@ class MapsTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellTimeRemaining")!
-        cell.contentView.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
+        cell.contentView.backgroundColor = UIColor.clearColor()
         
         let lblHeader = cell.viewWithTag(1) as! UILabel
         let lblFooter = cell.viewWithTag(2) as! UILabel
         
+        for gestureRecognizer in cell.contentView.gestureRecognizers! {
+            cell.contentView.removeGestureRecognizer(gestureRecognizer) }
+        
         if section == 0 {
-            if cell.contentView.gestureRecognizers?.count == 1 {
-                cell.contentView.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: "topHeaderLongPress:"))
-            }
+            cell.contentView.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: "topHeaderLongPress:"))
+            
             if mapError && !mapsUpdating {
                 lblHeader.text = "Error Loading Data"
                 lblFooter.text = "Tap + Hold to Refresh"
@@ -150,8 +166,8 @@ class MapsTableViewController: UITableViewController {
                 }
             }
         } else {
-            let startTime = mapData!["startTimes"][section].doubleValue
-            let endTime = mapData!["endTimes"][section].doubleValue
+            let startTime = matchData!["startTimes"][section].doubleValue
+            let endTime = matchData!["endTimes"][section].doubleValue
             lblHeader.text = epochDateString(startTime)
             lblFooter.text = "\(epochTimeString(startTime)) - \(epochTimeString(endTime))"
         }
@@ -167,7 +183,7 @@ class MapsTableViewController: UITableViewController {
     // MARK: - Update functions
     
     func getTimeRemainingSeconds() -> Int {
-        return Int(mapData!["endTimes"][0].doubleValue - NSDate().timeIntervalSince1970)
+        return Int(matchData!["endTimes"][0].doubleValue - NSDate().timeIntervalSince1970)
     }
     
     func getTimeRemainingText(epochInt: Int) -> String {
@@ -204,16 +220,70 @@ class MapsTableViewController: UITableViewController {
         tableView.reloadData()
         
         loadMaps({ data in
-            self.mapsUpdating = false
-            
-            if self.mapData == data {
-                self.mapsUpdateCooldown = manually ? -1 : mapRefreshCooldown
-            }
-            else {
-                self.mapData = data
-            }
-            
-            self.tableView.reloadData()
+            // Artificial delay
+            delay(1, closure: {
+                self.mapsUpdating = false
+                
+                if self.matchData == data {
+                    self.mapsUpdateCooldown = manually ? -1 : mapRefreshCooldown
+                }
+                else {
+                    self.matchData = data
+                }
+                
+                self.tableView.reloadData()
+                self.scheduleNotifications()
+            })
         })
+    }
+    
+    func scheduleNotifications() {
+        var matches = [Match]()
+        let prefs = NSUserDefaults.standardUserDefaults()
+        
+        // Create Match items for each upcoming map
+        for x in 2...5 {
+            let startTime: NSTimeInterval = matchData!["startTimes"][x / 2].doubleValue
+            let rankedMode = matchData!["rankedModes"][x / 2].stringValue
+            let rankedMap = matchData!["rankedMaps"][x].stringValue
+            let turfMap = matchData!["turfMaps"][x].stringValue
+            
+            matches.append(Match(map: turfMap, mode: "Turf War", time: startTime))
+            matches.append(Match(map: rankedMap, mode: rankedMode, time: startTime))
+        }
+        
+        // Remove all scheduled notifications
+        UIApplication.sharedApplication().cancelAllLocalNotifications()
+        
+        // Schedule notifications as needed
+        for match in matches {
+            let mapPref = prefs.boolForKey("notify\(match.map.removeWhitespace())")
+            let modePref = prefs.boolForKey("notify\(match.mode.removeWhitespace())")
+            
+            if !mapPref || !modePref { continue }
+            
+            let notification = UILocalNotification()
+            notification.alertBody = "\(match.map) is up on \(match.mode)!"
+            notification.alertAction = "splat"
+            notification.fireDate = match.timeDate
+            notification.soundName = UILocalNotificationDefaultSoundName
+            notification.category = "RotationNotification"
+            
+            UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        }
+    }
+}
+
+class Match {
+    var map: String!
+    var mode: String!
+    var time: NSTimeInterval!
+    var timeDate: NSDate!
+    
+    init(map: String, mode: String, time: NSTimeInterval) {
+        self.map = map
+        self.mode = mode
+        self.time = time
+        self.timeDate = NSDate(timeIntervalSince1970: time)
     }
 }

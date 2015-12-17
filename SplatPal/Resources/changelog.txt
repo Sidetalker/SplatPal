@@ -1,3 +1,14 @@
+Version 0.3.0 (245)
+- Map and mode notifications!
+
+Version 0.3.0 (197)
+- Minor changes
+    - Tab bar renames
+    - Map rotation UI tweaks
+
+Version 0.3.0 (180)
+- Bugfix: Fixed crash occurring on iOS 8 when tapping and holding on section headers
+
 Version 0.3.0 (149)
 - Added detail view to gear tab
 

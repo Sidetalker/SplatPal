@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4BF6AA1C22069700BB4834 /* settingsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A71C22069700BB4834 /* settingsIcon.png */; };
+		0A4BF6AB1C22069700BB4834 /* settingsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A81C22069700BB4834 /* settingsIcon@2x.png */; };
+		0A4BF6AC1C22069700BB4834 /* settingsIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A91C22069700BB4834 /* settingsIcon@3x.png */; };
+		0A4BF6AE1C22201800BB4834 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BF6AD1C22201800BB4834 /* SettingsTableViewController.swift */; };
 		0A948AC31C1CC4F700CCC4DB /* data.min.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A948AC21C1CC4F700CCC4DB /* data.min.json */; };
 		0AA23DF71C1B6D870002BCC2 /* betaIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DEE1C1B6D870002BCC2 /* betaIcon.png */; };
 		0AA23DF81C1B6D870002BCC2 /* betaIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DEF1C1B6D870002BCC2 /* betaIcon@2x.png */; };
@@ -379,6 +383,10 @@
 
 /* Begin PBXFileReference section */
 		04573E61435B391F9524E97B /* Pods-SplatPal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatPal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplatPal/Pods-SplatPal.debug.xcconfig"; sourceTree = "<group>"; };
+		0A4BF6A71C22069700BB4834 /* settingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settingsIcon.png; path = Images/settingsIcon.png; sourceTree = "<group>"; };
+		0A4BF6A81C22069700BB4834 /* settingsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settingsIcon@2x.png"; path = "Images/settingsIcon@2x.png"; sourceTree = "<group>"; };
+		0A4BF6A91C22069700BB4834 /* settingsIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settingsIcon@3x.png"; path = "Images/settingsIcon@3x.png"; sourceTree = "<group>"; };
+		0A4BF6AD1C22201800BB4834 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		0A948AC21C1CC4F700CCC4DB /* data.min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.min.json; path = Resources/data.min.json; sourceTree = "<group>"; };
 		0AA23DEE1C1B6D870002BCC2 /* betaIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = betaIcon.png; path = Images/betaIcon.png; sourceTree = "<group>"; };
 		0AA23DEF1C1B6D870002BCC2 /* betaIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "betaIcon@2x.png"; path = "Images/betaIcon@2x.png"; sourceTree = "<group>"; };
@@ -832,6 +840,7 @@
 				0AA23E001C1B6DB90002BCC2 /* BrandGuideViewController.swift */,
 				0ADF9AA41C1DF135002D7E81 /* GearGuideViewController.swift */,
 				0AA23E411C1B78450002BCC2 /* BetaViewController.swift */,
+				0A4BF6AD1C22201800BB4834 /* SettingsTableViewController.swift */,
 				0AA23E011C1B6DB90002BCC2 /* IconSelectionView.swift */,
 				0AA23E021C1B6DB90002BCC2 /* IconSelectionView.xib */,
 				0AC6078E1C189B36006EECA7 /* Main.storyboard */,
@@ -923,6 +932,9 @@
 		0ADF9A9D1C1D1246002D7E81 /* Bar Icons */ = {
 			isa = PBXGroup;
 			children = (
+				0A4BF6A71C22069700BB4834 /* settingsIcon.png */,
+				0A4BF6A81C22069700BB4834 /* settingsIcon@2x.png */,
+				0A4BF6A91C22069700BB4834 /* settingsIcon@3x.png */,
 				0ADF9A9E1C1D1255002D7E81 /* clothesIcon.png */,
 				0ADF9A9F1C1D1255002D7E81 /* clothesIcon@2x.png */,
 				0ADF9AA01C1D1255002D7E81 /* clothesIcon@3x.png */,
@@ -1339,6 +1351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AC607E61C18E8A1006EECA7 /* rankedBadge@3x.png in Resources */,
+				0A4BF6AC1C22069700BB4834 /* settingsIcon@3x.png in Resources */,
 				0ADF9C211C1DF2DE002D7E81 /* gearOctolingGoggles.png in Resources */,
 				0ADF9C8F1C1DF2DE002D7E81 /* gearTwo-StripeMesh.png in Resources */,
 				0ADF9C4C1C1DF2DE002D7E81 /* gearSafariHat.png in Resources */,
@@ -1359,6 +1372,7 @@
 				0ADF9BD21C1DF2DE002D7E81 /* gearBlueSeaSlugs.png in Resources */,
 				0ADF9C0E1C1DF2DE002D7E81 /* gearLayeredVectorLS.png in Resources */,
 				0ADF9BB71C1DF2DE002D7E81 /* gearBaby-JellyShirt.png in Resources */,
+				0A4BF6AA1C22069700BB4834 /* settingsIcon.png in Resources */,
 				0ADF9C4A1C1DF2DE002D7E81 /* gearRodeoShirt.png in Resources */,
 				0ADF9BAE1C1DF2DE002D7E81 /* gearAcerolaRainBoots.png in Resources */,
 				0ADF9CAD1C1DF2DE002D7E81 /* gearZekkoBaseballLS.png in Resources */,
@@ -1519,6 +1533,7 @@
 				0ADF9C6B1C1DF2DE002D7E81 /* gearSquidForceWhite.png in Resources */,
 				0ADF9CA01C1DF2DE002D7E81 /* gearWhiteLayeredLS.png in Resources */,
 				0AA23E271C1B6E280002BCC2 /* abilityDefenceUp.png in Resources */,
+				0A4BF6AB1C22069700BB4834 /* settingsIcon@2x.png in Resources */,
 				0ADF9BEB1C1DF2DE002D7E81 /* gearFakeContacts.png in Resources */,
 				0ADF9BBB1C1DF2DE002D7E81 /* gearBaseballJersey.png in Resources */,
 				0AC607951C189B36006EECA7 /* LaunchScreen.storyboard in Resources */,
@@ -1781,6 +1796,7 @@
 				0AC607B91C189BD8006EECA7 /* MapsTableViewController.swift in Sources */,
 				0AC607891C189B36006EECA7 /* AppDelegate.swift in Sources */,
 				0ADF9AA51C1DF135002D7E81 /* GearGuideViewController.swift in Sources */,
+				0A4BF6AE1C22201800BB4834 /* SettingsTableViewController.swift in Sources */,
 				0AC607FC1C192211006EECA7 /* LoadingViewController.swift in Sources */,
 				0AA23E071C1B6DB90002BCC2 /* SplatAppStyle.swift in Sources */,
 				0AA23E041C1B6DB90002BCC2 /* BrandGuideViewController.swift in Sources */,
@@ -1930,6 +1946,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = SplatPal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
