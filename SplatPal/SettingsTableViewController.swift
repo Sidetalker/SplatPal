@@ -92,6 +92,7 @@ class MapSettingsTableViewController: UITableViewController {
                 let lblMapName = cell.viewWithTag(2) as! UILabel
                 
                 imgMap.image = UIImage(named: "Stage\(mapName.removeWhitespace()).jpg")
+                imgMap.layer.cornerRadius = 5
                 lblMapName.text = mapName
                 cell.accessoryType = prefs.boolForKey("notify\(mapName.removeWhitespace())") ? .Checkmark : .None
             } else {
@@ -120,6 +121,14 @@ class MapSettingsTableViewController: UITableViewController {
             
             tableView.reloadRowsAtIndexPaths(indices, withRowAnimation: .Automatic)
             tableView.endUpdates()
+        } else {
+            tableView.beginUpdates()
+            
+            let prefName = "notify\(mapData[indexPath.row].removeWhitespace())"
+            prefs.setBool(!prefs.boolForKey(prefName), forKey: prefName)
+            
+            tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+            tableView.endUpdates()
         }
     }
     
@@ -147,22 +156,4 @@ class MapSettingsTableViewController: UITableViewController {
             fontSize -= 1
         } while (fontSize > minFontSize);
     }
-}
-
-class KeepsBackgroundLabel: UILabel {
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-
-    setse
-//    override func setHighlighted(highlighted: Bool) {
-//        let color = self.myLabel.backgroundColor
-//        super.setHighlighted(highlighted, animated: animated)
-//        self.myLabel.backgroundColor = color
-//    }
 }
