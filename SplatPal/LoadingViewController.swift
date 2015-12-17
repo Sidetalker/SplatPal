@@ -12,6 +12,7 @@ import SwiftyJSON
 var brandData = [JSON]()
 var gearData = [JSON]()
 var mapData = [String]()
+var modeData = [String]()
 var abilityData = [String : JSON]()
 
 class LoadingViewController: UIViewController {
@@ -50,6 +51,7 @@ class LoadingViewController: UIViewController {
             brandData = jsonResult["brands"].arrayValue
             gearData = jsonResult["gear"].arrayValue
             mapData = jsonResult["maps"].arrayObject as! [String]
+            modeData = jsonResult["modes"].arrayObject as! [String]
             abilityData = jsonResult["abilities"].dictionaryValue
             
             // Ugly hardcoded hack to fix Museum D'Alfonsino escape char

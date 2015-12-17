@@ -43,6 +43,8 @@ class MapsTableViewController: UITableViewController {
         
         liveLabelTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateLabel", userInfo: nil, repeats: true)
         NSRunLoop.currentRunLoop().addTimer(liveLabelTimer, forMode: NSRunLoopCommonModes)
+        
+        scheduleNotifications()
     }
     
     override func scrollViewDidScroll(scrollView: UIScrollView) {
@@ -228,6 +230,57 @@ class MapsTableViewController: UITableViewController {
             }
             
             self.tableView.reloadData()
+            self.scheduleNotifications()
         })
+    }
+    
+    func scheduleNotifications() {
+        var matches = [Match]()
+        let prefs = NSUserDefaults.standardUserDefaults()
+        
+        // Create Match items for each upcoming map
+        for x in 2...5 {
+            let startTime: NSTimeInterval = matchData!["startTimes"][x / 2].doubleValue
+            let rankedMode = matchData!["rankedModes"][x / 2].stringValue
+            let rankedMap = matchData!["rankedMaps"][x].stringValue
+            let turfMap = matchData!["turfMaps"][x].stringValue
+            
+            matches.append(Match(map: turfMap, mode: "Turf War", time: startTime))
+            matches.append(Match(map: rankedMap, mode: rankedMode, time: startTime))
+        }
+        
+        // Remove all scheduled notifications
+        UIApplication.sharedApplication().cancelAllLocalNotifications()
+        
+        // Schedule notifications as needed
+        for match in matches {
+            let mapPref = prefs.boolForKey("notify\(match.map.removeWhitespace())")
+            let modePref = prefs.boolForKey("notify\(match.mode.removeWhitespace())")
+            
+            if !mapPref || !modePref { continue }
+            
+            let notification = UILocalNotification()
+            notification.alertBody = "\(match.map) is up on \(match.mode)!"
+            notification.alertAction = "splat"
+            notification.fireDate = match.timeDate
+            notification.soundName = UILocalNotificationDefaultSoundName
+            notification.category = "RotationNotification"
+            
+            UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        }
+    }
+}
+
+class Match {
+    var map: String!
+    var mode: String!
+    var time: NSTimeInterval!
+    var timeDate: NSDate!
+    
+    init(map: String, mode: String, time: NSTimeInterval) {
+        self.map = map
+        self.mode = mode
+        self.time = time
+        self.timeDate = NSDate(timeIntervalSince1970: time)
     }
 }

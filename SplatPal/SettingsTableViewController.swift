@@ -8,11 +8,10 @@
 
 import UIKit
 
-class SettingsTableViewController: UITableViewController {
+class SettingsTableViewController: UITableViewController, UIApplicationDelegate {
     @IBOutlet weak var swtMapNotifications: UISwitch!
-    @IBOutlet weak var segMapNotificationType: UISegmentedControl!
-    @IBOutlet weak var lblGameType: UILabel!
     @IBOutlet weak var lblMapSelection: UILabel!
+    @IBOutlet weak var lblModeSelection: UILabel!
     @IBOutlet weak var cellGameType: UITableViewCell!
     @IBOutlet weak var cellMapSelection: UITableViewCell!
     
@@ -21,8 +20,9 @@ class SettingsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "localNotificationsStateUpdated:", name: "localNotificationsStateUpdated", object: nil)
+        
         swtMapNotifications.on = prefs.boolForKey("mapNotificationsOn")
-        segMapNotificationType.selectedSegmentIndex = prefs.integerForKey("mapNotificationType")
         toggleMapNotificationUI(swtMapNotifications.on)
     }
     
@@ -34,20 +34,86 @@ class SettingsTableViewController: UITableViewController {
     }
     
     func toggleMapNotificationUI(on: Bool) {
+        if on {
+            let notificationsStateSet = prefs.boolForKey("notificationsDetermined")
+            let notificationSettings = UIApplication.sharedApplication().currentUserNotificationSettings()!
+            
+            if notificationsStateSet && notificationSettings.types == .None {
+                let alert = UIAlertController(title: "Notifications are not allowed", message: "SplatPal has been denied permission to send notifications - you can change this in Settings.", preferredStyle: .Alert)
+                alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
+                alert.addAction(UIAlertAction(title: "Open Settings", style: .Default) { action in
+                    UIApplication.sharedApplication().openURL(NSURL(string: UIApplicationOpenSettingsURLString)!)
+                    })
+                
+                self.presentViewController(alert, animated: true, completion: nil)
+                
+                swtMapNotifications.setOn(false, animated: true)
+                
+                return
+            }
+            else if notificationSettings.types == .None {
+                UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Sound], categories: nil))
+            }
+        }
+        
         prefs.setBool(on, forKey: "mapNotificationsOn")
-        segMapNotificationType.enabled = on
-        lblGameType.enabled = on
         lblMapSelection.enabled = on
+        lblModeSelection.enabled = on
         cellGameType.userInteractionEnabled = on
         cellMapSelection.userInteractionEnabled = on
+    }
+    
+    func localNotificationsStateUpdated(notification: NSNotification) {
+        prefs.setBool(true, forKey: "notificationsDetermined")
+        
+        let notificationSettings = UIApplication.sharedApplication().currentUserNotificationSettings()!
+        if notificationSettings.types == .None {
+            swtMapNotifications.setOn(false, animated: true)
+            toggleMapNotificationUI(false)
+        }
     }
     
     @IBAction func mapNotificationsToggled(sender: AnyObject) {
         toggleMapNotificationUI((sender as! UISwitch).on)
     }
+}
+
+class ModeSettingsTableViewController: UITableViewController {
+    var settingsTableVC: SettingsTableViewController?
     
-    @IBAction func mapNotificationTypeToggled(sender: AnyObject) {
-        prefs.setInteger((sender as! UISegmentedControl).selectedSegmentIndex, forKey: "mapNotificationType")
+    let prefs = NSUserDefaults.standardUserDefaults()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return modeData.count
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        let mode = modeData[indexPath.row]
+        
+        cell.textLabel?.text = mode
+        cell.accessoryType = prefs.boolForKey("notify\(mode.removeWhitespace())") ? .Checkmark : .None
+        
+        return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        tableView.beginUpdates()
+        
+        let prefName = "notify\(modeData[indexPath.row].removeWhitespace())"
+        prefs.setBool(!prefs.boolForKey(prefName), forKey: prefName)
+        
+        tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+        tableView.endUpdates()
     }
 }
 
@@ -61,7 +127,6 @@ class MapSettingsTableViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.estimatedRowHeight = 200
-//        tableView.rowHeight = UITableViewAutomaticDimension
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

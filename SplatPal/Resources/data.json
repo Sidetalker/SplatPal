@@ -15,6 +15,12 @@
        "Museum D'Alfonsino",
        "Mahi-Mahi Resort" 
    ],
+   "modes":[
+       "Turf War",
+       "Splat Zones",
+       "Tower Control",
+       "Rainmaker"
+   ],
    "abilities":{  
       "Ink Saver (Main)":"Decreases amount of ink consumed by your main weapon.",
       "Special Duration Up":"Increases usage time of special weapons.",
