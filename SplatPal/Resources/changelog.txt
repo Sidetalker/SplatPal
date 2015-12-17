@@ -1,3 +1,6 @@
+Version 0.3.0 (245)
+- Map and mode notifications!
+
 Version 0.3.0 (197)
 - Minor changes
     - Tab bar renames

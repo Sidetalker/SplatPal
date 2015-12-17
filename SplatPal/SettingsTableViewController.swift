@@ -14,6 +14,7 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
     @IBOutlet weak var lblModeSelection: UILabel!
     @IBOutlet weak var cellGameType: UITableViewCell!
     @IBOutlet weak var cellMapSelection: UITableViewCell!
+    @IBOutlet weak var enableNotificationsIndent: NSLayoutConstraint!
     
     let prefs = NSUserDefaults.standardUserDefaults()
     
@@ -24,11 +25,20 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
         
         swtMapNotifications.on = prefs.boolForKey("mapNotificationsOn")
         toggleMapNotificationUI(swtMapNotifications.on)
+        
+        // Real cute iPhone 6+, REAL CUTE
+        if DeviceType.IS_IPHONE_6P {
+            enableNotificationsIndent.constant = 12
+        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "segueMapNotificationSettings" {
             let destVC = segue.destinationViewController as! MapSettingsTableViewController
+            destVC.settingsTableVC = self
+        }
+        else if segue.identifier == "segueModeNotificationSettings" {
+            let destVC = segue.destinationViewController as! ModeSettingsTableViewController
             destVC.settingsTableVC = self
         }
     }
@@ -73,6 +83,18 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
         }
     }
     
+    func scheduleNotifications() {
+        for vc in self.tabBarController!.viewControllers! {
+            if let mapView = vc as? MapsTableViewController {
+                mapView.scheduleNotifications()
+            }
+        }
+    }
+    
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        return
+    }
+    
     @IBAction func mapNotificationsToggled(sender: AnyObject) {
         toggleMapNotificationUI((sender as! UISwitch).on)
     }
@@ -114,6 +136,8 @@ class ModeSettingsTableViewController: UITableViewController {
         
         tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
         tableView.endUpdates()
+        
+        settingsTableVC?.scheduleNotifications()
     }
 }
 
@@ -194,6 +218,8 @@ class MapSettingsTableViewController: UITableViewController {
             
             tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
             tableView.endUpdates()
+            
+            settingsTableVC?.scheduleNotifications()
         }
     }
     

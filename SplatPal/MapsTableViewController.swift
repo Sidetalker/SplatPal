@@ -220,17 +220,20 @@ class MapsTableViewController: UITableViewController {
         tableView.reloadData()
         
         loadMaps({ data in
-            self.mapsUpdating = false
-            
-            if self.matchData == data {
-                self.mapsUpdateCooldown = manually ? -1 : mapRefreshCooldown
-            }
-            else {
-                self.matchData = data
-            }
-            
-            self.tableView.reloadData()
-            self.scheduleNotifications()
+            // Artificial delay
+            delay(1, closure: {
+                self.mapsUpdating = false
+                
+                if self.matchData == data {
+                    self.mapsUpdateCooldown = manually ? -1 : mapRefreshCooldown
+                }
+                else {
+                    self.matchData = data
+                }
+                
+                self.tableView.reloadData()
+                self.scheduleNotifications()
+            })
         })
     }
     
