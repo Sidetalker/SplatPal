@@ -11,11 +11,12 @@ import SwiftyJSON
 
 var brandData = [JSON]()
 var gearData = [JSON]()
+var mapData = [String]()
 var abilityData = [String : JSON]()
 
 class LoadingViewController: UIViewController {
     
-    var mapData: JSON?
+    var matchData: JSON?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,7 @@ class LoadingViewController: UIViewController {
         loadJSONData()
         
         loadMaps({ data in
-            self.mapData = data
+            self.matchData = data
             self.performSegueWithIdentifier("segueLoading", sender: self)
         })
     }
@@ -36,7 +37,7 @@ class LoadingViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let tabBarController = segue.destinationViewController as! UITabBarController
         let mapsTab = tabBarController.viewControllers![0] as! MapsTableViewController
-        mapsTab.mapData = mapData
+        mapsTab.matchData = matchData
     }
     
     func loadJSONData() {
@@ -48,7 +49,11 @@ class LoadingViewController: UIViewController {
             
             brandData = jsonResult["brands"].arrayValue
             gearData = jsonResult["gear"].arrayValue
+            mapData = jsonResult["maps"].arrayObject as! [String]
             abilityData = jsonResult["abilities"].dictionaryValue
+            
+            // Ugly hardcoded hack to fix Museum D'Alfonsino escape char
+            mapData[12] = mapData[12].replace("\\", replacement: "")
         }
     }
 }

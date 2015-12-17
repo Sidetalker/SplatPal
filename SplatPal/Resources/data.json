@@ -1,4 +1,20 @@
 {
+   "maps":[
+       "Arowana Mall",
+       "Blackbelly Skatepark",
+       "Saltspray Rig",
+       "Urchin Underpass",
+       "Walleye Warehouse",
+       "Port Mackerel",
+       "Kelp Dome",
+       "Bluefin Depot",
+       "Moray Towers",
+       "Camp Triggerfish",
+       "Flounder Heights",
+       "Hammerhead Bridge",
+       "Museum D'Alfonsino",
+       "Mahi-Mahi Resort" 
+   ],
    "abilities":{  
       "Ink Saver (Main)":"Decreases amount of ink consumed by your main weapon.",
       "Special Duration Up":"Increases usage time of special weapons.",

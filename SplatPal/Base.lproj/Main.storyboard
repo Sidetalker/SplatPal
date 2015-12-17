@@ -1261,7 +1261,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Images" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Og9-NI-VO6">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Images" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Og9-NI-VO6">
                                             <rect key="frame" x="151.5" y="12.5" width="97" height="19.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1274,7 +1274,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="cellMapName" textLabel="ZVP-2u-PKQ" style="IBUITableViewCellStyleDefault" id="sE2-In-tBh">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="cellMapText" textLabel="ZVP-2u-PKQ" style="IBUITableViewCellStyleDefault" id="sE2-In-tBh">
                                 <rect key="frame" x="0.0" y="157.5" width="400" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sE2-In-tBh" id="TAf-jN-xOp">
@@ -1301,7 +1301,7 @@
                                         <view clipsSubviews="YES" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kN5-n3-RJq" customClass="UIImageView">
                                             <rect key="frame" x="16" y="11.5" width="329" height="186.5"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arowana Mall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQJ-Nx-FYC">
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arowana Mall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQJ-Nx-FYC">
                                                     <rect key="frame" x="0.0" y="149" width="329" height="37.5"/>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="25"/>
@@ -1321,9 +1321,9 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="kN5-n3-RJq" secondAttribute="trailing" constant="8" id="B6e-jj-8Nb"/>
-                                        <constraint firstItem="kN5-n3-RJq" firstAttribute="centerY" secondItem="t4N-P7-28o" secondAttribute="centerY" id="TAl-B3-h60"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="kN5-n3-RJq" secondAttribute="bottom" constant="3.5" id="Tmq-Qn-smf"/>
                                         <constraint firstItem="kN5-n3-RJq" firstAttribute="leading" secondItem="t4N-P7-28o" secondAttribute="leadingMargin" constant="8" id="lKK-Gv-aRB"/>
+                                        <constraint firstItem="kN5-n3-RJq" firstAttribute="top" secondItem="t4N-P7-28o" secondAttribute="topMargin" constant="3.5" id="ur7-fo-YO7"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>

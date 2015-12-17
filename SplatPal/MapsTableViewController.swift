@@ -13,7 +13,7 @@ let mapRefreshCooldown = 60
 
 class MapsTableViewController: UITableViewController {
     
-    var mapData: JSON?
+    var matchData: JSON?
     var mapsUpdating = false
     var mapsUpdateCooldown = -1
     var mapError = false
@@ -57,8 +57,8 @@ class MapsTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         if let
-            errorCode = mapData?["errorCode"].int,
-            errorMessage = mapData?["errorMessage"].string
+            errorCode = matchData?["errorCode"].int,
+            errorMessage = matchData?["errorMessage"].string
         {
             mapError = true
             mapErrorCode = errorCode
@@ -83,15 +83,15 @@ class MapsTableViewController: UITableViewController {
             cell.backgroundColor = UIColor.clearColor()
             
             let lbl = cell.viewWithTag(1) as! UILabel
-            lbl.text = indexPath.row == 0 ? mapData!["rankedModes"][indexPath.section].stringValue : "Turf Wars"
+            lbl.text = indexPath.row == 0 ? matchData!["rankedModes"][indexPath.section].stringValue : "Turf Wars"
         }
         else {
             cell = tableView.dequeueReusableCellWithIdentifier("cellMap", forIndexPath: indexPath)
             cell.backgroundColor = UIColor.clearColor()
             
             let mapName = [1, 2].contains(indexPath.row) ?
-                mapData!["rankedMaps"][indexPath.row - 1 + indexPath.section * 2].stringValue :
-                mapData!["turfMaps"][indexPath.row - 4 + indexPath.section * 2].stringValue
+                matchData!["rankedMaps"][indexPath.row - 1 + indexPath.section * 2].stringValue :
+                matchData!["turfMaps"][indexPath.row - 4 + indexPath.section * 2].stringValue
             
             let imgMap = cell.viewWithTag(1) as! UIImageView
             imgMap.layer.cornerRadius = 5
@@ -138,7 +138,6 @@ class MapsTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellTimeRemaining")!
-//        cell.contentView.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
         cell.contentView.backgroundColor = UIColor.clearColor()
         
         let lblHeader = cell.viewWithTag(1) as! UILabel
@@ -165,8 +164,8 @@ class MapsTableViewController: UITableViewController {
                 }
             }
         } else {
-            let startTime = mapData!["startTimes"][section].doubleValue
-            let endTime = mapData!["endTimes"][section].doubleValue
+            let startTime = matchData!["startTimes"][section].doubleValue
+            let endTime = matchData!["endTimes"][section].doubleValue
             lblHeader.text = epochDateString(startTime)
             lblFooter.text = "\(epochTimeString(startTime)) - \(epochTimeString(endTime))"
         }
@@ -182,7 +181,7 @@ class MapsTableViewController: UITableViewController {
     // MARK: - Update functions
     
     func getTimeRemainingSeconds() -> Int {
-        return Int(mapData!["endTimes"][0].doubleValue - NSDate().timeIntervalSince1970)
+        return Int(matchData!["endTimes"][0].doubleValue - NSDate().timeIntervalSince1970)
     }
     
     func getTimeRemainingText(epochInt: Int) -> String {
@@ -221,11 +220,11 @@ class MapsTableViewController: UITableViewController {
         loadMaps({ data in
             self.mapsUpdating = false
             
-            if self.mapData == data {
+            if self.matchData == data {
                 self.mapsUpdateCooldown = manually ? -1 : mapRefreshCooldown
             }
             else {
-                self.mapData = data
+                self.matchData = data
             }
             
             self.tableView.reloadData()
