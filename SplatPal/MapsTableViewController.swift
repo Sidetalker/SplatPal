@@ -74,26 +74,27 @@ class MapsTableViewController: UITableViewController {
                 if match != 0 { sessionCount += 1 }
             }
             
-            if sessionCount == 0 {
-                mapError = true
-                mapErrorCode = -1
-                mapErrorMessage = "Map data unavailable"
-                
-                return 1
-            } else { mapError = false }
-            
             return sessionCount
         }
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mapError ? 0 : 6
+        return mapError ? 1 : 6
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = UITableViewCell()
         
-        if indexPath.row % 3 == 0 {
+        if mapError {
+            cell = tableView.dequeueReusableCellWithIdentifier("cellErrorDetail", forIndexPath: indexPath)
+            cell.backgroundColor = UIColor.clearColor()
+            
+            let lblCode = cell.viewWithTag(1) as! UILabel
+            let lblMessage = cell.viewWithTag(2) as! UILabel
+            lblCode.text = "Error Code \(mapErrorCode)"
+            lblMessage.text = mapErrorMessage
+        }
+        else if indexPath.row % 3 == 0 {
             cell = tableView.dequeueReusableCellWithIdentifier("cellGameMode", forIndexPath: indexPath)
             cell.backgroundColor = UIColor.clearColor()
             

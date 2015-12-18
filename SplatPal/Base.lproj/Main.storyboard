@@ -40,6 +40,8 @@
             <string>ProjectPaintball</string>
             <string>ProjectPaintball</string>
             <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -48,7 +50,7 @@
             <objects>
                 <tableViewController id="Spt-Db-0Ga" customClass="MapsTableViewController" customModule="SplatPal" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="bKa-bq-o4d">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="651"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -191,6 +193,44 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellErrorDetail" rowHeight="85" id="qfR-6m-Wvh">
+                                <rect key="frame" x="0.0" y="546" width="600" height="85"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qfR-6m-Wvh" id="zN7-hV-WZh">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="85"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Error #-1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bt9-6I-orF">
+                                            <rect key="frame" x="38" y="8" width="524" height="33"/>
+                                            <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="30"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Splatoon.ink map data is outdated" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Nqq-kd-cdg">
+                                            <rect key="frame" x="38" y="41" width="524" height="46"/>
+                                            <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="25"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="topMargin" secondItem="bt9-6I-orF" secondAttribute="top" id="A6T-Pb-7H8"/>
+                                        <constraint firstItem="Nqq-kd-cdg" firstAttribute="leading" secondItem="zN7-hV-WZh" secondAttribute="leadingMargin" constant="30" id="HFo-3z-76W"/>
+                                        <constraint firstItem="Nqq-kd-cdg" firstAttribute="centerX" secondItem="zN7-hV-WZh" secondAttribute="centerX" id="JE0-yD-e0x"/>
+                                        <constraint firstItem="Nqq-kd-cdg" firstAttribute="top" secondItem="bt9-6I-orF" secondAttribute="bottom" id="NUo-Yf-det"/>
+                                        <constraint firstItem="Nqq-kd-cdg" firstAttribute="bottom" secondItem="zN7-hV-WZh" secondAttribute="bottomMargin" constant="10" id="Sge-dE-RhK"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Nqq-kd-cdg" secondAttribute="trailing" constant="30" id="tW9-9T-9De"/>
+                                        <constraint firstItem="bt9-6I-orF" firstAttribute="leading" secondItem="zN7-hV-WZh" secondAttribute="leadingMargin" constant="30" id="wVr-Sx-wFX"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="bt9-6I-orF" secondAttribute="trailing" constant="30" id="z5A-Hf-eRT"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="JE0-yD-e0x"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableViewCell>
                         </prototypes>
                         <sections/>
                         <connections>
@@ -201,11 +241,11 @@
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Maps" image="mapIcon.png" id="Zvf-EN-Grh"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="600" height="600"/>
+                    <size key="freeformSize" width="600" height="700"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hr9-dY-zbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="440" y="-424"/>
+            <point key="canvasLocation" x="440" y="-474"/>
         </scene>
         <!--Gear-->
         <scene sceneID="Chr-R9-XcE">

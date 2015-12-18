@@ -121,9 +121,13 @@ func loadMaps(completion: (JSON) -> ()) {
                     rankedModes[2] = ""
                 }
                 
-                let dataDict = ["startTimes" : startTimes, "endTimes" : endTimes, "turfMaps" : turfMaps, "rankedMaps" : rankedMaps, "rankedModes" : rankedModes]
-                
-                completion(JSON(dataDict))
+                // All data is out of date
+                if startTimes[0] == 0 {
+                    completion(JSON(["errorCode" : 503, "errorMessage" : "Splatoon.ink data is not available"]))
+                } else {
+                    let dataDict = ["startTimes" : startTimes, "endTimes" : endTimes, "turfMaps" : turfMaps, "rankedMaps" : rankedMaps, "rankedModes" : rankedModes]
+                    completion(JSON(dataDict))
+                }
             }
     }
 }

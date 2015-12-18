@@ -1,3 +1,9 @@
+Version 0.3.0 (289)
+- Improved error messages
+
+Version 0.3.0 (289)
+- Bugfix: Negative map countdown
+
 Version 0.3.0 (286)
 - Map update improvements
 
