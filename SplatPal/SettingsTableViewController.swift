@@ -100,6 +100,122 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
     }
 }
 
+class NNID {
+    static let sharedInstance = NNID()
+    
+    private let prefs = NSUserDefaults.standardUserDefaults()
+    internal var username = ""
+    internal var password = ""
+    internal var cookie = ""
+    internal var saveLogin = false
+    internal var touchID = false
+    
+    private init() {
+        if let
+            username = prefs.stringForKey("NNIDUsername"),
+            password = prefs.stringForKey("NNIDPassword"),
+            cookie = prefs.stringForKey("NNIDCookie")
+        {
+            self.username = username
+            self.password = password
+            self.cookie = cookie
+        }
+    }
+    
+    func updateCredentials(username: String, password: String) {
+        self.username = username
+        self.password = password
+        prefs.setObject(username, forKey: "NNIDUsername")
+        prefs.setObject(password, forKey: "NNIDPassword")
+    }
+    
+    func updateCookie(cookie: String) {
+        self.cookie = cookie
+        prefs.setObject(cookie, forKey: "NNIDCookie")
+    }
+    
+    func updateSaveLogin(saveLogin: Bool) {
+        self.saveLogin = saveLogin
+        prefs.setBool(saveLogin, forKey: "NNIDSaveLogin")
+    }
+    
+    func updateTouchID(touchID: Bool) {
+        self.touchID = touchID
+        prefs.setBool(touchID, forKey: "NNIDTouchID")
+    }
+}
+
+class NNIDSettingsTableViewController: UITableViewController, UITextFieldDelegate {
+    @IBOutlet weak var cellLoginStatus: UITableViewCell!
+    @IBOutlet weak var cellUsername: UITableViewCell!
+    @IBOutlet weak var cellPassword: UITableViewCell!
+    @IBOutlet weak var cellLogin: UITableViewCell!
+    @IBOutlet weak var cellLoginAutomatically: UITableViewCell!
+    @IBOutlet weak var cellEnableTouchID: UITableViewCell!
+    
+    @IBOutlet weak var txtUsername: UITextField!
+    @IBOutlet weak var txtPassword: UITextField!
+    
+    @IBOutlet weak var swtLoginAutomatically: UISwitch!
+    @IBOutlet weak var swtEnableTouchID: UISwitch!
+    
+    @IBOutlet weak var loginSpinner: UIActivityIndicatorView!
+    @IBOutlet weak var lblLogIn: UILabel!
+    
+    let nnid = NNID.sharedInstance
+    var loggedIn = false
+    var loggingIn = false
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        cellLoginAutomatically.hidden = !loggedIn
+        cellEnableTouchID.hidden = !loggedIn
+        swtLoginAutomatically.on = nnid.saveLogin
+        swtEnableTouchID.on = nnid.touchID
+        txtUsername.text = nnid.username
+        txtPassword.text = nnid.password
+        loginSpinner.hidden = true
+    }
+    
+    func login() {
+        lblLogIn.hidden = true
+        loginSpinner.hidden = false
+        loginSpinner.startAnimating()
+        
+        delay(1.0, closure: {
+            self.lblLogIn.hidden = false
+            self.loginSpinner.hidden = true
+            self.loginSpinner.stopAnimating()
+            
+        })
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField == txtUsername {
+            txtPassword.becomeFirstResponder()
+        }
+        else if textField == txtPassword {
+            textField.resignFirstResponder()
+            login()
+        }
+        
+        return true
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        if indexPath == NSIndexPath(forRow: 2, inSection: 1) {
+            login()
+        }
+    }
+}
+
 class ModeSettingsTableViewController: UITableViewController {
     var settingsTableVC: SettingsTableViewController?
     
