@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-let mapRefreshCooldown = 60
+let mapRefreshCooldown = 300
 
 class MapsTableViewController: UITableViewController {
     
@@ -67,9 +67,22 @@ class MapsTableViewController: UITableViewController {
             mapErrorMessage = errorMessage
             
             return 1
-        } else {
-            mapError = false
-            return 3
+        }
+        else {
+            var sessionCount = 0
+            for match in matchData!["endTimes"].arrayObject as! [Double] {
+                if match != 0 { sessionCount += 1 }
+            }
+            
+            if sessionCount == 0 {
+                mapError = true
+                mapErrorCode = -1
+                mapErrorMessage = "Map data unavailable"
+                
+                return 1
+            } else { mapError = false }
+            
+            return sessionCount
         }
     }
 
@@ -162,7 +175,7 @@ class MapsTableViewController: UITableViewController {
                 else {
                     liveLabel = lblFooter
                     updateLabel()
-                    lblHeader.text = mapsUpdateCooldown > 0 ? "Retrieving Updates" : "Time Until Next Rotation"
+                    lblHeader.text = "Time Until Next Rotation"
                 }
             }
         } else {
@@ -176,7 +189,7 @@ class MapsTableViewController: UITableViewController {
     }
     
     func topHeaderLongPress(sender: UITapGestureRecognizer) {
-        guard sender.state == .Began && mapsUpdating == false else { return }
+        guard sender.state == .Began && mapsUpdating == false && mapsUpdateCooldown == -1 else { return }
         updateMaps(true)
     }
     
@@ -201,15 +214,16 @@ class MapsTableViewController: UITableViewController {
     func updateLabel() {
         guard liveLabel != nil && !mapError else { return }
         
+        let timeRemainingSeconds = getTimeRemainingSeconds()
+        
         if mapsUpdateCooldown >= 0 {
-            liveLabel?.text = "Waiting \(mapsUpdateCooldown)"
+            liveLabel?.text = getTimeRemainingText(timeRemainingSeconds)
             mapsUpdateCooldown -= 1
             
             if mapsUpdateCooldown == -1 {
                 tableView.reloadData()
             }
         } else {
-            let timeRemainingSeconds = getTimeRemainingSeconds()
             if timeRemainingSeconds <= 0 && !mapError { updateMaps(false) }
             else { liveLabel?.text = getTimeRemainingText(timeRemainingSeconds) }
         }

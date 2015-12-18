@@ -1,5 +1,11 @@
+Version 0.3.0 (286)
+- Map update improvements
+
+Version 0.3.0 (263)
+- Minor UI tweaks
+
 Version 0.3.0 (245)
-- Map and mode notifications!
+- Map and mode notifications
 
 Version 0.3.0 (197)
 - Minor changes

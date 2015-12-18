@@ -150,7 +150,7 @@ class MapSettingsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.estimatedRowHeight = 200
+        tableView.estimatedRowHeight = 44
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

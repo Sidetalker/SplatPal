@@ -100,6 +100,27 @@ func loadMaps(completion: (JSON) -> ()) {
                     rankedModes.append(entry["ranked"]["rulesEN"].stringValue)
                 }
                 
+                // Check for outdatedness
+                while endTimes[0] != 0 && NSDate().compare(NSDate(timeIntervalSince1970: endTimes[0])) == .OrderedDescending {
+                    for x in 0...1 {
+                        startTimes[x] = startTimes[x + 1]
+                        endTimes[x] = endTimes[x + 1]
+                        turfMaps[x * 2] = turfMaps[(x + 1) * 2]
+                        turfMaps[x * 2 + 1] = turfMaps[(x + 1) * 2 + 1]
+                        rankedMaps[x * 2] = rankedMaps[(x + 1) * 2]
+                        rankedMaps[x * 2 + 1] = rankedMaps[(x + 1) * 2 + 1]
+                        rankedModes[x] = rankedModes[x + 1]
+                    }
+                    
+                    startTimes[2] = 0
+                    endTimes[2] = 0
+                    turfMaps[4] = ""
+                    turfMaps[5] = ""
+                    rankedMaps[4] = ""
+                    rankedMaps[5] = ""
+                    rankedModes[2] = ""
+                }
+                
                 let dataDict = ["startTimes" : startTimes, "endTimes" : endTimes, "turfMaps" : turfMaps, "rankedMaps" : rankedMaps, "rankedModes" : rankedModes]
                 
                 completion(JSON(dataDict))
