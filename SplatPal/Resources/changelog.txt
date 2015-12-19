@@ -1,3 +1,7 @@
+Version 0.3.0 (321)
+- Spaltfest support!
+- NOTE: NNID integration is not complete
+
 Version 0.3.0 (289)
 - Improved error messages
 

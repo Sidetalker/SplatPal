@@ -45,6 +45,7 @@ def get_new_splatnet_cookie():
     if cookie is None:
         print(req)
         raise Exception("Couldn't retrieve cookie")
+    print(response.headers)
     return cookie
 
 

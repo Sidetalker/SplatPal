@@ -12,8 +12,10 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
     @IBOutlet weak var swtMapNotifications: UISwitch!
     @IBOutlet weak var lblMapSelection: UILabel!
     @IBOutlet weak var lblModeSelection: UILabel!
+    @IBOutlet weak var lblLoginStatus: UILabel!
     @IBOutlet weak var cellGameType: UITableViewCell!
     @IBOutlet weak var cellMapSelection: UITableViewCell!
+    @IBOutlet weak var cellLoginStatus: UITableViewCell!
     @IBOutlet weak var enableNotificationsIndent: NSLayoutConstraint!
     
     let prefs = NSUserDefaults.standardUserDefaults()
@@ -119,6 +121,8 @@ class NNID {
             self.username = username
             self.password = password
             self.cookie = cookie
+            self.saveLogin = prefs.boolForKey("NNIDSaveLogin")
+            self.touchID = prefs.boolForKey("NNIDTouchID")
         }
     }
     
@@ -161,6 +165,7 @@ class NNIDSettingsTableViewController: UITableViewController, UITextFieldDelegat
     
     @IBOutlet weak var loginSpinner: UIActivityIndicatorView!
     @IBOutlet weak var lblLogIn: UILabel!
+    @IBOutlet weak var lblLoginStatus: UILabel!
     
     let nnid = NNID.sharedInstance
     var loggedIn = false
@@ -173,26 +178,49 @@ class NNIDSettingsTableViewController: UITableViewController, UITextFieldDelegat
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        cellLoginAutomatically.hidden = !loggedIn
-        cellEnableTouchID.hidden = !loggedIn
-        swtLoginAutomatically.on = nnid.saveLogin
-        swtEnableTouchID.on = nnid.touchID
-        txtUsername.text = nnid.username
-        txtPassword.text = nnid.password
+        if !nnid.saveLogin {
+            nnid.updateCookie("")
+            nnid.updateCredentials("", password: "")
+        }
+        
+        updateUI(nnid.cookie != "")
         loginSpinner.hidden = true
     }
     
+    func logout() {
+        nnid.updateCookie("")
+        nnid.updateCredentials("", password: "")
+        updateUI(false)
+    }
+    
     func login() {
-        lblLogIn.hidden = true
-        loginSpinner.hidden = false
-        loginSpinner.startAnimating()
+        nnid.updateCredentials(txtUsername.text!, password: txtPassword.text!)
+        self.lblLogIn.hidden = true
+        self.loginSpinner.hidden = false
+        self.loginSpinner.startAnimating()
         
-        delay(1.0, closure: {
+        loginNNID { success in
             self.lblLogIn.hidden = false
             self.loginSpinner.hidden = true
             self.loginSpinner.stopAnimating()
             
-        })
+            log.debug("Success: \(success)")
+            self.updateUI(success)
+        }
+    }
+    
+    func updateUI(loggedIn: Bool) {
+        self.loggedIn = loggedIn
+        
+        cellLoginAutomatically.hidden = !loggedIn
+//        cellEnableTouchID.hidden = !loggedIn
+        cellLoginStatus.backgroundColor = loggedIn ? SplatAppStyle.loggedIn : SplatAppStyle.loggedOut
+        lblLoginStatus.text = loggedIn ? "Logged In" : "Not Logged In"
+        lblLogIn.text = loggedIn ? "Log Out" : "Log In"
+        swtLoginAutomatically.on = nnid.saveLogin
+        swtEnableTouchID.on = nnid.touchID
+        txtUsername.text = nnid.username
+        txtPassword.text = nnid.password
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
@@ -211,8 +239,12 @@ class NNIDSettingsTableViewController: UITableViewController, UITextFieldDelegat
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
         if indexPath == NSIndexPath(forRow: 2, inSection: 1) {
-            login()
+            loggedIn ? logout() : login()
         }
+    }
+    
+    @IBAction func saveLoginSwitched(sender: AnyObject) {
+        nnid.updateSaveLogin((sender as! UISwitch).on)
     }
 }
 

@@ -1306,8 +1306,10 @@
                     <size key="freeformSize" width="400" height="800"/>
                     <connections>
                         <outlet property="cellGameType" destination="xQZ-9j-jWH" id="09z-jI-pcI"/>
+                        <outlet property="cellLoginStatus" destination="Mk1-Bb-rpq" id="Aee-ku-Ej7"/>
                         <outlet property="cellMapSelection" destination="b3u-cr-jiK" id="fcJ-io-Ats"/>
                         <outlet property="enableNotificationsIndent" destination="jgH-fr-wdn" id="n8h-Le-Jnl"/>
+                        <outlet property="lblLoginStatus" destination="LFz-mV-1TQ" id="jjh-fd-xXr"/>
                         <outlet property="lblMapSelection" destination="uZ4-ic-YHj" id="yfx-8p-qbb"/>
                         <outlet property="lblModeSelection" destination="aYN-RZ-pFP" id="bjy-U6-qpu"/>
                         <outlet property="swtMapNotifications" destination="kc3-Ja-Zx7" id="1du-Fp-YH3"/>
@@ -1439,6 +1441,9 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XF4-ii-y6Q">
                                                     <rect key="frame" x="333" y="6" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="saveLoginSwitched:" destination="r1z-1I-R3c" eventType="valueChanged" id="t1Q-1d-8Nf"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -1449,7 +1454,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="Kj2-sd-y1N">
+                                    <tableViewCell hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="Kj2-sd-y1N">
                                         <rect key="frame" x="0.0" y="355" width="400" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kj2-sd-y1N" id="m3u-Qh-d3D">
@@ -1492,6 +1497,7 @@
                         <outlet property="cellPassword" destination="HGp-Oe-bBn" id="Evk-IJ-yUO"/>
                         <outlet property="cellUsername" destination="i3M-eI-5Ba" id="4nS-iU-RTm"/>
                         <outlet property="lblLogIn" destination="0Qr-TW-D44" id="vW8-co-Sa5"/>
+                        <outlet property="lblLoginStatus" destination="eE3-ie-qWR" id="ApB-d5-ho4"/>
                         <outlet property="loginSpinner" destination="4yg-ON-Msv" id="gx5-43-2IN"/>
                         <outlet property="swtEnableTouchID" destination="SyM-kL-nlF" id="1JV-tl-hXI"/>
                         <outlet property="swtLoginAutomatically" destination="XF4-ii-y6Q" id="Z5y-j3-ae0"/>
