@@ -71,8 +71,9 @@ extension Array {
     }
 }
 
-func loginNNID(completion: (Bool) -> ()) {
+func loginNNID(completion: (NSError?) -> ()) {
     let nnid = NNID.sharedInstance
+    nnid.updateCookie("")
     
     let NNIDLoginURL = "https://id.nintendo.net/oauth/authorize"
     let parameters = [
@@ -89,16 +90,21 @@ func loginNNID(completion: (Bool) -> ()) {
             if error != nil {
                 log.error("Search Error")
                 debugPrint(response)
-                completion(false)
+                completion(error)
                 
                 return
             }
             
             let headers = JSON(response!.allHeaderFields).dictionaryObject! as! [String : String]
-            let cookie = NSHTTPCookie.cookiesWithResponseHeaderFields(headers, forURL: response!.URL!).last!
-            nnid.updateCookie(cookie.value)
             
-            completion(true)
+            if let cookie = NSHTTPCookie.cookiesWithResponseHeaderFields(headers, forURL: response!.URL!).last {
+                nnid.updateCookie(cookie.value)
+                completion(nil)
+            }
+            else {
+                nnid.updateCookie("")
+                completion(NSError(domain: "com.sideapps.SplatPal", code: 42, userInfo: [NSLocalizedDescriptionKey : "Incorrect username or password"]))
+            }
     }
 }
 

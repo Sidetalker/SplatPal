@@ -16,9 +16,11 @@ var modeData = [String]()
 var abilityData = [String : JSON]()
 
 class LoadingViewController: UIViewController {
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
+    let nnid = NNID.sharedInstance
     var matchData: JSON?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         UITabBar.appearance().tintColor = UIColor.whiteColor()
@@ -26,13 +28,24 @@ class LoadingViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        spinner.startAnimating()
         
         loadJSONData()
         
-        loadMaps({ data in
-            self.matchData = data
-            self.performSegueWithIdentifier("segueLoading", sender: self)
-        })
+        if nnid.saveLogin {
+            loginNNID { error in
+                loadMaps { data in
+                    self.matchData = data
+                    self.performSegueWithIdentifier("segueLoading", sender: self)
+                }
+            }
+        } else {
+            nnid.updateCookie("")
+            loadMaps { data in
+                self.matchData = data
+                self.performSegueWithIdentifier("segueLoading", sender: self)
+            }
+        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

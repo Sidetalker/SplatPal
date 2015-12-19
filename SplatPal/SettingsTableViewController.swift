@@ -19,6 +19,7 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
     @IBOutlet weak var enableNotificationsIndent: NSLayoutConstraint!
     
     let prefs = NSUserDefaults.standardUserDefaults()
+    let nnid = NNID.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,11 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
         if DeviceType.IS_IPHONE_6P {
             enableNotificationsIndent.constant = 12
         }
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        lblLoginStatus.text = nnid.cookie != "" ? "Logged In" : "Not Logged In"
+        cellLoginStatus.backgroundColor = nnid.cookie != "" ? SplatAppStyle.loggedIn : SplatAppStyle.loggedOut
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -93,8 +99,8 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
         }
     }
     
-    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        return
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
     @IBAction func mapNotificationsToggled(sender: AnyObject) {
@@ -124,6 +130,10 @@ class NNID {
             self.saveLogin = prefs.boolForKey("NNIDSaveLogin")
             self.touchID = prefs.boolForKey("NNIDTouchID")
         }
+    }
+    
+    func hasCredentials() -> Bool {
+        return username != "" && password != ""
     }
     
     func updateCredentials(username: String, password: String) {
@@ -179,7 +189,6 @@ class NNIDSettingsTableViewController: UITableViewController, UITextFieldDelegat
         super.viewWillAppear(animated)
         
         if !nnid.saveLogin {
-            nnid.updateCookie("")
             nnid.updateCredentials("", password: "")
         }
         
@@ -189,7 +198,10 @@ class NNIDSettingsTableViewController: UITableViewController, UITextFieldDelegat
     
     func logout() {
         nnid.updateCookie("")
-        nnid.updateCredentials("", password: "")
+        if !nnid.saveLogin {
+            nnid.updateCredentials("", password: "")
+        }
+        
         updateUI(false)
     }
     
@@ -199,20 +211,30 @@ class NNIDSettingsTableViewController: UITableViewController, UITextFieldDelegat
         self.loginSpinner.hidden = false
         self.loginSpinner.startAnimating()
         
-        loginNNID { success in
+        loginNNID { error in
             self.lblLogIn.hidden = false
             self.loginSpinner.hidden = true
             self.loginSpinner.stopAnimating()
             
-            log.debug("Success: \(success)")
-            self.updateUI(success)
+            if error == nil {
+                log.debug("Login Success")
+                self.updateUI(true)
+            } else {
+                log.error("Login Error: \(error!.localizedDescription)")
+                self.nnid.updateCredentials("", password: "")
+                self.updateUI(false)
+                
+                let alert = UIAlertController(title: "Login Error", message: error!.localizedDescription, preferredStyle: .Alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
         }
     }
     
     func updateUI(loggedIn: Bool) {
         self.loggedIn = loggedIn
         
-        cellLoginAutomatically.hidden = !loggedIn
+        cellLoginAutomatically.hidden = !loggedIn || !nnid.hasCredentials()
 //        cellEnableTouchID.hidden = !loggedIn
         cellLoginStatus.backgroundColor = loggedIn ? SplatAppStyle.loggedIn : SplatAppStyle.loggedOut
         lblLoginStatus.text = loggedIn ? "Logged In" : "Not Logged In"

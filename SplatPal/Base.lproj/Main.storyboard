@@ -1150,18 +1150,36 @@
                                     <constraint firstAttribute="width" secondItem="ISy-Ia-ul1" secondAttribute="height" multiplier="1:1" id="fWB-2e-K3u"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsX-8z-jCu">
+                                <rect key="frame" x="225" y="375" width="150" height="225"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ELH-cd-CLC">
+                                        <rect key="frame" x="56" y="94" width="37" height="37"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ELH-cd-CLC" firstAttribute="centerY" secondItem="nsX-8z-jCu" secondAttribute="centerY" id="Ggt-CU-7Cz"/>
+                                    <constraint firstAttribute="width" constant="150" id="N0c-CI-sbh"/>
+                                    <constraint firstItem="ELH-cd-CLC" firstAttribute="centerX" secondItem="nsX-8z-jCu" secondAttribute="centerX" id="Ttq-Ls-Jdo"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ISy-Ia-ul1" firstAttribute="centerY" secondItem="q5X-rF-LQx" secondAttribute="centerY" id="4hS-Ig-psK"/>
                             <constraint firstItem="q5X-rF-LQx" firstAttribute="top" secondItem="ujk-Wm-mgC" secondAttribute="bottom" constant="-20" id="8cx-la-5yO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="q5X-rF-LQx" secondAttribute="trailing" constant="-20" id="8sd-sz-qta"/>
+                            <constraint firstItem="nsX-8z-jCu" firstAttribute="centerX" secondItem="q5X-rF-LQx" secondAttribute="centerX" id="JYJ-GQ-qge"/>
+                            <constraint firstItem="OXA-X1-EyZ" firstAttribute="top" secondItem="nsX-8z-jCu" secondAttribute="bottom" id="ezD-He-vmc"/>
                             <constraint firstItem="q5X-rF-LQx" firstAttribute="leading" secondItem="19f-eg-X7o" secondAttribute="leadingMargin" constant="-20" id="fQV-ZX-tpm"/>
                             <constraint firstItem="ISy-Ia-ul1" firstAttribute="centerX" secondItem="q5X-rF-LQx" secondAttribute="centerX" id="jaB-qY-PgN"/>
+                            <constraint firstItem="nsX-8z-jCu" firstAttribute="top" secondItem="ISy-Ia-ul1" secondAttribute="bottom" id="qYS-Lc-4cl"/>
                             <constraint firstItem="OXA-X1-EyZ" firstAttribute="top" secondItem="q5X-rF-LQx" secondAttribute="bottom" id="s4E-dQ-1kF"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="spinner" destination="ELH-cd-CLC" id="YT9-kr-gEs"/>
                         <segue destination="49e-Tb-3d3" kind="presentation" identifier="segueLoading" animates="NO" id="Nz6-9I-sEc"/>
                     </connections>
                 </viewController>
