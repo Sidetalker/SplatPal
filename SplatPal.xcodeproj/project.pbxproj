@@ -14,6 +14,9 @@
 		0A4C51151C24633C006ABE9B /* splatIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51121C24633C006ABE9B /* splatIcon.png */; };
 		0A4C51161C24633C006ABE9B /* splatIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51131C24633C006ABE9B /* splatIcon@2x.png */; };
 		0A4C51171C24633C006ABE9B /* splatIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51141C24633C006ABE9B /* splatIcon@3x.png */; };
+		0A4C51961C25F208006ABE9B /* squidIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51931C25F208006ABE9B /* squidIcon.png */; };
+		0A4C51971C25F208006ABE9B /* squidIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51941C25F208006ABE9B /* squidIcon@2x.png */; };
+		0A4C51981C25F208006ABE9B /* squidIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51951C25F208006ABE9B /* squidIcon@3x.png */; };
 		0A948AC31C1CC4F700CCC4DB /* data.min.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A948AC21C1CC4F700CCC4DB /* data.min.json */; };
 		0AA23DF71C1B6D870002BCC2 /* betaIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DEE1C1B6D870002BCC2 /* betaIcon.png */; };
 		0AA23DF81C1B6D870002BCC2 /* betaIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DEF1C1B6D870002BCC2 /* betaIcon@2x.png */; };
@@ -393,6 +396,9 @@
 		0A4C51121C24633C006ABE9B /* splatIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splatIcon.png; path = Images/splatIcon.png; sourceTree = "<group>"; };
 		0A4C51131C24633C006ABE9B /* splatIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splatIcon@2x.png"; path = "Images/splatIcon@2x.png"; sourceTree = "<group>"; };
 		0A4C51141C24633C006ABE9B /* splatIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splatIcon@3x.png"; path = "Images/splatIcon@3x.png"; sourceTree = "<group>"; };
+		0A4C51931C25F208006ABE9B /* squidIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = squidIcon.png; path = Images/squidIcon.png; sourceTree = "<group>"; };
+		0A4C51941C25F208006ABE9B /* squidIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "squidIcon@2x.png"; path = "Images/squidIcon@2x.png"; sourceTree = "<group>"; };
+		0A4C51951C25F208006ABE9B /* squidIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "squidIcon@3x.png"; path = "Images/squidIcon@3x.png"; sourceTree = "<group>"; };
 		0A948AC21C1CC4F700CCC4DB /* data.min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.min.json; path = Resources/data.min.json; sourceTree = "<group>"; };
 		0AA23DEE1C1B6D870002BCC2 /* betaIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = betaIcon.png; path = Images/betaIcon.png; sourceTree = "<group>"; };
 		0AA23DEF1C1B6D870002BCC2 /* betaIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "betaIcon@2x.png"; path = "Images/betaIcon@2x.png"; sourceTree = "<group>"; };
@@ -938,6 +944,9 @@
 		0ADF9A9D1C1D1246002D7E81 /* Bar Icons */ = {
 			isa = PBXGroup;
 			children = (
+				0A4C51931C25F208006ABE9B /* squidIcon.png */,
+				0A4C51941C25F208006ABE9B /* squidIcon@2x.png */,
+				0A4C51951C25F208006ABE9B /* squidIcon@3x.png */,
 				0A4C51121C24633C006ABE9B /* splatIcon.png */,
 				0A4C51131C24633C006ABE9B /* splatIcon@2x.png */,
 				0A4C51141C24633C006ABE9B /* splatIcon@3x.png */,
@@ -1423,6 +1432,7 @@
 				0ADF9C491C1DF2DE002D7E81 /* gearRockenbergWhite.png in Resources */,
 				0ADF9BCE1C1DF2DE002D7E81 /* gearBlueLo-Tops.png in Resources */,
 				0ADF9BE81C1DF2DE002D7E81 /* gearCyclingShirt.png in Resources */,
+				0A4C51971C25F208006ABE9B /* squidIcon@2x.png in Resources */,
 				0ADF9C0B1C1DF2DE002D7E81 /* gearJungleHat.png in Resources */,
 				0ADF9BC71C1DF2DE002D7E81 /* gearBlackPolo.png in Resources */,
 				0ADF9C061C1DF2DE002D7E81 /* gearHunterHi-Tops.png in Resources */,
@@ -1491,6 +1501,7 @@
 				0ADF9C121C1DF2DE002D7E81 /* gearLightweightCap.png in Resources */,
 				0AC607F11C191405006EECA7 /* turfWarBadge@2x.png in Resources */,
 				0ADF9BB91C1DF2DE002D7E81 /* gearBambooHat.png in Resources */,
+				0A4C51981C25F208006ABE9B /* squidIcon@3x.png in Resources */,
 				0ADF9C001C1DF2DE002D7E81 /* gearGreenTee.png in Resources */,
 				0ADF9BD91C1DF2DE002D7E81 /* gearCampingHat.png in Resources */,
 				0AA23E2F1C1B6E280002BCC2 /* abilityNone.png in Resources */,
@@ -1580,6 +1591,7 @@
 				0ADF9BF91C1DF2DE002D7E81 /* gearGrayCollegeSweat.png in Resources */,
 				0ADF9C971C1DF2DE002D7E81 /* gearWarriorHeaddress.png in Resources */,
 				0ADF9CAF1C1DF2DE002D7E81 /* gearZekkoMesh.png in Resources */,
+				0A4C51961C25F208006ABE9B /* squidIcon.png in Resources */,
 				0ADF9C521C1DF2DE002D7E81 /* gearSchoolJersey.png in Resources */,
 				0ADF9BDA1C1DF2DE002D7E81 /* gearCarnivoreTee.png in Resources */,
 				0ADF9C691C1DF2DE002D7E81 /* gearSquid-StitchSlip-Ons.png in Resources */,
