@@ -68,7 +68,7 @@ class MapsTableViewController: UITableViewController {
             
             return 1
         }
-        else {
+        else if !matchData!["splatfest"].boolValue {
             var sessionCount = 0
             for match in matchData!["endTimes"].arrayObject as! [Double] {
                 if match != 0 { sessionCount += 1 }
@@ -76,10 +76,15 @@ class MapsTableViewController: UITableViewController {
             
             return sessionCount
         }
+        else {
+            return 1
+        }
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mapError ? 1 : 6
+        if mapError { return 1 }
+        else if !matchData!["splatfest"].boolValue { return 6 }
+        else { return 4 }
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -94,30 +99,57 @@ class MapsTableViewController: UITableViewController {
             lblCode.text = "Error Code \(mapErrorCode)"
             lblMessage.text = mapErrorMessage
         }
-        else if indexPath.row % 3 == 0 {
-            cell = tableView.dequeueReusableCellWithIdentifier("cellGameMode", forIndexPath: indexPath)
-            cell.backgroundColor = UIColor.clearColor()
-            
-            let lbl = cell.viewWithTag(1) as! UILabel
-            lbl.text = indexPath.row == 0 ? matchData!["rankedModes"][indexPath.section].stringValue : "Turf Wars"
+        else if matchData!["splatfest"].boolValue {
+            if indexPath.row == 0 {
+                cell = tableView.dequeueReusableCellWithIdentifier("cellGameMode", forIndexPath: indexPath)
+                cell.backgroundColor = UIColor.clearColor()
+                
+                let lbl = cell.viewWithTag(1) as! UILabel
+                lbl.text = "\(matchData!["teams"][0].stringValue) vs \(matchData!["teams"][1].stringValue)"
+            }
+            else {
+                cell = tableView.dequeueReusableCellWithIdentifier("cellMap", forIndexPath: indexPath)
+                cell.backgroundColor = UIColor.clearColor()
+                
+                let mapName = matchData!["turfMaps"][indexPath.row - 1].stringValue
+                
+                let imgMap = cell.viewWithTag(1) as! UIImageView
+                imgMap.layer.cornerRadius = 5
+                imgMap.image = UIImage(named: "Stage\(mapName.removeWhitespace()).jpg")
+                
+                let imgBadge = cell.viewWithTag(2) as! UIImageView
+                imgBadge.image = UIImage(named: "turfWarBadge.png")
+                
+                let lblName = cell.viewWithTag(3) as! UILabel
+                lblName.text = mapName
+            }
         }
         else {
-            cell = tableView.dequeueReusableCellWithIdentifier("cellMap", forIndexPath: indexPath)
-            cell.backgroundColor = UIColor.clearColor()
-            
-            let mapName = [1, 2].contains(indexPath.row) ?
-                matchData!["rankedMaps"][indexPath.row - 1 + indexPath.section * 2].stringValue :
-                matchData!["turfMaps"][indexPath.row - 4 + indexPath.section * 2].stringValue
-            
-            let imgMap = cell.viewWithTag(1) as! UIImageView
-            imgMap.layer.cornerRadius = 5
-            imgMap.image = UIImage(named: "Stage\(mapName.removeWhitespace()).jpg")
-            
-            let imgBadge = cell.viewWithTag(2) as! UIImageView
-            imgBadge.image = [1, 2].contains(indexPath.row) ? UIImage(named: "rankedBadge.png") : UIImage(named: "turfWarBadge.png")
-            
-            let lblName = cell.viewWithTag(3) as! UILabel
-            lblName.text = mapName
+            if indexPath.row % 3 == 0 {
+                cell = tableView.dequeueReusableCellWithIdentifier("cellGameMode", forIndexPath: indexPath)
+                cell.backgroundColor = UIColor.clearColor()
+                
+                let lbl = cell.viewWithTag(1) as! UILabel
+                lbl.text = indexPath.row == 0 ? matchData!["rankedModes"][indexPath.section].stringValue : "Turf Wars"
+            }
+            else {
+                cell = tableView.dequeueReusableCellWithIdentifier("cellMap", forIndexPath: indexPath)
+                cell.backgroundColor = UIColor.clearColor()
+                
+                let mapName = [1, 2].contains(indexPath.row) ?
+                    matchData!["rankedMaps"][indexPath.row - 1 + indexPath.section * 2].stringValue :
+                    matchData!["turfMaps"][indexPath.row - 4 + indexPath.section * 2].stringValue
+                
+                let imgMap = cell.viewWithTag(1) as! UIImageView
+                imgMap.layer.cornerRadius = 5
+                imgMap.image = UIImage(named: "Stage\(mapName.removeWhitespace()).jpg")
+                
+                let imgBadge = cell.viewWithTag(2) as! UIImageView
+                imgBadge.image = [1, 2].contains(indexPath.row) ? UIImage(named: "rankedBadge.png") : UIImage(named: "turfWarBadge.png")
+                
+                let lblName = cell.viewWithTag(3) as! UILabel
+                lblName.text = mapName
+            }
         }
 
         return cell
@@ -176,7 +208,7 @@ class MapsTableViewController: UITableViewController {
                 else {
                     liveLabel = lblFooter
                     updateLabel()
-                    lblHeader.text = "Time Until Next Rotation"
+                    lblHeader.text = matchData!["splatfest"].boolValue ? "Time Left in Splatfest" : "Time Until Next Rotation"
                 }
             }
         } else {

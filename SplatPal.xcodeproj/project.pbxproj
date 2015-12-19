@@ -11,6 +11,12 @@
 		0A4BF6AB1C22069700BB4834 /* settingsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A81C22069700BB4834 /* settingsIcon@2x.png */; };
 		0A4BF6AC1C22069700BB4834 /* settingsIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A91C22069700BB4834 /* settingsIcon@3x.png */; };
 		0A4BF6AE1C22201800BB4834 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BF6AD1C22201800BB4834 /* SettingsTableViewController.swift */; };
+		0A4C51151C24633C006ABE9B /* splatIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51121C24633C006ABE9B /* splatIcon.png */; };
+		0A4C51161C24633C006ABE9B /* splatIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51131C24633C006ABE9B /* splatIcon@2x.png */; };
+		0A4C51171C24633C006ABE9B /* splatIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51141C24633C006ABE9B /* splatIcon@3x.png */; };
+		0A4C51961C25F208006ABE9B /* squidIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51931C25F208006ABE9B /* squidIcon.png */; };
+		0A4C51971C25F208006ABE9B /* squidIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51941C25F208006ABE9B /* squidIcon@2x.png */; };
+		0A4C51981C25F208006ABE9B /* squidIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51951C25F208006ABE9B /* squidIcon@3x.png */; };
 		0A948AC31C1CC4F700CCC4DB /* data.min.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A948AC21C1CC4F700CCC4DB /* data.min.json */; };
 		0AA23DF71C1B6D870002BCC2 /* betaIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DEE1C1B6D870002BCC2 /* betaIcon.png */; };
 		0AA23DF81C1B6D870002BCC2 /* betaIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DEF1C1B6D870002BCC2 /* betaIcon@2x.png */; };
@@ -387,6 +393,12 @@
 		0A4BF6A81C22069700BB4834 /* settingsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settingsIcon@2x.png"; path = "Images/settingsIcon@2x.png"; sourceTree = "<group>"; };
 		0A4BF6A91C22069700BB4834 /* settingsIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settingsIcon@3x.png"; path = "Images/settingsIcon@3x.png"; sourceTree = "<group>"; };
 		0A4BF6AD1C22201800BB4834 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		0A4C51121C24633C006ABE9B /* splatIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splatIcon.png; path = Images/splatIcon.png; sourceTree = "<group>"; };
+		0A4C51131C24633C006ABE9B /* splatIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splatIcon@2x.png"; path = "Images/splatIcon@2x.png"; sourceTree = "<group>"; };
+		0A4C51141C24633C006ABE9B /* splatIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splatIcon@3x.png"; path = "Images/splatIcon@3x.png"; sourceTree = "<group>"; };
+		0A4C51931C25F208006ABE9B /* squidIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = squidIcon.png; path = Images/squidIcon.png; sourceTree = "<group>"; };
+		0A4C51941C25F208006ABE9B /* squidIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "squidIcon@2x.png"; path = "Images/squidIcon@2x.png"; sourceTree = "<group>"; };
+		0A4C51951C25F208006ABE9B /* squidIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "squidIcon@3x.png"; path = "Images/squidIcon@3x.png"; sourceTree = "<group>"; };
 		0A948AC21C1CC4F700CCC4DB /* data.min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.min.json; path = Resources/data.min.json; sourceTree = "<group>"; };
 		0AA23DEE1C1B6D870002BCC2 /* betaIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = betaIcon.png; path = Images/betaIcon.png; sourceTree = "<group>"; };
 		0AA23DEF1C1B6D870002BCC2 /* betaIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "betaIcon@2x.png"; path = "Images/betaIcon@2x.png"; sourceTree = "<group>"; };
@@ -905,13 +917,13 @@
 		0AC607DE1C18AAA6006EECA7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				0AB09B381C205F2700A8A682 /* star.png */,
-				0AB09B391C205F2700A8A682 /* star@2x.png */,
-				0AB09B3A1C205F2700A8A682 /* star@3x.png */,
 				0AC607C11C18A61E006EECA7 /* Stages */,
 				0AA23E081C1B6E140002BCC2 /* Abilities */,
 				0ADF9A9D1C1D1246002D7E81 /* Bar Icons */,
 				0ADF9AA61C1DF2CD002D7E81 /* Gear */,
+				0AB09B381C205F2700A8A682 /* star.png */,
+				0AB09B391C205F2700A8A682 /* star@2x.png */,
+				0AB09B3A1C205F2700A8A682 /* star@3x.png */,
 				0AC607F51C191F09006EECA7 /* squid.png */,
 				0AC607F61C191F09006EECA7 /* squid@2x.png */,
 				0AC607F71C191F09006EECA7 /* squid@3x.png */,
@@ -932,6 +944,12 @@
 		0ADF9A9D1C1D1246002D7E81 /* Bar Icons */ = {
 			isa = PBXGroup;
 			children = (
+				0A4C51931C25F208006ABE9B /* squidIcon.png */,
+				0A4C51941C25F208006ABE9B /* squidIcon@2x.png */,
+				0A4C51951C25F208006ABE9B /* squidIcon@3x.png */,
+				0A4C51121C24633C006ABE9B /* splatIcon.png */,
+				0A4C51131C24633C006ABE9B /* splatIcon@2x.png */,
+				0A4C51141C24633C006ABE9B /* splatIcon@3x.png */,
 				0A4BF6A71C22069700BB4834 /* settingsIcon.png */,
 				0A4BF6A81C22069700BB4834 /* settingsIcon@2x.png */,
 				0A4BF6A91C22069700BB4834 /* settingsIcon@3x.png */,
@@ -1414,6 +1432,7 @@
 				0ADF9C491C1DF2DE002D7E81 /* gearRockenbergWhite.png in Resources */,
 				0ADF9BCE1C1DF2DE002D7E81 /* gearBlueLo-Tops.png in Resources */,
 				0ADF9BE81C1DF2DE002D7E81 /* gearCyclingShirt.png in Resources */,
+				0A4C51971C25F208006ABE9B /* squidIcon@2x.png in Resources */,
 				0ADF9C0B1C1DF2DE002D7E81 /* gearJungleHat.png in Resources */,
 				0ADF9BC71C1DF2DE002D7E81 /* gearBlackPolo.png in Resources */,
 				0ADF9C061C1DF2DE002D7E81 /* gearHunterHi-Tops.png in Resources */,
@@ -1440,6 +1459,7 @@
 				0ADF9BE91C1DF2DE002D7E81 /* gearDarkUrbanVest.png in Resources */,
 				0ADF9CA91C1DF2DE002D7E81 /* gearYellowLayeredLS.png in Resources */,
 				0ADF9BAD1C1DF2DE002D7E81 /* gear18KAviators.png in Resources */,
+				0A4C51161C24633C006ABE9B /* splatIcon@2x.png in Resources */,
 				0AC607ED1C191405006EECA7 /* rankedBadgeAlt.png in Resources */,
 				0AC607D41C18A629006EECA7 /* StageHammerheadBridge.jpg in Resources */,
 				0ADF9C051C1DF2DE002D7E81 /* gearHeroRunnerReplicas.png in Resources */,
@@ -1481,6 +1501,7 @@
 				0ADF9C121C1DF2DE002D7E81 /* gearLightweightCap.png in Resources */,
 				0AC607F11C191405006EECA7 /* turfWarBadge@2x.png in Resources */,
 				0ADF9BB91C1DF2DE002D7E81 /* gearBambooHat.png in Resources */,
+				0A4C51981C25F208006ABE9B /* squidIcon@3x.png in Resources */,
 				0ADF9C001C1DF2DE002D7E81 /* gearGreenTee.png in Resources */,
 				0ADF9BD91C1DF2DE002D7E81 /* gearCampingHat.png in Resources */,
 				0AA23E2F1C1B6E280002BCC2 /* abilityNone.png in Resources */,
@@ -1556,6 +1577,7 @@
 				0AC607F01C191405006EECA7 /* turfWarBadge.png in Resources */,
 				0AC607EE1C191405006EECA7 /* rankedBadgeAlt@2x.png in Resources */,
 				0ADF9C041C1DF2DE002D7E81 /* gearHeroJacketReplica.png in Resources */,
+				0A4C51151C24633C006ABE9B /* splatIcon.png in Resources */,
 				0ADF9C651C1DF2DE002D7E81 /* gearSportyBobbleHat.png in Resources */,
 				0AA23DFD1C1B6D870002BCC2 /* weaponsIcon.png in Resources */,
 				0ADF9BBF1C1DF2DE002D7E81 /* gearBlack8-BitFishFry.png in Resources */,
@@ -1569,6 +1591,7 @@
 				0ADF9BF91C1DF2DE002D7E81 /* gearGrayCollegeSweat.png in Resources */,
 				0ADF9C971C1DF2DE002D7E81 /* gearWarriorHeaddress.png in Resources */,
 				0ADF9CAF1C1DF2DE002D7E81 /* gearZekkoMesh.png in Resources */,
+				0A4C51961C25F208006ABE9B /* squidIcon.png in Resources */,
 				0ADF9C521C1DF2DE002D7E81 /* gearSchoolJersey.png in Resources */,
 				0ADF9BDA1C1DF2DE002D7E81 /* gearCarnivoreTee.png in Resources */,
 				0ADF9C691C1DF2DE002D7E81 /* gearSquid-StitchSlip-Ons.png in Resources */,
@@ -1664,6 +1687,7 @@
 				0ADF9C321C1DF2DE002D7E81 /* gearPowerMask.png in Resources */,
 				0AA23E341C1B6E280002BCC2 /* abilityRunSpeedUp.png in Resources */,
 				0AA23E061C1B6DB90002BCC2 /* IconSelectionView.xib in Resources */,
+				0A4C51171C24633C006ABE9B /* splatIcon@3x.png in Resources */,
 				0ADF9C4D1C1DF2DE002D7E81 /* gearSagePolo.png in Resources */,
 				0ADF9BAF1C1DF2DE002D7E81 /* gearAlohaShirt.png in Resources */,
 				0A948AC31C1CC4F700CCC4DB /* data.min.json in Resources */,

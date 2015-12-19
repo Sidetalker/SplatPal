@@ -71,6 +71,43 @@ extension Array {
     }
 }
 
+func loginNNID(completion: (NSError?) -> ()) {
+    let nnid = NNID.sharedInstance
+    nnid.updateCookie("")
+    
+    let NNIDLoginURL = "https://id.nintendo.net/oauth/authorize"
+    let parameters = [
+        "client_id": "12af3d0a3a1f441eb900411bb50a835a",
+        "response_type": "code",
+        "redirect_uri": "https://splatoon.nintendo.net/users/auth/nintendo/callback",
+        "username": nnid.username,
+        "password": nnid.password
+    ]
+    
+    request(.POST, NNIDLoginURL, encoding: .URL, parameters: parameters)
+        .response { request, response, data, error in
+            // Handle request failure
+            if error != nil {
+                log.error("Search Error")
+                debugPrint(response)
+                completion(error)
+                
+                return
+            }
+            
+            let headers = JSON(response!.allHeaderFields).dictionaryObject! as! [String : String]
+            
+            if let cookie = NSHTTPCookie.cookiesWithResponseHeaderFields(headers, forURL: response!.URL!).last {
+                nnid.updateCookie(cookie.value)
+                completion(nil)
+            }
+            else {
+                nnid.updateCookie("")
+                completion(NSError(domain: "com.sideapps.SplatPal", code: 42, userInfo: [NSLocalizedDescriptionKey : "Incorrect username or password"]))
+            }
+    }
+}
+
 func loadMaps(completion: (JSON) -> ()) {
     request(.GET, splatoonAPIString, encoding: .URL, headers: ["Cache-Control" : "max-age=0"])
         .responseJSON { response in
@@ -81,52 +118,67 @@ func loadMaps(completion: (JSON) -> ()) {
                 completion(JSON(["errorCode" : response.result.error!.code, "errorMessage" : response.result.error!.localizedDescription]))
             } else {
                 let json = JSON(response.result.value!)
-                
-                if json["splatfest"].boolValue { log.warning("Splatfest, IDK WHAT TO DO!!!") }
-                
+                let splatfest = json["splatfest"].boolValue
                 var startTimes = [NSTimeInterval]()
                 var endTimes = [NSTimeInterval]()
                 var turfMaps = [String]()
                 var rankedMaps = [String]()
                 var rankedModes = [String]()
                 
-                for entry in json["schedule"].arrayValue {
-                    startTimes.append(entry["startTime"].doubleValue / 1000)
-                    endTimes.append(entry["endTime"].doubleValue / 1000)
-                    turfMaps.append(entry["regular"]["maps"][0]["nameEN"].stringValue)
-                    turfMaps.append(entry["regular"]["maps"][1]["nameEN"].stringValue)
-                    rankedMaps.append(entry["ranked"]["maps"][0]["nameEN"].stringValue)
-                    rankedMaps.append(entry["ranked"]["maps"][1]["nameEN"].stringValue)
-                    rankedModes.append(entry["ranked"]["rulesEN"].stringValue)
+                if splatfest {
+                    let schedule = json["schedule"][0]
+                    var teams = [String]()
+                    
+                    startTimes.append(schedule["startTime"].doubleValue / 1000)
+                    endTimes.append(schedule["endTime"].doubleValue / 1000)
+                    for x in 0...2 {
+                        turfMaps.append(schedule["regular"]["maps"][x]["nameEN"].stringValue)
+                    }
+                    teams.append(schedule["regular"]["teams"][0].stringValue)
+                    teams.append(schedule["regular"]["teams"][1].stringValue)
+                    
+                    let dataDict = ["startTimes" : startTimes, "endTimes" : endTimes, "turfMaps" : turfMaps, "teams" : teams, "splatfest" : splatfest]
+                    completion(JSON(dataDict))
                 }
-                
-                // Check for outdatedness
-                while endTimes[0] != 0 && NSDate().compare(NSDate(timeIntervalSince1970: endTimes[0])) == .OrderedDescending {
-                    for x in 0...1 {
-                        startTimes[x] = startTimes[x + 1]
-                        endTimes[x] = endTimes[x + 1]
-                        turfMaps[x * 2] = turfMaps[(x + 1) * 2]
-                        turfMaps[x * 2 + 1] = turfMaps[(x + 1) * 2 + 1]
-                        rankedMaps[x * 2] = rankedMaps[(x + 1) * 2]
-                        rankedMaps[x * 2 + 1] = rankedMaps[(x + 1) * 2 + 1]
-                        rankedModes[x] = rankedModes[x + 1]
+                else {
+                    for entry in json["schedule"].arrayValue {
+                        startTimes.append(entry["startTime"].doubleValue / 1000)
+                        endTimes.append(entry["endTime"].doubleValue / 1000)
+                        turfMaps.append(entry["regular"]["maps"][0]["nameEN"].stringValue)
+                        turfMaps.append(entry["regular"]["maps"][1]["nameEN"].stringValue)
+                        rankedMaps.append(entry["ranked"]["maps"][0]["nameEN"].stringValue)
+                        rankedMaps.append(entry["ranked"]["maps"][1]["nameEN"].stringValue)
+                        rankedModes.append(entry["ranked"]["rulesEN"].stringValue)
                     }
                     
-                    startTimes[2] = 0
-                    endTimes[2] = 0
-                    turfMaps[4] = ""
-                    turfMaps[5] = ""
-                    rankedMaps[4] = ""
-                    rankedMaps[5] = ""
-                    rankedModes[2] = ""
-                }
-                
-                // All data is out of date
-                if startTimes[0] == 0 {
-                    completion(JSON(["errorCode" : 503, "errorMessage" : "Splatoon.ink data is not available"]))
-                } else {
-                    let dataDict = ["startTimes" : startTimes, "endTimes" : endTimes, "turfMaps" : turfMaps, "rankedMaps" : rankedMaps, "rankedModes" : rankedModes]
-                    completion(JSON(dataDict))
+                    // Check for outdatedness
+                    while endTimes[0] != 0 && NSDate().compare(NSDate(timeIntervalSince1970: endTimes[0])) == .OrderedDescending {
+                        for x in 0...1 {
+                            startTimes[x] = startTimes[x + 1]
+                            endTimes[x] = endTimes[x + 1]
+                            turfMaps[x * 2] = turfMaps[(x + 1) * 2]
+                            turfMaps[x * 2 + 1] = turfMaps[(x + 1) * 2 + 1]
+                            rankedMaps[x * 2] = rankedMaps[(x + 1) * 2]
+                            rankedMaps[x * 2 + 1] = rankedMaps[(x + 1) * 2 + 1]
+                            rankedModes[x] = rankedModes[x + 1]
+                        }
+                        
+                        startTimes[2] = 0
+                        endTimes[2] = 0
+                        turfMaps[4] = ""
+                        turfMaps[5] = ""
+                        rankedMaps[4] = ""
+                        rankedMaps[5] = ""
+                        rankedModes[2] = ""
+                    }
+                    
+                    // All data is out of date
+                    if startTimes[0] == 0 {
+                        completion(JSON(["errorCode" : 503, "errorMessage" : "Splatoon.ink data is not available"]))
+                    } else {
+                        let dataDict = ["startTimes" : startTimes, "endTimes" : endTimes, "turfMaps" : turfMaps, "rankedMaps" : rankedMaps, "rankedModes" : rankedModes, "splatfest" : splatfest]
+                        completion(JSON(dataDict))
+                    }
                 }
             }
     }

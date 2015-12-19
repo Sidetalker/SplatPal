@@ -18,7 +18,7 @@ public class SplatAppStyle : NSObject {
 
     private struct Cache {
         static let brandPressedFill: UIColor = UIColor(red: 0.911, green: 0.911, blue: 0.911, alpha: 1.000)
-        static let loggedOut: UIColor = UIColor(red: 1.000, green: 0.424, blue: 0.424, alpha: 1.000)
+        static let loggedOut: UIColor = UIColor(red: 0.842, green: 0.423, blue: 0.423, alpha: 1.000)
         static let loggedIn: UIColor = UIColor(red: 0.524, green: 0.802, blue: 0.252, alpha: 1.000)
         static let shadowSelected: NSShadow = NSShadow(color: UIColor.blackColor(), offset: CGSizeMake(0.1, -0.1), blurRadius: 2)
         static let shadowUnselected: NSShadow = NSShadow(color: UIColor.blackColor(), offset: CGSizeMake(0.1, -0.1), blurRadius: 5)
