@@ -77,10 +77,11 @@ func getDocumentsDirectory() -> NSString {
 
 func loadNotifications() -> JSON {
     let path = getDocumentsDirectory().stringByAppendingPathComponent("notifications.json")
-    var notificationJSON = JSON([:])
+    var notificationJSON = JSON([])
     
     if let jsonData = NSData(contentsOfFile: path) {
         notificationJSON = JSON(data: jsonData)
+        log.debug("Notifications loaded")
     }
     else {
         saveNotifications(notificationJSON)
@@ -94,6 +95,7 @@ func saveNotifications(notificationJSON: JSON) -> Bool {
     
     do {
         try notificationJSON.rawString()!.writeToFile(path, atomically: true, encoding: NSUTF8StringEncoding)
+        log.debug("Notifications saved")
         return true
     } catch {
         log.error("Could not write notification file")

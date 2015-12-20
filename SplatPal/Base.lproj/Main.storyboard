@@ -1515,7 +1515,7 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellShowHide" id="Fab-ag-LEW">
-                                <rect key="frame" x="0.0" y="49.5" width="400" height="44"/>
+                                <rect key="frame" x="0.0" y="113.5" width="400" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fab-ag-LEW" id="DDi-01-k1h">
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="43.5"/>
@@ -1535,7 +1535,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="cellMapText" textLabel="ZVP-2u-PKQ" style="IBUITableViewCellStyleDefault" id="sE2-In-tBh">
-                                <rect key="frame" x="0.0" y="93.5" width="400" height="44"/>
+                                <rect key="frame" x="0.0" y="157.5" width="400" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sE2-In-tBh" id="TAf-jN-xOp">
                                     <rect key="frame" x="0.0" y="0.0" width="361" height="43.5"/>
@@ -1552,7 +1552,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="cellMapImage" rowHeight="210" id="7D0-5p-W2f">
-                                <rect key="frame" x="0.0" y="137.5" width="400" height="210"/>
+                                <rect key="frame" x="0.0" y="201.5" width="400" height="210"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7D0-5p-W2f" id="t4N-P7-28o">
                                     <rect key="frame" x="0.0" y="0.0" width="361" height="209.5"/>
@@ -1595,10 +1595,56 @@
                     </tableView>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="500"/>
+                    <connections>
+                        <segue destination="XUa-SR-4eC" kind="show" identifier="segueSelectTimes" id="kWe-pm-Add"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zzv-OO-5ho" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-877" y="1298"/>
+            <point key="canvasLocation" x="131" y="1713"/>
+        </scene>
+        <!--Notification Time Table View Controller-->
+        <scene sceneID="56q-Ee-Y00">
+            <objects>
+                <tableViewController id="XUa-SR-4eC" customClass="NotificationTimeTableViewController" customModule="SplatPal" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="fOF-yr-oAl">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="250"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="XUa-SR-4eC" id="bGm-KJ-iwz"/>
+                            <outlet property="delegate" destination="XUa-SR-4eC" id="S8G-8G-1Sz"/>
+                        </connections>
+                    </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="250"/>
+                    <connections>
+                        <segue destination="HQG-8g-Zfr" kind="show" identifier="segueReviewNotification" id="OgH-hL-Seq"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ay-zJ-fPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="626" y="1588"/>
+        </scene>
+        <!--Review Notification Table View Controller-->
+        <scene sceneID="gSh-wf-UeS">
+            <objects>
+                <tableViewController id="HQG-8g-Zfr" customClass="ReviewNotificationTableViewController" customModule="SplatPal" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="vf4-b7-dHD">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="250"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="HQG-8g-Zfr" id="hpO-je-ISt"/>
+                            <outlet property="delegate" destination="HQG-8g-Zfr" id="h8G-w3-TgC"/>
+                        </connections>
+                    </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="250"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jzi-fj-ECw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="626" y="1986"/>
         </scene>
         <!--Notification Table View Controller-->
         <scene sceneID="To7-sU-ySu">
@@ -1638,12 +1684,15 @@
                     </tableView>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="600"/>
+                    <connections>
+                        <segue destination="a4y-oi-AVs" kind="presentation" identifier="segueNewNotification" id="a5a-AR-30h"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qJd-F5-wBN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-877" y="1998"/>
+            <point key="canvasLocation" x="-877" y="1048"/>
         </scene>
-        <!--Mode Settings Table View Controller-->
+        <!--Modes-->
         <scene sceneID="SBq-rh-YIb">
             <objects>
                 <tableViewController id="kWz-Bu-yUJ" customClass="ModeSettingsTableViewController" customModule="SplatPal" customModuleProvider="target" sceneMemberID="viewController">
@@ -1656,12 +1705,24 @@
                             <outlet property="delegate" destination="kWz-Bu-yUJ" id="hE8-aI-f8B"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Modes" id="tmE-7r-YRQ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="rqn-hw-L6M">
+                            <connections>
+                                <action selector="cancelTapped:" destination="kWz-Bu-yUJ" id="a7n-Mf-02l"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Next" style="done" id="dD5-xf-F1k">
+                            <connections>
+                                <segue destination="NfT-xV-BG5" kind="show" identifier="segueSelectMaps" id="BYo-Vg-JgL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="250"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mej-s0-YMI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-877" y="873"/>
+            <point key="canvasLocation" x="-368" y="1588"/>
         </scene>
         <!--Settings-->
         <scene sceneID="ICL-cW-p1o">
@@ -1681,6 +1742,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NfN-03-P2i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-977" y="316"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1vS-zQ-HFt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a4y-oi-AVs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="400"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eC9-z2-XzN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kWz-Bu-yUJ" kind="relationship" relationship="rootViewController" id="Wtf-3K-d6C"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Znn-LB-gns" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-877" y="1663"/>
         </scene>
     </scenes>
     <resources>
