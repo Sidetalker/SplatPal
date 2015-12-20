@@ -40,7 +40,7 @@ class NotificationTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 1 {
-            return notifications.count == 0 ? "No notifications added" : "Swipe left to edit"
+            return notifications.count == 0 ? "No notifications added" : "Tap to toggle - Swipe left to edit"
         }
         
         return nil
@@ -78,6 +78,10 @@ class NotificationTableViewController: UITableViewController {
         
         if indexPath == NSIndexPath(forRow: 0, inSection: 0) {
             self.performSegueWithIdentifier("segueNewNotification", sender: self)
+        } else {
+            notifications[indexPath.row].toggleEnabled()
+            saveNotifications(notifications)
+            settingsTableVC?.scheduleNotifications()
         }
     }
     
@@ -99,9 +103,7 @@ class Notification {
     var enabled = true
     var name = ""
     
-    init() {
-        enabled = false
-    }
+    init() { }
     
     init(data: JSON) {
         for (x, mode) in data["modes"].arrayValue.enumerate() { modes[x] = mode.boolValue }
@@ -121,6 +123,10 @@ class Notification {
         rep["name"] = JSON(name)
         
         return rep
+    }
+    
+    func toggleEnabled() {
+        enabled = !enabled
     }
     
     func hasMode(modeIndex: Int) -> Bool {
@@ -509,6 +515,7 @@ class ReviewNotificationTableViewController: UITableViewController {
             if getNameAlert.textFields![0].text != "" {
                 self.notification.name = getNameAlert.textFields![0].text!
                 self.notificationTableVC?.addNotification(self.notification)
+                self.dismissViewControllerAnimated(true, completion: nil)
             } else {
                 let tryAgainAlert = UIAlertController(title: "Error creating notification", message: "Your notification must have a name!", preferredStyle: .Alert)
                 tryAgainAlert.addAction(UIAlertAction(title: "Oh, OK!", style: .Default, handler: { _ in

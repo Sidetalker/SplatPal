@@ -80,7 +80,7 @@ func loadNotifications() -> [Notification] {
     var notifications = [Notification]()
     
     if let jsonData = NSData(contentsOfFile: path) {
-        for data in JSON(jsonData).arrayValue {
+        for data in JSON(data: jsonData).arrayValue {
             notifications.append(Notification(data: data))
         }
         
