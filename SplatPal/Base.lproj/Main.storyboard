@@ -1648,7 +1648,7 @@
         <!--Review Notification Table View Controller-->
         <scene sceneID="gSh-wf-UeS">
             <objects>
-                <tableViewController id="HQG-8g-Zfr" customClass="ReviewNotificationTableViewController" customModule="SplatPal" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="reviewNotification" id="HQG-8g-Zfr" customClass="ReviewNotificationTableViewController" customModule="SplatPal" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="vf4-b7-dHD">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="250"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1713,7 +1713,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellNotification" textLabel="mO7-Br-i3r" style="IBUITableViewCellStyleDefault" id="eea-9r-rgU">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellNotification" textLabel="mO7-Br-i3r" style="IBUITableViewCellStyleDefault" id="eea-9r-rgU" customClass="MGSwipeTableCell">
                                 <rect key="frame" x="0.0" y="157.5" width="400" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eea-9r-rgU" id="yzv-Cv-Y0s">

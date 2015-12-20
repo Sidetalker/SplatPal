@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import MGSwipeTableCell
 
 class NotificationTableViewController: UITableViewController {
     var settingsTableVC: SettingsTableViewController?
@@ -27,11 +28,13 @@ class NotificationTableViewController: UITableViewController {
         tableView.beginUpdates()
         
         notifications.append(notification)
-        tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: notifications.count - 1, inSection: 1)], withRowAnimation: .Automatic)
         
+        tableView.reloadSections(NSIndexSet(index: 0), withRowAnimation: .Automatic)
+        tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: notifications.count - 1, inSection: 1)], withRowAnimation: .Automatic)
         tableView.endUpdates()
         
         saveNotifications(notifications)
+        settingsTableVC?.scheduleNotifications()
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -40,7 +43,7 @@ class NotificationTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 1 {
-            return notifications.count == 0 ? "No notifications added" : "Tap to toggle - Swipe left to edit"
+            return notifications.count == 0 ? "No notifications added" : "Tap to toggle - Swipe to view detail"
         }
         
         return nil
@@ -65,9 +68,46 @@ class NotificationTableViewController: UITableViewController {
         if indexPath.section == 0 {
             return tableView.dequeueReusableCellWithIdentifier("cellCreateNew", forIndexPath: indexPath)
         } else {
-            let cell = tableView.dequeueReusableCellWithIdentifier("cellNotification", forIndexPath: indexPath)
+            let cell = tableView.dequeueReusableCellWithIdentifier("cellNotification", forIndexPath: indexPath) as! MGSwipeTableCell
             cell.textLabel!.text = notifications[indexPath.row].name
             cell.accessoryType = notifications[indexPath.row].enabled ? .Checkmark : .None
+            
+            let expansionSettings = MGSwipeExpansionSettings()
+            let editSwipe = MGSwipeButton(title: "Details", backgroundColor: UIColor.brownColor()) { _ in
+                let reviewTVC = self.storyboard?.instantiateViewControllerWithIdentifier("reviewNotification") as! ReviewNotificationTableViewController
+                reviewTVC.notification = self.notifications[indexPath.row]
+                reviewTVC.navigationItem.rightBarButtonItem = nil
+                self.navigationController?.pushViewController(reviewTVC, animated: true)
+                
+                return true
+            }
+            let deleteSwipe = MGSwipeButton(title: "Delete", backgroundColor: UIColor.redColor()) { _ in
+                tableView.beginUpdates()
+                
+                self.notifications.removeAtIndex(indexPath.row)
+                saveNotifications(self.notifications)
+                
+                var reloads = [NSIndexPath]()
+                
+                for x in 0...self.notifications.count {
+                    let curPath = NSIndexPath(forRow: x, inSection: 1)
+                    if curPath != indexPath { reloads.append(curPath) }
+                }
+                
+                tableView.reloadRowsAtIndexPaths(reloads, withRowAnimation: .None)
+                tableView.reloadSections(NSIndexSet(index: 1), withRowAnimation: .Automatic)
+                tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+                tableView.endUpdates()
+                
+                
+                return true
+            }
+            
+            expansionSettings.buttonIndex = 0
+            expansionSettings.fillOnTrigger = true
+            expansionSettings.threshold = 1.2
+            cell.rightButtons = [editSwipe, deleteSwipe]
+            cell.rightExpansion = expansionSettings
             
             return cell
         }
@@ -79,9 +119,14 @@ class NotificationTableViewController: UITableViewController {
         if indexPath == NSIndexPath(forRow: 0, inSection: 0) {
             self.performSegueWithIdentifier("segueNewNotification", sender: self)
         } else {
+            tableView.beginUpdates()
+            
             notifications[indexPath.row].toggleEnabled()
             saveNotifications(notifications)
             settingsTableVC?.scheduleNotifications()
+            
+            tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+            tableView.endUpdates()
         }
     }
     
@@ -123,6 +168,27 @@ class Notification {
         rep["name"] = JSON(name)
         
         return rep
+    }
+    
+    func containsMatch(match: Match) -> Bool {
+        var modeMatch = false
+        var mapMatch = false
+        
+        for (x, mode) in modes.enumerate() {
+            if mode && modeData[x] == match.mode {
+                modeMatch = true
+                break
+            }
+        }
+        
+        for (x, map) in maps.enumerate() {
+            if map && mapData[x] == match.map {
+                mapMatch = true
+                break
+            }
+        }
+        
+        return modeMatch && mapMatch
     }
     
     func toggleEnabled() {
@@ -195,12 +261,42 @@ class Notification {
         return selectedTimes
     }
     
+    func getTimeNumbers() -> [Int] {
+        var selectedTimes = [Int]()
+        
+        for (x, time) in times.enumerate() {
+            if time { selectedTimes.append(timeVals[x]) }
+        }
+        
+        return selectedTimes
+    }
+    
+    func getTimeTextMid() -> [String] {
+        var selectedTimes = [String]()
+        
+        for (x, time) in times.enumerate() {
+            if time { selectedTimes.append(timeTextMid(x)) }
+        }
+        
+        return selectedTimes
+    }
+    
     func timeText(timeIndex: Int) -> String {
         let time = timeVals[timeIndex]
         
         if time == 0 { return "When it happens" }
         else if time < 60 { return "\(time) minutes before" }
         else if time >= 60 { return "\(time / 60) hour\(time / 60 > 1 ? "s" : "") before" }
+        
+        return "???"
+    }
+    
+    func timeTextMid(timeIndex: Int) -> String {
+        let time = timeVals[timeIndex]
+        
+        if time == 0 { return "right now" }
+        else if time < 60 { return "in \(time) minutes" }
+        else if time >= 60 { return "in \(time / 60) hour\(time / 60 > 1 ? "s" : "")" }
         
         return "???"
     }
