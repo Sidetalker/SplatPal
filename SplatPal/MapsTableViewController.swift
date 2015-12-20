@@ -286,7 +286,7 @@ class MapsTableViewController: UITableViewController {
     
     func scheduleNotifications() {
         var matches = [Match]()
-        let prefs = NSUserDefaults.standardUserDefaults()
+        let notifications = loadNotifications()
         
         // Create Match items for each upcoming map
         for x in 2...5 {
@@ -303,20 +303,26 @@ class MapsTableViewController: UITableViewController {
         UIApplication.sharedApplication().cancelAllLocalNotifications()
         
         // Schedule notifications as needed
-        for match in matches {
-            let mapPref = prefs.boolForKey("notify\(match.map.removeWhitespace())")
-            let modePref = prefs.boolForKey("notify\(match.mode.removeWhitespace())")
-            
-            if !mapPref || !modePref { continue }
-            
-            let notification = UILocalNotification()
-            notification.alertBody = "\(match.map) is up on \(match.mode)!"
-            notification.alertAction = "splat"
-            notification.fireDate = match.timeDate
-            notification.soundName = UILocalNotificationDefaultSoundName
-            notification.category = "RotationNotification"
-            
-            UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        for notification in notifications {
+            for match in matches {
+                if notification.containsMatch(match) {
+                    let times = notification.getTimeNumbers()
+                    let timeTexts = notification.getTimeTextMid()
+                    
+                    for (x, time) in times.enumerate() {
+                        let localNotification = UILocalNotification()
+                        let notificationText = "\(match.map) is up on \(match.mode) \(timeTexts[x]) (\(notification.name))"
+                        localNotification.alertBody = notificationText
+                        localNotification.alertAction = "splat"
+                        localNotification.fireDate = match.timeDate.dateByAddingTimeInterval(NSTimeInterval(time * -60))
+                        localNotification.soundName = UILocalNotificationDefaultSoundName
+                        localNotification.category = "RotationNotification"
+                        
+                        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+                        log.debug("Created Notification: \(notificationText)")
+                    }
+                }
+            }
         }
     }
 }
