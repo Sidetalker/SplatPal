@@ -74,7 +74,7 @@ class NotificationTableViewController: UITableViewController {
     }
 }
 
-class NotificationCombo {
+class Notification {
     let timeVals = [0, 5, 10, 15, 30, 60, 120, 180]
     
     var modes = [Bool](count: modeData.count, repeatedValue: false)
@@ -160,12 +160,12 @@ class NotificationCombo {
 
 class ModeSettingsTableViewController: UITableViewController {
     var notificationTableVC: NotificationTableViewController?
-    var notification: NotificationCombo!
+    var notification: Notification!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if notification == nil { notification = NotificationCombo() }
+        if notification == nil { notification = Notification() }
         self.navigationItem.rightBarButtonItem?.enabled = notification.anyModeSelected()
     }
     
@@ -219,13 +219,13 @@ class ModeSettingsTableViewController: UITableViewController {
 
 class MapSettingsTableViewController: UITableViewController {
     var notificationTableVC: NotificationTableViewController?
-    var notification: NotificationCombo!
+    var notification: Notification!
     var showImages = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if notification == nil { notification = NotificationCombo() }
+        if notification == nil { notification = Notification() }
         self.navigationItem.rightBarButtonItem?.enabled = notification.anyMapSelected()
         tableView.estimatedRowHeight = 44
     }
@@ -348,12 +348,12 @@ class MapSettingsTableViewController: UITableViewController {
 
 class NotificationTimeTableViewController: UITableViewController {
     var notificationTableVC: NotificationTableViewController?
-    var notification: NotificationCombo!
+    var notification: Notification!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if notification == nil { notification = NotificationCombo() }
+        if notification == nil { notification = Notification() }
         self.navigationItem.rightBarButtonItem?.enabled = notification.anyTimeSelected()
     }
     
@@ -406,12 +406,12 @@ class NotificationTimeTableViewController: UITableViewController {
 
 class ReviewNotificationTableViewController: UITableViewController {
     var notificationTableVC: NotificationTableViewController?
-    var notification: NotificationCombo!
+    var notification: Notification!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if notification == nil { notification = NotificationCombo() }
+        if notification == nil { notification = Notification() }
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
