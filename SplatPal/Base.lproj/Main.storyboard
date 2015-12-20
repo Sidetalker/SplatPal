@@ -1233,7 +1233,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="367" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Game Mode Selection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aYN-RZ-pFP">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Configure Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aYN-RZ-pFP">
                                                     <rect key="frame" x="15" y="0.0" width="350" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -1243,27 +1243,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="kWz-Bu-yUJ" kind="show" identifier="segueModeNotificationSettings" id="mhy-Wk-xqI"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="uZ4-ic-YHj" style="IBUITableViewCellStyleDefault" id="b3u-cr-jiK">
-                                        <rect key="frame" x="0.0" y="201.5" width="400" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b3u-cr-jiK" id="azQ-dS-dGv">
-                                            <rect key="frame" x="0.0" y="0.0" width="367" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Map Selection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uZ4-ic-YHj">
-                                                    <rect key="frame" x="15" y="0.0" width="350" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="NfT-xV-BG5" kind="show" identifier="segueMapNotificationSettings" id="GNS-p7-na2"/>
+                                            <segue destination="OxM-pr-PAx" kind="show" identifier="segueConfigureNotifications" id="mcb-BK-86l"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -1271,7 +1251,7 @@
                             <tableViewSection headerTitle="SplatNet" id="Bxn-xt-2k2">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="Mk1-Bb-rpq">
-                                        <rect key="frame" x="0.0" y="295.5" width="400" height="44"/>
+                                        <rect key="frame" x="0.0" y="251.5" width="400" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mk1-Bb-rpq" id="uyz-vE-Apg">
                                             <rect key="frame" x="0.0" y="0.0" width="400" height="43.5"/>
@@ -1292,7 +1272,7 @@
                                         <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="oj4-XC-by5" style="IBUITableViewCellStyleDefault" id="rpe-mn-XFu">
-                                        <rect key="frame" x="0.0" y="339.5" width="400" height="44"/>
+                                        <rect key="frame" x="0.0" y="295.5" width="400" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rpe-mn-XFu" id="cnC-QU-pMI">
                                             <rect key="frame" x="0.0" y="0.0" width="367" height="43.5"/>
@@ -1323,13 +1303,11 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="800"/>
                     <connections>
-                        <outlet property="cellGameType" destination="xQZ-9j-jWH" id="09z-jI-pcI"/>
                         <outlet property="cellLoginStatus" destination="Mk1-Bb-rpq" id="Aee-ku-Ej7"/>
-                        <outlet property="cellMapSelection" destination="b3u-cr-jiK" id="fcJ-io-Ats"/>
+                        <outlet property="cellNotificationConfig" destination="xQZ-9j-jWH" id="H0z-Wo-rja"/>
                         <outlet property="enableNotificationsIndent" destination="jgH-fr-wdn" id="n8h-Le-Jnl"/>
                         <outlet property="lblLoginStatus" destination="LFz-mV-1TQ" id="jjh-fd-xXr"/>
-                        <outlet property="lblMapSelection" destination="uZ4-ic-YHj" id="yfx-8p-qbb"/>
-                        <outlet property="lblModeSelection" destination="aYN-RZ-pFP" id="bjy-U6-qpu"/>
+                        <outlet property="lblNotificationConfig" destination="aYN-RZ-pFP" id="xe3-aX-bCB"/>
                         <outlet property="swtMapNotifications" destination="kc3-Ja-Zx7" id="1du-Fp-YH3"/>
                     </connections>
                 </tableViewController>
@@ -1525,19 +1503,19 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RCj-PF-dQn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1376" y="1984"/>
+            <point key="canvasLocation" x="-1376" y="1998"/>
         </scene>
         <!--Map Settings Table View Controller-->
         <scene sceneID="iKN-nl-znr">
             <objects>
                 <tableViewController id="NfT-xV-BG5" customClass="MapSettingsTableViewController" customModule="SplatPal" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="1T1-KC-13r">
-                        <rect key="frame" x="0.0" y="0.0" width="400" height="451"/>
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellShowHide" id="Fab-ag-LEW">
-                                <rect key="frame" x="0.0" y="113.5" width="400" height="44"/>
+                                <rect key="frame" x="0.0" y="49.5" width="400" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fab-ag-LEW" id="DDi-01-k1h">
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="43.5"/>
@@ -1557,7 +1535,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="cellMapText" textLabel="ZVP-2u-PKQ" style="IBUITableViewCellStyleDefault" id="sE2-In-tBh">
-                                <rect key="frame" x="0.0" y="157.5" width="400" height="44"/>
+                                <rect key="frame" x="0.0" y="93.5" width="400" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sE2-In-tBh" id="TAf-jN-xOp">
                                     <rect key="frame" x="0.0" y="0.0" width="361" height="43.5"/>
@@ -1574,7 +1552,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="cellMapImage" rowHeight="210" id="7D0-5p-W2f">
-                                <rect key="frame" x="0.0" y="201.5" width="400" height="210"/>
+                                <rect key="frame" x="0.0" y="137.5" width="400" height="210"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7D0-5p-W2f" id="t4N-P7-28o">
                                     <rect key="frame" x="0.0" y="0.0" width="361" height="209.5"/>
@@ -1622,12 +1600,55 @@
             </objects>
             <point key="canvasLocation" x="-877" y="1298"/>
         </scene>
+        <!--Notification Table View Controller-->
+        <scene sceneID="To7-sU-ySu">
+            <objects>
+                <tableViewController id="OxM-pr-PAx" customClass="NotificationTableViewController" customModule="SplatPal" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="DRk-4W-ABC">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellCreateNew" id="YYi-H1-7nC">
+                                <rect key="frame" x="0.0" y="113.5" width="400" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YYi-H1-7nC" id="Rb1-Sf-EWl">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create New Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40O-Xn-Us4">
+                                            <rect key="frame" x="109.5" y="12" width="182" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="40O-Xn-Us4" firstAttribute="centerX" secondItem="Rb1-Sf-EWl" secondAttribute="centerX" id="Pch-ZE-wuL"/>
+                                        <constraint firstItem="40O-Xn-Us4" firstAttribute="centerY" secondItem="Rb1-Sf-EWl" secondAttribute="centerY" id="op4-TA-ZzP"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="OxM-pr-PAx" id="Mep-8M-JVi"/>
+                            <outlet property="delegate" destination="OxM-pr-PAx" id="9tH-SM-MVi"/>
+                        </connections>
+                    </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="600"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qJd-F5-wBN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-877" y="1998"/>
+        </scene>
         <!--Mode Settings Table View Controller-->
         <scene sceneID="SBq-rh-YIb">
             <objects>
                 <tableViewController id="kWz-Bu-yUJ" customClass="ModeSettingsTableViewController" customModule="SplatPal" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="HMn-dt-utm">
-                        <rect key="frame" x="0.0" y="0.0" width="400" height="201"/>
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="250"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <connections>

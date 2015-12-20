@@ -10,11 +10,9 @@ import UIKit
 
 class SettingsTableViewController: UITableViewController, UIApplicationDelegate {
     @IBOutlet weak var swtMapNotifications: UISwitch!
-    @IBOutlet weak var lblMapSelection: UILabel!
-    @IBOutlet weak var lblModeSelection: UILabel!
+    @IBOutlet weak var lblNotificationConfig: UILabel!
     @IBOutlet weak var lblLoginStatus: UILabel!
-    @IBOutlet weak var cellGameType: UITableViewCell!
-    @IBOutlet weak var cellMapSelection: UITableViewCell!
+    @IBOutlet weak var cellNotificationConfig: UITableViewCell!
     @IBOutlet weak var cellLoginStatus: UITableViewCell!
     @IBOutlet weak var enableNotificationsIndent: NSLayoutConstraint!
     
@@ -49,6 +47,10 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
             let destVC = segue.destinationViewController as! ModeSettingsTableViewController
             destVC.settingsTableVC = self
         }
+        else if segue.identifier == "segueConfigureNotifications" {
+            let destVC = segue.destinationViewController as! NotificationTableViewController
+            destVC.settingsTableVC = self
+        }
     }
     
     func toggleMapNotificationUI(on: Bool) {
@@ -75,10 +77,8 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
         }
         
         prefs.setBool(on, forKey: "mapNotificationsOn")
-        lblMapSelection.enabled = on
-        lblModeSelection.enabled = on
-        cellGameType.userInteractionEnabled = on
-        cellMapSelection.userInteractionEnabled = on
+        lblNotificationConfig.enabled = on
+        cellNotificationConfig.userInteractionEnabled = on
     }
     
     func localNotificationsStateUpdated(notification: NSNotification) {
@@ -221,8 +221,6 @@ class NNIDSettingsTableViewController: UITableViewController, UITextFieldDelegat
                 self.updateUI(true)
             } else {
                 log.error("Login Error: \(error!.localizedDescription)")
-                self.nnid.updateCredentials("", password: "")
-                self.updateUI(false)
                 
                 let alert = UIAlertController(title: "Login Error", message: error!.localizedDescription, preferredStyle: .Alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))

@@ -69,6 +69,40 @@ extension Array {
     }
 }
 
+func getDocumentsDirectory() -> NSString {
+    let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+    let documentsDirectory = paths[0]
+    return documentsDirectory
+}
+
+func loadNotifications() -> JSON {
+    let path = getDocumentsDirectory().stringByAppendingPathComponent("notifications.json")
+    var notificationJSON = JSON([:])
+    
+    if let jsonData = NSData(contentsOfFile: path) {
+        notificationJSON = JSON(data: jsonData)
+    }
+    else {
+        saveNotifications(notificationJSON)
+    }
+    
+    return notificationJSON
+}
+
+func saveNotifications(notificationJSON: JSON) -> Bool {
+    let path = getDocumentsDirectory().stringByAppendingPathComponent("notifications.json")
+    
+    do {
+        try notificationJSON.rawString()!.writeToFile(path, atomically: true, encoding: NSUTF8StringEncoding)
+        return true
+    } catch {
+        log.error("Could not write notification file")
+        log.error("File: \(path)")
+        log.error("Contents: \(notificationJSON.rawString()!)")
+        return false
+    }
+}
+
 func loginNNID(completion: (NSError?) -> ()) {
     let nnid = NNID.sharedInstance
     nnid.updateCookie("")

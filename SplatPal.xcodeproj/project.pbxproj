@@ -11,6 +11,7 @@
 		0A0F6FF01C261FAC00206883 /* itemBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0F6FED1C261FAC00206883 /* itemBG@2x.png */; };
 		0A0F6FF11C261FAC00206883 /* itemBG@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0F6FEE1C261FAC00206883 /* itemBG@3x.png */; };
 		0A0F6FF31C27105900206883 /* ProfileGearView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0F6FF21C27105900206883 /* ProfileGearView.xib */; };
+		0A3503ED1C27270C009C6A48 /* NotificationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3503EC1C27270C009C6A48 /* NotificationsTableViewController.swift */; };
 		0A4BF6AA1C22069700BB4834 /* settingsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A71C22069700BB4834 /* settingsIcon.png */; };
 		0A4BF6AB1C22069700BB4834 /* settingsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A81C22069700BB4834 /* settingsIcon@2x.png */; };
 		0A4BF6AC1C22069700BB4834 /* settingsIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A91C22069700BB4834 /* settingsIcon@3x.png */; };
@@ -397,6 +398,7 @@
 		0A0F6FED1C261FAC00206883 /* itemBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "itemBG@2x.png"; path = "Images/itemBG@2x.png"; sourceTree = "<group>"; };
 		0A0F6FEE1C261FAC00206883 /* itemBG@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "itemBG@3x.png"; path = "Images/itemBG@3x.png"; sourceTree = "<group>"; };
 		0A0F6FF21C27105900206883 /* ProfileGearView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileGearView.xib; sourceTree = "<group>"; };
+		0A3503EC1C27270C009C6A48 /* NotificationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsTableViewController.swift; sourceTree = "<group>"; };
 		0A4BF6A71C22069700BB4834 /* settingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settingsIcon.png; path = Images/settingsIcon.png; sourceTree = "<group>"; };
 		0A4BF6A81C22069700BB4834 /* settingsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settingsIcon@2x.png"; path = "Images/settingsIcon@2x.png"; sourceTree = "<group>"; };
 		0A4BF6A91C22069700BB4834 /* settingsIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settingsIcon@3x.png"; path = "Images/settingsIcon@3x.png"; sourceTree = "<group>"; };
@@ -851,7 +853,6 @@
 		0AC607871C189B36006EECA7 /* SplatPal */ = {
 			isa = PBXGroup;
 			children = (
-				0A0F6FF21C27105900206883 /* ProfileGearView.xib */,
 				0AC607C01C189ED4006EECA7 /* Resources */,
 				0AA23E031C1B6DB90002BCC2 /* SplatAppStyle.swift */,
 				0AC607881C189B36006EECA7 /* AppDelegate.swift */,
@@ -862,8 +863,10 @@
 				0ADF9AA41C1DF135002D7E81 /* GearGuideViewController.swift */,
 				0AA23E411C1B78450002BCC2 /* BetaViewController.swift */,
 				0A4BF6AD1C22201800BB4834 /* SettingsTableViewController.swift */,
+				0A3503EC1C27270C009C6A48 /* NotificationsTableViewController.swift */,
 				0AA23E011C1B6DB90002BCC2 /* IconSelectionView.swift */,
 				0AA23E021C1B6DB90002BCC2 /* IconSelectionView.xib */,
+				0A0F6FF21C27105900206883 /* ProfileGearView.xib */,
 				0AC6078E1C189B36006EECA7 /* Main.storyboard */,
 				0AC607931C189B36006EECA7 /* LaunchScreen.storyboard */,
 			);
@@ -1832,6 +1835,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3503ED1C27270C009C6A48 /* NotificationsTableViewController.swift in Sources */,
 				0AA23E051C1B6DB90002BCC2 /* IconSelectionView.swift in Sources */,
 				0AC607B91C189BD8006EECA7 /* MapsTableViewController.swift in Sources */,
 				0AC607891C189B36006EECA7 /* AppDelegate.swift in Sources */,
