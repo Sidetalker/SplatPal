@@ -1043,129 +1043,6 @@
             </objects>
             <point key="canvasLocation" x="1149" y="259"/>
         </scene>
-        <!--Profile-->
-        <scene sceneID="Fjb-FH-b9j">
-            <objects>
-                <viewController id="yDz-XL-Lfa" customClass="ProfileViewController" customModule="SplatPal" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="JM0-aO-RR7"/>
-                        <viewControllerLayoutGuide type="bottom" id="rEg-IZ-2PL"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mDf-xT-43d">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJT-Zl-HG6">
-                                <rect key="frame" x="0.0" y="28" width="600" height="572"/>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="uJT-Zl-HG6" firstAttribute="top" secondItem="JM0-aO-RR7" secondAttribute="bottom" constant="8" id="EA5-RV-cGk"/>
-                            <constraint firstItem="rEg-IZ-2PL" firstAttribute="top" secondItem="uJT-Zl-HG6" secondAttribute="bottom" id="Tlf-Bu-dea"/>
-                            <constraint firstItem="uJT-Zl-HG6" firstAttribute="leading" secondItem="mDf-xT-43d" secondAttribute="leadingMargin" constant="-20" id="iFi-GF-JuC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="uJT-Zl-HG6" secondAttribute="trailing" constant="-20" id="lRQ-cv-kcE"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="squidIcon.png" id="MbL-ks-fe6"/>
-                    <connections>
-                        <outlet property="scrollView" destination="uJT-Zl-HG6" id="TDV-HT-UUC"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Lo-r7-D8O" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="452" y="-1201"/>
-        </scene>
-        <!--Profile Gear View Controller-->
-        <scene sceneID="Csm-9N-goD">
-            <objects>
-                <viewController storyboardIdentifier="profileGear" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FNz-0T-Jx2" customClass="ProfileGearViewController" customModule="SplatPal" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IfF-4G-pLE"/>
-                        <viewControllerLayoutGuide type="bottom" id="DXb-FP-zmo"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="f8r-DC-rnI">
-                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="itemBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="Igs-sG-Yz7">
-                                <rect key="frame" x="24" y="36" width="152" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="152" id="j6z-ek-DGX"/>
-                                    <constraint firstAttribute="height" constant="128" id="vcf-NH-wnc"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gear18KAviators.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Tq-Wu-mkw">
-                                <rect key="frame" x="60" y="60" width="80" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="7NB-b9-NEE"/>
-                                    <constraint firstAttribute="width" secondItem="1Tq-Wu-mkw" secondAttribute="height" multiplier="1:1" id="tjk-Wt-uVy"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abilityBombRangeUp.png" translatesAutoresizingMaskIntoConstraints="NO" id="foG-WA-W9M">
-                                <rect key="frame" x="34" y="139" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="foG-WA-W9M" secondAttribute="height" multiplier="1:1" id="KnL-n5-2z7"/>
-                                    <constraint firstAttribute="width" constant="40" id="shv-C0-WkO"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abilityBombRangeUp.png" translatesAutoresizingMaskIntoConstraints="NO" id="wxA-UT-Dkb">
-                                <rect key="frame" x="80" y="139" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="Rgp-JG-4IB"/>
-                                    <constraint firstAttribute="width" secondItem="wxA-UT-Dkb" secondAttribute="height" multiplier="1:1" id="eyS-YT-dy6"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abilityBombRangeUp.png" translatesAutoresizingMaskIntoConstraints="NO" id="u1u-hJ-QLc">
-                                <rect key="frame" x="126" y="139" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="8JZ-C9-O3D"/>
-                                    <constraint firstAttribute="width" secondItem="u1u-hJ-QLc" secondAttribute="height" multiplier="1:1" id="SDc-E1-frp"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abilityDamageUp.png" translatesAutoresizingMaskIntoConstraints="NO" id="VVX-Xm-S7v">
-                                <rect key="frame" x="151" y="21" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="BQU-2E-fzA"/>
-                                    <constraint firstAttribute="width" secondItem="VVX-Xm-S7v" secondAttribute="height" multiplier="1:1" id="xgc-qH-6m0"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="foG-WA-W9M" firstAttribute="leading" secondItem="Igs-sG-Yz7" secondAttribute="leading" constant="10" id="2O2-zg-6bk"/>
-                            <constraint firstItem="Igs-sG-Yz7" firstAttribute="trailing" secondItem="VVX-Xm-S7v" secondAttribute="leading" constant="25" id="2oW-FP-1t5"/>
-                            <constraint firstItem="Igs-sG-Yz7" firstAttribute="centerX" secondItem="f8r-DC-rnI" secondAttribute="centerX" id="64w-rh-ZSG"/>
-                            <constraint firstItem="Igs-sG-Yz7" firstAttribute="bottom" secondItem="u1u-hJ-QLc" secondAttribute="top" constant="25" id="E9E-Ir-nSV"/>
-                            <constraint firstItem="Igs-sG-Yz7" firstAttribute="trailing" secondItem="u1u-hJ-QLc" secondAttribute="trailing" constant="10" id="LyC-WH-Qml"/>
-                            <constraint firstItem="VVX-Xm-S7v" firstAttribute="width" secondItem="VVX-Xm-S7v" secondAttribute="height" multiplier="1:1" id="PQK-T6-9HM"/>
-                            <constraint firstItem="Igs-sG-Yz7" firstAttribute="centerY" secondItem="f8r-DC-rnI" secondAttribute="centerY" id="QXT-Vw-x0B"/>
-                            <constraint firstItem="Igs-sG-Yz7" firstAttribute="bottom" secondItem="foG-WA-W9M" secondAttribute="top" constant="25" id="Rxw-NM-tfL"/>
-                            <constraint firstItem="1Tq-Wu-mkw" firstAttribute="width" secondItem="1Tq-Wu-mkw" secondAttribute="height" multiplier="1:1" id="dZr-xp-1Js"/>
-                            <constraint firstItem="wxA-UT-Dkb" firstAttribute="width" secondItem="wxA-UT-Dkb" secondAttribute="height" multiplier="1:1" id="lti-go-o9Q"/>
-                            <constraint firstItem="u1u-hJ-QLc" firstAttribute="width" secondItem="u1u-hJ-QLc" secondAttribute="height" multiplier="1:1" id="myi-HE-eKR"/>
-                            <constraint firstItem="VVX-Xm-S7v" firstAttribute="bottom" secondItem="Igs-sG-Yz7" secondAttribute="top" constant="25" id="oYe-LC-goj"/>
-                            <constraint firstItem="wxA-UT-Dkb" firstAttribute="top" secondItem="Igs-sG-Yz7" secondAttribute="bottom" constant="-25" id="ond-d0-GE1"/>
-                            <constraint firstItem="wxA-UT-Dkb" firstAttribute="centerX" secondItem="Igs-sG-Yz7" secondAttribute="centerX" id="w5L-Be-kBQ"/>
-                            <constraint firstItem="1Tq-Wu-mkw" firstAttribute="centerY" secondItem="Igs-sG-Yz7" secondAttribute="centerY" id="xSW-Zb-9pS"/>
-                            <constraint firstItem="foG-WA-W9M" firstAttribute="width" secondItem="foG-WA-W9M" secondAttribute="height" multiplier="1:1" id="yER-Mr-mRK"/>
-                            <constraint firstItem="1Tq-Wu-mkw" firstAttribute="centerX" secondItem="Igs-sG-Yz7" secondAttribute="centerX" id="yHu-7O-dLg"/>
-                        </constraints>
-                    </view>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="200" height="200"/>
-                    <connections>
-                        <outlet property="imgAbilityMain" destination="VVX-Xm-S7v" id="1vh-6N-Pr5"/>
-                        <outlet property="imgAbilitySub1" destination="foG-WA-W9M" id="a7i-A4-xcR"/>
-                        <outlet property="imgAbilitySub2" destination="wxA-UT-Dkb" id="XjY-sE-IjG"/>
-                        <outlet property="imgAbilitySub3" destination="u1u-hJ-QLc" id="H39-JE-62H"/>
-                        <outlet property="imgGear" destination="1Tq-Wu-mkw" id="7Pt-NQ-cNj"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yW9-CE-PvL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="900" y="-1326"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -1787,7 +1664,6 @@
     </scenes>
     <resources>
         <image name="abilityBombRangeUp.png" width="125" height="125"/>
-        <image name="abilityDamageUp.png" width="125" height="125"/>
         <image name="abilityNone.png" width="125" height="125"/>
         <image name="abilityTenacity.png" width="125" height="125"/>
         <image name="backgroundTile.jpg" width="1024" height="1024"/>
@@ -1795,12 +1671,10 @@
         <image name="brandsIcon.png" width="25" height="25"/>
         <image name="clothesIcon.png" width="25" height="25"/>
         <image name="gear18KAviators.png" width="128" height="128"/>
-        <image name="itemBG.png" width="152" height="128"/>
         <image name="mapIcon.png" width="25" height="25"/>
         <image name="rankedBadge.png" width="40" height="40"/>
         <image name="settingsIcon.png" width="25" height="25"/>
         <image name="squid.png" width="150" height="150"/>
-        <image name="squidIcon.png" width="25" height="25"/>
         <image name="star.png" width="30" height="30"/>
     </resources>
 </document>
