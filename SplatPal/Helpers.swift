@@ -98,6 +98,7 @@ func loginNNID(completion: (NSError?) -> ()) {
             let headers = JSON(response!.allHeaderFields).dictionaryObject! as! [String : String]
             
             if let cookie = NSHTTPCookie.cookiesWithResponseHeaderFields(headers, forURL: response!.URL!).last {
+                Alamofire.Manager.sharedInstance.session.configuration.HTTPCookieStorage?.setCookie(cookie)
                 nnid.updateCookie(cookie.value)
                 completion(nil)
             }

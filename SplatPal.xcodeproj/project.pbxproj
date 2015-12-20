@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0F6FEF1C261FAC00206883 /* itemBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0F6FEC1C261FAC00206883 /* itemBG.png */; };
+		0A0F6FF01C261FAC00206883 /* itemBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0F6FED1C261FAC00206883 /* itemBG@2x.png */; };
+		0A0F6FF11C261FAC00206883 /* itemBG@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0F6FEE1C261FAC00206883 /* itemBG@3x.png */; };
 		0A4BF6AA1C22069700BB4834 /* settingsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A71C22069700BB4834 /* settingsIcon.png */; };
 		0A4BF6AB1C22069700BB4834 /* settingsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A81C22069700BB4834 /* settingsIcon@2x.png */; };
 		0A4BF6AC1C22069700BB4834 /* settingsIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A91C22069700BB4834 /* settingsIcon@3x.png */; };
@@ -17,6 +20,7 @@
 		0A4C51961C25F208006ABE9B /* squidIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51931C25F208006ABE9B /* squidIcon.png */; };
 		0A4C51971C25F208006ABE9B /* squidIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51941C25F208006ABE9B /* squidIcon@2x.png */; };
 		0A4C51981C25F208006ABE9B /* squidIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51951C25F208006ABE9B /* squidIcon@3x.png */; };
+		0A4C519A1C25F527006ABE9B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C51991C25F527006ABE9B /* ProfileViewController.swift */; };
 		0A948AC31C1CC4F700CCC4DB /* data.min.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A948AC21C1CC4F700CCC4DB /* data.min.json */; };
 		0AA23DF71C1B6D870002BCC2 /* betaIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DEE1C1B6D870002BCC2 /* betaIcon.png */; };
 		0AA23DF81C1B6D870002BCC2 /* betaIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DEF1C1B6D870002BCC2 /* betaIcon@2x.png */; };
@@ -389,6 +393,9 @@
 
 /* Begin PBXFileReference section */
 		04573E61435B391F9524E97B /* Pods-SplatPal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatPal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplatPal/Pods-SplatPal.debug.xcconfig"; sourceTree = "<group>"; };
+		0A0F6FEC1C261FAC00206883 /* itemBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = itemBG.png; path = Images/itemBG.png; sourceTree = "<group>"; };
+		0A0F6FED1C261FAC00206883 /* itemBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "itemBG@2x.png"; path = "Images/itemBG@2x.png"; sourceTree = "<group>"; };
+		0A0F6FEE1C261FAC00206883 /* itemBG@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "itemBG@3x.png"; path = "Images/itemBG@3x.png"; sourceTree = "<group>"; };
 		0A4BF6A71C22069700BB4834 /* settingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settingsIcon.png; path = Images/settingsIcon.png; sourceTree = "<group>"; };
 		0A4BF6A81C22069700BB4834 /* settingsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settingsIcon@2x.png"; path = "Images/settingsIcon@2x.png"; sourceTree = "<group>"; };
 		0A4BF6A91C22069700BB4834 /* settingsIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settingsIcon@3x.png"; path = "Images/settingsIcon@3x.png"; sourceTree = "<group>"; };
@@ -399,6 +406,7 @@
 		0A4C51931C25F208006ABE9B /* squidIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = squidIcon.png; path = Images/squidIcon.png; sourceTree = "<group>"; };
 		0A4C51941C25F208006ABE9B /* squidIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "squidIcon@2x.png"; path = "Images/squidIcon@2x.png"; sourceTree = "<group>"; };
 		0A4C51951C25F208006ABE9B /* squidIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "squidIcon@3x.png"; path = "Images/squidIcon@3x.png"; sourceTree = "<group>"; };
+		0A4C51991C25F527006ABE9B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
 		0A948AC21C1CC4F700CCC4DB /* data.min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.min.json; path = Resources/data.min.json; sourceTree = "<group>"; };
 		0AA23DEE1C1B6D870002BCC2 /* betaIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = betaIcon.png; path = Images/betaIcon.png; sourceTree = "<group>"; };
 		0AA23DEF1C1B6D870002BCC2 /* betaIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "betaIcon@2x.png"; path = "Images/betaIcon@2x.png"; sourceTree = "<group>"; };
@@ -851,6 +859,7 @@
 				0AC607B81C189BD8006EECA7 /* MapsTableViewController.swift */,
 				0AA23E001C1B6DB90002BCC2 /* BrandGuideViewController.swift */,
 				0ADF9AA41C1DF135002D7E81 /* GearGuideViewController.swift */,
+				0A4C51991C25F527006ABE9B /* ProfileViewController.swift */,
 				0AA23E411C1B78450002BCC2 /* BetaViewController.swift */,
 				0A4BF6AD1C22201800BB4834 /* SettingsTableViewController.swift */,
 				0AA23E011C1B6DB90002BCC2 /* IconSelectionView.swift */,
@@ -921,6 +930,9 @@
 				0AA23E081C1B6E140002BCC2 /* Abilities */,
 				0ADF9A9D1C1D1246002D7E81 /* Bar Icons */,
 				0ADF9AA61C1DF2CD002D7E81 /* Gear */,
+				0A0F6FEC1C261FAC00206883 /* itemBG.png */,
+				0A0F6FED1C261FAC00206883 /* itemBG@2x.png */,
+				0A0F6FEE1C261FAC00206883 /* itemBG@3x.png */,
 				0AB09B381C205F2700A8A682 /* star.png */,
 				0AB09B391C205F2700A8A682 /* star@2x.png */,
 				0AB09B3A1C205F2700A8A682 /* star@3x.png */,
@@ -1555,6 +1567,7 @@
 				0ADF9CA01C1DF2DE002D7E81 /* gearWhiteLayeredLS.png in Resources */,
 				0AA23E271C1B6E280002BCC2 /* abilityDefenceUp.png in Resources */,
 				0A4BF6AB1C22069700BB4834 /* settingsIcon@2x.png in Resources */,
+				0A0F6FEF1C261FAC00206883 /* itemBG.png in Resources */,
 				0ADF9BEB1C1DF2DE002D7E81 /* gearFakeContacts.png in Resources */,
 				0ADF9BBB1C1DF2DE002D7E81 /* gearBaseballJersey.png in Resources */,
 				0AC607951C189B36006EECA7 /* LaunchScreen.storyboard in Resources */,
@@ -1621,6 +1634,7 @@
 				0ADF9C221C1DF2DE002D7E81 /* gearOctoTee.png in Resources */,
 				0ADF9BFD1C1DF2DE002D7E81 /* gearGreenCardigan.png in Resources */,
 				0ADF9C7C1C1DF2DE002D7E81 /* gearStripedBeanie.png in Resources */,
+				0A0F6FF11C261FAC00206883 /* itemBG@3x.png in Resources */,
 				0ADF9C631C1DF2DE002D7E81 /* gearSplashGoggles.png in Resources */,
 				0ADF9C961C1DF2DE002D7E81 /* gearVisorSkateHelmet.png in Resources */,
 				0AA23DFF1C1B6D870002BCC2 /* weaponsIcon@3x.png in Resources */,
@@ -1659,6 +1673,7 @@
 				0ADF9BEF1C1DF2DE002D7E81 /* gearFive-PanelCap.png in Resources */,
 				0AC607E41C18E8A1006EECA7 /* rankedBadge.png in Resources */,
 				0ADF9C771C1DF2DE002D7E81 /* gearStealthGoggles.png in Resources */,
+				0A0F6FF01C261FAC00206883 /* itemBG@2x.png in Resources */,
 				0AA23DF71C1B6D870002BCC2 /* betaIcon.png in Resources */,
 				0ADF9BDE1C1DF2DE002D7E81 /* gearClassicStrawBoater.png in Resources */,
 				0AB09B3B1C205F2700A8A682 /* star.png in Resources */,
@@ -1822,6 +1837,7 @@
 				0ADF9AA51C1DF135002D7E81 /* GearGuideViewController.swift in Sources */,
 				0A4BF6AE1C22201800BB4834 /* SettingsTableViewController.swift in Sources */,
 				0AC607FC1C192211006EECA7 /* LoadingViewController.swift in Sources */,
+				0A4C519A1C25F527006ABE9B /* ProfileViewController.swift in Sources */,
 				0AA23E071C1B6DB90002BCC2 /* SplatAppStyle.swift in Sources */,
 				0AA23E041C1B6DB90002BCC2 /* BrandGuideViewController.swift in Sources */,
 				0AA23E421C1B78450002BCC2 /* BetaViewController.swift in Sources */,

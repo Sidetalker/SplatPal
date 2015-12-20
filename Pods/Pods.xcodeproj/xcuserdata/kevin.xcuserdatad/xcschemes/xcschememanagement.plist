@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Kanna.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SplatPal.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,7 +37,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1E7F6BB22B60A3F7BB0ADFBE9D172D0B</key>
+		<key>166FFF8CF9F4AD071ABF95B59C93C167</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>30B3D5749AF6EA39D57D57C94BBAE859</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,12 +52,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5E60D6A2A036A0A67A13E6FF596D3681</key>
+		<key>69DECDF0CF8CA6145703A812EA744D76</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DD47A4DE5139A30A4F7B625F0F200EF5</key>
+		<key>AE028DEBF540CD8280ED51BFA18D5935</key>
 		<dict>
 			<key>primary</key>
 			<true/>

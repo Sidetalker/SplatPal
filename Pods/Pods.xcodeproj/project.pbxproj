@@ -7,156 +7,193 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03F494989CC1A8857B68A317D5D6860F /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA260C8989840677869AAA208C65163 /* Response.swift */; };
-		0681ADC8BAE2C3185F13487BAAB4D9DD /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B94426C98679DDA518A0477928EDA8 /* Upload.swift */; };
-		0C97F00BE79118208239A6CA358A35C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
-		0F3D4D9F06973584E66D1FB92F3503F4 /* Pods-SplatPal-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A43B85E816116EE6866A05229BA7CC9 /* Pods-SplatPal-dummy.m */; };
-		2C5450AC69398958CF6F7539EF7D99E5 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FDDB685B87AD695442F7C24680F0E8C /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30CBC2B629D3BD289D76D9E5FDD859AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
-		35873499B1DDF8ACB95B8CFF8A208847 /* Pods-SplatPal-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D119837C01B4D77B4D5602A7647B4F93 /* Pods-SplatPal-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39725D8AC77460BB172F872D4D14D87F /* Doorbell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E1FAD67DBF8DC807AB3C828F11C547F /* Doorbell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AC7F0670A4E5BC483C018E1E1A232EB /* XCGLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 647F039BC4E26A8B46C560A352F716D5 /* XCGLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4DCEDEE697C397C9F05E4857CB3694F9 /* DoorbellDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = E6F7D23ADF43E67CEFE745F4FA854780 /* DoorbellDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4DE5FCC41D100B113B6645EA64410F16 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1999EEECA79623726BFBC4B407BF0D2 /* ParameterEncoding.swift */; };
-		5314C6E7B1158D5C0FEFE9371A266102 /* Doorbell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9E58DE77426155C674C31828E5F12E /* Doorbell-dummy.m */; };
-		80F496237530D382A045A29654D8C11C /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A171944A45B185C6EDDD8AF28AFA52 /* ServerTrustPolicy.swift */; };
-		82971968CBDAB224212EEB4607C9FB8D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11391FA9676354517A66955E601A3ED0 /* Result.swift */; };
-		8399DBEE3E2D98EB1F466132E476F4D9 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2748E0E373524D1A81FECC66D3AEB0 /* MultipartFormData.swift */; };
-		8701ED87849FF81A247E48FE5A2D5A38 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC2CFD7634F42AE8BB697E721A697F3 /* SwiftyJSON.swift */; };
+		00276D971D2788A665B916D7CF859C28 /* CSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C60E623A6B90AB2D12C7B615A268458 /* CSS.swift */; };
+		03F494989CC1A8857B68A317D5D6860F /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC23537177E01052AC028656D0128F29 /* Response.swift */; };
+		0681ADC8BAE2C3185F13487BAAB4D9DD /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27689F878854D2D1247B5BE141325981 /* Upload.swift */; };
+		09D322583964E8DF5B7E0FA0E6966300 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 510BFE6A209798AFC25A9A1E599A87B0 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C9213F97543A76229BB79BEAE0DA793 /* Pods-SplatPal-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D119837C01B4D77B4D5602A7647B4F93 /* Pods-SplatPal-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BE51DC90D88147F50187E0C1EBCAC7B /* libxmlParserOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BC6F11D281C53B3D64038DA1F84458 /* libxmlParserOption.swift */; };
+		2C5450AC69398958CF6F7539EF7D99E5 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72ADC98BAD415E903E5C9F9E3F73F51B /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38417B6B2BBA9CF72138C934086FBCE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		39725D8AC77460BB172F872D4D14D87F /* Doorbell.h in Headers */ = {isa = PBXBuildFile; fileRef = 14AB54AE7EC1092835228B572A35C0B9 /* Doorbell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		446DF7FACF9F1A6B19589C44F4A8AA3D /* libxmlHTMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1BA79E2E0C1E6ED7BF69452DBADD8F /* libxmlHTMLDocument.swift */; };
+		4CF785217EB8A48570ABF437AD1A3F36 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B668C31DD2C09E7FBBEDA393EF723EB /* SwiftyJSON.swift */; };
+		4DCEDEE697C397C9F05E4857CB3694F9 /* DoorbellDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 00915CFD993F9626A954DD3A47E194C3 /* DoorbellDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DE5FCC41D100B113B6645EA64410F16 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC0ED1DA51A74EFE5F8E7092904521A /* ParameterEncoding.swift */; };
+		5314C6E7B1158D5C0FEFE9371A266102 /* Doorbell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CE5537CF52B1BB9011D40EAB0F5E30 /* Doorbell-dummy.m */; };
+		5893CE25080DBC735137798B3EAEE36D /* Kanna.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA98571B3226D3818BB4A62CCE71ABD5 /* Kanna.swift */; };
+		5F6F8CF3580D20E89B89C1D6C7CFD38B /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86E8DC717C639955A4941B45D13B31 /* SwiftyJSON-dummy.m */; };
+		7EBB6087638C593E3975D7FE6797B959 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		7F458F13AB8201C86B7A474F5D3C2EBD /* XCGLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A08DEBCB8F07889989A308B17266DD30 /* XCGLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80F496237530D382A045A29654D8C11C /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9F401844C52A00853698433BA9350 /* ServerTrustPolicy.swift */; };
+		82971968CBDAB224212EEB4607C9FB8D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E6147D281C0A2E5A72605F95ADEF23 /* Result.swift */; };
+		8399DBEE3E2D98EB1F466132E476F4D9 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E732A1147DA96244C98C168D418FBB /* MultipartFormData.swift */; };
 		8A279B0BD7DCBC8654D3968F49C1671D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */; };
+		90A29CA1B25CD5493BCF573F66A0BADE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
 		96D99D0C2472535A169DED65CB231CD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
-		9D5832378F3AA5EBD1C9B8DA9190DAA8 /* XCGLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0FFCBA579033FF9487ABB397AD3F0A /* XCGLogger-dummy.m */; };
-		A2C172FE407C0BC3478ADCA91A6C9CEC /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE802772CCCD80859B52FEA5977DCB16 /* Manager.swift */; };
-		A3505FA2FB3067D53847AD288AC04F03 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338CC37A662E18391E99BBE9DA4EBE24 /* Download.swift */; };
-		B05C48F2276035CA4AD3A46487C51943 /* XCGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373F44F73E3B8CCCB97CB5BC92E00452 /* XCGLogger.swift */; };
-		B0FB4B01682814B9E3D32F9DC4A5E762 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956AFBE4628BC439CCECC6BE75382B14 /* Alamofire.swift */; };
-		B55ECD738A55D59DF9AB8995B11B4D64 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D969C3986F21A407CF4939FDF7D3D379 /* SwiftyJSON-dummy.m */; };
-		B6D2DC3E3DA44CD382B9B425F40E11C1 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B31BF1AC304158E885993E052C15376A /* Alamofire-dummy.m */; };
-		B7DDD04940E414A517EE1B07CD276BFC /* Doorbell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0AB7F73E69A36759D8A96B3AD92536 /* Doorbell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C75519F0450166A6F28126ECC7664E9C /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954DC314422A9C8FE0F04113C2B548C1 /* Validation.swift */; };
-		D21B7325B3642887BFBE977E021F2D26 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED0BAA58716AD68D9C7ABF05C6D042 /* ResponseSerialization.swift */; };
-		D75CA395D510E08C404E55F5BDAE55CE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71D9821526C1337B639BA817362990D /* Error.swift */; };
-		DE0753490BE734BD8572B9A2A56CE158 /* DoorbellDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 266F465D08A82A53CEFA91DD60641784 /* DoorbellDialog.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		DF8D7FB8F69064349E33B7F743A072CD /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 501E41A2CCDE4E861A9ACEF0981B290A /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2743540CCC65CF9E37A9130906BA355 /* Doorbell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55796EB2CF54CB5E166B3AE159C063DC /* Doorbell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E417A6E833B6B96183043D947875C418 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		A2C172FE407C0BC3478ADCA91A6C9CEC /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97621EF65DED1128BBF67BA7B8CFE9C3 /* Manager.swift */; };
+		A3505FA2FB3067D53847AD288AC04F03 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B80DA04994065E2BEC0201E0EE76273 /* Download.swift */; };
+		B0FB4B01682814B9E3D32F9DC4A5E762 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5668D6562083F780ADBF4A38598C339 /* Alamofire.swift */; };
+		B18A38405CD3BBB7EBA26229B0C49DE1 /* XCGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1C1C63BDADCAD902CEB3839463CBA7 /* XCGLogger.swift */; };
+		B6D2DC3E3DA44CD382B9B425F40E11C1 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 821229B6E13A0EC8073411DA52D031B6 /* Alamofire-dummy.m */; };
+		B7DDD04940E414A517EE1B07CD276BFC /* Doorbell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE9CDBE84D419F4FDB4D808B341BDE /* Doorbell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B9BF9C08180F2E9EACC6137A3B4C911D /* Kanna-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C88DDD46D2E56A53340D82C43A3B57D /* Kanna-dummy.m */; };
+		C75519F0450166A6F28126ECC7664E9C /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3479F2D66CBF69808C55729F8180D225 /* Validation.swift */; };
+		CB7FBD00ADE6C1D057A66B90F2CEDCD7 /* libxmlHTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CAD1227C3693E797EC57EA7F649F5F /* libxmlHTMLNode.swift */; };
+		D21B7325B3642887BFBE977E021F2D26 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78582284D6F9F92C63E0177758FE66C8 /* ResponseSerialization.swift */; };
+		D75CA395D510E08C404E55F5BDAE55CE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9953B4D2C2CAEE23C7E0817A331739E /* Error.swift */; };
+		DE0753490BE734BD8572B9A2A56CE158 /* DoorbellDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E1C133921BA3BC47BF46E488675522 /* DoorbellDialog.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E23954DE1023A9DA17465B77A7FAD223 /* XCGLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB371EFCC7B0AB81F8F09615831BDF15 /* XCGLogger-dummy.m */; };
+		E2743540CCC65CF9E37A9130906BA355 /* Doorbell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 111F9EA05BDA242811E6140A4ECD1F52 /* Doorbell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E474D68442150FBC0D9156EE0212A3BF /* Kanna-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F98BA8A6EB7EF82DD9DA1540EB974C17 /* Kanna-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA43837DEC327EC41BCF4E6DD8BC018F /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138CE93173F0DD28B337D9CE14F47E3F /* HTMLParser.swift */; };
+		EB1EF24B6756F5B8EDA5A6157DDC6442 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		F3CFFC6D7CBC192093412703B9CA0FA9 /* Pods-SplatPal-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A43B85E816116EE6866A05229BA7CC9 /* Pods-SplatPal-dummy.m */; };
 		F984E35050E7B5DAAC54134C6AA01A25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
-		FC14480CECE872865A9C6E584F886DA3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C68458885BA4F3DB633B5D69DB16548 /* Request.swift */; };
-		FEF0D7653948988B804226129471C1EC /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7DC26AA48ECA9196D2178E17D25AC /* Stream.swift */; };
+		FC14480CECE872865A9C6E584F886DA3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E876F2D5128CAFD3C177E5EF4C2BEF /* Request.swift */; };
+		FEF0D7653948988B804226129471C1EC /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93878184F89A1FF1494EC8EAD2B7FD97 /* Stream.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		075B2C1EC16C89C2D63F0FB79918F9C6 /* PBXContainerItemProxy */ = {
+		1847D305595DA5F472078A9E073DAD04 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E962E449B565E508E27A71EBB14844F8;
-			remoteInfo = Doorbell;
-		};
-		3276DB99B66B3A83B6FE21B93766C5C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5E60D6A2A036A0A67A13E6FF596D3681;
+			remoteGlobalIDString = 166FFF8CF9F4AD071ABF95B59C93C167;
 			remoteInfo = SwiftyJSON;
 		};
-		B11BF2C18524587C7D946312AD6984DF /* PBXContainerItemProxy */ = {
+		46C9CE2EDE44A809118E4509F23E86BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE028DEBF540CD8280ED51BFA18D5935;
+			remoteInfo = Kanna;
+		};
+		67D0F84CC631E52050981A8814BA6E32 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 432ECC54282C84882B482CCB4CF227FC;
 			remoteInfo = Alamofire;
 		};
-		E1D476EC735C42CB80BEC720AA7954BC /* PBXContainerItemProxy */ = {
+		825E43CF3F3696A75E111A2DEE22CDE2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1E7F6BB22B60A3F7BB0ADFBE9D172D0B;
+			remoteGlobalIDString = 30B3D5749AF6EA39D57D57C94BBAE859;
 			remoteInfo = XCGLogger;
+		};
+		A3A439E4B47525E420A65A6C9B386DB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E962E449B565E508E27A71EBB14844F8;
+			remoteInfo = Doorbell;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		086627BDA13759AE3694A8F433C691C0 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		00915CFD993F9626A954DD3A47E194C3 /* DoorbellDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoorbellDialog.h; path = Classes/DoorbellDialog.h; sourceTree = "<group>"; };
+		00E876F2D5128CAFD3C177E5EF4C2BEF /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		09969C3B4BE9F8A0C6CF8AA8B17328FC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C68458885BA4F3DB633B5D69DB16548 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		0FDDB685B87AD695442F7C24680F0E8C /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		11391FA9676354517A66955E601A3ED0 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		14ED0BAA58716AD68D9C7ABF05C6D042 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		154DF484ACEA56C9F5239FFA9AA63D66 /* XCGLogger.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XCGLogger.xcconfig; sourceTree = "<group>"; };
-		1557364C0D6DBA880331F0FF100E3357 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		111F9EA05BDA242811E6140A4ECD1F52 /* Doorbell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Doorbell-umbrella.h"; sourceTree = "<group>"; };
+		11AC701B529B80FAF5B4C53D07E100F1 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		138CE93173F0DD28B337D9CE14F47E3F /* HTMLParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTMLParser.swift; path = Source/_obsolete/HTMLParser.swift; sourceTree = "<group>"; };
+		1405560554526483F049FEF728F48552 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14AB54AE7EC1092835228B572A35C0B9 /* Doorbell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Doorbell.h; path = Classes/Doorbell.h; sourceTree = "<group>"; };
 		194E93BA39FF9568D8235E47B3FD1FDB /* Pods-SplatPal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SplatPal.release.xcconfig"; sourceTree = "<group>"; };
-		1ECA75251A6DD89C1EEDB22773EDF257 /* Doorbell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Doorbell.modulemap; sourceTree = "<group>"; };
+		1BBE9CDBE84D419F4FDB4D808B341BDE /* Doorbell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Doorbell.m; path = Classes/Doorbell.m; sourceTree = "<group>"; };
 		258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		266F465D08A82A53CEFA91DD60641784 /* DoorbellDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoorbellDialog.m; path = Classes/DoorbellDialog.m; sourceTree = "<group>"; };
+		271720B961ED84CA1DD872DFEAFC3D61 /* Doorbell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Doorbell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27689F878854D2D1247B5BE141325981 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		28440A62757EADFB73A8C2F2432751A0 /* Doorbell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Doorbell.modulemap; sourceTree = "<group>"; };
+		2894E68C2C6C2C2E953C2C9D9C76EF43 /* Doorbell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Doorbell.xcconfig; sourceTree = "<group>"; };
 		2A43B85E816116EE6866A05229BA7CC9 /* Pods-SplatPal-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SplatPal-dummy.m"; sourceTree = "<group>"; };
-		2D7333EE363736C758E57E24141DDC01 /* XCGLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCGLogger-prefix.pch"; sourceTree = "<group>"; };
-		2E1FAD67DBF8DC807AB3C828F11C547F /* Doorbell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Doorbell.h; path = Classes/Doorbell.h; sourceTree = "<group>"; };
-		3316FFC6C716BB45971677D39327E5EF /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		338CC37A662E18391E99BBE9DA4EBE24 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
-		373F44F73E3B8CCCB97CB5BC92E00452 /* XCGLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCGLogger.swift; path = XCGLogger/Library/XCGLogger/XCGLogger.swift; sourceTree = "<group>"; };
+		2D86E8DC717C639955A4941B45D13B31 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		322EB269161D9D54C441D1439CDB0125 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3479F2D66CBF69808C55729F8180D225 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		34E6147D281C0A2E5A72605F95ADEF23 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		37CAD1227C3693E797EC57EA7F649F5F /* libxmlHTMLNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLNode.swift; path = Source/libxml/libxmlHTMLNode.swift; sourceTree = "<group>"; };
+		38C355CF44D7C4E0F56F82AF7395522F /* Pods_SplatPal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplatPal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3970BCFA0C1312A5D97FDE8B3BC45C50 /* Pods-SplatPal-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SplatPal-resources.sh"; sourceTree = "<group>"; };
-		3D378097B420CE6F9A58BC47394CF345 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		3DC2CFD7634F42AE8BB697E721A697F3 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		3E71F2A8CC7F193773758259A608480C /* Pods_SplatPal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplatPal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A49A2394E35DC02B1BC9D163CB2D837 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
-		501E41A2CCDE4E861A9ACEF0981B290A /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		55796EB2CF54CB5E166B3AE159C063DC /* Doorbell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Doorbell-umbrella.h"; sourceTree = "<group>"; };
-		5D32BBAFAC637D2DFF8909B1DAEC8D53 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
-		5DA260C8989840677869AAA208C65163 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		647F039BC4E26A8B46C560A352F716D5 /* XCGLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCGLogger-umbrella.h"; sourceTree = "<group>"; };
-		6604BEFD8BDA4715630C33FD2B2AE1FE /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		732D5035F4E27B386BE36880D77C01C3 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		73B550352C7A54289F86F751CEF6116B /* XCGLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCGLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		80A171944A45B185C6EDDD8AF28AFA52 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		8A0AB7F73E69A36759D8A96B3AD92536 /* Doorbell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Doorbell.m; path = Classes/Doorbell.m; sourceTree = "<group>"; };
-		954DC314422A9C8FE0F04113C2B548C1 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		956AFBE4628BC439CCECC6BE75382B14 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		9C6A567BBE2CF071F2D3FE2BF01E1B8F /* XCGLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = XCGLogger.modulemap; sourceTree = "<group>"; };
-		A1C7DC26AA48ECA9196D2178E17D25AC /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
+		424D7ABA0B517F170C23112A12C11019 /* XCGLogger.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XCGLogger.xcconfig; sourceTree = "<group>"; };
+		4815B5D09FD8FFA73748360C02D13279 /* XCGLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = XCGLogger.modulemap; sourceTree = "<group>"; };
+		4C60E623A6B90AB2D12C7B615A268458 /* CSS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSS.swift; path = Source/CSS.swift; sourceTree = "<group>"; };
+		5069E72D15235C8D577808881DC1E600 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		507D3962FAD16D5506CB1E807E66F018 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		510BFE6A209798AFC25A9A1E599A87B0 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		52B450ACF0E46356228021385A1C003A /* Kanna-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-prefix.pch"; sourceTree = "<group>"; };
+		58E1950658A66DA191DB08C52006296D /* XCGLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCGLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B80DA04994065E2BEC0201E0EE76273 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		6C88DDD46D2E56A53340D82C43A3B57D /* Kanna-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kanna-dummy.m"; sourceTree = "<group>"; };
+		72ADC98BAD415E903E5C9F9E3F73F51B /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		76C9F401844C52A00853698433BA9350 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		774C66840DAE016AD8450F3C5CE85BEC /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		78582284D6F9F92C63E0177758FE66C8 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		7B1C1C63BDADCAD902CEB3839463CBA7 /* XCGLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCGLogger.swift; path = XCGLogger/Library/XCGLogger/XCGLogger.swift; sourceTree = "<group>"; };
+		7B668C31DD2C09E7FBBEDA393EF723EB /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		80F38DD6C76EF4043EB6C469BCE5F502 /* Kanna.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Kanna.modulemap; sourceTree = "<group>"; };
+		81F4551311FF8EA9AC1FAFDBDEA1EB9C /* Kanna.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kanna.xcconfig; sourceTree = "<group>"; };
+		821229B6E13A0EC8073411DA52D031B6 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		82BC6F11D281C53B3D64038DA1F84458 /* libxmlParserOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlParserOption.swift; path = Source/libxml/libxmlParserOption.swift; sourceTree = "<group>"; };
+		83B45206D9EFBCB2674C0094AB2BED75 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
+		85CE5537CF52B1BB9011D40EAB0F5E30 /* Doorbell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Doorbell-dummy.m"; sourceTree = "<group>"; };
+		8E3DD6C69101E2512C1671B34AD16D66 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93878184F89A1FF1494EC8EAD2B7FD97 /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
+		97621EF65DED1128BBF67BA7B8CFE9C3 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		9AA834ED461790056E09C35EAFD0364B /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		9C3301DF9AB45EB73C8E019C00F3DFF3 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		A08DEBCB8F07889989A308B17266DD30 /* XCGLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCGLogger-umbrella.h"; sourceTree = "<group>"; };
+		A1D0949D5CF9245932B45D085B66874E /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A42A40DED95AA35CA0D058577D588B0B /* Pods-SplatPal-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SplatPal-acknowledgements.plist"; sourceTree = "<group>"; };
-		AE802772CCCD80859B52FEA5977DCB16 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
-		AEC17EB455EE561EA9F4375BA717084C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9953B4D2C2CAEE23C7E0817A331739E /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		AB638F5DB912602B27DDD57C9CB7C98F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC1BA79E2E0C1E6ED7BF69452DBADD8F /* libxmlHTMLDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLDocument.swift; path = Source/libxml/libxmlHTMLDocument.swift; sourceTree = "<group>"; };
 		B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		B1999EEECA79623726BFBC4B407BF0D2 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		B31BF1AC304158E885993E052C15376A /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		B3B94426C98679DDA518A0477928EDA8 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
-		B3D0B41A03D62786B554B9BD3985C85C /* Doorbell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Doorbell.xcconfig; sourceTree = "<group>"; };
-		B6AF5B64EF760C026083B76F9BF0B359 /* Doorbell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Doorbell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B786EF2359BBD2326C00113A38644A0B /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		B51E8F1D814485E715DD2C829A295283 /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5668D6562083F780ADBF4A38598C339 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		B6ABD1AD553DB67A820342228B2FF314 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BBEA70CD9E0D9D6D5707633B482EFAD0 /* Doorbell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Doorbell-prefix.pch"; sourceTree = "<group>"; };
+		BB371EFCC7B0AB81F8F09615831BDF15 /* XCGLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCGLogger-dummy.m"; sourceTree = "<group>"; };
+		BC2C2AD07709B861D3023446BADB6832 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		C0668E9D0346681A14C5837AD595C3B9 /* Pods-SplatPal-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SplatPal-frameworks.sh"; sourceTree = "<group>"; };
-		C4F7F31B959A287188C0E37630C442D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C172DA55F4B067A430DFD44DB27F89A7 /* Doorbell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Doorbell-prefix.pch"; sourceTree = "<group>"; };
+		C7E732A1147DA96244C98C168D418FBB /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		CA98571B3226D3818BB4A62CCE71ABD5 /* Kanna.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kanna.swift; path = Source/Kanna.swift; sourceTree = "<group>"; };
+		CF961F55A9B9BF65E2ECC06161F49C08 /* XCGLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCGLogger-prefix.pch"; sourceTree = "<group>"; };
 		D119837C01B4D77B4D5602A7647B4F93 /* Pods-SplatPal-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SplatPal-umbrella.h"; sourceTree = "<group>"; };
 		D33D75DED21323C4E3849EC66A482392 /* Pods-SplatPal.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SplatPal.modulemap"; sourceTree = "<group>"; };
-		D969C3986F21A407CF4939FDF7D3D379 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		E2378A43C5CE6B03A18965D197341332 /* Pods-SplatPal-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SplatPal-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E6F7D23ADF43E67CEFE745F4FA854780 /* DoorbellDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoorbellDialog.h; path = Classes/DoorbellDialog.h; sourceTree = "<group>"; };
-		EB0FFCBA579033FF9487ABB397AD3F0A /* XCGLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCGLogger-dummy.m"; sourceTree = "<group>"; };
-		EC9E58DE77426155C674C31828E5F12E /* Doorbell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Doorbell-dummy.m"; sourceTree = "<group>"; };
-		EDE4F53B7129E697171EABCC22894BB5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE2748E0E373524D1A81FECC66D3AEB0 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		EBC0ED1DA51A74EFE5F8E7092904521A /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		F1AA1E48CC536FF203F715F5D8DC77E1 /* Pods-SplatPal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SplatPal.debug.xcconfig"; sourceTree = "<group>"; };
-		F6E2581569E4897109E330994F413114 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F71D9821526C1337B639BA817362990D /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
-		F8ED955472134ACCB34824FB5B2B5173 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		F3052CB0D32F510D66827A822F9DF0DA /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		F5E1C133921BA3BC47BF46E488675522 /* DoorbellDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoorbellDialog.m; path = Classes/DoorbellDialog.m; sourceTree = "<group>"; };
+		F98BA8A6EB7EF82DD9DA1540EB974C17 /* Kanna-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-umbrella.h"; sourceTree = "<group>"; };
+		FC23537177E01052AC028656D0128F29 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		24A3B46E0933E1F1E11B4A5D14F32179 /* Frameworks */ = {
+		04FB4883E2DB43DC5C976972F95C826D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C97F00BE79118208239A6CA358A35C0 /* Foundation.framework in Frameworks */,
+				EB1EF24B6756F5B8EDA5A6157DDC6442 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44B1CEADC2E1263914699F6CC6FC5A20 /* Frameworks */ = {
+		09C6CB9092732B4609E41DEF65D2E8FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E417A6E833B6B96183043D947875C418 /* Foundation.framework in Frameworks */,
+				7EBB6087638C593E3975D7FE6797B959 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EA645B16DBF5D3653EDA67BC2FBE5AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90A29CA1B25CD5493BCF573F66A0BADE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,14 +202,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				96D99D0C2472535A169DED65CB231CD7 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AAFA33E90E16C3F023EE709FB5B97A4B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				30CBC2B629D3BD289D76D9E5FDD859AA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,51 +214,64 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F3CEFD37AC4026EEACCDDE2A450CB5E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38417B6B2BBA9CF72138C934086FBCE6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C3C978F1FF82662A95116FADEB495F9 /* Alamofire */ = {
+		05E1F2CF8C55C838FEB38EA99A259266 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				956AFBE4628BC439CCECC6BE75382B14 /* Alamofire.swift */,
-				338CC37A662E18391E99BBE9DA4EBE24 /* Download.swift */,
-				F71D9821526C1337B639BA817362990D /* Error.swift */,
-				AE802772CCCD80859B52FEA5977DCB16 /* Manager.swift */,
-				EE2748E0E373524D1A81FECC66D3AEB0 /* MultipartFormData.swift */,
-				B1999EEECA79623726BFBC4B407BF0D2 /* ParameterEncoding.swift */,
-				0C68458885BA4F3DB633B5D69DB16548 /* Request.swift */,
-				5DA260C8989840677869AAA208C65163 /* Response.swift */,
-				14ED0BAA58716AD68D9C7ABF05C6D042 /* ResponseSerialization.swift */,
-				11391FA9676354517A66955E601A3ED0 /* Result.swift */,
-				80A171944A45B185C6EDDD8AF28AFA52 /* ServerTrustPolicy.swift */,
-				A1C7DC26AA48ECA9196D2178E17D25AC /* Stream.swift */,
-				B3B94426C98679DDA518A0477928EDA8 /* Upload.swift */,
-				954DC314422A9C8FE0F04113C2B548C1 /* Validation.swift */,
-				240E25E07D87D59BE04A79F243D3A66A /* Support Files */,
+				8E3DD6C69101E2512C1671B34AD16D66 /* Alamofire.framework */,
+				271720B961ED84CA1DD872DFEAFC3D61 /* Doorbell.framework */,
+				B51E8F1D814485E715DD2C829A295283 /* Kanna.framework */,
+				38C355CF44D7C4E0F56F82AF7395522F /* Pods_SplatPal.framework */,
+				A1D0949D5CF9245932B45D085B66874E /* SwiftyJSON.framework */,
+				58E1950658A66DA191DB08C52006296D /* XCGLogger.framework */,
 			);
-			path = Alamofire;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		240E25E07D87D59BE04A79F243D3A66A /* Support Files */ = {
+		169FE7033DDF2B57B030FDC867015EED /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				086627BDA13759AE3694A8F433C691C0 /* Alamofire.modulemap */,
-				3316FFC6C716BB45971677D39327E5EF /* Alamofire.xcconfig */,
-				B31BF1AC304158E885993E052C15376A /* Alamofire-dummy.m */,
-				B786EF2359BBD2326C00113A38644A0B /* Alamofire-prefix.pch */,
-				0FDDB685B87AD695442F7C24680F0E8C /* Alamofire-umbrella.h */,
-				AEC17EB455EE561EA9F4375BA717084C /* Info.plist */,
+				B6ABD1AD553DB67A820342228B2FF314 /* Info.plist */,
+				4815B5D09FD8FFA73748360C02D13279 /* XCGLogger.modulemap */,
+				424D7ABA0B517F170C23112A12C11019 /* XCGLogger.xcconfig */,
+				BB371EFCC7B0AB81F8F09615831BDF15 /* XCGLogger-dummy.m */,
+				CF961F55A9B9BF65E2ECC06161F49C08 /* XCGLogger-prefix.pch */,
+				A08DEBCB8F07889989A308B17266DD30 /* XCGLogger-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
+			path = "../Target Support Files/XCGLogger";
 			sourceTree = "<group>";
 		};
-		297CC5B4CA9DE9FBF14C1B12F9360D2F /* Fabric */ = {
+		22EACFE05DE7ED69501BF46E22F6766B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				997B598691C95C31B4B390696953CE37 /* Frameworks */,
+				CD349D2D51C52A8FC55B8049FB02CC26 /* Alamofire */,
+				2E851C1D29F6BCA7A528A0E18F72EDCC /* Crashlytics */,
+				6EEEDF39CEB7E8F859E100C27F132917 /* Doorbell */,
+				9D8BC113A37E7F7655A78AE557C685EE /* Fabric */,
+				6B28427665AAFC5F7A52AD6512E61174 /* Kanna */,
+				6FB2511CA42CD553C5E16F08ECFDD454 /* SwiftyJSON */,
+				3BF018152AE9A9B0FB62CD6651B6CEDE /* XCGLogger */,
 			);
-			path = Fabric;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2E851C1D29F6BCA7A528A0E18F72EDCC /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				7BA953D609142100B0878189B275EF67 /* Frameworks */,
+			);
+			path = Crashlytics;
 			sourceTree = "<group>";
 		};
 		3926C638AD0708942C88C2BC89261735 /* iOS */ = {
@@ -241,6 +283,15 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		3BF018152AE9A9B0FB62CD6651B6CEDE /* XCGLogger */ = {
+			isa = PBXGroup;
+			children = (
+				7B1C1C63BDADCAD902CEB3839463CBA7 /* XCGLogger.swift */,
+				169FE7033DDF2B57B030FDC867015EED /* Support Files */,
+			);
+			path = XCGLogger;
+			sourceTree = "<group>";
+		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,73 +300,61 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		455F6AEFF8B77AF1E99AD045371006E6 /* Frameworks */ = {
+		6B28427665AAFC5F7A52AD6512E61174 /* Kanna */ = {
 			isa = PBXGroup;
 			children = (
-				4A49A2394E35DC02B1BC9D163CB2D837 /* Crashlytics.framework */,
+				4C60E623A6B90AB2D12C7B615A268458 /* CSS.swift */,
+				138CE93173F0DD28B337D9CE14F47E3F /* HTMLParser.swift */,
+				CA98571B3226D3818BB4A62CCE71ABD5 /* Kanna.swift */,
+				AC1BA79E2E0C1E6ED7BF69452DBADD8F /* libxmlHTMLDocument.swift */,
+				37CAD1227C3693E797EC57EA7F649F5F /* libxmlHTMLNode.swift */,
+				82BC6F11D281C53B3D64038DA1F84458 /* libxmlParserOption.swift */,
+				F6C05BBDF7B69340870AE9B66D70BEDF /* Support Files */,
 			);
-			name = Frameworks;
+			path = Kanna;
 			sourceTree = "<group>";
 		};
-		683DCCF6BF15A619E865541985B5C4A8 /* Support Files */ = {
+		6EEEDF39CEB7E8F859E100C27F132917 /* Doorbell */ = {
 			isa = PBXGroup;
 			children = (
-				1ECA75251A6DD89C1EEDB22773EDF257 /* Doorbell.modulemap */,
-				B3D0B41A03D62786B554B9BD3985C85C /* Doorbell.xcconfig */,
-				EC9E58DE77426155C674C31828E5F12E /* Doorbell-dummy.m */,
-				BBEA70CD9E0D9D6D5707633B482EFAD0 /* Doorbell-prefix.pch */,
-				55796EB2CF54CB5E166B3AE159C063DC /* Doorbell-umbrella.h */,
-				F6E2581569E4897109E330994F413114 /* Info.plist */,
+				14AB54AE7EC1092835228B572A35C0B9 /* Doorbell.h */,
+				1BBE9CDBE84D419F4FDB4D808B341BDE /* Doorbell.m */,
+				00915CFD993F9626A954DD3A47E194C3 /* DoorbellDialog.h */,
+				F5E1C133921BA3BC47BF46E488675522 /* DoorbellDialog.m */,
+				E3D37CA99D1A4BAE8EE8269585D7D09F /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Doorbell";
+			path = Doorbell;
 			sourceTree = "<group>";
 		};
-		6E243DC2E86698A6DE796F6F690E07EC /* Pods */ = {
+		6FB2511CA42CD553C5E16F08ECFDD454 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				1C3C978F1FF82662A95116FADEB495F9 /* Alamofire */,
-				79D06FD38A0134872C72F6E571F61C00 /* Crashlytics */,
-				76E142E9D137888AAEDE3FC12A492E09 /* Doorbell */,
-				297CC5B4CA9DE9FBF14C1B12F9360D2F /* Fabric */,
-				98495EBA65983E856F984D2DE09C4DE1 /* SwiftyJSON */,
-				C9B1E00F52A20A3EE2419E2231EF8C7E /* XCGLogger */,
+				7B668C31DD2C09E7FBBEDA393EF723EB /* SwiftyJSON.swift */,
+				708F2B50984C09B619E225C2B6941B69 /* Support Files */,
 			);
-			name = Pods;
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
-		72C1AF5A86F81671E0735C993E5E9A9B /* Support Files */ = {
+		708F2B50984C09B619E225C2B6941B69 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EDE4F53B7129E697171EABCC22894BB5 /* Info.plist */,
-				732D5035F4E27B386BE36880D77C01C3 /* SwiftyJSON.modulemap */,
-				F8ED955472134ACCB34824FB5B2B5173 /* SwiftyJSON.xcconfig */,
-				D969C3986F21A407CF4939FDF7D3D379 /* SwiftyJSON-dummy.m */,
-				3D378097B420CE6F9A58BC47394CF345 /* SwiftyJSON-prefix.pch */,
-				501E41A2CCDE4E861A9ACEF0981B290A /* SwiftyJSON-umbrella.h */,
+				322EB269161D9D54C441D1439CDB0125 /* Info.plist */,
+				9C3301DF9AB45EB73C8E019C00F3DFF3 /* SwiftyJSON.modulemap */,
+				774C66840DAE016AD8450F3C5CE85BEC /* SwiftyJSON.xcconfig */,
+				2D86E8DC717C639955A4941B45D13B31 /* SwiftyJSON-dummy.m */,
+				9AA834ED461790056E09C35EAFD0364B /* SwiftyJSON-prefix.pch */,
+				510BFE6A209798AFC25A9A1E599A87B0 /* SwiftyJSON-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
-		76E142E9D137888AAEDE3FC12A492E09 /* Doorbell */ = {
+		7BA953D609142100B0878189B275EF67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2E1FAD67DBF8DC807AB3C828F11C547F /* Doorbell.h */,
-				8A0AB7F73E69A36759D8A96B3AD92536 /* Doorbell.m */,
-				E6F7D23ADF43E67CEFE745F4FA854780 /* DoorbellDialog.h */,
-				266F465D08A82A53CEFA91DD60641784 /* DoorbellDialog.m */,
-				683DCCF6BF15A619E865541985B5C4A8 /* Support Files */,
+				83B45206D9EFBCB2674C0094AB2BED75 /* Crashlytics.framework */,
 			);
-			path = Doorbell;
-			sourceTree = "<group>";
-		};
-		79D06FD38A0134872C72F6E571F61C00 /* Crashlytics */ = {
-			isa = PBXGroup;
-			children = (
-				455F6AEFF8B77AF1E99AD045371006E6 /* Frameworks */,
-			);
-			path = Crashlytics;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -323,27 +362,18 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				6E243DC2E86698A6DE796F6F690E07EC /* Pods */,
-				DC58B6336C7EDBBE462BB6D7342F0D50 /* Products */,
+				22EACFE05DE7ED69501BF46E22F6766B /* Pods */,
+				05E1F2CF8C55C838FEB38EA99A259266 /* Products */,
 				BAB2DEA632EFD5F411B3A57BF89B8F07 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		98495EBA65983E856F984D2DE09C4DE1 /* SwiftyJSON */ = {
+		9D8BC113A37E7F7655A78AE557C685EE /* Fabric */ = {
 			isa = PBXGroup;
 			children = (
-				3DC2CFD7634F42AE8BB697E721A697F3 /* SwiftyJSON.swift */,
-				72C1AF5A86F81671E0735C993E5E9A9B /* Support Files */,
+				BD58D495F656D39CB9BCEC312482612F /* Frameworks */,
 			);
-			path = SwiftyJSON;
-			sourceTree = "<group>";
-		};
-		997B598691C95C31B4B390696953CE37 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5D32BBAFAC637D2DFF8909B1DAEC8D53 /* Fabric.framework */,
-			);
-			name = Frameworks;
+			path = Fabric;
 			sourceTree = "<group>";
 		};
 		BAB2DEA632EFD5F411B3A57BF89B8F07 /* Targets Support Files */ = {
@@ -354,39 +384,62 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		C9B1E00F52A20A3EE2419E2231EF8C7E /* XCGLogger */ = {
+		BD58D495F656D39CB9BCEC312482612F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				373F44F73E3B8CCCB97CB5BC92E00452 /* XCGLogger.swift */,
-				D67C91829B342A22AC63522A7A794B53 /* Support Files */,
+				11AC701B529B80FAF5B4C53D07E100F1 /* Fabric.framework */,
 			);
-			path = XCGLogger;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D67C91829B342A22AC63522A7A794B53 /* Support Files */ = {
+		CD349D2D51C52A8FC55B8049FB02CC26 /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				C4F7F31B959A287188C0E37630C442D4 /* Info.plist */,
-				9C6A567BBE2CF071F2D3FE2BF01E1B8F /* XCGLogger.modulemap */,
-				154DF484ACEA56C9F5239FFA9AA63D66 /* XCGLogger.xcconfig */,
-				EB0FFCBA579033FF9487ABB397AD3F0A /* XCGLogger-dummy.m */,
-				2D7333EE363736C758E57E24141DDC01 /* XCGLogger-prefix.pch */,
-				647F039BC4E26A8B46C560A352F716D5 /* XCGLogger-umbrella.h */,
+				B5668D6562083F780ADBF4A38598C339 /* Alamofire.swift */,
+				5B80DA04994065E2BEC0201E0EE76273 /* Download.swift */,
+				A9953B4D2C2CAEE23C7E0817A331739E /* Error.swift */,
+				97621EF65DED1128BBF67BA7B8CFE9C3 /* Manager.swift */,
+				C7E732A1147DA96244C98C168D418FBB /* MultipartFormData.swift */,
+				EBC0ED1DA51A74EFE5F8E7092904521A /* ParameterEncoding.swift */,
+				00E876F2D5128CAFD3C177E5EF4C2BEF /* Request.swift */,
+				FC23537177E01052AC028656D0128F29 /* Response.swift */,
+				78582284D6F9F92C63E0177758FE66C8 /* ResponseSerialization.swift */,
+				34E6147D281C0A2E5A72605F95ADEF23 /* Result.swift */,
+				76C9F401844C52A00853698433BA9350 /* ServerTrustPolicy.swift */,
+				93878184F89A1FF1494EC8EAD2B7FD97 /* Stream.swift */,
+				27689F878854D2D1247B5BE141325981 /* Upload.swift */,
+				3479F2D66CBF69808C55729F8180D225 /* Validation.swift */,
+				E6E3AB264DF27FFC6A33CC674962B277 /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		E3D37CA99D1A4BAE8EE8269585D7D09F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				28440A62757EADFB73A8C2F2432751A0 /* Doorbell.modulemap */,
+				2894E68C2C6C2C2E953C2C9D9C76EF43 /* Doorbell.xcconfig */,
+				85CE5537CF52B1BB9011D40EAB0F5E30 /* Doorbell-dummy.m */,
+				C172DA55F4B067A430DFD44DB27F89A7 /* Doorbell-prefix.pch */,
+				111F9EA05BDA242811E6140A4ECD1F52 /* Doorbell-umbrella.h */,
+				507D3962FAD16D5506CB1E807E66F018 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/XCGLogger";
+			path = "../Target Support Files/Doorbell";
 			sourceTree = "<group>";
 		};
-		DC58B6336C7EDBBE462BB6D7342F0D50 /* Products */ = {
+		E6E3AB264DF27FFC6A33CC674962B277 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1557364C0D6DBA880331F0FF100E3357 /* Alamofire.framework */,
-				B6AF5B64EF760C026083B76F9BF0B359 /* Doorbell.framework */,
-				3E71F2A8CC7F193773758259A608480C /* Pods_SplatPal.framework */,
-				6604BEFD8BDA4715630C33FD2B2AE1FE /* SwiftyJSON.framework */,
-				73B550352C7A54289F86F751CEF6116B /* XCGLogger.framework */,
+				F3052CB0D32F510D66827A822F9DF0DA /* Alamofire.modulemap */,
+				5069E72D15235C8D577808881DC1E600 /* Alamofire.xcconfig */,
+				821229B6E13A0EC8073411DA52D031B6 /* Alamofire-dummy.m */,
+				BC2C2AD07709B861D3023446BADB6832 /* Alamofire-prefix.pch */,
+				72ADC98BAD415E903E5C9F9E3F73F51B /* Alamofire-umbrella.h */,
+				1405560554526483F049FEF728F48552 /* Info.plist */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
 		F04F85DA1829E4873E18EF866E66AC48 /* Pods-SplatPal */ = {
@@ -407,17 +460,23 @@
 			path = "Target Support Files/Pods-SplatPal";
 			sourceTree = "<group>";
 		};
+		F6C05BBDF7B69340870AE9B66D70BEDF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB638F5DB912602B27DDD57C9CB7C98F /* Info.plist */,
+				80F38DD6C76EF4043EB6C469BCE5F502 /* Kanna.modulemap */,
+				81F4551311FF8EA9AC1FAFDBDEA1EB9C /* Kanna.xcconfig */,
+				6C88DDD46D2E56A53340D82C43A3B57D /* Kanna-dummy.m */,
+				52B450ACF0E46356228021385A1C003A /* Kanna-prefix.pch */,
+				F98BA8A6EB7EF82DD9DA1540EB974C17 /* Kanna-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Kanna";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		28E80CDC7791C32B487662482744A032 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DF8D7FB8F69064349E33B7F743A072CD /* SwiftyJSON-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3EAB0E17D6F3F603684D3F17DCE2E94D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -425,6 +484,14 @@
 				E2743540CCC65CF9E37A9130906BA355 /* Doorbell-umbrella.h in Headers */,
 				39725D8AC77460BB172F872D4D14D87F /* Doorbell.h in Headers */,
 				4DCEDEE697C397C9F05E4857CB3694F9 /* DoorbellDialog.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48B1DF7DCD2B241BBCCD105A10080525 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D322583964E8DF5B7E0FA0E6966300 /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,32 +503,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		70CC8C0BCF59A7E37FF2E93187EAFBCA /* Headers */ = {
+		91AFE8138CBD512BD6BF1F7776CB8A05 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35873499B1DDF8ACB95B8CFF8A208847 /* Pods-SplatPal-umbrella.h in Headers */,
+				E474D68442150FBC0D9156EE0212A3BF /* Kanna-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8E2E3840279A25E1F108923DB549B0B6 /* Headers */ = {
+		C31ED69ED1BE28081E46DE062AC4F9D5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AC7F0670A4E5BC483C018E1E1A232EB /* XCGLogger-umbrella.h in Headers */,
+				1C9213F97543A76229BB79BEAE0DA793 /* Pods-SplatPal-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8601910E91B9518D1314E0B47A7123B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F458F13AB8201C86B7A474F5D3C2EBD /* XCGLogger-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1E7F6BB22B60A3F7BB0ADFBE9D172D0B /* XCGLogger */ = {
+		166FFF8CF9F4AD071ABF95B59C93C167 /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E6A770349E92A97AF9D871B57BF7F26 /* Build configuration list for PBXNativeTarget "XCGLogger" */;
+			buildConfigurationList = 73F37D5F53DB5719D133E5E1D25D17B4 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
 			buildPhases = (
-				1DB70697B973F898E2D075987F9A007D /* Sources */,
-				24A3B46E0933E1F1E11B4A5D14F32179 /* Frameworks */,
-				8E2E3840279A25E1F108923DB549B0B6 /* Headers */,
+				82AF74F27E34E48936B7F5607696F65B /* Sources */,
+				F3CEFD37AC4026EEACCDDE2A450CB5E4 /* Frameworks */,
+				48B1DF7DCD2B241BBCCD105A10080525 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = A1D0949D5CF9245932B45D085B66874E /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		30B3D5749AF6EA39D57D57C94BBAE859 /* XCGLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB690DF6C5602DF3E3E7192155C4C6EE /* Build configuration list for PBXNativeTarget "XCGLogger" */;
+			buildPhases = (
+				DD032C1840C4D0C506C856DAC089DB83 /* Sources */,
+				04FB4883E2DB43DC5C976972F95C826D /* Frameworks */,
+				C8601910E91B9518D1314E0B47A7123B /* Headers */,
 			);
 			buildRules = (
 			);
@@ -469,7 +561,7 @@
 			);
 			name = XCGLogger;
 			productName = XCGLogger;
-			productReference = 73B550352C7A54289F86F751CEF6116B /* XCGLogger.framework */;
+			productReference = 58E1950658A66DA191DB08C52006296D /* XCGLogger.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		432ECC54282C84882B482CCB4CF227FC /* Alamofire */ = {
@@ -486,45 +578,46 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 1557364C0D6DBA880331F0FF100E3357 /* Alamofire.framework */;
+			productReference = 8E3DD6C69101E2512C1671B34AD16D66 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5E60D6A2A036A0A67A13E6FF596D3681 /* SwiftyJSON */ = {
+		69DECDF0CF8CA6145703A812EA744D76 /* Pods-SplatPal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1257935DA8E3E436F4168DDE4F1A6E6 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = 36972AD4ECE0FDBD8D91D80A78FD44E4 /* Build configuration list for PBXNativeTarget "Pods-SplatPal" */;
 			buildPhases = (
-				8D583260F18BEDD97BB2EED84E09B758 /* Sources */,
-				AAFA33E90E16C3F023EE709FB5B97A4B /* Frameworks */,
-				28E80CDC7791C32B487662482744A032 /* Headers */,
+				412759F618B0C57BB2503417ED5EF64F /* Sources */,
+				09C6CB9092732B4609E41DEF65D2E8FA /* Frameworks */,
+				C31ED69ED1BE28081E46DE062AC4F9D5 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = SwiftyJSON;
-			productName = SwiftyJSON;
-			productReference = 6604BEFD8BDA4715630C33FD2B2AE1FE /* SwiftyJSON.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DD47A4DE5139A30A4F7B625F0F200EF5 /* Pods-SplatPal */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E0C96F51D64CBF3CBF666FECEA582D10 /* Build configuration list for PBXNativeTarget "Pods-SplatPal" */;
-			buildPhases = (
-				B4BA7C3669EA9DE1CCA4E7FA4C6A5E67 /* Sources */,
-				44B1CEADC2E1263914699F6CC6FC5A20 /* Frameworks */,
-				70CC8C0BCF59A7E37FF2E93187EAFBCA /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				911201ABF8040CF9400D06CEAB5CCFB9 /* PBXTargetDependency */,
-				061ACE9108B53840D27259E357F37452 /* PBXTargetDependency */,
-				384D11DB487D90E20A4440E060DC9F00 /* PBXTargetDependency */,
-				D1E0B9D17A097912682DB73E89797420 /* PBXTargetDependency */,
+				D553A7064A59DCC3831ADDC5F05976A4 /* PBXTargetDependency */,
+				EEB93657D220A7176BB8928A746B6F16 /* PBXTargetDependency */,
+				2952E00C04E01D7A4B2E6D4ACEF65B7E /* PBXTargetDependency */,
+				2EFAE5E133DCB049762B3A65A3023DE6 /* PBXTargetDependency */,
+				94EE73EDA2B33A706079E9275EB8EC21 /* PBXTargetDependency */,
 			);
 			name = "Pods-SplatPal";
 			productName = "Pods-SplatPal";
-			productReference = 3E71F2A8CC7F193773758259A608480C /* Pods_SplatPal.framework */;
+			productReference = 38C355CF44D7C4E0F56F82AF7395522F /* Pods_SplatPal.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE028DEBF540CD8280ED51BFA18D5935 /* Kanna */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFE4DE00BF2FB07347DFF143470192F9 /* Build configuration list for PBXNativeTarget "Kanna" */;
+			buildPhases = (
+				146AEB5BC4542BDFB99B9A8308EE32FC /* Sources */,
+				2EA645B16DBF5D3653EDA67BC2FBE5AC /* Frameworks */,
+				91AFE8138CBD512BD6BF1F7776CB8A05 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kanna;
+			productName = Kanna;
+			productReference = B51E8F1D814485E715DD2C829A295283 /* Kanna.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E962E449B565E508E27A71EBB14844F8 /* Doorbell */ = {
@@ -541,7 +634,7 @@
 			);
 			name = Doorbell;
 			productName = Doorbell;
-			productReference = B6AF5B64EF760C026083B76F9BF0B359 /* Doorbell.framework */;
+			productReference = 271720B961ED84CA1DD872DFEAFC3D61 /* Doorbell.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -561,26 +654,40 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = DC58B6336C7EDBBE462BB6D7342F0D50 /* Products */;
+			productRefGroup = 05E1F2CF8C55C838FEB38EA99A259266 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				432ECC54282C84882B482CCB4CF227FC /* Alamofire */,
 				E962E449B565E508E27A71EBB14844F8 /* Doorbell */,
-				DD47A4DE5139A30A4F7B625F0F200EF5 /* Pods-SplatPal */,
-				5E60D6A2A036A0A67A13E6FF596D3681 /* SwiftyJSON */,
-				1E7F6BB22B60A3F7BB0ADFBE9D172D0B /* XCGLogger */,
+				AE028DEBF540CD8280ED51BFA18D5935 /* Kanna */,
+				69DECDF0CF8CA6145703A812EA744D76 /* Pods-SplatPal */,
+				166FFF8CF9F4AD071ABF95B59C93C167 /* SwiftyJSON */,
+				30B3D5749AF6EA39D57D57C94BBAE859 /* XCGLogger */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1DB70697B973F898E2D075987F9A007D /* Sources */ = {
+		146AEB5BC4542BDFB99B9A8308EE32FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D5832378F3AA5EBD1C9B8DA9190DAA8 /* XCGLogger-dummy.m in Sources */,
-				B05C48F2276035CA4AD3A46487C51943 /* XCGLogger.swift in Sources */,
+				00276D971D2788A665B916D7CF859C28 /* CSS.swift in Sources */,
+				EA43837DEC327EC41BCF4E6DD8BC018F /* HTMLParser.swift in Sources */,
+				B9BF9C08180F2E9EACC6137A3B4C911D /* Kanna-dummy.m in Sources */,
+				5893CE25080DBC735137798B3EAEE36D /* Kanna.swift in Sources */,
+				446DF7FACF9F1A6B19589C44F4A8AA3D /* libxmlHTMLDocument.swift in Sources */,
+				CB7FBD00ADE6C1D057A66B90F2CEDCD7 /* libxmlHTMLNode.swift in Sources */,
+				2BE51DC90D88147F50187E0C1EBCAC7B /* libxmlParserOption.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		412759F618B0C57BB2503417ED5EF64F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3CFFC6D7CBC192093412703B9CA0FA9 /* Pods-SplatPal-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,20 +701,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D583260F18BEDD97BB2EED84E09B758 /* Sources */ = {
+		82AF74F27E34E48936B7F5607696F65B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B55ECD738A55D59DF9AB8995B11B4D64 /* SwiftyJSON-dummy.m in Sources */,
-				8701ED87849FF81A247E48FE5A2D5A38 /* SwiftyJSON.swift in Sources */,
+				5F6F8CF3580D20E89B89C1D6C7CFD38B /* SwiftyJSON-dummy.m in Sources */,
+				4CF785217EB8A48570ABF437AD1A3F36 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B4BA7C3669EA9DE1CCA4E7FA4C6A5E67 /* Sources */ = {
+		DD032C1840C4D0C506C856DAC089DB83 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F3D4D9F06973584E66D1FB92F3503F4 /* Pods-SplatPal-dummy.m in Sources */,
+				E23954DE1023A9DA17465B77A7FAD223 /* XCGLogger-dummy.m in Sources */,
+				B18A38405CD3BBB7EBA26229B0C49DE1 /* XCGLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,36 +744,124 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		061ACE9108B53840D27259E357F37452 /* PBXTargetDependency */ = {
+		2952E00C04E01D7A4B2E6D4ACEF65B7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Doorbell;
-			target = E962E449B565E508E27A71EBB14844F8 /* Doorbell */;
-			targetProxy = 075B2C1EC16C89C2D63F0FB79918F9C6 /* PBXContainerItemProxy */;
+			name = Kanna;
+			target = AE028DEBF540CD8280ED51BFA18D5935 /* Kanna */;
+			targetProxy = 46C9CE2EDE44A809118E4509F23E86BB /* PBXContainerItemProxy */;
 		};
-		384D11DB487D90E20A4440E060DC9F00 /* PBXTargetDependency */ = {
+		2EFAE5E133DCB049762B3A65A3023DE6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = 5E60D6A2A036A0A67A13E6FF596D3681 /* SwiftyJSON */;
-			targetProxy = 3276DB99B66B3A83B6FE21B93766C5C7 /* PBXContainerItemProxy */;
+			target = 166FFF8CF9F4AD071ABF95B59C93C167 /* SwiftyJSON */;
+			targetProxy = 1847D305595DA5F472078A9E073DAD04 /* PBXContainerItemProxy */;
 		};
-		911201ABF8040CF9400D06CEAB5CCFB9 /* PBXTargetDependency */ = {
+		94EE73EDA2B33A706079E9275EB8EC21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XCGLogger;
+			target = 30B3D5749AF6EA39D57D57C94BBAE859 /* XCGLogger */;
+			targetProxy = 825E43CF3F3696A75E111A2DEE22CDE2 /* PBXContainerItemProxy */;
+		};
+		D553A7064A59DCC3831ADDC5F05976A4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = 432ECC54282C84882B482CCB4CF227FC /* Alamofire */;
-			targetProxy = B11BF2C18524587C7D946312AD6984DF /* PBXContainerItemProxy */;
+			targetProxy = 67D0F84CC631E52050981A8814BA6E32 /* PBXContainerItemProxy */;
 		};
-		D1E0B9D17A097912682DB73E89797420 /* PBXTargetDependency */ = {
+		EEB93657D220A7176BB8928A746B6F16 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = XCGLogger;
-			target = 1E7F6BB22B60A3F7BB0ADFBE9D172D0B /* XCGLogger */;
-			targetProxy = E1D476EC735C42CB80BEC720AA7954BC /* PBXContainerItemProxy */;
+			name = Doorbell;
+			target = E962E449B565E508E27A71EBB14844F8 /* Doorbell */;
+			targetProxy = A3A439E4B47525E420A65A6C9B386DB2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		03FA62B32C8DEEE3D39B335293659B51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81F4551311FF8EA9AC1FAFDBDEA1EB9C /* Kanna.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kanna/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Kanna;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		04C4F04725FA2C7D8A070D8FA7D9CC29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 774C66840DAE016AD8450F3C5CE85BEC /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0FB4117271A4EC62B094D42C7455FDD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81F4551311FF8EA9AC1FAFDBDEA1EB9C /* Kanna.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kanna/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Kanna;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		2395C9728BAC2508940558059A2512DE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3D0B41A03D62786B554B9BD3985C85C /* Doorbell.xcconfig */;
+			baseConfigurationReference = 2894E68C2C6C2C2E953C2C9D9C76EF43 /* Doorbell.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -690,7 +886,90 @@
 			};
 			name = Release;
 		};
-		41D7ABF21EC398142F0271A94D1D0611 /* Release */ = {
+		5A031FFB725E41CB06B2BD2BBBC8F6CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 774C66840DAE016AD8450F3C5CE85BEC /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84B46211981A8D13D93E38BCA636CBA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 424D7ABA0B517F170C23112A12C11019 /* XCGLogger.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XCGLogger/XCGLogger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XCGLogger/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XCGLogger/XCGLogger.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = XCGLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8E631545FBE71093F9883937351050B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2894E68C2C6C2C2E953C2C9D9C76EF43 /* Doorbell.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Doorbell/Doorbell-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Doorbell/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Doorbell/Doorbell.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Doorbell;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		947FCA02FA2BC33555B85AD5D35F40F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 194E93BA39FF9568D8235E47B3FD1FDB /* Pods-SplatPal.release.xcconfig */;
 			buildSettings = {
@@ -720,64 +999,9 @@
 			};
 			name = Release;
 		};
-		5ABF74FAB2AAC426C0096BB7221B6E8F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8ED955472134ACCB34824FB5B2B5173 /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8E631545FBE71093F9883937351050B6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3D0B41A03D62786B554B9BD3985C85C /* Doorbell.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Doorbell/Doorbell-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Doorbell/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Doorbell/Doorbell.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Doorbell;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		A3427C918F24207B5FD3A44958345D7E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3316FFC6C716BB45971677D39327E5EF /* Alamofire.xcconfig */;
+			baseConfigurationReference = 5069E72D15235C8D577808881DC1E600 /* Alamofire.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -841,117 +1065,7 @@
 			};
 			name = Debug;
 		};
-		BB38F532F1AF6A748685C9A08DF193D0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8ED955472134ACCB34824FB5B2B5173 /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C12A67E6FC23E9437CB25E8CA3568690 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 154DF484ACEA56C9F5239FFA9AA63D66 /* XCGLogger.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/XCGLogger/XCGLogger-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XCGLogger/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XCGLogger/XCGLogger.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = XCGLogger;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C993D8405F342C8E23BAD4EDF32D79E0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3316FFC6C716BB45971677D39327E5EF /* Alamofire.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CB739C10033B5B595E8E9D97EADCFE86 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 154DF484ACEA56C9F5239FFA9AA63D66 /* XCGLogger.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/XCGLogger/XCGLogger-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XCGLogger/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XCGLogger/XCGLogger.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = XCGLogger;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D109F3C108EE4FCE6F1C01244EF2B6F1 /* Debug */ = {
+		AA8AE1A2FE8F7B9DE651E3D6B4A325C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F1AA1E48CC536FF203F715F5D8DC77E1 /* Pods-SplatPal.debug.xcconfig */;
 			buildSettings = {
@@ -973,6 +1087,61 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = Pods_SplatPal;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BCC291938DA4EB1CCE07F82FE35AB926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 424D7ABA0B517F170C23112A12C11019 /* XCGLogger.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XCGLogger/XCGLogger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XCGLogger/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XCGLogger/XCGLogger.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = XCGLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C993D8405F342C8E23BAD4EDF32D79E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5069E72D15235C8D577808881DC1E600 /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1028,11 +1197,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E6A770349E92A97AF9D871B57BF7F26 /* Build configuration list for PBXNativeTarget "XCGLogger" */ = {
+		36972AD4ECE0FDBD8D91D80A78FD44E4 /* Build configuration list for PBXNativeTarget "Pods-SplatPal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C12A67E6FC23E9437CB25E8CA3568690 /* Debug */,
-				CB739C10033B5B595E8E9D97EADCFE86 /* Release */,
+				AA8AE1A2FE8F7B9DE651E3D6B4A325C6 /* Debug */,
+				947FCA02FA2BC33555B85AD5D35F40F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73F37D5F53DB5719D133E5E1D25D17B4 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A031FFB725E41CB06B2BD2BBBC8F6CB /* Debug */,
+				04C4F04725FA2C7D8A070D8FA7D9CC29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1046,11 +1224,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1257935DA8E3E436F4168DDE4F1A6E6 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+		CB690DF6C5602DF3E3E7192155C4C6EE /* Build configuration list for PBXNativeTarget "XCGLogger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5ABF74FAB2AAC426C0096BB7221B6E8F /* Debug */,
-				BB38F532F1AF6A748685C9A08DF193D0 /* Release */,
+				84B46211981A8D13D93E38BCA636CBA1 /* Debug */,
+				BCC291938DA4EB1CCE07F82FE35AB926 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1064,11 +1242,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E0C96F51D64CBF3CBF666FECEA582D10 /* Build configuration list for PBXNativeTarget "Pods-SplatPal" */ = {
+		FFE4DE00BF2FB07347DFF143470192F9 /* Build configuration list for PBXNativeTarget "Kanna" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D109F3C108EE4FCE6F1C01244EF2B6F1 /* Debug */,
-				41D7ABF21EC398142F0271A94D1D0611 /* Release */,
+				0FB4117271A4EC62B094D42C7455FDD1 /* Debug */,
+				03FA62B32C8DEEE3D39B335293659B51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

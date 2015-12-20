@@ -4,6 +4,7 @@ PODS:
     - Fabric (~> 1.6.0)
   - Doorbell (0.0.6)
   - Fabric (1.6.1)
+  - Kanna (1.0.3)
   - SwiftyJSON (2.3.2)
   - XCGLogger (3.1.1)
 
@@ -12,6 +13,7 @@ DEPENDENCIES:
   - Crashlytics
   - Doorbell (~> 0.0.6)
   - Fabric
+  - Kanna (~> 1.0.0)
   - SwiftyJSON (~> 2.0)
   - XCGLogger (~> 3.0)
 
@@ -20,6 +22,7 @@ SPEC CHECKSUMS:
   Crashlytics: 41574a245bc6ae10c55d57f385ebd2004e5bee05
   Doorbell: d995ae651475acb63e49544529a4bd4bc79646db
   Fabric: bf0ceb04e7c924090efc5f8c55e4fbcca189e0a0
+  Kanna: 10c7f20762846e808ec5716e4191427bd71bf1c2
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   XCGLogger: e111a313f609432394c3ae378d99511634fd2e3c
 
