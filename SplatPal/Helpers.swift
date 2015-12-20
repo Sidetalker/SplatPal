@@ -75,32 +75,40 @@ func getDocumentsDirectory() -> NSString {
     return documentsDirectory
 }
 
-func loadNotifications() -> JSON {
+func loadNotifications() -> [Notification] {
     let path = getDocumentsDirectory().stringByAppendingPathComponent("notifications.json")
-    var notificationJSON = JSON([])
+    var notifications = [Notification]()
     
     if let jsonData = NSData(contentsOfFile: path) {
-        notificationJSON = JSON(data: jsonData)
-        log.debug("Notifications loaded")
+        for data in JSON(jsonData).arrayValue {
+            notifications.append(Notification(data: data))
+        }
+        
+        log.debug("\(notifications.count) Notifications loaded")
     }
     else {
-        saveNotifications(notificationJSON)
+        saveNotifications(notifications)
     }
     
-    return notificationJSON
+    return notifications
 }
 
-func saveNotifications(notificationJSON: JSON) -> Bool {
+func saveNotifications(notifications: [Notification]) -> Bool {
     let path = getDocumentsDirectory().stringByAppendingPathComponent("notifications.json")
+    var notificationJSON = [JSON]()
+    
+    for notification in notifications {
+        notificationJSON.append(notification.jsonRepresentation())
+    }
     
     do {
-        try notificationJSON.rawString()!.writeToFile(path, atomically: true, encoding: NSUTF8StringEncoding)
+        try JSON(notificationJSON).rawString()!.writeToFile(path, atomically: true, encoding: NSUTF8StringEncoding)
         log.debug("Notifications saved")
         return true
     } catch {
         log.error("Could not write notification file")
         log.error("File: \(path)")
-        log.error("Contents: \(notificationJSON.rawString()!)")
+        log.error("Contents: \(JSON(notificationJSON).rawString()!)")
         return false
     }
 }

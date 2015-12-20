@@ -11,7 +11,7 @@ import SwiftyJSON
 
 class NotificationTableViewController: UITableViewController {
     var settingsTableVC: SettingsTableViewController?
-    var notifications: JSON!
+    var notifications: [Notification]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +23,24 @@ class NotificationTableViewController: UITableViewController {
         self.tableView.reloadData()
     }
     
+    func addNotification(notification: Notification) {
+        tableView.beginUpdates()
+        
+        notifications.append(notification)
+        tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: notifications.count - 1, inSection: 1)], withRowAnimation: .Automatic)
+        
+        tableView.endUpdates()
+        
+        saveNotifications(notifications)
+    }
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 2
     }
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 1 {
-            return notifications.dictionaryValue.count == 0 ? "No notifications configured" : nil
+            return notifications.count == 0 ? "No notifications added" : "Swipe left to edit"
         }
         
         return nil
@@ -37,13 +48,13 @@ class NotificationTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 { return 1 }
-        else if section == 1 { return notifications.dictionaryValue.count }
+        else if section == 1 { return notifications.count }
         
         return 0
     }
     
     override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        if section == 1 {
+        if section == 1 && notifications.count == 0 {
             if let headerView = view as? UITableViewHeaderFooterView {
                 headerView.textLabel?.textAlignment = .Center
             }
@@ -54,7 +65,11 @@ class NotificationTableViewController: UITableViewController {
         if indexPath.section == 0 {
             return tableView.dequeueReusableCellWithIdentifier("cellCreateNew", forIndexPath: indexPath)
         } else {
-            return UITableViewCell()
+            let cell = tableView.dequeueReusableCellWithIdentifier("cellNotification", forIndexPath: indexPath)
+            cell.textLabel!.text = notifications[indexPath.row].name
+            cell.accessoryType = notifications[indexPath.row].enabled ? .Checkmark : .None
+            
+            return cell
         }
     }
     
@@ -80,6 +95,33 @@ class Notification {
     var modes = [Bool](count: modeData.count, repeatedValue: false)
     var maps = [Bool](count: mapData.count, repeatedValue: false)
     var times = [Bool](count: 8, repeatedValue: false)
+    
+    var enabled = true
+    var name = ""
+    
+    init() {
+        enabled = false
+    }
+    
+    init(data: JSON) {
+        for (x, mode) in data["modes"].arrayValue.enumerate() { modes[x] = mode.boolValue }
+        for (x, map) in data["maps"].arrayValue.enumerate() { maps[x] = map.boolValue }
+        for (x, time) in data["times"].arrayValue.enumerate() { times[x] = time.boolValue }
+        enabled = data["enabled"].boolValue
+        name = data["name"].stringValue
+    }
+    
+    func jsonRepresentation() -> JSON {
+        var rep = JSON([:])
+        
+        rep["modes"] = JSON(modes)
+        rep["maps"] = JSON(maps)
+        rep["times"] = JSON(times)
+        rep["enabled"] = JSON(enabled)
+        rep["name"] = JSON(name)
+        
+        return rep
+    }
     
     func hasMode(modeIndex: Int) -> Bool {
         return modes[modeIndex]
@@ -188,7 +230,7 @@ class ModeSettingsTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCellWithIdentifier("cellMode", forIndexPath: indexPath)
         let mode = modeData[indexPath.row]
         
         cell.textLabel?.text = mode
@@ -376,7 +418,7 @@ class NotificationTimeTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCellWithIdentifier("cellTime", forIndexPath: indexPath)
         
         cell.textLabel?.text = notification.timeText(indexPath.row)
         cell.accessoryType = notification.hasTime(indexPath.row) ? .Checkmark : .None
@@ -427,7 +469,7 @@ class ReviewNotificationTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCellWithIdentifier("cellReview", forIndexPath: indexPath)
         
         if indexPath.section == 0 { cell.textLabel?.text = notification.getModes()[indexPath.row] }
         else if indexPath.section == 1 { cell.textLabel?.text = notification.getMaps()[indexPath.row] }
@@ -450,9 +492,9 @@ class ReviewNotificationTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0 { return "Selected Modes" }
-        else if section == 1 { return "Selected Maps" }
-        else if section == 2 { return "Selected Times" }
+        if section == 0 { return "Notification Modes" }
+        else if section == 1 { return "Notification Maps" }
+        else if section == 2 { return "Notification Times" }
         
         return nil
     }
@@ -465,7 +507,8 @@ class ReviewNotificationTableViewController: UITableViewController {
         getNameAlert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
         getNameAlert.addAction(UIAlertAction(title: "Create", style: .Default, handler: { _ in
             if getNameAlert.textFields![0].text != "" {
-                
+                self.notification.name = getNameAlert.textFields![0].text!
+                self.notificationTableVC?.addNotification(self.notification)
             } else {
                 let tryAgainAlert = UIAlertController(title: "Error creating notification", message: "Your notification must have a name!", preferredStyle: .Alert)
                 tryAgainAlert.addAction(UIAlertAction(title: "Oh, OK!", style: .Default, handler: { _ in
