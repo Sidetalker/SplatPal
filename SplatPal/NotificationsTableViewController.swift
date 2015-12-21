@@ -77,6 +77,7 @@ class NotificationTableViewController: UITableViewController {
                 let reviewTVC = self.storyboard?.instantiateViewControllerWithIdentifier("reviewNotification") as! ReviewNotificationTableViewController
                 reviewTVC.notification = self.notifications[indexPath.row]
                 reviewTVC.navigationItem.rightBarButtonItem = nil
+                reviewTVC.navigationItem.title = self.notifications[indexPath.row].name
                 self.navigationController?.pushViewController(reviewTVC, animated: true)
                 
                 return true
@@ -596,9 +597,9 @@ class ReviewNotificationTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0 { return "Notification Modes" }
-        else if section == 1 { return "Notification Maps" }
-        else if section == 2 { return "Notification Times" }
+        if section == 0 { return "Modes" }
+        else if section == 1 { return "Maps" }
+        else if section == 2 { return "Times" }
         
         return nil
     }

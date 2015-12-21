@@ -1,3 +1,9 @@
+Version 0.3.0 (516)
+- UI Tweaks
+
+Version 0.3.0 (512)
+- Minor bugfixes
+
 Version 0.3.0 (473)
 - Some UI preference settings
 - Minor bugfixes

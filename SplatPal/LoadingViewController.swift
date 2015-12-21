@@ -17,6 +17,7 @@ var abilityData = [String : JSON]()
 
 class LoadingViewController: UIViewController {
     @IBOutlet weak var spinner: UIActivityIndicatorView!
+    @IBOutlet weak var squidOffset: NSLayoutConstraint!
     
     var nnid: NNID!
     var matchData: JSON?
@@ -32,11 +33,16 @@ class LoadingViewController: UIViewController {
         nnid = NNID.sharedInstance
         
         UITabBar.appearance().tintColor = UIColor.whiteColor()
-        self.setNeedsStatusBarAppearanceUpdate()
+        
+        if (NSUserDefaults.standardUserDefaults().boolForKey("hideStatusBar")) {
+            squidOffset.constant = 10
+            self.setNeedsStatusBarAppearanceUpdate()
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        
         spinner.startAnimating()
         
         loadJSONData()

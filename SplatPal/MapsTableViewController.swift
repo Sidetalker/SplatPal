@@ -62,6 +62,8 @@ class MapsTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        mapError = false
+        
         if let
             errorCode = matchData?["errorCode"].int,
             errorMessage = matchData?["errorMessage"].string
@@ -189,16 +191,16 @@ class MapsTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cellTimeRemaining")!
-        cell.contentView.backgroundColor = UIColor.clearColor()
-        
-        let lblHeader = cell.viewWithTag(1) as! UILabel
-        let lblFooter = cell.viewWithTag(2) as! UILabel
-        
-        for gestureRecognizer in cell.contentView.gestureRecognizers! {
-            cell.contentView.removeGestureRecognizer(gestureRecognizer) }
-        
         if section == 0 {
+            let cell = tableView.dequeueReusableCellWithIdentifier("cellTimeRemaining")!
+            cell.contentView.backgroundColor = UIColor.clearColor()
+            
+            let lblHeader = cell.viewWithTag(1) as! UILabel
+            let lblFooter = cell.viewWithTag(2) as! UILabel
+            
+            for gestureRecognizer in cell.contentView.gestureRecognizers! {
+                cell.contentView.removeGestureRecognizer(gestureRecognizer) }
+            
             cell.contentView.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: "topHeaderLongPress:"))
             
             if mapError && !mapsUpdating {
@@ -215,19 +217,27 @@ class MapsTableViewController: UITableViewController {
                     lblHeader.text = matchData!["splatfest"].boolValue ? "Time Left in Splatfest" : "Time Until Next Rotation"
                 }
             }
+            
+            return cell.contentView
         } else {
+            let cell = tableView.dequeueReusableCellWithIdentifier("cellFutureTimes")!
+            cell.contentView.backgroundColor = UIColor.clearColor()
+            
+            let lblHeader = cell.viewWithTag(1) as! UILabel
+            let lblFooter = cell.viewWithTag(2) as! UILabel
+            
             let startTime = matchData!["startTimes"][section].doubleValue
             let endTime = matchData!["endTimes"][section].doubleValue
             lblHeader.text = epochDateString(startTime)
             lblFooter.text = "\(epochTimeString(startTime)) - \(epochTimeString(endTime))"
+            
+            return cell.contentView
         }
-        
-        return cell.contentView
     }
     
     func topHeaderLongPress(sender: UITapGestureRecognizer) {
-        guard sender.state == .Began && mapsUpdating == false && mapsUpdateCooldown == -1 else { return }
-        updateMaps(true)
+        guard sender.state == .Began && mapsUpdating == false else { return }
+        updateMaps(mapsUpdateCooldown == -1 ? true : false)
     }
     
     // MARK: - Update functions
@@ -261,7 +271,7 @@ class MapsTableViewController: UITableViewController {
                 tableView.reloadData()
             }
         } else {
-            if timeRemainingSeconds <= 0 && !mapError { updateMaps(false) }
+            if (timeRemainingSeconds <= 0 || matchData!["startTimes"].arrayValue.last!.intValue == 0) && !mapError { updateMaps(false) }
             else { liveLabel?.text = getTimeRemainingText(timeRemainingSeconds) }
         }
     }
@@ -289,6 +299,12 @@ class MapsTableViewController: UITableViewController {
     }
     
     func scheduleNotifications() {
+        // Remove all scheduled notifications
+        UIApplication.sharedApplication().cancelAllLocalNotifications()
+        
+        // Don't do any scheduling if notifications are off
+        if !NSUserDefaults.standardUserDefaults().boolForKey("mapNotificationsOn") { return }
+        
         var matches = [Match]()
         let notifications = loadNotifications()
         
@@ -302,12 +318,6 @@ class MapsTableViewController: UITableViewController {
             matches.append(Match(map: turfMap, mode: "Turf War", time: startTime))
             matches.append(Match(map: rankedMap, mode: rankedMode, time: startTime))
         }
-        
-        // Remove all scheduled notifications
-        UIApplication.sharedApplication().cancelAllLocalNotifications()
-        
-        // Don't do any scheduling if notifications are off
-        if !NSUserDefaults.standardUserDefaults().boolForKey("mapNotificationsOn") { return }
         
         // Schedule notifications as needed
         for notification in notifications {

@@ -62,7 +62,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Time Until Next Rotation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5j7-3q-UyO">
-                                            <rect key="frame" x="38" y="8" width="524" height="33"/>
+                                            <rect key="frame" x="38" y="13" width="524" height="33"/>
                                             <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="30"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -75,14 +75,13 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="8it-8C-Q7e" secondAttribute="bottom" constant="-10" id="BGG-a4-Fne"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="8it-8C-Q7e" secondAttribute="trailing" constant="30" id="CDs-rW-lIB"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="5j7-3q-UyO" secondAttribute="trailing" constant="30" id="GoV-V6-LiG"/>
                                         <constraint firstItem="8it-8C-Q7e" firstAttribute="centerX" secondItem="Lj8-LW-Bku" secondAttribute="centerX" id="Q6M-le-ePy"/>
-                                        <constraint firstItem="8it-8C-Q7e" firstAttribute="top" secondItem="5j7-3q-UyO" secondAttribute="bottom" id="Rw6-CP-KPG"/>
+                                        <constraint firstItem="8it-8C-Q7e" firstAttribute="top" secondItem="5j7-3q-UyO" secondAttribute="bottom" constant="-5" id="Rw6-CP-KPG"/>
                                         <constraint firstItem="8it-8C-Q7e" firstAttribute="leading" secondItem="Lj8-LW-Bku" secondAttribute="leadingMargin" constant="30" id="i8z-cX-yMc"/>
                                         <constraint firstItem="5j7-3q-UyO" firstAttribute="leading" secondItem="Lj8-LW-Bku" secondAttribute="leadingMargin" constant="30" id="lgG-VS-6kO"/>
-                                        <constraint firstAttribute="topMargin" secondItem="5j7-3q-UyO" secondAttribute="top" id="yOP-FS-bSz"/>
+                                        <constraint firstItem="5j7-3q-UyO" firstAttribute="top" secondItem="Lj8-LW-Bku" secondAttribute="topMargin" constant="5" id="yOP-FS-bSz"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -162,21 +161,21 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellTimeRemainingB" rowHeight="85" id="J4c-Is-jMD">
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellFutureTimes" rowHeight="85" id="J4c-Is-jMD">
                                 <rect key="frame" x="0.0" y="461" width="600" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J4c-Is-jMD" id="lnH-0A-UE8">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="85"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="December 12th, 2015" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gNx-YA-mKH">
-                                            <rect key="frame" x="38" y="8" width="524" height="33"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="December 12th, 2015" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gNx-YA-mKH">
+                                            <rect key="frame" x="38" y="13" width="524" height="33"/>
                                             <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="30"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:00 - 13:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUe-yV-aFX">
-                                            <rect key="frame" x="161.5" y="41" width="277" height="46"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:00 - 13:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="sUe-yV-aFX">
+                                            <rect key="frame" x="28" y="38" width="544" height="46"/>
                                             <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="42"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -184,10 +183,10 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="gNx-YA-mKH" firstAttribute="leading" secondItem="lnH-0A-UE8" secondAttribute="leadingMargin" constant="30" id="8wU-7p-0vS"/>
-                                        <constraint firstAttribute="topMargin" secondItem="gNx-YA-mKH" secondAttribute="top" id="Bi3-Kh-ab7"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="sUe-yV-aFX" secondAttribute="bottom" constant="-10" id="P0s-fc-Afl"/>
-                                        <constraint firstItem="sUe-yV-aFX" firstAttribute="centerX" secondItem="lnH-0A-UE8" secondAttribute="centerX" id="eTV-vj-nD5"/>
-                                        <constraint firstItem="sUe-yV-aFX" firstAttribute="top" secondItem="gNx-YA-mKH" secondAttribute="bottom" id="hi0-g6-GRW"/>
+                                        <constraint firstItem="gNx-YA-mKH" firstAttribute="top" secondItem="lnH-0A-UE8" secondAttribute="topMargin" constant="5" id="Bi3-Kh-ab7"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="sUe-yV-aFX" secondAttribute="trailing" constant="20" id="CxG-hX-e8d"/>
+                                        <constraint firstItem="sUe-yV-aFX" firstAttribute="top" secondItem="gNx-YA-mKH" secondAttribute="bottom" constant="-8" id="hi0-g6-GRW"/>
+                                        <constraint firstItem="sUe-yV-aFX" firstAttribute="leading" secondItem="lnH-0A-UE8" secondAttribute="leadingMargin" constant="20" id="oR6-ZU-8rK"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="gNx-YA-mKH" secondAttribute="trailing" constant="30" id="zRV-Iq-9Ld"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -1180,6 +1179,7 @@
                     </view>
                     <connections>
                         <outlet property="spinner" destination="ELH-cd-CLC" id="YT9-kr-gEs"/>
+                        <outlet property="squidOffset" destination="4hS-Ig-psK" id="Zuc-cL-8tY"/>
                         <segue destination="49e-Tb-3d3" kind="presentation" identifier="segueLoading" animates="NO" id="Nz6-9I-sEc"/>
                     </connections>
                 </viewController>

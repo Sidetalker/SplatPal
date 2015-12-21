@@ -241,6 +241,12 @@ class NNIDSettingsTableViewController: UITableViewController, UITextFieldDelegat
             if error == nil {
                 log.debug("Login Success")
                 self.updateUI(true)
+                
+                for vc in self.tabBarController!.viewControllers! {
+                    if let mapView = vc as? MapsTableViewController {
+                        mapView.updateMaps(true)
+                    }
+                }
             } else {
                 log.error("Login Error: \(error!.localizedDescription)")
                 
