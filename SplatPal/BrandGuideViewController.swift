@@ -178,7 +178,7 @@ class BrandGuideViewController: UIViewController, IconSelectionViewDelegate {
     }
 
     override func prefersStatusBarHidden() -> Bool {
-        return true
+        return NSUserDefaults.standardUserDefaults().boolForKey("hideStatusBar")
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

@@ -12,6 +12,7 @@
 		0A0F6FF11C261FAC00206883 /* itemBG@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0F6FEE1C261FAC00206883 /* itemBG@3x.png */; };
 		0A0F6FF31C27105900206883 /* ProfileGearView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0F6FF21C27105900206883 /* ProfileGearView.xib */; };
 		0A3503ED1C27270C009C6A48 /* NotificationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3503EC1C27270C009C6A48 /* NotificationsTableViewController.swift */; };
+		0A3503EF1C27789E009C6A48 /* UserDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A3503EE1C27789E009C6A48 /* UserDefaults.plist */; };
 		0A4BF6AA1C22069700BB4834 /* settingsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A71C22069700BB4834 /* settingsIcon.png */; };
 		0A4BF6AB1C22069700BB4834 /* settingsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A81C22069700BB4834 /* settingsIcon@2x.png */; };
 		0A4BF6AC1C22069700BB4834 /* settingsIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A91C22069700BB4834 /* settingsIcon@3x.png */; };
@@ -399,6 +400,7 @@
 		0A0F6FEE1C261FAC00206883 /* itemBG@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "itemBG@3x.png"; path = "Images/itemBG@3x.png"; sourceTree = "<group>"; };
 		0A0F6FF21C27105900206883 /* ProfileGearView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileGearView.xib; sourceTree = "<group>"; };
 		0A3503EC1C27270C009C6A48 /* NotificationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsTableViewController.swift; sourceTree = "<group>"; };
+		0A3503EE1C27789E009C6A48 /* UserDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserDefaults.plist; sourceTree = "<group>"; };
 		0A4BF6A71C22069700BB4834 /* settingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settingsIcon.png; path = Images/settingsIcon.png; sourceTree = "<group>"; };
 		0A4BF6A81C22069700BB4834 /* settingsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settingsIcon@2x.png"; path = "Images/settingsIcon@2x.png"; sourceTree = "<group>"; };
 		0A4BF6A91C22069700BB4834 /* settingsIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settingsIcon@3x.png"; path = "Images/settingsIcon@3x.png"; sourceTree = "<group>"; };
@@ -899,6 +901,7 @@
 				0AC607961C189B36006EECA7 /* Info.plist */,
 				0AC607DF1C18ACF7006EECA7 /* Paintball_Beta_4a.otf */,
 				0AA23E3B1C1B72B90002BCC2 /* SplatPal-Bridging-Header.h */,
+				0A3503EE1C27789E009C6A48 /* UserDefaults.plist */,
 				0AC607911C189B36006EECA7 /* Assets.xcassets */,
 				0AC607DE1C18AAA6006EECA7 /* Images */,
 			);
@@ -1620,6 +1623,7 @@
 				0AC607D01C18A629006EECA7 /* StageArowanaMall.jpg in Resources */,
 				0ADF9C371C1DF2DE002D7E81 /* gearPurpleCamoLS.png in Resources */,
 				0ADF9BE41C1DF2DE002D7E81 /* gearCyanTrainers.png in Resources */,
+				0A3503EF1C27789E009C6A48 /* UserDefaults.plist in Resources */,
 				0ADF9C881C1DF2DE002D7E81 /* gearTraditionalApron.png in Resources */,
 				0ADF9C1B1C1DF2DE002D7E81 /* gearNavyStripedLS.png in Resources */,
 				0ADF9BD81C1DF2DE002D7E81 /* gearCamoZipHoodie.png in Resources */,

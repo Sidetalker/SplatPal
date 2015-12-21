@@ -18,12 +18,21 @@ var abilityData = [String : JSON]()
 class LoadingViewController: UIViewController {
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
-    let nnid = NNID.sharedInstance
+    var nnid: NNID!
     var matchData: JSON?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let defaultPrefsFile = NSBundle.mainBundle().pathForResource("UserDefaults", ofType: "plist")
+        let defaultPrefs = NSDictionary(contentsOfFile: defaultPrefsFile!) as? [String : AnyObject]
+        
+        NSUserDefaults.standardUserDefaults().registerDefaults(defaultPrefs!)
+        
+        nnid = NNID.sharedInstance
+        
         UITabBar.appearance().tintColor = UIColor.whiteColor()
+        self.setNeedsStatusBarAppearanceUpdate()
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -46,6 +55,14 @@ class LoadingViewController: UIViewController {
                 self.performSegueWithIdentifier("segueLoading", sender: self)
             }
         }
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return NSUserDefaults.standardUserDefaults().boolForKey("hideStatusBar")
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

@@ -52,7 +52,11 @@ class MapsTableViewController: UITableViewController {
     }
     
     override func prefersStatusBarHidden() -> Bool {
-        return true
+        return NSUserDefaults.standardUserDefaults().boolForKey("hideStatusBar")
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
     }
 
     // MARK: - Table view data source
@@ -301,6 +305,9 @@ class MapsTableViewController: UITableViewController {
         
         // Remove all scheduled notifications
         UIApplication.sharedApplication().cancelAllLocalNotifications()
+        
+        // Don't do any scheduling if notifications are off
+        if !NSUserDefaults.standardUserDefaults().boolForKey("mapNotificationsOn") { return }
         
         // Schedule notifications as needed
         for notification in notifications {

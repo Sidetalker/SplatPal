@@ -1,9 +1,16 @@
+Version 0.3.0 (473)
+- Some UI preference settings
+- Minor bugfixes
+
+Version 0.3.0 (460)
+- Notification system overhauled, fully customizable
+
 Version 0.3.0 (409)
-- Map rotation uses Nintendo's data if you are logged in (defaults to Splatoon.ink if not logged in)
-    - NOTE: This may cause issues with international use, please use the send feedback button if you see anything awry
+- Map rotation uses Nintendo's data if you are logged in 
+    - Defaults to Splatoon.ink if not logged in
 
 Version 0.3.0 (379)
-- NNID integration - not currently used for anything
+- NNID integration
 
 Version 0.3.0 (321)
 - Spaltfest support!

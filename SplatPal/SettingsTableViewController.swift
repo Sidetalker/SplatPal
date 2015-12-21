@@ -10,11 +10,15 @@ import UIKit
 
 class SettingsTableViewController: UITableViewController, UIApplicationDelegate {
     @IBOutlet weak var swtMapNotifications: UISwitch!
+    @IBOutlet weak var swtHideStatusBar: UISwitch!
+    @IBOutlet weak var swtMilitaryTime: UISwitch!
     @IBOutlet weak var lblNotificationConfig: UILabel!
     @IBOutlet weak var lblLoginStatus: UILabel!
     @IBOutlet weak var cellNotificationConfig: UITableViewCell!
     @IBOutlet weak var cellLoginStatus: UITableViewCell!
     @IBOutlet weak var enableNotificationsIndent: NSLayoutConstraint!
+    @IBOutlet weak var hideStatusBarIndent: NSLayoutConstraint!
+    @IBOutlet weak var militaryTimeIndent: NSLayoutConstraint!
     
     let prefs = NSUserDefaults.standardUserDefaults()
     let nnid = NNID.sharedInstance
@@ -24,12 +28,16 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "localNotificationsStateUpdated:", name: "localNotificationsStateUpdated", object: nil)
         
+        swtHideStatusBar.on = prefs.boolForKey("hideStatusBar")
+        swtMilitaryTime.on = prefs.boolForKey("militaryTime")
         swtMapNotifications.on = prefs.boolForKey("mapNotificationsOn")
         toggleMapNotificationUI(swtMapNotifications.on)
         
         // Real cute iPhone 6+, REAL CUTE
         if DeviceType.IS_IPHONE_6P {
             enableNotificationsIndent.constant = 12
+            hideStatusBarIndent.constant = 12
+            militaryTimeIndent.constant = 12
         }
     }
     
@@ -43,6 +51,10 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
             let destVC = segue.destinationViewController as! NotificationTableViewController
             destVC.settingsTableVC = self
         }
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return prefs.boolForKey("hideStatusBar")
     }
     
     func toggleMapNotificationUI(on: Bool) {
@@ -69,6 +81,7 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
         }
         
         prefs.setBool(on, forKey: "mapNotificationsOn")
+        scheduleNotifications()
         lblNotificationConfig.enabled = on
         cellNotificationConfig.userInteractionEnabled = on
     }
@@ -98,17 +111,33 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
     @IBAction func mapNotificationsToggled(sender: AnyObject) {
         toggleMapNotificationUI((sender as! UISwitch).on)
     }
+    
+    @IBAction func hideStatusBarToggled(sender: AnyObject) {
+        prefs.setBool((sender as! UISwitch).on, forKey: "hideStatusBar")
+        
+        UIView.animateWithDuration(0.33) { self.setNeedsStatusBarAppearanceUpdate() }
+    }
+    
+    @IBAction func militaryTimeToggled(sender: AnyObject) {
+        prefs.setBool((sender as! UISwitch).on, forKey: "militaryTime")
+        
+        for vc in self.tabBarController!.viewControllers! {
+            if let mapView = vc as? MapsTableViewController {
+                mapView.tableView.reloadData()
+            }
+        }
+    }
 }
 
 class NNID {
     static let sharedInstance = NNID()
     
     private let prefs = NSUserDefaults.standardUserDefaults()
-    internal var username = ""
-    internal var password = ""
-    internal var cookie = ""
-    internal var saveLogin = false
-    internal var touchID = false
+    var username = ""
+    var password = ""
+    var cookie = ""
+    var saveLogin = false
+    var touchID = false
     
     private init() {
         if let
@@ -119,9 +148,10 @@ class NNID {
             self.username = username
             self.password = password
             self.cookie = cookie
-            self.saveLogin = prefs.boolForKey("NNIDSaveLogin")
-            self.touchID = prefs.boolForKey("NNIDTouchID")
         }
+        
+        self.saveLogin = prefs.boolForKey("NNIDSaveLogin")
+        self.touchID = prefs.boolForKey("NNIDTouchID")
     }
     
     func hasCredentials() -> Bool {

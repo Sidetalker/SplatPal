@@ -40,7 +40,7 @@ class BetaViewController: UIViewController {
         txtChangeLog.scrollRangeToVisible(NSMakeRange(0,0))
     }
     override func prefersStatusBarHidden() -> Bool {
-        return true
+        return NSUserDefaults.standardUserDefaults().boolForKey("hideStatusBar")
     }
     
     @IBAction func btnFeedbackTapped(sender: AnyObject) {

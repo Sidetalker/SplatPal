@@ -29,7 +29,7 @@ class NotificationTableViewController: UITableViewController {
         
         notifications.append(notification)
         
-        tableView.reloadSections(NSIndexSet(index: 0), withRowAnimation: .Automatic)
+        tableView.reloadSections(NSIndexSet(index: 1), withRowAnimation: .Automatic)
         tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: notifications.count - 1, inSection: 1)], withRowAnimation: .Automatic)
         tableView.endUpdates()
         
@@ -171,6 +171,8 @@ class Notification {
     }
     
     func containsMatch(match: Match) -> Bool {
+        if !enabled { return false }
+        
         var modeMatch = false
         var mapMatch = false
         
