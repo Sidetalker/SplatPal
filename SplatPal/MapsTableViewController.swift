@@ -49,6 +49,7 @@ class MapsTableViewController: UITableViewController {
     
     override func scrollViewDidScroll(scrollView: UIScrollView) {
         sectionMask.frame.origin.y = scrollView.contentOffset.y
+        sectionMask.frame.size.width = scrollView.frame.width
     }
     
     override func prefersStatusBarHidden() -> Bool {

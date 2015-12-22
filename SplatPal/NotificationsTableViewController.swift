@@ -368,6 +368,7 @@ class MapSettingsTableViewController: UITableViewController {
     var notificationTableVC: NotificationTableViewController?
     var notification: Notification!
     var showImages = false
+    var selectAll = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -382,7 +383,7 @@ class MapSettingsTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return section == 0 ? 1 : mapData.count
+        return section == 0 ? 2 : mapData.count
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -403,8 +404,14 @@ class MapSettingsTableViewController: UITableViewController {
         
         if indexPath.section == 0 {
             cell = tableView.dequeueReusableCellWithIdentifier("cellShowHide", forIndexPath: indexPath)
-            let lblShowHide = cell.viewWithTag(1) as! UILabel
-            lblShowHide.text = showImages ? "Hide Map Images" : "Show Map Images"
+            let lbl = cell.viewWithTag(1) as! UILabel
+            
+            if indexPath.row == 0 {
+                lbl.text = showImages ? "Hide Map Images" : "Show Map Images"
+            }
+            else if indexPath.row == 1 {
+                lbl.text = selectAll ? "Deselect All Maps" : "Select All Maps"
+            }
         } else {
             let mapName = mapData[indexPath.row]
             if showImages {
@@ -432,12 +439,28 @@ class MapSettingsTableViewController: UITableViewController {
         if indexPath.section == 0 {
             tableView.beginUpdates()
             
-            showImages = !showImages
-            
             var indices = [NSIndexPath]()
-            indices.append(NSIndexPath(forRow: 0, inSection: 0))
-            for x in 0...mapData.count - 1 {
-                indices.append(NSIndexPath(forRow: x, inSection: 1))
+            
+            if indexPath.row == 0 {
+                showImages = !showImages
+                
+                indices.append(NSIndexPath(forRow: 0, inSection: 0))
+                for x in 0...mapData.count - 1 {
+                    indices.append(NSIndexPath(forRow: x, inSection: 1))
+                }
+            }
+            else if indexPath.row == 1 {
+                selectAll = !selectAll
+                
+                self.navigationItem.rightBarButtonItem?.enabled = selectAll
+                
+                indices.append(NSIndexPath(forRow: 1, inSection: 0))
+                for x in 0...notification.maps.count - 1 {
+                    if selectAll ? !notification.hasMap(x) : notification.hasMap(x) {
+                        indices.append(NSIndexPath(forRow: x, inSection: 1))
+                        notification.toggleMap(x)
+                    }
+                }
             }
             
             tableView.reloadRowsAtIndexPaths(indices, withRowAnimation: .Automatic)
@@ -448,7 +471,13 @@ class MapSettingsTableViewController: UITableViewController {
             notification.toggleMap(indexPath.row)
             self.navigationItem.rightBarButtonItem?.enabled = notification.anyMapSelected()
             
-            tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+            if !notification.anyMapSelected() && selectAll {
+                selectAll = !selectAll
+                tableView.reloadRowsAtIndexPaths([indexPath, NSIndexPath(forRow: 1, inSection: 0)], withRowAnimation: .Automatic)
+            } else {
+                tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+            }
+            
             tableView.endUpdates()
         }
     }
