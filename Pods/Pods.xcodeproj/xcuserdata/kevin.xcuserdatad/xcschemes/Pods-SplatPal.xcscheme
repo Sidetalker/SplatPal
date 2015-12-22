@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5F91684F9F139382034DCF8E'
+               BlueprintIdentifier = '47139005C70B17F35C9EBB05'
                BlueprintName = 'Pods-SplatPal'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_SplatPal.framework'>

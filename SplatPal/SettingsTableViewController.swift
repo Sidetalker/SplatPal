@@ -129,58 +129,6 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
     }
 }
 
-class NNID {
-    static let sharedInstance = NNID()
-    
-    private let prefs = NSUserDefaults.standardUserDefaults()
-    var username = ""
-    var password = ""
-    var cookie = ""
-    var saveLogin = false
-    var touchID = false
-    
-    private init() {
-        if let
-            username = prefs.stringForKey("NNIDUsername"),
-            password = prefs.stringForKey("NNIDPassword"),
-            cookie = prefs.stringForKey("NNIDCookie")
-        {
-            self.username = username
-            self.password = password
-            self.cookie = cookie
-        }
-        
-        self.saveLogin = prefs.boolForKey("NNIDSaveLogin")
-        self.touchID = prefs.boolForKey("NNIDTouchID")
-    }
-    
-    func hasCredentials() -> Bool {
-        return username != "" && password != ""
-    }
-    
-    func updateCredentials(username: String, password: String) {
-        self.username = username
-        self.password = password
-        prefs.setObject(username, forKey: "NNIDUsername")
-        prefs.setObject(password, forKey: "NNIDPassword")
-    }
-    
-    func updateCookie(cookie: String) {
-        self.cookie = cookie
-        prefs.setObject(cookie, forKey: "NNIDCookie")
-    }
-    
-    func updateSaveLogin(saveLogin: Bool) {
-        self.saveLogin = saveLogin
-        prefs.setBool(saveLogin, forKey: "NNIDSaveLogin")
-    }
-    
-    func updateTouchID(touchID: Bool) {
-        self.touchID = touchID
-        prefs.setBool(touchID, forKey: "NNIDTouchID")
-    }
-}
-
 class NNIDSettingsTableViewController: UITableViewController, UITextFieldDelegate {
     @IBOutlet weak var cellLoginStatus: UITableViewCell!
     @IBOutlet weak var cellUsername: UITableViewCell!
@@ -240,6 +188,7 @@ class NNIDSettingsTableViewController: UITableViewController, UITextFieldDelegat
             
             if error == nil {
                 log.debug("Login Success")
+                self.nnid.updateSaveLogin(true)
                 self.updateUI(true)
                 
                 for vc in self.tabBarController!.viewControllers! {

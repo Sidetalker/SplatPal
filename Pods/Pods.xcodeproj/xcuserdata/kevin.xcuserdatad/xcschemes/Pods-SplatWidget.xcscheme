@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '09EA04233E0643C258A8DC94'
-               BlueprintName = 'XCGLogger'
+               BlueprintIdentifier = 'E212A9DA2C6F91D24E4F5FF7'
+               BlueprintName = 'Pods-SplatWidget'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'XCGLogger.framework'>
+               BuildableName = 'Pods_SplatWidget.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

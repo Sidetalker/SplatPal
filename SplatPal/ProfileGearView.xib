@@ -12,7 +12,7 @@
             <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="itemBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="SQG-c3-hiY">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="itemBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="SQG-c3-hiY">
                     <rect key="frame" x="24" y="36" width="152" height="128"/>
                     <constraints>
                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="152" id="L30-oe-Hda"/>
@@ -31,7 +31,7 @@
                         </mask>
                     </variation>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abilityBombRangeUp.png" translatesAutoresizingMaskIntoConstraints="NO" id="RYv-rB-iuh">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="abilityBombRangeUp.png" translatesAutoresizingMaskIntoConstraints="NO" id="RYv-rB-iuh">
                     <rect key="frame" x="34" y="139" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="40" id="6k9-S2-64G"/>
@@ -43,7 +43,7 @@
                         </mask>
                     </variation>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abilityBombRangeUp.png" translatesAutoresizingMaskIntoConstraints="NO" id="2WO-LN-0Ka">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="abilityBombRangeUp.png" translatesAutoresizingMaskIntoConstraints="NO" id="2WO-LN-0Ka">
                     <rect key="frame" x="80" y="139" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="40" id="1bH-ax-rik"/>
@@ -55,7 +55,7 @@
                         </mask>
                     </variation>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abilityBombRangeUp.png" translatesAutoresizingMaskIntoConstraints="NO" id="46Y-7T-1G6">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="abilityBombRangeUp.png" translatesAutoresizingMaskIntoConstraints="NO" id="46Y-7T-1G6">
                     <rect key="frame" x="126" y="139" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="40" id="nYS-QE-5Tv"/>
@@ -67,7 +67,7 @@
                         </mask>
                     </variation>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abilityDamageUp.png" translatesAutoresizingMaskIntoConstraints="NO" id="AQJ-CN-2Ja">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="abilityDamageUp.png" translatesAutoresizingMaskIntoConstraints="NO" id="AQJ-CN-2Ja">
                     <rect key="frame" x="151" y="21" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="40" id="L9F-bK-1Xa"/>

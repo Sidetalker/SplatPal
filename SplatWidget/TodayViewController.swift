@@ -13,6 +13,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        NNID.sharedInstance.cookie = ""
         // Do any additional setup after loading the view from its nib.
     }
     
@@ -27,8 +28,33 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
+        
+        if NNID.sharedInstance.saveLogin && NNID.sharedInstance.cookie == "" {
+            loginNNID { error in
+                loadMaps { data in
+                    if data["errorCode"].int != nil {
+                        completionHandler(NCUpdateResult.Failed)
+                    }
+                    else {
+                        completionHandler(NCUpdateResult.NewData)
+                    }
+                }
+            }
+        }
+        else {
+            loadMaps { data in
+                if data["errorCode"].int != nil {
+                    completionHandler(NCUpdateResult.Failed)
+                }
+                else {
+                    completionHandler(NCUpdateResult.NewData)
+                }
+            }
+        }
+        
+        
 
-        completionHandler(NCUpdateResult.NewData)
+        
     }
     
 }

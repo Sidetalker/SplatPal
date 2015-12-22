@@ -1,0 +1,6 @@
+framework module Pods_SplatWidget {
+  umbrella header "Pods-SplatWidget-umbrella.h"
+
+  export *
+  module * { export * }
+}
