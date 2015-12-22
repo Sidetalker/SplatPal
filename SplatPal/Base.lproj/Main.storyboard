@@ -1180,6 +1180,7 @@ Tap this message to hide it</string>
                         <segue destination="Spt-Db-0Ga" kind="relationship" relationship="viewControllers" id="usC-aU-Frt"/>
                         <segue destination="r0e-A2-1Fy" kind="relationship" relationship="viewControllers" id="kE0-1Q-fl9"/>
                         <segue destination="qB1-1u-vDb" kind="relationship" relationship="viewControllers" id="Atf-O0-JzW"/>
+                        <segue destination="TZR-Re-Mo2" kind="relationship" relationship="viewControllers" id="CVO-7y-to3"/>
                         <segue destination="sRx-pn-jkx" kind="relationship" relationship="viewControllers" id="Nui-V2-Kok"/>
                         <segue destination="xvr-yH-U4u" kind="relationship" relationship="viewControllers" id="UuD-mr-d9g"/>
                     </connections>
@@ -2060,5 +2061,6 @@ Tap this message to hide it</string>
         <image name="settingsIcon.png" width="25" height="25"/>
         <image name="squid.png" width="150" height="150"/>
         <image name="star.png" width="30" height="30"/>
+        <image name="weaponsIcon.png" width="25" height="25"/>
     </resources>
 </document>
