@@ -128,13 +128,6 @@ class GearTableViewController: UITableViewController {
             tableView.endUpdates()
             return true
         }
-        let saveSwipe = MGSwipeButton(title: "Save", backgroundColor: UIColor.blueColor()) { _ in
-            tableView.beginUpdates()
-            self.prefs.setInteger(1, forKey: "\(data["name"].stringValue.removeWhitespace())-owned")
-            tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-            tableView.endUpdates()
-            return true
-        }
         let notOwnedSwipe = MGSwipeButton(title: "Not Owned", backgroundColor: SplatAppStyle.loggedOut) { _ in
             tableView.beginUpdates()
             self.prefs.setInteger(-1, forKey: "\(data["name"].stringValue.removeWhitespace())-owned")
@@ -145,12 +138,30 @@ class GearTableViewController: UITableViewController {
         expansionSettings.buttonIndex = 0
         expansionSettings.fillOnTrigger = false
         expansionSettings.threshold = 1.2
-        cell.leftButtons = [ownedSwipe, saveSwipe]
+        cell.leftButtons = [ownedSwipe]
         cell.leftExpansion = expansionSettings
         cell.rightButtons = [notOwnedSwipe]
         cell.rightExpansion = expansionSettings
+        
+        for gestureRecognizer in cell.contentView.gestureRecognizers! {
+            cell.contentView.removeGestureRecognizer(gestureRecognizer) }
+        
+        cell.contentView.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: "cellLongPress:"))
 
         return cell
+    }
+    
+    func cellLongPress(recognizer: UILongPressGestureRecognizer) {
+        guard recognizer.state == .Began else { return }
+        
+        let point = recognizer.locationInView(tableView)
+        let indexPath = tableView.indexPathForRowAtPoint(point)
+        let data = gearDisplayData[indexPath!.row]
+        
+        tableView.beginUpdates()
+        self.prefs.setInteger(0, forKey: "\(data["name"].stringValue.removeWhitespace())-owned")
+        tableView.reloadRowsAtIndexPaths([indexPath!], withRowAnimation: .Fade)
+        tableView.endUpdates()
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -163,9 +174,37 @@ class GearTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if prefs.boolForKey("gearInstructionsRead") { return nil }
         
-        return nil
+        let cell = tableView.dequeueReusableCellWithIdentifier("cellInstructions")!
+        cell.contentView.backgroundColor = UIColor.whiteColor()
+        
+        for gestureRecognizer in cell.contentView.gestureRecognizers! {
+            cell.contentView.removeGestureRecognizer(gestureRecognizer) }
+        
+        cell.contentView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "headerTap:"))
+        
+        return cell.contentView
     }
+    
+    func headerTap(recognizer: UITapGestureRecognizer) {
+        guard recognizer.state == .Ended else { return }
+        
+        tableView.beginUpdates()
+        prefs.setBool(true, forKey: "gearInstructionsRead")
+        tableView.reloadSections(NSIndexSet(index: 0), withRowAnimation: .Automatic)
+        tableView.endUpdates()
+    }
+    
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if prefs.boolForKey("gearInstructionsRead") { return 0 }
+        
+        return 74
+    }
+    
+//    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        return "Swipe a cell left or right to mark as owned / not owned. Tap and hold to clear selection. Reset all selections from settings. Tap this message to hide it."
+//    }
 }
 
 class GearGuideViewController: UIViewController, IconSelectionViewDelegate {

@@ -504,8 +504,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellInstructions" rowHeight="74" id="z2l-ok-ni7">
+                                <rect key="frame" x="0.0" y="28" width="600" height="74"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z2l-ok-ni7" id="bkj-Bn-pcW">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="73.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWS-D3-6Z0">
+                                            <rect key="frame" x="8" y="0.0" width="584" height="73.5"/>
+                                            <string key="text">Swipe left or right to mark ownership
+Tap and hold to clear selection
+Reset all selections from settings
+Tap this message to hide it</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="cWS-D3-6Z0" firstAttribute="top" secondItem="bkj-Bn-pcW" secondAttribute="topMargin" constant="-8" id="5je-F4-oEC"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="cWS-D3-6Z0" secondAttribute="trailing" id="Ca7-cv-v35"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="cWS-D3-6Z0" secondAttribute="bottom" constant="-8" id="ite-O3-0Wy"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="cWS-D3-6Z0" secondAttribute="leading" id="s9J-8Y-p3K"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellGear" rowHeight="60" id="gE9-Xh-ncI" customClass="MGSwipeTableCell">
-                                <rect key="frame" x="0.0" y="28" width="600" height="60"/>
+                                <rect key="frame" x="0.0" y="102" width="600" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gE9-Xh-ncI" id="B1u-60-GFU">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="59.5"/>
@@ -554,7 +580,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellGearDetail" rowHeight="196" id="GC5-yZ-QcE" customClass="MGSwipeTableCell">
-                                <rect key="frame" x="0.0" y="88" width="600" height="196"/>
+                                <rect key="frame" x="0.0" y="162" width="600" height="196"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GC5-yZ-QcE" id="0TT-tO-xZU">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="195.5"/>
@@ -1154,7 +1180,6 @@
                         <segue destination="Spt-Db-0Ga" kind="relationship" relationship="viewControllers" id="usC-aU-Frt"/>
                         <segue destination="r0e-A2-1Fy" kind="relationship" relationship="viewControllers" id="kE0-1Q-fl9"/>
                         <segue destination="qB1-1u-vDb" kind="relationship" relationship="viewControllers" id="Atf-O0-JzW"/>
-                        <segue destination="TZR-Re-Mo2" kind="relationship" relationship="viewControllers" id="PQF-uZ-MVH"/>
                         <segue destination="sRx-pn-jkx" kind="relationship" relationship="viewControllers" id="Nui-V2-Kok"/>
                         <segue destination="xvr-yH-U4u" kind="relationship" relationship="viewControllers" id="UuD-mr-d9g"/>
                     </connections>
@@ -2035,6 +2060,5 @@
         <image name="settingsIcon.png" width="25" height="25"/>
         <image name="squid.png" width="150" height="150"/>
         <image name="star.png" width="30" height="30"/>
-        <image name="weaponsIcon.png" width="25" height="25"/>
     </resources>
 </document>
