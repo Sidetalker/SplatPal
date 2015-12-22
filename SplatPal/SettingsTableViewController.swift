@@ -106,6 +106,26 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        if cell?.reuseIdentifier == "cellResetGear" {
+            let confirmAlert = UIAlertController(title: "Confirm Reset", message: "Are you sure you want to reset all owned gear you have marked? This action is not reversable.", preferredStyle: UIAlertControllerStyle.Alert)
+            confirmAlert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
+            confirmAlert.addAction(UIAlertAction(title: "Reset", style: .Destructive, handler: { _ in
+                let prefs = NSUserDefaults.standardUserDefaults()
+                for item in gearData {
+                    prefs.setInteger(0, forKey: "\(item["name"].stringValue.removeWhitespace())-owned")
+                }
+                
+                for vc in self.tabBarController!.viewControllers! {
+                    if let gearView = vc as? GearGuideViewController {
+                        gearView.gearTable?.tableView.reloadData()
+                    }
+                }
+            }))
+            
+            self.presentViewController(confirmAlert, animated: true, completion: nil)
+        }
     }
     
     @IBAction func mapNotificationsToggled(sender: AnyObject) {
@@ -168,9 +188,8 @@ class NNIDSettingsTableViewController: UITableViewController, UITextFieldDelegat
     
     func logout() {
         nnid.updateCookie("")
-        if !nnid.saveLogin {
-            nnid.updateCredentials("", password: "")
-        }
+        nnid.updateSaveLogin(false)
+        nnid.updateCredentials("", password: "")
         
         updateUI(false)
     }

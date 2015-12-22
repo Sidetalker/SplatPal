@@ -134,6 +134,7 @@ func epochDateString(input: NSTimeInterval) -> String {
 func epochTimeString(input: NSTimeInterval) -> String {
     let date = NSDate(timeIntervalSince1970: input)
     let dateFormatter = NSDateFormatter()
+    dateFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
     dateFormatter.dateFormat = NSUserDefaults.standardUserDefaults().boolForKey("militaryTime") ? "HH:mm" : "h:mm a"
     dateFormatter.timeZone = NSTimeZone()
     

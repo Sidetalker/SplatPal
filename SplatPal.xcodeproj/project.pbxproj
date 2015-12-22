@@ -379,8 +379,8 @@
 		0ADF9CB01C1DF2DE002D7E81 /* gearZinkLayeredLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9BAA1C1DF2DE002D7E81 /* gearZinkLayeredLS.png */; };
 		0ADF9CB11C1DF2DE002D7E81 /* gearZinkLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9BAB1C1DF2DE002D7E81 /* gearZinkLS.png */; };
 		0ADF9CB21C1DF2DE002D7E81 /* gearZombieHi-Horses.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9BAC1C1DF2DE002D7E81 /* gearZombieHi-Horses.png */; };
-		8E9398C91066AD239BD5A7D9 /* Pods_SplatWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C430A69EE99A04B17E0712 /* Pods_SplatWidget.framework */; };
 		A80951C10B13C21AEA494E71 /* Pods_SplatPal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBDCB17D189739D652437DA /* Pods_SplatPal.framework */; };
+		C26CBDF8FE9A042550A84847 /* Pods_SplatWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C430A69EE99A04B17E0712 /* Pods_SplatWidget.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -817,7 +817,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A3503F61C286A30009C6A48 /* NotificationCenter.framework in Frameworks */,
-				8E9398C91066AD239BD5A7D9 /* Pods_SplatWidget.framework in Frameworks */,
+				C26CBDF8FE9A042550A84847 /* Pods_SplatWidget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1350,12 +1350,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A3504011C286A30009C6A48 /* Build configuration list for PBXNativeTarget "SplatWidget" */;
 			buildPhases = (
-				FD0DBCA5C0D524E23C1FEE7A /* Check Pods Manifest.lock */,
+				215122E5BEB3DC062E3E5AB8 /* Check Pods Manifest.lock */,
 				0A3503F01C286A30009C6A48 /* Sources */,
 				0A3503F11C286A30009C6A48 /* Frameworks */,
 				0A3503F21C286A30009C6A48 /* Resources */,
-				1C8CACDDB5F5745AB4C30FFE /* Embed Pods Frameworks */,
-				8E9EE9E957E568C52A37803F /* Copy Pods Resources */,
+				44256824AE07CB62BD52232A /* Embed Pods Frameworks */,
+				F91631E6638DAB94F6ABD909 /* Copy Pods Resources */,
+				0A15E65F1C29C5F80098BBF0 /* Purge Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1871,6 +1872,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0A15E65F1C29C5F80098BBF0 /* Purge Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Purge Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\nrm -fr Frameworks\nfi";
+		};
 		0AA23E3E1C1B75410002BCC2 /* Update Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1899,7 +1914,22 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" e9e0fd3a066ecdbf0929f4b7ad16a4dc16d5468b 29c867f398edb79a7f762f24fb3193b235728bdceb51a924c84ba7c78564ee4d";
 		};
-		1C8CACDDB5F5745AB4C30FFE /* Embed Pods Frameworks */ = {
+		215122E5BEB3DC062E3E5AB8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		44256824AE07CB62BD52232A /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1927,21 +1957,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplatPal/Pods-SplatPal-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8E9EE9E957E568C52A37803F /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplatWidget/Pods-SplatWidget-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DF3E91F8ADCBFC5CCA76D8C5 /* Check Pods Manifest.lock */ = {
@@ -1974,19 +1989,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplatPal/Pods-SplatPal-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FD0DBCA5C0D524E23C1FEE7A /* Check Pods Manifest.lock */ = {
+		F91631E6638DAB94F6ABD909 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplatWidget/Pods-SplatWidget-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

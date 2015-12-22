@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import MGSwipeTableCell
 
 func abilityUpForBrand(brandName: String) -> String {
     return abilityForBrand(brandName, up: true)
@@ -56,11 +57,12 @@ class GearTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = UITableViewCell()
+        var cell = MGSwipeTableCell()
         let data = gearDisplayData[indexPath.row]
+        let prefs = NSUserDefaults.standardUserDefaults()
         
         if gearDetailDisplaying[indexPath.row] {
-            cell = tableView.dequeueReusableCellWithIdentifier("cellGearDetail", forIndexPath: indexPath)
+            cell = tableView.dequeueReusableCellWithIdentifier("cellGearDetail", forIndexPath: indexPath) as! MGSwipeTableCell
             let lblName = cell.viewWithTag(1) as! UILabel
             let imgGear = cell.viewWithTag(2) as! UIImageView
             let imgAbilityMain = cell.viewWithTag(3) as! UIImageView
@@ -98,7 +100,7 @@ class GearTableViewController: UITableViewController {
             }
             
         } else {
-            cell = tableView.dequeueReusableCellWithIdentifier("cellGear", forIndexPath: indexPath)
+            cell = tableView.dequeueReusableCellWithIdentifier("cellGear", forIndexPath: indexPath) as! MGSwipeTableCell
             let lblName = cell.viewWithTag(1) as! UILabel
             let imgGear = cell.viewWithTag(2) as! UIImageView
             let imgAbilityMain = cell.viewWithTag(3) as! UIImageView
@@ -110,6 +112,36 @@ class GearTableViewController: UITableViewController {
             imgAbilityBrand.image = UIImage(named: "ability\(abilityUpForBrand(data["brand"].stringValue).removeWhitespace()).png")
         }
         
+        let owned = prefs.integerForKey("\(data["name"].stringValue.removeWhitespace())-owned")
+        if owned != 0 {
+            cell.contentView.backgroundColor = owned > 0 ? SplatAppStyle.loggedIn : SplatAppStyle.loggedOut
+        } else {
+            cell.contentView.backgroundColor = UIColor.clearColor()
+        }
+        
+        let expansionSettings = MGSwipeExpansionSettings()
+        let ownedSwipe = MGSwipeButton(title: "Owned", backgroundColor: SplatAppStyle.loggedIn) { _ in
+            tableView.beginUpdates()
+            prefs.setInteger(1, forKey: "\(data["name"].stringValue.removeWhitespace())-owned")
+            tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            tableView.endUpdates()
+            return true
+        }
+        let notOwnedSwipe = MGSwipeButton(title: "Not Owned", backgroundColor: SplatAppStyle.loggedOut) { _ in
+            tableView.beginUpdates()
+            prefs.setInteger(-1, forKey: "\(data["name"].stringValue.removeWhitespace())-owned")
+            tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            tableView.endUpdates()
+            return true
+        }
+        expansionSettings.buttonIndex = 0
+        expansionSettings.fillOnTrigger = false
+        expansionSettings.threshold = 1.2
+        cell.leftButtons = [ownedSwipe]
+        cell.leftExpansion = expansionSettings
+        cell.rightButtons = [notOwnedSwipe]
+        cell.rightExpansion = expansionSettings
+
         return cell
     }
     
