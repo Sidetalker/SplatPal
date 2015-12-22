@@ -106,6 +106,26 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        if cell?.reuseIdentifier == "cellResetGear" {
+            let confirmAlert = UIAlertController(title: "Confirm Reset", message: "Are you sure you want to reset all owned gear you have marked? This action is not reversable.", preferredStyle: UIAlertControllerStyle.Alert)
+            confirmAlert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
+            confirmAlert.addAction(UIAlertAction(title: "Reset", style: .Destructive, handler: { _ in
+                let prefs = NSUserDefaults.standardUserDefaults()
+                for item in gearData {
+                    prefs.setInteger(0, forKey: "\(item["name"].stringValue.removeWhitespace())-owned")
+                }
+                
+                for vc in self.tabBarController!.viewControllers! {
+                    if let gearView = vc as? GearGuideViewController {
+                        gearView.gearTable?.tableView.reloadData()
+                    }
+                }
+            }))
+            
+            self.presentViewController(confirmAlert, animated: true, completion: nil)
+        }
     }
     
     @IBAction func mapNotificationsToggled(sender: AnyObject) {
@@ -126,58 +146,6 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
                 mapView.tableView.reloadData()
             }
         }
-    }
-}
-
-class NNID {
-    static let sharedInstance = NNID()
-    
-    private let prefs = NSUserDefaults.standardUserDefaults()
-    var username = ""
-    var password = ""
-    var cookie = ""
-    var saveLogin = false
-    var touchID = false
-    
-    private init() {
-        if let
-            username = prefs.stringForKey("NNIDUsername"),
-            password = prefs.stringForKey("NNIDPassword"),
-            cookie = prefs.stringForKey("NNIDCookie")
-        {
-            self.username = username
-            self.password = password
-            self.cookie = cookie
-        }
-        
-        self.saveLogin = prefs.boolForKey("NNIDSaveLogin")
-        self.touchID = prefs.boolForKey("NNIDTouchID")
-    }
-    
-    func hasCredentials() -> Bool {
-        return username != "" && password != ""
-    }
-    
-    func updateCredentials(username: String, password: String) {
-        self.username = username
-        self.password = password
-        prefs.setObject(username, forKey: "NNIDUsername")
-        prefs.setObject(password, forKey: "NNIDPassword")
-    }
-    
-    func updateCookie(cookie: String) {
-        self.cookie = cookie
-        prefs.setObject(cookie, forKey: "NNIDCookie")
-    }
-    
-    func updateSaveLogin(saveLogin: Bool) {
-        self.saveLogin = saveLogin
-        prefs.setBool(saveLogin, forKey: "NNIDSaveLogin")
-    }
-    
-    func updateTouchID(touchID: Bool) {
-        self.touchID = touchID
-        prefs.setBool(touchID, forKey: "NNIDTouchID")
     }
 }
 
@@ -220,9 +188,8 @@ class NNIDSettingsTableViewController: UITableViewController, UITextFieldDelegat
     
     func logout() {
         nnid.updateCookie("")
-        if !nnid.saveLogin {
-            nnid.updateCredentials("", password: "")
-        }
+        nnid.updateSaveLogin(false)
+        nnid.updateCredentials("", password: "")
         
         updateUI(false)
     }
@@ -240,6 +207,7 @@ class NNIDSettingsTableViewController: UITableViewController, UITextFieldDelegat
             
             if error == nil {
                 log.debug("Login Success")
+                self.nnid.updateSaveLogin(true)
                 self.updateUI(true)
                 
                 for vc in self.tabBarController!.viewControllers! {

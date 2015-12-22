@@ -1,3 +1,7 @@
+Version 0.3.0 (562)
+- Minor bugfix
+    - iPad map rotation view
+
 Version 0.3.0 (516)
 - UI Tweaks
 

@@ -29,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-SplatWidget.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -58,6 +63,11 @@
 			<true/>
 		</dict>
 		<key>56C0597D8A94B5F924FBCBDF15C3122E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8562EC3386A2428CF2DF110BAF653885</key>
 		<dict>
 			<key>primary</key>
 			<true/>
