@@ -30,6 +30,7 @@
 		0A6AFEF91C2870D20073884B /* SplatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6AFEF81C2870D20073884B /* SplatData.swift */; };
 		0A6AFEFA1C2870D20073884B /* SplatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6AFEF81C2870D20073884B /* SplatData.swift */; };
 		0A948AC31C1CC4F700CCC4DB /* data.min.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A948AC21C1CC4F700CCC4DB /* data.min.json */; };
+		0A9AD9321C29DB0700CDFBE7 /* LoadoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9AD9311C29DB0700CDFBE7 /* LoadoutViewController.swift */; };
 		0AA23DF71C1B6D870002BCC2 /* betaIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DEE1C1B6D870002BCC2 /* betaIcon.png */; };
 		0AA23DF81C1B6D870002BCC2 /* betaIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DEF1C1B6D870002BCC2 /* betaIcon@2x.png */; };
 		0AA23DF91C1B6D870002BCC2 /* betaIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DF01C1B6D870002BCC2 /* betaIcon@3x.png */; };
@@ -446,6 +447,7 @@
 		0A4C51951C25F208006ABE9B /* squidIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "squidIcon@3x.png"; path = "Images/squidIcon@3x.png"; sourceTree = "<group>"; };
 		0A6AFEF81C2870D20073884B /* SplatData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplatData.swift; sourceTree = "<group>"; };
 		0A948AC21C1CC4F700CCC4DB /* data.min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.min.json; path = Resources/data.min.json; sourceTree = "<group>"; };
+		0A9AD9311C29DB0700CDFBE7 /* LoadoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadoutViewController.swift; sourceTree = "<group>"; };
 		0AA23DEE1C1B6D870002BCC2 /* betaIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = betaIcon.png; path = Images/betaIcon.png; sourceTree = "<group>"; };
 		0AA23DEF1C1B6D870002BCC2 /* betaIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "betaIcon@2x.png"; path = "Images/betaIcon@2x.png"; sourceTree = "<group>"; };
 		0AA23DF01C1B6D870002BCC2 /* betaIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "betaIcon@3x.png"; path = "Images/betaIcon@3x.png"; sourceTree = "<group>"; };
@@ -928,6 +930,7 @@
 				0AA23E411C1B78450002BCC2 /* BetaViewController.swift */,
 				0A4BF6AD1C22201800BB4834 /* SettingsTableViewController.swift */,
 				0A3503EC1C27270C009C6A48 /* NotificationsTableViewController.swift */,
+				0A9AD9311C29DB0700CDFBE7 /* LoadoutViewController.swift */,
 				0AA23E011C1B6DB90002BCC2 /* IconSelectionView.swift */,
 				0AA23E021C1B6DB90002BCC2 /* IconSelectionView.xib */,
 				0A0F6FF21C27105900206883 /* ProfileGearView.xib */,
@@ -2022,6 +2025,7 @@
 			files = (
 				0A6AFEF91C2870D20073884B /* SplatData.swift in Sources */,
 				0A3503ED1C27270C009C6A48 /* NotificationsTableViewController.swift in Sources */,
+				0A9AD9321C29DB0700CDFBE7 /* LoadoutViewController.swift in Sources */,
 				0AA23E051C1B6DB90002BCC2 /* IconSelectionView.swift in Sources */,
 				0AC607B91C189BD8006EECA7 /* MapsTableViewController.swift in Sources */,
 				0AC607891C189B36006EECA7 /* AppDelegate.swift in Sources */,

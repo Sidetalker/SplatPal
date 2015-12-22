@@ -32,6 +32,8 @@ class GearTableViewController: UITableViewController {
     var gearDisplayData = [JSON]()
     var gearDetailDisplaying = [Bool]()
     
+    let prefs = NSUserDefaults.standardUserDefaults()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -59,7 +61,6 @@ class GearTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = MGSwipeTableCell()
         let data = gearDisplayData[indexPath.row]
-        let prefs = NSUserDefaults.standardUserDefaults()
         
         if gearDetailDisplaying[indexPath.row] {
             cell = tableView.dequeueReusableCellWithIdentifier("cellGearDetail", forIndexPath: indexPath) as! MGSwipeTableCell
@@ -122,14 +123,21 @@ class GearTableViewController: UITableViewController {
         let expansionSettings = MGSwipeExpansionSettings()
         let ownedSwipe = MGSwipeButton(title: "Owned", backgroundColor: SplatAppStyle.loggedIn) { _ in
             tableView.beginUpdates()
-            prefs.setInteger(1, forKey: "\(data["name"].stringValue.removeWhitespace())-owned")
+            self.prefs.setInteger(1, forKey: "\(data["name"].stringValue.removeWhitespace())-owned")
+            tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            tableView.endUpdates()
+            return true
+        }
+        let saveSwipe = MGSwipeButton(title: "Save", backgroundColor: UIColor.blueColor()) { _ in
+            tableView.beginUpdates()
+            self.prefs.setInteger(1, forKey: "\(data["name"].stringValue.removeWhitespace())-owned")
             tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
             tableView.endUpdates()
             return true
         }
         let notOwnedSwipe = MGSwipeButton(title: "Not Owned", backgroundColor: SplatAppStyle.loggedOut) { _ in
             tableView.beginUpdates()
-            prefs.setInteger(-1, forKey: "\(data["name"].stringValue.removeWhitespace())-owned")
+            self.prefs.setInteger(-1, forKey: "\(data["name"].stringValue.removeWhitespace())-owned")
             tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
             tableView.endUpdates()
             return true
@@ -137,7 +145,7 @@ class GearTableViewController: UITableViewController {
         expansionSettings.buttonIndex = 0
         expansionSettings.fillOnTrigger = false
         expansionSettings.threshold = 1.2
-        cell.leftButtons = [ownedSwipe]
+        cell.leftButtons = [ownedSwipe, saveSwipe]
         cell.leftExpansion = expansionSettings
         cell.rightButtons = [notOwnedSwipe]
         cell.rightExpansion = expansionSettings
@@ -152,6 +160,11 @@ class GearTableViewController: UITableViewController {
         tableView.beginUpdates()
         tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         tableView.endUpdates()
+    }
+    
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        return nil
     }
 }
 
