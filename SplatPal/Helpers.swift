@@ -93,6 +93,24 @@ func loadNotifications() -> [Notification] {
     return notifications
 }
 
+func loadLoadouts() -> [Loadout] {
+    let path = getDocumentsDirectory().stringByAppendingPathComponent("loadouts.json")
+    var loadouts = [Loadout]()
+    
+    if let jsonData = NSData(contentsOfFile: path) {
+        for data in JSON(data: jsonData).arrayValue {
+            loadouts.append(Loadout(data: data))
+        }
+        
+        log.debug("\(loadouts.count) Loadouts loaded")
+    }
+    else {
+        saveLoadouts(loadouts)
+    }
+    
+    return loadouts
+}
+
 func saveNotifications(notifications: [Notification]) -> Bool {
     let path = getDocumentsDirectory().stringByAppendingPathComponent("notifications.json")
     var notificationJSON = [JSON]()
@@ -109,6 +127,26 @@ func saveNotifications(notifications: [Notification]) -> Bool {
         log.error("Could not write notification file")
         log.error("File: \(path)")
         log.error("Contents: \(JSON(notificationJSON).rawString()!)")
+        return false
+    }
+}
+
+func saveLoadouts(loadouts: [Loadout]) -> Bool {
+    let path = getDocumentsDirectory().stringByAppendingPathComponent("loadouts.json")
+    var loadoutJSON = [JSON]()
+    
+    for loadout in loadouts {
+        loadoutJSON.append(loadout.jsonRepresentation())
+    }
+    
+    do {
+        try JSON(loadoutJSON).rawString()!.writeToFile(path, atomically: true, encoding: NSUTF8StringEncoding)
+        log.debug("Loadouts saved")
+        return true
+    } catch {
+        log.error("Could not write loadout file")
+        log.error("File: \(path)")
+        log.error("Contents: \(JSON(loadoutJSON).rawString()!)")
         return false
     }
 }

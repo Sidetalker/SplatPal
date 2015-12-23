@@ -100,7 +100,6 @@ class NotificationTableViewController: UITableViewController {
                 tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
                 tableView.endUpdates()
                 
-                
                 return true
             }
             
