@@ -43,6 +43,7 @@
             <string>ProjectPaintball</string>
             <string>ProjectPaintball</string>
             <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -1082,7 +1083,7 @@ Tap this message to hide it</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RMj-jh-2tx">
-                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <connections>
                                     <segue destination="8mo-1y-w9c" kind="embed" identifier="embedLoadout" id="8XZ-Hd-WAY"/>
                                 </connections>
@@ -1090,9 +1091,9 @@ Tap this message to hide it</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="RMj-jh-2tx" firstAttribute="top" secondItem="ALG-48-eCS" secondAttribute="bottom" constant="-20" id="2wf-oD-kMU"/>
                             <constraint firstItem="RMj-jh-2tx" firstAttribute="leading" secondItem="jIC-M4-yS7" secondAttribute="leadingMargin" constant="-20" id="Njo-NM-kOD"/>
                             <constraint firstItem="Yab-2J-F6M" firstAttribute="top" secondItem="RMj-jh-2tx" secondAttribute="bottom" id="XbS-5t-ApH"/>
-                            <constraint firstItem="RMj-jh-2tx" firstAttribute="top" secondItem="ALG-48-eCS" secondAttribute="bottom" id="cfh-tm-2S2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RMj-jh-2tx" secondAttribute="trailing" constant="-20" id="qjA-sI-OQ9"/>
                         </constraints>
                     </view>
@@ -1107,7 +1108,7 @@ Tap this message to hide it</string>
             <objects>
                 <tableViewController id="8mo-1y-w9c" customClass="LoadoutTableViewController" customModule="SplatPal" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="wWS-Xv-4Up">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="531"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
@@ -1119,9 +1120,9 @@ Tap this message to hide it</string>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create New Loadout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ex-gA-AVL">
-                                            <rect key="frame" x="221.5" y="12" width="157" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <rect key="frame" x="173.5" y="8" width="253.5" height="27.5"/>
+                                            <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="25"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -1130,6 +1131,7 @@ Tap this message to hide it</string>
                                         <constraint firstItem="4ex-gA-AVL" firstAttribute="centerX" secondItem="Ejd-IN-4lv" secondAttribute="centerX" id="dNO-BR-3Du"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellLoadout" rowHeight="261" id="Lkn-sO-soj">
                                 <rect key="frame" x="0.0" y="93.5" width="600" height="261"/>

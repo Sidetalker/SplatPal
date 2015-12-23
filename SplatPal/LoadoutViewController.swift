@@ -12,6 +12,15 @@ import SwiftyJSON
 class LoadoutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return NSUserDefaults.standardUserDefaults().boolForKey("hideStatusBar")
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -28,44 +37,13 @@ class LoadoutTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.backgroundView = nil
+        tableView.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
         reloadLoadouts()
     }
     
     func reloadLoadouts() {
         loadouts = loadLoadouts()
-//        let myLoad = Loadout()
-//        let wep = Weapon()
-//        let headgear = Gear()
-//        let clothing = Gear()
-//        let shoes = Gear()
-//        
-//        wep.name = "Tri-Slosher"
-//        wep.sub = "Disruptor"
-//        wep.special = "Bubbler"
-//        headgear.name = "Sun Visor"
-//        headgear.abilityPrimary = "Bomb Range Up"
-//        headgear.ability1 = "Ink Saver (Main)"
-//        headgear.ability2 = "Swim Speed Up"
-//        headgear.ability3 = "Swim Speed Up"
-//        clothing.name = "Slipstream United"
-//        clothing.abilityPrimary = "Defence Up"
-//        clothing.ability1 = "Quick Super Jump"
-//        clothing.ability2 = "Swim Speed Up"
-//        clothing.ability3 = "Swim Speed Up"
-//        shoes.name = "Roasted Brogues"
-//        shoes.abilityPrimary = "Defence Up"
-//        shoes.ability1 = "Defence Up"
-//        shoes.ability2 = "Defence Up"
-//        shoes.ability3 = "Defence Up"
-//        
-//        myLoad.name = "Mah Loadout"
-//        myLoad.weapon = wep
-//        myLoad.headgear = headgear
-//        myLoad.clothing = clothing
-//        myLoad.shoes = shoes
-//        
-//        loadouts.append(myLoad)
-        
         self.tableView.reloadData()
     }
     
@@ -107,10 +85,13 @@ class LoadoutTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = UITableViewCell()
+        
         if indexPath.section == 0 {
-            return tableView.dequeueReusableCellWithIdentifier("cellCreateNew", forIndexPath: indexPath)
+            cell = tableView.dequeueReusableCellWithIdentifier("cellCreateNew", forIndexPath: indexPath)
+            cell.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
         } else {
-            let cell = tableView.dequeueReusableCellWithIdentifier("cellLoadout", forIndexPath: indexPath)
+            cell = tableView.dequeueReusableCellWithIdentifier("cellLoadout", forIndexPath: indexPath)
             let loadout = loadouts[indexPath.row]
             let headgear = cell.viewWithTag(1) as! GearView
             let clothing = cell.viewWithTag(2) as! GearView
@@ -130,9 +111,9 @@ class LoadoutTableViewController: UITableViewController {
             weapon.image = UIImage(named: "weapon\(loadout.weapon.name.removeWhitespace())")
             sub.image = UIImage(named: "sub\(loadout.weapon.sub.removeWhitespace())")
             special.image = UIImage(named: "special\(loadout.weapon.special.removeWhitespace())")
-            
-            return cell
         }
+        
+        return cell
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
