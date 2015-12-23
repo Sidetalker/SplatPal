@@ -32,39 +32,39 @@ class LoadoutTableViewController: UITableViewController {
     }
     
     func reloadLoadouts() {
-//        loadouts = loadLoadouts()
-        let myLoad = Loadout()
-        let wep = Weapon()
-        let headgear = Gear()
-        let clothing = Gear()
-        let shoes = Gear()
-        
-        wep.name = "Tri-Slosher"
-        wep.sub = "Disruptor"
-        wep.special = "Bubbler"
-        headgear.name = "Sun Visor"
-        headgear.abilityPrimary = "Bomb Range Up"
-        headgear.ability1 = "Ink Saver (Main)"
-        headgear.ability2 = "Swim Speed Up"
-        headgear.ability3 = "Swim Speed Up"
-        clothing.name = "Slipstream United"
-        clothing.abilityPrimary = "Defence Up"
-        clothing.ability1 = "Quick Super Jump"
-        clothing.ability2 = "Swim Speed Up"
-        clothing.ability3 = "Swim Speed Up"
-        shoes.name = "Roasted Brogues"
-        shoes.abilityPrimary = "Defence Up"
-        shoes.ability1 = "Defence Up"
-        shoes.ability2 = "Defence Up"
-        shoes.ability3 = "Defence Up"
-        
-        myLoad.name = "Mah Loadout"
-        myLoad.weapon = wep
-        myLoad.headgear = headgear
-        myLoad.clothing = clothing
-        myLoad.shoes = shoes
-        
-        loadouts.append(myLoad)
+        loadouts = loadLoadouts()
+//        let myLoad = Loadout()
+//        let wep = Weapon()
+//        let headgear = Gear()
+//        let clothing = Gear()
+//        let shoes = Gear()
+//        
+//        wep.name = "Tri-Slosher"
+//        wep.sub = "Disruptor"
+//        wep.special = "Bubbler"
+//        headgear.name = "Sun Visor"
+//        headgear.abilityPrimary = "Bomb Range Up"
+//        headgear.ability1 = "Ink Saver (Main)"
+//        headgear.ability2 = "Swim Speed Up"
+//        headgear.ability3 = "Swim Speed Up"
+//        clothing.name = "Slipstream United"
+//        clothing.abilityPrimary = "Defence Up"
+//        clothing.ability1 = "Quick Super Jump"
+//        clothing.ability2 = "Swim Speed Up"
+//        clothing.ability3 = "Swim Speed Up"
+//        shoes.name = "Roasted Brogues"
+//        shoes.abilityPrimary = "Defence Up"
+//        shoes.ability1 = "Defence Up"
+//        shoes.ability2 = "Defence Up"
+//        shoes.ability3 = "Defence Up"
+//        
+//        myLoad.name = "Mah Loadout"
+//        myLoad.weapon = wep
+//        myLoad.headgear = headgear
+//        myLoad.clothing = clothing
+//        myLoad.shoes = shoes
+//        
+//        loadouts.append(myLoad)
         
         self.tableView.reloadData()
     }
@@ -119,7 +119,10 @@ class LoadoutTableViewController: UITableViewController {
             let weapon = cell.viewWithTag(5) as! UIImageView
             let sub = cell.viewWithTag(6) as! UIImageView
             let special = cell.viewWithTag(7) as! UIImageView
+            let wepBGView = cell.viewWithTag(8)!
             
+            wepBGView.layer.cornerRadius = 10
+            cell.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
             name.text = loadout.name
             headgear.updateGear(loadout.headgear)
             clothing.updateGear(loadout.clothing)
@@ -133,7 +136,7 @@ class LoadoutTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return indexPath.section == 1 ? 235 : 44
+        return indexPath.section == 1 ? 255 : 44
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -158,21 +161,21 @@ class Loadout {
     init() { }
     
     init(data: JSON) {
-//        for (x, mode) in data["modes"].arrayValue.enumerate() { modes[x] = mode.boolValue }
-//        for (x, map) in data["maps"].arrayValue.enumerate() { maps[x] = map.boolValue }
-//        for (x, time) in data["times"].arrayValue.enumerate() { times[x] = time.boolValue }
-//        enabled = data["enabled"].boolValue
-//        name = data["name"].stringValue
+        name = data["name"].stringValue
+        weapon = Weapon(data: data["weapon"])
+        headgear = Gear(data: data["headgear"])
+        clothing = Gear(data: data["clothing"])
+        shoes = Gear(data: data["shoes"])
     }
     
     func jsonRepresentation() -> JSON {
         var rep = JSON([:])
         
-//        rep["modes"] = JSON(modes)
-//        rep["maps"] = JSON(maps)
-//        rep["times"] = JSON(times)
-//        rep["enabled"] = JSON(enabled)
-//        rep["name"] = JSON(name)
+        rep["name"] = JSON(name)
+        rep["weapon"] = weapon.jsonRepresentation()
+        rep["headgear"] = headgear.jsonRepresentation()
+        rep["clothing"] = clothing.jsonRepresentation()
+        rep["shoes"] = shoes.jsonRepresentation()
         
         return rep
     }
@@ -184,10 +187,50 @@ class Gear {
     var ability1 = ""
     var ability2 = ""
     var ability3 = ""
+    
+    init() { }
+    
+    init(data: JSON) {
+        name = data["name"].stringValue
+        abilityPrimary = data["abilityPrimary"].stringValue
+        ability1 = data["ability1"].stringValue
+        ability2 = data["ability2"].stringValue
+        ability3 = data["ability3"].stringValue
+    }
+    
+    func jsonRepresentation() -> JSON {
+        var rep = JSON([:])
+        
+        rep["name"] = JSON(name)
+        rep["abilityPrimary"] = JSON(abilityPrimary)
+        rep["ability1"] = JSON(ability1)
+        rep["ability2"] = JSON(ability2)
+        rep["ability3"] = JSON(ability3)
+        
+        return rep
+    }
 }
 
 class Weapon {
     var name = ""
     var sub = ""
     var special = ""
+    
+    init() { }
+    
+    init(data: JSON) {
+        name = data["name"].stringValue
+        sub = data["sub"].stringValue
+        special = data["special"].stringValue
+    }
+    
+    func jsonRepresentation() -> JSON {
+        var rep = JSON([:])
+        
+        rep["name"] = JSON(name)
+        rep["sub"] = JSON(sub)
+        rep["special"] = JSON(special)
+        
+        return rep
+    }
 }

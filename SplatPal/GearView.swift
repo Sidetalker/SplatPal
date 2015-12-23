@@ -14,6 +14,7 @@ class GearView: UIView {
     @IBOutlet weak var imgAbility1: UIImageView!
     @IBOutlet weak var imgAbility2: UIImageView!
     @IBOutlet weak var imgAbility3: UIImageView!
+    @IBOutlet weak var bgView: UIView!
     
     var view: UIView!
     
@@ -38,6 +39,9 @@ class GearView: UIView {
     func configure() {
         view = loadViewFromNib()
         view.frame = bounds
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
+        bgView.layer.cornerRadius = 10
+        bgView.alpha = 0.3
         self.addSubview(view)
     }
     
@@ -51,5 +55,10 @@ class GearView: UIView {
         imgAbility1.image = UIImage(named: "ability\(gear.ability1.removeWhitespace()).png")
         imgAbility2.image = UIImage(named: "ability\(gear.ability2.removeWhitespace()).png")
         imgAbility3.image = UIImage(named: "ability\(gear.ability3.removeWhitespace()).png")
+        
+//        let anotherImage = SplatAppStyle.imageOfCircle(frame: imgAbilityMain.frame, circleStroke: UIColor.whiteColor(), circleStrokeWidth: 3)
+//        let anotherIV = UIImageView(image: anotherImage)
+//        anotherIV.clipsToBounds = false
+//        view.addSubview(anotherIV)
     }
 }
