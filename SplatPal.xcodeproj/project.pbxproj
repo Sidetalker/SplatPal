@@ -17,6 +17,7 @@
 		0A3503F91C286A30009C6A48 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3503F81C286A30009C6A48 /* TodayViewController.swift */; };
 		0A3503FC1C286A30009C6A48 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3503FA1C286A30009C6A48 /* MainInterface.storyboard */; };
 		0A3504001C286A30009C6A48 /* SplatWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A3503F41C286A30009C6A48 /* SplatWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A36DEBB1C31DD06001E6DE4 /* StagePiranhaPit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A36DEBA1C31DD06001E6DE4 /* StagePiranhaPit.jpg */; };
 		0A4BF6AA1C22069700BB4834 /* settingsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A71C22069700BB4834 /* settingsIcon.png */; };
 		0A4BF6AB1C22069700BB4834 /* settingsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A81C22069700BB4834 /* settingsIcon@2x.png */; };
 		0A4BF6AC1C22069700BB4834 /* settingsIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A91C22069700BB4834 /* settingsIcon@3x.png */; };
@@ -31,6 +32,102 @@
 		0A6AFEFA1C2870D20073884B /* SplatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6AFEF81C2870D20073884B /* SplatData.swift */; };
 		0A948AC31C1CC4F700CCC4DB /* data.min.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A948AC21C1CC4F700CCC4DB /* data.min.json */; };
 		0A9AD9321C29DB0700CDFBE7 /* LoadoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9AD9311C29DB0700CDFBE7 /* LoadoutViewController.swift */; };
+		0A9AD97E1C29F5BE00CDFBE7 /* weapon.52Gal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9341C29F5BE00CDFBE7 /* weapon.52Gal.png */; };
+		0A9AD97F1C29F5BE00CDFBE7 /* weapon.52GalDeco.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9351C29F5BE00CDFBE7 /* weapon.52GalDeco.png */; };
+		0A9AD9801C29F5BE00CDFBE7 /* weapon.96Gal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9361C29F5BE00CDFBE7 /* weapon.96Gal.png */; };
+		0A9AD9811C29F5BE00CDFBE7 /* weapon.96GalDeco.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9371C29F5BE00CDFBE7 /* weapon.96GalDeco.png */; };
+		0A9AD9821C29F5BE00CDFBE7 /* weaponAerosprayMG.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9381C29F5BE00CDFBE7 /* weaponAerosprayMG.png */; };
+		0A9AD9831C29F5BE00CDFBE7 /* weaponAerosprayRG.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9391C29F5BE00CDFBE7 /* weaponAerosprayRG.png */; };
+		0A9AD9841C29F5BE00CDFBE7 /* weaponBamboozler14MkI.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD93A1C29F5BE00CDFBE7 /* weaponBamboozler14MkI.png */; };
+		0A9AD9851C29F5BE00CDFBE7 /* weaponBamboozler14MkII.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD93B1C29F5BE00CDFBE7 /* weaponBamboozler14MkII.png */; };
+		0A9AD9861C29F5BE00CDFBE7 /* weaponBlaster.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD93C1C29F5BE00CDFBE7 /* weaponBlaster.png */; };
+		0A9AD9871C29F5BE00CDFBE7 /* weaponCarbonRoller.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD93D1C29F5BE00CDFBE7 /* weaponCarbonRoller.png */; };
+		0A9AD9881C29F5BE00CDFBE7 /* weaponCarbonRollerDeco.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD93E1C29F5BE00CDFBE7 /* weaponCarbonRollerDeco.png */; };
+		0A9AD9891C29F5BE00CDFBE7 /* weaponClassicSquiffer.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD93F1C29F5BE00CDFBE7 /* weaponClassicSquiffer.png */; };
+		0A9AD98A1C29F5BE00CDFBE7 /* weaponCustomBlaster.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9401C29F5BE00CDFBE7 /* weaponCustomBlaster.png */; };
+		0A9AD98B1C29F5BE00CDFBE7 /* weaponCustomDualSquelcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9411C29F5BE00CDFBE7 /* weaponCustomDualSquelcher.png */; };
+		0A9AD98C1C29F5BE00CDFBE7 /* weaponCustomE-liter3K.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9421C29F5BE00CDFBE7 /* weaponCustomE-liter3K.png */; };
+		0A9AD98D1C29F5BE00CDFBE7 /* weaponCustomE-liter3KScope.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9431C29F5BE00CDFBE7 /* weaponCustomE-liter3KScope.png */; };
+		0A9AD98E1C29F5BE00CDFBE7 /* weaponCustomHydraSplatling.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9441C29F5BE00CDFBE7 /* weaponCustomHydraSplatling.png */; };
+		0A9AD98F1C29F5BE00CDFBE7 /* weaponCustomJetSquelcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9451C29F5BE00CDFBE7 /* weaponCustomJetSquelcher.png */; };
+		0A9AD9901C29F5BE00CDFBE7 /* weaponCustomRangeBlaster.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9461C29F5BE00CDFBE7 /* weaponCustomRangeBlaster.png */; };
+		0A9AD9911C29F5BE00CDFBE7 /* weaponCustomSplattershotJr..png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9471C29F5BE00CDFBE7 /* weaponCustomSplattershotJr..png */; };
+		0A9AD9921C29F5BE00CDFBE7 /* weaponDualSquelcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9481C29F5BE00CDFBE7 /* weaponDualSquelcher.png */; };
+		0A9AD9931C29F5BE00CDFBE7 /* weaponDynamoRoller.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9491C29F5BE00CDFBE7 /* weaponDynamoRoller.png */; };
+		0A9AD9941C29F5BE00CDFBE7 /* weaponE-liter3K.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD94A1C29F5BE00CDFBE7 /* weaponE-liter3K.png */; };
+		0A9AD9951C29F5BE00CDFBE7 /* weaponE-liter3KScope.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD94B1C29F5BE00CDFBE7 /* weaponE-liter3KScope.png */; };
+		0A9AD9961C29F5BE00CDFBE7 /* weaponForgeSplattershotPro.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD94C1C29F5BE00CDFBE7 /* weaponForgeSplattershotPro.png */; };
+		0A9AD9971C29F5BE00CDFBE7 /* weaponGoldDynamoRoller.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD94D1C29F5BE00CDFBE7 /* weaponGoldDynamoRoller.png */; };
+		0A9AD9981C29F5BE00CDFBE7 /* weaponH-3Nozzlenose.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD94E1C29F5BE00CDFBE7 /* weaponH-3Nozzlenose.png */; };
+		0A9AD9991C29F5BE00CDFBE7 /* weaponH-3NozzlenoseD.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD94F1C29F5BE00CDFBE7 /* weaponH-3NozzlenoseD.png */; };
+		0A9AD99A1C29F5BE00CDFBE7 /* weaponHeavySplatling.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9501C29F5BE00CDFBE7 /* weaponHeavySplatling.png */; };
+		0A9AD99B1C29F5BE00CDFBE7 /* weaponHeavySplatlingDeco.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9511C29F5BE00CDFBE7 /* weaponHeavySplatlingDeco.png */; };
+		0A9AD99C1C29F5BE00CDFBE7 /* weaponHeroChargerReplica.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9521C29F5BE00CDFBE7 /* weaponHeroChargerReplica.png */; };
+		0A9AD99D1C29F5BE00CDFBE7 /* weaponHeroRollerReplica.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9531C29F5BE00CDFBE7 /* weaponHeroRollerReplica.png */; };
+		0A9AD99E1C29F5BE00CDFBE7 /* weaponHeroShotReplica.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9541C29F5BE00CDFBE7 /* weaponHeroShotReplica.png */; };
+		0A9AD99F1C29F5BE00CDFBE7 /* weaponHydraSplatling.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9551C29F5BE00CDFBE7 /* weaponHydraSplatling.png */; };
+		0A9AD9A01C29F5BE00CDFBE7 /* weaponInkbrush.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9561C29F5BE00CDFBE7 /* weaponInkbrush.png */; };
+		0A9AD9A11C29F5BE00CDFBE7 /* weaponInkbrushNouveau.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9571C29F5BE00CDFBE7 /* weaponInkbrushNouveau.png */; };
+		0A9AD9A21C29F5BE00CDFBE7 /* weaponJetSquelcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9581C29F5BE00CDFBE7 /* weaponJetSquelcher.png */; };
+		0A9AD9A31C29F5BE00CDFBE7 /* weaponKelpSplatCharger.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9591C29F5BE00CDFBE7 /* weaponKelpSplatCharger.png */; };
+		0A9AD9A41C29F5BE00CDFBE7 /* weaponKelpSplatterscope.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD95A1C29F5BE00CDFBE7 /* weaponKelpSplatterscope.png */; };
+		0A9AD9A51C29F5BE00CDFBE7 /* weaponKrak-OnSplatRoller.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD95B1C29F5BE00CDFBE7 /* weaponKrak-OnSplatRoller.png */; };
+		0A9AD9A61C29F5BE00CDFBE7 /* weaponL-3Nozzlenose.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD95C1C29F5BE00CDFBE7 /* weaponL-3Nozzlenose.png */; };
+		0A9AD9A71C29F5BE00CDFBE7 /* weaponL-3NozzlenoseD.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD95D1C29F5BE00CDFBE7 /* weaponL-3NozzlenoseD.png */; };
+		0A9AD9A81C29F5BE00CDFBE7 /* weaponLunaBlaster.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD95E1C29F5BE00CDFBE7 /* weaponLunaBlaster.png */; };
+		0A9AD9A91C29F5BE00CDFBE7 /* weaponLunaBlasterNeo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD95F1C29F5BE00CDFBE7 /* weaponLunaBlasterNeo.png */; };
+		0A9AD9AA1C29F5BE00CDFBE7 /* weaponMiniSplatling.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9601C29F5BE00CDFBE7 /* weaponMiniSplatling.png */; };
+		0A9AD9AB1C29F5BE00CDFBE7 /* weaponN-ZAP'85.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9611C29F5BE00CDFBE7 /* weaponN-ZAP'85.png */; };
+		0A9AD9AC1C29F5BE00CDFBE7 /* weaponN-ZAP'89.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9621C29F5BE00CDFBE7 /* weaponN-ZAP'89.png */; };
+		0A9AD9AD1C29F5BE00CDFBE7 /* weaponNeoSplash-o-matic.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9631C29F5BE00CDFBE7 /* weaponNeoSplash-o-matic.png */; };
+		0A9AD9AE1C29F5BE00CDFBE7 /* weaponNeoSploosh-o-matic.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9641C29F5BE00CDFBE7 /* weaponNeoSploosh-o-matic.png */; };
+		0A9AD9AF1C29F5BE00CDFBE7 /* weaponNewSquiffer.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9651C29F5BE00CDFBE7 /* weaponNewSquiffer.png */; };
+		0A9AD9B01C29F5BE00CDFBE7 /* weaponOctobrush.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9661C29F5BE00CDFBE7 /* weaponOctobrush.png */; };
+		0A9AD9B11C29F5BE00CDFBE7 /* weaponOctobrushNouveau.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9671C29F5BE00CDFBE7 /* weaponOctobrushNouveau.png */; };
+		0A9AD9B21C29F5BE00CDFBE7 /* weaponOctoshotReplica.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9681C29F5BE00CDFBE7 /* weaponOctoshotReplica.png */; };
+		0A9AD9B31C29F5BE00CDFBE7 /* weaponRangeBlaster.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9691C29F5BE00CDFBE7 /* weaponRangeBlaster.png */; };
+		0A9AD9B41C29F5BE00CDFBE7 /* weaponRapidBlaster.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD96A1C29F5BE00CDFBE7 /* weaponRapidBlaster.png */; };
+		0A9AD9B51C29F5BE00CDFBE7 /* weaponRapidBlasterDeco.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD96B1C29F5BE00CDFBE7 /* weaponRapidBlasterDeco.png */; };
+		0A9AD9B61C29F5BE00CDFBE7 /* weaponRapidBlasterPro.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD96C1C29F5BE00CDFBE7 /* weaponRapidBlasterPro.png */; };
+		0A9AD9B71C29F5BE00CDFBE7 /* weaponRapidBlasterProDeco.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD96D1C29F5BE00CDFBE7 /* weaponRapidBlasterProDeco.png */; };
+		0A9AD9B81C29F5BE00CDFBE7 /* weaponSlosher.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD96E1C29F5BE00CDFBE7 /* weaponSlosher.png */; };
+		0A9AD9B91C29F5BE00CDFBE7 /* weaponSlosherDeco.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD96F1C29F5BE00CDFBE7 /* weaponSlosherDeco.png */; };
+		0A9AD9BA1C29F5BE00CDFBE7 /* weaponSloshingMachine.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9701C29F5BE00CDFBE7 /* weaponSloshingMachine.png */; };
+		0A9AD9BB1C29F5BE00CDFBE7 /* weaponSloshingMachineNeo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9711C29F5BE00CDFBE7 /* weaponSloshingMachineNeo.png */; };
+		0A9AD9BC1C29F5BE00CDFBE7 /* weaponSplash-o-matic.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9721C29F5BE00CDFBE7 /* weaponSplash-o-matic.png */; };
+		0A9AD9BD1C29F5BE00CDFBE7 /* weaponSplatCharger.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9731C29F5BE00CDFBE7 /* weaponSplatCharger.png */; };
+		0A9AD9BE1C29F5BE00CDFBE7 /* weaponSplatRoller.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9741C29F5BE00CDFBE7 /* weaponSplatRoller.png */; };
+		0A9AD9BF1C29F5BE00CDFBE7 /* weaponSplatterscope.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9751C29F5BE00CDFBE7 /* weaponSplatterscope.png */; };
+		0A9AD9C01C29F5BE00CDFBE7 /* weaponSplattershot.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9761C29F5BE00CDFBE7 /* weaponSplattershot.png */; };
+		0A9AD9C11C29F5BE00CDFBE7 /* weaponSplattershotJr..png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9771C29F5BE00CDFBE7 /* weaponSplattershotJr..png */; };
+		0A9AD9C21C29F5BE00CDFBE7 /* weaponSplattershotPro.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9781C29F5BE00CDFBE7 /* weaponSplattershotPro.png */; };
+		0A9AD9C31C29F5BE00CDFBE7 /* weaponSploosh-o-matic.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9791C29F5BE00CDFBE7 /* weaponSploosh-o-matic.png */; };
+		0A9AD9C41C29F5BE00CDFBE7 /* weaponTentatekSplattershot.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD97A1C29F5BE00CDFBE7 /* weaponTentatekSplattershot.png */; };
+		0A9AD9C51C29F5BE00CDFBE7 /* weaponTri-Slosher.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD97B1C29F5BE00CDFBE7 /* weaponTri-Slosher.png */; };
+		0A9AD9C61C29F5BE00CDFBE7 /* weaponTri-SlosherNouveau.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD97C1C29F5BE00CDFBE7 /* weaponTri-SlosherNouveau.png */; };
+		0A9AD9C71C29F5BE00CDFBE7 /* weaponZinkMiniSplatling.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD97D1C29F5BE00CDFBE7 /* weaponZinkMiniSplatling.png */; };
+		0A9AD9D31C29F5D000CDFBE7 /* specialBombRushBurstBomb.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9C91C29F5D000CDFBE7 /* specialBombRushBurstBomb.png */; };
+		0A9AD9D41C29F5D000CDFBE7 /* specialBombRushSeeker.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9CA1C29F5D000CDFBE7 /* specialBombRushSeeker.png */; };
+		0A9AD9D51C29F5D000CDFBE7 /* specialBombRushSplatBomb.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9CB1C29F5D000CDFBE7 /* specialBombRushSplatBomb.png */; };
+		0A9AD9D61C29F5D000CDFBE7 /* specialBombRushSuctionBomb.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9CC1C29F5D000CDFBE7 /* specialBombRushSuctionBomb.png */; };
+		0A9AD9D71C29F5D000CDFBE7 /* specialBubbler.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9CD1C29F5D000CDFBE7 /* specialBubbler.png */; };
+		0A9AD9D81C29F5D000CDFBE7 /* specialEcholocator.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9CE1C29F5D000CDFBE7 /* specialEcholocator.png */; };
+		0A9AD9D91C29F5D000CDFBE7 /* specialInkstrike.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9CF1C29F5D000CDFBE7 /* specialInkstrike.png */; };
+		0A9AD9DA1C29F5D000CDFBE7 /* specialInkzooka.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9D01C29F5D000CDFBE7 /* specialInkzooka.png */; };
+		0A9AD9DB1C29F5D000CDFBE7 /* specialKillerWail.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9D11C29F5D000CDFBE7 /* specialKillerWail.png */; };
+		0A9AD9DC1C29F5D000CDFBE7 /* specialKraken.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9D21C29F5D000CDFBE7 /* specialKraken.png */; };
+		0A9AD9DE1C29FA8800CDFBE7 /* GearView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9DD1C29FA8800CDFBE7 /* GearView.xib */; };
+		0A9AD9E01C2A005900CDFBE7 /* GearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9AD9DF1C2A005900CDFBE7 /* GearView.swift */; };
+		0A9AD9EC1C2A11F800CDFBE7 /* subBurstBomb.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9E21C2A11F800CDFBE7 /* subBurstBomb.png */; };
+		0A9AD9ED1C2A11F800CDFBE7 /* subDisruptor.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9E31C2A11F800CDFBE7 /* subDisruptor.png */; };
+		0A9AD9EE1C2A11F800CDFBE7 /* subInkMine.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9E41C2A11F800CDFBE7 /* subInkMine.png */; };
+		0A9AD9EF1C2A11F800CDFBE7 /* subPointSensor.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9E51C2A11F800CDFBE7 /* subPointSensor.png */; };
+		0A9AD9F01C2A11F800CDFBE7 /* subSeeker.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9E61C2A11F800CDFBE7 /* subSeeker.png */; };
+		0A9AD9F11C2A11F800CDFBE7 /* subSplashWall.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9E71C2A11F800CDFBE7 /* subSplashWall.png */; };
+		0A9AD9F21C2A11F800CDFBE7 /* subSplatBomb.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9E81C2A11F800CDFBE7 /* subSplatBomb.png */; };
+		0A9AD9F31C2A11F800CDFBE7 /* subSprinkler.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9E91C2A11F800CDFBE7 /* subSprinkler.png */; };
+		0A9AD9F41C2A11F800CDFBE7 /* subSquidBeakon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9EA1C2A11F800CDFBE7 /* subSquidBeakon.png */; };
+		0A9AD9F51C2A11F800CDFBE7 /* subSuctionBomb.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9AD9EB1C2A11F800CDFBE7 /* subSuctionBomb.png */; };
 		0AA23DF71C1B6D870002BCC2 /* betaIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DEE1C1B6D870002BCC2 /* betaIcon.png */; };
 		0AA23DF81C1B6D870002BCC2 /* betaIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DEF1C1B6D870002BCC2 /* betaIcon@2x.png */; };
 		0AA23DF91C1B6D870002BCC2 /* betaIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA23DF01C1B6D870002BCC2 /* betaIcon@3x.png */; };
@@ -435,6 +532,7 @@
 		0A3503F81C286A30009C6A48 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		0A3503FB1C286A30009C6A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		0A3503FD1C286A30009C6A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A36DEBA1C31DD06001E6DE4 /* StagePiranhaPit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StagePiranhaPit.jpg; path = Images/Stages/StagePiranhaPit.jpg; sourceTree = "<group>"; };
 		0A4BF6A71C22069700BB4834 /* settingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settingsIcon.png; path = Images/settingsIcon.png; sourceTree = "<group>"; };
 		0A4BF6A81C22069700BB4834 /* settingsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settingsIcon@2x.png"; path = "Images/settingsIcon@2x.png"; sourceTree = "<group>"; };
 		0A4BF6A91C22069700BB4834 /* settingsIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settingsIcon@3x.png"; path = "Images/settingsIcon@3x.png"; sourceTree = "<group>"; };
@@ -448,6 +546,102 @@
 		0A6AFEF81C2870D20073884B /* SplatData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplatData.swift; sourceTree = "<group>"; };
 		0A948AC21C1CC4F700CCC4DB /* data.min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.min.json; path = Resources/data.min.json; sourceTree = "<group>"; };
 		0A9AD9311C29DB0700CDFBE7 /* LoadoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadoutViewController.swift; sourceTree = "<group>"; };
+		0A9AD9341C29F5BE00CDFBE7 /* weapon.52Gal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weapon.52Gal.png; path = Images/weapons/weapon.52Gal.png; sourceTree = "<group>"; };
+		0A9AD9351C29F5BE00CDFBE7 /* weapon.52GalDeco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weapon.52GalDeco.png; path = Images/weapons/weapon.52GalDeco.png; sourceTree = "<group>"; };
+		0A9AD9361C29F5BE00CDFBE7 /* weapon.96Gal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weapon.96Gal.png; path = Images/weapons/weapon.96Gal.png; sourceTree = "<group>"; };
+		0A9AD9371C29F5BE00CDFBE7 /* weapon.96GalDeco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weapon.96GalDeco.png; path = Images/weapons/weapon.96GalDeco.png; sourceTree = "<group>"; };
+		0A9AD9381C29F5BE00CDFBE7 /* weaponAerosprayMG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponAerosprayMG.png; path = Images/weapons/weaponAerosprayMG.png; sourceTree = "<group>"; };
+		0A9AD9391C29F5BE00CDFBE7 /* weaponAerosprayRG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponAerosprayRG.png; path = Images/weapons/weaponAerosprayRG.png; sourceTree = "<group>"; };
+		0A9AD93A1C29F5BE00CDFBE7 /* weaponBamboozler14MkI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponBamboozler14MkI.png; path = Images/weapons/weaponBamboozler14MkI.png; sourceTree = "<group>"; };
+		0A9AD93B1C29F5BE00CDFBE7 /* weaponBamboozler14MkII.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponBamboozler14MkII.png; path = Images/weapons/weaponBamboozler14MkII.png; sourceTree = "<group>"; };
+		0A9AD93C1C29F5BE00CDFBE7 /* weaponBlaster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponBlaster.png; path = Images/weapons/weaponBlaster.png; sourceTree = "<group>"; };
+		0A9AD93D1C29F5BE00CDFBE7 /* weaponCarbonRoller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponCarbonRoller.png; path = Images/weapons/weaponCarbonRoller.png; sourceTree = "<group>"; };
+		0A9AD93E1C29F5BE00CDFBE7 /* weaponCarbonRollerDeco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponCarbonRollerDeco.png; path = Images/weapons/weaponCarbonRollerDeco.png; sourceTree = "<group>"; };
+		0A9AD93F1C29F5BE00CDFBE7 /* weaponClassicSquiffer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponClassicSquiffer.png; path = Images/weapons/weaponClassicSquiffer.png; sourceTree = "<group>"; };
+		0A9AD9401C29F5BE00CDFBE7 /* weaponCustomBlaster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponCustomBlaster.png; path = Images/weapons/weaponCustomBlaster.png; sourceTree = "<group>"; };
+		0A9AD9411C29F5BE00CDFBE7 /* weaponCustomDualSquelcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponCustomDualSquelcher.png; path = Images/weapons/weaponCustomDualSquelcher.png; sourceTree = "<group>"; };
+		0A9AD9421C29F5BE00CDFBE7 /* weaponCustomE-liter3K.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weaponCustomE-liter3K.png"; path = "Images/weapons/weaponCustomE-liter3K.png"; sourceTree = "<group>"; };
+		0A9AD9431C29F5BE00CDFBE7 /* weaponCustomE-liter3KScope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weaponCustomE-liter3KScope.png"; path = "Images/weapons/weaponCustomE-liter3KScope.png"; sourceTree = "<group>"; };
+		0A9AD9441C29F5BE00CDFBE7 /* weaponCustomHydraSplatling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponCustomHydraSplatling.png; path = Images/weapons/weaponCustomHydraSplatling.png; sourceTree = "<group>"; };
+		0A9AD9451C29F5BE00CDFBE7 /* weaponCustomJetSquelcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponCustomJetSquelcher.png; path = Images/weapons/weaponCustomJetSquelcher.png; sourceTree = "<group>"; };
+		0A9AD9461C29F5BE00CDFBE7 /* weaponCustomRangeBlaster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponCustomRangeBlaster.png; path = Images/weapons/weaponCustomRangeBlaster.png; sourceTree = "<group>"; };
+		0A9AD9471C29F5BE00CDFBE7 /* weaponCustomSplattershotJr..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponCustomSplattershotJr..png; path = Images/weapons/weaponCustomSplattershotJr..png; sourceTree = "<group>"; };
+		0A9AD9481C29F5BE00CDFBE7 /* weaponDualSquelcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponDualSquelcher.png; path = Images/weapons/weaponDualSquelcher.png; sourceTree = "<group>"; };
+		0A9AD9491C29F5BE00CDFBE7 /* weaponDynamoRoller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponDynamoRoller.png; path = Images/weapons/weaponDynamoRoller.png; sourceTree = "<group>"; };
+		0A9AD94A1C29F5BE00CDFBE7 /* weaponE-liter3K.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weaponE-liter3K.png"; path = "Images/weapons/weaponE-liter3K.png"; sourceTree = "<group>"; };
+		0A9AD94B1C29F5BE00CDFBE7 /* weaponE-liter3KScope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weaponE-liter3KScope.png"; path = "Images/weapons/weaponE-liter3KScope.png"; sourceTree = "<group>"; };
+		0A9AD94C1C29F5BE00CDFBE7 /* weaponForgeSplattershotPro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponForgeSplattershotPro.png; path = Images/weapons/weaponForgeSplattershotPro.png; sourceTree = "<group>"; };
+		0A9AD94D1C29F5BE00CDFBE7 /* weaponGoldDynamoRoller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponGoldDynamoRoller.png; path = Images/weapons/weaponGoldDynamoRoller.png; sourceTree = "<group>"; };
+		0A9AD94E1C29F5BE00CDFBE7 /* weaponH-3Nozzlenose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weaponH-3Nozzlenose.png"; path = "Images/weapons/weaponH-3Nozzlenose.png"; sourceTree = "<group>"; };
+		0A9AD94F1C29F5BE00CDFBE7 /* weaponH-3NozzlenoseD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weaponH-3NozzlenoseD.png"; path = "Images/weapons/weaponH-3NozzlenoseD.png"; sourceTree = "<group>"; };
+		0A9AD9501C29F5BE00CDFBE7 /* weaponHeavySplatling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponHeavySplatling.png; path = Images/weapons/weaponHeavySplatling.png; sourceTree = "<group>"; };
+		0A9AD9511C29F5BE00CDFBE7 /* weaponHeavySplatlingDeco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponHeavySplatlingDeco.png; path = Images/weapons/weaponHeavySplatlingDeco.png; sourceTree = "<group>"; };
+		0A9AD9521C29F5BE00CDFBE7 /* weaponHeroChargerReplica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponHeroChargerReplica.png; path = Images/weapons/weaponHeroChargerReplica.png; sourceTree = "<group>"; };
+		0A9AD9531C29F5BE00CDFBE7 /* weaponHeroRollerReplica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponHeroRollerReplica.png; path = Images/weapons/weaponHeroRollerReplica.png; sourceTree = "<group>"; };
+		0A9AD9541C29F5BE00CDFBE7 /* weaponHeroShotReplica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponHeroShotReplica.png; path = Images/weapons/weaponHeroShotReplica.png; sourceTree = "<group>"; };
+		0A9AD9551C29F5BE00CDFBE7 /* weaponHydraSplatling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponHydraSplatling.png; path = Images/weapons/weaponHydraSplatling.png; sourceTree = "<group>"; };
+		0A9AD9561C29F5BE00CDFBE7 /* weaponInkbrush.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponInkbrush.png; path = Images/weapons/weaponInkbrush.png; sourceTree = "<group>"; };
+		0A9AD9571C29F5BE00CDFBE7 /* weaponInkbrushNouveau.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponInkbrushNouveau.png; path = Images/weapons/weaponInkbrushNouveau.png; sourceTree = "<group>"; };
+		0A9AD9581C29F5BE00CDFBE7 /* weaponJetSquelcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponJetSquelcher.png; path = Images/weapons/weaponJetSquelcher.png; sourceTree = "<group>"; };
+		0A9AD9591C29F5BE00CDFBE7 /* weaponKelpSplatCharger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponKelpSplatCharger.png; path = Images/weapons/weaponKelpSplatCharger.png; sourceTree = "<group>"; };
+		0A9AD95A1C29F5BE00CDFBE7 /* weaponKelpSplatterscope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponKelpSplatterscope.png; path = Images/weapons/weaponKelpSplatterscope.png; sourceTree = "<group>"; };
+		0A9AD95B1C29F5BE00CDFBE7 /* weaponKrak-OnSplatRoller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weaponKrak-OnSplatRoller.png"; path = "Images/weapons/weaponKrak-OnSplatRoller.png"; sourceTree = "<group>"; };
+		0A9AD95C1C29F5BE00CDFBE7 /* weaponL-3Nozzlenose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weaponL-3Nozzlenose.png"; path = "Images/weapons/weaponL-3Nozzlenose.png"; sourceTree = "<group>"; };
+		0A9AD95D1C29F5BE00CDFBE7 /* weaponL-3NozzlenoseD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weaponL-3NozzlenoseD.png"; path = "Images/weapons/weaponL-3NozzlenoseD.png"; sourceTree = "<group>"; };
+		0A9AD95E1C29F5BE00CDFBE7 /* weaponLunaBlaster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponLunaBlaster.png; path = Images/weapons/weaponLunaBlaster.png; sourceTree = "<group>"; };
+		0A9AD95F1C29F5BE00CDFBE7 /* weaponLunaBlasterNeo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponLunaBlasterNeo.png; path = Images/weapons/weaponLunaBlasterNeo.png; sourceTree = "<group>"; };
+		0A9AD9601C29F5BE00CDFBE7 /* weaponMiniSplatling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponMiniSplatling.png; path = Images/weapons/weaponMiniSplatling.png; sourceTree = "<group>"; };
+		0A9AD9611C29F5BE00CDFBE7 /* weaponN-ZAP'85.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weaponN-ZAP'85.png"; path = "Images/weapons/weaponN-ZAP'85.png"; sourceTree = "<group>"; };
+		0A9AD9621C29F5BE00CDFBE7 /* weaponN-ZAP'89.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weaponN-ZAP'89.png"; path = "Images/weapons/weaponN-ZAP'89.png"; sourceTree = "<group>"; };
+		0A9AD9631C29F5BE00CDFBE7 /* weaponNeoSplash-o-matic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weaponNeoSplash-o-matic.png"; path = "Images/weapons/weaponNeoSplash-o-matic.png"; sourceTree = "<group>"; };
+		0A9AD9641C29F5BE00CDFBE7 /* weaponNeoSploosh-o-matic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weaponNeoSploosh-o-matic.png"; path = "Images/weapons/weaponNeoSploosh-o-matic.png"; sourceTree = "<group>"; };
+		0A9AD9651C29F5BE00CDFBE7 /* weaponNewSquiffer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponNewSquiffer.png; path = Images/weapons/weaponNewSquiffer.png; sourceTree = "<group>"; };
+		0A9AD9661C29F5BE00CDFBE7 /* weaponOctobrush.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponOctobrush.png; path = Images/weapons/weaponOctobrush.png; sourceTree = "<group>"; };
+		0A9AD9671C29F5BE00CDFBE7 /* weaponOctobrushNouveau.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponOctobrushNouveau.png; path = Images/weapons/weaponOctobrushNouveau.png; sourceTree = "<group>"; };
+		0A9AD9681C29F5BE00CDFBE7 /* weaponOctoshotReplica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponOctoshotReplica.png; path = Images/weapons/weaponOctoshotReplica.png; sourceTree = "<group>"; };
+		0A9AD9691C29F5BE00CDFBE7 /* weaponRangeBlaster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponRangeBlaster.png; path = Images/weapons/weaponRangeBlaster.png; sourceTree = "<group>"; };
+		0A9AD96A1C29F5BE00CDFBE7 /* weaponRapidBlaster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponRapidBlaster.png; path = Images/weapons/weaponRapidBlaster.png; sourceTree = "<group>"; };
+		0A9AD96B1C29F5BE00CDFBE7 /* weaponRapidBlasterDeco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponRapidBlasterDeco.png; path = Images/weapons/weaponRapidBlasterDeco.png; sourceTree = "<group>"; };
+		0A9AD96C1C29F5BE00CDFBE7 /* weaponRapidBlasterPro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponRapidBlasterPro.png; path = Images/weapons/weaponRapidBlasterPro.png; sourceTree = "<group>"; };
+		0A9AD96D1C29F5BE00CDFBE7 /* weaponRapidBlasterProDeco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponRapidBlasterProDeco.png; path = Images/weapons/weaponRapidBlasterProDeco.png; sourceTree = "<group>"; };
+		0A9AD96E1C29F5BE00CDFBE7 /* weaponSlosher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponSlosher.png; path = Images/weapons/weaponSlosher.png; sourceTree = "<group>"; };
+		0A9AD96F1C29F5BE00CDFBE7 /* weaponSlosherDeco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponSlosherDeco.png; path = Images/weapons/weaponSlosherDeco.png; sourceTree = "<group>"; };
+		0A9AD9701C29F5BE00CDFBE7 /* weaponSloshingMachine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponSloshingMachine.png; path = Images/weapons/weaponSloshingMachine.png; sourceTree = "<group>"; };
+		0A9AD9711C29F5BE00CDFBE7 /* weaponSloshingMachineNeo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponSloshingMachineNeo.png; path = Images/weapons/weaponSloshingMachineNeo.png; sourceTree = "<group>"; };
+		0A9AD9721C29F5BE00CDFBE7 /* weaponSplash-o-matic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weaponSplash-o-matic.png"; path = "Images/weapons/weaponSplash-o-matic.png"; sourceTree = "<group>"; };
+		0A9AD9731C29F5BE00CDFBE7 /* weaponSplatCharger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponSplatCharger.png; path = Images/weapons/weaponSplatCharger.png; sourceTree = "<group>"; };
+		0A9AD9741C29F5BE00CDFBE7 /* weaponSplatRoller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponSplatRoller.png; path = Images/weapons/weaponSplatRoller.png; sourceTree = "<group>"; };
+		0A9AD9751C29F5BE00CDFBE7 /* weaponSplatterscope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponSplatterscope.png; path = Images/weapons/weaponSplatterscope.png; sourceTree = "<group>"; };
+		0A9AD9761C29F5BE00CDFBE7 /* weaponSplattershot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponSplattershot.png; path = Images/weapons/weaponSplattershot.png; sourceTree = "<group>"; };
+		0A9AD9771C29F5BE00CDFBE7 /* weaponSplattershotJr..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponSplattershotJr..png; path = Images/weapons/weaponSplattershotJr..png; sourceTree = "<group>"; };
+		0A9AD9781C29F5BE00CDFBE7 /* weaponSplattershotPro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponSplattershotPro.png; path = Images/weapons/weaponSplattershotPro.png; sourceTree = "<group>"; };
+		0A9AD9791C29F5BE00CDFBE7 /* weaponSploosh-o-matic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weaponSploosh-o-matic.png"; path = "Images/weapons/weaponSploosh-o-matic.png"; sourceTree = "<group>"; };
+		0A9AD97A1C29F5BE00CDFBE7 /* weaponTentatekSplattershot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponTentatekSplattershot.png; path = Images/weapons/weaponTentatekSplattershot.png; sourceTree = "<group>"; };
+		0A9AD97B1C29F5BE00CDFBE7 /* weaponTri-Slosher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weaponTri-Slosher.png"; path = "Images/weapons/weaponTri-Slosher.png"; sourceTree = "<group>"; };
+		0A9AD97C1C29F5BE00CDFBE7 /* weaponTri-SlosherNouveau.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weaponTri-SlosherNouveau.png"; path = "Images/weapons/weaponTri-SlosherNouveau.png"; sourceTree = "<group>"; };
+		0A9AD97D1C29F5BE00CDFBE7 /* weaponZinkMiniSplatling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponZinkMiniSplatling.png; path = Images/weapons/weaponZinkMiniSplatling.png; sourceTree = "<group>"; };
+		0A9AD9C91C29F5D000CDFBE7 /* specialBombRushBurstBomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = specialBombRushBurstBomb.png; path = Images/specials/specialBombRushBurstBomb.png; sourceTree = "<group>"; };
+		0A9AD9CA1C29F5D000CDFBE7 /* specialBombRushSeeker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = specialBombRushSeeker.png; path = Images/specials/specialBombRushSeeker.png; sourceTree = "<group>"; };
+		0A9AD9CB1C29F5D000CDFBE7 /* specialBombRushSplatBomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = specialBombRushSplatBomb.png; path = Images/specials/specialBombRushSplatBomb.png; sourceTree = "<group>"; };
+		0A9AD9CC1C29F5D000CDFBE7 /* specialBombRushSuctionBomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = specialBombRushSuctionBomb.png; path = Images/specials/specialBombRushSuctionBomb.png; sourceTree = "<group>"; };
+		0A9AD9CD1C29F5D000CDFBE7 /* specialBubbler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = specialBubbler.png; path = Images/specials/specialBubbler.png; sourceTree = "<group>"; };
+		0A9AD9CE1C29F5D000CDFBE7 /* specialEcholocator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = specialEcholocator.png; path = Images/specials/specialEcholocator.png; sourceTree = "<group>"; };
+		0A9AD9CF1C29F5D000CDFBE7 /* specialInkstrike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = specialInkstrike.png; path = Images/specials/specialInkstrike.png; sourceTree = "<group>"; };
+		0A9AD9D01C29F5D000CDFBE7 /* specialInkzooka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = specialInkzooka.png; path = Images/specials/specialInkzooka.png; sourceTree = "<group>"; };
+		0A9AD9D11C29F5D000CDFBE7 /* specialKillerWail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = specialKillerWail.png; path = Images/specials/specialKillerWail.png; sourceTree = "<group>"; };
+		0A9AD9D21C29F5D000CDFBE7 /* specialKraken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = specialKraken.png; path = Images/specials/specialKraken.png; sourceTree = "<group>"; };
+		0A9AD9DD1C29FA8800CDFBE7 /* GearView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GearView.xib; sourceTree = "<group>"; };
+		0A9AD9DF1C2A005900CDFBE7 /* GearView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GearView.swift; sourceTree = "<group>"; };
+		0A9AD9E21C2A11F800CDFBE7 /* subBurstBomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = subBurstBomb.png; path = Images/subs/subBurstBomb.png; sourceTree = "<group>"; };
+		0A9AD9E31C2A11F800CDFBE7 /* subDisruptor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = subDisruptor.png; path = Images/subs/subDisruptor.png; sourceTree = "<group>"; };
+		0A9AD9E41C2A11F800CDFBE7 /* subInkMine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = subInkMine.png; path = Images/subs/subInkMine.png; sourceTree = "<group>"; };
+		0A9AD9E51C2A11F800CDFBE7 /* subPointSensor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = subPointSensor.png; path = Images/subs/subPointSensor.png; sourceTree = "<group>"; };
+		0A9AD9E61C2A11F800CDFBE7 /* subSeeker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = subSeeker.png; path = Images/subs/subSeeker.png; sourceTree = "<group>"; };
+		0A9AD9E71C2A11F800CDFBE7 /* subSplashWall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = subSplashWall.png; path = Images/subs/subSplashWall.png; sourceTree = "<group>"; };
+		0A9AD9E81C2A11F800CDFBE7 /* subSplatBomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = subSplatBomb.png; path = Images/subs/subSplatBomb.png; sourceTree = "<group>"; };
+		0A9AD9E91C2A11F800CDFBE7 /* subSprinkler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = subSprinkler.png; path = Images/subs/subSprinkler.png; sourceTree = "<group>"; };
+		0A9AD9EA1C2A11F800CDFBE7 /* subSquidBeakon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = subSquidBeakon.png; path = Images/subs/subSquidBeakon.png; sourceTree = "<group>"; };
+		0A9AD9EB1C2A11F800CDFBE7 /* subSuctionBomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = subSuctionBomb.png; path = Images/subs/subSuctionBomb.png; sourceTree = "<group>"; };
 		0AA23DEE1C1B6D870002BCC2 /* betaIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = betaIcon.png; path = Images/betaIcon.png; sourceTree = "<group>"; };
 		0AA23DEF1C1B6D870002BCC2 /* betaIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "betaIcon@2x.png"; path = "Images/betaIcon@2x.png"; sourceTree = "<group>"; };
 		0AA23DF01C1B6D870002BCC2 /* betaIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "betaIcon@3x.png"; path = "Images/betaIcon@3x.png"; sourceTree = "<group>"; };
@@ -859,6 +1053,121 @@
 			path = SplatWidget;
 			sourceTree = "<group>";
 		};
+		0A9AD9331C29F5B300CDFBE7 /* Weapons */ = {
+			isa = PBXGroup;
+			children = (
+				0A9AD9341C29F5BE00CDFBE7 /* weapon.52Gal.png */,
+				0A9AD9351C29F5BE00CDFBE7 /* weapon.52GalDeco.png */,
+				0A9AD9361C29F5BE00CDFBE7 /* weapon.96Gal.png */,
+				0A9AD9371C29F5BE00CDFBE7 /* weapon.96GalDeco.png */,
+				0A9AD9381C29F5BE00CDFBE7 /* weaponAerosprayMG.png */,
+				0A9AD9391C29F5BE00CDFBE7 /* weaponAerosprayRG.png */,
+				0A9AD93A1C29F5BE00CDFBE7 /* weaponBamboozler14MkI.png */,
+				0A9AD93B1C29F5BE00CDFBE7 /* weaponBamboozler14MkII.png */,
+				0A9AD93C1C29F5BE00CDFBE7 /* weaponBlaster.png */,
+				0A9AD93D1C29F5BE00CDFBE7 /* weaponCarbonRoller.png */,
+				0A9AD93E1C29F5BE00CDFBE7 /* weaponCarbonRollerDeco.png */,
+				0A9AD93F1C29F5BE00CDFBE7 /* weaponClassicSquiffer.png */,
+				0A9AD9401C29F5BE00CDFBE7 /* weaponCustomBlaster.png */,
+				0A9AD9411C29F5BE00CDFBE7 /* weaponCustomDualSquelcher.png */,
+				0A9AD9421C29F5BE00CDFBE7 /* weaponCustomE-liter3K.png */,
+				0A9AD9431C29F5BE00CDFBE7 /* weaponCustomE-liter3KScope.png */,
+				0A9AD9441C29F5BE00CDFBE7 /* weaponCustomHydraSplatling.png */,
+				0A9AD9451C29F5BE00CDFBE7 /* weaponCustomJetSquelcher.png */,
+				0A9AD9461C29F5BE00CDFBE7 /* weaponCustomRangeBlaster.png */,
+				0A9AD9471C29F5BE00CDFBE7 /* weaponCustomSplattershotJr..png */,
+				0A9AD9481C29F5BE00CDFBE7 /* weaponDualSquelcher.png */,
+				0A9AD9491C29F5BE00CDFBE7 /* weaponDynamoRoller.png */,
+				0A9AD94A1C29F5BE00CDFBE7 /* weaponE-liter3K.png */,
+				0A9AD94B1C29F5BE00CDFBE7 /* weaponE-liter3KScope.png */,
+				0A9AD94C1C29F5BE00CDFBE7 /* weaponForgeSplattershotPro.png */,
+				0A9AD94D1C29F5BE00CDFBE7 /* weaponGoldDynamoRoller.png */,
+				0A9AD94E1C29F5BE00CDFBE7 /* weaponH-3Nozzlenose.png */,
+				0A9AD94F1C29F5BE00CDFBE7 /* weaponH-3NozzlenoseD.png */,
+				0A9AD9501C29F5BE00CDFBE7 /* weaponHeavySplatling.png */,
+				0A9AD9511C29F5BE00CDFBE7 /* weaponHeavySplatlingDeco.png */,
+				0A9AD9521C29F5BE00CDFBE7 /* weaponHeroChargerReplica.png */,
+				0A9AD9531C29F5BE00CDFBE7 /* weaponHeroRollerReplica.png */,
+				0A9AD9541C29F5BE00CDFBE7 /* weaponHeroShotReplica.png */,
+				0A9AD9551C29F5BE00CDFBE7 /* weaponHydraSplatling.png */,
+				0A9AD9561C29F5BE00CDFBE7 /* weaponInkbrush.png */,
+				0A9AD9571C29F5BE00CDFBE7 /* weaponInkbrushNouveau.png */,
+				0A9AD9581C29F5BE00CDFBE7 /* weaponJetSquelcher.png */,
+				0A9AD9591C29F5BE00CDFBE7 /* weaponKelpSplatCharger.png */,
+				0A9AD95A1C29F5BE00CDFBE7 /* weaponKelpSplatterscope.png */,
+				0A9AD95B1C29F5BE00CDFBE7 /* weaponKrak-OnSplatRoller.png */,
+				0A9AD95C1C29F5BE00CDFBE7 /* weaponL-3Nozzlenose.png */,
+				0A9AD95D1C29F5BE00CDFBE7 /* weaponL-3NozzlenoseD.png */,
+				0A9AD95E1C29F5BE00CDFBE7 /* weaponLunaBlaster.png */,
+				0A9AD95F1C29F5BE00CDFBE7 /* weaponLunaBlasterNeo.png */,
+				0A9AD9601C29F5BE00CDFBE7 /* weaponMiniSplatling.png */,
+				0A9AD9611C29F5BE00CDFBE7 /* weaponN-ZAP'85.png */,
+				0A9AD9621C29F5BE00CDFBE7 /* weaponN-ZAP'89.png */,
+				0A9AD9631C29F5BE00CDFBE7 /* weaponNeoSplash-o-matic.png */,
+				0A9AD9641C29F5BE00CDFBE7 /* weaponNeoSploosh-o-matic.png */,
+				0A9AD9651C29F5BE00CDFBE7 /* weaponNewSquiffer.png */,
+				0A9AD9661C29F5BE00CDFBE7 /* weaponOctobrush.png */,
+				0A9AD9671C29F5BE00CDFBE7 /* weaponOctobrushNouveau.png */,
+				0A9AD9681C29F5BE00CDFBE7 /* weaponOctoshotReplica.png */,
+				0A9AD9691C29F5BE00CDFBE7 /* weaponRangeBlaster.png */,
+				0A9AD96A1C29F5BE00CDFBE7 /* weaponRapidBlaster.png */,
+				0A9AD96B1C29F5BE00CDFBE7 /* weaponRapidBlasterDeco.png */,
+				0A9AD96C1C29F5BE00CDFBE7 /* weaponRapidBlasterPro.png */,
+				0A9AD96D1C29F5BE00CDFBE7 /* weaponRapidBlasterProDeco.png */,
+				0A9AD96E1C29F5BE00CDFBE7 /* weaponSlosher.png */,
+				0A9AD96F1C29F5BE00CDFBE7 /* weaponSlosherDeco.png */,
+				0A9AD9701C29F5BE00CDFBE7 /* weaponSloshingMachine.png */,
+				0A9AD9711C29F5BE00CDFBE7 /* weaponSloshingMachineNeo.png */,
+				0A9AD9721C29F5BE00CDFBE7 /* weaponSplash-o-matic.png */,
+				0A9AD9731C29F5BE00CDFBE7 /* weaponSplatCharger.png */,
+				0A9AD9741C29F5BE00CDFBE7 /* weaponSplatRoller.png */,
+				0A9AD9751C29F5BE00CDFBE7 /* weaponSplatterscope.png */,
+				0A9AD9761C29F5BE00CDFBE7 /* weaponSplattershot.png */,
+				0A9AD9771C29F5BE00CDFBE7 /* weaponSplattershotJr..png */,
+				0A9AD9781C29F5BE00CDFBE7 /* weaponSplattershotPro.png */,
+				0A9AD9791C29F5BE00CDFBE7 /* weaponSploosh-o-matic.png */,
+				0A9AD97A1C29F5BE00CDFBE7 /* weaponTentatekSplattershot.png */,
+				0A9AD97B1C29F5BE00CDFBE7 /* weaponTri-Slosher.png */,
+				0A9AD97C1C29F5BE00CDFBE7 /* weaponTri-SlosherNouveau.png */,
+				0A9AD97D1C29F5BE00CDFBE7 /* weaponZinkMiniSplatling.png */,
+			);
+			name = Weapons;
+			sourceTree = "<group>";
+		};
+		0A9AD9C81C29F5C500CDFBE7 /* Specials */ = {
+			isa = PBXGroup;
+			children = (
+				0A9AD9C91C29F5D000CDFBE7 /* specialBombRushBurstBomb.png */,
+				0A9AD9CA1C29F5D000CDFBE7 /* specialBombRushSeeker.png */,
+				0A9AD9CB1C29F5D000CDFBE7 /* specialBombRushSplatBomb.png */,
+				0A9AD9CC1C29F5D000CDFBE7 /* specialBombRushSuctionBomb.png */,
+				0A9AD9CD1C29F5D000CDFBE7 /* specialBubbler.png */,
+				0A9AD9CE1C29F5D000CDFBE7 /* specialEcholocator.png */,
+				0A9AD9CF1C29F5D000CDFBE7 /* specialInkstrike.png */,
+				0A9AD9D01C29F5D000CDFBE7 /* specialInkzooka.png */,
+				0A9AD9D11C29F5D000CDFBE7 /* specialKillerWail.png */,
+				0A9AD9D21C29F5D000CDFBE7 /* specialKraken.png */,
+			);
+			name = Specials;
+			sourceTree = "<group>";
+		};
+		0A9AD9E11C2A11EE00CDFBE7 /* Subs */ = {
+			isa = PBXGroup;
+			children = (
+				0A9AD9E21C2A11F800CDFBE7 /* subBurstBomb.png */,
+				0A9AD9E31C2A11F800CDFBE7 /* subDisruptor.png */,
+				0A9AD9E41C2A11F800CDFBE7 /* subInkMine.png */,
+				0A9AD9E51C2A11F800CDFBE7 /* subPointSensor.png */,
+				0A9AD9E61C2A11F800CDFBE7 /* subSeeker.png */,
+				0A9AD9E71C2A11F800CDFBE7 /* subSplashWall.png */,
+				0A9AD9E81C2A11F800CDFBE7 /* subSplatBomb.png */,
+				0A9AD9E91C2A11F800CDFBE7 /* subSprinkler.png */,
+				0A9AD9EA1C2A11F800CDFBE7 /* subSquidBeakon.png */,
+				0A9AD9EB1C2A11F800CDFBE7 /* subSuctionBomb.png */,
+			);
+			name = Subs;
+			sourceTree = "<group>";
+		};
 		0AA23E081C1B6E140002BCC2 /* Abilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -927,14 +1236,16 @@
 				0AC607B81C189BD8006EECA7 /* MapsTableViewController.swift */,
 				0AA23E001C1B6DB90002BCC2 /* BrandGuideViewController.swift */,
 				0ADF9AA41C1DF135002D7E81 /* GearGuideViewController.swift */,
+				0A9AD9311C29DB0700CDFBE7 /* LoadoutViewController.swift */,
 				0AA23E411C1B78450002BCC2 /* BetaViewController.swift */,
 				0A4BF6AD1C22201800BB4834 /* SettingsTableViewController.swift */,
 				0A3503EC1C27270C009C6A48 /* NotificationsTableViewController.swift */,
-				0A9AD9311C29DB0700CDFBE7 /* LoadoutViewController.swift */,
 				0AA23E011C1B6DB90002BCC2 /* IconSelectionView.swift */,
 				0AA23E021C1B6DB90002BCC2 /* IconSelectionView.xib */,
-				0A0F6FF21C27105900206883 /* ProfileGearView.xib */,
+				0A9AD9DF1C2A005900CDFBE7 /* GearView.swift */,
+				0A9AD9DD1C29FA8800CDFBE7 /* GearView.xib */,
 				0AC6078E1C189B36006EECA7 /* Main.storyboard */,
+				0A0F6FF21C27105900206883 /* ProfileGearView.xib */,
 				0AC607931C189B36006EECA7 /* LaunchScreen.storyboard */,
 			);
 			path = SplatPal;
@@ -977,6 +1288,7 @@
 		0AC607C11C18A61E006EECA7 /* Stages */ = {
 			isa = PBXGroup;
 			children = (
+				0A36DEBA1C31DD06001E6DE4 /* StagePiranhaPit.jpg */,
 				0AC607C21C18A629006EECA7 /* StageArowanaMall.jpg */,
 				0AC607C31C18A629006EECA7 /* StageBlackbellySkatepark.jpg */,
 				0AC607C41C18A629006EECA7 /* StageBluefinDepot.jpg */,
@@ -998,6 +1310,9 @@
 		0AC607DE1C18AAA6006EECA7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0A9AD9E11C2A11EE00CDFBE7 /* Subs */,
+				0A9AD9C81C29F5C500CDFBE7 /* Specials */,
+				0A9AD9331C29F5B300CDFBE7 /* Weapons */,
 				0AC607C11C18A61E006EECA7 /* Stages */,
 				0AA23E081C1B6E140002BCC2 /* Abilities */,
 				0ADF9A9D1C1D1246002D7E81 /* Bar Icons */,
@@ -1502,6 +1817,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9AD9961C29F5BE00CDFBE7 /* weaponForgeSplattershotPro.png in Resources */,
 				0AC607E61C18E8A1006EECA7 /* rankedBadge@3x.png in Resources */,
 				0A4BF6AC1C22069700BB4834 /* settingsIcon@3x.png in Resources */,
 				0ADF9C211C1DF2DE002D7E81 /* gearOctolingGoggles.png in Resources */,
@@ -1512,18 +1828,23 @@
 				0ADF9BDF1C1DF2DE002D7E81 /* gearClownfishBasics.png in Resources */,
 				0ADF9BFF1C1DF2DE002D7E81 /* gearGreenStripedLS.png in Resources */,
 				0ADF9BC91C1DF2DE002D7E81 /* gearBlackSquideye.png in Resources */,
+				0A9AD9DA1C29F5D000CDFBE7 /* specialInkzooka.png in Resources */,
 				0ADF9C3B1C1DF2DE002D7E81 /* gearRed-CheckShirt.png in Resources */,
 				0ADF9BF21C1DF2DE002D7E81 /* gearForgeOctarianJacket.png in Resources */,
 				0ADF9C641C1DF2DE002D7E81 /* gearSplatfestTee.png in Resources */,
 				0ADF9CAB1C1DF2DE002D7E81 /* gearYellowUrbanVest.png in Resources */,
 				0AA23E391C1B6E280002BCC2 /* abilitySwimSpeedUp.png in Resources */,
 				0ADF9BBE1C1DF2DE002D7E81 /* gearBikeHelmet.png in Resources */,
+				0A9AD9AA1C29F5BE00CDFBE7 /* weaponMiniSplatling.png in Resources */,
 				0ADF9BB01C1DF2DE002D7E81 /* gearAnchorSweat.png in Resources */,
 				0ADF9C941C1DF2DE002D7E81 /* gearVarsityJacket.png in Resources */,
 				0ADF9C3D1C1DF2DE002D7E81 /* gearRedHi-Tops.png in Resources */,
 				0ADF9BD21C1DF2DE002D7E81 /* gearBlueSeaSlugs.png in Resources */,
 				0ADF9C0E1C1DF2DE002D7E81 /* gearLayeredVectorLS.png in Resources */,
+				0A9AD9BC1C29F5BE00CDFBE7 /* weaponSplash-o-matic.png in Resources */,
 				0ADF9BB71C1DF2DE002D7E81 /* gearBaby-JellyShirt.png in Resources */,
+				0A9AD9AE1C29F5BE00CDFBE7 /* weaponNeoSploosh-o-matic.png in Resources */,
+				0A9AD9BB1C29F5BE00CDFBE7 /* weaponSloshingMachineNeo.png in Resources */,
 				0A4BF6AA1C22069700BB4834 /* settingsIcon.png in Resources */,
 				0ADF9C4A1C1DF2DE002D7E81 /* gearRodeoShirt.png in Resources */,
 				0ADF9BAE1C1DF2DE002D7E81 /* gearAcerolaRainBoots.png in Resources */,
@@ -1535,7 +1856,9 @@
 				0ADF9BF11C1DF2DE002D7E81 /* gearForgeInklingParka.png in Resources */,
 				0ADF9C511C1DF2DE002D7E81 /* gearSamuraiShoes.png in Resources */,
 				0ADF9C8C1C1DF2DE002D7E81 /* gearTreasureHunter.png in Resources */,
+				0A9AD9911C29F5BE00CDFBE7 /* weaponCustomSplattershotJr..png in Resources */,
 				0ADF9C551C1DF2DE002D7E81 /* gearSharkMoccasins.png in Resources */,
+				0A9AD9BE1C29F5BE00CDFBE7 /* weaponSplatRoller.png in Resources */,
 				0ADF9C101C1DF2DE002D7E81 /* gearLELo-Tops.png in Resources */,
 				0ADF9C1A1C1DF2DE002D7E81 /* gearNavyCollegeSweat.png in Resources */,
 				0AA23DF91C1B6D870002BCC2 /* betaIcon@3x.png in Resources */,
@@ -1546,21 +1869,30 @@
 				0ADF9BED1C1DF2DE002D7E81 /* gearFirefinNavySweat.png in Resources */,
 				0ADF9C411C1DF2DE002D7E81 /* gearRedWorkBoots.png in Resources */,
 				0ADF9C5F1C1DF2DE002D7E81 /* gearSnowyDownBoots.png in Resources */,
+				0A9AD9F51C2A11F800CDFBE7 /* subSuctionBomb.png in Resources */,
 				0ADF9BE11C1DF2DE002D7E81 /* gearCreamBasics.png in Resources */,
+				0A9AD9D71C29F5D000CDFBE7 /* specialBubbler.png in Resources */,
 				0AC607E51C18E8A1006EECA7 /* rankedBadge@2x.png in Resources */,
+				0A9AD9801C29F5BE00CDFBE7 /* weapon.96Gal.png in Resources */,
 				0ADF9C831C1DF2DE002D7E81 /* gearTakorokaMesh.png in Resources */,
 				0ADF9CA61C1DF2DE002D7E81 /* gearWhiteShirt.png in Resources */,
 				0AC607D51C18A629006EECA7 /* StageKelpDome.jpg in Resources */,
 				0ADF9BE21C1DF2DE002D7E81 /* gearCreamHi-Tops.png in Resources */,
 				0ADF9BCF1C1DF2DE002D7E81 /* gearBlueMotoBoots.png in Resources */,
+				0A9AD99D1C29F5BE00CDFBE7 /* weaponHeroRollerReplica.png in Resources */,
 				0AA23E2D1C1B6E280002BCC2 /* abilityLast-DitchEffort.png in Resources */,
+				0A9AD9B81C29F5BE00CDFBE7 /* weaponSlosher.png in Resources */,
 				0AA23E291C1B6E280002BCC2 /* abilityInkRecoveryUp.png in Resources */,
 				0ADF9BBD1C1DF2DE002D7E81 /* gearBerrySkiJacket.png in Resources */,
 				0AA23E281C1B6E280002BCC2 /* abilityHaunt.png in Resources */,
+				0A9AD9D61C29F5D000CDFBE7 /* specialBombRushSuctionBomb.png in Resources */,
+				0A9AD9DC1C29F5D000CDFBE7 /* specialKraken.png in Resources */,
 				0ADF9C431C1DF2DE002D7E81 /* gearReggaeTee.png in Resources */,
 				0ADF9C541C1DF2DE002D7E81 /* gearSchoolUniform.png in Resources */,
 				0ADF9BEC1C1DF2DE002D7E81 /* gearFCAlbacore.png in Resources */,
 				0ADF9C501C1DF2DE002D7E81 /* gearSamuraiJacket.png in Resources */,
+				0A9AD9EE1C2A11F800CDFBE7 /* subInkMine.png in Resources */,
+				0A9AD9ED1C2A11F800CDFBE7 /* subDisruptor.png in Resources */,
 				0ADF9C401C1DF2DE002D7E81 /* gearRedVectorTee.png in Resources */,
 				0ADF9BFA1C1DF2DE002D7E81 /* gearGrayMixedShirt.png in Resources */,
 				0ADF9C491C1DF2DE002D7E81 /* gearRockenbergWhite.png in Resources */,
@@ -1574,6 +1906,8 @@
 				0AB09B3D1C205F2700A8A682 /* star@3x.png in Resources */,
 				0ADF9C671C1DF2DE002D7E81 /* gearSquid-PatternWaistcoat.png in Resources */,
 				0ADF9C5E1C1DF2DE002D7E81 /* gearSnorkelMask.png in Resources */,
+				0A9AD9A91C29F5BE00CDFBE7 /* weaponLunaBlasterNeo.png in Resources */,
+				0A9AD9841C29F5BE00CDFBE7 /* weaponBamboozler14MkI.png in Resources */,
 				0ADF9CA21C1DF2DE002D7E81 /* gearWhiteLS.png in Resources */,
 				0ADF9BF71C1DF2DE002D7E81 /* gearGolfVisor.png in Resources */,
 				0ADF9C261C1DF2DE002D7E81 /* gearOrangeLo-Tops.png in Resources */,
@@ -1582,13 +1916,18 @@
 				0ADF9BB51C1DF2DE002D7E81 /* gearB-ballJersey(Away).png in Resources */,
 				0ADF9BCA1C1DF2DE002D7E81 /* gearBlackTee.png in Resources */,
 				0A0F6FF31C27105900206883 /* ProfileGearView.xib in Resources */,
+				0A9AD9D91C29F5D000CDFBE7 /* specialInkstrike.png in Resources */,
+				0A9AD9EF1C2A11F800CDFBE7 /* subPointSensor.png in Resources */,
 				0AA23E351C1B6E280002BCC2 /* abilitySpecialChargeUp.png in Resources */,
+				0A9AD9D41C29F5D000CDFBE7 /* specialBombRushSeeker.png in Resources */,
 				0ADF9BE71C1DF2DE002D7E81 /* gearCyclingCap.png in Resources */,
 				0ADF9C8A1C1DF2DE002D7E81 /* gearTraditionalSandals.png in Resources */,
+				0A9AD99B1C29F5BE00CDFBE7 /* weaponHeavySplatlingDeco.png in Resources */,
 				0ADF9C621C1DF2DE002D7E81 /* gearSpecialForcesBeret.png in Resources */,
 				0ADF9C2C1C1DF2DE002D7E81 /* gearPilotGoggles.png in Resources */,
 				0ADF9AA11C1D1255002D7E81 /* clothesIcon.png in Resources */,
 				0AA23E361C1B6E280002BCC2 /* abilitySpecialDurationUp.png in Resources */,
+				0A9AD98F1C29F5BE00CDFBE7 /* weaponCustomJetSquelcher.png in Resources */,
 				0ADF9BF51C1DF2DE002D7E81 /* gearGasMask.png in Resources */,
 				0AC607E01C18ACF7006EECA7 /* Paintball_Beta_4a.otf in Resources */,
 				0ADF9BE91C1DF2DE002D7E81 /* gearDarkUrbanVest.png in Resources */,
@@ -1611,26 +1950,36 @@
 				0ADF9C4B1C1DF2DE002D7E81 /* gearRound-CollarShirt.png in Resources */,
 				0AC607DA1C18A629006EECA7 /* StageSaltsprayRig.jpg in Resources */,
 				0ADF9C931C1DF2DE002D7E81 /* gearVarsityHoodie.png in Resources */,
+				0A9AD9AD1C29F5BE00CDFBE7 /* weaponNeoSplash-o-matic.png in Resources */,
 				0ADF9BD01C1DF2DE002D7E81 /* gearBluePeaksTee.png in Resources */,
 				0ADF9C081C1DF2DE002D7E81 /* gearIvoryPeaksTee.png in Resources */,
+				0A9AD9821C29F5BE00CDFBE7 /* weaponAerosprayMG.png in Resources */,
+				0A9AD9A71C29F5BE00CDFBE7 /* weaponL-3NozzlenoseD.png in Resources */,
+				0A9AD9C41C29F5BE00CDFBE7 /* weaponTentatekSplattershot.png in Resources */,
 				0ADF9C561C1DF2DE002D7E81 /* gearShirt&Tie.png in Resources */,
 				0ADF9BB21C1DF2DE002D7E81 /* gearArmorHelmetReplica.png in Resources */,
+				0A9AD9991C29F5BE00CDFBE7 /* weaponH-3NozzlenoseD.png in Resources */,
 				0AA23E221C1B6E280002BCC2 /* abilityBombRangeUp.png in Resources */,
 				0ADF9BD11C1DF2DE002D7E81 /* gearBlueSailorSuit.png in Resources */,
 				0ADF9BC01C1DF2DE002D7E81 /* gearBlackAnchorTee.png in Resources */,
+				0A9AD9DE1C29FA8800CDFBE7 /* GearView.xib in Resources */,
 				0ADF9C891C1DF2DE002D7E81 /* gearTraditionalHeadband.png in Resources */,
 				0AA23DFE1C1B6D870002BCC2 /* weaponsIcon@2x.png in Resources */,
 				0ADF9C601C1DF2DE002D7E81 /* gearSoccerCleats.png in Resources */,
 				0ADF9CA31C1DF2DE002D7E81 /* gearWhitePufferTee.png in Resources */,
 				0AC607D21C18A629006EECA7 /* StageBluefinDepot.jpg in Resources */,
 				0AC607DB1C18A629006EECA7 /* StageUrchinUnderpass.jpg in Resources */,
+				0A9AD9F01C2A11F800CDFBE7 /* subSeeker.png in Resources */,
 				0ADF9BB31C1DF2DE002D7E81 /* gearArmorJacketReplica.png in Resources */,
 				0ADF9C131C1DF2DE002D7E81 /* gearLinenShirt.png in Resources */,
 				0ADF9BC31C1DF2DE002D7E81 /* gearBlackInkyRider.png in Resources */,
 				0ADF9C191C1DF2DE002D7E81 /* gearMountainVest.png in Resources */,
+				0A9AD98C1C29F5BE00CDFBE7 /* weaponCustomE-liter3K.png in Resources */,
 				0ADF9CB01C1DF2DE002D7E81 /* gearZinkLayeredLS.png in Resources */,
+				0A9AD9A61C29F5BE00CDFBE7 /* weaponL-3Nozzlenose.png in Resources */,
 				0ADF9BBA1C1DF2DE002D7E81 /* gearBananaBasics.png in Resources */,
 				0ADF9C3A1C1DF2DE002D7E81 /* gearRainy-DayTee.png in Resources */,
+				0A9AD9B01C29F5BE00CDFBE7 /* weaponOctobrush.png in Resources */,
 				0ADF9BD41C1DF2DE002D7E81 /* gearBobbleHat.png in Resources */,
 				0ADF9C2D1C1DF2DE002D7E81 /* gearPinkTrainers.png in Resources */,
 				0ADF9C121C1DF2DE002D7E81 /* gearLightweightCap.png in Resources */,
@@ -1640,14 +1989,18 @@
 				0ADF9C001C1DF2DE002D7E81 /* gearGreenTee.png in Resources */,
 				0ADF9BD91C1DF2DE002D7E81 /* gearCampingHat.png in Resources */,
 				0AA23E2F1C1B6E280002BCC2 /* abilityNone.png in Resources */,
+				0A9AD9941C29F5BE00CDFBE7 /* weaponE-liter3K.png in Resources */,
 				0ADF9C7A1C1DF2DE002D7E81 /* gearStrawBoater.png in Resources */,
+				0A9AD9D81C29F5D000CDFBE7 /* specialEcholocator.png in Resources */,
 				0ADF9C7D1C1DF2DE002D7E81 /* gearStripedPeaksLS.png in Resources */,
 				0ADF9C021C1DF2DE002D7E81 /* gearHerbivoreTee.png in Resources */,
 				0ADF9C3E1C1DF2DE002D7E81 /* gearRedSeaSlugs.png in Resources */,
+				0A9AD9B91C29F5BE00CDFBE7 /* weaponSlosherDeco.png in Resources */,
 				0ADF9CA81C1DF2DE002D7E81 /* gearWhiteTee.png in Resources */,
 				0ADF9C951C1DF2DE002D7E81 /* gearVintageCheckShirt.png in Resources */,
 				0ADF9C471C1DF2DE002D7E81 /* gearRoastedBrogues.png in Resources */,
 				0ADF9C381C1DF2DE002D7E81 /* gearPurpleHi-Horses.png in Resources */,
+				0A9AD9B71C29F5BE00CDFBE7 /* weaponRapidBlasterProDeco.png in Resources */,
 				0AA23E241C1B6E280002BCC2 /* abilityColdBlooded.png in Resources */,
 				0ADF9C4F1C1DF2DE002D7E81 /* gearSamuraiHelmet.png in Resources */,
 				0ADF9C161C1DF2DE002D7E81 /* gearMawcasins.png in Resources */,
@@ -1661,31 +2014,43 @@
 				0ADF9BCD1C1DF2DE002D7E81 /* gearBlueberryCasuals.png in Resources */,
 				0ADF9C581C1DF2DE002D7E81 /* gearShortBeanie.png in Resources */,
 				0AA23DF81C1B6D870002BCC2 /* betaIcon@2x.png in Resources */,
+				0A9AD9A11C29F5BE00CDFBE7 /* weaponInkbrushNouveau.png in Resources */,
 				0ADF9BC81C1DF2DE002D7E81 /* gearBlackSeahorses.png in Resources */,
 				0ADF9BF81C1DF2DE002D7E81 /* gearGrapeTee.png in Resources */,
 				0ADF9C5B1C1DF2DE002D7E81 /* gearSkullBandana.png in Resources */,
 				0ADF9C751C1DF2DE002D7E81 /* gearSquidvaderCap.png in Resources */,
+				0A9AD9C11C29F5BE00CDFBE7 /* weaponSplattershotJr..png in Resources */,
 				0AA23E2A1C1B6E280002BCC2 /* abilityInkResistanceUp.png in Resources */,
+				0A9AD9D51C29F5D000CDFBE7 /* specialBombRushSplatBomb.png in Resources */,
 				0ADF9C731C1DF2DE002D7E81 /* gearSquidSatinJacket.png in Resources */,
 				0ADF9C2E1C1DF2DE002D7E81 /* gearPirate-StripeTee.png in Resources */,
+				0A9AD9851C29F5BE00CDFBE7 /* weaponBamboozler14MkII.png in Resources */,
+				0A9AD9AB1C29F5BE00CDFBE7 /* weaponN-ZAP'85.png in Resources */,
+				0A9AD9C21C29F5BE00CDFBE7 /* weaponSplattershotPro.png in Resources */,
 				0AA23E261C1B6E280002BCC2 /* abilityDamageUp.png in Resources */,
 				0ADF9C721C1DF2DE002D7E81 /* gearSquidNordic.png in Resources */,
 				0ADF9C2F1C1DF2DE002D7E81 /* gearPlumCasuals.png in Resources */,
 				0AC607DD1C18A629006EECA7 /* StageCampTriggerfish.jpg in Resources */,
+				0A9AD9931C29F5BE00CDFBE7 /* weaponDynamoRoller.png in Resources */,
 				0ADF9BE61C1DF2DE002D7E81 /* gearCycleKingJersey.png in Resources */,
+				0A9AD99E1C29F5BE00CDFBE7 /* weaponHeroShotReplica.png in Resources */,
 				0ADF9C761C1DF2DE002D7E81 /* gearSquinkWingtips.png in Resources */,
 				0AC607D11C18A629006EECA7 /* StageBlackbellySkatepark.jpg in Resources */,
 				0ADF9C611C1DF2DE002D7E81 /* gearSoccerHeadband.png in Resources */,
 				0ADF9C6F1C1DF2DE002D7E81 /* gearSquidHairclip.png in Resources */,
 				0ADF9C7E1C1DF2DE002D7E81 /* gearStripedRugby.png in Resources */,
 				0ADF9C451C1DF2DE002D7E81 /* gearRetroSpecs.png in Resources */,
+				0A9AD98D1C29F5BE00CDFBE7 /* weaponCustomE-liter3KScope.png in Resources */,
 				0ADF9C811C1DF2DE002D7E81 /* gearSunny-DayTee.png in Resources */,
 				0ADF9C1E1C1DF2DE002D7E81 /* gearOctoglasses.png in Resources */,
 				0ADF9C991C1DF2DE002D7E81 /* gearWhiteAnchorTee.png in Resources */,
 				0ADF9C181C1DF2DE002D7E81 /* gearMotoBoots.png in Resources */,
 				0AA23E2C1C1B6E280002BCC2 /* abilityInkSaver(Sub).png in Resources */,
+				0A9AD9AF1C29F5BE00CDFBE7 /* weaponNewSquiffer.png in Resources */,
 				0ADF9BB41C1DF2DE002D7E81 /* gearB-ballHeadband.png in Resources */,
 				0ADF9C481C1DF2DE002D7E81 /* gearRockenbergBlack.png in Resources */,
+				0A9AD9B11C29F5BE00CDFBE7 /* weaponOctobrushNouveau.png in Resources */,
+				0A9AD9C01C29F5BE00CDFBE7 /* weaponSplattershot.png in Resources */,
 				0ADF9C6B1C1DF2DE002D7E81 /* gearSquidForceWhite.png in Resources */,
 				0ADF9CA01C1DF2DE002D7E81 /* gearWhiteLayeredLS.png in Resources */,
 				0AA23E271C1B6E280002BCC2 /* abilityDefenceUp.png in Resources */,
@@ -1694,15 +2059,20 @@
 				0ADF9BEB1C1DF2DE002D7E81 /* gearFakeContacts.png in Resources */,
 				0ADF9BBB1C1DF2DE002D7E81 /* gearBaseballJersey.png in Resources */,
 				0AC607951C189B36006EECA7 /* LaunchScreen.storyboard in Resources */,
+				0A9AD98E1C29F5BE00CDFBE7 /* weaponCustomHydraSplatling.png in Resources */,
 				0ADF9C9E1C1DF2DE002D7E81 /* gearWhiteInkyRider.png in Resources */,
 				0ADF9C311C1DF2DE002D7E81 /* gearPowerBoots.png in Resources */,
 				0AC607BD1C189ED0006EECA7 /* mapIcon.png in Resources */,
+				0A9AD9F11C2A11F800CDFBE7 /* subSplashWall.png in Resources */,
 				0AC607D31C18A629006EECA7 /* StageFlounderHeights.jpg in Resources */,
 				0ADF9C201C1DF2DE002D7E81 /* gearOctolingBoots.png in Resources */,
+				0A9AD9D31C29F5D000CDFBE7 /* specialBombRushBurstBomb.png in Resources */,
 				0ADF9BD31C1DF2DE002D7E81 /* gearBlueSlip-Ons.png in Resources */,
 				0ADF9BDC1C1DF2DE002D7E81 /* gearChocoClogs.png in Resources */,
+				0A9AD9BD1C29F5BE00CDFBE7 /* weaponSplatCharger.png in Resources */,
 				0ADF9C681C1DF2DE002D7E81 /* gearSquid-StitchCap.png in Resources */,
 				0ADF9C821C1DF2DE002D7E81 /* gearSunVisor.png in Resources */,
+				0A9AD9F41C2A11F800CDFBE7 /* subSquidBeakon.png in Resources */,
 				0AC607D71C18A629006EECA7 /* StageMorayTowers.jpg in Resources */,
 				0ADF9C5C1C1DF2DE002D7E81 /* gearSky-BlueSquideye.png in Resources */,
 				0ADF9CAE1C1DF2DE002D7E81 /* gearZekkoHoodie.png in Resources */,
@@ -1711,7 +2081,9 @@
 				0AC607D61C18A629006EECA7 /* StageMahi-MahiResort.jpg in Resources */,
 				0AA23E441C1B7A760002BCC2 /* changelog.txt in Resources */,
 				0AC607F01C191405006EECA7 /* turfWarBadge.png in Resources */,
+				0A9AD99F1C29F5BE00CDFBE7 /* weaponHydraSplatling.png in Resources */,
 				0AC607EE1C191405006EECA7 /* rankedBadgeAlt@2x.png in Resources */,
+				0A9AD9F21C2A11F800CDFBE7 /* subSplatBomb.png in Resources */,
 				0ADF9C041C1DF2DE002D7E81 /* gearHeroJacketReplica.png in Resources */,
 				0A4C51151C24633C006ABE9B /* splatIcon.png in Resources */,
 				0ADF9C651C1DF2DE002D7E81 /* gearSportyBobbleHat.png in Resources */,
@@ -1720,7 +2092,10 @@
 				0ADF9C141C1DF2DE002D7E81 /* gearLogoAlohaShirt.png in Resources */,
 				0ADF9C781C1DF2DE002D7E81 /* gearStrappingReds.png in Resources */,
 				0ADF9C981C1DF2DE002D7E81 /* gearWhite8-BitFishFry.png in Resources */,
+				0A9AD97E1C29F5BE00CDFBE7 /* weapon.52Gal.png in Resources */,
 				0ADF9C791C1DF2DE002D7E81 /* gearStrappingWhites.png in Resources */,
+				0A9AD9A01C29F5BE00CDFBE7 /* weaponInkbrush.png in Resources */,
+				0A9AD9B31C29F5BE00CDFBE7 /* weaponRangeBlaster.png in Resources */,
 				0ADF9BFE1C1DF2DE002D7E81 /* gearGreenRainBoots.png in Resources */,
 				0ADF9BB61C1DF2DE002D7E81 /* gearB-ballJersey(Home).png in Resources */,
 				0ADF9C361C1DF2DE002D7E81 /* gearPunkYellows.png in Resources */,
@@ -1749,17 +2124,22 @@
 				0ADF9BBC1C1DF2DE002D7E81 /* gearBasicTee.png in Resources */,
 				0ADF9BD51C1DF2DE002D7E81 /* gearBubbleRainBoots.png in Resources */,
 				0ADF9CA71C1DF2DE002D7E81 /* gearWhiteStripedLS.png in Resources */,
+				0A9AD9B21C29F5BE00CDFBE7 /* weaponOctoshotReplica.png in Resources */,
+				0A9AD9831C29F5BE00CDFBE7 /* weaponAerosprayRG.png in Resources */,
+				0A9AD99A1C29F5BE00CDFBE7 /* weaponHeavySplatling.png in Resources */,
 				0ADF9BEE1C1DF2DE002D7E81 /* gearFishFryVisor.png in Resources */,
 				0ADF9C0C1C1DF2DE002D7E81 /* gearKrak-On528.png in Resources */,
 				0ADF9BF41C1DF2DE002D7E81 /* gearFullMoonGlasses.png in Resources */,
 				0ADF9C301C1DF2DE002D7E81 /* gearPowerArmor.png in Resources */,
 				0ADF9C8E1C1DF2DE002D7E81 /* gearTurquoiseKicks.png in Resources */,
 				0AC607EF1C191405006EECA7 /* rankedBadgeAlt@3x.png in Resources */,
+				0A9AD9861C29F5BE00CDFBE7 /* weaponBlaster.png in Resources */,
 				0ADF9C221C1DF2DE002D7E81 /* gearOctoTee.png in Resources */,
 				0ADF9BFD1C1DF2DE002D7E81 /* gearGreenCardigan.png in Resources */,
 				0ADF9C7C1C1DF2DE002D7E81 /* gearStripedBeanie.png in Resources */,
 				0A0F6FF11C261FAC00206883 /* itemBG@3x.png in Resources */,
 				0ADF9C631C1DF2DE002D7E81 /* gearSplashGoggles.png in Resources */,
+				0A9AD9BA1C29F5BE00CDFBE7 /* weaponSloshingMachine.png in Resources */,
 				0ADF9C961C1DF2DE002D7E81 /* gearVisorSkateHelmet.png in Resources */,
 				0AA23DFF1C1B6D870002BCC2 /* weaponsIcon@3x.png in Resources */,
 				0AC607F41C19174B006EECA7 /* backgroundTile.jpg in Resources */,
@@ -1768,6 +2148,7 @@
 				0ADF9C591C1DF2DE002D7E81 /* gearShrimp-PinkPolo.png in Resources */,
 				0ADF9C341C1DF2DE002D7E81 /* gearPunkCherries.png in Resources */,
 				0ADF9BF01C1DF2DE002D7E81 /* gearForestVest.png in Resources */,
+				0A9AD9F31C2A11F800CDFBE7 /* subSprinkler.png in Resources */,
 				0ADF9BD71C1DF2DE002D7E81 /* gearCamoMesh.png in Resources */,
 				0ADF9C421C1DF2DE002D7E81 /* gearReelSweat.png in Resources */,
 				0ADF9C6A1C1DF2DE002D7E81 /* gearSquid-StitchTee.png in Resources */,
@@ -1775,12 +2156,14 @@
 				0ADF9C911C1DF2DE002D7E81 /* gearUrchinsJersey.png in Resources */,
 				0AC607921C189B36006EECA7 /* Assets.xcassets in Resources */,
 				0ADF9C031C1DF2DE002D7E81 /* gearHeroHeadsetReplica.png in Resources */,
+				0A9AD99C1C29F5BE00CDFBE7 /* weaponHeroChargerReplica.png in Resources */,
 				0ADF9C331C1DF2DE002D7E81 /* gearProTrailBoots.png in Resources */,
 				0ADF9C8B1C1DF2DE002D7E81 /* gearTrailBoots.png in Resources */,
 				0ADF9C091C1DF2DE002D7E81 /* gearJetCap.png in Resources */,
 				0ADF9C2B1C1DF2DE002D7E81 /* gearPearlTee.png in Resources */,
 				0ADF9C6D1C1DF2DE002D7E81 /* gearSQUIDGIRLShoes.png in Resources */,
 				0ADF9C861C1DF2DE002D7E81 /* gearTentaclesHelmet.png in Resources */,
+				0A9AD98A1C29F5BE00CDFBE7 /* weaponCustomBlaster.png in Resources */,
 				0ADF9C661C1DF2DE002D7E81 /* gearSquashHeadband.png in Resources */,
 				0ADF9C241C1DF2DE002D7E81 /* gearOrangeArrows.png in Resources */,
 				0ADF9CB11C1DF2DE002D7E81 /* gearZinkLS.png in Resources */,
@@ -1789,41 +2172,58 @@
 				0AC607F21C191405006EECA7 /* turfWarBadge@3x.png in Resources */,
 				0AA23E2E1C1B6E280002BCC2 /* abilityNinjaSquid.png in Resources */,
 				0ADF9BCB1C1DF2DE002D7E81 /* gearBlackTrainers.png in Resources */,
+				0A9AD97F1C29F5BE00CDFBE7 /* weapon.52GalDeco.png in Resources */,
 				0AA23E251C1B6E280002BCC2 /* abilityComeback.png in Resources */,
+				0A9AD9951C29F5BE00CDFBE7 /* weaponE-liter3KScope.png in Resources */,
 				0ADF9C841C1DF2DE002D7E81 /* gearTanWorkBoots.png in Resources */,
 				0ADF9C9B1C1DF2DE002D7E81 /* gearWhiteArrows.png in Resources */,
+				0A9AD9921C29F5BE00CDFBE7 /* weaponDualSquelcher.png in Resources */,
 				0ADF9C151C1DF2DE002D7E81 /* gearLumberjackShirt.png in Resources */,
 				0ADF9BC61C1DF2DE002D7E81 /* gearBlackPipeTee.png in Resources */,
+				0A9AD9A51C29F5BE00CDFBE7 /* weaponKrak-OnSplatRoller.png in Resources */,
+				0A9AD9891C29F5BE00CDFBE7 /* weaponClassicSquiffer.png in Resources */,
 				0ADF9BEF1C1DF2DE002D7E81 /* gearFive-PanelCap.png in Resources */,
 				0AC607E41C18E8A1006EECA7 /* rankedBadge.png in Resources */,
+				0A9AD9B61C29F5BE00CDFBE7 /* weaponRapidBlasterPro.png in Resources */,
 				0ADF9C771C1DF2DE002D7E81 /* gearStealthGoggles.png in Resources */,
 				0A0F6FF01C261FAC00206883 /* itemBG@2x.png in Resources */,
 				0AA23DF71C1B6D870002BCC2 /* betaIcon.png in Resources */,
+				0A9AD9A21C29F5BE00CDFBE7 /* weaponJetSquelcher.png in Resources */,
 				0ADF9BDE1C1DF2DE002D7E81 /* gearClassicStrawBoater.png in Resources */,
 				0AB09B3B1C205F2700A8A682 /* star.png in Resources */,
 				0ADF9C281C1DF2DE002D7E81 /* gearPaintballMask.png in Resources */,
+				0A9AD9811C29F5BE00CDFBE7 /* weapon.96GalDeco.png in Resources */,
 				0ADF9C851C1DF2DE002D7E81 /* gearTennisHeadband.png in Resources */,
 				0ADF9C5D1C1DF2DE002D7E81 /* gearSlipstreamUnited.png in Resources */,
+				0A9AD9981C29F5BE00CDFBE7 /* weaponH-3Nozzlenose.png in Resources */,
 				0ADF9CA41C1DF2DE002D7E81 /* gearWhiteSailorSuit.png in Resources */,
 				0ADF9C111C1DF2DE002D7E81 /* gearLESoccerCleats.png in Resources */,
 				0ADF9CB21C1DF2DE002D7E81 /* gearZombieHi-Horses.png in Resources */,
 				0ADF9CA51C1DF2DE002D7E81 /* gearWhiteSeahorses.png in Resources */,
 				0ADF9C6C1C1DF2DE002D7E81 /* gearSQUIDGIRLHat.png in Resources */,
+				0A9AD9901C29F5BE00CDFBE7 /* weaponCustomRangeBlaster.png in Resources */,
 				0ADF9C531C1DF2DE002D7E81 /* gearSchoolShoes.png in Resources */,
+				0A9AD9A41C29F5BE00CDFBE7 /* weaponKelpSplatterscope.png in Resources */,
 				0AA23E2B1C1B6E280002BCC2 /* abilityInkSaver(Main).png in Resources */,
+				0A9AD9AC1C29F5BE00CDFBE7 /* weaponN-ZAP'89.png in Resources */,
 				0ADF9CA11C1DF2DE002D7E81 /* gearWhiteLineTee.png in Resources */,
 				0ADF9C871C1DF2DE002D7E81 /* gearTintedShades.png in Resources */,
 				0ADF9C901C1DF2DE002D7E81 /* gearUrchinsCap.png in Resources */,
 				0ADF9C391C1DF2DE002D7E81 /* gearPurpleSeaSlugs.png in Resources */,
 				0ADF9C0A1C1DF2DE002D7E81 /* gearJoggingHeadband.png in Resources */,
+				0A9AD9881C29F5BE00CDFBE7 /* weaponCarbonRollerDeco.png in Resources */,
+				0A9AD9A31C29F5BE00CDFBE7 /* weaponKelpSplatCharger.png in Resources */,
 				0ADF9C6E1C1DF2DE002D7E81 /* gearSQUIDGIRLTunic.png in Resources */,
 				0AA23E381C1B6E280002BCC2 /* abilityStealthJump.png in Resources */,
 				0ADF9C921C1DF2DE002D7E81 /* gearVarsityBaseballLS.png in Resources */,
 				0ADF9BF31C1DF2DE002D7E81 /* gearFuguTee.png in Resources */,
+				0A9AD9DB1C29F5D000CDFBE7 /* specialKillerWail.png in Resources */,
 				0ADF9BE01C1DF2DE002D7E81 /* gearCrazyArrows.png in Resources */,
 				0ADF9C711C1DF2DE002D7E81 /* gearSquidmarkSweat.png in Resources */,
+				0A9AD9A81C29F5BE00CDFBE7 /* weaponLunaBlaster.png in Resources */,
 				0ADF9C171C1DF2DE002D7E81 /* gearMintTee.png in Resources */,
 				0ADF9C321C1DF2DE002D7E81 /* gearPowerMask.png in Resources */,
+				0A9AD9C31C29F5BE00CDFBE7 /* weaponSploosh-o-matic.png in Resources */,
 				0AA23E341C1B6E280002BCC2 /* abilityRunSpeedUp.png in Resources */,
 				0AA23E061C1B6DB90002BCC2 /* IconSelectionView.xib in Resources */,
 				0A4C51171C24633C006ABE9B /* splatIcon@3x.png in Resources */,
@@ -1832,26 +2232,37 @@
 				0A948AC31C1CC4F700CCC4DB /* data.min.json in Resources */,
 				0AC607FA1C191F09006EECA7 /* squid@3x.png in Resources */,
 				0ADF9AA31C1D1255002D7E81 /* clothesIcon@3x.png in Resources */,
+				0A9AD9871C29F5BE00CDFBE7 /* weaponCarbonRoller.png in Resources */,
 				0ADF9BDD1C1DF2DE002D7E81 /* gearChocoLayeredLS.png in Resources */,
 				0ADF9C7F1C1DF2DE002D7E81 /* gearStripedShirt.png in Resources */,
 				0ADF9C1C1C1DF2DE002D7E81 /* gearNeonSeaSlugs.png in Resources */,
 				0ADF9C011C1DF2DE002D7E81 /* gearGreenZipHoodie.png in Resources */,
+				0A9AD9C61C29F5BE00CDFBE7 /* weaponTri-SlosherNouveau.png in Resources */,
 				0ADF9C441C1DF2DE002D7E81 /* gearRetroGamerJersey.png in Resources */,
 				0AB09B3C1C205F2700A8A682 /* star@2x.png in Resources */,
 				0ADF9C9D1C1DF2DE002D7E81 /* gearWhiteHeadband.png in Resources */,
+				0A9AD9971C29F5BE00CDFBE7 /* weaponGoldDynamoRoller.png in Resources */,
+				0A9AD9B51C29F5BE00CDFBE7 /* weaponRapidBlasterDeco.png in Resources */,
 				0ADF9CAC1C1DF2DE002D7E81 /* gearZapfishSatinJacket.png in Resources */,
 				0AA23E301C1B6E280002BCC2 /* abilityOpeningGambit.png in Resources */,
 				0ADF9C251C1DF2DE002D7E81 /* gearOrangeCardigan.png in Resources */,
 				0ADF9C9F1C1DF2DE002D7E81 /* gearWhiteKicks.png in Resources */,
+				0A36DEBB1C31DD06001E6DE4 /* StagePiranhaPit.jpg in Resources */,
 				0ADF9C351C1DF2DE002D7E81 /* gearPunkWhites.png in Resources */,
 				0ADF9C291C1DF2DE002D7E81 /* gearPaisleyBandana.png in Resources */,
 				0ADF9C461C1DF2DE002D7E81 /* gearRetroSweat.png in Resources */,
 				0ADF9C231C1DF2DE002D7E81 /* gearOliveSkiJacket.png in Resources */,
 				0ADF9BC21C1DF2DE002D7E81 /* gearBlackBaseballLS.png in Resources */,
+				0A9AD9C51C29F5BE00CDFBE7 /* weaponTri-Slosher.png in Resources */,
 				0ADF9BB81C1DF2DE002D7E81 /* gearBackwardsCap.png in Resources */,
+				0A9AD9B41C29F5BE00CDFBE7 /* weaponRapidBlaster.png in Resources */,
+				0A9AD9BF1C29F5BE00CDFBE7 /* weaponSplatterscope.png in Resources */,
+				0A9AD9EC1C2A11F800CDFBE7 /* subBurstBomb.png in Resources */,
 				0ADF9CAA1C1DF2DE002D7E81 /* gearYellowSeahorses.png in Resources */,
 				0AA23E311C1B6E280002BCC2 /* abilityQuickRespawn.png in Resources */,
+				0A9AD98B1C29F5BE00CDFBE7 /* weaponCustomDualSquelcher.png in Resources */,
 				0AC607901C189B36006EECA7 /* Main.storyboard in Resources */,
+				0A9AD9C71C29F5BE00CDFBE7 /* weaponZinkMiniSplatling.png in Resources */,
 				0ADF9C9A1C1DF2DE002D7E81 /* gearWhiteArrowbands.png in Resources */,
 				0AA23DFB1C1B6D870002BCC2 /* brandsIcon@2x.png in Resources */,
 				0ADF9BFB1C1DF2DE002D7E81 /* gearGrayVectorTee.png in Resources */,
@@ -2032,6 +2443,7 @@
 				0ADF9AA51C1DF135002D7E81 /* GearGuideViewController.swift in Sources */,
 				0A4BF6AE1C22201800BB4834 /* SettingsTableViewController.swift in Sources */,
 				0AC607FC1C192211006EECA7 /* LoadingViewController.swift in Sources */,
+				0A9AD9E01C2A005900CDFBE7 /* GearView.swift in Sources */,
 				0AA23E071C1B6DB90002BCC2 /* SplatAppStyle.swift in Sources */,
 				0AA23E041C1B6DB90002BCC2 /* BrandGuideViewController.swift in Sources */,
 				0AA23E421C1B78450002BCC2 /* BetaViewController.swift in Sources */,
@@ -2266,6 +2678,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_ENTITLEMENTS = SplatPal/SplatPal.entitlements;
 				INFOPLIST_FILE = SplatPalTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sideapps.SplatPalTests;
@@ -2278,6 +2691,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_ENTITLEMENTS = SplatPal/SplatPal.entitlements;
 				INFOPLIST_FILE = SplatPalTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sideapps.SplatPalTests;
@@ -2289,6 +2703,7 @@
 		0AC607B61C189B36006EECA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SplatPal/SplatPal.entitlements;
 				INFOPLIST_FILE = SplatPalUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sideapps.SplatPalUITests;
@@ -2301,6 +2716,7 @@
 		0AC607B71C189B36006EECA7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SplatPal/SplatPal.entitlements;
 				INFOPLIST_FILE = SplatPalUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sideapps.SplatPalUITests;

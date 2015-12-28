@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SplatPal/LoadingViewController.swift"
-            timestampString = "472352102.244734"
+            timestampString = "472512231.995701"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134">
+            startingLineNumber = "136"
+            endingLineNumber = "136">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -152,11 +152,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SplatPal/IconSelectionView.swift"
-            timestampString = "471732422.491658"
+            timestampString = "473021472.048312"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "switchTypes(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -184,11 +184,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SplatPal/IconSelectionView.swift"
-            timestampString = "471732422.491658"
+            timestampString = "473021472.048312"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
             landmarkName = "collectionView(_:cellForItemAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -200,11 +200,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SplatPal/IconSelectionView.swift"
-            timestampString = "471732422.491658"
+            timestampString = "473021472.048312"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
             landmarkName = "collectionView(_:didSelectItemAtIndexPath:)"
             landmarkType = "5">
             <Locations>
@@ -248,11 +248,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SplatPal/IconSelectionView.swift"
-            timestampString = "471732422.491658"
+            timestampString = "473021472.048312"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "220"
-            endingLineNumber = "220"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
             landmarkName = "configure()"
             landmarkType = "5">
          </BreakpointContent>
@@ -264,11 +264,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SplatPal/IconSelectionView.swift"
-            timestampString = "471732422.491658"
+            timestampString = "473021472.048312"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "224"
-            endingLineNumber = "224"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
             landmarkName = "update()"
             landmarkType = "5">
          </BreakpointContent>
@@ -344,11 +344,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SplatPal/LoadingViewController.swift"
-            timestampString = "472352102.244734"
+            timestampString = "472512231.995701"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "loadJSONData()"
             landmarkType = "5">
          </BreakpointContent>
@@ -472,7 +472,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SplatPal/LoadingViewController.swift"
-            timestampString = "472352102.244734"
+            timestampString = "472512211.536688"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "92"
@@ -776,11 +776,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SplatPal/LoadingViewController.swift"
-            timestampString = "472352102.244734"
+            timestampString = "472512231.995701"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "loadJSONData()"
             landmarkType = "5">
          </BreakpointContent>
@@ -792,11 +792,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SplatPal/LoadingViewController.swift"
-            timestampString = "472352102.244734"
+            timestampString = "472512231.995701"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "viewDidAppear(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -808,11 +808,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SplatPal/LoadingViewController.swift"
-            timestampString = "472352102.244734"
+            timestampString = "472512231.995701"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "prepareForSegue(_:sender:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -920,11 +920,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SplatPal/NotificationsTableViewController.swift"
-            timestampString = "472498659.036782"
+            timestampString = "472515355.866071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "644"
-            endingLineNumber = "644"
+            startingLineNumber = "643"
+            endingLineNumber = "643"
             landmarkName = "createTapped()"
             landmarkType = "5">
          </BreakpointContent>
@@ -952,11 +952,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SplatPal/LoadingViewController.swift"
-            timestampString = "472352102.244734"
+            timestampString = "472512231.995701"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "prefersStatusBarHidden()"
             landmarkType = "5">
          </BreakpointContent>
@@ -968,11 +968,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SplatPal/LoadingViewController.swift"
-            timestampString = "472352102.244734"
+            timestampString = "472512231.995701"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -984,11 +984,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SplatPal/LoadingViewController.swift"
-            timestampString = "472352102.244734"
+            timestampString = "472512231.995701"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -1096,11 +1096,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SplatPal/Helpers.swift"
-            timestampString = "472502914.305929"
+            timestampString = "472515355.866071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
             landmarkName = "epochTimeString(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1118,6 +1118,22 @@
             startingLineNumber = "192"
             endingLineNumber = "192"
             landmarkName = "headerTap(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SplatPal/GearView.swift"
+            timestampString = "472525023.090647"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "updateGear(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

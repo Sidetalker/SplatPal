@@ -11,6 +11,7 @@ import SwiftyJSON
 
 var brandData = [JSON]()
 var gearData = [JSON]()
+var weaponData = [JSON]()
 var mapData = [String]()
 var modeData = [String]()
 var abilityData = [String : JSON]()
@@ -86,6 +87,7 @@ class LoadingViewController: UIViewController {
             
             brandData = jsonResult["brands"].arrayValue
             gearData = jsonResult["gear"].arrayValue
+            weaponData = jsonResult["weapons"].arrayValue
             mapData = jsonResult["maps"].arrayObject as! [String]
             modeData = jsonResult["modes"].arrayObject as! [String]
             abilityData = jsonResult["abilities"].dictionaryValue
