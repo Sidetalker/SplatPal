@@ -68,8 +68,14 @@ class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataS
         collectionView.registerClass(AbilityCell.self, forCellWithReuseIdentifier: "abilityCell")
         collectionView.backgroundColor = UIColor.clearColor()
         
+        clearSelections()
+    }
+    
+    func clearSelections() {
         brandsSelected = Array(count: brands.count, repeatedValue: false)
         abilitiesSelected = Array(count: limitedAbilities ? abilitiesRestricted.count : abilities.count, repeatedValue: false)
+        currentSelection = -1
+        collectionView.reloadData()
     }
     
     func toggleLimitedAbilities(onOrOff: Bool) {

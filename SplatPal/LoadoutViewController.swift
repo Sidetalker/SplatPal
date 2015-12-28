@@ -34,6 +34,8 @@ class LoadoutViewController: UIViewController {
 class LoadoutTableViewController: UITableViewController {
     var loadoutVC: LoadoutViewController?
     var loadouts = [Loadout]()
+    var editNav: UINavigationController?
+    var selectedIndex = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -126,6 +128,34 @@ class LoadoutTableViewController: UITableViewController {
         if indexPath == NSIndexPath(forRow: 0, inSection: 0) {
             performSegueWithIdentifier("segueAddLoadout", sender: self)
         }
+        else if indexPath.section == 1 {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("loadoutReviewTVC") as! LoadoutReviewController
+            vc.navigationItem.title = "Edit"
+            vc.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .Done, target: self, action: "saveChanges")
+            vc.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Delete", style: .Done, target: self, action: "delete")
+            vc.navigationItem.leftBarButtonItem!.tintColor = UIColor.redColor()
+            vc.loadout = loadouts[indexPath.row]
+            selectedIndex = indexPath.row
+            
+            editNav = UINavigationController(rootViewController: vc)
+            
+            self.presentViewController(editNav!, animated: true, completion: nil)
+        }
+    }
+    
+    func saveChanges() {
+        loadouts[selectedIndex] = (editNav!.viewControllers[0] as! LoadoutReviewController).loadout
+        saveLoadouts(loadouts)
+        tableView.reloadData()
+        editNav?.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func delete() {
+        loadouts.removeAtIndex(selectedIndex)
+        saveLoadouts(loadouts)
+        tableView.reloadData()
+        editNav?.dismissViewControllerAnimated(true, completion: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -197,6 +227,7 @@ class LoadoutWeaponTableViewController: UITableViewController {
         vc.filterGear("Headgear")
         vc.navigationItem.title = "Headgear"
         vc.loadout = loadout
+        vc.loadoutTVC = loadoutTVC
         
         self.navigationController?.pushViewController(vc, animated: true)
     }
@@ -205,6 +236,7 @@ class LoadoutWeaponTableViewController: UITableViewController {
 class LoadoutGearViewController: GearTableViewController {
     var gearType = ""
     var loadout = Loadout()
+    var loadoutTVC: LoadoutTableViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -251,6 +283,7 @@ class LoadoutGearViewController: GearTableViewController {
             vc.filterGear("Clothing")
             vc.navigationItem.title = "Clothing"
             vc.loadout = loadout
+            vc.loadoutTVC = loadoutTVC
             
             self.navigationController?.pushViewController(vc, animated: true)
         }
@@ -262,6 +295,7 @@ class LoadoutGearViewController: GearTableViewController {
             vc.filterGear("Shoes")
             vc.navigationItem.title = "Shoes"
             vc.loadout = loadout
+            vc.loadoutTVC = loadoutTVC
             
             self.navigationController?.pushViewController(vc, animated: true)
         }
@@ -272,18 +306,66 @@ class LoadoutGearViewController: GearTableViewController {
             let vc = storyboard.instantiateViewControllerWithIdentifier("loadoutReviewTVC") as! LoadoutReviewController
             vc.navigationItem.title = "Review"
             vc.loadout = loadout
+            vc.loadoutTVC = loadoutTVC
+            
+            vc.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .Done, target: vc, action: "save")
             
             self.navigationController?.pushViewController(vc, animated: true)
+            
+            vc.getName()
         }
     }
 }
 
-class LoadoutReviewController: UITableViewController {
+class LoadoutEditGearViewController: LoadoutGearViewController {
+    var reviewController: LoadoutReviewController?
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if gearType == "Headgear" {
+            reviewController?.loadout.headgear = Gear(data: gearDisplayData[indexPath.row])
+        }
+        else if gearType == "Clothing" {
+            reviewController?.loadout.clothing = Gear(data: gearDisplayData[indexPath.row])
+        }
+        else if gearType == "Shoes" {
+            reviewController?.loadout.shoes = Gear(data: gearDisplayData[indexPath.row])
+        }
+        
+        reviewController?.tableView.reloadData()
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+}
+
+class LoadoutReviewController: UITableViewController, IconSelectionViewDelegate {
+    var loadoutTVC: LoadoutTableViewController?
+    var iconView = IconSelectionView()
     var loadout = Loadout()
+    var loadoutIndex = -1
+    var abilityLoc = (-1, -1)
+    
+    func save() {
+        loadoutTVC?.addLoadout(loadout)
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
+        
+        iconView.delegate = self
+        iconView.clipsToBounds = false
+        iconView.singleSelection = true
+        iconView.layer.shadowColor = UIColor.blackColor().CGColor
+        iconView.layer.shadowOffset = CGSizeZero
+        iconView.layer.shadowOpacity = 0.5
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        iconView.switchTypes("abilities")
+        iconView.updateDisplay(false, displayTitle: false)
+        iconView.frame = CGRectMake(0, navigationController!.view.frame.height,  navigationController!.view.frame.width, iconView.getProperHeight())
+        iconView.collectionView.reloadData()
+        navigationController!.view.addSubview(iconView)
     }
     
     override func prefersStatusBarHidden() -> Bool {
@@ -292,6 +374,16 @@ class LoadoutReviewController: UITableViewController {
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
+    }
+    
+    func toggleIconView(show: Bool) {
+        iconView.frame.size.height = iconView.getProperHeight()
+        
+        UIView.animateWithDuration(0.3, animations: {
+            self.iconView.frame.origin.y = show ? self.navigationController!.view.frame.height - self.iconView.getProperHeight() : self.navigationController!.view.frame.height
+            }, completion: { _ in
+                if !show { self.iconView.clearSelections() }
+        })
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -306,13 +398,20 @@ class LoadoutReviewController: UITableViewController {
         return 2
     }
     
-//    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-//        if section == 1 && loadouts.count == 0 {
-//            if let headerView = view as? UITableViewHeaderFooterView {
-//                headerView.textLabel?.textAlignment = .Center
-//            }
-//        }
-//    }
+    override func tableView(tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
+        if let footer = view as? UITableViewHeaderFooterView {
+            footer.textLabel?.textAlignment = .Center
+            footer.textLabel?.textColor = UIColor.whiteColor()
+        }
+    }
+    
+    override func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        if section != 0 {
+            return "TAP ABILITY TO EDIT"
+        }
+        
+        return nil
+    }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = UITableViewCell()
@@ -320,6 +419,10 @@ class LoadoutReviewController: UITableViewController {
         if indexPath.section == 0 {
             if indexPath.row == 0 {
                 cell = tableView.dequeueReusableCellWithIdentifier("cellPrompt", forIndexPath: indexPath)
+                let lbl = cell.viewWithTag(1) as! UILabel
+                
+                cell.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
+                lbl.text = "Change Name"
             }
             else {
                 cell = tableView.dequeueReusableCellWithIdentifier("cellLoadout", forIndexPath: indexPath)
@@ -342,6 +445,57 @@ class LoadoutReviewController: UITableViewController {
                 sub.image = UIImage(named: "sub\(loadout.weapon.sub.removeWhitespace())")
                 special.image = UIImage(named: "special\(loadout.weapon.special.removeWhitespace())")
             }
+        } else {
+            if indexPath.row == 0 {
+                cell = tableView.dequeueReusableCellWithIdentifier("cellPrompt", forIndexPath: indexPath)
+                let lbl = cell.viewWithTag(1) as! UILabel
+                
+                cell.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
+                
+                if indexPath.section == 1 {
+                    lbl.text = "Change Headgear"
+                }
+                else if indexPath.section == 2 {
+                    lbl.text = "Change Clothing"
+                }
+                else if indexPath.section == 3 {
+                    lbl.text = "Change Shoes"
+                }
+            }
+            else {
+                cell = tableView.dequeueReusableCellWithIdentifier("cellAbilities", forIndexPath: indexPath)
+                let ability1 = cell.viewWithTag(1) as! UIImageView
+                let ability2 = cell.viewWithTag(2) as! UIImageView
+                let ability3 = cell.viewWithTag(3) as! UIImageView
+                
+                cell.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
+                
+                if ability1.gestureRecognizers == nil {
+                    ability1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "abilityTapped:"))
+                }
+                if ability2.gestureRecognizers == nil {
+                    ability2.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "abilityTapped:"))
+                }
+                if ability3.gestureRecognizers == nil {
+                    ability3.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "abilityTapped:"))
+                }
+                
+                if indexPath.section == 1 {
+                    ability1.image = UIImage(named: "ability\(loadout.headgear.ability1.removeWhitespace())")
+                    ability2.image = UIImage(named: "ability\(loadout.headgear.ability2.removeWhitespace())")
+                    ability3.image = UIImage(named: "ability\(loadout.headgear.ability3.removeWhitespace())")
+                }
+                else if indexPath.section == 2 {
+                    ability1.image = UIImage(named: "ability\(loadout.clothing.ability1.removeWhitespace())")
+                    ability2.image = UIImage(named: "ability\(loadout.clothing.ability2.removeWhitespace())")
+                    ability3.image = UIImage(named: "ability\(loadout.clothing.ability3.removeWhitespace())")
+                }
+                else if indexPath.section == 3 {
+                    ability1.image = UIImage(named: "ability\(loadout.shoes.ability1.removeWhitespace())")
+                    ability2.image = UIImage(named: "ability\(loadout.shoes.ability2.removeWhitespace())")
+                    ability3.image = UIImage(named: "ability\(loadout.shoes.ability3.removeWhitespace())")
+                }
+            }
         }
         
         return cell
@@ -351,11 +505,119 @@ class LoadoutReviewController: UITableViewController {
         if indexPath.row == 0 { return 44 }
         if indexPath.section == 0 { return 255 }
         
-        return 100
+        return 80
+    }
+    
+    func getName() {
+        let getNameAlert = UIAlertController(title: "Name your loadout", message: "", preferredStyle: UIAlertControllerStyle.Alert)
+        getNameAlert.addTextFieldWithConfigurationHandler { textField in
+            textField.placeholder = "Loadout Name"
+            textField.text = self.loadout.name
+        }
+        getNameAlert.addAction(UIAlertAction(title: "Save", style: .Default, handler: { _ in
+            if getNameAlert.textFields![0].text != "" {
+                self.loadout.name = getNameAlert.textFields![0].text!
+                self.tableView.reloadData()
+            } else {
+                let tryAgainAlert = UIAlertController(title: "I pity the fool", message: "Your loadout must have a name!", preferredStyle: .Alert)
+                tryAgainAlert.addAction(UIAlertAction(title: "Oh, OK!", style: .Default, handler: { _ in
+                    self.getName()
+                }))
+                
+                self.presentViewController(tryAgainAlert, animated: true, completion: nil)
+            }
+        }))
+        
+        self.presentViewController(getNameAlert, animated: true, completion: nil)
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        if indexPath.row == 0 {
+            if indexPath.section == 0 {
+                getName()
+            }
+            else {
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewControllerWithIdentifier("loadoutEditGearTVC") as! LoadoutEditGearViewController
+                vc.loadout = loadout
+                vc.reviewController = self
+                
+                if indexPath.section == 1 {
+                    vc.filterGear("Headgear")
+                }
+                else if indexPath.section == 2 {
+                    vc.filterGear("Clothing")
+                }
+                else if indexPath.section == 3 {
+                    vc.filterGear("Shoes")
+                }
+                
+                self.presentViewController(vc, animated: true, completion: nil)
+            }
+        }
+    }
+    
+    func abilityTapped(recognizer: UITapGestureRecognizer) {
+        let tag = (recognizer.view as! UIImageView).tag - 1
+        let section = tableView.indexPathForRowAtPoint(recognizer.locationInView(tableView))!.section - 1
+        
+        abilityLoc = (section, tag)
+        
+        toggleIconView(true)
+        
+        log.debug("Get it")
+    }
+    
+    func iconSelectionViewAbilitiesUpdated(view: IconSelectionView, selectedAbilities: [String]) {
+        let ability = selectedAbilities[0]
+        
+        if abilityLoc.0 == 0 {
+            if abilityLoc.1 == 0 {
+                loadout.headgear.ability1 = ability
+            }
+            else if abilityLoc.1 == 1 {
+                loadout.headgear.ability2 = ability
+            }
+            else if abilityLoc.1 == 2 {
+                loadout.headgear.ability3 = ability
+            }
+        }
+        else if abilityLoc.0 == 1 {
+            if abilityLoc.1 == 0 {
+                loadout.clothing.ability1 = ability
+            }
+            else if abilityLoc.1 == 1 {
+                loadout.clothing.ability2 = ability
+            }
+            else if abilityLoc.1 == 2 {
+                loadout.clothing.ability3 = ability
+            }
+        }
+        else if abilityLoc.0 == 2 {
+            if abilityLoc.1 == 0 {
+                loadout.shoes.ability1 = ability
+            }
+            else if abilityLoc.1 == 1 {
+                loadout.shoes.ability2 = ability
+            }
+            else if abilityLoc.1 == 2 {
+                loadout.shoes.ability3 = ability
+            }
+        }
+        
+        tableView.reloadData()
+        
+        toggleIconView(false)
+    }
+    
+    func iconSelectionViewClose(view: IconSelectionView, sender: AnyObject) {
+        return
+    }
+    
+    func iconSelectionViewBrandsUpdated(view: IconSelectionView, selectedBrands: [String]) {
+        return
     }
 }
 

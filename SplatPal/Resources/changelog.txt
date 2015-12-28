@@ -1,85 +1,91 @@
-Version 0.3.0 (603)
+Version 0.3 (784)
+- Support for Piranha Pit
+
+Version 0.3 (780)
+- New loadouts tab!
+
+Version 0.3 (603)
 - Mark gear as owned
 
-Version 0.3.0 (562)
+Version 0.3 (562)
 - Minor bugfix
     - iPad map rotation view
 
-Version 0.3.0 (516)
+Version 0.3 (516)
 - UI Tweaks
 
-Version 0.3.0 (512)
+Version 0.3 (512)
 - Minor bugfixes
 
-Version 0.3.0 (473)
+Version 0.3 (473)
 - Some UI preference settings
 - Minor bugfixes
 
-Version 0.3.0 (460)
+Version 0.3 (460)
 - Notification system overhauled, fully customizable
 
-Version 0.3.0 (409)
+Version 0.3 (409)
 - Map rotation uses Nintendo's data if you are logged in 
     - Defaults to Splatoon.ink if not logged in
 
-Version 0.3.0 (379)
+Version 0.3 (379)
 - NNID integration
 
-Version 0.3.0 (321)
+Version 0.3 (321)
 - Spaltfest support!
 
-Version 0.3.0 (290)
+Version 0.3 (290)
 - Improved error messages
 
-Version 0.3.0 (289)
+Version 0.3 (289)
 - Bugfix: Negative map countdown
 
-Version 0.3.0 (286)
+Version 0.3 (286)
 - Map update improvements
 
-Version 0.3.0 (263)
+Version 0.3 (263)
 - Minor UI tweaks
 
-Version 0.3.0 (245)
+Version 0.3 (245)
 - Map and mode notifications
 
-Version 0.3.0 (197)
+Version 0.3 (197)
 - Minor changes
     - Tab bar renames
     - Map rotation UI tweaks
 
-Version 0.3.0 (180)
+Version 0.3 (180)
 - Bugfix: Fixed crash occurring on iOS 8 when tapping and holding on section headers
 
-Version 0.3.0 (149)
+Version 0.3 (149)
 - Added detail view to gear tab
 
-Version 0.3.0 (132)
+Version 0.3 (132)
 - Minor changes
     - Fixed wording
 
-Version 0.3.0 (131)
+Version 0.3 (131)
 - Bugfix: "Any" gear was not displaying after tapped
 
-Version 0.3.0 (128)
+Version 0.3 (128)
 - Gear Guide added
 
-Version 0.2.4 (84)
+Version 0.2 (84)
 - Tapping a brand toggles a more detailed view
 - Bugfix: Launch image displays properly
 
-Version 0.2.3 (53)
+Version 0.2 (53)
 - Minor changes
     - Tweaks to fix the beta install error
     - Added version designator to Doorbell.io
 
-Version 0.2.2 (45)
+Version 0.2 (45)
 - Bugfix: Updating map data no longer crashes app if unsuccessful
 
-Version 0.2.1 (19)
+Version 0.2 (19)
 - Crashlytics added for crash logging
 
-Version 0.2.0 (14)
+Version 0.2 (14)
 - Brand guide tab
     - Filter by brand
     - Filter by ability
@@ -88,10 +94,10 @@ Version 0.2.0 (14)
     - Doorbell.io for in-app feedback
 - Changed version and build scheme
 
-Version 0.1.1 (2)
+Version 0.1 (2)
 - Bugfix: Museum d'Alfonso now displays properly
 
-Version 0.1.0 (1)
+Version 0.1 (1)
 - Initial release
 - Map rotation tab
     - Current and upcoming map rotations

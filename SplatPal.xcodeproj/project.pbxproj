@@ -17,6 +17,7 @@
 		0A3503F91C286A30009C6A48 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3503F81C286A30009C6A48 /* TodayViewController.swift */; };
 		0A3503FC1C286A30009C6A48 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3503FA1C286A30009C6A48 /* MainInterface.storyboard */; };
 		0A3504001C286A30009C6A48 /* SplatWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A3503F41C286A30009C6A48 /* SplatWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A36DEBB1C31DD06001E6DE4 /* StagePiranhaPit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A36DEBA1C31DD06001E6DE4 /* StagePiranhaPit.jpg */; };
 		0A4BF6AA1C22069700BB4834 /* settingsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A71C22069700BB4834 /* settingsIcon.png */; };
 		0A4BF6AB1C22069700BB4834 /* settingsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A81C22069700BB4834 /* settingsIcon@2x.png */; };
 		0A4BF6AC1C22069700BB4834 /* settingsIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A91C22069700BB4834 /* settingsIcon@3x.png */; };
@@ -531,6 +532,7 @@
 		0A3503F81C286A30009C6A48 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		0A3503FB1C286A30009C6A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		0A3503FD1C286A30009C6A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A36DEBA1C31DD06001E6DE4 /* StagePiranhaPit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StagePiranhaPit.jpg; path = Images/Stages/StagePiranhaPit.jpg; sourceTree = "<group>"; };
 		0A4BF6A71C22069700BB4834 /* settingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settingsIcon.png; path = Images/settingsIcon.png; sourceTree = "<group>"; };
 		0A4BF6A81C22069700BB4834 /* settingsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settingsIcon@2x.png"; path = "Images/settingsIcon@2x.png"; sourceTree = "<group>"; };
 		0A4BF6A91C22069700BB4834 /* settingsIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settingsIcon@3x.png"; path = "Images/settingsIcon@3x.png"; sourceTree = "<group>"; };
@@ -1286,6 +1288,7 @@
 		0AC607C11C18A61E006EECA7 /* Stages */ = {
 			isa = PBXGroup;
 			children = (
+				0A36DEBA1C31DD06001E6DE4 /* StagePiranhaPit.jpg */,
 				0AC607C21C18A629006EECA7 /* StageArowanaMall.jpg */,
 				0AC607C31C18A629006EECA7 /* StageBlackbellySkatepark.jpg */,
 				0AC607C41C18A629006EECA7 /* StageBluefinDepot.jpg */,
@@ -2244,6 +2247,7 @@
 				0AA23E301C1B6E280002BCC2 /* abilityOpeningGambit.png in Resources */,
 				0ADF9C251C1DF2DE002D7E81 /* gearOrangeCardigan.png in Resources */,
 				0ADF9C9F1C1DF2DE002D7E81 /* gearWhiteKicks.png in Resources */,
+				0A36DEBB1C31DD06001E6DE4 /* StagePiranhaPit.jpg in Resources */,
 				0ADF9C351C1DF2DE002D7E81 /* gearPunkWhites.png in Resources */,
 				0ADF9C291C1DF2DE002D7E81 /* gearPaisleyBandana.png in Resources */,
 				0ADF9C461C1DF2DE002D7E81 /* gearRetroSweat.png in Resources */,
