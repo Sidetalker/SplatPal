@@ -1,3 +1,6 @@
+Version 0.3 (785)
+- Bugfix: Piranha Pit now appears in alert settings
+
 Version 0.3 (784)
 - Support for Piranha Pit
 

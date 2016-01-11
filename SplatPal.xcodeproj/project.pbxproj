@@ -2703,7 +2703,6 @@
 		0AC607B61C189B36006EECA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = SplatPal/SplatPal.entitlements;
 				INFOPLIST_FILE = SplatPalUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sideapps.SplatPalUITests;
@@ -2716,7 +2715,6 @@
 		0AC607B71C189B36006EECA7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = SplatPal/SplatPal.entitlements;
 				INFOPLIST_FILE = SplatPalUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sideapps.SplatPalUITests;

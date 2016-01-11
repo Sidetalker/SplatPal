@@ -127,6 +127,13 @@ class LoadoutTableViewController: UITableViewController {
         
         if indexPath == NSIndexPath(forRow: 0, inSection: 0) {
             performSegueWithIdentifier("segueAddLoadout", sender: self)
+//            let img = UIImage(named: "weaponCustomE-liter3KScope.png")
+            
+//            let colorSpace = CGColorSpaceCreateDeviceRGB()
+//            var rgba: Array<char16_t> = Array(count: 4, repeatedValue: "x")
+//            let context = CGBitmapContextCreateWithData(rgba, 1, 1, 8, 4, colorSpace, kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big)
+//            kcg
+//            
         }
         else if indexPath.section == 1 {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)

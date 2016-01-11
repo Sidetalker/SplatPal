@@ -1341,8 +1341,8 @@ Tap this message to hide it</string>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
-                                            <exclude reference="iCM-2X-paE"/>
                                             <exclude reference="Ay3-Ev-w7i"/>
+                                            <exclude reference="iCM-2X-paE"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
