@@ -49,6 +49,33 @@
       "Ink Recovery Up":"Increases ink-tank refill rate while submerged in squid form.",
       "None":"None"
    },
+   "abilitiesEnum":[
+      "Ink Saver (Main)",
+      "Special Duration Up",
+      "Quick Respawn",
+      "Swim Speed Up",
+      "Bomb Range Up",
+      "Cold Blooded",
+      "Quick Super Jump",
+      "Recon",
+      "Haunt",
+      "Tenacity",
+      "Special Saver",
+      "Defence Up",
+      "Special Charge Up",
+      "Last-Ditch Effort",
+      "Ink Resistance Up",
+      "Ninja Squid",
+      "Opening Gambit",
+      "Comeback",
+      "Stealth Jump",
+      "Damage Up",
+      "Ink Saver (Sub)",
+      "Bomb Sniffer",
+      "Run Speed Up",
+      "Ink Recovery Up",
+      "None"
+   ],
    "brands":[  
       {  
          "name":"amiibo",

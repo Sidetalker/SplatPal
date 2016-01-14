@@ -43,12 +43,44 @@ class PlaceholderView: UIView {
 }
 
 extension String {
+    var length: Int {
+        get {
+            return self.characters.count
+        }
+    }
+    
     func replace(string: String, replacement: String) -> String {
         return self.stringByReplacingOccurrencesOfString(string, withString: replacement, options: NSStringCompareOptions.LiteralSearch, range: nil)
     }
     
     func removeWhitespace() -> String {
         return self.replace(" ", replacement: "")
+    }
+    
+    func indexOf(target: String) -> Int {
+        let range = self.rangeOfString(target)
+        
+        if let range = range {
+            return startIndex.distanceTo(range.startIndex)
+        } else {
+            return -1
+        }
+    }
+    
+    subscript(i: Int) -> Character {
+        get {
+            let index = startIndex.advancedBy(i)
+            return self[index]
+        }
+    }
+    
+    subscript (r: Range<Int>) -> String {
+        get {
+            let startIndex = self.startIndex.advancedBy(r.startIndex)
+            let endIndex = self.startIndex.advancedBy(r.endIndex - 1)
+            
+            return self[Range(start: startIndex, end: endIndex)]
+        }
     }
 }
 

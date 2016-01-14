@@ -10,6 +10,10 @@ import UIKit
 import SwiftyJSON
 
 class LoadoutViewController: UIViewController {
+    var importName: String?
+    var importData: String?
+    var loadoutTVC: LoadoutTableViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
@@ -26,8 +30,22 @@ class LoadoutViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "embedLoadout" {
             let destVC = segue.destinationViewController as! LoadoutTableViewController
+            loadoutTVC = destVC
             destVC.loadoutVC = self
+            
+            if
+                let name = importName,
+                let data = importData
+            {
+                destVC.importName = name
+                destVC.importData = data
+            }
         }
+    }
+    
+    func importLoadout(name: String, data: String) {
+        importName = name
+        importData = data
     }
 }
 
@@ -36,12 +54,28 @@ class LoadoutTableViewController: UITableViewController {
     var loadouts = [Loadout]()
     var editNav: UINavigationController?
     var selectedIndex = -1
+    var importName: String?
+    var importData: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.backgroundView = nil
         tableView.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
         reloadLoadouts()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if
+            let name = importName,
+            let data = importData
+        {
+            importLoadout(name, data: data)
+            importName = nil
+            importData = nil
+        }
     }
     
     func reloadLoadouts() {
@@ -162,6 +196,32 @@ class LoadoutTableViewController: UITableViewController {
         loadouts.removeAtIndex(selectedIndex)
         saveLoadouts(loadouts)
         tableView.reloadData()
+        editNav?.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func importLoadout(name: String, data: String) {
+        editNav?.dismissViewControllerAnimated(true, completion: nil)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("loadoutReviewTVC") as! LoadoutReviewController
+        vc.navigationItem.title = "Import"
+        vc.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .Done, target: self, action: "saveImport")
+        vc.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .Plain, target: self, action: "cancelImport")
+        vc.loadout = Loadout(name: name, encoding: data)
+        
+        editNav = UINavigationController(rootViewController: vc)
+        
+        self.presentViewController(editNav!, animated: true, completion: nil)
+    }
+    
+    func saveImport() {
+        loadouts.append((editNav!.viewControllers[0] as! LoadoutReviewController).loadout)
+        saveLoadouts(loadouts)
+        tableView.reloadData()
+        editNav?.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func cancelImport() {
         editNav?.dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -409,7 +469,7 @@ class LoadoutReviewController: UITableViewController, IconSelectionViewDelegate 
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -447,6 +507,13 @@ class LoadoutReviewController: UITableViewController, IconSelectionViewDelegate 
             if weapon.gestureRecognizers == nil {
                 weapon.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "weaponTapped:"))
             }
+        }
+        else if indexPath.row == 4 {
+            cell = tableView.dequeueReusableCellWithIdentifier("cellPrompt", forIndexPath: indexPath)
+            let lbl = cell.viewWithTag(1) as! UILabel
+            
+            cell.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
+            lbl.text = "Share Loadout"
         }
         else {
             cell = tableView.dequeueReusableCellWithIdentifier("cellAbilities", forIndexPath: indexPath)
@@ -493,6 +560,17 @@ class LoadoutReviewController: UITableViewController, IconSelectionViewDelegate 
         }
         
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        let loadoutURL = loadout.encoded()
+        
+        log.debug("URL: \(loadoutURL)")
+        
+        let shareSheet = UIActivityViewController(activityItems: [loadoutURL], applicationActivities: nil)
+        self.presentViewController(shareSheet, animated: true, completion: nil)
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -614,12 +692,40 @@ class LoadoutReviewController: UITableViewController, IconSelectionViewDelegate 
     }
 }
 
+func isValidLoadout(data: String) -> Bool {
+    let base62String = "dQruMA8nHkLVNa3ioEOsRtC6J9TfSlYXZzbm4cyUpg7jFhGD2PIv5WqB1Kwxe0"
+    
+    var base62Encoding = data
+    var base10Encoding = ""
+    
+    while base62Encoding.length > 0 {
+        base10Encoding.appendContentsOf("\(base62String.indexOf(base62Encoding[0...1]))")
+        base62Encoding.removeAtIndex(base62Encoding.startIndex)
+    }
+    
+    if base10Encoding.length != 29 { return false }
+    if Int(base10Encoding[0...2])! >= weaponData.count { return false }
+    
+    for var x = 2; x <= 20; x += 9 {
+        if Int(base10Encoding[x...x + 3])! >= gearData.count { return false }
+        
+        for var y = x + 3; y < x + 9; y += 2 {
+            if Int(base10Encoding[y...y + 2])! >= abilityDataEnum.count { return false }
+        }
+    }
+    
+    return true
+}
+
 class Loadout {
     var name = ""
     var weapon = Weapon()
     var headgear = Gear()
     var clothing = Gear()
     var shoes = Gear()
+    
+    // Randomized base62 string cause I'm a jerk
+    let base62String = "dQruMA8nHkLVNa3ioEOsRtC6J9TfSlYXZzbm4cyUpg7jFhGD2PIv5WqB1Kwxe0"
     
     init() { }
     
@@ -629,6 +735,22 @@ class Loadout {
         headgear = Gear(data: data["headgear"])
         clothing = Gear(data: data["clothing"])
         shoes = Gear(data: data["shoes"])
+    }
+    
+    init(name: String, encoding: String) {
+        var base62Encoding = encoding
+        var base10Encoding = ""
+        
+        while base62Encoding.length > 0 {
+            base10Encoding.appendContentsOf("\(base62String.indexOf(base62Encoding[0...1]))")
+            base62Encoding.removeAtIndex(base62Encoding.startIndex)
+        }
+        
+        self.name = name
+        weapon = Weapon(encoding: base10Encoding[0...2])
+        headgear = Gear(encoding: base10Encoding[2...11])
+        clothing = Gear(encoding: base10Encoding[11...20])
+        shoes = Gear(encoding: base10Encoding[20...29])
     }
     
     func jsonRepresentation() -> JSON {
@@ -641,6 +763,23 @@ class Loadout {
         rep["shoes"] = shoes.jsonRepresentation()
         
         return rep
+    }
+    
+    func encoded() -> String {
+        var base10Encoding = "\(weapon.index())\(headgear.index())\(clothing.index())\(shoes.index())"
+        var base62Encoding = ""
+        
+        while base10Encoding.length > 0 {
+            if base10Encoding.length > 1 && Int(base10Encoding[0...2])! < 62 && Int(base10Encoding[0...2])! > 9 {
+                base62Encoding.append(base62String[Int(base10Encoding[0...2])!])
+                base10Encoding.removeRange(Range<String.Index>(start: base10Encoding.startIndex, end: base10Encoding.startIndex.advancedBy(2)))
+            } else {
+                base62Encoding.append(base62String[Int("\(base10Encoding[0])")!])
+                base10Encoding.removeAtIndex(base10Encoding.startIndex)
+            }
+        }
+        
+        return "SplatPal://?name=\(name.stringByAddingPercentEncodingWithAllowedCharacters(.URLQueryAllowedCharacterSet())!)&data=\(base62Encoding)"
     }
 }
 
@@ -666,6 +805,16 @@ class Gear {
         if ability1 == "" { ability1 = sub }
         if ability2 == "" { ability2 = sub }
         if ability3 == "" { ability3 = sub }
+    }
+    
+    init(encoding: String) {
+        let gear = gearData[Int(encoding[0...3])!]
+        
+        name = gear["name"].stringValue
+        abilityPrimary = gear["ability"].stringValue
+        ability1 = abilityDataEnum[Int(encoding[3...5])!]
+        ability2 = abilityDataEnum[Int(encoding[5...7])!]
+        ability3 = abilityDataEnum[Int(encoding[7...9])!]
     }
     
     func jsonRepresentation() -> JSON {
@@ -699,6 +848,32 @@ class Gear {
         
         return ""
     }
+    
+    func nameIndex() -> String {
+        for (x, item) in gearData.enumerate() {
+            if item["name"].stringValue == name { return String(format: "%03d", x) }
+        }
+        
+        return "???"
+    }
+    
+    func abilityIndex(abilityNum: Int) -> String {
+        var abilityName = ""
+        
+        if abilityNum == 1 { abilityName = ability1 }
+        else if abilityNum == 2 { abilityName = ability2 }
+        else if abilityNum == 3 { abilityName = ability3 }
+        
+        for (x, item) in abilityDataEnum.enumerate() {
+            if item == abilityName { return String(format: "%02d", x) }
+        }
+        
+        return "??"
+    }
+    
+    func index() -> String {
+        return "\(nameIndex())\(abilityIndex(1))\(abilityIndex(2))\(abilityIndex(3))"
+    }
 }
 
 class Weapon {
@@ -709,6 +884,14 @@ class Weapon {
     init() { }
     
     init(data: JSON) {
+        loadData(data)
+    }
+    
+    init(encoding: String) {
+        loadData(weaponData[Int(encoding)!])
+    }
+    
+    func loadData(data: JSON) {
         name = data["name"].stringValue
         sub = data["sub"].stringValue
         special = data["special"].stringValue
@@ -726,5 +909,13 @@ class Weapon {
         rep["special"] = JSON(special)
         
         return rep
+    }
+    
+    func index() -> String {
+        for (x, item) in weaponData.enumerate() {
+            if item["name"].stringValue == name { return String(format: "%02d", x) }
+        }
+        
+        return "???"
     }
 }

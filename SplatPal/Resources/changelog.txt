@@ -1,3 +1,9 @@
+IF YOU HAVE AN APPLE WATCH PLEASE USE THE SEND FEEDBACK BUTTON TO LET ME KNOW!
+
+Version 0.3 (906)
+- Removed forced loading screen (lazy loading implemented)
+- Loadouts can now be shared!
+
 Version 0.3 (818)
 - Improved loadout review/editing
 

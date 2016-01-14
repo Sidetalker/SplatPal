@@ -23,6 +23,7 @@ var weaponData = [JSON]()
 var mapData = [String]()
 var modeData = [String]()
 var abilityData = [String : JSON]()
+var abilityDataEnum = [String]()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -79,9 +80,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             brandData = jsonResult["brands"].arrayValue
             gearData = jsonResult["gear"].arrayValue
             weaponData = jsonResult["weapons"].arrayValue
+            abilityData = jsonResult["abilities"].dictionaryValue
             mapData = jsonResult["maps"].arrayObject as! [String]
             modeData = jsonResult["modes"].arrayObject as! [String]
-            abilityData = jsonResult["abilities"].dictionaryValue
+            abilityDataEnum = jsonResult["abilitiesEnum"].arrayObject as! [String]
             
             // Ugly hardcoded hack to fix Museum D'Alfonsino escape char
             mapData[12] = mapData[12].replace("\\", replacement: "")
@@ -117,9 +119,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
         if
             let components = NSURLComponents(URL: url, resolvingAgainstBaseURL: false),
-            let queryItems = components.queryItems
+            let queryItems = components.queryItems,
+            let name = queryItems[0].value,
+            let data = queryItems[1].value,
+            let tabBarController = self.window!.rootViewController! as? UITabBarController
         {
-//            log.debug(queryItems)
+            if !isValidLoadout(data) { return false }
+            
+            for (x, vc) in tabBarController.viewControllers!.enumerate() {
+                if let loadoutView = vc as? LoadoutViewController {
+                    if let tableView = loadoutView.loadoutTVC {
+                        tableView.importLoadout(name, data: data)
+                    } else {
+                        loadoutView.importLoadout(name, data: data)
+                    }
+                    
+                    tabBarController.selectedIndex = x
+                    
+                    return true
+                }
+            }
         }
         
         return false
