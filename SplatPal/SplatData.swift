@@ -145,7 +145,7 @@ func loadMaps(completion: (JSON) -> ()) {
                     let dateFormatter = NSDateFormatter()
                     dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX"
                     
-                    if let error = json["error"].string {
+                    if let _ = json["error"].string {
                         NNID.sharedInstance.clearCookies()
                         loginNNID { error in }
                         loadMaps { data in completion(data) }
