@@ -1,13 +1,13 @@
 PODS:
   - Alamofire (3.1.4)
-  - Crashlytics (3.4.1):
-    - Fabric (~> 1.6.0)
+  - Crashlytics (3.6.0):
+    - Fabric (~> 1.6.3)
   - Doorbell (0.0.6)
-  - Fabric (1.6.1)
+  - Fabric (1.6.3)
   - Kanna (1.0.3)
   - MGSwipeTableCell (1.5.3)
   - SwiftyJSON (2.3.2)
-  - XCGLogger (3.1.1)
+  - XCGLogger (3.2)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
@@ -21,12 +21,12 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: fbc829692f351fa1d8a31dd75fd7f7f56fea31fb
-  Crashlytics: 41574a245bc6ae10c55d57f385ebd2004e5bee05
+  Crashlytics: e4e8d02914f2608fbc7bf42b1a7af838b0db67a2
   Doorbell: d995ae651475acb63e49544529a4bd4bc79646db
-  Fabric: bf0ceb04e7c924090efc5f8c55e4fbcca189e0a0
+  Fabric: cbe0ca6c9531bba17910052f6f105fcbc5fa7f67
   Kanna: 10c7f20762846e808ec5716e4191427bd71bf1c2
   MGSwipeTableCell: 5ae3b9a15efda26b201adc8676b24040febe6ff6
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
-  XCGLogger: e111a313f609432394c3ae378d99511634fd2e3c
+  XCGLogger: da1f341f4bb8979db6e1df64232f04d9698402d4
 
 COCOAPODS: 0.39.0

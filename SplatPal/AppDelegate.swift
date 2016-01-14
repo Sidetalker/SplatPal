@@ -115,9 +115,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
-//        url.qu
+        if
+            let components = NSURLComponents(URL: url, resolvingAgainstBaseURL: false),
+            let queryItems = components.queryItems
+        {
+//            log.debug(queryItems)
+        }
         
-        return true
+        return false
     }
 }
 
