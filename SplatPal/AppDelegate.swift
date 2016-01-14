@@ -11,9 +11,18 @@ import XCGLogger
 import Doorbell
 import Fabric
 import Crashlytics
+import SwiftyJSON
+import Alamofire
 
 let log = XCGLogger.defaultInstance()
 let feedback = Doorbell(apiKey: "huNJHAdBmvWXZKIMHrdYjdZ0XZJEL03aReY71ASNWY8hhguVXb2oZhLMD5ji8ERv", appId: "2756")
+
+var brandData = [JSON]()
+var gearData = [JSON]()
+var weaponData = [JSON]()
+var mapData = [String]()
+var modeData = [String]()
+var abilityData = [String : JSON]()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,16 +30,62 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Configure Fabric modules
         Fabric.with([Crashlytics.self])
         
+        // Initialize XCGLogger
         log.setup(.Debug, showLogIdentifier: false, showFunctionName: false, showThreadName: false, showLogLevel: true, showFileNames: true, showLineNumbers: false, showDate: false, writeToFile: nil, fileLogLevel: nil)
         
+        // Configure Doorbell feedback prefs
         let version = NSBundle.mainBundle().infoDictionary?["CFBundleShortVersionString"] as! String
         let build = NSBundle.mainBundle().infoDictionary?[kCFBundleVersionKey as String] as! String
 
         feedback.addPropertyWithName("Version", andValue: "\(version) (\(build))")
         
+        let defaultPrefsFile = NSBundle.mainBundle().pathForResource("UserDefaults", ofType: "plist")
+        let defaultPrefs = NSDictionary(contentsOfFile: defaultPrefsFile!) as? [String : AnyObject]
+        
+        // Register user default store
+        NSUserDefaults.standardUserDefaults().registerDefaults(defaultPrefs!)
+        
+        // Load map/gear/weapon/etc data
+        loadJSONData()
+        
+        // Configure NNID cookies
+        let nnid = NNID.sharedInstance
+        
+        if !nnid.saveLogin {
+            nnid.clearCookies()
+        }
+        else {
+            if let cookie = nnid.cookieObj {
+                Alamofire.Manager.sharedInstance.session.configuration.HTTPCookieStorage?.setCookie(NSHTTPCookie(properties: cookie)!)
+            } else { loginNNID { error in } }
+        }
+        
+        // Prepare tab bar
+        UITabBar.appearance().tintColor = UIColor.whiteColor()
+        
         return true
+    }
+    
+    func loadJSONData() {
+        if let
+            brandPath = NSBundle.mainBundle().pathForResource("data.min", ofType: "json"),
+            jsonData = NSData(contentsOfFile: brandPath)
+        {
+            let jsonResult = JSON(data: jsonData)
+            
+            brandData = jsonResult["brands"].arrayValue
+            gearData = jsonResult["gear"].arrayValue
+            weaponData = jsonResult["weapons"].arrayValue
+            mapData = jsonResult["maps"].arrayObject as! [String]
+            modeData = jsonResult["modes"].arrayObject as! [String]
+            abilityData = jsonResult["abilities"].dictionaryValue
+            
+            // Ugly hardcoded hack to fix Museum D'Alfonsino escape char
+            mapData[12] = mapData[12].replace("\\", replacement: "")
+        }
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -59,5 +114,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NSNotificationCenter.defaultCenter().postNotificationName("localNotificationsStateUpdated", object: nil)
     }
 
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+//        url.qu
+        
+        return true
+    }
 }
 

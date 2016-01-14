@@ -55,10 +55,5 @@ class GearView: UIView {
         imgAbility1.image = UIImage(named: "ability\(gear.ability1.removeWhitespace()).png")
         imgAbility2.image = UIImage(named: "ability\(gear.ability2.removeWhitespace()).png")
         imgAbility3.image = UIImage(named: "ability\(gear.ability3.removeWhitespace()).png")
-        
-//        let anotherImage = SplatAppStyle.imageOfCircle(frame: imgAbilityMain.frame, circleStroke: UIColor.whiteColor(), circleStrokeWidth: 3)
-//        let anotherIV = UIImageView(image: anotherImage)
-//        anotherIV.clipsToBounds = false
-//        view.addSubview(anotherIV)
     }
 }

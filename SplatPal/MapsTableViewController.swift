@@ -32,6 +32,10 @@ class MapsTableViewController: UITableViewController {
         let patternColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
         backgroundView.backgroundColor = patternColor
         
+        matchData = JSON([:])
+        matchData?["errorCode"] = 0
+        matchData?["errorMessage"] = "Loading shit"
+        
         sectionMask.backgroundColor = patternColor
         sectionMask.frame = tableView.dequeueReusableCellWithIdentifier("cellTimeRemaining")!.contentView.bounds
         tableView.addSubview(sectionMask)
@@ -44,7 +48,7 @@ class MapsTableViewController: UITableViewController {
         liveLabelTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateLabel", userInfo: nil, repeats: true)
         NSRunLoop.currentRunLoop().addTimer(liveLabelTimer, forMode: NSRunLoopCommonModes)
         
-        scheduleNotifications()
+        updateMaps(true)
     }
     
     override func scrollViewDidScroll(scrollView: UIScrollView) {
@@ -89,7 +93,7 @@ class MapsTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if mapError { return 1 }
+        if mapError { return matchData!["errorCode"].intValue == 0 ? 0 : 1 }
         else if !matchData!["splatfest"].boolValue { return 6 }
         else { return 4 }
     }

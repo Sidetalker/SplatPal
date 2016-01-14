@@ -26,7 +26,7 @@ func loginNNID(completion: (NSError?) -> ()) {
         .response { request, response, data, error in
             // Handle request failure
             if error != nil {
-                debugPrint(response)
+                nnid.clearCookies()
                 completion(error)
                 
                 return
@@ -37,10 +37,11 @@ func loginNNID(completion: (NSError?) -> ()) {
             if let cookie = NSHTTPCookie.cookiesWithResponseHeaderFields(headers, forURL: response!.URL!).last {
                 Alamofire.Manager.sharedInstance.session.configuration.HTTPCookieStorage?.setCookie(cookie)
                 nnid.updateCookie(cookie.value)
+                nnid.updateCookieObj(cookie.properties)
                 completion(nil)
             }
             else {
-                nnid.updateCookie("")
+                nnid.clearCookies()
                 completion(NSError(domain: "com.sideapps.SplatPal", code: 42, userInfo: [NSLocalizedDescriptionKey : "Incorrect username or password"]))
             }
     }
@@ -131,6 +132,7 @@ func loadMaps(completion: (JSON) -> ()) {
                 // Handle request failure
                 if response.result.isFailure {
                     completion(JSON(["errorCode" : response.result.error!.code, "errorMessage" : response.result.error!.localizedDescription]))
+                    NNID.sharedInstance.clearCookies()
                 } else {
                     let json = JSON(response.result.value!)
                     let splatfest = json["festival"].boolValue
@@ -142,6 +144,12 @@ func loadMaps(completion: (JSON) -> ()) {
                     
                     let dateFormatter = NSDateFormatter()
                     dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX"
+                    
+                    if let error = json["error"].string {
+                        NNID.sharedInstance.clearCookies()
+                        loginNNID { error in }
+                        loadMaps { data in completion(data) }
+                    }
                     
                     if splatfest {
                         let schedule = json["schedule"][0]
@@ -209,6 +217,7 @@ class NNID {
     var username = ""
     var password = ""
     var cookie = ""
+    var cookieObj: [String : AnyObject]?
     var saveLogin = false
     var touchID = false
     
@@ -223,6 +232,7 @@ class NNID {
             self.cookie = cookie
         }
         
+        self.cookieObj = prefs.objectForKey("NNIDCookieObj") as? [String : AnyObject]
         self.saveLogin = prefs.boolForKey("NNIDSaveLogin")
         self.touchID = prefs.boolForKey("NNIDTouchID")
     }
@@ -243,6 +253,11 @@ class NNID {
         prefs.setObject(cookie, forKey: "NNIDCookie")
     }
     
+    func updateCookieObj(cookie: [String : AnyObject]?) {
+        self.cookieObj = cookie
+        prefs.setObject(cookie, forKey: "NNIDCookieObj")
+    }
+    
     func updateSaveLogin(saveLogin: Bool) {
         self.saveLogin = saveLogin
         prefs.setBool(saveLogin, forKey: "NNIDSaveLogin")
@@ -251,5 +266,10 @@ class NNID {
     func updateTouchID(touchID: Bool) {
         self.touchID = touchID
         prefs.setBool(touchID, forKey: "NNIDTouchID")
+    }
+    
+    func clearCookies() {
+        updateCookieObj(nil)
+        updateCookie("")
     }
 }

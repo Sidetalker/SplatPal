@@ -240,6 +240,17 @@ class LoadoutWeaponTableViewController: UITableViewController {
     }
 }
 
+class LoadoutEditWeaponViewController: LoadoutWeaponTableViewController {
+    var reviewController: LoadoutReviewController?
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        loadout.weapon = Weapon(data: weaponData[indexPath.row])
+        
+        reviewController?.tableView.reloadData()
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+}
+
 class LoadoutGearViewController: GearTableViewController {
     var gearType = ""
     var loadout = Loadout()
@@ -394,114 +405,90 @@ class LoadoutReviewController: UITableViewController, IconSelectionViewDelegate 
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
     }
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return nil
+        return "Tap any item to edit"
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
-    }
-    
-    override func tableView(tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
-        if let footer = view as? UITableViewHeaderFooterView {
-            footer.textLabel?.textAlignment = .Center
-            footer.textLabel?.textColor = UIColor.whiteColor()
+    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        if let header = view as? UITableViewHeaderFooterView {
+            header.textLabel?.textAlignment = .Center
+            header.textLabel?.textColor = UIColor.whiteColor()
         }
-    }
-    
-    override func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        if section != 0 {
-            return "TAP ABILITY TO EDIT"
-        }
-        
-        return nil
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = UITableViewCell()
         
-        if indexPath.section == 0 {
-            if indexPath.row == 0 {
-                cell = tableView.dequeueReusableCellWithIdentifier("cellPrompt", forIndexPath: indexPath)
-                let lbl = cell.viewWithTag(1) as! UILabel
-                
-                cell.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
-                lbl.text = "Change Name"
+        if indexPath.row == 0 {
+            cell = tableView.dequeueReusableCellWithIdentifier("cellLoadout", forIndexPath: indexPath)
+            let name = cell.viewWithTag(4) as! UILabel
+            let weapon = cell.viewWithTag(5) as! UIImageView
+            let sub = cell.viewWithTag(6) as! UIImageView
+            let special = cell.viewWithTag(7) as! UIImageView
+            let wepBGView = cell.viewWithTag(8)!
+            
+            wepBGView.layer.cornerRadius = 10
+            cell.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
+            name.text = loadout.name
+            weapon.image = UIImage(named: "weapon\(loadout.weapon.name.removeWhitespace())")
+            sub.image = UIImage(named: "sub\(loadout.weapon.sub.removeWhitespace())")
+            special.image = UIImage(named: "special\(loadout.weapon.special.removeWhitespace())")
+            
+            if name.gestureRecognizers == nil {
+                name.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "getName"))
             }
-            else {
-                cell = tableView.dequeueReusableCellWithIdentifier("cellLoadout", forIndexPath: indexPath)
-                let headgear = cell.viewWithTag(1) as! GearView
-                let clothing = cell.viewWithTag(2) as! GearView
-                let shoes = cell.viewWithTag(3) as! GearView
-                let name = cell.viewWithTag(4) as! UILabel
-                let weapon = cell.viewWithTag(5) as! UIImageView
-                let sub = cell.viewWithTag(6) as! UIImageView
-                let special = cell.viewWithTag(7) as! UIImageView
-                let wepBGView = cell.viewWithTag(8)!
-                
-                wepBGView.layer.cornerRadius = 10
-                cell.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
-                name.text = loadout.name
-                headgear.updateGear(loadout.headgear)
-                clothing.updateGear(loadout.clothing)
-                shoes.updateGear(loadout.shoes)
-                weapon.image = UIImage(named: "weapon\(loadout.weapon.name.removeWhitespace())")
-                sub.image = UIImage(named: "sub\(loadout.weapon.sub.removeWhitespace())")
-                special.image = UIImage(named: "special\(loadout.weapon.special.removeWhitespace())")
+            if weapon.gestureRecognizers == nil {
+                weapon.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "weaponTapped:"))
             }
-        } else {
-            if indexPath.row == 0 {
-                cell = tableView.dequeueReusableCellWithIdentifier("cellPrompt", forIndexPath: indexPath)
-                let lbl = cell.viewWithTag(1) as! UILabel
-                
-                cell.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
-                
-                if indexPath.section == 1 {
-                    lbl.text = "Change Headgear"
-                }
-                else if indexPath.section == 2 {
-                    lbl.text = "Change Clothing"
-                }
-                else if indexPath.section == 3 {
-                    lbl.text = "Change Shoes"
-                }
+        }
+        else {
+            cell = tableView.dequeueReusableCellWithIdentifier("cellAbilities", forIndexPath: indexPath)
+            let ability1 = cell.viewWithTag(1) as! UIImageView
+            let ability2 = cell.viewWithTag(2) as! UIImageView
+            let ability3 = cell.viewWithTag(3) as! UIImageView
+            let clothing = cell.viewWithTag(4) as! UIImageView
+            let clothingBGView = cell.viewWithTag(5)!
+            
+            clothingBGView.layer.cornerRadius = 10
+            cell.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
+            
+            if ability1.gestureRecognizers == nil {
+                ability1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "abilityTapped:"))
             }
-            else {
-                cell = tableView.dequeueReusableCellWithIdentifier("cellAbilities", forIndexPath: indexPath)
-                let ability1 = cell.viewWithTag(1) as! UIImageView
-                let ability2 = cell.viewWithTag(2) as! UIImageView
-                let ability3 = cell.viewWithTag(3) as! UIImageView
-                
-                cell.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
-                
-                if ability1.gestureRecognizers == nil {
-                    ability1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "abilityTapped:"))
-                }
-                if ability2.gestureRecognizers == nil {
-                    ability2.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "abilityTapped:"))
-                }
-                if ability3.gestureRecognizers == nil {
-                    ability3.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "abilityTapped:"))
-                }
-                
-                if indexPath.section == 1 {
-                    ability1.image = UIImage(named: "ability\(loadout.headgear.ability1.removeWhitespace())")
-                    ability2.image = UIImage(named: "ability\(loadout.headgear.ability2.removeWhitespace())")
-                    ability3.image = UIImage(named: "ability\(loadout.headgear.ability3.removeWhitespace())")
-                }
-                else if indexPath.section == 2 {
-                    ability1.image = UIImage(named: "ability\(loadout.clothing.ability1.removeWhitespace())")
-                    ability2.image = UIImage(named: "ability\(loadout.clothing.ability2.removeWhitespace())")
-                    ability3.image = UIImage(named: "ability\(loadout.clothing.ability3.removeWhitespace())")
-                }
-                else if indexPath.section == 3 {
-                    ability1.image = UIImage(named: "ability\(loadout.shoes.ability1.removeWhitespace())")
-                    ability2.image = UIImage(named: "ability\(loadout.shoes.ability2.removeWhitespace())")
-                    ability3.image = UIImage(named: "ability\(loadout.shoes.ability3.removeWhitespace())")
-                }
+            if ability2.gestureRecognizers == nil {
+                ability2.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "abilityTapped:"))
+            }
+            if ability3.gestureRecognizers == nil {
+                ability3.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "abilityTapped:"))
+            }
+            if clothing.gestureRecognizers == nil {
+                clothing.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "clothingTapped:"))
+            }
+            
+            if indexPath.row == 1 {
+                ability1.image = UIImage(named: "ability\(loadout.headgear.ability1.removeWhitespace())")
+                ability2.image = UIImage(named: "ability\(loadout.headgear.ability2.removeWhitespace())")
+                ability3.image = UIImage(named: "ability\(loadout.headgear.ability3.removeWhitespace())")
+                clothing.image = UIImage(named: "gear\(loadout.headgear.name.removeWhitespace())")
+            }
+            else if indexPath.row == 2 {
+                ability1.image = UIImage(named: "ability\(loadout.clothing.ability1.removeWhitespace())")
+                ability2.image = UIImage(named: "ability\(loadout.clothing.ability2.removeWhitespace())")
+                ability3.image = UIImage(named: "ability\(loadout.clothing.ability3.removeWhitespace())")
+                clothing.image = UIImage(named: "gear\(loadout.clothing.name.removeWhitespace())")
+            }
+            else if indexPath.row == 3 {
+                ability1.image = UIImage(named: "ability\(loadout.shoes.ability1.removeWhitespace())")
+                ability2.image = UIImage(named: "ability\(loadout.shoes.ability2.removeWhitespace())")
+                ability3.image = UIImage(named: "ability\(loadout.shoes.ability3.removeWhitespace())")
+                clothing.image = UIImage(named: "gear\(loadout.shoes.name.removeWhitespace())")
             }
         }
         
@@ -509,8 +496,7 @@ class LoadoutReviewController: UITableViewController, IconSelectionViewDelegate 
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if indexPath.row == 0 { return 44 }
-        if indexPath.section == 0 { return 255 }
+        if indexPath.row == 0 { return 96 }
         
         return 80
     }
@@ -538,43 +524,43 @@ class LoadoutReviewController: UITableViewController, IconSelectionViewDelegate 
         self.presentViewController(getNameAlert, animated: true, completion: nil)
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        
-        if indexPath.row == 0 {
-            if indexPath.section == 0 {
-                getName()
-            }
-            else {
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let vc = storyboard.instantiateViewControllerWithIdentifier("loadoutEditGearTVC") as! LoadoutEditGearViewController
-                vc.loadout = loadout
-                vc.reviewController = self
-                
-                if indexPath.section == 1 {
-                    vc.filterGear("Headgear")
-                }
-                else if indexPath.section == 2 {
-                    vc.filterGear("Clothing")
-                }
-                else if indexPath.section == 3 {
-                    vc.filterGear("Shoes")
-                }
-                
-                self.presentViewController(vc, animated: true, completion: nil)
-            }
-        }
-    }
-    
     func abilityTapped(recognizer: UITapGestureRecognizer) {
         let tag = (recognizer.view as! UIImageView).tag - 1
-        let section = tableView.indexPathForRowAtPoint(recognizer.locationInView(tableView))!.section - 1
+        let row = tableView.indexPathForRowAtPoint(recognizer.locationInView(tableView))!.row - 1
         
-        abilityLoc = (section, tag)
+        abilityLoc = (row, tag)
         
         toggleIconView(true)
+    }
+    
+    func weaponTapped(recognizer: UITapGestureRecognizer) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("loadoutEditWeaponTVC") as! LoadoutEditWeaponViewController
+        vc.loadout = loadout
+        vc.reviewController = self
         
-        log.debug("Get it")
+        self.presentViewController(vc, animated: true, completion: nil)
+    }
+    
+    func clothingTapped(recognizer: UITapGestureRecognizer) {
+        let row = tableView.indexPathForRowAtPoint(recognizer.locationInView(tableView))!.row
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("loadoutEditGearTVC") as! LoadoutEditGearViewController
+        vc.loadout = loadout
+        vc.reviewController = self
+        
+        if row == 1 {
+            vc.filterGear("Headgear")
+        }
+        else if row == 2 {
+            vc.filterGear("Clothing")
+        }
+        else if row == 3 {
+            vc.filterGear("Shoes")
+        }
+        
+        self.presentViewController(vc, animated: true, completion: nil)
     }
     
     func iconSelectionViewAbilitiesUpdated(view: IconSelectionView, selectedAbilities: [String]) {

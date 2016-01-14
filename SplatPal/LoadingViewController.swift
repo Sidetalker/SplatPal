@@ -8,20 +8,13 @@
 
 import UIKit
 import SwiftyJSON
-
-var brandData = [JSON]()
-var gearData = [JSON]()
-var weaponData = [JSON]()
-var mapData = [String]()
-var modeData = [String]()
-var abilityData = [String : JSON]()
+import Alamofire
 
 class LoadingViewController: UIViewController {
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var squidOffset: NSLayoutConstraint!
     
     var nnid: NNID!
-    var matchData: JSON?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,20 +41,16 @@ class LoadingViewController: UIViewController {
         
         loadJSONData()
         
-        if nnid.saveLogin {
-            loginNNID { error in
-                loadMaps { data in
-                    self.matchData = data
-                    self.performSegueWithIdentifier("segueLoading", sender: self)
-                }
-            }
-        } else {
-            nnid.updateCookie("")
-            loadMaps { data in
-                self.matchData = data
-                self.performSegueWithIdentifier("segueLoading", sender: self)
-            }
+        if !nnid.saveLogin {
+            nnid.clearCookies()
         }
+        else {
+            if let cookie = nnid.cookieObj {
+                Alamofire.Manager.sharedInstance.session.configuration.HTTPCookieStorage?.setCookie(NSHTTPCookie(properties: cookie)!)
+            } else { loginNNID { error in } }
+        }
+        
+        self.performSegueWithIdentifier("segueLoading", sender: self)
     }
     
     override func prefersStatusBarHidden() -> Bool {
@@ -70,12 +59,6 @@ class LoadingViewController: UIViewController {
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let tabBarController = segue.destinationViewController as! UITabBarController
-        let mapsTab = tabBarController.viewControllers![0] as! MapsTableViewController
-        mapsTab.matchData = matchData
     }
     
     func loadJSONData() {
