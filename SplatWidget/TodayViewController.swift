@@ -13,8 +13,6 @@ import Alamofire
 class TodayViewController: UIViewController, NCWidgetProviding {
     let prefs = NSUserDefaults.init(suiteName: "group.com.sideapps.SplatPal")!
     
-    var splatController: SplatfestViewController?
-    
     @IBOutlet weak var lblRanked1: UILabel!
     @IBOutlet weak var lblTime1: UILabel!
     @IBOutlet weak var lblRanked2: UILabel!
@@ -42,6 +40,11 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var divider2and3: UIView!
     
     @IBOutlet weak var splatfestView: UIView!
+    @IBOutlet weak var splatfestTeamA: UILabel!
+    @IBOutlet weak var splatfestTeamB: UILabel!
+    @IBOutlet weak var splatfestMap1: UILabel!
+    @IBOutlet weak var splatfestMap2: UILabel!
+    @IBOutlet weak var splatfestMap3: UILabel!
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,16 +97,22 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 if data["splatfest"].boolValue {
                     NSLog("Splatfest found")
                     
-                    self.preferredContentSize = CGSizeMake(self.preferredContentSize.width, 82)
+                    self.splatfestTeamA.text = data["teams"][0].stringValue
+                    self.splatfestTeamB.text = data["teams"][1].stringValue
+                    self.splatfestMap1.text = data["turfMaps"][0].stringValue
+                    self.splatfestMap2.text = data["turfMaps"][1].stringValue
+                    self.splatfestMap3.text = data["turfMaps"][2].stringValue
                     
-                    
-                    
-                    self.splatfestView.alpha = 1.0
+                    if self.splatfestView.alpha == 0.0 {
+                        self.preferredContentSize = CGSizeMake(self.preferredContentSize.width, 80)
+                        self.splatfestView.alpha = 1.0
+                    }
                 } else {
-                    self.preferredContentSize = CGSizeMake(self.preferredContentSize.width, 190)
                     
                     // Unhide all views if they're hidden
                     if self.dividerCenter.alpha == 0.0 {
+                        self.preferredContentSize = CGSizeMake(self.preferredContentSize.width, 190)
+                        
                         for view in self.view.subviews {
                             if view != self.splatfestView { view.alpha = 1.0 }
                         }
@@ -112,12 +121,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 }
                 
             }
-        }
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "segueSplatfest" {
-            splatController = segue.destinationViewController as? SplatfestViewController
         }
     }
 }

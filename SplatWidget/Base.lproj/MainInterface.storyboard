@@ -334,6 +334,11 @@
                         <outlet property="lblTime1" destination="jxS-er-em4" id="ho6-HF-Ftj"/>
                         <outlet property="lblTime2" destination="ICK-vt-oPg" id="Z78-f0-T8g"/>
                         <outlet property="lblTime3" destination="6sU-44-bhy" id="7u5-gb-3Hr"/>
+                        <outlet property="splatfestMap1" destination="h4S-SW-XXy" id="K8t-lL-l2Q"/>
+                        <outlet property="splatfestMap2" destination="lMK-U2-9cp" id="hRX-2J-Wmd"/>
+                        <outlet property="splatfestMap3" destination="icy-Ec-7kI" id="g2u-uF-GKx"/>
+                        <outlet property="splatfestTeamA" destination="h4c-QQ-cH1" id="cBd-Fj-Ecw"/>
+                        <outlet property="splatfestTeamB" destination="5n8-2x-51p" id="RGk-RH-PPI"/>
                         <outlet property="splatfestView" destination="grg-sk-7ID" id="lpu-GW-bZ3"/>
                     </connections>
                 </viewController>
