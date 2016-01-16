@@ -1,5 +1,9 @@
 IF YOU HAVE AN APPLE WATCH PLEASE USE THE SEND FEEDBACK BUTTON TO LET ME KNOW!
 
+Version 0.3 (984)
+- Notification center displays Splatfest info 
+    - Support for general map info follow soon
+
 Version 0.3 (911)
 - Removed forced loading screen (lazy loading implemented)
 - Loadouts can now be shared!

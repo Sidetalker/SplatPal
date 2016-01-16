@@ -49,6 +49,7 @@ func loginNNID(completion: (NSError?) -> ()) {
 
 func loadMaps(completion: (JSON) -> ()) {
     let splatoonAPIString = "https://splatoon.ink/schedule.json"
+//    let splatoonAPIString = "http://127.0.0.1:8080/"
     let nintendoAPIString = "https://splatoon.nintendo.net/schedule/index.json"
     
     // Use Splatoon.ink if we don't have an NNID cookie
@@ -272,4 +273,23 @@ class NNID {
         updateCookieObj(nil)
         updateCookie("")
     }
+}
+
+func epochDateString(input: NSTimeInterval) -> String {
+    let date = NSDate(timeIntervalSince1970: input)
+    let dateFormatter = NSDateFormatter()
+    dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
+    dateFormatter.timeZone = NSTimeZone()
+    
+    return dateFormatter.stringFromDate(date)
+}
+
+func epochTimeString(input: NSTimeInterval) -> String {
+    let date = NSDate(timeIntervalSince1970: input)
+    let dateFormatter = NSDateFormatter()
+    dateFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
+    dateFormatter.dateFormat = NSUserDefaults.standardUserDefaults().boolForKey("militaryTime") ? "HH:mm" : "h:mm a"
+    dateFormatter.timeZone = NSTimeZone()
+    
+    return dateFormatter.stringFromDate(date)
 }

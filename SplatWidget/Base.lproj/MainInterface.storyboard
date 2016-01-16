@@ -19,144 +19,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="191"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rainmaker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3i-mW-scL">
-                                <rect key="frame" x="8" y="0.0" width="144" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="iJi-UZ-s7f"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <color key="textColor" red="0.066666666666666666" green="0.82352941176470584" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxS-er-em4">
-                                <rect key="frame" x="168" y="0.0" width="144" height="20"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <color key="textColor" red="0.52549019607843139" green="0.94117647058823528" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arowana Mall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="b5d-Na-Ubn">
-                                <rect key="frame" x="8" y="20" width="144" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museum D'Alfonso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="pZE-t7-r3b">
-                                <rect key="frame" x="168" y="20" width="144" height="20"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arowana Mall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="73e-za-VdO">
-                                <rect key="frame" x="8" y="41" width="144" height="20"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museum D'Alfonso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="QY0-5m-amZ">
-                                <rect key="frame" x="168" y="40" width="144" height="19.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vQK-Ty-QRX">
-                                <rect key="frame" x="159" y="2" width="1" height="188"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="1" id="bxn-cl-Zo7"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VWv-a9-0Nx">
-                                <rect key="frame" x="8" y="61" width="304" height="1"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="nMB-JS-6wk"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Splat Zones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pX5-jv-oAh">
-                                <rect key="frame" x="8" y="64" width="144" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="u8Q-tf-Rdx"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <color key="textColor" red="0.066666666666666666" green="0.82352941176470584" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:00 - 12:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICK-vt-oPg">
-                                <rect key="frame" x="168" y="64" width="144" height="20"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <color key="textColor" red="0.52549019607843139" green="0.94117647058823528" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arowana Mall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="XTP-gC-s3p">
-                                <rect key="frame" x="8" y="84" width="144" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arowana Mall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ewd-qN-vxY">
-                                <rect key="frame" x="8" y="104" width="144" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museum D'Alfonso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="4g4-iv-9Fl">
-                                <rect key="frame" x="168" y="84" width="144" height="20"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museum D'Alfonso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="AZm-AJ-1uT">
-                                <rect key="frame" x="168" y="104" width="144" height="19.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FCV-ot-dkd">
-                                <rect key="frame" x="8" y="127" width="304" height="1"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="EyE-DQ-6jN"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tower Control" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDv-BC-pOJ">
-                                <rect key="frame" x="8" y="130" width="144" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="rtu-B5-CBl"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <color key="textColor" red="0.066666666666666666" green="0.82352941176470584" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arowana Mall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Jja-1W-beA">
-                                <rect key="frame" x="8" y="150" width="144" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arowana Mall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Xnq-gg-qg7">
-                                <rect key="frame" x="8" y="171" width="144" height="20"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00 - 16:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sU-44-bhy">
-                                <rect key="frame" x="168" y="130" width="144" height="20"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <color key="textColor" red="0.52549019607843139" green="0.94117647058823528" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museum D'Alfonso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Pi9-9k-3vF">
-                                <rect key="frame" x="168" y="150" width="144" height="20"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museum D'Alfonso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="nE8-pA-fKe">
-                                <rect key="frame" x="168" y="170" width="144" height="19.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grg-sk-7ID">
                                 <rect key="frame" x="-4" y="0.0" width="328" height="85"/>
                                 <subviews>
@@ -221,10 +83,149 @@
                                     <constraint firstItem="taw-Vq-kKc" firstAttribute="centerX" secondItem="grg-sk-7ID" secondAttribute="centerX" id="ys9-Ex-IXe"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rainmaker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="j3i-mW-scL">
+                                <rect key="frame" x="16" y="0.0" width="144" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="iJi-UZ-s7f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.066666666666666666" green="0.82352941176470584" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="jxS-er-em4">
+                                <rect key="frame" x="160" y="0.0" width="144" height="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.52549019607843139" green="0.94117647058823528" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arowana Mall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="b5d-Na-Ubn">
+                                <rect key="frame" x="16" y="20" width="144" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museum D'Alfonso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="pZE-t7-r3b">
+                                <rect key="frame" x="160" y="20" width="144" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arowana Mall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="73e-za-VdO">
+                                <rect key="frame" x="16" y="41" width="144" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museum D'Alfonso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="QY0-5m-amZ">
+                                <rect key="frame" x="160" y="40" width="144" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vQK-Ty-QRX">
+                                <rect key="frame" x="159" y="2" width="1" height="188"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="bxn-cl-Zo7"/>
+                                    <constraint firstAttribute="height" constant="188" id="lmf-o6-7Kk"/>
+                                </constraints>
+                            </view>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VWv-a9-0Nx">
+                                <rect key="frame" x="16" y="61" width="288" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="nMB-JS-6wk"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Splat Zones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="pX5-jv-oAh">
+                                <rect key="frame" x="16" y="64" width="144" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="u8Q-tf-Rdx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.066666666666666666" green="0.82352941176470584" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:00 - 12:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ICK-vt-oPg">
+                                <rect key="frame" x="160" y="64" width="144" height="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.52549019607843139" green="0.94117647058823528" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arowana Mall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="XTP-gC-s3p">
+                                <rect key="frame" x="16" y="84" width="144" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arowana Mall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ewd-qN-vxY">
+                                <rect key="frame" x="16" y="104" width="144" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museum D'Alfonso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="4g4-iv-9Fl">
+                                <rect key="frame" x="160" y="84" width="144" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museum D'Alfonso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="AZm-AJ-1uT">
+                                <rect key="frame" x="160" y="104" width="144" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FCV-ot-dkd">
+                                <rect key="frame" x="16" y="127" width="288" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="EyE-DQ-6jN"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tower Control" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="UDv-BC-pOJ">
+                                <rect key="frame" x="16" y="130" width="144" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="rtu-B5-CBl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.066666666666666666" green="0.82352941176470584" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arowana Mall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Jja-1W-beA">
+                                <rect key="frame" x="16" y="150" width="144" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arowana Mall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Xnq-gg-qg7">
+                                <rect key="frame" x="16" y="171" width="144" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00 - 16:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="6sU-44-bhy">
+                                <rect key="frame" x="160" y="130" width="144" height="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.52549019607843139" green="0.94117647058823528" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museum D'Alfonso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Pi9-9k-3vF">
+                                <rect key="frame" x="160" y="150" width="144" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museum D'Alfonso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="nE8-pA-fKe">
+                                <rect key="frame" x="160" y="170" width="144" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
                             <constraint firstItem="jxS-er-em4" firstAttribute="width" secondItem="j3i-mW-scL" secondAttribute="width" id="0ZJ-Io-yKo"/>
-                            <constraint firstItem="pX5-jv-oAh" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="-8" id="11X-Lq-CcW"/>
+                            <constraint firstItem="pX5-jv-oAh" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="11X-Lq-CcW"/>
                             <constraint firstItem="Pi9-9k-3vF" firstAttribute="trailing" secondItem="6sU-44-bhy" secondAttribute="trailing" id="12D-8j-X5Z"/>
                             <constraint firstItem="nE8-pA-fKe" firstAttribute="leading" secondItem="Pi9-9k-3vF" secondAttribute="leading" id="1Hq-28-yRZ"/>
                             <constraint firstItem="AZm-AJ-1uT" firstAttribute="trailing" secondItem="4g4-iv-9Fl" secondAttribute="trailing" id="2PD-xG-Zhf"/>
@@ -239,33 +240,32 @@
                             <constraint firstItem="pZE-t7-r3b" firstAttribute="height" secondItem="jxS-er-em4" secondAttribute="height" id="9Oy-XJ-9g4"/>
                             <constraint firstItem="73e-za-VdO" firstAttribute="trailing" secondItem="b5d-Na-Ubn" secondAttribute="trailing" id="Acs-GM-GRZ"/>
                             <constraint firstItem="6sU-44-bhy" firstAttribute="width" secondItem="UDv-BC-pOJ" secondAttribute="width" id="AzX-o5-9f1"/>
+                            <constraint firstItem="6sU-44-bhy" firstAttribute="height" secondItem="UDv-BC-pOJ" secondAttribute="height" id="C3t-Ii-c5K"/>
                             <constraint firstItem="6sU-44-bhy" firstAttribute="top" secondItem="UDv-BC-pOJ" secondAttribute="top" id="Cot-on-DIL"/>
                             <constraint firstItem="QY0-5m-amZ" firstAttribute="trailing" secondItem="pZE-t7-r3b" secondAttribute="trailing" id="Dha-Q7-UCR"/>
-                            <constraint firstItem="jxS-er-em4" firstAttribute="bottom" secondItem="j3i-mW-scL" secondAttribute="bottom" id="Dlj-NK-1RS"/>
                             <constraint firstItem="Jja-1W-beA" firstAttribute="leading" secondItem="UDv-BC-pOJ" secondAttribute="leading" id="Duq-Tf-slo"/>
                             <constraint firstItem="FCV-ot-dkd" firstAttribute="leading" secondItem="ewd-qN-vxY" secondAttribute="leading" id="Dvs-CV-WfW"/>
                             <constraint firstItem="XTP-gC-s3p" firstAttribute="leading" secondItem="pX5-jv-oAh" secondAttribute="leading" id="Ejb-iy-Cs0"/>
                             <constraint firstItem="FCV-ot-dkd" firstAttribute="top" secondItem="ewd-qN-vxY" secondAttribute="bottom" constant="2" id="Fwf-4g-mqU"/>
                             <constraint firstItem="AZm-AJ-1uT" firstAttribute="leading" secondItem="4g4-iv-9Fl" secondAttribute="leading" id="HhQ-Vd-Ihm"/>
                             <constraint firstItem="pZE-t7-r3b" firstAttribute="leading" secondItem="jxS-er-em4" secondAttribute="leading" id="Jdu-XX-Cqu"/>
+                            <constraint firstItem="ICK-vt-oPg" firstAttribute="height" secondItem="pX5-jv-oAh" secondAttribute="height" id="KH2-kU-83W"/>
                             <constraint firstItem="VWv-a9-0Nx" firstAttribute="trailing" secondItem="QY0-5m-amZ" secondAttribute="trailing" id="KQo-3I-0ar"/>
                             <constraint firstItem="grg-sk-7ID" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="-20" id="LMX-5j-3HH"/>
                             <constraint firstItem="b5d-Na-Ubn" firstAttribute="top" secondItem="j3i-mW-scL" secondAttribute="bottom" id="M43-p8-LJX"/>
                             <constraint firstItem="pX5-jv-oAh" firstAttribute="top" secondItem="VWv-a9-0Nx" secondAttribute="bottom" constant="2" id="MwF-QO-5E8"/>
                             <constraint firstItem="nE8-pA-fKe" firstAttribute="top" secondItem="Pi9-9k-3vF" secondAttribute="bottom" id="N0r-rp-6dW"/>
                             <constraint firstItem="j3i-mW-scL" firstAttribute="width" secondItem="S3S-Oj-5AN" secondAttribute="width" multiplier="0.45" id="Off-2V-tN8"/>
-                            <constraint firstItem="UDv-BC-pOJ" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="-8" id="P8g-eL-Ooh"/>
+                            <constraint firstItem="UDv-BC-pOJ" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="P8g-eL-Ooh"/>
                             <constraint firstItem="nE8-pA-fKe" firstAttribute="height" secondItem="Pi9-9k-3vF" secondAttribute="height" id="PRr-87-TRd"/>
                             <constraint firstItem="ICK-vt-oPg" firstAttribute="width" secondItem="pX5-jv-oAh" secondAttribute="width" id="QAz-5n-lJ5"/>
-                            <constraint firstItem="vQK-Ty-QRX" firstAttribute="bottom" secondItem="nE8-pA-fKe" secondAttribute="bottom" id="QHM-BV-0nb"/>
                             <constraint firstItem="XTP-gC-s3p" firstAttribute="top" secondItem="pX5-jv-oAh" secondAttribute="bottom" id="RWA-Il-wYF"/>
                             <constraint firstItem="pZE-t7-r3b" firstAttribute="top" secondItem="jxS-er-em4" secondAttribute="bottom" id="SWN-Sn-hzx"/>
                             <constraint firstItem="AZm-AJ-1uT" firstAttribute="height" secondItem="4g4-iv-9Fl" secondAttribute="height" id="Ts7-gx-M67"/>
                             <constraint firstItem="Xnq-gg-qg7" firstAttribute="top" secondItem="Jja-1W-beA" secondAttribute="bottom" id="UNN-jH-eLe"/>
                             <constraint firstItem="b5d-Na-Ubn" firstAttribute="leading" secondItem="j3i-mW-scL" secondAttribute="leading" id="VDt-lq-NYc"/>
                             <constraint firstItem="Jja-1W-beA" firstAttribute="top" secondItem="UDv-BC-pOJ" secondAttribute="bottom" id="W46-4W-852"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="jxS-er-em4" secondAttribute="trailing" constant="-8" id="WER-qO-5Vo"/>
-                            <constraint firstItem="ICK-vt-oPg" firstAttribute="bottom" secondItem="pX5-jv-oAh" secondAttribute="bottom" id="WMp-6T-kcF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jxS-er-em4" secondAttribute="trailing" id="WER-qO-5Vo"/>
                             <constraint firstItem="Pi9-9k-3vF" firstAttribute="top" secondItem="6sU-44-bhy" secondAttribute="bottom" id="Wre-Ur-sAr"/>
                             <constraint firstItem="Pi9-9k-3vF" firstAttribute="leading" secondItem="6sU-44-bhy" secondAttribute="leading" id="XJM-P4-DNH"/>
                             <constraint firstItem="ewd-qN-vxY" firstAttribute="top" secondItem="XTP-gC-s3p" secondAttribute="bottom" id="XRa-G8-uML"/>
@@ -273,9 +273,9 @@
                             <constraint firstItem="4g4-iv-9Fl" firstAttribute="trailing" secondItem="ICK-vt-oPg" secondAttribute="trailing" id="aaH-HB-Rfr"/>
                             <constraint firstItem="ICK-vt-oPg" firstAttribute="top" secondItem="pX5-jv-oAh" secondAttribute="top" id="agY-Zl-f41"/>
                             <constraint firstItem="4g4-iv-9Fl" firstAttribute="top" secondItem="ICK-vt-oPg" secondAttribute="bottom" id="bcp-8r-TaJ"/>
-                            <constraint firstItem="j3i-mW-scL" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="-8" id="efg-Ma-b4R"/>
+                            <constraint firstItem="j3i-mW-scL" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="efg-Ma-b4R"/>
                             <constraint firstItem="b5d-Na-Ubn" firstAttribute="height" secondItem="j3i-mW-scL" secondAttribute="height" id="fAq-6z-bcI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ICK-vt-oPg" secondAttribute="trailing" constant="-8" id="fIJ-mA-Kx2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ICK-vt-oPg" secondAttribute="trailing" id="fIJ-mA-Kx2"/>
                             <constraint firstItem="Jja-1W-beA" firstAttribute="height" secondItem="UDv-BC-pOJ" secondAttribute="height" id="fUK-LS-O9C"/>
                             <constraint firstItem="vQK-Ty-QRX" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="faM-PC-Fzo"/>
                             <constraint firstItem="pX5-jv-oAh" firstAttribute="width" secondItem="S3S-Oj-5AN" secondAttribute="width" multiplier="0.45" id="fzS-lE-7jC"/>
@@ -287,10 +287,9 @@
                             <constraint firstItem="XTP-gC-s3p" firstAttribute="trailing" secondItem="pX5-jv-oAh" secondAttribute="trailing" id="lcM-Ta-MPG"/>
                             <constraint firstItem="Xnq-gg-qg7" firstAttribute="leading" secondItem="Jja-1W-beA" secondAttribute="leading" id="mQV-Zd-1Vf"/>
                             <constraint firstItem="AZm-AJ-1uT" firstAttribute="top" secondItem="4g4-iv-9Fl" secondAttribute="bottom" id="mTk-cl-een"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="6sU-44-bhy" secondAttribute="trailing" constant="-8" id="mUq-Hf-p72"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6sU-44-bhy" secondAttribute="trailing" id="mUq-Hf-p72"/>
                             <constraint firstItem="jxS-er-em4" firstAttribute="top" secondItem="j3i-mW-scL" secondAttribute="top" id="oBo-9H-RcX"/>
                             <constraint firstItem="UDv-BC-pOJ" firstAttribute="width" secondItem="S3S-Oj-5AN" secondAttribute="width" multiplier="0.45" id="pQR-an-s8W"/>
-                            <constraint firstItem="6sU-44-bhy" firstAttribute="bottom" secondItem="UDv-BC-pOJ" secondAttribute="bottom" id="pQg-Rq-d2h"/>
                             <constraint firstItem="VWv-a9-0Nx" firstAttribute="top" secondItem="QY0-5m-amZ" secondAttribute="bottom" constant="2" id="phc-16-nJQ"/>
                             <constraint firstItem="73e-za-VdO" firstAttribute="height" secondItem="b5d-Na-Ubn" secondAttribute="height" id="s0M-SS-t9g"/>
                             <constraint firstItem="vQK-Ty-QRX" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="2" id="sKS-f7-0st"/>
@@ -303,6 +302,7 @@
                             <constraint firstItem="QY0-5m-amZ" firstAttribute="leading" secondItem="pZE-t7-r3b" secondAttribute="leading" id="xCH-RP-6Um"/>
                             <constraint firstItem="Xnq-gg-qg7" firstAttribute="height" secondItem="Jja-1W-beA" secondAttribute="height" id="xFI-gu-eDM"/>
                             <constraint firstItem="4g4-iv-9Fl" firstAttribute="leading" secondItem="ICK-vt-oPg" secondAttribute="leading" id="xS5-x7-ptn"/>
+                            <constraint firstItem="jxS-er-em4" firstAttribute="height" secondItem="j3i-mW-scL" secondAttribute="height" id="xUt-Vy-eep"/>
                             <constraint firstAttribute="trailingMargin" secondItem="grg-sk-7ID" secondAttribute="trailing" constant="-20" id="zbw-bT-mVz"/>
                         </constraints>
                     </view>
@@ -313,8 +313,11 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="191"/>
                     <connections>
-                        <outlet property="divider1and2" destination="VWv-a9-0Nx" id="vmg-dl-zTx"/>
-                        <outlet property="divider2and3" destination="FCV-ot-dkd" id="KBL-EY-tax"/>
+                        <outlet property="conDividerHeight" destination="lmf-o6-7Kk" id="LsG-qh-dNT"/>
+                        <outlet property="conHeight2" destination="u8Q-tf-Rdx" id="Ism-Su-4oT"/>
+                        <outlet property="conHeight3" destination="rtu-B5-CBl" id="wVa-Za-ry5"/>
+                        <outlet property="divider1and2" destination="VWv-a9-0Nx" id="Otr-xL-8jt"/>
+                        <outlet property="divider2and3" destination="FCV-ot-dkd" id="igl-ix-RbN"/>
                         <outlet property="dividerCenter" destination="vQK-Ty-QRX" id="D9P-q0-J4n"/>
                         <outlet property="lblMap1a" destination="b5d-Na-Ubn" id="Xhe-ij-WK4"/>
                         <outlet property="lblMap1b" destination="73e-za-VdO" id="fiQ-je-fQa"/>

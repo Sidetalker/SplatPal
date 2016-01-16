@@ -191,22 +191,3 @@ func delay(delay: Double, closure: ()->()) {
         ),
         dispatch_get_main_queue(), closure)
 }
-
-func epochDateString(input: NSTimeInterval) -> String {
-    let date = NSDate(timeIntervalSince1970: input)
-    let dateFormatter = NSDateFormatter()
-    dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
-    dateFormatter.timeZone = NSTimeZone()
-    
-    return dateFormatter.stringFromDate(date)
-}
-
-func epochTimeString(input: NSTimeInterval) -> String {
-    let date = NSDate(timeIntervalSince1970: input)
-    let dateFormatter = NSDateFormatter()
-    dateFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
-    dateFormatter.dateFormat = NSUserDefaults.standardUserDefaults().boolForKey("militaryTime") ? "HH:mm" : "h:mm a"
-    dateFormatter.timeZone = NSTimeZone()
-    
-    return dateFormatter.stringFromDate(date)
-}
