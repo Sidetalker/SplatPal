@@ -9,6 +9,7 @@
 import UIKit
 import NotificationCenter
 import Alamofire
+import SwiftyJSON
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     let prefs = NSUserDefaults.init(suiteName: "group.com.sideapps.SplatPal")!
@@ -51,14 +52,14 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var conDividerHeight: NSLayoutConstraint!
     
     var updateTimer: NSTimer!
-    var rotationEndTime = 0.0
+    var rotationEndTime = -1.0
     var expanded = false
     var splatfest = false
         
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.preferredContentSize = CGSizeMake(self.preferredContentSize.width, 1)
+        self.preferredContentSize = CGSizeMake(self.preferredContentSize.width, 60)
         
         // Hide all views before initial load
         for view in self.view.subviews {
@@ -111,13 +112,13 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     func update() {
-        if rotationEndTime == 0.0 { return }
+        if rotationEndTime == -1.0 { return }
         
         let timeRemainingSeconds = getTimeRemainingSeconds()
         
         if timeRemainingSeconds <= 0 {
             lblTime1.text = "Updating"
-            updateData()
+            refreshData()
         } else {
             lblTime1.text = getTimeRemainingText(timeRemainingSeconds)
         }
@@ -133,8 +134,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         if splatfest { return }
         
         if !expanded {
-//            self.conDividerHeight.constant = 58
-            
             UIView.animateWithDuration(0.5, animations: {
                 self.lblRanked3.alpha = 0.0
                 self.lblTime3.alpha = 0.0
@@ -179,78 +178,110 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         }
     }
     
-    func updateData() {
+    func refreshData() {
         loadMaps { data in
             if data["errorCode"].int != nil {
                 NSLog("Error")
             }
             else {
-                if data["splatfest"].boolValue {
-                    NSLog("Splatfest found")
-                    self.splatfest = true
-                    
-                    self.splatfestTeamA.text = data["teams"][0].stringValue
-                    self.splatfestTeamB.text = data["teams"][1].stringValue
-                    self.splatfestMap1.text = data["turfMaps"][0].stringValue
-                    self.splatfestMap2.text = data["turfMaps"][1].stringValue
-                    self.splatfestMap3.text = data["turfMaps"][2].stringValue
-                    
-                    self.preferredContentSize = CGSizeMake(self.preferredContentSize.width, 80)
-                    
-                    if self.splatfestView.alpha == 0.0 {
-                        self.splatfestView.alpha = 1.0
-                    }
-                } else {
-                    self.splatfest = false
-                    
-                    // Unhide all views if they're hidden
-                    if self.dividerCenter.alpha == 0.0 {
-                        for view in self.view.subviews {
-                            if view != self.splatfestView { view.alpha = 1.0 }
-                        }
-                        
-                        self.updateDisplay()
-                    }
-                    
-                    self.lblRanked1.text = data["rankedModes"][0].stringValue
-                    
-                    self.lblTime1.text = "Updating"
-                    
-                    self.lblMap1a.text = data["rankedMaps"][0].stringValue
-                    self.lblMap1b.text = data["rankedMaps"][1].stringValue
-                    self.lblMap1c.text = data["turfMaps"][0].stringValue
-                    self.lblMap1d.text = data["turfMaps"][1].stringValue
-                    
-                    self.rotationEndTime = data["endTimes"][0].doubleValue
-                    
-                    if data["rankedMaps"].arrayValue.count > 1 {
-                        self.lblRanked2.text = data["rankedModes"][1].stringValue
-                        
-                        let start2 = data["startTimes"][1].doubleValue
-                        let end2 = data["endTimes"][1].doubleValue
-                        self.lblTime2.text = "\(epochTimeString(start2)) - \(epochTimeString(end2))"
-                        
-                        self.lblMap2a.text = data["rankedMaps"][2].stringValue
-                        self.lblMap2b.text = data["rankedMaps"][3].stringValue
-                        self.lblMap2c.text = data["turfMaps"][2].stringValue
-                        self.lblMap2d.text = data["turfMaps"][3].stringValue
-                    }
-                    
-                    if data["rankedMaps"].arrayValue.count > 2 {
-                        self.lblRanked3.text = data["rankedModes"][2].stringValue
-                        
-                        let start3 = data["startTimes"][2].doubleValue
-                        let end3 = data["endTimes"][2].doubleValue
-                        self.lblTime3.text = "\(epochTimeString(start3)) - \(epochTimeString(end3))"
-                        
-                        self.lblMap3a.text = data["rankedMaps"][4].stringValue
-                        self.lblMap3b.text = data["rankedMaps"][5].stringValue
-                        self.lblMap3c.text = data["turfMaps"][4].stringValue
-                        self.lblMap3d.text = data["turfMaps"][5].stringValue
-                    }
-                }
+                self.saveData(data)
+                self.updateData(data)
             }
         }
+    }
+    
+    func updateData(data: JSON) {
+        self.rotationEndTime = data["endTimes"][0].doubleValue
+        
+        if data["splatfest"].boolValue {
+            NSLog("Splatfest found")
+            self.splatfest = true
+            
+            self.splatfestTeamA.text = data["teams"][0].stringValue
+            self.splatfestTeamB.text = data["teams"][1].stringValue
+            self.splatfestMap1.text = data["turfMaps"][0].stringValue
+            self.splatfestMap2.text = data["turfMaps"][1].stringValue
+            self.splatfestMap3.text = data["turfMaps"][2].stringValue
+            
+            self.preferredContentSize = CGSizeMake(self.preferredContentSize.width, 80)
+            
+            if self.splatfestView.alpha == 0.0 {
+                self.splatfestView.alpha = 1.0
+            }
+        } else {
+            self.splatfest = false
+            
+            // Unhide all views if they're hidden
+            if self.dividerCenter.alpha == 0.0 {
+                for view in self.view.subviews {
+                    if view != self.splatfestView { view.alpha = 1.0 }
+                }
+                
+                self.updateDisplay()
+            }
+            
+            self.lblRanked1.text = data["rankedModes"][0].stringValue
+            
+            self.lblTime1.text = "Updating"
+            
+            self.lblMap1a.text = data["rankedMaps"][0].stringValue
+            self.lblMap1b.text = data["rankedMaps"][1].stringValue
+            self.lblMap1c.text = data["turfMaps"][0].stringValue
+            self.lblMap1d.text = data["turfMaps"][1].stringValue
+            
+            if data["rankedMaps"].arrayValue.count > 1 {
+                self.lblRanked2.text = data["rankedModes"][1].stringValue
+                
+                let start2 = data["startTimes"][1].doubleValue
+                let end2 = data["endTimes"][1].doubleValue
+                self.lblTime2.text = "\(epochTimeString(start2)) - \(epochTimeString(end2))"
+                
+                self.lblMap2a.text = data["rankedMaps"][2].stringValue
+                self.lblMap2b.text = data["rankedMaps"][3].stringValue
+                self.lblMap2c.text = data["turfMaps"][2].stringValue
+                self.lblMap2d.text = data["turfMaps"][3].stringValue
+            }
+            
+            if data["rankedMaps"].arrayValue.count > 2 {
+                self.lblRanked3.text = data["rankedModes"][2].stringValue
+                
+                let start3 = data["startTimes"][2].doubleValue
+                let end3 = data["endTimes"][2].doubleValue
+                self.lblTime3.text = "\(epochTimeString(start3)) - \(epochTimeString(end3))"
+                
+                self.lblMap3a.text = data["rankedMaps"][4].stringValue
+                self.lblMap3b.text = data["rankedMaps"][5].stringValue
+                self.lblMap3c.text = data["turfMaps"][4].stringValue
+                self.lblMap3d.text = data["turfMaps"][5].stringValue
+            }
+        }
+    }
+    
+    func saveData(data: JSON) -> Bool {
+        let path = getDocumentsDirectory().stringByAppendingPathComponent("dataBuffer.json")
+        
+        do {
+            try data.rawString()!.writeToFile(path, atomically: true, encoding: NSUTF8StringEncoding)
+            return true
+        } catch {
+            return false
+        }
+    }
+    
+    func loadData() -> JSON {
+        let path = getDocumentsDirectory().stringByAppendingPathComponent("dataBuffer.json")
+        
+        if let jsonData = NSData(contentsOfFile: path) {
+            return JSON(data: jsonData)
+        }
+        
+        return JSON([:])
+    }
+    
+    func getDocumentsDirectory() -> NSString {
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
     }
     
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
@@ -260,8 +291,13 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
         
-        completionHandler(NCUpdateResult.NewData)
+        let data = loadData()
         
-        updateData()
+        if rotationEndTime != data["endTimes"][0].doubleValue {
+            refreshData()
+            completionHandler(NCUpdateResult.NewData)
+        } else {
+            completionHandler(NCUpdateResult.NoData)
+        }
     }
 }
