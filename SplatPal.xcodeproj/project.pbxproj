@@ -18,6 +18,53 @@
 		0A3503FC1C286A30009C6A48 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3503FA1C286A30009C6A48 /* MainInterface.storyboard */; };
 		0A3504001C286A30009C6A48 /* SplatWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A3503F41C286A30009C6A48 /* SplatWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0A36DEBB1C31DD06001E6DE4 /* StagePiranhaPit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A36DEBA1C31DD06001E6DE4 /* StagePiranhaPit.jpg */; };
+		0A3B774C1C4C298900C06E31 /* rainmakerIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774B1C4C298900C06E31 /* rainmakerIcon@2x.png */; };
+		0A3B77541C4C299100C06E31 /* rainmakerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774D1C4C299100C06E31 /* rainmakerIcon.png */; };
+		0A3B77551C4C299100C06E31 /* rainmakerIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774E1C4C299100C06E31 /* rainmakerIcon.svg */; };
+		0A3B77561C4C299100C06E31 /* rainmakerIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774F1C4C299100C06E31 /* rainmakerIcon@3x.png */; };
+		0A3B77571C4C299100C06E31 /* zonesIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77501C4C299100C06E31 /* zonesIcon.png */; };
+		0A3B77581C4C299100C06E31 /* zonesIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77511C4C299100C06E31 /* zonesIcon.svg */; };
+		0A3B77591C4C299100C06E31 /* zonesIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77521C4C299100C06E31 /* zonesIcon@2x.png */; };
+		0A3B775A1C4C299100C06E31 /* zonesIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77531C4C299100C06E31 /* zonesIcon@3x.png */; };
+		0A3B775B1C4C3AAB00C06E31 /* rainmakerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774D1C4C299100C06E31 /* rainmakerIcon.png */; };
+		0A3B775C1C4C3AAB00C06E31 /* rainmakerIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774E1C4C299100C06E31 /* rainmakerIcon.svg */; };
+		0A3B775D1C4C3AAB00C06E31 /* rainmakerIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774F1C4C299100C06E31 /* rainmakerIcon@3x.png */; };
+		0A3B775E1C4C3AAB00C06E31 /* zonesIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77501C4C299100C06E31 /* zonesIcon.png */; };
+		0A3B775F1C4C3AAB00C06E31 /* zonesIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77511C4C299100C06E31 /* zonesIcon.svg */; };
+		0A3B77601C4C3AAB00C06E31 /* zonesIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77521C4C299100C06E31 /* zonesIcon@2x.png */; };
+		0A3B77611C4C3AAB00C06E31 /* zonesIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77531C4C299100C06E31 /* zonesIcon@3x.png */; };
+		0A3B77621C4C3AAB00C06E31 /* rainmakerIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774B1C4C298900C06E31 /* rainmakerIcon@2x.png */; };
+		0A3B77631C4C3AAC00C06E31 /* rainmakerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774D1C4C299100C06E31 /* rainmakerIcon.png */; };
+		0A3B77641C4C3AAC00C06E31 /* rainmakerIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774E1C4C299100C06E31 /* rainmakerIcon.svg */; };
+		0A3B77651C4C3AAC00C06E31 /* rainmakerIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774F1C4C299100C06E31 /* rainmakerIcon@3x.png */; };
+		0A3B77661C4C3AAC00C06E31 /* zonesIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77501C4C299100C06E31 /* zonesIcon.png */; };
+		0A3B77671C4C3AAC00C06E31 /* zonesIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77511C4C299100C06E31 /* zonesIcon.svg */; };
+		0A3B77681C4C3AAC00C06E31 /* zonesIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77521C4C299100C06E31 /* zonesIcon@2x.png */; };
+		0A3B77691C4C3AAC00C06E31 /* zonesIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77531C4C299100C06E31 /* zonesIcon@3x.png */; };
+		0A3B776A1C4C3AAC00C06E31 /* rainmakerIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774B1C4C298900C06E31 /* rainmakerIcon@2x.png */; };
+		0A3B776F1C4C3AE700C06E31 /* towerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776B1C4C3AE700C06E31 /* towerIcon.png */; };
+		0A3B77701C4C3AE700C06E31 /* towerIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776C1C4C3AE700C06E31 /* towerIcon.svg */; };
+		0A3B77711C4C3AE700C06E31 /* towerIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776D1C4C3AE700C06E31 /* towerIcon@2x.png */; };
+		0A3B77721C4C3AE700C06E31 /* towerIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776E1C4C3AE700C06E31 /* towerIcon@3x.png */; };
+		0A3B77731C4C3AEB00C06E31 /* towerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776B1C4C3AE700C06E31 /* towerIcon.png */; };
+		0A3B77741C4C3AEB00C06E31 /* towerIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776C1C4C3AE700C06E31 /* towerIcon.svg */; };
+		0A3B77751C4C3AEB00C06E31 /* towerIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776D1C4C3AE700C06E31 /* towerIcon@2x.png */; };
+		0A3B77761C4C3AEB00C06E31 /* towerIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776E1C4C3AE700C06E31 /* towerIcon@3x.png */; };
+		0A3B77771C4C3AEB00C06E31 /* towerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776B1C4C3AE700C06E31 /* towerIcon.png */; };
+		0A3B77781C4C3AEB00C06E31 /* towerIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776C1C4C3AE700C06E31 /* towerIcon.svg */; };
+		0A3B77791C4C3AEB00C06E31 /* towerIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776D1C4C3AE700C06E31 /* towerIcon@2x.png */; };
+		0A3B777A1C4C3AEB00C06E31 /* towerIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776E1C4C3AE700C06E31 /* towerIcon@3x.png */; };
+		0A3B777B1C4C425500C06E31 /* squid.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607F51C191F09006EECA7 /* squid.png */; };
+		0A3B777C1C4C425600C06E31 /* squid.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607F51C191F09006EECA7 /* squid.png */; };
+		0A3B777E1C4C4B3400C06E31 /* squidIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B777D1C4C4B3400C06E31 /* squidIcon.svg */; };
+		0A3B77831C4C4B4600C06E31 /* squidIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B777D1C4C4B3400C06E31 /* squidIcon.svg */; };
+		0A3B77841C4C4B4600C06E31 /* squidIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51931C25F208006ABE9B /* squidIcon.png */; };
+		0A3B77851C4C4B4600C06E31 /* squidIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51941C25F208006ABE9B /* squidIcon@2x.png */; };
+		0A3B77861C4C4B4600C06E31 /* squidIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51951C25F208006ABE9B /* squidIcon@3x.png */; };
+		0A3B77871C4C4B4700C06E31 /* squidIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B777D1C4C4B3400C06E31 /* squidIcon.svg */; };
+		0A3B77881C4C4B4700C06E31 /* squidIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51931C25F208006ABE9B /* squidIcon.png */; };
+		0A3B77891C4C4B4700C06E31 /* squidIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51941C25F208006ABE9B /* squidIcon@2x.png */; };
+		0A3B778A1C4C4B4700C06E31 /* squidIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51951C25F208006ABE9B /* squidIcon@3x.png */; };
 		0A41A94A1C4AF61F00D80E15 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A41A9481C4AF61E00D80E15 /* Interface.storyboard */; };
 		0A41A94C1C4AF61F00D80E15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A41A94B1C4AF61F00D80E15 /* Assets.xcassets */; };
 		0A41A9531C4AF61F00D80E15 /* SplatWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A41A9521C4AF61F00D80E15 /* SplatWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -582,6 +629,19 @@
 		0A36DEBA1C31DD06001E6DE4 /* StagePiranhaPit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StagePiranhaPit.jpg; path = Images/Stages/StagePiranhaPit.jpg; sourceTree = "<group>"; };
 		0A3826611C4B09240065B2B8 /* SplatWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "SplatWatch Extension.entitlements"; sourceTree = "<group>"; };
 		0A3826621C4B092E0065B2B8 /* SplatWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SplatWatch.entitlements; sourceTree = "<group>"; };
+		0A3B774B1C4C298900C06E31 /* rainmakerIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rainmakerIcon@2x.png"; path = "Images/rainmakerIcon@2x.png"; sourceTree = "<group>"; };
+		0A3B774D1C4C299100C06E31 /* rainmakerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rainmakerIcon.png; path = Images/rainmakerIcon.png; sourceTree = "<group>"; };
+		0A3B774E1C4C299100C06E31 /* rainmakerIcon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = rainmakerIcon.svg; path = Images/rainmakerIcon.svg; sourceTree = "<group>"; };
+		0A3B774F1C4C299100C06E31 /* rainmakerIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rainmakerIcon@3x.png"; path = "Images/rainmakerIcon@3x.png"; sourceTree = "<group>"; };
+		0A3B77501C4C299100C06E31 /* zonesIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zonesIcon.png; path = Images/zonesIcon.png; sourceTree = "<group>"; };
+		0A3B77511C4C299100C06E31 /* zonesIcon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = zonesIcon.svg; path = Images/zonesIcon.svg; sourceTree = "<group>"; };
+		0A3B77521C4C299100C06E31 /* zonesIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zonesIcon@2x.png"; path = "Images/zonesIcon@2x.png"; sourceTree = "<group>"; };
+		0A3B77531C4C299100C06E31 /* zonesIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zonesIcon@3x.png"; path = "Images/zonesIcon@3x.png"; sourceTree = "<group>"; };
+		0A3B776B1C4C3AE700C06E31 /* towerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = towerIcon.png; path = Images/towerIcon.png; sourceTree = "<group>"; };
+		0A3B776C1C4C3AE700C06E31 /* towerIcon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = towerIcon.svg; path = Images/towerIcon.svg; sourceTree = "<group>"; };
+		0A3B776D1C4C3AE700C06E31 /* towerIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "towerIcon@2x.png"; path = "Images/towerIcon@2x.png"; sourceTree = "<group>"; };
+		0A3B776E1C4C3AE700C06E31 /* towerIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "towerIcon@3x.png"; path = "Images/towerIcon@3x.png"; sourceTree = "<group>"; };
+		0A3B777D1C4C4B3400C06E31 /* squidIcon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = squidIcon.svg; path = Images/squidIcon.svg; sourceTree = "<group>"; };
 		0A41A9461C4AF61E00D80E15 /* SplatWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplatWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A41A9491C4AF61F00D80E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		0A41A94B1C4AF61F00D80E15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1420,6 +1480,22 @@
 		0AC607DE1C18AAA6006EECA7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0A3B777D1C4C4B3400C06E31 /* squidIcon.svg */,
+				0A4C51931C25F208006ABE9B /* squidIcon.png */,
+				0A4C51941C25F208006ABE9B /* squidIcon@2x.png */,
+				0A4C51951C25F208006ABE9B /* squidIcon@3x.png */,
+				0A3B774D1C4C299100C06E31 /* rainmakerIcon.png */,
+				0A3B776B1C4C3AE700C06E31 /* towerIcon.png */,
+				0A3B776C1C4C3AE700C06E31 /* towerIcon.svg */,
+				0A3B776D1C4C3AE700C06E31 /* towerIcon@2x.png */,
+				0A3B776E1C4C3AE700C06E31 /* towerIcon@3x.png */,
+				0A3B774E1C4C299100C06E31 /* rainmakerIcon.svg */,
+				0A3B774F1C4C299100C06E31 /* rainmakerIcon@3x.png */,
+				0A3B77501C4C299100C06E31 /* zonesIcon.png */,
+				0A3B77511C4C299100C06E31 /* zonesIcon.svg */,
+				0A3B77521C4C299100C06E31 /* zonesIcon@2x.png */,
+				0A3B77531C4C299100C06E31 /* zonesIcon@3x.png */,
+				0A3B774B1C4C298900C06E31 /* rainmakerIcon@2x.png */,
 				0A9AD9E11C2A11EE00CDFBE7 /* Subs */,
 				0A9AD9C81C29F5C500CDFBE7 /* Specials */,
 				0A9AD9331C29F5B300CDFBE7 /* Weapons */,
@@ -1453,9 +1529,6 @@
 		0ADF9A9D1C1D1246002D7E81 /* Bar Icons */ = {
 			isa = PBXGroup;
 			children = (
-				0A4C51931C25F208006ABE9B /* squidIcon.png */,
-				0A4C51941C25F208006ABE9B /* squidIcon@2x.png */,
-				0A4C51951C25F208006ABE9B /* squidIcon@3x.png */,
 				0A4C51121C24633C006ABE9B /* splatIcon.png */,
 				0A4C51131C24633C006ABE9B /* splatIcon@2x.png */,
 				0A4C51141C24633C006ABE9B /* splatIcon@3x.png */,
@@ -1989,8 +2062,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3B77621C4C3AAB00C06E31 /* rainmakerIcon@2x.png in Resources */,
+				0A3B77611C4C3AAB00C06E31 /* zonesIcon@3x.png in Resources */,
+				0A3B775D1C4C3AAB00C06E31 /* rainmakerIcon@3x.png in Resources */,
+				0A3B77751C4C3AEB00C06E31 /* towerIcon@2x.png in Resources */,
+				0A3B777B1C4C425500C06E31 /* squid.png in Resources */,
+				0A3B77761C4C3AEB00C06E31 /* towerIcon@3x.png in Resources */,
+				0A3B77731C4C3AEB00C06E31 /* towerIcon.png in Resources */,
+				0A3B775F1C4C3AAB00C06E31 /* zonesIcon.svg in Resources */,
+				0A3B77741C4C3AEB00C06E31 /* towerIcon.svg in Resources */,
+				0A3B775B1C4C3AAB00C06E31 /* rainmakerIcon.png in Resources */,
+				0A3B77851C4C4B4600C06E31 /* squidIcon@2x.png in Resources */,
+				0A3B77831C4C4B4600C06E31 /* squidIcon.svg in Resources */,
+				0A3B775E1C4C3AAB00C06E31 /* zonesIcon.png in Resources */,
 				0A41A94C1C4AF61F00D80E15 /* Assets.xcassets in Resources */,
+				0A3B77601C4C3AAB00C06E31 /* zonesIcon@2x.png in Resources */,
+				0A3B775C1C4C3AAB00C06E31 /* rainmakerIcon.svg in Resources */,
+				0A3B77841C4C4B4600C06E31 /* squidIcon.png in Resources */,
 				0A41A94A1C4AF61F00D80E15 /* Interface.storyboard in Resources */,
+				0A3B77861C4C4B4600C06E31 /* squidIcon@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1998,7 +2088,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3B777C1C4C425600C06E31 /* squid.png in Resources */,
+				0A3B778A1C4C4B4700C06E31 /* squidIcon@3x.png in Resources */,
+				0A3B776A1C4C3AAC00C06E31 /* rainmakerIcon@2x.png in Resources */,
+				0A3B77641C4C3AAC00C06E31 /* rainmakerIcon.svg in Resources */,
+				0A3B77771C4C3AEB00C06E31 /* towerIcon.png in Resources */,
+				0A3B77791C4C3AEB00C06E31 /* towerIcon@2x.png in Resources */,
+				0A3B77651C4C3AAC00C06E31 /* rainmakerIcon@3x.png in Resources */,
+				0A3B77891C4C4B4700C06E31 /* squidIcon@2x.png in Resources */,
+				0A3B77681C4C3AAC00C06E31 /* zonesIcon@2x.png in Resources */,
 				0A41A9641C4AF61F00D80E15 /* Assets.xcassets in Resources */,
+				0A3B77871C4C4B4700C06E31 /* squidIcon.svg in Resources */,
+				0A3B77661C4C3AAC00C06E31 /* zonesIcon.png in Resources */,
+				0A3B77631C4C3AAC00C06E31 /* rainmakerIcon.png in Resources */,
+				0A3B77781C4C3AEB00C06E31 /* towerIcon.svg in Resources */,
+				0A3B777A1C4C3AEB00C06E31 /* towerIcon@3x.png in Resources */,
+				0A3B77691C4C3AAC00C06E31 /* zonesIcon@3x.png in Resources */,
+				0A3B77671C4C3AAC00C06E31 /* zonesIcon.svg in Resources */,
+				0A3B77881C4C4B4700C06E31 /* squidIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2014,6 +2121,7 @@
 				0ADF9C4C1C1DF2DE002D7E81 /* gearSafariHat.png in Resources */,
 				0ADF9C1F1C1DF2DE002D7E81 /* gearOctolingArmor.png in Resources */,
 				0ADF9C5A1C1DF2DE002D7E81 /* gearSkateHelmet.png in Resources */,
+				0A3B77721C4C3AE700C06E31 /* towerIcon@3x.png in Resources */,
 				0ADF9BDF1C1DF2DE002D7E81 /* gearClownfishBasics.png in Resources */,
 				0ADF9BFF1C1DF2DE002D7E81 /* gearGreenStripedLS.png in Resources */,
 				0ADF9BC91C1DF2DE002D7E81 /* gearBlackSquideye.png in Resources */,
@@ -2036,6 +2144,7 @@
 				0A9AD9BB1C29F5BE00CDFBE7 /* weaponSloshingMachineNeo.png in Resources */,
 				0A4BF6AA1C22069700BB4834 /* settingsIcon.png in Resources */,
 				0ADF9C4A1C1DF2DE002D7E81 /* gearRodeoShirt.png in Resources */,
+				0A3B776F1C4C3AE700C06E31 /* towerIcon.png in Resources */,
 				0ADF9BAE1C1DF2DE002D7E81 /* gearAcerolaRainBoots.png in Resources */,
 				0ADF9CAD1C1DF2DE002D7E81 /* gearZekkoBaseballLS.png in Resources */,
 				0ADF9C571C1DF2DE002D7E81 /* gearShirtstravaganza.png in Resources */,
@@ -2060,6 +2169,7 @@
 				0ADF9C5F1C1DF2DE002D7E81 /* gearSnowyDownBoots.png in Resources */,
 				0A9AD9F51C2A11F800CDFBE7 /* subSuctionBomb.png in Resources */,
 				0ADF9BE11C1DF2DE002D7E81 /* gearCreamBasics.png in Resources */,
+				0A3B777E1C4C4B3400C06E31 /* squidIcon.svg in Resources */,
 				0A9AD9D71C29F5D000CDFBE7 /* specialBubbler.png in Resources */,
 				0AC607E51C18E8A1006EECA7 /* rankedBadge@2x.png in Resources */,
 				0A9AD9801C29F5BE00CDFBE7 /* weapon.96Gal.png in Resources */,
@@ -2082,7 +2192,9 @@
 				0ADF9C501C1DF2DE002D7E81 /* gearSamuraiJacket.png in Resources */,
 				0A9AD9EE1C2A11F800CDFBE7 /* subInkMine.png in Resources */,
 				0A9AD9ED1C2A11F800CDFBE7 /* subDisruptor.png in Resources */,
+				0A3B77541C4C299100C06E31 /* rainmakerIcon.png in Resources */,
 				0ADF9C401C1DF2DE002D7E81 /* gearRedVectorTee.png in Resources */,
+				0A3B77571C4C299100C06E31 /* zonesIcon.png in Resources */,
 				0ADF9BFA1C1DF2DE002D7E81 /* gearGrayMixedShirt.png in Resources */,
 				0ADF9C491C1DF2DE002D7E81 /* gearRockenbergWhite.png in Resources */,
 				0ADF9BCE1C1DF2DE002D7E81 /* gearBlueLo-Tops.png in Resources */,
@@ -2131,6 +2243,7 @@
 				0AC607D81C18A629006EECA7 /* StageMuseumd'Alfonsino.jpg in Resources */,
 				0AA23E231C1B6E280002BCC2 /* abilityBombSniffer.png in Resources */,
 				0ADF9BD61C1DF2DE002D7E81 /* gearCamoLayeredLS.png in Resources */,
+				0A3B77581C4C299100C06E31 /* zonesIcon.svg in Resources */,
 				0ADF9BEA1C1DF2DE002D7E81 /* gearDesignerHeadphones.png in Resources */,
 				0ADF9C3C1C1DF2DE002D7E81 /* gearRedHi-Horses.png in Resources */,
 				0AC607DC1C18A629006EECA7 /* StageWalleyeWarehouse.jpg in Resources */,
@@ -2157,6 +2270,7 @@
 				0ADF9C601C1DF2DE002D7E81 /* gearSoccerCleats.png in Resources */,
 				0ADF9CA31C1DF2DE002D7E81 /* gearWhitePufferTee.png in Resources */,
 				0AC607D21C18A629006EECA7 /* StageBluefinDepot.jpg in Resources */,
+				0A3B77701C4C3AE700C06E31 /* towerIcon.svg in Resources */,
 				0AC607DB1C18A629006EECA7 /* StageUrchinUnderpass.jpg in Resources */,
 				0A9AD9F01C2A11F800CDFBE7 /* subSeeker.png in Resources */,
 				0ADF9BB31C1DF2DE002D7E81 /* gearArmorJacketReplica.png in Resources */,
@@ -2260,6 +2374,7 @@
 				0ADF9BDC1C1DF2DE002D7E81 /* gearChocoClogs.png in Resources */,
 				0A9AD9BD1C29F5BE00CDFBE7 /* weaponSplatCharger.png in Resources */,
 				0ADF9C681C1DF2DE002D7E81 /* gearSquid-StitchCap.png in Resources */,
+				0A3B77561C4C299100C06E31 /* rainmakerIcon@3x.png in Resources */,
 				0ADF9C821C1DF2DE002D7E81 /* gearSunVisor.png in Resources */,
 				0A9AD9F41C2A11F800CDFBE7 /* subSquidBeakon.png in Resources */,
 				0AC607D71C18A629006EECA7 /* StageMorayTowers.jpg in Resources */,
@@ -2275,6 +2390,7 @@
 				0A9AD9F21C2A11F800CDFBE7 /* subSplatBomb.png in Resources */,
 				0ADF9C041C1DF2DE002D7E81 /* gearHeroJacketReplica.png in Resources */,
 				0A4C51151C24633C006ABE9B /* splatIcon.png in Resources */,
+				0A3B77551C4C299100C06E31 /* rainmakerIcon.svg in Resources */,
 				0ADF9C651C1DF2DE002D7E81 /* gearSportyBobbleHat.png in Resources */,
 				0AA23DFD1C1B6D870002BCC2 /* weaponsIcon.png in Resources */,
 				0ADF9BBF1C1DF2DE002D7E81 /* gearBlack8-BitFishFry.png in Resources */,
@@ -2294,6 +2410,7 @@
 				0A4C51961C25F208006ABE9B /* squidIcon.png in Resources */,
 				0ADF9C521C1DF2DE002D7E81 /* gearSchoolJersey.png in Resources */,
 				0ADF9BDA1C1DF2DE002D7E81 /* gearCarnivoreTee.png in Resources */,
+				0A3B775A1C4C299100C06E31 /* zonesIcon@3x.png in Resources */,
 				0ADF9C691C1DF2DE002D7E81 /* gearSquid-StitchSlip-Ons.png in Resources */,
 				0ADF9BCC1C1DF2DE002D7E81 /* gearBlowfishBellHat.png in Resources */,
 				0AA23E331C1B6E280002BCC2 /* abilityRecon.png in Resources */,
@@ -2310,6 +2427,7 @@
 				0ADF9C741C1DF2DE002D7E81 /* gearSquidstarWaistcoat.png in Resources */,
 				0ADF9C071C1DF2DE002D7E81 /* gearIcyDownBoots.png in Resources */,
 				0ADF9C9C1C1DF2DE002D7E81 /* gearWhiteBaseballLS.png in Resources */,
+				0A3B77591C4C299100C06E31 /* zonesIcon@2x.png in Resources */,
 				0ADF9BBC1C1DF2DE002D7E81 /* gearBasicTee.png in Resources */,
 				0ADF9BD51C1DF2DE002D7E81 /* gearBubbleRainBoots.png in Resources */,
 				0ADF9CA71C1DF2DE002D7E81 /* gearWhiteStripedLS.png in Resources */,
@@ -2366,6 +2484,7 @@
 				0A9AD9951C29F5BE00CDFBE7 /* weaponE-liter3KScope.png in Resources */,
 				0ADF9C841C1DF2DE002D7E81 /* gearTanWorkBoots.png in Resources */,
 				0ADF9C9B1C1DF2DE002D7E81 /* gearWhiteArrows.png in Resources */,
+				0A3B774C1C4C298900C06E31 /* rainmakerIcon@2x.png in Resources */,
 				0A9AD9921C29F5BE00CDFBE7 /* weaponDualSquelcher.png in Resources */,
 				0ADF9C151C1DF2DE002D7E81 /* gearLumberjackShirt.png in Resources */,
 				0ADF9BC61C1DF2DE002D7E81 /* gearBlackPipeTee.png in Resources */,
@@ -2387,6 +2506,7 @@
 				0A9AD9981C29F5BE00CDFBE7 /* weaponH-3Nozzlenose.png in Resources */,
 				0ADF9CA41C1DF2DE002D7E81 /* gearWhiteSailorSuit.png in Resources */,
 				0ADF9C111C1DF2DE002D7E81 /* gearLESoccerCleats.png in Resources */,
+				0A3B77711C4C3AE700C06E31 /* towerIcon@2x.png in Resources */,
 				0ADF9CB21C1DF2DE002D7E81 /* gearZombieHi-Horses.png in Resources */,
 				0ADF9CA51C1DF2DE002D7E81 /* gearWhiteSeahorses.png in Resources */,
 				0ADF9C6C1C1DF2DE002D7E81 /* gearSQUIDGIRLHat.png in Resources */,

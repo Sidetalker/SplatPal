@@ -1,5 +1,9 @@
 IF YOU HAVE AN APPLE WATCH PLEASE USE THE SEND FEEDBACK BUTTON TO LET ME KNOW!
 
+Version 0.3 (1060)
+- Notification center support complete
+- Began Apple Watch implementation
+
 Version 0.3 (984)
 - Notification center displays Splatfest info 
     - Support for general map info follow soon
