@@ -28,6 +28,17 @@ global_pods
 
 end
 
+target 'SplatWatch Extension' do
+platform :watchos, '2.0'
+
+global_pods
+
+end
+
+target 'SplatWatch' do
+    
+end
+
 target 'SplatPalTests' do
 
 end

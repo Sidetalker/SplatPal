@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SplatWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="235" y="346.25"/>
+        </scene>
+        <!--splatfest-->
+        <scene sceneID="0Ua-cg-c5I">
+            <objects>
+                <controller identifier="splatfest" id="s6j-QQ-Pjh" customClass="SplatfestInterface" customModule="SplatWatch_Extension">
+                    <items>
+                        <group width="1" alignment="center" id="Whf-0b-0eH">
+                            <items>
+                                <label alignment="left" text="Label" id="lw2-CN-ptE">
+                                    <color key="textColor" red="0.066666666669999999" green="0.82352941180000006" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                                </label>
+                                <label alignment="left" text=" vs " id="LUi-76-Nh6"/>
+                                <label alignment="left" text="Label" id="fh8-Ej-01x">
+                                    <color key="textColor" red="0.52549019610000003" green="0.94117647059999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="15"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="tft-hl-DLN"/>
+                        <label alignment="left" text="Label" numberOfLines="2" id="G4g-HN-xmI"/>
+                        <label alignment="left" text="Label" numberOfLines="2" id="wAn-ZG-hwV"/>
+                        <label alignment="left" text="Label" numberOfLines="2" id="ccq-RN-JaX"/>
+                    </items>
+                    <connections>
+                        <outlet property="lblMap1" destination="G4g-HN-xmI" id="WYG-JL-nbZ"/>
+                        <outlet property="lblMap2" destination="wAn-ZG-hwV" id="Nux-LQ-vct"/>
+                        <outlet property="lblMap3" destination="ccq-RN-JaX" id="7ZS-Lr-wF2"/>
+                        <outlet property="lblTeamA" destination="lw2-CN-ptE" id="z45-e5-AAV"/>
+                        <outlet property="lblTeamB" destination="fh8-Ej-01x" id="IqO-hi-qBS"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="477" y="346"/>
+        </scene>
+        <!--rotation-->
+        <scene sceneID="8B5-YR-8V8">
+            <objects>
+                <controller identifier="rotation" id="53x-2u-Clm" customClass="RotationInterface" customModule="SplatWatch_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="713" y="346"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="SplatWatch" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y"/>
+                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="672"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1001"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="SplatWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="1001"/>
+        </scene>
+    </scenes>
+</document>

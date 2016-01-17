@@ -18,6 +18,17 @@
 		0A3503FC1C286A30009C6A48 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3503FA1C286A30009C6A48 /* MainInterface.storyboard */; };
 		0A3504001C286A30009C6A48 /* SplatWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A3503F41C286A30009C6A48 /* SplatWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0A36DEBB1C31DD06001E6DE4 /* StagePiranhaPit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A36DEBA1C31DD06001E6DE4 /* StagePiranhaPit.jpg */; };
+		0A41A94A1C4AF61F00D80E15 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A41A9481C4AF61E00D80E15 /* Interface.storyboard */; };
+		0A41A94C1C4AF61F00D80E15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A41A94B1C4AF61F00D80E15 /* Assets.xcassets */; };
+		0A41A9531C4AF61F00D80E15 /* SplatWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A41A9521C4AF61F00D80E15 /* SplatWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A41A95A1C4AF61F00D80E15 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41A9591C4AF61F00D80E15 /* InterfaceController.swift */; };
+		0A41A95C1C4AF61F00D80E15 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41A95B1C4AF61F00D80E15 /* ExtensionDelegate.swift */; };
+		0A41A95E1C4AF61F00D80E15 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41A95D1C4AF61F00D80E15 /* NotificationController.swift */; };
+		0A41A9601C4AF61F00D80E15 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41A95F1C4AF61F00D80E15 /* GlanceController.swift */; };
+		0A41A9621C4AF61F00D80E15 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41A9611C4AF61F00D80E15 /* ComplicationController.swift */; };
+		0A41A9641C4AF61F00D80E15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A41A9631C4AF61F00D80E15 /* Assets.xcassets */; };
+		0A41A9681C4AF61F00D80E15 /* SplatWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0A41A9461C4AF61E00D80E15 /* SplatWatch.app */; };
+		0A41A9711C4AF71E00D80E15 /* SplatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6AFEF81C2870D20073884B /* SplatData.swift */; };
 		0A4BF6AA1C22069700BB4834 /* settingsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A71C22069700BB4834 /* settingsIcon.png */; };
 		0A4BF6AB1C22069700BB4834 /* settingsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A81C22069700BB4834 /* settingsIcon@2x.png */; };
 		0A4BF6AC1C22069700BB4834 /* settingsIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4BF6A91C22069700BB4834 /* settingsIcon@3x.png */; };
@@ -476,6 +487,7 @@
 		0ADF9CB01C1DF2DE002D7E81 /* gearZinkLayeredLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9BAA1C1DF2DE002D7E81 /* gearZinkLayeredLS.png */; };
 		0ADF9CB11C1DF2DE002D7E81 /* gearZinkLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9BAB1C1DF2DE002D7E81 /* gearZinkLS.png */; };
 		0ADF9CB21C1DF2DE002D7E81 /* gearZombieHi-Horses.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9BAC1C1DF2DE002D7E81 /* gearZombieHi-Horses.png */; };
+		2569047F96449E8575D58713 /* Pods_SplatWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20F906FCCAD5C4E556D42F8 /* Pods_SplatWatch_Extension.framework */; };
 		A80951C10B13C21AEA494E71 /* Pods_SplatPal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBDCB17D189739D652437DA /* Pods_SplatPal.framework */; };
 		C26CBDF8FE9A042550A84847 /* Pods_SplatWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C430A69EE99A04B17E0712 /* Pods_SplatWidget.framework */; };
 /* End PBXBuildFile section */
@@ -487,6 +499,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0A3503F31C286A30009C6A48;
 			remoteInfo = SplatWidget;
+		};
+		0A41A9541C4AF61F00D80E15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AC6077D1C189B36006EECA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A41A9511C4AF61F00D80E15;
+			remoteInfo = "SplatWatch Extension";
+		};
+		0A41A9661C4AF61F00D80E15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AC6077D1C189B36006EECA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A41A9451C4AF61E00D80E15;
+			remoteInfo = SplatWatch;
 		};
 		0AC6079C1C189B36006EECA7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -516,6 +542,28 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0A41A96E1C4AF61F00D80E15 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0A41A9531C4AF61F00D80E15 /* SplatWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A41A9701C4AF61F00D80E15 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0A41A9681C4AF61F00D80E15 /* SplatWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -532,6 +580,21 @@
 		0A3503FB1C286A30009C6A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		0A3503FD1C286A30009C6A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A36DEBA1C31DD06001E6DE4 /* StagePiranhaPit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StagePiranhaPit.jpg; path = Images/Stages/StagePiranhaPit.jpg; sourceTree = "<group>"; };
+		0A3826611C4B09240065B2B8 /* SplatWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "SplatWatch Extension.entitlements"; sourceTree = "<group>"; };
+		0A3826621C4B092E0065B2B8 /* SplatWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SplatWatch.entitlements; sourceTree = "<group>"; };
+		0A41A9461C4AF61E00D80E15 /* SplatWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplatWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A41A9491C4AF61F00D80E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0A41A94B1C4AF61F00D80E15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A41A94D1C4AF61F00D80E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A41A9521C4AF61F00D80E15 /* SplatWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SplatWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A41A9581C4AF61F00D80E15 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		0A41A9591C4AF61F00D80E15 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0A41A95B1C4AF61F00D80E15 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		0A41A95D1C4AF61F00D80E15 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		0A41A95F1C4AF61F00D80E15 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		0A41A9611C4AF61F00D80E15 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		0A41A9631C4AF61F00D80E15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A41A9651C4AF61F00D80E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A4BF6A71C22069700BB4834 /* settingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settingsIcon.png; path = Images/settingsIcon.png; sourceTree = "<group>"; };
 		0A4BF6A81C22069700BB4834 /* settingsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settingsIcon@2x.png"; path = "Images/settingsIcon@2x.png"; sourceTree = "<group>"; };
 		0A4BF6A91C22069700BB4834 /* settingsIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settingsIcon@3x.png"; path = "Images/settingsIcon@3x.png"; sourceTree = "<group>"; };
@@ -999,10 +1062,13 @@
 		0ADF9BAB1C1DF2DE002D7E81 /* gearZinkLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearZinkLS.png; path = Images/gear/gearZinkLS.png; sourceTree = "<group>"; };
 		0ADF9BAC1C1DF2DE002D7E81 /* gearZombieHi-Horses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearZombieHi-Horses.png"; path = "Images/gear/gearZombieHi-Horses.png"; sourceTree = "<group>"; };
 		1F17E541D5268368D962836C /* Pods-SplatWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplatWidget/Pods-SplatWidget.release.xcconfig"; sourceTree = "<group>"; };
+		1FBC42DFF3D15E3C277DEED6 /* Pods-SplatWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplatWatch Extension/Pods-SplatWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		3297FDF7A703D876943BE2E6 /* Pods-SplatPal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatPal.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplatPal/Pods-SplatPal.release.xcconfig"; sourceTree = "<group>"; };
+		552E39D512A78F01AB6482EA /* Pods-SplatWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplatWatch Extension/Pods-SplatWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
 		8FBDCB17D189739D652437DA /* Pods_SplatPal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplatPal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C430A69EE99A04B17E0712 /* Pods_SplatWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplatWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9981F1D3F6C6C41A6CE0060D /* Pods-SplatWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplatWidget/Pods-SplatWidget.debug.xcconfig"; sourceTree = "<group>"; };
+		A20F906FCCAD5C4E556D42F8 /* Pods_SplatWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplatWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1012,6 +1078,14 @@
 			files = (
 				0A3503F61C286A30009C6A48 /* NotificationCenter.framework in Frameworks */,
 				C26CBDF8FE9A042550A84847 /* Pods_SplatWidget.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A41A94F1C4AF61F00D80E15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2569047F96449E8575D58713 /* Pods_SplatWatch_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1049,6 +1123,41 @@
 				0A3503FD1C286A30009C6A48 /* Info.plist */,
 			);
 			path = SplatWidget;
+			sourceTree = "<group>";
+		};
+		0A41A9471C4AF61E00D80E15 /* SplatWatch */ = {
+			isa = PBXGroup;
+			children = (
+				0A3826621C4B092E0065B2B8 /* SplatWatch.entitlements */,
+				0A41A9481C4AF61E00D80E15 /* Interface.storyboard */,
+				0A41A94B1C4AF61F00D80E15 /* Assets.xcassets */,
+				0A41A94D1C4AF61F00D80E15 /* Info.plist */,
+			);
+			path = SplatWatch;
+			sourceTree = "<group>";
+		};
+		0A41A9561C4AF61F00D80E15 /* SplatWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0A3826611C4B09240065B2B8 /* SplatWatch Extension.entitlements */,
+				0A41A9591C4AF61F00D80E15 /* InterfaceController.swift */,
+				0A41A95B1C4AF61F00D80E15 /* ExtensionDelegate.swift */,
+				0A41A95D1C4AF61F00D80E15 /* NotificationController.swift */,
+				0A41A95F1C4AF61F00D80E15 /* GlanceController.swift */,
+				0A41A9611C4AF61F00D80E15 /* ComplicationController.swift */,
+				0A41A9631C4AF61F00D80E15 /* Assets.xcassets */,
+				0A41A9651C4AF61F00D80E15 /* Info.plist */,
+				0A41A9571C4AF61F00D80E15 /* Supporting Files */,
+			);
+			path = "SplatWatch Extension";
+			sourceTree = "<group>";
+		};
+		0A41A9571C4AF61F00D80E15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A41A9581C4AF61F00D80E15 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		0A9AD9331C29F5B300CDFBE7 /* Weapons */ = {
@@ -1205,6 +1314,8 @@
 				0A3503F71C286A30009C6A48 /* SplatWidget */,
 				0AC6079E1C189B36006EECA7 /* SplatPalTests */,
 				0AC607A91C189B36006EECA7 /* SplatPalUITests */,
+				0A41A9471C4AF61E00D80E15 /* SplatWatch */,
+				0A41A9561C4AF61F00D80E15 /* SplatWatch Extension */,
 				0AC607861C189B36006EECA7 /* Products */,
 				B81E0E35C30F8CE205ED4CC2 /* Pods */,
 				E826F755AD1976281175B248 /* Frameworks */,
@@ -1218,6 +1329,8 @@
 				0AC6079B1C189B36006EECA7 /* SplatPalTests.xctest */,
 				0AC607A61C189B36006EECA7 /* SplatPalUITests.xctest */,
 				0A3503F41C286A30009C6A48 /* SplatWidget.appex */,
+				0A41A9461C4AF61E00D80E15 /* SplatWatch.app */,
+				0A41A9521C4AF61F00D80E15 /* SplatWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1644,6 +1757,8 @@
 				3297FDF7A703D876943BE2E6 /* Pods-SplatPal.release.xcconfig */,
 				9981F1D3F6C6C41A6CE0060D /* Pods-SplatWidget.debug.xcconfig */,
 				1F17E541D5268368D962836C /* Pods-SplatWidget.release.xcconfig */,
+				1FBC42DFF3D15E3C277DEED6 /* Pods-SplatWatch Extension.debug.xcconfig */,
+				552E39D512A78F01AB6482EA /* Pods-SplatWatch Extension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1654,6 +1769,7 @@
 				8FBDCB17D189739D652437DA /* Pods_SplatPal.framework */,
 				0A3503F51C286A30009C6A48 /* NotificationCenter.framework */,
 				92C430A69EE99A04B17E0712 /* Pods_SplatWidget.framework */,
+				A20F906FCCAD5C4E556D42F8 /* Pods_SplatWatch_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1682,6 +1798,43 @@
 			productReference = 0A3503F41C286A30009C6A48 /* SplatWidget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		0A41A9451C4AF61E00D80E15 /* SplatWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A41A96F1C4AF61F00D80E15 /* Build configuration list for PBXNativeTarget "SplatWatch" */;
+			buildPhases = (
+				0A41A9441C4AF61E00D80E15 /* Resources */,
+				0A41A96E1C4AF61F00D80E15 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A41A9551C4AF61F00D80E15 /* PBXTargetDependency */,
+			);
+			name = SplatWatch;
+			productName = SplatWatch;
+			productReference = 0A41A9461C4AF61E00D80E15 /* SplatWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0A41A9511C4AF61F00D80E15 /* SplatWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A41A96D1C4AF61F00D80E15 /* Build configuration list for PBXNativeTarget "SplatWatch Extension" */;
+			buildPhases = (
+				8E57D07B282FC0E5480AC24A /* Check Pods Manifest.lock */,
+				0A41A94E1C4AF61F00D80E15 /* Sources */,
+				0A41A94F1C4AF61F00D80E15 /* Frameworks */,
+				0A41A9501C4AF61F00D80E15 /* Resources */,
+				172D522A5E11D44F64649288 /* Embed Pods Frameworks */,
+				8DD8E33A7A1DD388D2CF303E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SplatWatch Extension";
+			productName = "SplatWatch Extension";
+			productReference = 0A41A9521C4AF61F00D80E15 /* SplatWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		0AC607841C189B36006EECA7 /* SplatPal */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AC607AF1C189B36006EECA7 /* Build configuration list for PBXNativeTarget "SplatPal" */;
@@ -1695,11 +1848,13 @@
 				0AA23E3E1C1B75410002BCC2 /* Update Build Number */,
 				0AA23E451C1B89E20002BCC2 /* Fabric */,
 				0A3504041C286A30009C6A48 /* Embed App Extensions */,
+				0A41A9701C4AF61F00D80E15 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				0A3503FF1C286A30009C6A48 /* PBXTargetDependency */,
+				0A41A9671C4AF61F00D80E15 /* PBXTargetDependency */,
 			);
 			name = SplatPal;
 			productName = SplatPal;
@@ -1761,6 +1916,24 @@
 							};
 						};
 					};
+					0A41A9451C4AF61E00D80E15 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = S7BT87895F;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					0A41A9511C4AF61F00D80E15 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = S7BT87895F;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					0AC607841C189B36006EECA7 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = S7BT87895F;
@@ -1797,6 +1970,8 @@
 				0AC6079A1C189B36006EECA7 /* SplatPalTests */,
 				0AC607A51C189B36006EECA7 /* SplatPalUITests */,
 				0A3503F31C286A30009C6A48 /* SplatWidget */,
+				0A41A9451C4AF61E00D80E15 /* SplatWatch */,
+				0A41A9511C4AF61F00D80E15 /* SplatWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -1807,6 +1982,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A3503FC1C286A30009C6A48 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A41A9441C4AF61E00D80E15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A41A94C1C4AF61F00D80E15 /* Assets.xcassets in Resources */,
+				0A41A94A1C4AF61F00D80E15 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A41A9501C4AF61F00D80E15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A41A9641C4AF61F00D80E15 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2309,7 +2501,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "versionNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"$INFOPLIST_FILE\")\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"/Users/kevin/Documents/github/SplatPal/SplatWidget/Info.plist\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $versionNumber\" \"/Users/kevin/Documents/github/SplatPal/SplatWidget/Info.plist\"";
+			shellScript = "versionNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"$INFOPLIST_FILE\")\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"/Users/kevin/Documents/github/SplatPal/SplatWidget/Info.plist\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $versionNumber\" \"/Users/kevin/Documents/github/SplatPal/SplatWidget/Info.plist\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"/Users/kevin/Documents/github/SplatPal/SplatWatch Extension/Info.plist\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $versionNumber\" \"/Users/kevin/Documents/github/SplatPal/SplatWatch Extension/Info.plist\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"/Users/kevin/Documents/github/SplatPal/SplatWatch/Info.plist\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $versionNumber\" \"/Users/kevin/Documents/github/SplatPal/SplatWatch/Info.plist\"";
 		};
 		0AA23E451C1B89E20002BCC2 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2324,6 +2516,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" e9e0fd3a066ecdbf0929f4b7ad16a4dc16d5468b 29c867f398edb79a7f762f24fb3193b235728bdceb51a924c84ba7c78564ee4d";
+		};
+		172D522A5E11D44F64649288 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplatWatch Extension/Pods-SplatWatch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		215122E5BEB3DC062E3E5AB8 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2368,6 +2575,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplatPal/Pods-SplatPal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DD8E33A7A1DD388D2CF303E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplatWatch Extension/Pods-SplatWatch Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E57D07B282FC0E5480AC24A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		DF3E91F8ADCBFC5CCA76D8C5 /* Check Pods Manifest.lock */ = {
@@ -2427,6 +2664,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0A41A94E1C4AF61F00D80E15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A41A9711C4AF71E00D80E15 /* SplatData.swift in Sources */,
+				0A41A95E1C4AF61F00D80E15 /* NotificationController.swift in Sources */,
+				0A41A95C1C4AF61F00D80E15 /* ExtensionDelegate.swift in Sources */,
+				0A41A9621C4AF61F00D80E15 /* ComplicationController.swift in Sources */,
+				0A41A95A1C4AF61F00D80E15 /* InterfaceController.swift in Sources */,
+				0A41A9601C4AF61F00D80E15 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0AC607811C189B36006EECA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2471,6 +2721,16 @@
 			target = 0A3503F31C286A30009C6A48 /* SplatWidget */;
 			targetProxy = 0A3503FE1C286A30009C6A48 /* PBXContainerItemProxy */;
 		};
+		0A41A9551C4AF61F00D80E15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A41A9511C4AF61F00D80E15 /* SplatWatch Extension */;
+			targetProxy = 0A41A9541C4AF61F00D80E15 /* PBXContainerItemProxy */;
+		};
+		0A41A9671C4AF61F00D80E15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A41A9451C4AF61E00D80E15 /* SplatWatch */;
+			targetProxy = 0A41A9661C4AF61F00D80E15 /* PBXContainerItemProxy */;
+		};
 		0AC6079D1C189B36006EECA7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0AC607841C189B36006EECA7 /* SplatPal */;
@@ -2490,6 +2750,14 @@
 				0A3503FB1C286A30009C6A48 /* Base */,
 			);
 			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		0A41A9481C4AF61E00D80E15 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A41A9491C4AF61F00D80E15 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 		0AC6078E1C189B36006EECA7 /* Main.storyboard */ = {
@@ -2542,6 +2810,82 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0A41A9691C4AF61F00D80E15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SplatWatch/SplatWatch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				IBSC_MODULE = SplatWatch_Extension;
+				INFOPLIST_FILE = SplatWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sideapps.SplatPal.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		0A41A96A1C4AF61F00D80E15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SplatWatch/SplatWatch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				IBSC_MODULE = SplatWatch_Extension;
+				INFOPLIST_FILE = SplatWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sideapps.SplatPal.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		0A41A96B1C4AF61F00D80E15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FBC42DFF3D15E3C277DEED6 /* Pods-SplatWatch Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "SplatWatch Extension/SplatWatch Extension.entitlements";
+				INFOPLIST_FILE = "SplatWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sideapps.SplatPal.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		0A41A96C1C4AF61F00D80E15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 552E39D512A78F01AB6482EA /* Pods-SplatWatch Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "SplatWatch Extension/SplatWatch Extension.entitlements";
+				INFOPLIST_FILE = "SplatWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sideapps.SplatPal.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
 			};
 			name = Release;
 		};
@@ -2726,6 +3070,24 @@
 			buildConfigurations = (
 				0A3504021C286A30009C6A48 /* Debug */,
 				0A3504031C286A30009C6A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A41A96D1C4AF61F00D80E15 /* Build configuration list for PBXNativeTarget "SplatWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A41A96B1C4AF61F00D80E15 /* Debug */,
+				0A41A96C1C4AF61F00D80E15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A41A96F1C4AF61F00D80E15 /* Build configuration list for PBXNativeTarget "SplatWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A41A9691C4AF61F00D80E15 /* Debug */,
+				0A41A96A1C4AF61F00D80E15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

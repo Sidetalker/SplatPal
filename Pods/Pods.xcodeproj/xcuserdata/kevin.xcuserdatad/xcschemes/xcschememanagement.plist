@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Alamofire.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Doorbell.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,17 +19,47 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-SplatPal-Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SplatPal-SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SplatPal.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-SplatWidget.xcscheme</key>
+		<key>Pods-SplatWatch Extension-Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftyJSON.xcscheme</key>
+		<key>Pods-SplatWatch Extension-SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SplatWatch Extension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SplatWidget-Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SplatWidget-SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SplatWidget.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,12 +72,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2F0C7AD09F09AF145E6B6296EABB14F9</key>
+		<key>0D2335A8D774DE3E6E31FA24BFA2711C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>432ECC54282C84882B482CCB4CF227FC</key>
+		<key>1F23D6CAC0CF85F02368298105A3D6FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>339B8DA9A567DCECC67EEDC4FE6CD6B4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,22 +92,42 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>56C0597D8A94B5F924FBCBDF15C3122E</key>
+		<key>5F237571F9A0AF2DBA3D83FD778D62CD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8562EC3386A2428CF2DF110BAF653885</key>
+		<key>61A8438EBA00F5FD5CA95C772AF4A296</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9CCA76BA8DB1537A7FCD79DA636B1956</key>
+		<key>8ED5485A6495A19F5EDDAEC3D38DDE42</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F36B5C2B61440FADB5545D8CBA93CC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AD6D8065CC3A78C76A1FB27B04D15B03</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>AE028DEBF540CD8280ED51BFA18D5935</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B0AB55009357A1ED47796F96EE24CCE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B728FEB019774F33F6642676BFBECA09</key>
 		<dict>
 			<key>primary</key>
 			<true/>

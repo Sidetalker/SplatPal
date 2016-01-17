@@ -1,0 +1,6 @@
+framework module Pods_SplatWatch_Extension {
+  umbrella header "Pods-SplatWatch Extension-umbrella.h"
+
+  export *
+  module * { export * }
+}
