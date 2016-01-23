@@ -115,8 +115,8 @@
                     <items>
                         <group alignment="left" id="t8f-Gd-c4y">
                             <items>
-                                <label width="0.80000000000000004" alignment="left" verticalAlignment="center" text="10:00" textAlignment="center" id="gbE-na-ycK"/>
-                                <imageView width="0.20000000000000001" alignment="right" verticalAlignment="center" image="rainmakerIcon.png" contentMode="scaleAspectFit" id="B5R-QL-Gch"/>
+                                <label width="0.80000000000000004" alignment="left" verticalAlignment="center" text="Refreshing" textAlignment="center" minimumScaleFactor="0.59999999999999998" id="gbE-na-ycK"/>
+                                <imageView width="0.20000000000000001" alignment="center" verticalAlignment="center" image="squidIcon.png" contentMode="scaleAspectFit" id="B5R-QL-Gch"/>
                             </items>
                         </group>
                         <group alignment="left" layout="vertical" id="uCw-4Q-Ouw">
@@ -125,10 +125,10 @@
                                     <items>
                                         <group width="1" alignment="left" layout="vertical" id="FRU-9y-nNf">
                                             <items>
-                                                <label alignment="left" text="Arowana Mall" minimumScaleFactor="0.5" id="TzQ-2k-shn">
+                                                <label alignment="left" minimumScaleFactor="0.5" id="TzQ-2k-shn">
                                                     <color key="textColor" red="0.066666666669999999" green="0.82352941180000006" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
-                                                <label alignment="left" text="Blackbelly Skatepark" minimumScaleFactor="0.5" id="y2y-Af-ON2">
+                                                <label alignment="left" minimumScaleFactor="0.5" id="y2y-Af-ON2">
                                                     <color key="textColor" red="0.066666666669999999" green="0.82352941180000006" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                             </items>
@@ -140,10 +140,10 @@
                                     <items>
                                         <group height="48.5" alignment="left" layout="vertical" id="s2L-WT-Txf">
                                             <items>
-                                                <label alignment="left" text="Camp Triggerfish" minimumScaleFactor="0.5" id="rI4-EB-wIc">
+                                                <label alignment="left" minimumScaleFactor="0.5" id="rI4-EB-wIc">
                                                     <color key="textColor" red="0.52549019610000003" green="0.94117647059999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
-                                                <label alignment="left" text="Saltspray Rig" minimumScaleFactor="0.5" id="gYQ-P0-Apr">
+                                                <label alignment="left" minimumScaleFactor="0.5" id="gYQ-P0-Apr">
                                                     <color key="textColor" red="0.52549019610000003" green="0.94117647059999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                             </items>

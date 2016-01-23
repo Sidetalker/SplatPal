@@ -311,7 +311,7 @@ class MapsTableViewController: UITableViewController {
         if !NSUserDefaults.standardUserDefaults().boolForKey("mapNotificationsOn") { return }
         
         var matches = [Match]()
-        let notifications = loadNotifications()
+        let notificationSettings = loadNotifications()
         
         // Create Match items for each upcoming map
         for x in 2...5 {
@@ -325,7 +325,7 @@ class MapsTableViewController: UITableViewController {
         }
         
         // Schedule notifications as needed
-        for notification in notifications {
+        for notification in notificationSettings {
             for match in matches {
                 if notification.containsMatch(match) {
                     let times = notification.getTimeNumbers()
@@ -333,16 +333,161 @@ class MapsTableViewController: UITableViewController {
                     
                     for (x, time) in times.enumerate() {
                         let localNotification = UILocalNotification()
-                        let notificationText = "\(match.map) is up on \(match.mode) \(timeTexts[x]) (\(notification.name))"
+                        let notificationText = "\(match.map) is up on \(match.mode) \(timeTexts[x])"
+                        localNotification.alertTitle = notification.name
                         localNotification.alertBody = notificationText
                         localNotification.alertAction = "splat"
                         localNotification.fireDate = match.timeDate.dateByAddingTimeInterval(NSTimeInterval(time * -60))
                         localNotification.soundName = UILocalNotificationDefaultSoundName
                         localNotification.category = "RotationNotification"
                         
+                        localNotification.userInfo = [NSObject : AnyObject]()
+                        localNotification.userInfo!["alertName"] = notification.name
+                        localNotification.userInfo!["map"] = match.map
+                        localNotification.userInfo!["mode"] = match.mode
+                        localNotification.userInfo!["timeText"] = timeTexts[x]
+                        
                         UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
                         log.debug("Created Notification: \(notificationText)")
                     }
+                }
+            }
+        }
+        
+        // Group notifications firing at the same time
+        if let scheduledNotifications = UIApplication.sharedApplication().scheduledLocalNotifications {
+            var fireDates = [NSDate]()
+            var names = [String]()
+            var correspondingNotifications = [[UILocalNotification]]()
+            
+            // Organize identical notifications
+            for scheduledNotification in scheduledNotifications {
+                let curDate = scheduledNotification.fireDate!
+                let curName = scheduledNotification.alertTitle!
+                
+                if !fireDates.contains(curDate) {
+                    fireDates.append(curDate)
+                    names.append(curName)
+                    correspondingNotifications.append([scheduledNotification])
+                }
+                else {
+                    correspondingNotifications[fireDates.indexOf(curDate)!].append(scheduledNotification)
+                }
+            }
+            
+            // Generate grouped notifications
+            for notificationSet in correspondingNotifications {
+                if notificationSet.count == 1 { continue }
+                
+                for notif in notificationSet {
+                    UIApplication.sharedApplication().cancelLocalNotification(notif)
+                    log.debug("Cancelled notification for grouping: \(notif.alertBody!)")
+                }
+                
+                if notificationSet.count == 2 {
+                    let map1 = notificationSet[0].userInfo!["map"] as! String
+                    let map2 = notificationSet[1].userInfo!["map"] as! String
+                    let mode1 = notificationSet[0].userInfo!["mode"] as! String
+                    let mode2 = notificationSet[1].userInfo!["mode"] as! String
+                    let timeText = notificationSet[0].userInfo!["timeText"] as! String
+                    
+                    let groupedNotification = UILocalNotification()
+                    groupedNotification.alertTitle = notificationSet[0].alertTitle
+                    groupedNotification.alertAction = "splat"
+                    groupedNotification.fireDate = notificationSet[0].fireDate
+                    groupedNotification.soundName = UILocalNotificationDefaultSoundName
+                    groupedNotification.category = "RotationNotification"
+                    
+                    var text = "Notification error, please report"
+                    
+                    if map1 == map2 {
+                        text = "\(map1) is up on \(mode1) + \(mode2) \(timeText)"
+                    }
+                    else if mode1 == mode2 {
+                        text = "\(map1) + \(map2) are up on \(mode1) \(timeText)"
+                    }
+                    
+                    groupedNotification.alertBody = text
+                    
+                    UIApplication.sharedApplication().scheduleLocalNotification(groupedNotification)
+                    log.debug("Created Grouped Notification: \(text)")
+                }
+                else if notificationSet.count == 3 {
+                    let map1 = notificationSet[0].userInfo!["map"] as! String
+                    let map2 = notificationSet[1].userInfo!["map"] as! String
+                    let map3 = notificationSet[2].userInfo!["map"] as! String
+                    let mode1 = notificationSet[0].userInfo!["mode"] as! String
+                    let mode2 = notificationSet[1].userInfo!["mode"] as! String
+                    let mode3 = notificationSet[2].userInfo!["mode"] as! String
+                    let timeText = notificationSet[0].userInfo!["timeText"] as! String
+                    
+                    let groupedNotification = UILocalNotification()
+                    groupedNotification.alertTitle = notificationSet[0].alertTitle
+                    groupedNotification.alertAction = "splat"
+                    groupedNotification.fireDate = notificationSet[0].fireDate
+                    groupedNotification.soundName = UILocalNotificationDefaultSoundName
+                    groupedNotification.category = "RotationNotification"
+                    
+                    var text = "Notification error, please report"
+                    
+                    if mode1 == mode2 {
+                        text = "\(map1) + \(map2) are up on \(mode1) and \(map3) is up on \(mode3) \(timeText)"
+                    }
+                    else if mode1 == mode3 {
+                        text = "\(map1) + \(map3) are up on \(mode1) and \(map2) is up on \(mode2) \(timeText)"
+                    }
+                    else if mode2 == mode3 {
+                        text = "\(map2) + \(map3) are up on \(mode2) and \(map1) is up on \(mode1) \(timeText)"
+                    }
+                    
+                    groupedNotification.alertBody = text
+                    
+                    UIApplication.sharedApplication().scheduleLocalNotification(groupedNotification)
+                    log.debug("Created Grouped Notification: \(text)")
+                }
+                else if notificationSet.count == 4 {
+                    let map1 = notificationSet[0].userInfo!["map"] as! String
+                    let map2 = notificationSet[1].userInfo!["map"] as! String
+                    let map3 = notificationSet[2].userInfo!["map"] as! String
+                    let map4 = notificationSet[3].userInfo!["map"] as! String
+                    let mode1 = notificationSet[0].userInfo!["mode"] as! String
+                    let mode2 = notificationSet[1].userInfo!["mode"] as! String
+                    let mode3 = notificationSet[2].userInfo!["mode"] as! String
+                    let mode4 = notificationSet[3].userInfo!["mode"] as! String
+                    let timeText = notificationSet[0].userInfo!["timeText"] as! String
+                    
+                    let groupedNotification = UILocalNotification()
+                    groupedNotification.alertTitle = notificationSet[0].alertTitle
+                    groupedNotification.alertAction = "splat"
+                    groupedNotification.fireDate = notificationSet[0].fireDate
+                    groupedNotification.soundName = UILocalNotificationDefaultSoundName
+                    groupedNotification.category = "RotationNotification"
+                    
+                    var text = "Notification error, please report"
+                    
+                    if mode1 == mode2 {
+                        text = "\(map1) + \(map2) are up on \(mode1) and \(map3) + \(map4) are up on \(mode3) \(timeText)"
+                    }
+                    else if mode1 == mode3 {
+                        text = "\(map1) + \(map3) are up on \(mode1) and \(map2) + \(map4) are up on \(mode2) \(timeText)"
+                    }
+                    else if mode1 == mode4 {
+                        text = "\(map1) + \(map4) are up on \(mode1) and \(map2) + \(map3) are up on \(mode2) \(timeText)"
+                    }
+                    else if mode2 == mode3 {
+                        text = "\(map2) + \(map3) are up on \(mode2) and \(map1) + \(map4) are up on \(mode1) \(timeText)"
+                    }
+                    else if mode2 == mode4 {
+                        text = "\(map2) + \(map4) are up on \(mode2) and \(map1) + \(map3) are up on \(mode1) \(timeText)"
+                    }
+                    else if mode3 == mode4 {
+                        text = "\(map3) + \(map4) are up on \(mode3) and \(map1) + \(map2) are up on \(mode1) \(timeText)"
+                    }
+                    
+                    groupedNotification.alertBody = text
+                    
+                    UIApplication.sharedApplication().scheduleLocalNotification(groupedNotification)
+                    log.debug("Created Grouped Notification: \(text)")
                 }
             }
         }
