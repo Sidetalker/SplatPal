@@ -11,6 +11,12 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
+func getDocumentsDirectory() -> NSString {
+    let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+    let documentsDirectory = paths[0]
+    return documentsDirectory
+}
+
 class InterfaceController: WKInterfaceController {
     
     var rotationData: JSON!
@@ -125,12 +131,6 @@ class InterfaceController: WKInterfaceController {
         
         return JSON([:])
     }
-    
-    func getDocumentsDirectory() -> NSString {
-        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
-        let documentsDirectory = paths[0]
-        return documentsDirectory
-    }
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
@@ -234,11 +234,25 @@ class RotationInterface: WKInterfaceController {
         let timeRemainingSeconds = Int(endTime - NSDate().timeIntervalSince1970)
         
         if timeRemainingSeconds <= 0 {
-            updateTimer?.invalidate()
-            WKInterfaceController.reloadRootControllersWithNames(["loader"], contexts: nil)
+            refresh()
         } else {
             lblTime.setText(getTimeRemainingText(timeRemainingSeconds))
         }
+    }
+    
+    @IBAction func refreshTapped() {
+        let path = getDocumentsDirectory().stringByAppendingPathComponent("dataBuffer.json")
+        
+        do {
+            try "".writeToFile(path, atomically: true, encoding: NSUTF8StringEncoding)
+        } catch { }
+        
+        refresh()
+    }
+    
+    func refresh() {
+        updateTimer?.invalidate()
+        WKInterfaceController.reloadRootControllersWithNames(["loader"], contexts: nil)
     }
     
     func getTimeRemainingText(epochInt: Int) -> String {

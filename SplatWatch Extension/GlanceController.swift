@@ -34,6 +34,8 @@ class GlanceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
+        refreshData()
     }
 
     override func didDeactivate() {
@@ -42,6 +44,8 @@ class GlanceController: WKInterfaceController {
     }
     
     func refreshData() {
+        updateTimer?.invalidate()
+        
         if getTimeRemainingSeconds() <= 0 {
             loadMaps { data in
                 if data["errorCode"].int != nil {
@@ -87,7 +91,6 @@ class GlanceController: WKInterfaceController {
         let timeRemainingSeconds = getTimeRemainingSeconds()
         
         if timeRemainingSeconds <= 0 {
-            updateTimer?.invalidate()
             refreshData()
         } else {
             lblTime.setText(getTimeRemainingText(timeRemainingSeconds))

@@ -65,6 +65,7 @@
 		0A3B77881C4C4B4700C06E31 /* squidIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51931C25F208006ABE9B /* squidIcon.png */; };
 		0A3B77891C4C4B4700C06E31 /* squidIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51941C25F208006ABE9B /* squidIcon@2x.png */; };
 		0A3B778A1C4C4B4700C06E31 /* squidIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51951C25F208006ABE9B /* squidIcon@3x.png */; };
+		0A3B778C1C51A6F900C06E31 /* StageAncho-VGames.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B778B1C51A6F900C06E31 /* StageAncho-VGames.jpg */; };
 		0A41A94A1C4AF61F00D80E15 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A41A9481C4AF61E00D80E15 /* Interface.storyboard */; };
 		0A41A94C1C4AF61F00D80E15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A41A94B1C4AF61F00D80E15 /* Assets.xcassets */; };
 		0A41A9531C4AF61F00D80E15 /* SplatWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A41A9521C4AF61F00D80E15 /* SplatWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -642,6 +643,7 @@
 		0A3B776D1C4C3AE700C06E31 /* towerIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "towerIcon@2x.png"; path = "Images/towerIcon@2x.png"; sourceTree = "<group>"; };
 		0A3B776E1C4C3AE700C06E31 /* towerIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "towerIcon@3x.png"; path = "Images/towerIcon@3x.png"; sourceTree = "<group>"; };
 		0A3B777D1C4C4B3400C06E31 /* squidIcon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = squidIcon.svg; path = Images/squidIcon.svg; sourceTree = "<group>"; };
+		0A3B778B1C51A6F900C06E31 /* StageAncho-VGames.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "StageAncho-VGames.jpg"; path = "Images/Stages/StageAncho-VGames.jpg"; sourceTree = "<group>"; };
 		0A41A9461C4AF61E00D80E15 /* SplatWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplatWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A41A9491C4AF61F00D80E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		0A41A94B1C4AF61F00D80E15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1458,6 +1460,7 @@
 		0AC607C11C18A61E006EECA7 /* Stages */ = {
 			isa = PBXGroup;
 			children = (
+				0A3B778B1C51A6F900C06E31 /* StageAncho-VGames.jpg */,
 				0A36DEBA1C31DD06001E6DE4 /* StagePiranhaPit.jpg */,
 				0AC607C21C18A629006EECA7 /* StageArowanaMall.jpg */,
 				0AC607C31C18A629006EECA7 /* StageBlackbellySkatepark.jpg */,
@@ -2219,6 +2222,7 @@
 				0A0F6FF31C27105900206883 /* ProfileGearView.xib in Resources */,
 				0A9AD9D91C29F5D000CDFBE7 /* specialInkstrike.png in Resources */,
 				0A9AD9EF1C2A11F800CDFBE7 /* subPointSensor.png in Resources */,
+				0A3B778C1C51A6F900C06E31 /* StageAncho-VGames.jpg in Resources */,
 				0AA23E351C1B6E280002BCC2 /* abilitySpecialChargeUp.png in Resources */,
 				0A9AD9D41C29F5D000CDFBE7 /* specialBombRushSeeker.png in Resources */,
 				0ADF9BE71C1DF2DE002D7E81 /* gearCyclingCap.png in Resources */,

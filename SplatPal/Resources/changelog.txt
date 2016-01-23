@@ -1,4 +1,12 @@
-IF YOU HAVE AN APPLE WATCH PLEASE USE THE SEND FEEDBACK BUTTON TO LET ME KNOW!
+Version 0.3 (1126)
+- Support for Ancho-V Games
+
+Version 0.3 (1122)
+- Manual refresh added to Apple Watch force touch menu
+- Bugfix: Glance map rotation data did not update in certain cases
+
+Version 0.3 (1106)
+- Apple Watch main app + glance view completed
 
 Version 0.3 (1060)
 - Notification center support complete
@@ -76,7 +84,7 @@ Version 0.3 (197)
 
 Version 0.3 (180)
 - Bugfix: Fixed crash occurring on iOS 8 when tapping and holding on section headers
-
+ 
 Version 0.3 (149)
 - Added detail view to gear tab
 

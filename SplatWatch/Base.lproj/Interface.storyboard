@@ -87,6 +87,15 @@
                             </items>
                         </group>
                     </items>
+                    <menu key="menu" id="Rr1-Oh-jMj">
+                        <items>
+                            <menuItem title="Refresh" icon="repeat" id="jph-Vs-Ys5">
+                                <connections>
+                                    <action selector="refreshTapped" destination="53x-2u-Clm" id="sas-tz-UqK"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="imgRanked" destination="cbk-on-fJ0" id="qT4-I8-sld"/>
                         <outlet property="lblMap1" destination="pT2-Y5-jCj" id="R0s-FO-GTb"/>
