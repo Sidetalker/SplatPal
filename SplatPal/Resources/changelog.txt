@@ -1,3 +1,6 @@
+Version 0.3 (1147)
+- Simultaneous notifications will be grouped if possible
+
 Version 0.3 (1126)
 - Support for Ancho-V Games
 

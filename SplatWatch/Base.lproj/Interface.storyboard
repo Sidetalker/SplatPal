@@ -12,6 +12,15 @@
                     <items>
                         <imageView width="0.5" height="0.5" alignment="center" verticalAlignment="center" image="squid.png" contentMode="scaleAspectFit" id="Ysf-1a-AW1"/>
                     </items>
+                    <menu key="menu" id="kXz-oL-pwx">
+                        <items>
+                            <menuItem title="Refresh" icon="repeat" id="Qq0-iT-vwJ">
+                                <connections>
+                                    <action selector="refreshTapped" destination="AgC-eL-Hgc" id="lgb-2j-N8x"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="346.25"/>
@@ -39,6 +48,15 @@
                         <label alignment="left" text="Label" numberOfLines="2" id="wAn-ZG-hwV"/>
                         <label alignment="left" text="Label" numberOfLines="2" id="ccq-RN-JaX"/>
                     </items>
+                    <menu key="menu" id="7fD-lc-0OK">
+                        <items>
+                            <menuItem title="Refresh" icon="repeat" id="mMc-4m-evP">
+                                <connections>
+                                    <action selector="refreshTapped" destination="s6j-QQ-Pjh" id="uPx-H2-okp"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="lblMap1" destination="G4g-HN-xmI" id="WYG-JL-nbZ"/>
                         <outlet property="lblMap2" destination="wAn-ZG-hwV" id="Nux-LQ-vct"/>

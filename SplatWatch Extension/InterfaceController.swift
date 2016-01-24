@@ -20,6 +20,7 @@ func getDocumentsDirectory() -> NSString {
 class InterfaceController: WKInterfaceController {
     
     var rotationData: JSON!
+    var loading = false
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -40,9 +41,25 @@ class InterfaceController: WKInterfaceController {
         reloadViews()
     }
     
+    @IBAction func refreshTapped() {
+        guard !loading else { return }
+        
+        let path = getDocumentsDirectory().stringByAppendingPathComponent("dataBuffer.json")
+        
+        do {
+            try "".writeToFile(path, atomically: true, encoding: NSUTF8StringEncoding)
+        } catch { }
+        
+        reloadViews()
+    }
+    
     func reloadViews() {
         if getTimeRemainingSeconds() < 0 {
+            loading = true
+            
             loadMaps { data in
+                self.loading = false
+                
                 if data["errorCode"].int != nil {
                     NSLog("Error")
                 }
@@ -171,6 +188,20 @@ class SplatfestInterface: WKInterfaceController {
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+    
+    @IBAction func refreshTapped() {
+        let path = getDocumentsDirectory().stringByAppendingPathComponent("dataBuffer.json")
+        
+        do {
+            try "".writeToFile(path, atomically: true, encoding: NSUTF8StringEncoding)
+        } catch { }
+        
+        refresh()
+    }
+    
+    func refresh() {
+        WKInterfaceController.reloadRootControllersWithNames(["loader"], contexts: nil)
     }
 }
 
