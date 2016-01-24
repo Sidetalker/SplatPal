@@ -1,3 +1,6 @@
+Version 0.3 (1193)
+- All Watch complications implemented
+
 Version 0.3 (1147)
 - Simultaneous notifications will be grouped if possible
 

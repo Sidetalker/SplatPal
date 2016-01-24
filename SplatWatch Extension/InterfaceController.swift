@@ -7,6 +7,7 @@
 //
 
 import WatchKit
+import ClockKit
 import Foundation
 import Alamofire
 import SwiftyJSON
@@ -67,10 +68,22 @@ class InterfaceController: WKInterfaceController {
                     self.rotationData = data
                     self.saveData(data)
                     self.transitionViews()
+                    self.reloadComplications()
                 }
             }
         } else {
             self.transitionViews()
+        }
+    }
+    
+    private func reloadComplications() {
+        if let complications: [CLKComplication] = CLKComplicationServer.sharedInstance().activeComplications {
+            if complications.count > 0 {
+                for complication in complications {
+                    CLKComplicationServer.sharedInstance().reloadTimelineForComplication(complication)
+                    NSLog("Reloading complication \(complication.debugDescription)...")
+                }
+            }
         }
     }
     
