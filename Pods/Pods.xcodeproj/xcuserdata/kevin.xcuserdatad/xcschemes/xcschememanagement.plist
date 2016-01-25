@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Armchair.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Doorbell.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -82,12 +87,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>339B8DA9A567DCECC67EEDC4FE6CD6B4</key>
+		<key>2C519EA488ED20CAB5C1D8CED6EBDAFE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2DEF0C7FF9D1C7024028F34A97B996A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>36BDF063CCE078CF8F680542CC68061D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>4E1263BFF45F6446CF3DE29AE234C893</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5157A3FC0A33F6619EC32F1F6A8A14A5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,16 +122,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8ED5485A6495A19F5EDDAEC3D38DDE42</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8F36B5C2B61440FADB5545D8CBA93CC4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>AD6D8065CC3A78C76A1FB27B04D15B03</key>
 		<dict>
 			<key>primary</key>
@@ -122,12 +132,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B0AB55009357A1ED47796F96EE24CCE3</key>
+		<key>B728FEB019774F33F6642676BFBECA09</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B728FEB019774F33F6642676BFBECA09</key>
+		<key>C80CF32D1DB28142A1F20135BDEAB66E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

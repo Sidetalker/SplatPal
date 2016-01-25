@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (3.1.4)
+  - Armchair (0.1.1)
   - Crashlytics (3.6.0):
     - Fabric (~> 1.6.3)
   - Doorbell (0.0.6)
@@ -11,6 +12,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
+  - Armchair (~> 0.1.1)
   - Crashlytics
   - Doorbell (~> 0.0.6)
   - Fabric
@@ -21,6 +23,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: fbc829692f351fa1d8a31dd75fd7f7f56fea31fb
+  Armchair: 276f0dadba704b562870613301bdf7b595a29315
   Crashlytics: e4e8d02914f2608fbc7bf42b1a7af838b0db67a2
   Doorbell: d995ae651475acb63e49544529a4bd4bc79646db
   Fabric: cbe0ca6c9531bba17910052f6f105fcbc5fa7f67

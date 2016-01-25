@@ -85,6 +85,7 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-SplatPal/Alamofire.framework"
+  install_framework "Pods-SplatPal/Armchair.framework"
   install_framework "Pods-SplatPal/Doorbell.framework"
   install_framework "Pods-SplatPal/Kanna.framework"
   install_framework "Pods-SplatPal/MGSwipeTableCell.framework"
@@ -93,6 +94,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-SplatPal/Alamofire.framework"
+  install_framework "Pods-SplatPal/Armchair.framework"
   install_framework "Pods-SplatPal/Doorbell.framework"
   install_framework "Pods-SplatPal/Kanna.framework"
   install_framework "Pods-SplatPal/MGSwipeTableCell.framework"

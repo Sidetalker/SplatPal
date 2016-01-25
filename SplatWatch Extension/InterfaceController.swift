@@ -240,7 +240,7 @@ class RotationInterface: WKInterfaceController {
             lblMap1.setText(splatData["map1"] as? String)
             lblMap2.setText(splatData["map2"] as? String)
             lblMap3.setText(splatData["map3"] as? String)
-            lblMap3.setText(splatData["map4"] as? String)
+            lblMap4.setText(splatData["map4"] as? String)
             
             let mode = splatData["rankedMode"] as! String
             

@@ -75,16 +75,16 @@
                     <items>
                         <group width="1" alignment="left" id="hD2-2E-Hw1">
                             <items>
-                                <label alignment="left" text="12:00 - 05:00" minimumScaleFactor="0.5" id="dUf-gW-gXX"/>
-                                <imageView width="0.20000000000000001" height="1" alignment="right" image="rainmakerIcon.png" contentMode="scaleAspectFit" id="cbk-on-fJ0"/>
+                                <label alignment="left" text="Loading" minimumScaleFactor="0.5" id="dUf-gW-gXX"/>
+                                <imageView width="0.20000000000000001" height="1" alignment="right" image="squidIcon.png" contentMode="scaleAspectFit" id="cbk-on-fJ0"/>
                             </items>
                         </group>
                         <group width="1" alignment="left" layout="vertical" id="7Jy-1U-kh3">
                             <items>
-                                <label alignment="left" text="Arowana Mall" numberOfLines="0" id="pT2-Y5-jCj">
+                                <label alignment="left" text="Error Loading" numberOfLines="0" id="pT2-Y5-jCj">
                                     <color key="textColor" red="0.066666666669999999" green="0.82352941180000006" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </label>
-                                <label width="1" alignment="left" text="Blackbelly Skatepark" numberOfLines="0" id="jaT-Cm-kIM">
+                                <label width="1" alignment="left" text="Error Loading" numberOfLines="0" id="jaT-Cm-kIM">
                                     <color key="textColor" red="0.066666666669999999" green="0.82352941180000006" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </label>
                             </items>
@@ -94,10 +94,10 @@
                             <items>
                                 <group alignment="left" layout="vertical" id="srP-Ri-f0r">
                                     <items>
-                                        <label alignment="left" text="Camp Triggerfish" numberOfLines="0" id="WsS-GL-EeF">
+                                        <label alignment="left" text="Error Loading" numberOfLines="0" id="WsS-GL-EeF">
                                             <color key="textColor" red="0.52549019610000003" green="0.94117647059999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
-                                        <label alignment="left" text="Saltspray Rig" numberOfLines="0" id="eDQ-Bj-gLV">
+                                        <label alignment="left" text="Error Loading" numberOfLines="0" id="eDQ-Bj-gLV">
                                             <color key="textColor" red="0.52549019610000003" green="0.94117647059999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </items>

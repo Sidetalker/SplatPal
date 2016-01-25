@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B3D2B65987019C6E90838CB3'
+               BlueprintIdentifier = 'AA1FD17CBDEDDA664BD15EAB'
                BlueprintName = 'Pods-SplatWatch Extension'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_SplatWatch_Extension.framework'>

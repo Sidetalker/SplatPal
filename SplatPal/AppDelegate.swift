@@ -13,6 +13,7 @@ import Fabric
 import Crashlytics
 import SwiftyJSON
 import Alamofire
+import Armchair
 
 let log = XCGLogger.defaultInstance()
 let feedback = Doorbell(apiKey: "huNJHAdBmvWXZKIMHrdYjdZ0XZJEL03aReY71ASNWY8hhguVXb2oZhLMD5ji8ERv", appId: "2756")
@@ -33,6 +34,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Configure Fabric modules
         Fabric.with([Crashlytics.self])
+        
+        // Intialize Armchair
+        Armchair.appID("1067040948")
+        Armchair.daysUntilPrompt(7)
+        Armchair.usesUntilPrompt(5)
         
         // Initialize XCGLogger
         log.setup(.Debug, showLogIdentifier: false, showFunctionName: false, showThreadName: false, showLogLevel: true, showFileNames: true, showLineNumbers: false, showDate: false, writeToFile: nil, fileLogLevel: nil)
