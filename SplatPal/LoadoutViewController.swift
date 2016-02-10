@@ -660,6 +660,9 @@ class LoadoutReviewController: UITableViewController, IconSelectionViewDelegate 
         log.debug("URL: \(loadoutURL)")
         
         let shareSheet = UIActivityViewController(activityItems: [loadoutURL], applicationActivities: nil)
+        shareSheet.popoverPresentationController?.sourceView = tableView.cellForRowAtIndexPath(indexPath)
+        shareSheet.popoverPresentationController?.sourceRect = tableView.cellForRowAtIndexPath(indexPath)!.bounds
+        
         self.presentViewController(shareSheet, animated: true, completion: nil)
     }
     
