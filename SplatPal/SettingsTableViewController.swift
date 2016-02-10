@@ -196,11 +196,13 @@ class NNIDSettingsTableViewController: UITableViewController, UITextFieldDelegat
     
     func login() {
         nnid.updateCredentials(txtUsername.text!, password: txtPassword.text!)
+        self.navigationController?.navigationBar.topItem?.hidesBackButton = true
         self.lblLogIn.hidden = true
         self.loginSpinner.hidden = false
         self.loginSpinner.startAnimating()
         
         loginNNID { error in
+            self.navigationController?.navigationBar.topItem?.hidesBackButton = false
             self.lblLogIn.hidden = false
             self.loginSpinner.hidden = true
             self.loginSpinner.stopAnimating()
