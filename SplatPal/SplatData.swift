@@ -95,29 +95,25 @@ func loadMaps(completion: (JSON) -> ()) {
                         }
                         
                         // Check for outdatedness
-                        while endTimes[0] != 0 && NSDate().compare(NSDate(timeIntervalSince1970: endTimes[0])) == .OrderedDescending {
-                            for x in 0...1 {
-                                startTimes[x] = startTimes[x + 1]
-                                endTimes[x] = endTimes[x + 1]
-                                turfMaps[x * 2] = turfMaps[(x + 1) * 2]
-                                turfMaps[x * 2 + 1] = turfMaps[(x + 1) * 2 + 1]
-                                rankedMaps[x * 2] = rankedMaps[(x + 1) * 2]
-                                rankedMaps[x * 2 + 1] = rankedMaps[(x + 1) * 2 + 1]
-                                rankedModes[x] = rankedModes[x + 1]
+                        while endTimes.count >= 1 {
+                            if endTimes[0] != 0 && NSDate().compare(NSDate(timeIntervalSince1970: endTimes[0])) == .OrderedDescending {
+                                startTimes.removeAtIndex(0)
+                                endTimes.removeAtIndex(0)
+                                turfMaps.removeAtIndex(0)
+                                turfMaps.removeAtIndex(1)
+                                rankedMaps.removeAtIndex(0)
+                                rankedMaps.removeAtIndex(1)
+                                rankedModes.removeAtIndex(0)
+                            } else {
+                                break
                             }
-                            
-                            startTimes[2] = 0
-                            endTimes[2] = 0
-                            turfMaps[4] = ""
-                            turfMaps[5] = ""
-                            rankedMaps[4] = ""
-                            rankedMaps[5] = ""
-                            rankedModes[2] = ""
                         }
                         
                         // All data is out of date
-                        if startTimes[0] == 0 {
-                            completion(JSON(["errorCode" : 503, "errorMessage" : "Splatoon.ink data is not available"]))
+                        if startTimes.count == 0 {
+                            completion(JSON(["errorCode" : 503, "errorMessage" : "Nintendo map data is not available"]))
+                        } else if startTimes[0] == 0 {
+                            completion(JSON(["errorCode" : 503, "errorMessage" : "Nintendo map data is not available"]))
                         } else {
                             let dataDict = ["startTimes" : startTimes, "endTimes" : endTimes, "turfMaps" : turfMaps, "rankedMaps" : rankedMaps, "rankedModes" : rankedModes, "splatfest" : splatfest]
                             completion(JSON(dataDict))
@@ -179,28 +175,24 @@ func loadMaps(completion: (JSON) -> ()) {
                         }
                         
                         // Check for outdatedness
-                        while endTimes[0] != 0 && NSDate().compare(NSDate(timeIntervalSince1970: endTimes[0])) == .OrderedDescending {
-                            for x in 0...1 {
-                                startTimes[x] = startTimes[x + 1]
-                                endTimes[x] = endTimes[x + 1]
-                                turfMaps[x * 2] = turfMaps[(x + 1) * 2]
-                                turfMaps[x * 2 + 1] = turfMaps[(x + 1) * 2 + 1]
-                                rankedMaps[x * 2] = rankedMaps[(x + 1) * 2]
-                                rankedMaps[x * 2 + 1] = rankedMaps[(x + 1) * 2 + 1]
-                                rankedModes[x] = rankedModes[x + 1]
+                        while endTimes.count >= 1 {
+                            if endTimes[0] != 0 && NSDate().compare(NSDate(timeIntervalSince1970: endTimes[0])) == .OrderedDescending {
+                                startTimes.removeAtIndex(0)
+                                endTimes.removeAtIndex(0)
+                                turfMaps.removeAtIndex(0)
+                                turfMaps.removeAtIndex(1)
+                                rankedMaps.removeAtIndex(0)
+                                rankedMaps.removeAtIndex(1)
+                                rankedModes.removeAtIndex(0)
+                            } else {
+                                break
                             }
-                            
-                            startTimes[2] = 0
-                            endTimes[2] = 0
-                            turfMaps[4] = ""
-                            turfMaps[5] = ""
-                            rankedMaps[4] = ""
-                            rankedMaps[5] = ""
-                            rankedModes[2] = ""
                         }
                         
                         // All data is out of date
-                        if startTimes[0] == 0 {
+                        if startTimes.count == 0 {
+                            completion(JSON(["errorCode" : 503, "errorMessage" : "Splatoon.ink data is not available"]))
+                        } else if startTimes[0] == 0 {
                             completion(JSON(["errorCode" : 503, "errorMessage" : "Splatoon.ink data is not available"]))
                         } else {
                             let dataDict = ["startTimes" : startTimes, "endTimes" : endTimes, "turfMaps" : turfMaps, "rankedMaps" : rankedMaps, "rankedModes" : rankedModes, "splatfest" : splatfest]
