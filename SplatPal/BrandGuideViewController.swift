@@ -167,6 +167,7 @@ class BrandGuideViewController: UIViewController, IconSelectionViewDelegate {
         iconView.layer.shadowOffset = CGSizeZero
         iconView.layer.shadowOpacity = 0.5
         iconView.switchTypes("brands")
+        iconView.setAbilities(abilitiesBrands)
     }
     
     override func viewWillAppear(animated: Bool) {

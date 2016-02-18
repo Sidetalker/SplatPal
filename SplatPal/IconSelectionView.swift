@@ -10,7 +10,8 @@ import UIKit
 
 let brands = ["amiibo", "Cuttlegear", "Famitsu", "Firefin", "Forge", "KOG", "Inkline", "Krak-On", "Rockenberg", "Skalop", "Splash Mob", "SquidForce", "Takoroka", "Tentatek", "The SQUID GIRL", "Zekko", "Zink"]
 let abilities = ["Bomb Range Up", "Bomb Sniffer", "Cold Blooded", "Comeback", "Damage Up", "Defence Up", "Haunt", "Ink Recovery Up", "Ink Resistance Up", "Ink Saver (Main)", "Ink Saver (Sub)", "Last-Ditch Effort", "Ninja Squid", "Opening Gambit", "Quick Respawn", "Quick Super Jump", "Recon", "Run Speed Up", "Special Charge Up", "Special Duration Up", "Special Saver", "Stealth Jump", "Swim Speed Up", "Tenacity", "None"]
-let abilitiesRestricted = [abilities[4], abilities[5], abilities[7], abilities[9], abilities[10], abilities[14], abilities[15], abilities[17], abilities[18], abilities[19], abilities[20], abilities[22], abilities[24]]
+let abilitiesBrands = [abilities[4], abilities[5], abilities[7], abilities[9], abilities[10], abilities[14], abilities[15], abilities[17], abilities[18], abilities[19], abilities[20], abilities[22], abilities[24]]
+let abilitiesSecondaries = [abilities[0], abilities[4], abilities[5], abilities[7], abilities[9], abilities[10], abilities[14], abilities[15], abilities[17], abilities[18], abilities[19], abilities[20], abilities[22], abilities[24]]
 
 // MARK: - IconSelectionView
 
@@ -37,9 +38,9 @@ class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataS
     var showTitle = true
     var singleSelection = false
     var currentSelection = -1
-    var limitedAbilities = true
     var brandsSelected = [Bool]()
     var abilitiesSelected = [Bool]()
+    var abilitiesAllowed = [String]()
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -73,14 +74,14 @@ class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataS
     
     func clearSelections() {
         brandsSelected = Array(count: brands.count, repeatedValue: false)
-        abilitiesSelected = Array(count: limitedAbilities ? abilitiesRestricted.count : abilities.count, repeatedValue: false)
+        abilitiesSelected = Array(count: abilitiesAllowed.count, repeatedValue: false)
         currentSelection = -1
         collectionView.reloadData()
     }
     
-    func toggleLimitedAbilities(onOrOff: Bool) {
-        limitedAbilities = onOrOff
-        abilitiesSelected = Array(count: limitedAbilities ? abilitiesRestricted.count : abilities.count, repeatedValue: false)
+    func setAbilities(abilitiesAllowed: [String]) {
+        self.abilitiesAllowed = abilitiesAllowed
+        abilitiesSelected = Array(count: abilitiesAllowed.count, repeatedValue: false)
         collectionView.reloadData()
     }
     
@@ -146,7 +147,7 @@ class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataS
         case "brands":
             return brands.count
         case "abilities":
-            return limitedAbilities ? abilitiesRestricted.count : abilities.count
+            return abilitiesAllowed.count
         default:
             return 0
         }
@@ -166,8 +167,7 @@ class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataS
             let cell = collectionView.dequeueReusableCellWithReuseIdentifier("abilityCell", forIndexPath: indexPath) as! AbilityCell
             cell.pressed = singleSelection ? indexPath.row == currentSelection : abilitiesSelected[indexPath.row]
             cell.index = indexPath.row
-            cell.restricted = limitedAbilities
-            cell.update()
+            cell.update(abilitiesAllowed[indexPath.row])
             
             return cell
         default:
@@ -189,12 +189,11 @@ class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataS
         case "abilities":
             abilitiesSelected[indexPath.row] = !abilitiesSelected[indexPath.row]
             currentSelection = indexPath.row
-            let abilityData = limitedAbilities ? abilitiesRestricted : abilities
             
             if singleSelection {
-                delegate?.iconSelectionViewAbilitiesUpdated(self, selectedAbilities: [abilityData[currentSelection]])
+                delegate?.iconSelectionViewAbilitiesUpdated(self, selectedAbilities: [abilitiesAllowed[currentSelection]])
             } else {
-                delegate?.iconSelectionViewAbilitiesUpdated(self, selectedAbilities: abilityData.booleanFilter(abilitiesSelected)!)
+                delegate?.iconSelectionViewAbilitiesUpdated(self, selectedAbilities: abilitiesAllowed.booleanFilter(abilitiesSelected)!)
             }
         default: break
         }
@@ -207,7 +206,6 @@ class IconSelectionView: UIView, UICollectionViewDelegate, UICollectionViewDataS
 
 class AbilityCell: UICollectionViewCell {
     var imageView: UIImageView!
-    var restricted = true
     var pressed = false
     var index = -1
     
@@ -226,11 +224,9 @@ class AbilityCell: UICollectionViewCell {
         addSubview(imageView)
     }
     
-    func update() {
+    func update(ability: String) {
         let image: UIImage = pressed ? SplatAppStyle.imageOfAbilityContainerSelected: SplatAppStyle.imageOfAbilityContainerUnselected
         backgroundColor = UIColor(patternImage: image)
-        
-        let ability = restricted ? abilitiesRestricted[index] : abilities[index]
         imageView.image = UIImage(named: "ability\(ability.removeWhitespace()).png")
     }
 }

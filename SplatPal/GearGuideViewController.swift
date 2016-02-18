@@ -307,7 +307,7 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
     
     @IBAction func mainButtonTapped(sender: AnyObject) {
         selectionFlag = 0
-        iconView.toggleLimitedAbilities(false)
+        iconView.setAbilities(abilities)
         iconView.currentSelection = -1
         iconView.lblTitle.text = "Select Main Ability"
         iconViewHeight.constant = iconView.getProperHeight() > view.frame.height * 3 / 4 ? view.frame.height * 3 / 4 : iconView.getProperHeight()
@@ -316,7 +316,7 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
     
     @IBAction func subButtonTapped(sender: AnyObject) {
         selectionFlag = 1
-        iconView.toggleLimitedAbilities(true)
+        iconView.setAbilities(abilitiesBrands)
         iconView.currentSelection = -1
         iconView.lblTitle.text = "Select Sub Ability"
         iconViewHeight.constant = iconView.getProperHeight()

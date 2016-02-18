@@ -530,8 +530,9 @@ class LoadoutReviewController: UITableViewController, IconSelectionViewDelegate 
     
     override func viewDidAppear(animated: Bool) {
         iconView.switchTypes("abilities")
+        iconView.setAbilities(abilitiesSecondaries)
         iconView.updateDisplay(false, displayTitle: false)
-        iconView.frame = CGRectMake(0, navigationController!.view.frame.height,  navigationController!.view.frame.width, iconView.getProperHeight())
+        iconView.frame = CGRectMake(0, navigationController!.view.frame.height, navigationController!.view.frame.width, iconView.getProperHeight())
         iconView.collectionView.reloadData()
         navigationController!.view.addSubview(iconView)
     }
