@@ -9,8 +9,13 @@
 import UIKit
 import MGSwipeTableCell
 
+class LongPressCellGestureRecognizer: UILongPressGestureRecognizer {
+    var tableView = UITableView()
+    var gearDisplayData = [[Gear]]()
+}
+
 extension MGSwipeTableCell {
-    func addSwipeButtonsForGear(gear: Gear, tableView: UITableView, indexPath: NSIndexPath) {
+    func addSwipeButtonsForGear(gear: Gear, gearDisplayData: [[Gear]], tableView: UITableView, indexPath: NSIndexPath) {
         let prefs = NSUserDefaults.standardUserDefaults()
         let owned = prefs.integerForKey("\(gear.shortName)-owned")
         if owned != 0 {
@@ -46,7 +51,25 @@ extension MGSwipeTableCell {
         for gestureRecognizer in self.contentView.gestureRecognizers! {
             self.contentView.removeGestureRecognizer(gestureRecognizer) }
         
-        self.contentView.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: "cellLongPress:"))
+        let gesture = LongPressCellGestureRecognizer(target: self, action: "cellLongPress:")
+        gesture.tableView = tableView
+        gesture.gearDisplayData = gearDisplayData
+        
+        self.contentView.addGestureRecognizer(gesture)
+    }
+    
+    func cellLongPress(recognizer: LongPressCellGestureRecognizer) {
+        guard recognizer.state == .Began else { return }
+        
+        let point = recognizer.locationInView(recognizer.tableView)
+        let indexPath = recognizer.tableView.indexPathForRowAtPoint(point)
+        let gear = recognizer.gearDisplayData[indexPath!.section][indexPath!.row]
+        let prefs = NSUserDefaults.standardUserDefaults()
+        
+        recognizer.tableView.beginUpdates()
+        prefs.setInteger(0, forKey: "\(gear.shortName)-owned")
+        recognizer.tableView.reloadRowsAtIndexPaths([indexPath!], withRowAnimation: .Fade)
+        recognizer.tableView.endUpdates()
     }
 }
 

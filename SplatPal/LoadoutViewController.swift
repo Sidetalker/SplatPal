@@ -416,14 +416,13 @@ class LoadoutGearViewController: GearTableViewController {
     
     func filterGear(gearType: String) {
         self.gearType = gearType
-        gearDisplayData.removeAll()
         
+        var newGear = [Gear]()
         for gear in gearData {
-            if gear.category == gearType { gearDisplayData.append(gear) }
+            if gear.category == gearType { newGear.append(gear) }
         }
         
-        gearDetailDisplaying = Array(count: gearDisplayData.count, repeatedValue: false)
-        tableView.reloadData()
+        self.updateDisplay(newGear)
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -444,7 +443,7 @@ class LoadoutGearViewController: GearTableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if gearType == "Headgear" {
-            loadout.headgear = LoadoutGear(gear: gearDisplayData[indexPath.row])
+            loadout.headgear = LoadoutGear(gear: gearDisplayData[indexPath.section][indexPath.row])
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewControllerWithIdentifier("loadoutGearTVC") as! LoadoutGearViewController
@@ -456,7 +455,7 @@ class LoadoutGearViewController: GearTableViewController {
             self.navigationController?.pushViewController(vc, animated: true)
         }
         else if gearType == "Clothing" {
-            loadout.clothing = LoadoutGear(gear: gearDisplayData[indexPath.row])
+            loadout.clothing = LoadoutGear(gear: gearDisplayData[indexPath.section][indexPath.row])
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewControllerWithIdentifier("loadoutGearTVC") as! LoadoutGearViewController
@@ -468,7 +467,7 @@ class LoadoutGearViewController: GearTableViewController {
             self.navigationController?.pushViewController(vc, animated: true)
         }
         else if gearType == "Shoes" {
-            loadout.shoes = LoadoutGear(gear: gearDisplayData[indexPath.row])
+            loadout.shoes = LoadoutGear(gear: gearDisplayData[indexPath.section][indexPath.row])
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewControllerWithIdentifier("loadoutReviewTVC") as! LoadoutReviewController
@@ -490,13 +489,13 @@ class LoadoutEditGearViewController: LoadoutGearViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if gearType == "Headgear" {
-            reviewController?.loadout.headgear = LoadoutGear(gear: gearDisplayData[indexPath.row])
+            reviewController?.loadout.headgear = LoadoutGear(gear: gearDisplayData[indexPath.section][indexPath.row])
         }
         else if gearType == "Clothing" {
-            reviewController?.loadout.clothing = LoadoutGear(gear: gearDisplayData[indexPath.row])
+            reviewController?.loadout.clothing = LoadoutGear(gear: gearDisplayData[indexPath.section][indexPath.row])
         }
         else if gearType == "Shoes" {
-            reviewController?.loadout.shoes = LoadoutGear(gear: gearDisplayData[indexPath.row])
+            reviewController?.loadout.shoes = LoadoutGear(gear: gearDisplayData[indexPath.section][indexPath.row])
         }
         
         reviewController?.tableView.reloadData()

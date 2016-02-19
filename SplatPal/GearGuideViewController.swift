@@ -31,31 +31,68 @@ func abilityForBrand(brandName: String, up: Bool) -> String {
 }
 
 class GearTableViewController: UITableViewController {
-    var gearDisplayData = [Gear]()
-    var gearDetailDisplaying = [Bool]()
+    var gearDisplayData = [[Gear]]()
+    var gearDetailDisplaying = [[Bool]]()
     var alphaSectionHeaders = [String]()
-    var alphaSectionCount = [Int]()
 
     let prefs = NSUserDefaults.standardUserDefaults()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        updateDisplay(gearData)
     }
     
     func updateDisplay(newData: [Gear]) {
-        gearDisplayData = newData
-        gearDetailDisplaying = Array(count: newData.count, repeatedValue: false)
+        gearDisplayData.removeAll()
+        gearDetailDisplaying.removeAll()
+        alphaSectionHeaders.removeAll()
         
         var currentLetter = 0
-//        for gear in newData {
-//            if currentLetter == alphabet.characters.count { break }
-//            
-//            if let firstLetter = gear["name"].stringValue.characters.first {
-//                if firstLetter == alphabet[currentLetter] {
-//                    
-//                } else { currentLetter += 1 }
-//            }
-//        }
+        var firstOfLetter = true
+        var searchingNumbers = true
+        
+        for gear in newData {
+            if currentLetter == alphabet.characters.count { break }
+            
+            if searchingNumbers {
+                if Int(String(gear.name[0])) != nil {
+                    if firstOfLetter {
+                        firstOfLetter = false
+                        alphaSectionHeaders.append("#")
+                        gearDisplayData.append([gear])
+                        gearDetailDisplaying.append([false])
+                    } else {
+                        gearDisplayData[gearDisplayData.count - 1].append(gear)
+                        gearDetailDisplaying[gearDetailDisplaying.count - 1].append(false)
+                    }
+                } else {
+                    firstOfLetter = false
+                    searchingNumbers = false
+                    alphaSectionHeaders.append(String(alphabet[currentLetter]))
+                    gearDisplayData.append([gear])
+                    gearDetailDisplaying.append([false])
+                }
+            } else {
+                if gear.name[0] == alphabet[currentLetter] {
+                    if firstOfLetter {
+                        firstOfLetter = false
+                        alphaSectionHeaders.append(String(alphabet[currentLetter]))
+                        gearDisplayData.append([gear])
+                        gearDetailDisplaying.append([false])
+                    } else {
+                        gearDisplayData[gearDisplayData.count - 1].append(gear)
+                        gearDetailDisplaying[gearDetailDisplaying.count - 1].append(false)
+                    }
+                } else {
+                    firstOfLetter = false
+                    currentLetter += 1
+                    alphaSectionHeaders.append(String(alphabet[currentLetter]))
+                    gearDisplayData.append([gear])
+                    gearDetailDisplaying.append([false])
+                }
+            }
+        }
         
         tableView.reloadData()
     }
@@ -63,35 +100,36 @@ class GearTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return gearDisplayData.count
     }
     
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return gearDisplayData[section].count
+    }
+    
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return gearDetailDisplaying[indexPath.row] ? 195 : 60
+        return gearDetailDisplaying[indexPath.section][indexPath.row] ? 195 : 60
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let gear = gearDisplayData[indexPath.row]
+        let gear = gearDisplayData[indexPath.section][indexPath.row]
         
-        if gearDetailDisplaying[indexPath.row] {
+        if gearDetailDisplaying[indexPath.section][indexPath.row] {
             let cell = tableView.dequeueReusableCellWithIdentifier("cellGearDetail", forIndexPath: indexPath) as! GearDetailCell
             cell.configureWithGear(gear)
-            cell.addSwipeButtonsForGear(gear, tableView: tableView, indexPath: indexPath)
+            cell.addSwipeButtonsForGear(gear, gearDisplayData: gearDisplayData, tableView: tableView, indexPath: indexPath)
             
             return cell
         } else {
             let cell = tableView.dequeueReusableCellWithIdentifier("cellGear", forIndexPath: indexPath) as! GearCell
-            cell.configureWithGear(gear)
-            cell.addSwipeButtonsForGear(gear, tableView: tableView, indexPath: indexPath)
+                cell.addSwipeButtonsForGear(gear, gearDisplayData: gearDisplayData, tableView: tableView, indexPath: indexPath)
             
             return cell
         }
-
-        return UITableViewCell()
+    }
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return alphaSectionHeaders[section]
     }
     
     func cellLongPress(recognizer: UILongPressGestureRecognizer) {
@@ -99,7 +137,7 @@ class GearTableViewController: UITableViewController {
         
         let point = recognizer.locationInView(tableView)
         let indexPath = tableView.indexPathForRowAtPoint(point)
-        let gear = gearDisplayData[indexPath!.row]
+        let gear = gearDisplayData[indexPath!.section][indexPath!.row]
         
         tableView.beginUpdates()
         self.prefs.setInteger(0, forKey: "\(gear.shortName)-owned")
@@ -109,7 +147,7 @@ class GearTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        gearDetailDisplaying[indexPath.row] = !gearDetailDisplaying[indexPath.row]
+        gearDetailDisplaying[indexPath.section][indexPath.row] = !gearDetailDisplaying[indexPath.section][indexPath.row]
         
         tableView.beginUpdates()
         tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
