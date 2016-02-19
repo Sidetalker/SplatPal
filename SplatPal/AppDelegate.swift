@@ -19,7 +19,7 @@ let log = XCGLogger.defaultInstance()
 let feedback = Doorbell(apiKey: "huNJHAdBmvWXZKIMHrdYjdZ0XZJEL03aReY71ASNWY8hhguVXb2oZhLMD5ji8ERv", appId: "2756")
 
 var brandData = [JSON]()
-var gearData = [JSON]()
+var gearData = [Gear]()
 var weaponData = [JSON]()
 var mapData = [String]()
 var modeData = [String]()
@@ -84,7 +84,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let jsonResult = JSON(data: jsonData)
             
             brandData = jsonResult["brands"].arrayValue
-            gearData = jsonResult["gear"].arrayValue
+            gearData = jsonResult["gear"].arrayValue.map({ Gear(data: $0) })
             weaponData = jsonResult["weapons"].arrayValue
             abilityData = jsonResult["abilities"].dictionaryValue
             mapData = jsonResult["maps"].arrayObject as! [String]

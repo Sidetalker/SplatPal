@@ -10,6 +10,8 @@ import UIKit
 import SwiftyJSON
 import MGSwipeTableCell
 
+let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
 func abilityUpForBrand(brandName: String) -> String {
     return abilityForBrand(brandName, up: true)
 }
@@ -29,18 +31,32 @@ func abilityForBrand(brandName: String, up: Bool) -> String {
 }
 
 class GearTableViewController: UITableViewController {
-    var gearDisplayData = [JSON]()
+    var gearDisplayData = [Gear]()
     var gearDetailDisplaying = [Bool]()
-    
+    var alphaSectionHeaders = [String]()
+    var alphaSectionCount = [Int]()
+
     let prefs = NSUserDefaults.standardUserDefaults()
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    func updateDisplay(newData: [JSON]) {
+    func updateDisplay(newData: [Gear]) {
         gearDisplayData = newData
         gearDetailDisplaying = Array(count: newData.count, repeatedValue: false)
+        
+        var currentLetter = 0
+//        for gear in newData {
+//            if currentLetter == alphabet.characters.count { break }
+//            
+//            if let firstLetter = gear["name"].stringValue.characters.first {
+//                if firstLetter == alphabet[currentLetter] {
+//                    
+//                } else { currentLetter += 1 }
+//            }
+//        }
+        
         tableView.reloadData()
     }
     
@@ -59,96 +75,23 @@ class GearTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = MGSwipeTableCell()
-        let data = gearDisplayData[indexPath.row]
+        let gear = gearDisplayData[indexPath.row]
         
         if gearDetailDisplaying[indexPath.row] {
-            cell = tableView.dequeueReusableCellWithIdentifier("cellGearDetail", forIndexPath: indexPath) as! MGSwipeTableCell
-            let lblName = cell.viewWithTag(1) as! UILabel
-            let imgGear = cell.viewWithTag(2) as! UIImageView
-            let imgAbilityMain = cell.viewWithTag(3) as! UIImageView
-            let imgAbilityBrand = cell.viewWithTag(4) as! UIImageView
-            let lblAbilityMain = cell.viewWithTag(5) as! UILabel
-            let lblAbilityBrand = cell.viewWithTag(6) as! UILabel
-            let lblCost = cell.viewWithTag(7) as! UILabel
-            let lblBrand = cell.viewWithTag(8) as! UILabel
-            let imgStar2 = cell.viewWithTag(10) as! UIImageView
-            let imgStar3 = cell.viewWithTag(11) as! UIImageView
+            let cell = tableView.dequeueReusableCellWithIdentifier("cellGearDetail", forIndexPath: indexPath) as! GearDetailCell
+            cell.configureWithGear(gear)
+            cell.addSwipeButtonsForGear(gear, tableView: tableView, indexPath: indexPath)
             
-            let abilityUp = data["ability"].stringValue
-            let abilityBrand = abilityUpForBrand(data["brand"].stringValue)
-            
-            lblName.text = data["name"].stringValue
-            imgGear.image = UIImage(named: "gear\(data["name"].stringValue.removeWhitespace()).png")
-            imgAbilityMain.image = UIImage(named: "ability\(abilityUp.removeWhitespace()).png")
-            imgAbilityBrand.image = UIImage(named: "ability\(abilityBrand.removeWhitespace()).png")
-            lblAbilityMain.text = abilityData[abilityUp]?.stringValue
-            lblAbilityBrand.text = abilityData[abilityBrand]?.stringValue
-            lblCost.text = "Cost: \(data["cost"].stringValue)"
-            lblBrand.text = "Brand: \(data["brand"].stringValue)"
-            
-            if data["rarity"].intValue == 1 {
-                imgStar2.image = nil
-                imgStar3.image = nil
-            }
-            if data["rarity"].intValue == 2 {
-                imgStar2.image = UIImage(named: "star.png")
-                imgStar3.image = nil
-            }
-            if data["rarity"].intValue == 3 {
-                imgStar2.image = UIImage(named: "star.png")
-                imgStar3.image = UIImage(named: "star.png")
-            }
-            
+            return cell
         } else {
-            cell = tableView.dequeueReusableCellWithIdentifier("cellGear", forIndexPath: indexPath) as! MGSwipeTableCell
-            let lblName = cell.viewWithTag(1) as! UILabel
-            let imgGear = cell.viewWithTag(2) as! UIImageView
-            let imgAbilityMain = cell.viewWithTag(3) as! UIImageView
-            let imgAbilityBrand = cell.viewWithTag(4) as! UIImageView
+            let cell = tableView.dequeueReusableCellWithIdentifier("cellGear", forIndexPath: indexPath) as! GearCell
+            cell.configureWithGear(gear)
+            cell.addSwipeButtonsForGear(gear, tableView: tableView, indexPath: indexPath)
             
-            lblName.text = data["name"].stringValue
-            imgGear.image = UIImage(named: "gear\(data["name"].stringValue.removeWhitespace()).png")
-            imgAbilityMain.image = UIImage(named: "ability\(data["ability"].stringValue.removeWhitespace()).png")
-            imgAbilityBrand.image = UIImage(named: "ability\(abilityUpForBrand(data["brand"].stringValue).removeWhitespace()).png")
+            return cell
         }
-        
-        let owned = prefs.integerForKey("\(data["name"].stringValue.removeWhitespace())-owned")
-        if owned != 0 {
-            cell.contentView.backgroundColor = owned > 0 ? SplatAppStyle.loggedIn : SplatAppStyle.loggedOut
-        } else {
-            cell.contentView.backgroundColor = UIColor.clearColor()
-        }
-        
-        let expansionSettings = MGSwipeExpansionSettings()
-        let ownedSwipe = MGSwipeButton(title: "Owned", backgroundColor: SplatAppStyle.loggedIn) { _ in
-            tableView.beginUpdates()
-            self.prefs.setInteger(1, forKey: "\(data["name"].stringValue.removeWhitespace())-owned")
-            tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-            tableView.endUpdates()
-            return true
-        }
-        let notOwnedSwipe = MGSwipeButton(title: "Not Owned", backgroundColor: SplatAppStyle.loggedOut) { _ in
-            tableView.beginUpdates()
-            self.prefs.setInteger(-1, forKey: "\(data["name"].stringValue.removeWhitespace())-owned")
-            tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-            tableView.endUpdates()
-            return true
-        }
-        expansionSettings.buttonIndex = 0
-        expansionSettings.fillOnTrigger = false
-        expansionSettings.threshold = 1.2
-        cell.leftButtons = [ownedSwipe]
-        cell.leftExpansion = expansionSettings
-        cell.rightButtons = [notOwnedSwipe]
-        cell.rightExpansion = expansionSettings
-        
-        for gestureRecognizer in cell.contentView.gestureRecognizers! {
-            cell.contentView.removeGestureRecognizer(gestureRecognizer) }
-        
-        cell.contentView.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: "cellLongPress:"))
 
-        return cell
+        return UITableViewCell()
     }
     
     func cellLongPress(recognizer: UILongPressGestureRecognizer) {
@@ -156,10 +99,10 @@ class GearTableViewController: UITableViewController {
         
         let point = recognizer.locationInView(tableView)
         let indexPath = tableView.indexPathForRowAtPoint(point)
-        let data = gearDisplayData[indexPath!.row]
+        let gear = gearDisplayData[indexPath!.row]
         
         tableView.beginUpdates()
-        self.prefs.setInteger(0, forKey: "\(data["name"].stringValue.removeWhitespace())-owned")
+        self.prefs.setInteger(0, forKey: "\(gear.shortName)-owned")
         tableView.reloadRowsAtIndexPaths([indexPath!], withRowAnimation: .Fade)
         tableView.endUpdates()
     }
@@ -201,10 +144,6 @@ class GearTableViewController: UITableViewController {
         
         return 74
     }
-    
-//    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        return "Swipe a cell left or right to mark as owned / not owned. Tap and hold to clear selection. Reset all selections from settings. Tap this message to hide it."
-//    }
 }
 
 class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
@@ -291,13 +230,13 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
     }
     
     func updateTable() {
-        var newGear = [JSON]()
+        var newGear = [Gear]()
         for gear in gearData {
             var valid = true
             
-            if gear["ability"].stringValue != mainAbility && mainAbility != "None" { valid = false }
-            if abilityUpForBrand(gear["brand"].stringValue) != subAbility && subAbility != "None" { valid = false }
-            if gear["category"].stringValue != category && category != "All" { valid = false }
+            if gear.ability != mainAbility && mainAbility != "None" { valid = false }
+            if gear.abilitySub != subAbility && subAbility != "None" { valid = false }
+            if gear.category != category && category != "All" { valid = false }
             
             if valid { newGear.append(gear) }
         }

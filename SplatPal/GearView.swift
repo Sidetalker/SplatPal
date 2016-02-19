@@ -49,7 +49,7 @@ class GearView: UIView {
         view.frame = bounds
     }
     
-    func updateGear(gear: Gear) {
+    func updateGear(gear: LoadoutGear) {
         imgGear.image = UIImage(named: "gear\(gear.name.removeWhitespace()).png")
         imgAbilityMain.image = UIImage(named: "ability\(gear.abilityPrimary.removeWhitespace()).png")
         imgAbility1.image = UIImage(named: "ability\(gear.ability1.removeWhitespace()).png")

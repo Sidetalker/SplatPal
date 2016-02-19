@@ -114,7 +114,7 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
             confirmAlert.addAction(UIAlertAction(title: "Reset", style: .Destructive, handler: { _ in
                 let prefs = NSUserDefaults.standardUserDefaults()
                 for item in gearData {
-                    prefs.setInteger(0, forKey: "\(item["name"].stringValue.removeWhitespace())-owned")
+                    prefs.setInteger(0, forKey: "\(item.shortName)-owned")
                 }
                 
                 for vc in self.tabBarController!.viewControllers! {

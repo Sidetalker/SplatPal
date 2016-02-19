@@ -419,7 +419,7 @@ class LoadoutGearViewController: GearTableViewController {
         gearDisplayData.removeAll()
         
         for gear in gearData {
-            if gear["category"].stringValue == gearType { gearDisplayData.append(gear) }
+            if gear.category == gearType { gearDisplayData.append(gear) }
         }
         
         gearDetailDisplaying = Array(count: gearDisplayData.count, repeatedValue: false)
@@ -444,7 +444,7 @@ class LoadoutGearViewController: GearTableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if gearType == "Headgear" {
-            loadout.headgear = Gear(data: gearDisplayData[indexPath.row])
+            loadout.headgear = LoadoutGear(gear: gearDisplayData[indexPath.row])
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewControllerWithIdentifier("loadoutGearTVC") as! LoadoutGearViewController
@@ -456,7 +456,7 @@ class LoadoutGearViewController: GearTableViewController {
             self.navigationController?.pushViewController(vc, animated: true)
         }
         else if gearType == "Clothing" {
-            loadout.clothing = Gear(data: gearDisplayData[indexPath.row])
+            loadout.clothing = LoadoutGear(gear: gearDisplayData[indexPath.row])
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewControllerWithIdentifier("loadoutGearTVC") as! LoadoutGearViewController
@@ -468,7 +468,7 @@ class LoadoutGearViewController: GearTableViewController {
             self.navigationController?.pushViewController(vc, animated: true)
         }
         else if gearType == "Shoes" {
-            loadout.shoes = Gear(data: gearDisplayData[indexPath.row])
+            loadout.shoes = LoadoutGear(gear: gearDisplayData[indexPath.row])
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewControllerWithIdentifier("loadoutReviewTVC") as! LoadoutReviewController
@@ -490,13 +490,13 @@ class LoadoutEditGearViewController: LoadoutGearViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if gearType == "Headgear" {
-            reviewController?.loadout.headgear = Gear(data: gearDisplayData[indexPath.row])
+            reviewController?.loadout.headgear = LoadoutGear(gear: gearDisplayData[indexPath.row])
         }
         else if gearType == "Clothing" {
-            reviewController?.loadout.clothing = Gear(data: gearDisplayData[indexPath.row])
+            reviewController?.loadout.clothing = LoadoutGear(gear: gearDisplayData[indexPath.row])
         }
         else if gearType == "Shoes" {
-            reviewController?.loadout.shoes = Gear(data: gearDisplayData[indexPath.row])
+            reviewController?.loadout.shoes = LoadoutGear(gear: gearDisplayData[indexPath.row])
         }
         
         reviewController?.tableView.reloadData()
@@ -814,9 +814,9 @@ func isValidLoadout(data: String) -> Bool {
 class Loadout {
     var name = ""
     var weapon = Weapon()
-    var headgear = Gear()
-    var clothing = Gear()
-    var shoes = Gear()
+    var headgear = LoadoutGear()
+    var clothing = LoadoutGear()
+    var shoes = LoadoutGear()
     
     // Randomized base62 string cause I'm a jerk
     let base62String = "dQruMA8nHkLVNa3ioEOsRtC6J9TfSlYXZzbm4cyUpg7jFhGD2PIv5WqB1Kwxe0"
@@ -826,9 +826,9 @@ class Loadout {
     init(data: JSON) {
         name = data["name"].stringValue
         weapon = Weapon(data: data["weapon"])
-        headgear = Gear(data: data["headgear"])
-        clothing = Gear(data: data["clothing"])
-        shoes = Gear(data: data["shoes"])
+        headgear = LoadoutGear(data: data["headgear"])
+        clothing = LoadoutGear(data: data["clothing"])
+        shoes = LoadoutGear(data: data["shoes"])
     }
     
     init(name: String, encoding: String) {
@@ -842,9 +842,9 @@ class Loadout {
         
         self.name = name
         weapon = Weapon(encoding: base10Encoding[0...2])
-        headgear = Gear(encoding: base10Encoding[2...11])
-        clothing = Gear(encoding: base10Encoding[11...20])
-        shoes = Gear(encoding: base10Encoding[20...29])
+        headgear = LoadoutGear(encoding: base10Encoding[2...11])
+        clothing = LoadoutGear(encoding: base10Encoding[11...20])
+        shoes = LoadoutGear(encoding: base10Encoding[20...29])
     }
     
     func jsonRepresentation() -> JSON {
@@ -877,7 +877,7 @@ class Loadout {
     }
 }
 
-class Gear {
+class LoadoutGear {
     var name = ""
     var abilityPrimary = ""
     var ability1 = ""
@@ -888,24 +888,41 @@ class Gear {
     
     init(data: JSON) {
         name = data["name"].stringValue
-        abilityPrimary = data["abilityPrimary"].stringValue
-        ability1 = data["ability1"].stringValue
-        ability2 = data["ability2"].stringValue
-        ability3 = data["ability3"].stringValue
         
-        let sub = defaultSub()
-        
-        if abilityPrimary == "" { abilityPrimary = defaultPrimary() }
-        if ability1 == "" { ability1 = sub }
-        if ability2 == "" { ability2 = sub }
-        if ability3 == "" { ability3 = sub }
+        if let
+            abilityPrimary = data["abilityPrimary"].string,
+            ability1 = data["ability1"].string,
+            ability2 = data["ability2"].string,
+            ability3 = data["ability3"].string
+        {
+            self.abilityPrimary = abilityPrimary
+            self.ability1 = ability1
+            self.ability2 = ability2
+            self.ability3 = ability3
+        } else {
+            let sub = defaultSub()
+            let primary = defaultPrimary()
+            
+            abilityPrimary = primary
+            ability1 = sub
+            ability2 = sub
+            ability3 = sub
+        }
+    }
+    
+    init(gear: Gear) {
+        name = gear.name
+        abilityPrimary = gear.ability
+        ability1 = gear.abilitySub
+        ability2 = gear.abilitySub
+        ability3 = gear.abilitySub
     }
     
     init(encoding: String) {
         let gear = gearData[Int(encoding[0...3])!]
         
-        name = gear["name"].stringValue
-        abilityPrimary = gear["ability"].stringValue
+        name = gear.name
+        abilityPrimary = gear.ability
         ability1 = abilityDataEnum[Int(encoding[3...5])!]
         ability2 = abilityDataEnum[Int(encoding[5...7])!]
         ability3 = abilityDataEnum[Int(encoding[7...9])!]
@@ -925,8 +942,8 @@ class Gear {
     
     func defaultPrimary() -> String {
         for gear in gearData {
-            if gear["name"].stringValue == name {
-                return gear["ability"].stringValue
+            if gear.name == name {
+                return gear.ability
             }
         }
         
@@ -935,8 +952,8 @@ class Gear {
     
     func defaultSub() -> String {
         for gear in gearData {
-            if gear["name"].stringValue == name {
-                return abilityUpForBrand(gear["brand"].stringValue)
+            if gear.name == name {
+                return gear.abilitySub
             }
         }
         
@@ -945,7 +962,7 @@ class Gear {
     
     func nameIndex() -> String {
         for (x, item) in gearData.enumerate() {
-            if item["name"].stringValue == name { return String(format: "%03d", x) }
+            if item.name == name { return String(format: "%03d", x) }
         }
         
         return "???"
