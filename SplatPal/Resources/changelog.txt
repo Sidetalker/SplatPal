@@ -1,3 +1,18 @@
+Version 1.0.2 (1278)
+- Add alphabetic side menu to gear for quick lookup
+- Bugfix: Added bomb range up to loadout abilities
+
+Version 1.0.2 (1234)
+-- Several bugfixes
+    - No crash on iPad when sharing loadouts
+    - Fixed semi-frequent crash on maps screen
+
+Version 1.0.1 (1205)
+- Last minute bugfix
+
+Version 1.0.0 (1201)
+- Initial release
+
 Version 0.3 (1193)
 - All Watch complications implemented
 

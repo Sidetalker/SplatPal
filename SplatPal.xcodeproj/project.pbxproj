@@ -88,6 +88,8 @@
 		0A4C51961C25F208006ABE9B /* squidIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51931C25F208006ABE9B /* squidIcon.png */; };
 		0A4C51971C25F208006ABE9B /* squidIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51941C25F208006ABE9B /* squidIcon@2x.png */; };
 		0A4C51981C25F208006ABE9B /* squidIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51951C25F208006ABE9B /* squidIcon@3x.png */; };
+		0A4FC2891C769434007D6E7F /* Gear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4FC2881C769434007D6E7F /* Gear.swift */; };
+		0A4FC28E1C76A3D2007D6E7F /* GearCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4FC28D1C76A3D2007D6E7F /* GearCell.swift */; };
 		0A6AFEF91C2870D20073884B /* SplatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6AFEF81C2870D20073884B /* SplatData.swift */; };
 		0A6AFEFA1C2870D20073884B /* SplatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6AFEF81C2870D20073884B /* SplatData.swift */; };
 		0A948AC31C1CC4F700CCC4DB /* data.min.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A948AC21C1CC4F700CCC4DB /* data.min.json */; };
@@ -668,6 +670,8 @@
 		0A4C51931C25F208006ABE9B /* squidIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = squidIcon.png; path = Images/squidIcon.png; sourceTree = "<group>"; };
 		0A4C51941C25F208006ABE9B /* squidIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "squidIcon@2x.png"; path = "Images/squidIcon@2x.png"; sourceTree = "<group>"; };
 		0A4C51951C25F208006ABE9B /* squidIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "squidIcon@3x.png"; path = "Images/squidIcon@3x.png"; sourceTree = "<group>"; };
+		0A4FC2881C769434007D6E7F /* Gear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gear.swift; sourceTree = "<group>"; };
+		0A4FC28D1C76A3D2007D6E7F /* GearCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GearCell.swift; sourceTree = "<group>"; };
 		0A6AFEF81C2870D20073884B /* SplatData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplatData.swift; sourceTree = "<group>"; };
 		0A948AC21C1CC4F700CCC4DB /* data.min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.min.json; path = Resources/data.min.json; sourceTree = "<group>"; };
 		0A9AD9311C29DB0700CDFBE7 /* LoadoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadoutViewController.swift; sourceTree = "<group>"; };
@@ -1223,6 +1227,52 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0A4FC28A1C769439007D6E7F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A4FC2881C769434007D6E7F /* Gear.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0A4FC28B1C76A194007D6E7F /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				0AA23E031C1B6DB90002BCC2 /* SplatAppStyle.swift */,
+			);
+			name = Design;
+			sourceTree = "<group>";
+		};
+		0A4FC28C1C76A1C0007D6E7F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AC607B81C189BD8006EECA7 /* MapsTableViewController.swift */,
+				0AA23E001C1B6DB90002BCC2 /* BrandGuideViewController.swift */,
+				0ADF9AA41C1DF135002D7E81 /* GearGuideViewController.swift */,
+				0A9AD9311C29DB0700CDFBE7 /* LoadoutViewController.swift */,
+				0AA23E411C1B78450002BCC2 /* BetaViewController.swift */,
+				0A4BF6AD1C22201800BB4834 /* SettingsTableViewController.swift */,
+				0A3503EC1C27270C009C6A48 /* NotificationsTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0A4FC28F1C76A3D7007D6E7F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A4FC2901C76A3DF007D6E7F /* Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0A4FC2901C76A3DF007D6E7F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0A4FC28D1C76A3D2007D6E7F /* GearCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		0A9AD9331C29F5B300CDFBE7 /* Weapons */ = {
 			isa = PBXGroup;
 			children = (
@@ -1402,17 +1452,13 @@
 			isa = PBXGroup;
 			children = (
 				0AC607C01C189ED4006EECA7 /* Resources */,
+				0A4FC28A1C769439007D6E7F /* Models */,
+				0A4FC28B1C76A194007D6E7F /* Design */,
+				0A4FC28C1C76A1C0007D6E7F /* Controllers */,
+				0A4FC28F1C76A3D7007D6E7F /* Views */,
 				0A6AFEF81C2870D20073884B /* SplatData.swift */,
-				0AA23E031C1B6DB90002BCC2 /* SplatAppStyle.swift */,
 				0AC607881C189B36006EECA7 /* AppDelegate.swift */,
 				0AC607FD1C194ACE006EECA7 /* Helpers.swift */,
-				0AC607B81C189BD8006EECA7 /* MapsTableViewController.swift */,
-				0AA23E001C1B6DB90002BCC2 /* BrandGuideViewController.swift */,
-				0ADF9AA41C1DF135002D7E81 /* GearGuideViewController.swift */,
-				0A9AD9311C29DB0700CDFBE7 /* LoadoutViewController.swift */,
-				0AA23E411C1B78450002BCC2 /* BetaViewController.swift */,
-				0A4BF6AD1C22201800BB4834 /* SettingsTableViewController.swift */,
-				0A3503EC1C27270C009C6A48 /* NotificationsTableViewController.swift */,
 				0AA23E011C1B6DB90002BCC2 /* IconSelectionView.swift */,
 				0AA23E021C1B6DB90002BCC2 /* IconSelectionView.xib */,
 				0A9AD9DF1C2A005900CDFBE7 /* GearView.swift */,
@@ -2807,6 +2853,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4FC2891C769434007D6E7F /* Gear.swift in Sources */,
 				0A6AFEF91C2870D20073884B /* SplatData.swift in Sources */,
 				0A3503ED1C27270C009C6A48 /* NotificationsTableViewController.swift in Sources */,
 				0A9AD9321C29DB0700CDFBE7 /* LoadoutViewController.swift in Sources */,
@@ -2820,6 +2867,7 @@
 				0AA23E041C1B6DB90002BCC2 /* BrandGuideViewController.swift in Sources */,
 				0AA23E421C1B78450002BCC2 /* BetaViewController.swift in Sources */,
 				0AC607FE1C194ACE006EECA7 /* Helpers.swift in Sources */,
+				0A4FC28E1C76A3D2007D6E7F /* GearCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3170,6 +3218,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = SplatPalUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sideapps.SplatPalUITests;
@@ -3183,6 +3232,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = SplatPalUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sideapps.SplatPalUITests;

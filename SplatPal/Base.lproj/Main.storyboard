@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -521,6 +521,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="471"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellInstructions" rowHeight="74" id="z2l-ok-ni7">
                                 <rect key="frame" x="0.0" y="28" width="600" height="74"/>
@@ -536,7 +537,7 @@ Tap and hold to clear selection
 Reset all selections from settings
 Tap this message to hide it</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -548,7 +549,7 @@ Tap this message to hide it</string>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellGear" rowHeight="60" id="gE9-Xh-ncI" customClass="MGSwipeTableCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellGear" rowHeight="60" id="gE9-Xh-ncI" customClass="GearCell" customModule="SplatPal" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="102" width="600" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gE9-Xh-ncI" id="B1u-60-GFU">
@@ -596,8 +597,14 @@ Tap this message to hide it</string>
                                         <constraint firstItem="9R2-3K-jFe" firstAttribute="width" secondItem="ADb-Ad-G8v" secondAttribute="width" id="vHH-eE-K5e"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imgAbilityMain" destination="9R2-3K-jFe" id="Ds8-Xr-rgW"/>
+                                    <outlet property="imgAbilitySub" destination="JII-z1-VPu" id="aOz-2P-MC6"/>
+                                    <outlet property="imgGear" destination="ADb-Ad-G8v" id="YQL-p5-NNN"/>
+                                    <outlet property="lblName" destination="7E6-Rd-C5q" id="WFy-m0-wqy"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellGearDetail" rowHeight="196" id="GC5-yZ-QcE" customClass="MGSwipeTableCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellGearDetail" rowHeight="196" id="GC5-yZ-QcE" customClass="GearDetailCell" customModule="SplatPal" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="162" width="600" height="196"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GC5-yZ-QcE" id="0TT-tO-xZU">
@@ -722,6 +729,19 @@ Tap this message to hide it</string>
                                         <constraint firstAttribute="leadingMargin" secondItem="zkz-7K-b1K" secondAttribute="leading" id="x37-o6-OKP"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imgAbilityMain" destination="zkz-7K-b1K" id="h45-vt-dj9"/>
+                                    <outlet property="imgAbilitySub" destination="vGJ-fo-ZW4" id="HE8-Nf-BzR"/>
+                                    <outlet property="imgGear" destination="SDx-x9-Z3E" id="hff-Et-XAr"/>
+                                    <outlet property="imgStar1" destination="HcE-cq-Bvw" id="ruy-Dp-ITZ"/>
+                                    <outlet property="imgStar2" destination="D97-5F-UfV" id="cMi-am-jxb"/>
+                                    <outlet property="imgStar3" destination="TyE-px-5zd" id="JB9-lU-IjX"/>
+                                    <outlet property="lblAbilityMain" destination="1H9-1k-q45" id="BFy-Db-Ghf"/>
+                                    <outlet property="lblAbilitySub" destination="eDQ-hv-4nZ" id="Iyi-bE-fuY"/>
+                                    <outlet property="lblBrand" destination="Qxj-YN-CtL" id="mjf-PI-qQW"/>
+                                    <outlet property="lblCost" destination="qTT-Vk-VYf" id="Edv-91-QyN"/>
+                                    <outlet property="lblName" destination="bn2-pj-Zqv" id="d2E-ca-WVP"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1126,7 +1146,7 @@ Tap this message to hide it</string>
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="84" sectionHeaderHeight="18" sectionFooterHeight="18" id="kZO-ia-HUQ">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellWeapon" rowHeight="80" id="Frs-2n-UPi">
                                 <rect key="frame" x="0.0" y="93.5" width="400" height="80"/>
@@ -1159,7 +1179,7 @@ Tap this message to hide it</string>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weapon" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="FLw-fg-GSq">
                                             <rect key="frame" x="118" y="8" width="274" height="64"/>
                                             <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="24"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -1209,7 +1229,7 @@ Tap this message to hide it</string>
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="DK1-2Q-VmB">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellPrompt" id="o4x-yv-QbD">
                                 <rect key="frame" x="0.0" y="49.5" width="400" height="44"/>
@@ -1599,7 +1619,7 @@ Tap this message to hide it</string>
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="wWS-Xv-4Up">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellCreateNew" id="qms-RT-S7z">
                                 <rect key="frame" x="0.0" y="49.5" width="600" height="44"/>
@@ -1768,6 +1788,7 @@ Tap this message to hide it</string>
                         <segue destination="qB1-1u-vDb" kind="relationship" relationship="viewControllers" id="Atf-O0-JzW"/>
                         <segue destination="TZR-Re-Mo2" kind="relationship" relationship="viewControllers" id="CVO-7y-to3"/>
                         <segue destination="sRx-pn-jkx" kind="relationship" relationship="viewControllers" id="Nui-V2-Kok"/>
+                        <segue destination="xvr-yH-U4u" kind="relationship" relationship="viewControllers" id="Q4Y-F1-Pjg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -1783,7 +1804,7 @@ Tap this message to hide it</string>
                         <viewControllerLayoutGuide type="bottom" id="wej-0a-w1d"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lXA-ee-oIx">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Log" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGY-DZ-bug">
@@ -1793,7 +1814,7 @@ Tap this message to hide it</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DrU-dw-t2r">
-                                <rect key="frame" x="20" y="81" width="560" height="446"/>
+                                <rect key="frame" x="20" y="81" width="560" height="397"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Changelog text">
@@ -1806,7 +1827,7 @@ Tap this message to hide it</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8w-TH-miR">
-                                <rect key="frame" x="189" y="535" width="222" height="45"/>
+                                <rect key="frame" x="189" y="486" width="222" height="45"/>
                                 <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="30"/>
                                 <state key="normal" title="Send Feedback">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -2578,7 +2599,7 @@ Tap this message to hide it</string>
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="74" sectionHeaderHeight="18" sectionFooterHeight="18" id="SlK-QH-isM">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellGear" rowHeight="60" id="Iru-Kr-tHk" customClass="MGSwipeTableCell">
                                 <rect key="frame" x="0.0" y="49.5" width="400" height="60"/>
@@ -2775,7 +2796,7 @@ Tap this message to hide it</string>
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="74" sectionHeaderHeight="18" sectionFooterHeight="18" id="2bB-WV-XmW">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellGear" rowHeight="60" id="AX8-tg-Ocn" customClass="MGSwipeTableCell">
                                 <rect key="frame" x="0.0" y="49.5" width="400" height="60"/>
@@ -2972,7 +2993,7 @@ Tap this message to hide it</string>
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="84" sectionHeaderHeight="18" sectionFooterHeight="18" id="YWX-R9-Kzx">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellWeapon" rowHeight="80" id="vr7-93-DYe">
                                 <rect key="frame" x="0.0" y="49.5" width="400" height="80"/>
@@ -3005,7 +3026,7 @@ Tap this message to hide it</string>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weapon" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="mYL-7S-3Ah">
                                             <rect key="frame" x="118" y="8" width="274" height="64"/>
                                             <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="24"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
