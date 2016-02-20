@@ -9,7 +9,7 @@
 import UIKit
 import MGSwipeTableCell
 
-class LongPressCellGestureRecognizer: UILongPressGestureRecognizer {
+class LongPressGearCellRecognizer: UILongPressGestureRecognizer {
     var tableView = UITableView()
     var gearDisplayData = [[Gear]]()
 }
@@ -18,10 +18,37 @@ extension MGSwipeTableCell {
     func addSwipeButtonsForGear(gear: Gear, gearDisplayData: [[Gear]], tableView: UITableView, indexPath: NSIndexPath) {
         let prefs = NSUserDefaults.standardUserDefaults()
         let owned = prefs.integerForKey("\(gear.shortName)-owned")
+        let starred = prefs.integerForKey("\(gear.shortName)-starred")
+        
         if owned != 0 {
             self.contentView.backgroundColor = owned > 0 ? SplatAppStyle.loggedIn : SplatAppStyle.loggedOut
         } else {
             self.contentView.backgroundColor = UIColor.clearColor()
+        }
+        
+        if let imgBookmark = self.contentView.viewWithTag(666) {
+            imgBookmark.removeFromSuperview()
+        }
+        if self.contentView.viewWithTag(666) == nil {
+            var bookmarkColor = UIColor.whiteColor()
+            
+            switch owned {
+            case -1:
+                bookmarkColor = SplatAppStyle.loggedOut
+            case 1:
+                bookmarkColor = SplatAppStyle.loggedIn
+            default:
+                bookmarkColor = SplatAppStyle.brandPressedFill
+            }
+            
+            let bookmarkSize: CGFloat = 25
+            let bookmarkFrame = CGRectMake(self.contentView.frame.width - bookmarkSize, 0, bookmarkSize, bookmarkSize)
+            let imgBookmark = SplatAppStyle.imageOfBookmark(frame: CGRectMake(0, 0, bookmarkSize, bookmarkSize), bookmarkColor: bookmarkColor)
+            let imgBookmarkView = UIImageView(image: imgBookmark)
+            imgBookmarkView.frame = bookmarkFrame
+            imgBookmarkView.tag = 666
+            
+            self.contentView.addSubview(imgBookmarkView)
         }
         
         let expansionSettings = MGSwipeExpansionSettings()
@@ -51,14 +78,14 @@ extension MGSwipeTableCell {
         for gestureRecognizer in self.contentView.gestureRecognizers! {
             self.contentView.removeGestureRecognizer(gestureRecognizer) }
         
-        let gesture = LongPressCellGestureRecognizer(target: self, action: "cellLongPress:")
+        let gesture = LongPressGearCellRecognizer(target: self, action: "cellLongPress:")
         gesture.tableView = tableView
         gesture.gearDisplayData = gearDisplayData
         
         self.contentView.addGestureRecognizer(gesture)
     }
     
-    func cellLongPress(recognizer: LongPressCellGestureRecognizer) {
+    func cellLongPress(recognizer: LongPressGearCellRecognizer) {
         guard recognizer.state == .Began else { return }
         
         let point = recognizer.locationInView(recognizer.tableView)
@@ -79,7 +106,7 @@ class GearCell: MGSwipeTableCell {
     @IBOutlet weak var imgAbilityMain: UIImageView!
     @IBOutlet weak var imgAbilitySub: UIImageView!
     
-    func configureWithGear(gear: Gear) {
+    func configureForGear(gear: Gear) {
         lblName.text = gear.name
         imgGear.image = gear.getImage()
         imgAbilityMain.image = gear.getAbilityImage()
@@ -100,7 +127,7 @@ class GearDetailCell: MGSwipeTableCell {
     @IBOutlet weak var imgStar2: UIImageView!
     @IBOutlet weak var imgStar3: UIImageView!
     
-    func configureWithGear(gear: Gear) {
+    func configureForGear(gear: Gear) {
         lblName.text = gear.name
         lblAbilityMain.text = abilityData[gear.ability]?.stringValue
         lblAbilitySub.text = abilityData[gear.abilitySub]?.stringValue
