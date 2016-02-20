@@ -152,8 +152,8 @@ func loadMaps(completion: (JSON) -> ()) {
                         let schedule = json["schedule"][0]
                         var teams = [String]()
                         
-                        startTimes.append(schedule["startTime"].doubleValue / 1000)
-                        endTimes.append(schedule["endTime"].doubleValue / 1000)
+                        startTimes.append(dateFormatter.dateFromString(schedule["datetime_begin"].stringValue)!.timeIntervalSince1970)
+                        endTimes.append(dateFormatter.dateFromString(schedule["datetime_end"].stringValue)!.timeIntervalSince1970)
                         for stage in schedule["stages"].arrayValue {
                             turfMaps.append(stage["name"].stringValue)
                         }
