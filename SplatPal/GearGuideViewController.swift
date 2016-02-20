@@ -122,7 +122,8 @@ class GearTableViewController: UITableViewController {
             return cell
         } else {
             let cell = tableView.dequeueReusableCellWithIdentifier("cellGear", forIndexPath: indexPath) as! GearCell
-                cell.addSwipeButtonsForGear(gear, gearDisplayData: gearDisplayData, tableView: tableView, indexPath: indexPath)
+            cell.configureWithGear(gear)
+            cell.addSwipeButtonsForGear(gear, gearDisplayData: gearDisplayData, tableView: tableView, indexPath: indexPath)
             
             return cell
         }
