@@ -1,4 +1,4 @@
-Version 1.0.2 (1278)
+Version 1.0.2 (1282)
 - Add alphabetic side menu to gear for quick lookup
 - Bugfix: Added bomb range up to loadout abilities
 

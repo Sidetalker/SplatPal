@@ -146,6 +146,10 @@ class GearTableViewController: UITableViewController {
         tableView.endUpdates()
     }
     
+    override func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
+        return alphaSectionHeaders
+    }
+    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
         gearDetailDisplaying[indexPath.section][indexPath.row] = !gearDetailDisplaying[indexPath.section][indexPath.row]
@@ -156,6 +160,8 @@ class GearTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section != 0 { return nil }
+        
         if prefs.boolForKey("gearInstructionsRead") { return nil }
         
         let cell = tableView.dequeueReusableCellWithIdentifier("cellInstructions")!
@@ -179,9 +185,9 @@ class GearTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if prefs.boolForKey("gearInstructionsRead") { return 0 }
+        if section == 0 && !prefs.boolForKey("gearInstructionsRead") { return 74 }
         
-        return 74
+        return 22
     }
 }
 
