@@ -16,31 +16,31 @@ class LongPressGearCellRecognizer: UILongPressGestureRecognizer {
 
 extension MGSwipeTableCell {
     func addSwipeButtonsForGear(gear: Gear, gearDisplayData: [[Gear]], tableView: UITableView, indexPath: NSIndexPath) {
-        let prefs = NSUserDefaults.standardUserDefaults()
-        
         let expansionSettings = MGSwipeExpansionSettings()
-        let ownedSwipe = MGSwipeButton(title: "Owned", backgroundColor: SplatAppStyle.loggedIn) { _ in
+        let setOwned: (owned: Bool) -> Bool = { owned in
             tableView.beginUpdates()
-            prefs.setInteger(1, forKey: "\(gear.shortName)-owned")
+            gear.setOwned(owned)
             tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
             tableView.endUpdates()
             return true
+        }
+        let toggleStarred: () -> Bool = {
+            tableView.beginUpdates()
+            gear.toggleStarred()
+            tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            tableView.endUpdates()
+            return true
+        }
+        
+        let ownedSwipe = MGSwipeButton(title: "Owned", backgroundColor: SplatAppStyle.loggedIn) { _ in
+            setOwned(owned: true)
         }
         let notOwnedSwipe = MGSwipeButton(title: "Not Owned", backgroundColor: SplatAppStyle.loggedOut) { _ in
-            tableView.beginUpdates()
-            prefs.setInteger(-1, forKey: "\(gear.shortName)-owned")
-            tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-            tableView.endUpdates()
-            return true
+            setOwned(owned: false)
         }
         let starSwipe = MGSwipeButton(title: "", icon: UIImage(named: "bookmarkStar"), backgroundColor: SplatAppStyle.loggedIn) { _ in
-            tableView.beginUpdates()
-            prefs.setInteger(1, forKey: "\(gear.shortName)-starred")
-            tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .None)
-            tableView.endUpdates()
-            return true
+            toggleStarred()
         }
-        
         
         expansionSettings.buttonIndex = 0
         expansionSettings.fillOnTrigger = false
@@ -48,10 +48,10 @@ extension MGSwipeTableCell {
         self.leftButtons = [ownedSwipe, starSwipe]
         self.leftExpansion = expansionSettings
         let offsetSwipe = MGSwipeSettings()
-        offsetSwipe.offset = 15
+        offsetSwipe.offset = 15 // Offset for section index titles
         self.rightButtons = [notOwnedSwipe]
         self.rightExpansion = expansionSettings
-        self.rightSwipeSettings = offsetSwipe // Offset for section index titles
+        self.rightSwipeSettings = offsetSwipe
         
         for gestureRecognizer in self.contentView.gestureRecognizers! {
             self.contentView.removeGestureRecognizer(gestureRecognizer) }

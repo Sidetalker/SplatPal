@@ -75,4 +75,26 @@ class Gear {
             return nil
         }
     }
+    
+    func isStarred() -> Bool {
+        if NSUserDefaults.standardUserDefaults().integerForKey("\(shortName)-starred") == 1 { return true }
+        else { return false }
+    }
+    
+    func isOwned() -> Bool {
+        if NSUserDefaults.standardUserDefaults().integerForKey("\(shortName)-owned") == 1 { return true }
+        else { return false }
+    }
+    
+    func toggleStarred() {
+        let starred = NSUserDefaults.standardUserDefaults().integerForKey("\(shortName)-starred")
+        
+        if starred == 1 { NSUserDefaults.standardUserDefaults().setInteger(0, forKey: "\(shortName)-starred") }
+        else { NSUserDefaults.standardUserDefaults().setInteger(1, forKey: "\(shortName)-starred") }
+    }
+    
+    func setOwned(owned: Bool) {
+        if owned { NSUserDefaults.standardUserDefaults().setInteger(1, forKey: "\(shortName)-owned") }
+        else { NSUserDefaults.standardUserDefaults().setInteger(-1, forKey: "\(shortName)-owned") }
+    }
 }
