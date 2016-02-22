@@ -1,4 +1,7 @@
-Version 1.0.2 (1282)
+Version 1.0.2 (1304)
+- Bugfix: Splatfest timer wasn't working when logged in w/ NNID
+
+Version 1.0.2 (1299)
 - Add alphabetic side menu to gear for quick lookup
 - Bugfix: Added bomb range up to loadout abilities
 

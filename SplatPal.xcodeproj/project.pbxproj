@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0A01C0741C6113E6000E1C3F /* Assets-watch.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A41A94B1C4AF61F00D80E15 /* Assets-watch.xcassets */; };
+		0A0370E21C7A9063001CDB20 /* bookmarkStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0370DF1C7A9063001CDB20 /* bookmarkStar.png */; };
+		0A0370E31C7A9063001CDB20 /* bookmarkStar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0370E01C7A9063001CDB20 /* bookmarkStar@2x.png */; };
+		0A0370E41C7A9063001CDB20 /* bookmarkStar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0370E11C7A9063001CDB20 /* bookmarkStar@3x.png */; };
 		0A0F6FEF1C261FAC00206883 /* itemBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0F6FEC1C261FAC00206883 /* itemBG.png */; };
 		0A0F6FF01C261FAC00206883 /* itemBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0F6FED1C261FAC00206883 /* itemBG@2x.png */; };
 		0A0F6FF11C261FAC00206883 /* itemBG@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0F6FEE1C261FAC00206883 /* itemBG@3x.png */; };
@@ -619,6 +622,9 @@
 
 /* Begin PBXFileReference section */
 		04573E61435B391F9524E97B /* Pods-SplatPal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatPal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplatPal/Pods-SplatPal.debug.xcconfig"; sourceTree = "<group>"; };
+		0A0370DF1C7A9063001CDB20 /* bookmarkStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookmarkStar.png; path = Images/bookmarkStar.png; sourceTree = "<group>"; };
+		0A0370E01C7A9063001CDB20 /* bookmarkStar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bookmarkStar@2x.png"; path = "Images/bookmarkStar@2x.png"; sourceTree = "<group>"; };
+		0A0370E11C7A9063001CDB20 /* bookmarkStar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bookmarkStar@3x.png"; path = "Images/bookmarkStar@3x.png"; sourceTree = "<group>"; };
 		0A0F6FEC1C261FAC00206883 /* itemBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = itemBG.png; path = Images/itemBG.png; sourceTree = "<group>"; };
 		0A0F6FED1C261FAC00206883 /* itemBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "itemBG@2x.png"; path = "Images/itemBG@2x.png"; sourceTree = "<group>"; };
 		0A0F6FEE1C261FAC00206883 /* itemBG@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "itemBG@3x.png"; path = "Images/itemBG@3x.png"; sourceTree = "<group>"; };
@@ -1530,6 +1536,9 @@
 		0AC607DE1C18AAA6006EECA7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0A0370DF1C7A9063001CDB20 /* bookmarkStar.png */,
+				0A0370E01C7A9063001CDB20 /* bookmarkStar@2x.png */,
+				0A0370E11C7A9063001CDB20 /* bookmarkStar@3x.png */,
 				0A3B777D1C4C4B3400C06E31 /* squidIcon.svg */,
 				0A4C51931C25F208006ABE9B /* squidIcon.png */,
 				0A4C51941C25F208006ABE9B /* squidIcon@2x.png */,
@@ -2319,6 +2328,7 @@
 				0ADF9C891C1DF2DE002D7E81 /* gearTraditionalHeadband.png in Resources */,
 				0AA23DFE1C1B6D870002BCC2 /* weaponsIcon@2x.png in Resources */,
 				0ADF9C601C1DF2DE002D7E81 /* gearSoccerCleats.png in Resources */,
+				0A0370E31C7A9063001CDB20 /* bookmarkStar@2x.png in Resources */,
 				0ADF9CA31C1DF2DE002D7E81 /* gearWhitePufferTee.png in Resources */,
 				0AC607D21C18A629006EECA7 /* StageBluefinDepot.jpg in Resources */,
 				0A3B77701C4C3AE700C06E31 /* towerIcon.svg in Resources */,
@@ -2411,6 +2421,7 @@
 				0AA23E271C1B6E280002BCC2 /* abilityDefenceUp.png in Resources */,
 				0A4BF6AB1C22069700BB4834 /* settingsIcon@2x.png in Resources */,
 				0A0F6FEF1C261FAC00206883 /* itemBG.png in Resources */,
+				0A0370E41C7A9063001CDB20 /* bookmarkStar@3x.png in Resources */,
 				0ADF9BEB1C1DF2DE002D7E81 /* gearFakeContacts.png in Resources */,
 				0ADF9BBB1C1DF2DE002D7E81 /* gearBaseballJersey.png in Resources */,
 				0AC607951C189B36006EECA7 /* LaunchScreen.storyboard in Resources */,
@@ -2605,6 +2616,7 @@
 				0A9AD9971C29F5BE00CDFBE7 /* weaponGoldDynamoRoller.png in Resources */,
 				0A9AD9B51C29F5BE00CDFBE7 /* weaponRapidBlasterDeco.png in Resources */,
 				0ADF9CAC1C1DF2DE002D7E81 /* gearZapfishSatinJacket.png in Resources */,
+				0A0370E21C7A9063001CDB20 /* bookmarkStar.png in Resources */,
 				0AA23E301C1B6E280002BCC2 /* abilityOpeningGambit.png in Resources */,
 				0ADF9C251C1DF2DE002D7E81 /* gearOrangeCardigan.png in Resources */,
 				0ADF9C9F1C1DF2DE002D7E81 /* gearWhiteKicks.png in Resources */,

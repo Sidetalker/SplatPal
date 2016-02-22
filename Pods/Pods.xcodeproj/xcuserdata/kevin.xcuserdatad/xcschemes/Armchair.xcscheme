@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3AA12E361B02A6ABF7405420'
+               BlueprintIdentifier = '69F52F091D207A85BC9D37F7'
                BlueprintName = 'Armchair'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Armchair.framework'>

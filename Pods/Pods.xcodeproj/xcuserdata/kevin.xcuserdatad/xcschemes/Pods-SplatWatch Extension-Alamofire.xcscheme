@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C5F296A7594D0C9EA79702D9'
+               BlueprintIdentifier = 'CAB6B906204A161379CA6B3B'
                BlueprintName = 'Pods-SplatWatch Extension-Alamofire'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Alamofire.framework'>
