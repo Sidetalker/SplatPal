@@ -17,39 +17,6 @@ class LongPressGearCellRecognizer: UILongPressGestureRecognizer {
 extension MGSwipeTableCell {
     func addSwipeButtonsForGear(gear: Gear, gearDisplayData: [[Gear]], tableView: UITableView, indexPath: NSIndexPath) {
         let prefs = NSUserDefaults.standardUserDefaults()
-        let owned = prefs.integerForKey("\(gear.shortName)-owned")
-        let starred = prefs.integerForKey("\(gear.shortName)-starred")
-        
-        if owned != 0 {
-            self.contentView.backgroundColor = owned > 0 ? SplatAppStyle.loggedIn : SplatAppStyle.loggedOut
-        } else {
-            self.contentView.backgroundColor = UIColor.clearColor()
-        }
-        
-        if let imgBookmark = self.contentView.viewWithTag(666) {
-            imgBookmark.removeFromSuperview()
-        }
-        if self.contentView.viewWithTag(666) == nil {
-            var bookmarkColor = UIColor.whiteColor()
-            
-            switch owned {
-            case -1:
-                bookmarkColor = SplatAppStyle.loggedOut
-            case 1:
-                bookmarkColor = SplatAppStyle.loggedIn
-            default:
-                bookmarkColor = SplatAppStyle.brandPressedFill
-            }
-            
-            let bookmarkSize: CGFloat = 25
-            let bookmarkFrame = CGRectMake(self.contentView.frame.width - bookmarkSize, 0, bookmarkSize, bookmarkSize)
-            let imgBookmark = SplatAppStyle.imageOfBookmark(frame: CGRectMake(0, 0, bookmarkSize, bookmarkSize), bookmarkColor: bookmarkColor)
-            let imgBookmarkView = UIImageView(image: imgBookmark)
-            imgBookmarkView.frame = bookmarkFrame
-            imgBookmarkView.tag = 666
-            
-            self.contentView.addSubview(imgBookmarkView)
-        }
         
         let expansionSettings = MGSwipeExpansionSettings()
         let ownedSwipe = MGSwipeButton(title: "Owned", backgroundColor: SplatAppStyle.loggedIn) { _ in
@@ -66,14 +33,25 @@ extension MGSwipeTableCell {
             tableView.endUpdates()
             return true
         }
+        let starSwipe = MGSwipeButton(title: "", icon: UIImage(named: "bookmarkStar"), backgroundColor: SplatAppStyle.loggedIn) { _ in
+            tableView.beginUpdates()
+            prefs.setInteger(1, forKey: "\(gear.shortName)-starred")
+            tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .None)
+            tableView.endUpdates()
+            return true
+        }
+        
         
         expansionSettings.buttonIndex = 0
         expansionSettings.fillOnTrigger = false
         expansionSettings.threshold = 1.2
-        self.leftButtons = [ownedSwipe]
+        self.leftButtons = [ownedSwipe, starSwipe]
         self.leftExpansion = expansionSettings
+        let offsetSwipe = MGSwipeSettings()
+        offsetSwipe.offset = 15
         self.rightButtons = [notOwnedSwipe]
         self.rightExpansion = expansionSettings
+        self.rightSwipeSettings = offsetSwipe // Offset for section index titles
         
         for gestureRecognizer in self.contentView.gestureRecognizers! {
             self.contentView.removeGestureRecognizer(gestureRecognizer) }
@@ -105,12 +83,42 @@ class GearCell: MGSwipeTableCell {
     @IBOutlet weak var imgGear: UIImageView!
     @IBOutlet weak var imgAbilityMain: UIImageView!
     @IBOutlet weak var imgAbilitySub: UIImageView!
+    @IBOutlet weak var imgBookmark: UIImageView!
     
     func configureForGear(gear: Gear) {
+        self.separatorInset = UIEdgeInsetsZero
+        self.layoutMargins = UIEdgeInsetsZero
+        
         lblName.text = gear.name
         imgGear.image = gear.getImage()
         imgAbilityMain.image = gear.getAbilityImage()
         imgAbilitySub.image = gear.getAbilitySubImage()
+        
+        let prefs = NSUserDefaults.standardUserDefaults()
+        let owned = prefs.integerForKey("\(gear.shortName)-owned")
+        let starred = prefs.integerForKey("\(gear.shortName)-starred")
+        
+        if owned != 0 {
+            self.contentView.backgroundColor = owned > 0 ? SplatAppStyle.loggedIn : SplatAppStyle.loggedOut
+        } else {
+            self.contentView.backgroundColor = UIColor.clearColor()
+        }
+        
+        if starred == 1 {
+            var bookmarkColor = UIColor.whiteColor()
+            
+            switch owned {
+            case -1:
+                bookmarkColor = SplatAppStyle.loggedOut
+            case 1:
+                bookmarkColor = SplatAppStyle.loggedIn
+            default:
+                bookmarkColor = SplatAppStyle.brandPressedFill
+            }
+            
+            let bookmark = SplatAppStyle.imageOfBookmark(frame: CGRectMake(0, 0, imgBookmark.frame.width, imgBookmark.frame.height), bookmarkColor: bookmarkColor)
+            imgBookmark.image = bookmark
+        } else { imgBookmark.image = nil }
     }
 }
 
@@ -126,8 +134,12 @@ class GearDetailCell: MGSwipeTableCell {
     @IBOutlet weak var imgStar1: UIImageView!
     @IBOutlet weak var imgStar2: UIImageView!
     @IBOutlet weak var imgStar3: UIImageView!
+    @IBOutlet weak var imgBookmark: UIImageView!
     
     func configureForGear(gear: Gear) {
+        self.separatorInset = UIEdgeInsetsZero
+        self.layoutMargins = UIEdgeInsetsZero
+        
         lblName.text = gear.name
         lblAbilityMain.text = abilityData[gear.ability]?.stringValue
         lblAbilitySub.text = abilityData[gear.abilitySub]?.stringValue
@@ -148,5 +160,31 @@ class GearDetailCell: MGSwipeTableCell {
             imgStar2.image = nil
             imgStar3.image = nil
         }
+        
+        let prefs = NSUserDefaults.standardUserDefaults()
+        let owned = prefs.integerForKey("\(gear.shortName)-owned")
+        let starred = prefs.integerForKey("\(gear.shortName)-starred")
+        
+        if owned != 0 {
+            self.contentView.backgroundColor = owned > 0 ? SplatAppStyle.loggedIn : SplatAppStyle.loggedOut
+        } else {
+            self.contentView.backgroundColor = UIColor.clearColor()
+        }
+        
+        if starred == 0 {
+            var bookmarkColor = UIColor.whiteColor()
+            
+            switch owned {
+            case -1:
+                bookmarkColor = SplatAppStyle.loggedOut
+            case 1:
+                bookmarkColor = SplatAppStyle.loggedIn
+            default:
+                bookmarkColor = SplatAppStyle.brandPressedFill
+            }
+            
+            let bookmark = SplatAppStyle.imageOfBookmark(frame: CGRectMake(0, 0, imgBookmark.frame.width, imgBookmark.frame.height), bookmarkColor: bookmarkColor)
+            imgBookmark.image = bookmark
+        } else { imgBookmark.image = nil }
     }
 }
