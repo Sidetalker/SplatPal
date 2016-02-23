@@ -60,6 +60,7 @@
             <string>ProjectPaintball</string>
             <string>ProjectPaintball</string>
             <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -286,7 +287,7 @@
                                 <rect key="frame" x="0.0" y="491" width="200" height="60"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abilityNone.png" translatesAutoresizingMaskIntoConstraints="NO" id="9NL-Ax-cYv">
-                                        <rect key="frame" x="77.5" y="15" width="45" height="45"/>
+                                        <rect key="frame" x="77" y="15" width="45" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="45" id="WZL-p1-qdP"/>
                                             <constraint firstAttribute="width" secondItem="9NL-Ax-cYv" secondAttribute="height" multiplier="1:1" id="ZEF-ib-Zjk"/>
@@ -322,7 +323,7 @@
                                 <rect key="frame" x="200" y="491" width="200" height="60"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abilityNone.png" translatesAutoresizingMaskIntoConstraints="NO" id="OqM-xK-6Sl">
-                                        <rect key="frame" x="78" y="14.5" width="45" height="45"/>
+                                        <rect key="frame" x="78" y="14" width="45" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="OqM-xK-6Sl" secondAttribute="height" multiplier="1:1" id="RY0-gF-OX0"/>
                                             <constraint firstAttribute="width" constant="45" id="ZVh-HJ-m0n"/>
@@ -402,8 +403,8 @@
                                     <constraint firstAttribute="height" constant="10" id="sGa-dc-8B7"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Wz-Cj-Yly">
-                                <rect key="frame" x="0.0" y="711" width="600" height="240"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Wz-Cj-Yly">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="296"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Gear Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2p-Oa-m2f">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
@@ -415,7 +416,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzL-PQ-YJH">
-                                        <rect key="frame" x="263" y="38" width="74" height="40"/>
+                                        <rect key="frame" x="263" y="86" width="74" height="40"/>
                                         <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="25"/>
                                         <state key="normal" title="Shoes">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -425,7 +426,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTS-0A-y5V">
-                                        <rect key="frame" x="269" y="86" width="63" height="40"/>
+                                        <rect key="frame" x="269" y="134" width="63" height="40"/>
                                         <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="25"/>
                                         <state key="normal" title="Shirt">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -435,7 +436,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMu-OF-Lh3">
-                                        <rect key="frame" x="278" y="134" width="44" height="40"/>
+                                        <rect key="frame" x="278" y="182" width="44" height="40"/>
                                         <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="25"/>
                                         <state key="normal" title="Hat">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -445,7 +446,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlU-hk-4hr">
-                                        <rect key="frame" x="283.5" y="182" width="33" height="40"/>
+                                        <rect key="frame" x="284" y="230" width="33" height="40"/>
                                         <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="25"/>
                                         <state key="normal" title="All">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -454,22 +455,42 @@
                                             <action selector="anyTapped:" destination="qB1-1u-vDb" eventType="touchUpInside" id="8bd-0Y-N8J"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hh-wF-rH9">
+                                        <rect key="frame" x="253" y="38" width="94" height="40"/>
+                                        <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="25"/>
+                                        <state key="normal" title="Starred">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="starredTapped:" destination="qB1-1u-vDb" eventType="touchUpInside" id="tYH-nm-adb"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="fzL-PQ-YJH" firstAttribute="top" secondItem="U2p-Oa-m2f" secondAttribute="bottom" constant="8" id="27C-FN-xYl"/>
+                                    <constraint firstItem="1hh-wF-rH9" firstAttribute="top" secondItem="aMu-OF-Lh3" secondAttribute="bottom" constant="8" id="2Tg-Mb-JtH"/>
                                     <constraint firstItem="U2p-Oa-m2f" firstAttribute="leading" secondItem="5Wz-Cj-Yly" secondAttribute="leading" id="6Kg-zb-UXZ"/>
+                                    <constraint firstItem="hlU-hk-4hr" firstAttribute="top" secondItem="1hh-wF-rH9" secondAttribute="bottom" constant="8" id="8c5-9b-ub0"/>
                                     <constraint firstItem="U2p-Oa-m2f" firstAttribute="top" secondItem="5Wz-Cj-Yly" secondAttribute="top" id="9DJ-6S-Waf"/>
+                                    <constraint firstItem="1hh-wF-rH9" firstAttribute="centerX" secondItem="5Wz-Cj-Yly" secondAttribute="centerX" id="9nE-gt-g9d"/>
                                     <constraint firstItem="LTS-0A-y5V" firstAttribute="centerX" secondItem="5Wz-Cj-Yly" secondAttribute="centerX" id="BuA-1S-rmx"/>
                                     <constraint firstItem="aMu-OF-Lh3" firstAttribute="centerX" secondItem="5Wz-Cj-Yly" secondAttribute="centerX" id="ETT-5Q-ab2"/>
-                                    <constraint firstItem="hlU-hk-4hr" firstAttribute="top" secondItem="aMu-OF-Lh3" secondAttribute="bottom" constant="8" id="W4N-Dy-QLe"/>
                                     <constraint firstItem="aMu-OF-Lh3" firstAttribute="top" secondItem="LTS-0A-y5V" secondAttribute="bottom" constant="8" id="ZHl-7f-64g"/>
+                                    <constraint firstItem="hlU-hk-4hr" firstAttribute="top" secondItem="aMu-OF-Lh3" secondAttribute="bottom" constant="8" id="bgB-uO-7au"/>
+                                    <constraint firstItem="fzL-PQ-YJH" firstAttribute="top" secondItem="1hh-wF-rH9" secondAttribute="bottom" constant="8" id="cID-Cn-wkr"/>
                                     <constraint firstAttribute="height" constant="240" id="cfG-z5-MmH"/>
+                                    <constraint firstItem="1hh-wF-rH9" firstAttribute="top" secondItem="U2p-Oa-m2f" secondAttribute="bottom" constant="8" id="hDA-WQ-19t"/>
                                     <constraint firstItem="fzL-PQ-YJH" firstAttribute="centerX" secondItem="5Wz-Cj-Yly" secondAttribute="centerX" id="hko-X7-KAD"/>
                                     <constraint firstAttribute="trailing" secondItem="U2p-Oa-m2f" secondAttribute="trailing" id="oUw-vV-2OT"/>
                                     <constraint firstItem="LTS-0A-y5V" firstAttribute="top" secondItem="fzL-PQ-YJH" secondAttribute="bottom" constant="8" id="udz-Ch-tnp"/>
                                     <constraint firstItem="hlU-hk-4hr" firstAttribute="centerX" secondItem="5Wz-Cj-Yly" secondAttribute="centerX" id="wsu-Q5-dpN"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2Tg-Mb-JtH"/>
+                                        <exclude reference="8c5-9b-ub0"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

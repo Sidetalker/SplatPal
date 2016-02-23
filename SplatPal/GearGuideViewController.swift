@@ -282,6 +282,7 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
             if gear.ability != mainAbility && mainAbility != "None" { valid = false }
             if gear.abilitySub != subAbility && subAbility != "None" { valid = false }
             if gear.category != category && category != "All" { valid = false }
+            if !gear.st
             
             if valid { newGear.append(gear) }
         }
@@ -335,6 +336,13 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
     @IBAction func anyTapped(sender: AnyObject) {
         lblType.text = "All"
         category = "All"
+        updateTable()
+        toggleTypeView(false)
+    }
+    
+    @IBAction func starredTapped(sender: AnyObject) {
+        lblType.text = "Starred"
+        category = "Starred"
         updateTable()
         toggleTypeView(false)
     }
