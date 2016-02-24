@@ -282,6 +282,7 @@
          "rarity":"3",
          "cost":"600",
          "name":"Acerola Rain Boots"
+         "name_eu":"Acerola Wellies"
       },
       {  
          "category":"Clothing",
@@ -306,6 +307,7 @@
          "rarity":"3",
          "cost":"N/A",
          "name":"Armor Boot Replicas"
+         "name_eu":"Armour Boot Replicas"
       },
       {  
          "category":"Headgear",
@@ -314,6 +316,7 @@
          "rarity":"3",
          "cost":"N/A",
          "name":"Armor Helmet Replica"
+         "name_eu":"Armour Helmet Replica"
       },
       {  
          "category":"Clothing",
@@ -322,6 +325,7 @@
          "rarity":"3",
          "cost":"N/A",
          "name":"Armor Jacket Replica"
+         "name_eu":"Armour Jacket Replica"
       },
       {  
          "category":"Headgear",
@@ -338,6 +342,7 @@
          "rarity":"1",
          "cost":"800",
          "name":"B-ball Jersey (Away)"
+         "name_eu":"B-ball Vest (Away)"
       },
       {  
          "category":"Clothing",
@@ -346,6 +351,7 @@
          "rarity":"2",
          "cost":"2300",
          "name":"B-ball Jersey (Home)"
+         "name_eu":"B-ball Vest (Home)"
       },
       {  
          "category":"Clothing",
@@ -354,6 +360,7 @@
          "rarity":"2",
          "cost":"2,200",
          "name":"Baby-Jelly Shirt"
+         "name_eu":"Baby Jelly Shirt"
       },
       {  
          "category":"Headgear",
@@ -410,6 +417,7 @@
          "rarity":"3",
          "cost":"11,000",
          "name":"Bike Helmet"
+         "name_eu":"Cycle Helmet"
       },
       {  
          "category":"Clothing",
@@ -522,6 +530,7 @@
          "rarity":"1",
          "cost":"700",
          "name":"Blowfish Bell Hat"
+         "name_eu":"Fugu Bell Hat"
       },
       {  
          "category":"Shoes",
@@ -538,6 +547,7 @@
          "rarity":"3",
          "cost":"12,000",
          "name":"Blue Moto Boots"
+         "name_eu":"Blue Biker Boots"
       },
       {  
          "category":"Clothing",
@@ -570,6 +580,7 @@
          "rarity":"1",
          "cost":"300",
          "name":"Blue Slip-Ons"
+         "name_eu":"Blue Plimsolls"
       },
       {  
          "category":"Shoes",
@@ -602,6 +613,7 @@
          "rarity":"1",
          "cost":"600",
          "name":"Camo Layered LS"
+         "name_eu":"Layered Camo LS"
       },
       {  
          "category":"Headgear",
@@ -610,6 +622,7 @@
          "rarity":"2",
          "cost":"2,500",
          "name":"Camo Mesh"
+         "name_eu":"Camo Mesh Cap"
       },
       {  
          "category":"Clothing",
@@ -754,6 +767,7 @@
          "rarity":"3",
          "cost":"10,000",
          "name":"Dark Urban Vest"
+         "name_eu":"Dark Urban Gilet"
       },
       {  
          "category":"Headgear",
@@ -762,6 +776,7 @@
          "rarity":"2",
          "cost":"2,500",
          "name":"Designer Headphones"
+         "name_eu":"Colourful Headphones"
       },
       {  
          "category":"Clothing",
@@ -786,6 +801,7 @@
          "rarity":"2",
          "cost":"2,500",
          "name":"Firefin Navy Sweat"
+         "name_eu":"Firefin Sweat Navy"
       },
       {  
          "category":"Headgear",
@@ -802,6 +818,7 @@
          "rarity":"2",
          "cost":"2,000",
          "name":"Five-Panel Cap"
+         "name_eu":"5-Panel Cap"
       },
       {  
          "category":"Clothing",
@@ -810,6 +827,7 @@
          "rarity":"3",
          "cost":"11000",
          "name":"Forest Vest"
+         "name_eu":"Forest Gilet"
       },
       {  
          "category":"Clothing",
@@ -882,6 +900,7 @@
          "rarity":"1",
          "cost":"800",
          "name":"Gray College Sweat"
+         "name_eu":"Grey College Sweat"
       },
       {  
          "category":"Clothing",
@@ -890,6 +909,7 @@
          "rarity":"2",
          "cost":"2,800",
          "name":"Gray Mixed Shirt"
+         "name_eu":"Grey Mixed Shirt"
       },
       {  
          "category":"Clothing",
@@ -898,6 +918,7 @@
          "rarity":"1",
          "cost":"500",
          "name":"Gray Vector Tee"
+         "name_eu":"Grey Vector Tee"
       },
       {  
          "category":"Clothing",
@@ -906,6 +927,7 @@
          "rarity":"2",
          "cost":"2,000",
          "name":"Green-Check Shirt"
+         "name_eu":"Green Check Shirt"
       },
       {  
          "category":"Clothing",
@@ -922,6 +944,7 @@
          "rarity":"2",
          "cost":"1,600",
          "name":"Green Rain Boots"
+         "name_eu":"Moss-Green Wellies"
       },
       {  
          "category":"Clothing",
@@ -986,6 +1009,7 @@
          "rarity":"1",
          "cost":"500",
          "name":"Hunter Hi-Tops"
+         "name_eu":"Dark Green Hi-Tops"
       },
       {  
          "category":"Shoes",
@@ -1026,6 +1050,7 @@
          "rarity":"3",
          "cost":"9,000",
          "name":"Jungle Hat"
+         "name_eu":"Safari Hat"
       },
       {  
          "category":"Clothing",
@@ -1042,6 +1067,7 @@
          "rarity":"3",
          "cost":"8,000",
          "name":"LE Lo-Tops"
+         "name_eu":"Ltd Edition Lo-Tops"
       },
       {  
          "category":"Shoes",
@@ -1050,6 +1076,7 @@
          "rarity":"2",
          "cost":"2,600",
          "name":"LE Soccer Cleats"
+         "name_eu":"LE Football Studs"
       },
       {  
          "category":"Clothing",
@@ -1130,6 +1157,7 @@
          "rarity":"2",
          "cost":"3,000",
          "name":"Moto Boots"
+         "name_eu":"Biker Boots"
       },
       {  
          "category":"Clothing",
@@ -1138,6 +1166,7 @@
          "rarity":"3",
          "cost":"11,000",
          "name":"Mountain Vest"
+         "name_eu":"Mountain Gilet"
       },
       {  
          "category":"Clothing",
@@ -1162,6 +1191,7 @@
          "rarity":"1",
          "cost":"700",
          "name":"Neon Sea Slugs"
+         "name_eu":"Neon Green Sea Slugs"
       },
       {  
          "category":"Headgear",
@@ -1170,6 +1200,7 @@
          "rarity":"2",
          "cost":"2800",
          "name":"Noise Cancelers"
+         "name_eu":"Noise Cancellers"
       },
       {  
          "category":"Clothing",
@@ -1194,6 +1225,7 @@
          "rarity":"2",
          "cost":"N/A",
          "name":"Octoling Armor"
+         "name_eu":"Octoling Armour"
       },
       {  
          "category":"Shoes",
@@ -1210,6 +1242,7 @@
          "rarity":"2",
          "cost":"N/A",
          "name":"Octoling Goggles"
+         "name_eu":"Octoling Scope"
       },
       {  
          "category":"Clothing",
@@ -1306,6 +1339,7 @@
          "rarity":"1",
          "cost":"700",
          "name":"Pirate-Stripe Tee"
+         "name_eu":"Pirate Stripes Tee"
       },
       {  
          "category":"Shoes",
@@ -1322,6 +1356,7 @@
          "rarity":"2",
          "cost":"N/A",
          "name":"Power Armor"
+         "name_eu":"Power Armour"
       },
       {  
          "category":"Shoes",
@@ -1402,6 +1437,7 @@
          "rarity":"1",
          "cost":"300",
          "name":"Rainy-Day Tee"
+         "name_eu":"Rainy Day Tee"
       },
       {  
          "category":"Clothing",
@@ -1410,6 +1446,7 @@
          "rarity":"2",
          "cost":"2,000",
          "name":"Red-Check Shirt"
+         "name_eu":"Red Check Shirt"
       },
       {  
          "category":"Shoes",
@@ -1442,6 +1479,7 @@
          "rarity":"1",
          "cost":"300",
          "name":"Red Slip-Ons"
+         "name_eu":"Red Plimsolls"
       },
       {  
          "category":"Clothing",
@@ -1538,6 +1576,7 @@
          "rarity":"1",
          "cost":"600",
          "name":"Round-Collar Shirt"
+         "name_eu":"Round Collar Shirt"
       },
       {  
          "category":"Headgear",
@@ -1570,6 +1609,7 @@
          "rarity":"2",
          "cost":"2300",
          "name":"Safari Hat"
+         "name_eu":"Jungle Hat"
       },
       {  
          "category":"Clothing",
@@ -1578,6 +1618,7 @@
          "rarity":"1",
          "cost":"400",
          "name":"Sage Polo"
+         "name_eu":"Sage Green Polo"
       },
       {  
          "category":"Clothing",
@@ -1586,6 +1627,7 @@
          "rarity":"1",
          "cost":"700",
          "name":"Sailor-Stripe Tee"
+         "name_eu":"Sailor Stripes Tee"
       },
       {  
          "category":"Headgear",
@@ -1650,6 +1692,7 @@
          "rarity":"3",
          "cost":"8,400",
          "name":"Shirt & Tie"
+         "name_eu":"Shirt and Tie"
       },
       {  
          "category":"Headgear",
@@ -1666,6 +1709,7 @@
          "rarity":"1",
          "cost":"400",
          "name":"Shrimp-Pink Polo"
+         "name_eu":"Pink Shrimp Polo"
       },
       {  
          "category":"Headgear",
@@ -1690,6 +1734,7 @@
          "rarity":"1",
          "cost":"500",
          "name":"Sky-Blue Squideye"
+         "name_eu":"Sky Blue Squideye"
       },
       {  
          "category":"Clothing",
@@ -1706,6 +1751,7 @@
          "rarity":"2",
          "cost":"3,000",
          "name":"Snorkel Mask"
+         "name_eu":"Snorkel"
       },
       {  
          "category":"Shoes",
@@ -1722,6 +1768,7 @@
          "rarity":"3",
          "cost":"9,600",
          "name":"Soccer Cleats"
+         "name_eu":"Football Studs"
       },
       {  
          "category":"Headgear",
@@ -1730,6 +1777,7 @@
          "rarity":"3",
          "cost":"8000",
          "name":"Soccer Headband"
+         "name_eu":"Football Headband"
       },
       {  
          "category":"Headgear",
@@ -1778,6 +1826,7 @@
          "rarity":"1",
          "cost":"800",
          "name":"Squid-Pattern Waistcoat"
+         "name_eu":"Squid Pattern Waistcoat"
       },
       {  
          "category":"Headgear",
@@ -1794,6 +1843,7 @@
          "rarity":"2",
          "cost":"1,500",
          "name":"Squid-Stitch Slip-Ons"
+         "name_eu":"Squid-Stitch Plimsolls"
       },
       {  
          "category":"Clothing",
@@ -1866,6 +1916,7 @@
          "rarity":"1",
          "cost":"800",
          "name":"Squink Wingtips"
+         "name_eu":"Squid Ink Brogues"
       },
       {  
          "category":"Headgear",
@@ -1906,6 +1957,7 @@
          "rarity":"1",
          "cost":"600",
          "name":"Streetstyle Cap"
+         "name_eu":"Fashion Cap"
       },
       {  
          "category":"Headgear",
@@ -1962,6 +2014,7 @@
          "rarity":"1",
          "cost":"300",
          "name":"Sunny-Day Tee"
+         "name_eu":"Sunny Day Tee"
       },
       {  
          "category":"Headgear",
@@ -2002,6 +2055,7 @@
          "rarity":"1",
          "cost":"350",
          "name":"Tinted Shades"
+         "name_eu":"Coloured Shades"
       },
       {  
          "category":"Clothing",
@@ -2050,6 +2104,7 @@
          "rarity":"1",
          "cost":"700",
          "name":"Tricolor Rugby"
+         "name_eu":"Tricolour Rugby"
       },
       {  
          "category":"Shoes",
@@ -2066,6 +2121,7 @@
          "rarity":"1",
          "cost":"700",
          "name":"Two-Stripe Mesh"
+         "name_eu":"2-Stripe Mesh Cap"
       },
       {  
          "category":"Headgear",
@@ -2106,6 +2162,7 @@
          "rarity":"3",
          "cost":"9,000",
          "name":"Vintage Check Shirt"
+         "name_eu":"Vintage Check"
       },
       {  
          "category":"Headgear",
@@ -2266,6 +2323,7 @@
          "rarity":"2",
          "cost":"3,000",
          "name":"Yellow Urban Vest"
+         "name_eu":"Yellow Urban Gilet"
       },
       {  
          "category":"Clothing",
