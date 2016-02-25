@@ -10,7 +10,10 @@ import SwiftyJSON
 
 class Gear {
     var name = ""
+    var nameLocale = ""
+    var locale = ""
     var shortName = ""
+    var shortNameLocale = ""
     var category = ""
     var ability = ""
     var abilityShortName = ""
@@ -23,9 +26,16 @@ class Gear {
     
     init() { }
     
-    init(data: JSON) {
+    init(data: JSON, locale: String) {
+        var nameString = "name_\(locale)"
+        
+        if data[nameString].string == nil {
+            nameString = "name"
+        }
+        
         if let
-            name = data["name"].string,
+            name = data[nameString].string,
+            shortName = data["name"].string,
             category = data["category"].string,
             ability = data["ability"].string,
             brand = data["brand"].string,
@@ -34,7 +44,7 @@ class Gear {
             rarity = Int(rarityString)
         {
             self.name = name
-            self.shortName = name.removeWhitespace()
+            self.shortName = shortName.removeWhitespace()
             self.category = category
             self.ability = ability
             self.abilityShortName = ability.removeWhitespace()

@@ -1,3 +1,8 @@
+Version 1.0.2 (1384)
+- By somewhat meager demand I've added ability to star / bookmark your favorite gear
+- One my awesome testers tychoquad (https://github.com/tychoquad) has added EU localization for gear
+- This should be tested thoroughly. Try to break things and fill me up with ideas!
+
 Version 1.0.2 (1304)
 - Bugfix: Splatfest timer wasn't working when logged in w/ NNID
 

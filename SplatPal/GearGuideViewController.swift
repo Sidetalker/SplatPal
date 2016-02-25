@@ -55,6 +55,8 @@ class GearTableViewController: UITableViewController {
         for gear in newData {
             if currentLetter == alphabet.characters.count { break }
             
+            log.debug(gear.name)
+            
             if searchingNumbers {
                 if Int(String(gear.name[0])) != nil {
                     if firstOfLetter {
@@ -282,7 +284,8 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
             if gear.ability != mainAbility && mainAbility != "None" { valid = false }
             if gear.abilitySub != subAbility && subAbility != "None" { valid = false }
             if gear.category != category && category != "All" { valid = false }
-            if !gear.st
+            if !gear.isStarred() && category == "Starred" { valid = false }
+            else if gear.isStarred() && category == "Starred" { valid = true }
             
             if valid { newGear.append(gear) }
         }

@@ -82,9 +82,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             jsonData = NSData(contentsOfFile: brandPath)
         {
             let jsonResult = JSON(data: jsonData)
+            let timeSinceGMT = NSTimeZone.systemTimeZone().secondsFromGMT
+            var localeMod = ""
+            
+            if (timeSinceGMT >= 0 && timeSinceGMT <= 10800) || (timeSinceGMT >= 28800 && timeSinceGMT <= 36000) {
+                localeMod = "eu"
+            }
             
             brandData = jsonResult["brands"].arrayValue
-            gearData = jsonResult["gear"].arrayValue.map({ Gear(data: $0) })
+            gearData = jsonResult["gear"].arrayValue.map({ Gear(data: $0, locale: localeMod) })
+            gearData.sortInPlace { $0.name < $1.name }
             weaponData = jsonResult["weapons"].arrayValue
             abilityData = jsonResult["abilities"].dictionaryValue
             mapData = jsonResult["maps"].arrayObject as! [String]
