@@ -40,7 +40,7 @@ class GearTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        updateDisplay(gearData)
+        if gearDisplayData.count == 0 { updateDisplay(gearData) }
     }
     
     func updateDisplay(newData: [Gear]) {
@@ -49,18 +49,16 @@ class GearTableViewController: UITableViewController {
         alphaSectionHeaders.removeAll()
         
         var currentLetter = 0
-        var firstOfLetter = true
+        var firstItem = true
         var searchingNumbers = true
         
         for gear in newData {
             if currentLetter == alphabet.characters.count { break }
             
-            log.debug(gear.name)
-            
             if searchingNumbers {
                 if Int(String(gear.name[0])) != nil {
-                    if firstOfLetter {
-                        firstOfLetter = false
+                    if firstItem {
+                        firstItem = false
                         alphaSectionHeaders.append("#")
                         gearDisplayData.append([gear])
                         gearDetailDisplaying.append([false])
@@ -69,7 +67,6 @@ class GearTableViewController: UITableViewController {
                         gearDetailDisplaying[gearDetailDisplaying.count - 1].append(false)
                     }
                 } else {
-                    firstOfLetter = false
                     searchingNumbers = false
                     alphaSectionHeaders.append(String(alphabet[currentLetter]))
                     gearDisplayData.append([gear])
@@ -77,8 +74,8 @@ class GearTableViewController: UITableViewController {
                 }
             } else {
                 if gear.name[0] == alphabet[currentLetter] {
-                    if firstOfLetter {
-                        firstOfLetter = false
+                    if firstItem {
+                        firstItem = false
                         alphaSectionHeaders.append(String(alphabet[currentLetter]))
                         gearDisplayData.append([gear])
                         gearDetailDisplaying.append([false])
@@ -87,8 +84,10 @@ class GearTableViewController: UITableViewController {
                         gearDetailDisplaying[gearDetailDisplaying.count - 1].append(false)
                     }
                 } else {
-                    firstOfLetter = false
                     currentLetter += 1
+                    
+                    while gear.name[0] != alphabet[currentLetter] { currentLetter += 1 }
+                    
                     alphaSectionHeaders.append(String(alphabet[currentLetter]))
                     gearDisplayData.append([gear])
                     gearDetailDisplaying.append([false])
