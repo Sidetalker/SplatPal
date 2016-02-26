@@ -1000,11 +1000,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SplatPal/GearGuideViewController.swift"
-            timestampString = "478051444.806829"
+            timestampString = "478139378.429593"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
             landmarkName = "headerTap(_:)"
             landmarkType = "5">
          </BreakpointContent>
