@@ -192,7 +192,7 @@ class GearTableViewController: UITableViewController {
     }
 }
 
-class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
+class GearGuideViewController: UIViewController, UIGestureRecognizerDelegate, IconSelectionViewDelegate {
     @IBOutlet weak var iconView: IconSelectionView!
     @IBOutlet weak var iconViewHeight: NSLayoutConstraint!
     @IBOutlet weak var iconViewXLoc: NSLayoutConstraint!
@@ -208,6 +208,7 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
     
     // 0 for main, 1 for sub
     var selectionFlag = -1
+    var typeViewDisplaying = false
     var mainAbility = "None"
     var subAbility = "None"
     var category = "All"
@@ -238,9 +239,21 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "segueGearTable" {
+            let tapGesture = UITapGestureRecognizer(target: self, action: "dismissTypeView")
+            tapGesture.delegate = self
+            
             gearTable = segue.destinationViewController as? GearTableViewController
+            gearTable?.tableView.addGestureRecognizer(tapGesture)
             gearTable?.updateDisplay(gearData)
         }
+    }
+    
+    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
+        return typeViewDisplaying
+    }
+    
+    func dismissTypeView() {
+        if typeViewDisplaying { toggleTypeView(false) }
     }
     
     func toggleIconView(show: Bool) {
@@ -253,6 +266,7 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
     
     func toggleTypeView(show: Bool) {
         typeViewX.constant = show ? 0 : -typeViewHeight - tabBarHeight
+        typeViewDisplaying = show
         
         UIView.animateWithDuration(0.3, animations: {
             self.view.layoutIfNeeded()
