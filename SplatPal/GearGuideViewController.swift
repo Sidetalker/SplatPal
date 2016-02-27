@@ -56,7 +56,7 @@ class GearTableViewController: UITableViewController {
             if currentLetter == alphabet.characters.count { break }
             
             if searchingNumbers {
-                if Int(String(gear.name[0])) != nil {
+                if Int(String(gear.localizedName[0])) != nil {
                     if firstItem {
                         firstItem = false
                         alphaSectionHeaders.append("#")
@@ -73,7 +73,7 @@ class GearTableViewController: UITableViewController {
                     gearDetailDisplaying.append([false])
                 }
             } else {
-                if gear.name[0] == alphabet[currentLetter] {
+                if gear.localizedName[0] == alphabet[currentLetter] {
                     if firstItem {
                         firstItem = false
                         alphaSectionHeaders.append(String(alphabet[currentLetter]))
@@ -86,7 +86,7 @@ class GearTableViewController: UITableViewController {
                 } else {
                     currentLetter += 1
                     
-                    while gear.name[0] != alphabet[currentLetter] { currentLetter += 1 }
+                    while gear.localizedName[0] != alphabet[currentLetter] { currentLetter += 1 }
                     
                     alphaSectionHeaders.append(String(alphabet[currentLetter]))
                     gearDisplayData.append([gear])

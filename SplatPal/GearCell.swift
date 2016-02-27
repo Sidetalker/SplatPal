@@ -89,7 +89,7 @@ class GearCell: MGSwipeTableCell {
         self.separatorInset = UIEdgeInsetsZero
         self.layoutMargins = UIEdgeInsetsZero
         
-        lblName.text = gear.name
+        lblName.text = gear.localizedName
         imgGear.image = gear.getImage()
         imgAbilityMain.image = gear.getAbilityImage()
         imgAbilitySub.image = gear.getAbilitySubImage()
@@ -140,7 +140,7 @@ class GearDetailCell: MGSwipeTableCell {
         self.separatorInset = UIEdgeInsetsZero
         self.layoutMargins = UIEdgeInsetsZero
         
-        lblName.text = gear.name
+        lblName.text = gear.localizedName
         lblAbilityMain.text = abilityData[gear.ability]?.stringValue
         lblAbilitySub.text = abilityData[gear.abilitySub]?.stringValue
         lblCost.text = gear.cost

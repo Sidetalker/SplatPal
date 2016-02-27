@@ -266,6 +266,8 @@ class LoadoutTableViewController: UITableViewController {
             vc.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .Done, target: self, action: "saveChanges")
             vc.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Delete", style: .Done, target: self, action: "delete")
             vc.navigationItem.leftBarButtonItem!.tintColor = UIColor.redColor()
+            vc.loadoutTVC = self
+            vc.loadoutIndex = indexPath.row
             vc.loadout = loadouts[indexPath.row]
             selectedIndex = indexPath.row
             
@@ -645,13 +647,28 @@ class LoadoutReviewController: UITableViewController, IconSelectionViewDelegate 
         
         let loadoutURL = loadout.encoded()
         
-        log.debug("URL: \(loadoutURL)")
-        
-        let shareSheet = UIActivityViewController(activityItems: [loadoutURL], applicationActivities: nil)
-        shareSheet.popoverPresentationController?.sourceView = tableView.cellForRowAtIndexPath(indexPath)
-        shareSheet.popoverPresentationController?.sourceRect = tableView.cellForRowAtIndexPath(indexPath)!.bounds
-        
-        self.presentViewController(shareSheet, animated: true, completion: nil)
+        if let cell = loadoutTVC?.tableView.cellForRowAtIndexPath(NSIndexPath(forRow: loadoutIndex, inSection: 1)) {
+            // Update the loadout cell with our selected options
+            let oldLoadout = loadoutTVC?.loadouts[loadoutIndex]
+            loadoutTVC?.loadouts[loadoutIndex] = loadout
+            loadoutTVC?.tableView.reloadData()
+            loadoutTVC?.tableView.layoutIfNeeded()
+            
+            // Grap a snap
+            UIGraphicsBeginImageContextWithOptions(cell.bounds.size, true, 0)
+            cell.drawViewHierarchyInRect(cell.bounds, afterScreenUpdates: true)
+            let image = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            
+            // Share dat snap
+            let shareSheet = UIActivityViewController(activityItems: [loadoutURL, image], applicationActivities: nil)
+            shareSheet.popoverPresentationController?.sourceView = tableView.cellForRowAtIndexPath(indexPath)
+            shareSheet.popoverPresentationController?.sourceRect = tableView.cellForRowAtIndexPath(indexPath)!.bounds
+            self.presentViewController(shareSheet, animated: true, completion: nil)
+            
+            loadoutTVC?.loadouts[loadoutIndex] = oldLoadout!
+            loadoutTVC?.tableView.reloadData()
+        }
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {

@@ -91,7 +91,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             brandData = jsonResult["brands"].arrayValue
             gearData = jsonResult["gear"].arrayValue.map({ Gear(data: $0, locale: localeMod) })
-            gearData.sortInPlace { $0.name < $1.name }
+            gearData.sortInPlace { $0.localizedName < $1.localizedName }
             weaponData = jsonResult["weapons"].arrayValue
             abilityData = jsonResult["abilities"].dictionaryValue
             mapData = jsonResult["maps"].arrayObject as! [String]
