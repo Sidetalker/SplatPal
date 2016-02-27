@@ -1,3 +1,7 @@
+Version 1.0.2 (1451)
+- Initial implementation of sharing loadout image
+- Bugfixes
+
 Version 1.0.2 (1402)
 - Add Australia to EU localization
 - Bugfixes
