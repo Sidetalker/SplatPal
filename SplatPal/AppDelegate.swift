@@ -82,10 +82,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             jsonData = NSData(contentsOfFile: brandPath)
         {
             let jsonResult = JSON(data: jsonData)
-            let timeSinceGMT = NSTimeZone.systemTimeZone().secondsFromGMT
+            let preferredLanguage = NSLocale.preferredLanguages()[0]
             var localeMod = ""
             
-            if (timeSinceGMT >= 0 && timeSinceGMT <= 10800) || (timeSinceGMT >= 28800 && timeSinceGMT <= 36000) {
+            if (preferredLanguage != "en-US") {
                 localeMod = "eu"
             }
             
