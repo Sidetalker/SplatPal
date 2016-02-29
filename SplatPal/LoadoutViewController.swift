@@ -285,10 +285,16 @@ class LoadoutTableViewController: UITableViewController {
     }
     
     func delete() {
-        loadouts.removeAtIndex(selectedIndex)
-        saveLoadouts(loadouts)
-        tableView.reloadData()
-        editNav?.dismissViewControllerAnimated(true, completion: nil)
+        let confirmAlert = UIAlertController(title: "Confirm Deletion", message: "Are you sure you want to delete this loadout?", preferredStyle: UIAlertControllerStyle.Alert)
+        confirmAlert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
+        confirmAlert.addAction(UIAlertAction(title: "Delete", style: .Destructive, handler: { _ in
+            self.loadouts.removeAtIndex(self.selectedIndex)
+            saveLoadouts(self.loadouts)
+            self.tableView.reloadData()
+            self.editNav?.dismissViewControllerAnimated(true, completion: nil)
+        }))
+        
+        self.editNav?.presentViewController(confirmAlert, animated: true, completion: nil)
     }
     
     func importLoadout(name: String, data: String) {
@@ -461,6 +467,7 @@ class LoadoutGearViewController: GearTableViewController {
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewControllerWithIdentifier("loadoutReviewTVC") as! LoadoutReviewController
+            vc.navigationItem.hidesBackButton = true
             vc.navigationItem.title = "Review"
             vc.loadout = loadout
             vc.loadoutTVC = loadoutTVC
@@ -549,7 +556,7 @@ class LoadoutReviewController: UITableViewController, IconSelectionViewDelegate 
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return self.navigationItem.title == "Review" ? 4 : 5
     }
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
