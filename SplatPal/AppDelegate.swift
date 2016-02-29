@@ -85,7 +85,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let preferredLanguage = NSLocale.preferredLanguages()[0]
             var localeMod = ""
             
-            if (preferredLanguage != "en-US") {
+            if (preferredLanguage != "en-US" && preferredLanguage != "en") {
                 localeMod = "eu"
             }
             
