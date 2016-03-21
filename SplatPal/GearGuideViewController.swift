@@ -48,50 +48,17 @@ class GearTableViewController: UITableViewController {
         gearDetailDisplaying.removeAll()
         alphaSectionHeaders.removeAll()
         
-        var currentLetter = 0
-        var firstItem = true
-        var searchingNumbers = true
+        var currentLetter: Character = "?"
         
         for gear in newData {
-            if currentLetter == alphabet.characters.count { break }
-            
-            if searchingNumbers {
-                if Int(String(gear.localizedName[0])) != nil {
-                    if firstItem {
-                        firstItem = false
-                        alphaSectionHeaders.append("#")
-                        gearDisplayData.append([gear])
-                        gearDetailDisplaying.append([false])
-                    } else {
-                        gearDisplayData[gearDisplayData.count - 1].append(gear)
-                        gearDetailDisplaying[gearDetailDisplaying.count - 1].append(false)
-                    }
-                } else {
-                    searchingNumbers = false
-                    alphaSectionHeaders.append(String(alphabet[currentLetter]))
-                    gearDisplayData.append([gear])
-                    gearDetailDisplaying.append([false])
-                }
+            if gear.name[0] == currentLetter {
+                gearDisplayData[gearDisplayData.count - 1].append(gear)
+                gearDetailDisplaying[gearDetailDisplaying.count - 1].append(false)
             } else {
-                if gear.localizedName[0] == alphabet[currentLetter] {
-                    if firstItem {
-                        firstItem = false
-                        alphaSectionHeaders.append(String(alphabet[currentLetter]))
-                        gearDisplayData.append([gear])
-                        gearDetailDisplaying.append([false])
-                    } else {
-                        gearDisplayData[gearDisplayData.count - 1].append(gear)
-                        gearDetailDisplaying[gearDetailDisplaying.count - 1].append(false)
-                    }
-                } else {
-                    currentLetter += 1
-                    
-                    while gear.localizedName[0] != alphabet[currentLetter] { currentLetter += 1 }
-                    
-                    alphaSectionHeaders.append(String(alphabet[currentLetter]))
-                    gearDisplayData.append([gear])
-                    gearDetailDisplaying.append([false])
-                }
+                currentLetter = gear.name[0]
+                gearDisplayData.append([gear])
+                gearDetailDisplaying.append([false])
+                alphaSectionHeaders.append(String(currentLetter))
             }
         }
         
@@ -161,11 +128,9 @@ class GearTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        if section != 0 { return nil }
+        if prefs.boolForKey("gearInstructionsRead") || section != 0 { return nil }
         
-        if prefs.boolForKey("gearInstructionsRead") { return nil }
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier("cellInstructions")!
+        guard let cell = tableView.dequeueReusableCellWithIdentifier("cellInstructions") else { return nil }
         cell.contentView.backgroundColor = UIColor.whiteColor()
         
         for gestureRecognizer in cell.contentView.gestureRecognizers! {
@@ -186,6 +151,7 @@ class GearTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        guard let _ = tableView.dequeueReusableCellWithIdentifier("cellInstructions") else { return 22 }
         if section == 0 && !prefs.boolForKey("gearInstructionsRead") { return 74 }
         
         return 22

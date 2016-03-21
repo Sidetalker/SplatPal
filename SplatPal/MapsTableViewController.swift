@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-let mapRefreshCooldown = 300
+let mapRefreshCooldown = 20
 
 class MapsTableViewController: UITableViewController {
     

@@ -2537,6 +2537,12 @@
          "sub":"Squid Beakon"
       },
       {  
+         "sub":"Sprinkler",
+         "level":"20",
+         "baseDmg":"28",
+         "range":"87",
+         "cost":"29900",
+         "special":"Bubbler",
          "name":"Custom Hydra Splatling"
       },
       {  

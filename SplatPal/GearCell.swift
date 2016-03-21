@@ -171,7 +171,7 @@ class GearDetailCell: MGSwipeTableCell {
             self.contentView.backgroundColor = UIColor.clearColor()
         }
         
-        if starred == 0 {
+        if starred == 1 {
             var bookmarkColor = UIColor.whiteColor()
             
             switch owned {
