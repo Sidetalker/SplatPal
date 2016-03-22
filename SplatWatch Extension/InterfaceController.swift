@@ -63,6 +63,7 @@ class InterfaceController: WKInterfaceController {
                 
                 if data["errorCode"].int != nil {
                     NSLog("Error")
+                    self.reloadViews()
                 }
                 else {
                     self.rotationData = data

@@ -40,7 +40,7 @@ class GearTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        updateDisplay(gearData)
+        if gearDisplayData.count == 0 { updateDisplay(gearData) }
     }
     
     func updateDisplay(newData: [Gear]) {
@@ -48,49 +48,17 @@ class GearTableViewController: UITableViewController {
         gearDetailDisplaying.removeAll()
         alphaSectionHeaders.removeAll()
         
-        var currentLetter = 0
-        var firstOfLetter = true
-        var searchingNumbers = true
+        var currentLetter: Character = "?"
         
         for gear in newData {
-            if currentLetter == alphabet.characters.count { break }
-            
-            if searchingNumbers {
-                if Int(String(gear.name[0])) != nil {
-                    if firstOfLetter {
-                        firstOfLetter = false
-                        alphaSectionHeaders.append("#")
-                        gearDisplayData.append([gear])
-                        gearDetailDisplaying.append([false])
-                    } else {
-                        gearDisplayData[gearDisplayData.count - 1].append(gear)
-                        gearDetailDisplaying[gearDetailDisplaying.count - 1].append(false)
-                    }
-                } else {
-                    firstOfLetter = false
-                    searchingNumbers = false
-                    alphaSectionHeaders.append(String(alphabet[currentLetter]))
-                    gearDisplayData.append([gear])
-                    gearDetailDisplaying.append([false])
-                }
+            if gear.name[0] == currentLetter {
+                gearDisplayData[gearDisplayData.count - 1].append(gear)
+                gearDetailDisplaying[gearDetailDisplaying.count - 1].append(false)
             } else {
-                if gear.name[0] == alphabet[currentLetter] {
-                    if firstOfLetter {
-                        firstOfLetter = false
-                        alphaSectionHeaders.append(String(alphabet[currentLetter]))
-                        gearDisplayData.append([gear])
-                        gearDetailDisplaying.append([false])
-                    } else {
-                        gearDisplayData[gearDisplayData.count - 1].append(gear)
-                        gearDetailDisplaying[gearDetailDisplaying.count - 1].append(false)
-                    }
-                } else {
-                    firstOfLetter = false
-                    currentLetter += 1
-                    alphaSectionHeaders.append(String(alphabet[currentLetter]))
-                    gearDisplayData.append([gear])
-                    gearDetailDisplaying.append([false])
-                }
+                currentLetter = gear.name[0]
+                gearDisplayData.append([gear])
+                gearDetailDisplaying.append([false])
+                alphaSectionHeaders.append(String(currentLetter))
             }
         }
         
@@ -160,11 +128,9 @@ class GearTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        if section != 0 { return nil }
+        if prefs.boolForKey("gearInstructionsRead") || section != 0 { return nil }
         
-        if prefs.boolForKey("gearInstructionsRead") { return nil }
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier("cellInstructions")!
+        guard let cell = tableView.dequeueReusableCellWithIdentifier("cellInstructions") else { return nil }
         cell.contentView.backgroundColor = UIColor.whiteColor()
         
         for gestureRecognizer in cell.contentView.gestureRecognizers! {
@@ -185,13 +151,14 @@ class GearTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        guard let _ = tableView.dequeueReusableCellWithIdentifier("cellInstructions") else { return 22 }
         if section == 0 && !prefs.boolForKey("gearInstructionsRead") { return 74 }
         
         return 22
     }
 }
 
-class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
+class GearGuideViewController: UIViewController, UIGestureRecognizerDelegate, IconSelectionViewDelegate {
     @IBOutlet weak var iconView: IconSelectionView!
     @IBOutlet weak var iconViewHeight: NSLayoutConstraint!
     @IBOutlet weak var iconViewXLoc: NSLayoutConstraint!
@@ -207,6 +174,7 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
     
     // 0 for main, 1 for sub
     var selectionFlag = -1
+    var typeViewDisplaying = false
     var mainAbility = "None"
     var subAbility = "None"
     var category = "All"
@@ -237,9 +205,21 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "segueGearTable" {
+            let tapGesture = UITapGestureRecognizer(target: self, action: "dismissTypeView")
+            tapGesture.delegate = self
+            
             gearTable = segue.destinationViewController as? GearTableViewController
+            gearTable?.tableView.addGestureRecognizer(tapGesture)
             gearTable?.updateDisplay(gearData)
         }
+    }
+    
+    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
+        return typeViewDisplaying
+    }
+    
+    func dismissTypeView() {
+        if typeViewDisplaying { toggleTypeView(false) }
     }
     
     func toggleIconView(show: Bool) {
@@ -252,6 +232,7 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
     
     func toggleTypeView(show: Bool) {
         typeViewX.constant = show ? 0 : -typeViewHeight - tabBarHeight
+        typeViewDisplaying = show
         
         UIView.animateWithDuration(0.3, animations: {
             self.view.layoutIfNeeded()
@@ -282,7 +263,8 @@ class GearGuideViewController: UIViewController, IconSelectionViewDelegate {
             if gear.ability != mainAbility && mainAbility != "None" { valid = false }
             if gear.abilitySub != subAbility && subAbility != "None" { valid = false }
             if gear.category != category && category != "All" { valid = false }
-            if !gear.st
+            if !gear.isStarred() && category == "Starred" { valid = false }
+            else if gear.isStarred() && category == "Starred" { valid = true }
             
             if valid { newGear.append(gear) }
         }

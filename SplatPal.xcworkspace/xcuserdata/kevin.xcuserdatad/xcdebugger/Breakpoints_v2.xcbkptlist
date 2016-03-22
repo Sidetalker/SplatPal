@@ -589,7 +589,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "129"
             endingLineNumber = "129"
-            landmarkName = "application(_:openURL:sourceApplication:annotation:)"
+            landmarkName = "application(_:didRegisterUserNotificationSettings:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -605,7 +605,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "128"
             endingLineNumber = "128"
-            landmarkName = "application(_:openURL:sourceApplication:annotation:)"
+            landmarkName = "application(_:didRegisterUserNotificationSettings:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

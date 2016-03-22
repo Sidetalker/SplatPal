@@ -82,9 +82,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             jsonData = NSData(contentsOfFile: brandPath)
         {
             let jsonResult = JSON(data: jsonData)
+            let preferredLanguage = NSLocale.preferredLanguages()[0]
+            var localeMod = ""
+            
+            if (preferredLanguage != "en-US" && preferredLanguage != "en") {
+                localeMod = "eu"
+            }
             
             brandData = jsonResult["brands"].arrayValue
-            gearData = jsonResult["gear"].arrayValue.map({ Gear(data: $0) })
+            gearData = jsonResult["gear"].arrayValue.map({ Gear(data: $0, locale: localeMod) })
+            gearData.sortInPlace { $0.localizedName < $1.localizedName }
             weaponData = jsonResult["weapons"].arrayValue
             abilityData = jsonResult["abilities"].dictionaryValue
             mapData = jsonResult["maps"].arrayObject as! [String]

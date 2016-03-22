@@ -281,7 +281,8 @@
          "brand":"Inkline",
          "rarity":"3",
          "cost":"600",
-         "name":"Acerola Rain Boots"
+         "name":"Acerola Rain Boots",
+         "name_eu":"Acerola Wellies"
       },
       {  
          "category":"Clothing",
@@ -305,7 +306,8 @@
          "brand":"Cuttlegear",
          "rarity":"3",
          "cost":"N/A",
-         "name":"Armor Boot Replicas"
+         "name":"Armor Boot Replicas",
+         "name_eu":"Armour Boot Replicas"
       },
       {  
          "category":"Headgear",
@@ -313,7 +315,8 @@
          "brand":"Cuttlegear",
          "rarity":"3",
          "cost":"N/A",
-         "name":"Armor Helmet Replica"
+         "name":"Armor Helmet Replica",
+         "name_eu":"Armour Helmet Replica"
       },
       {  
          "category":"Clothing",
@@ -321,7 +324,8 @@
          "brand":"Cuttlegear",
          "rarity":"3",
          "cost":"N/A",
-         "name":"Armor Jacket Replica"
+         "name":"Armor Jacket Replica",
+         "name_eu":"Armour Jacket Replica"
       },
       {  
          "category":"Headgear",
@@ -337,7 +341,8 @@
          "brand":"Zink",
          "rarity":"1",
          "cost":"800",
-         "name":"B-ball Jersey (Away)"
+         "name":"B-ball Jersey (Away)",
+         "name_eu":"B-ball Vest (Away)"
       },
       {  
          "category":"Clothing",
@@ -345,7 +350,8 @@
          "brand":"Zink",
          "rarity":"2",
          "cost":"2300",
-         "name":"B-ball Jersey (Home)"
+         "name":"B-ball Jersey (Home)",
+         "name_eu":"B-ball Vest (Home)"
       },
       {  
          "category":"Clothing",
@@ -353,7 +359,8 @@
          "brand":"Splash Mob",
          "rarity":"2",
          "cost":"2,200",
-         "name":"Baby-Jelly Shirt"
+         "name":"Baby-Jelly Shirt",
+         "name_eu":"Baby Jelly Shirt"
       },
       {  
          "category":"Headgear",
@@ -409,7 +416,8 @@
          "brand":"Skalop",
          "rarity":"3",
          "cost":"11,000",
-         "name":"Bike Helmet"
+         "name":"Bike Helmet",
+         "name_eu":"Cycle Helmet"
       },
       {  
          "category":"Clothing",
@@ -521,7 +529,8 @@
          "brand":"Firefin",
          "rarity":"1",
          "cost":"700",
-         "name":"Blowfish Bell Hat"
+         "name":"Blowfish Bell Hat",
+         "name_eu":"Fugu Bell Hat"
       },
       {  
          "category":"Shoes",
@@ -537,7 +546,8 @@
          "brand":"Rockenberg",
          "rarity":"3",
          "cost":"12,000",
-         "name":"Blue Moto Boots"
+         "name":"Blue Moto Boots",
+         "name_eu":"Blue Biker Boots"
       },
       {  
          "category":"Clothing",
@@ -569,7 +579,8 @@
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"300",
-         "name":"Blue Slip-Ons"
+         "name":"Blue Slip-Ons",
+         "name_eu":"Blue Plimsolls"
       },
       {  
          "category":"Shoes",
@@ -601,7 +612,8 @@
          "brand":"SquidForce",
          "rarity":"1",
          "cost":"600",
-         "name":"Camo Layered LS"
+         "name":"Camo Layered LS",
+         "name_eu":"Layered Camo LS"
       },
       {  
          "category":"Headgear",
@@ -609,7 +621,8 @@
          "brand":"Firefin",
          "rarity":"2",
          "cost":"2,500",
-         "name":"Camo Mesh"
+         "name":"Camo Mesh",
+         "name_eu":"Camo Mesh Cap"
       },
       {  
          "category":"Clothing",
@@ -753,7 +766,8 @@
          "brand":"Firefin",
          "rarity":"3",
          "cost":"10,000",
-         "name":"Dark Urban Vest"
+         "name":"Dark Urban Vest",
+         "name_eu":"Dark Urban Gilet"
       },
       {  
          "category":"Headgear",
@@ -761,7 +775,8 @@
          "brand":"Forge",
          "rarity":"2",
          "cost":"2,500",
-         "name":"Designer Headphones"
+         "name":"Designer Headphones",
+         "name_eu":"Colourful Headphones"
       },
       {  
          "category":"Clothing",
@@ -785,7 +800,8 @@
          "brand":"Firefin",
          "rarity":"2",
          "cost":"2,500",
-         "name":"Firefin Navy Sweat"
+         "name":"Firefin Navy Sweat",
+         "name_eu":"Firefin Sweat Navy"
       },
       {  
          "category":"Headgear",
@@ -801,7 +817,8 @@
          "brand":"Zekko",
          "rarity":"2",
          "cost":"2,000",
-         "name":"Five-Panel Cap"
+         "name":"Five-Panel Cap",
+         "name_eu":"5-Panel Cap"
       },
       {  
          "category":"Clothing",
@@ -809,7 +826,8 @@
          "brand":"Inkline",
          "rarity":"3",
          "cost":"11000",
-         "name":"Forest Vest"
+         "name":"Forest Vest",
+         "name_eu":"Forest Gilet"
       },
       {  
          "category":"Clothing",
@@ -881,7 +899,8 @@
          "brand":"Splash Mob",
          "rarity":"1",
          "cost":"800",
-         "name":"Gray College Sweat"
+         "name":"Gray College Sweat",
+         "name_eu":"Grey College Sweat"
       },
       {  
          "category":"Clothing",
@@ -889,7 +908,8 @@
          "brand":"Zekko",
          "rarity":"2",
          "cost":"2,800",
-         "name":"Gray Mixed Shirt"
+         "name":"Gray Mixed Shirt",
+         "name_eu":"Grey Mixed Shirt"
       },
       {  
          "category":"Clothing",
@@ -897,7 +917,8 @@
          "brand":"Takoroka",
          "rarity":"1",
          "cost":"500",
-         "name":"Gray Vector Tee"
+         "name":"Gray Vector Tee",
+         "name_eu":"Grey Vector Tee"
       },
       {  
          "category":"Clothing",
@@ -905,7 +926,8 @@
          "brand":"Zekko",
          "rarity":"2",
          "cost":"2,000",
-         "name":"Green-Check Shirt"
+         "name":"Green-Check Shirt",
+         "name_eu":"Green Check Shirt"
       },
       {  
          "category":"Clothing",
@@ -921,7 +943,8 @@
          "brand":"Inkline",
          "rarity":"2",
          "cost":"1,600",
-         "name":"Green Rain Boots"
+         "name":"Green Rain Boots",
+         "name_eu":"Moss-Green Wellies"
       },
       {  
          "category":"Clothing",
@@ -985,7 +1008,8 @@
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"500",
-         "name":"Hunter Hi-Tops"
+         "name":"Hunter Hi-Tops",
+         "name_eu":"Dark Green Hi-Tops"
       },
       {  
          "category":"Shoes",
@@ -1025,7 +1049,8 @@
          "brand":"Firefin",
          "rarity":"3",
          "cost":"9,000",
-         "name":"Jungle Hat"
+         "name":"Jungle Hat",
+         "name_eu":"Safari Hat"
       },
       {  
          "category":"Clothing",
@@ -1041,7 +1066,8 @@
          "brand":"Zekko",
          "rarity":"3",
          "cost":"8,000",
-         "name":"LE Lo-Tops"
+         "name":"LE Lo-Tops",
+         "name_eu":"Ltd Edition Lo-Tops"
       },
       {  
          "category":"Shoes",
@@ -1049,7 +1075,8 @@
          "brand":"Takoroka",
          "rarity":"2",
          "cost":"2,600",
-         "name":"LE Soccer Cleats"
+         "name":"LE Soccer Cleats",
+         "name_eu":"LE Football Studs"
       },
       {  
          "category":"Clothing",
@@ -1129,7 +1156,8 @@
          "brand":"Rockenberg",
          "rarity":"2",
          "cost":"3,000",
-         "name":"Moto Boots"
+         "name":"Moto Boots",
+         "name_eu":"Biker Boots"
       },
       {  
          "category":"Clothing",
@@ -1137,7 +1165,8 @@
          "brand":"Inkline",
          "rarity":"3",
          "cost":"11,000",
-         "name":"Mountain Vest"
+         "name":"Mountain Vest",
+         "name_eu":"Mountain Gilet"
       },
       {  
          "category":"Clothing",
@@ -1161,7 +1190,8 @@
          "brand":"Tentatek",
          "rarity":"1",
          "cost":"700",
-         "name":"Neon Sea Slugs"
+         "name":"Neon Sea Slugs",
+         "name_eu":"Neon Green Sea Slugs"
       },
       {  
          "category":"Headgear",
@@ -1169,7 +1199,8 @@
          "brand":"Forge",
          "rarity":"2",
          "cost":"2800",
-         "name":"Noise Cancelers"
+         "name":"Noise Cancelers",
+         "name_eu":"Noise Cancellers"
       },
       {  
          "category":"Clothing",
@@ -1193,7 +1224,8 @@
          "brand":"Cuttlegear",
          "rarity":"2",
          "cost":"N/A",
-         "name":"Octoling Armor"
+         "name":"Octoling Armor",
+         "name_eu":"Octoling Armour"
       },
       {  
          "category":"Shoes",
@@ -1209,7 +1241,8 @@
          "brand":"Cuttlegear",
          "rarity":"2",
          "cost":"N/A",
-         "name":"Octoling Goggles"
+         "name":"Octoling Goggles",
+         "name_eu":"Octoling Scope"
       },
       {  
          "category":"Clothing",
@@ -1305,7 +1338,8 @@
          "brand":"Splash Mob",
          "rarity":"1",
          "cost":"700",
-         "name":"Pirate-Stripe Tee"
+         "name":"Pirate-Stripe Tee",
+         "name_eu":"Pirate Stripes Tee"
       },
       {  
          "category":"Shoes",
@@ -1321,7 +1355,8 @@
          "brand":"amiibo",
          "rarity":"2",
          "cost":"N/A",
-         "name":"Power Armor"
+         "name":"Power Armor",
+         "name_eu":"Power Armour"
       },
       {  
          "category":"Shoes",
@@ -1401,7 +1436,8 @@
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"300",
-         "name":"Rainy-Day Tee"
+         "name":"Rainy-Day Tee",
+         "name_eu":"Rainy Day Tee"
       },
       {  
          "category":"Clothing",
@@ -1409,7 +1445,8 @@
          "brand":"Zekko",
          "rarity":"2",
          "cost":"2,000",
-         "name":"Red-Check Shirt"
+         "name":"Red-Check Shirt",
+         "name_eu":"Red Check Shirt"
       },
       {  
          "category":"Shoes",
@@ -1441,7 +1478,8 @@
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"300",
-         "name":"Red Slip-Ons"
+         "name":"Red Slip-Ons",
+         "name_eu":"Red Plimsolls"
       },
       {  
          "category":"Clothing",
@@ -1537,7 +1575,8 @@
          "brand":"Rockenberg",
          "rarity":"1",
          "cost":"600",
-         "name":"Round-Collar Shirt"
+         "name":"Round-Collar Shirt",
+         "name_eu":"Round Collar Shirt"
       },
       {  
          "category":"Headgear",
@@ -1569,7 +1608,8 @@
          "brand":"Forge",
          "rarity":"2",
          "cost":"2300",
-         "name":"Safari Hat"
+         "name":"Safari Hat",
+         "name_eu":"Jungle Hat"
       },
       {  
          "category":"Clothing",
@@ -1577,7 +1617,8 @@
          "brand":"Splash Mob",
          "rarity":"1",
          "cost":"400",
-         "name":"Sage Polo"
+         "name":"Sage Polo",
+         "name_eu":"Sage Green Polo"
       },
       {  
          "category":"Clothing",
@@ -1585,7 +1626,8 @@
          "brand":"Splash Mob",
          "rarity":"1",
          "cost":"700",
-         "name":"Sailor-Stripe Tee"
+         "name":"Sailor-Stripe Tee",
+         "name_eu":"Sailor Stripes Tee"
       },
       {  
          "category":"Headgear",
@@ -1649,7 +1691,8 @@
          "brand":"Splash Mob",
          "rarity":"3",
          "cost":"8,400",
-         "name":"Shirt & Tie"
+         "name":"Shirt & Tie",
+         "name_eu":"Shirt and Tie"
       },
       {  
          "category":"Headgear",
@@ -1665,7 +1708,8 @@
          "brand":"Splash Mob",
          "rarity":"1",
          "cost":"400",
-         "name":"Shrimp-Pink Polo"
+         "name":"Shrimp-Pink Polo",
+         "name_eu":"Pink Shrimp Polo"
       },
       {  
          "category":"Headgear",
@@ -1689,7 +1733,8 @@
          "brand":"Tentatek",
          "rarity":"1",
          "cost":"500",
-         "name":"Sky-Blue Squideye"
+         "name":"Sky-Blue Squideye",
+         "name_eu":"Sky Blue Squideye"
       },
       {  
          "category":"Clothing",
@@ -1705,7 +1750,8 @@
          "brand":"Forge",
          "rarity":"2",
          "cost":"3,000",
-         "name":"Snorkel Mask"
+         "name":"Snorkel Mask",
+         "name_eu":"Snorkel"
       },
       {  
          "category":"Shoes",
@@ -1721,7 +1767,8 @@
          "brand":"Takoroka",
          "rarity":"3",
          "cost":"9,600",
-         "name":"Soccer Cleats"
+         "name":"Soccer Cleats",
+         "name_eu":"Football Studs"
       },
       {  
          "category":"Headgear",
@@ -1729,7 +1776,8 @@
          "brand":"Tentatek",
          "rarity":"3",
          "cost":"8000",
-         "name":"Soccer Headband"
+         "name":"Soccer Headband",
+         "name_eu":"Football Headband"
       },
       {  
          "category":"Headgear",
@@ -1777,7 +1825,8 @@
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"800",
-         "name":"Squid-Pattern Waistcoat"
+         "name":"Squid-Pattern Waistcoat",
+         "name_eu":"Squid Pattern Waistcoat"
       },
       {  
          "category":"Headgear",
@@ -1793,7 +1842,8 @@
          "brand":"Krak-On",
          "rarity":"2",
          "cost":"1,500",
-         "name":"Squid-Stitch Slip-Ons"
+         "name":"Squid-Stitch Slip-Ons",
+         "name_eu":"Squid-Stitch Plimsolls"
       },
       {  
          "category":"Clothing",
@@ -1865,7 +1915,8 @@
          "brand":"Rockenberg",
          "rarity":"1",
          "cost":"800",
-         "name":"Squink Wingtips"
+         "name":"Squink Wingtips",
+         "name_eu":"Squid Ink Brogues"
       },
       {  
          "category":"Headgear",
@@ -1905,7 +1956,8 @@
          "brand":"Skalop",
          "rarity":"1",
          "cost":"600",
-         "name":"Streetstyle Cap"
+         "name":"Streetstyle Cap",
+         "name_eu":"Fashion Cap"
       },
       {  
          "category":"Headgear",
@@ -1961,7 +2013,8 @@
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"300",
-         "name":"Sunny-Day Tee"
+         "name":"Sunny-Day Tee",
+         "name_eu":"Sunny Day Tee"
       },
       {  
          "category":"Headgear",
@@ -2001,7 +2054,8 @@
          "brand":"Zekko",
          "rarity":"1",
          "cost":"350",
-         "name":"Tinted Shades"
+         "name":"Tinted Shades",
+         "name_eu":"Coloured Shades"
       },
       {  
          "category":"Clothing",
@@ -2049,7 +2103,8 @@
          "brand":"Takoroka",
          "rarity":"1",
          "cost":"700",
-         "name":"Tricolor Rugby"
+         "name":"Tricolor Rugby",
+         "name_eu":"Tricolour Rugby"
       },
       {  
          "category":"Shoes",
@@ -2065,7 +2120,8 @@
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"700",
-         "name":"Two-Stripe Mesh"
+         "name":"Two-Stripe Mesh",
+         "name_eu":"2-Stripe Mesh Cap"
       },
       {  
          "category":"Headgear",
@@ -2105,7 +2161,8 @@
          "brand":"Rockenberg",
          "rarity":"3",
          "cost":"9,000",
-         "name":"Vintage Check Shirt"
+         "name":"Vintage Check Shirt",
+         "name_eu":"Vintage Check"
       },
       {  
          "category":"Headgear",
@@ -2265,7 +2322,8 @@
          "brand":"Firefin",
          "rarity":"2",
          "cost":"3,000",
-         "name":"Yellow Urban Vest"
+         "name":"Yellow Urban Vest",
+         "name_eu":"Yellow Urban Gilet"
       },
       {  
          "category":"Clothing",
@@ -2479,6 +2537,12 @@
          "sub":"Squid Beakon"
       },
       {  
+         "sub":"Sprinkler",
+         "level":"20",
+         "baseDmg":"28",
+         "range":"87",
+         "cost":"29900",
+         "special":"Bubbler",
          "name":"Custom Hydra Splatling"
       },
       {  
@@ -2692,7 +2756,7 @@
          "sub":"Squid Beakon",
          "level":"7",
          "range":"55",
-         "cost":"\u00a03000",
+         "cost":"3000",
          "special":"Kraken",
          "name":"Krak-On Splat Roller"
       },
