@@ -2899,6 +2899,12 @@
          "name":"Sloshing Machine"
       },
       {  
+         "sub":"Point Sensor",
+         "level":"18",
+         "attack":"95",
+         "range":"55",
+         "cost":"28500",
+         "special":"Inkzooka",
          "name":"Sloshing Machine Neo"
       },
       {  
