@@ -68,10 +68,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
         splatfestView.backgroundColor = UIColor.clearColor()
         
-        updateTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "update", userInfo: nil, repeats: true)
+        updateTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(TodayViewController.update), userInfo: nil, repeats: true)
         NSRunLoop.currentRunLoop().addTimer(updateTimer, forMode: NSRunLoopCommonModes)
         
-        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "tapped"))
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(TodayViewController.tapped)))
         
         // Configure NNID cookies
         let nnid = NNID.sharedInstance

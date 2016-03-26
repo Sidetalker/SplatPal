@@ -276,8 +276,8 @@ class LoadoutTableViewController: UITableViewController {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewControllerWithIdentifier("loadoutReviewTVC") as! LoadoutReviewController
             vc.navigationItem.title = "Edit"
-            vc.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .Done, target: self, action: "saveChanges")
-            vc.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Delete", style: .Done, target: self, action: "delete")
+            vc.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .Done, target: self, action: #selector(LoadoutTableViewController.saveChanges))
+            vc.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Delete", style: .Done, target: self, action: #selector(LoadoutTableViewController.delete as (LoadoutTableViewController) -> () -> ()))
             vc.navigationItem.leftBarButtonItem!.tintColor = UIColor.redColor()
             vc.loadoutTVC = self
             vc.loadoutIndex = indexPath.row
@@ -316,8 +316,8 @@ class LoadoutTableViewController: UITableViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewControllerWithIdentifier("loadoutReviewTVC") as! LoadoutReviewController
         vc.navigationItem.title = "Import"
-        vc.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .Done, target: self, action: "saveImport")
-        vc.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .Plain, target: self, action: "cancelImport")
+        vc.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .Done, target: self, action: #selector(LoadoutTableViewController.saveImport))
+        vc.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .Plain, target: self, action: #selector(LoadoutTableViewController.cancelImport))
         vc.loadout = Loadout(name: name, encoding: data)
         
         editNav = UINavigationController(rootViewController: vc)
@@ -351,7 +351,7 @@ class LoadoutWeaponTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .Plain, target: self, action: "cancelTapped")
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .Plain, target: self, action: #selector(LoadoutWeaponTableViewController.cancelTapped))
         navigationItem.title = "Weapon"
     }
     
@@ -485,7 +485,7 @@ class LoadoutGearViewController: GearTableViewController {
             vc.loadout = loadout
             vc.loadoutTVC = loadoutTVC
             
-            vc.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .Done, target: vc, action: "save")
+            vc.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .Done, target: vc, action: #selector(LoadoutReviewController.save))
             
             self.navigationController?.pushViewController(vc, animated: true)
             
@@ -602,10 +602,10 @@ class LoadoutReviewController: UITableViewController, IconSelectionViewDelegate 
             special.image = UIImage(named: "special\(loadout.weapon.special.removeWhitespace())")
             
             if name.gestureRecognizers == nil {
-                name.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "getName"))
+                name.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(LoadoutReviewController.getName)))
             }
             if weapon.gestureRecognizers == nil {
-                weapon.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "weaponTapped:"))
+                weapon.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(LoadoutReviewController.weaponTapped(_:))))
             }
         }
         else if indexPath.row == 4 {
@@ -627,16 +627,16 @@ class LoadoutReviewController: UITableViewController, IconSelectionViewDelegate 
             cell.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
             
             if ability1.gestureRecognizers == nil {
-                ability1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "abilityTapped:"))
+                ability1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(LoadoutReviewController.abilityTapped(_:))))
             }
             if ability2.gestureRecognizers == nil {
-                ability2.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "abilityTapped:"))
+                ability2.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(LoadoutReviewController.abilityTapped(_:))))
             }
             if ability3.gestureRecognizers == nil {
-                ability3.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "abilityTapped:"))
+                ability3.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(LoadoutReviewController.abilityTapped(_:))))
             }
             if clothing.gestureRecognizers == nil {
-                clothing.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "clothingTapped:"))
+                clothing.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(LoadoutReviewController.clothingTapped(_:))))
             }
             
             if indexPath.row == 1 {
@@ -824,10 +824,10 @@ func isValidLoadout(data: String) -> Bool {
     if base10Encoding.length != 29 { return false }
     if Int(base10Encoding[0...2])! >= weaponData.count { return false }
     
-    for var x = 2; x <= 20; x += 9 {
+    for x in 2.stride(to: 20, by: 9) {
         if Int(base10Encoding[x...x + 3])! >= gearData.count { return false }
         
-        for var y = x + 3; y < x + 9; y += 2 {
+        for y in (x + 3).stride(to: x + 9, by: 2) {
             if Int(base10Encoding[y...y + 2])! >= abilityDataEnum.count { return false }
         }
     }
@@ -890,7 +890,7 @@ class Loadout {
         while base10Encoding.length > 0 {
             if base10Encoding.length > 1 && Int(base10Encoding[0...2])! < 62 && Int(base10Encoding[0...2])! > 9 {
                 base62Encoding.append(base62String[Int(base10Encoding[0...2])!])
-                base10Encoding.removeRange(Range<String.Index>(start: base10Encoding.startIndex, end: base10Encoding.startIndex.advancedBy(2)))
+                base10Encoding.removeRange(base10Encoding.startIndex..<base10Encoding.startIndex.advancedBy(2))
             } else {
                 base62Encoding.append(base62String[Int("\(base10Encoding[0])")!])
                 base10Encoding.removeAtIndex(base10Encoding.startIndex)

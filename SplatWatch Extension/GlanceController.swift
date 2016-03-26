@@ -83,7 +83,7 @@ class GlanceController: WKInterfaceController {
         }
         
         update()
-        updateTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "update", userInfo: nil, repeats: true)
+        updateTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(GlanceController.update), userInfo: nil, repeats: true)
         NSRunLoop.currentRunLoop().addTimer(updateTimer!, forMode: NSRunLoopCommonModes)
     }
     

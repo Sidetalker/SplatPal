@@ -4402,7 +4402,7 @@ public class SplatAppStyle : NSObject {
         set {
             Cache.abilityContainerSelectedTargets = newValue
             for target: AnyObject in newValue {
-                target.performSelector("setImage:", withObject: SplatAppStyle.imageOfAbilityContainerSelected)
+                target.performSelector(#selector(CIImageAccumulator.setImage(_:)), withObject: SplatAppStyle.imageOfAbilityContainerSelected)
             }
         }
     }
@@ -4412,7 +4412,7 @@ public class SplatAppStyle : NSObject {
         set {
             Cache.abilityContainerUnselectedTargets = newValue
             for target: AnyObject in newValue {
-                target.performSelector("setImage:", withObject: SplatAppStyle.imageOfAbilityContainerUnselected)
+                target.performSelector(#selector(CIImageAccumulator.setImage(_:)), withObject: SplatAppStyle.imageOfAbilityContainerUnselected)
             }
         }
     }

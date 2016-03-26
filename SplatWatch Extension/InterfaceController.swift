@@ -257,7 +257,7 @@ class RotationInterface: WKInterfaceController {
             
             if (splatData["current"] as! Bool) {
                 update()
-                updateTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "update", userInfo: nil, repeats: true)
+                updateTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(RotationInterface.update), userInfo: nil, repeats: true)
                 NSRunLoop.currentRunLoop().addTimer(updateTimer!, forMode: NSRunLoopCommonModes)
             } else {
                 lblTime.setText("\(epochTimeString(startTime)) - \(epochTimeString(endTime))")

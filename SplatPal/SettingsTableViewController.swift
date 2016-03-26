@@ -26,7 +26,7 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "localNotificationsStateUpdated:", name: "localNotificationsStateUpdated", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SettingsTableViewController.localNotificationsStateUpdated(_:)), name: "localNotificationsStateUpdated", object: nil)
         
         swtHideStatusBar.on = prefs.boolForKey("hideStatusBar")
         swtMilitaryTime.on = prefs.boolForKey("militaryTime")

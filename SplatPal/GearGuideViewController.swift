@@ -136,7 +136,7 @@ class GearTableViewController: UITableViewController {
         for gestureRecognizer in cell.contentView.gestureRecognizers! {
             cell.contentView.removeGestureRecognizer(gestureRecognizer) }
         
-        cell.contentView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "headerTap:"))
+        cell.contentView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(GearTableViewController.headerTap(_:))))
         
         return cell.contentView
     }
@@ -205,7 +205,7 @@ class GearGuideViewController: UIViewController, UIGestureRecognizerDelegate, Ic
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "segueGearTable" {
-            let tapGesture = UITapGestureRecognizer(target: self, action: "dismissTypeView")
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(GearGuideViewController.dismissTypeView))
             tapGesture.delegate = self
             
             gearTable = segue.destinationViewController as? GearTableViewController

@@ -45,7 +45,7 @@ class MapsTableViewController: UITableViewController {
         tableView.backgroundView = backgroundView
         tableView.reloadData()
         
-        liveLabelTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateLabel", userInfo: nil, repeats: true)
+        liveLabelTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(MapsTableViewController.updateLabel), userInfo: nil, repeats: true)
         NSRunLoop.currentRunLoop().addTimer(liveLabelTimer, forMode: NSRunLoopCommonModes)
         
         updateMaps(true)
@@ -206,7 +206,7 @@ class MapsTableViewController: UITableViewController {
             for gestureRecognizer in cell.contentView.gestureRecognizers! {
                 cell.contentView.removeGestureRecognizer(gestureRecognizer) }
             
-            cell.contentView.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: "topHeaderLongPress:"))
+            cell.contentView.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(MapsTableViewController.topHeaderLongPress(_:))))
             
             if mapError && !mapsUpdating {
                 lblHeader.text = "Error Loading Data"

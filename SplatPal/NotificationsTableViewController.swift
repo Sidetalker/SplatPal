@@ -320,7 +320,7 @@ class ModeSettingsTableViewController: UITableViewController {
             let destVC = segue.destinationViewController as! MapSettingsTableViewController
             destVC.notification = notification
             destVC.notificationTableVC = notificationTableVC
-            destVC.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .Done, target: destVC, action: "nextTapped")
+            destVC.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .Done, target: destVC, action: #selector(MapSettingsTableViewController.nextTapped))
             destVC.navigationItem.title = "Maps"
         }
     }
@@ -515,7 +515,7 @@ class MapSettingsTableViewController: UITableViewController {
             let destVC = segue.destinationViewController as! NotificationTimeTableViewController
             destVC.notification = notification
             destVC.notificationTableVC = notificationTableVC
-            destVC.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Review", style: .Done, target: destVC, action: "reviewTapped")
+            destVC.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Review", style: .Done, target: destVC, action: #selector(NotificationTimeTableViewController.reviewTapped))
             destVC.navigationItem.title = "Times"
         }
     }
@@ -537,7 +537,7 @@ class NotificationTimeTableViewController: UITableViewController {
             let destVC = segue.destinationViewController as! ReviewNotificationTableViewController
             destVC.notification = notification
             destVC.notificationTableVC = notificationTableVC
-            destVC.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Create", style: .Done, target: destVC, action: "createTapped")
+            destVC.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Create", style: .Done, target: destVC, action: #selector(ReviewNotificationTableViewController.createTapped))
             destVC.navigationItem.title = "Review"
         }
     }

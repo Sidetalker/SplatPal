@@ -56,7 +56,7 @@ extension MGSwipeTableCell {
         for gestureRecognizer in self.contentView.gestureRecognizers! {
             self.contentView.removeGestureRecognizer(gestureRecognizer) }
         
-        let gesture = LongPressGearCellRecognizer(target: self, action: "cellLongPress:")
+        let gesture = LongPressGearCellRecognizer(target: self, action: #selector(MGSwipeTableCell.cellLongPress(_:)))
         gesture.tableView = tableView
         gesture.gearDisplayData = gearDisplayData
         
