@@ -1252,6 +1252,8 @@
 		0A4FC28C1C76A1C0007D6E7F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0AA018C51CA6F4C5002D8687 /* Views */,
+				0AA018C41CA6F497002D8687 /* Storyboards */,
 				0AC607B81C189BD8006EECA7 /* MapsTableViewController.swift */,
 				0AA23E001C1B6DB90002BCC2 /* BrandGuideViewController.swift */,
 				0ADF9AA41C1DF135002D7E81 /* GearGuideViewController.swift */,
@@ -1394,6 +1396,37 @@
 			name = Subs;
 			sourceTree = "<group>";
 		};
+		0AA018C41CA6F497002D8687 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0AC6078E1C189B36006EECA7 /* Main.storyboard */,
+				0AC607931C189B36006EECA7 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		0AA018C51CA6F4C5002D8687 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0AA23E011C1B6DB90002BCC2 /* IconSelectionView.swift */,
+				0AA23E021C1B6DB90002BCC2 /* IconSelectionView.xib */,
+				0A9AD9DF1C2A005900CDFBE7 /* GearView.swift */,
+				0A9AD9DD1C29FA8800CDFBE7 /* GearView.xib */,
+				0A0F6FF21C27105900206883 /* ProfileGearView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0AA018C61CA6F4E1002D8687 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0A6AFEF81C2870D20073884B /* SplatData.swift */,
+				0AC607881C189B36006EECA7 /* AppDelegate.swift */,
+				0AC607FD1C194ACE006EECA7 /* Helpers.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
 		0AA23E081C1B6E140002BCC2 /* Abilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -1462,16 +1495,7 @@
 				0A4FC28B1C76A194007D6E7F /* Design */,
 				0A4FC28C1C76A1C0007D6E7F /* Controllers */,
 				0A4FC28F1C76A3D7007D6E7F /* Views */,
-				0A6AFEF81C2870D20073884B /* SplatData.swift */,
-				0AC607881C189B36006EECA7 /* AppDelegate.swift */,
-				0AC607FD1C194ACE006EECA7 /* Helpers.swift */,
-				0AA23E011C1B6DB90002BCC2 /* IconSelectionView.swift */,
-				0AA23E021C1B6DB90002BCC2 /* IconSelectionView.xib */,
-				0A9AD9DF1C2A005900CDFBE7 /* GearView.swift */,
-				0A9AD9DD1C29FA8800CDFBE7 /* GearView.xib */,
-				0AC6078E1C189B36006EECA7 /* Main.storyboard */,
-				0A0F6FF21C27105900206883 /* ProfileGearView.xib */,
-				0AC607931C189B36006EECA7 /* LaunchScreen.storyboard */,
+				0AA018C61CA6F4E1002D8687 /* Core */,
 			);
 			path = SplatPal;
 			sourceTree = "<group>";
