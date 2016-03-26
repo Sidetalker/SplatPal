@@ -82,17 +82,12 @@ class LoadoutTableViewController: UITableViewController {
     
     func reloadLoadouts() {
         loadouts = loadLoadouts()
-        self.tableView.reloadData()
+        tableView.reloadData()
     }
     
     func addLoadout(loadout: Loadout) {
-        tableView.beginUpdates()
-        
-        loadouts.append(loadout)
-        
-        tableView.reloadSections(NSIndexSet(index: 1), withRowAnimation: .Automatic)
-        tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: loadouts.count - 1, inSection: 1)], withRowAnimation: .Automatic)
-        tableView.endUpdates()
+        loadouts.insert(loadout, atIndex: 0)
+        tableView.reloadData()
         
         saveLoadouts(loadouts)
     }
@@ -108,7 +103,7 @@ class LoadoutTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 { return 1 }
+        if section == 0 { return loadouts.count > 0 ? 2 : 1 }
         else if section == 1 { return loadouts.count }
         
         return 0
@@ -129,7 +124,7 @@ class LoadoutTableViewController: UITableViewController {
             cell = tableView.dequeueReusableCellWithIdentifier("cellCreateNew", forIndexPath: indexPath)
             cell.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundTile.jpg")!)
             
-            if indexPath.row == 1 { (cell.viewWithTag(1) as! UILabel).text = "Import Current Loadout" }
+            if indexPath.row == 1 { (cell.viewWithTag(1) as! UILabel).text = editing ? "Finish Reordering" : "Reorder Loadouts" }
         } else {
             cell = tableView.dequeueReusableCellWithIdentifier("cellLoadout", forIndexPath: indexPath)
             let loadout = loadouts[indexPath.row]
@@ -160,104 +155,122 @@ class LoadoutTableViewController: UITableViewController {
         return indexPath.section == 1 ? 255 : 44
     }
     
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return indexPath.section == 1
+    }
+    
+    override func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
+        return .None
+    }
+    
+    override func tableView(tableView: UITableView, shouldIndentWhileEditingRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return false
+    }
+    
+    override func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
+        let loadout = loadouts[sourceIndexPath.row]
+        loadouts.removeAtIndex(sourceIndexPath.row)
+        loadouts.insert(loadout, atIndex: destinationIndexPath.row)
+        saveLoadouts(loadouts)
+    }
+    
+    override func tableView(tableView: UITableView, targetIndexPathForMoveFromRowAtIndexPath sourceIndexPath: NSIndexPath, toProposedIndexPath proposedDestinationIndexPath: NSIndexPath) -> NSIndexPath {
+        if proposedDestinationIndexPath.section == 0 { return sourceIndexPath }
+        
+        return proposedDestinationIndexPath
+    }
+    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
         if indexPath == NSIndexPath(forRow: 0, inSection: 0) {
             performSegueWithIdentifier("segueAddLoadout", sender: self)
-//            let img = UIImage(named: "weaponCustomE-liter3KScope.png")
+        } else if indexPath == NSIndexPath(forRow: 1, inSection: 0) {
+            setEditing(!editing, animated: true)
+            tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow: 1, inSection: 0)], withRowAnimation: .Automatic)
+        } else if indexPath == NSIndexPath(forRow: 2, inSection: 0) {
+            let splatoonProfileURL = "https://splatoon.nintendo.net/profile"
             
-//            let colorSpace = CGColorSpaceCreateDeviceRGB()
-//            var rgba: Array<char16_t> = Array(count: 4, repeatedValue: "x")
-//            let context = CGBitmapContextCreateWithData(rgba, 1, 1, 8, 4, colorSpace, kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big)
-//            kcg
-//            
-        }
-        else if indexPath == NSIndexPath(forRow: 1, inSection: 0) {
-            
-            
-                let splatoonProfileURL = "https://splatoon.nintendo.net/profile"
-                
-                request(.GET, splatoonProfileURL, encoding: .URL, headers: ["locale" : "en"])
-                    .responseString { response in
-                        if response.result.isFailure {
-                            log.error("Error Loading Schedule: \(response.result.error)")
+            request(.GET, splatoonProfileURL, encoding: .URL, headers: ["locale" : "en"])
+                .responseString { response in
+                    if response.result.isFailure {
+                        log.error("Error Loading Schedule: \(response.result.error)")
+                    }
+                    else if let doc = Kanna.HTML(html: response.result.value!, encoding: NSUTF8StringEncoding) {
+                        log.debug("Loaded HTML: \(doc.title!)")
+                        
+                        if
+                            let weaponStyle = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[1]/div[2]/div/@style").text,
+                            let weaponMatch = weaponStyle.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
+                            
+                            let headStyle = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/@style").text,
+                            let headMatch = headStyle.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
+                            let headAbility1Style = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[1]/ul/li[1]/div/@style").text,
+                            let headAbility1Match = headAbility1Style.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
+                            let headAbility2Style = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[1]/ul/li[2]/div/@style").text,
+                            let headAbility2Match = headAbility2Style.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
+                            let headAbility3Style = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[1]/ul/li[3]/div/@style").text,
+                            let headAbility3Match = headAbility3Style.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
+                            
+                            let clothingStyle = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/@style").text,
+                            let clothingMatch = headStyle.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
+                            let clothingAbility1Style = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[2]/ul/li[1]/div/@style").text,
+                            let clothingAbility1Match = clothingAbility1Style.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
+                            let clothingAbility2Style = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[2]/ul/li[2]/div/@style").text,
+                            let clothingAbility2Match = clothingAbility2Style.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
+                            let clothingAbility3Style = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[2]/ul/li[3]/div/@style").text,
+                            let clothingAbility3Match = clothingAbility3Style.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
+                            
+                            let shoesStyle = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[3]/div[1]/@style").text,
+                            let shoesMatch = headStyle.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
+                            let shoesAbility1Style = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[3]/ul/li[1]/div/@style").text,
+                            let shoesAbility1Match = shoesAbility1Style.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
+                            let shoesAbility2Style = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[3]/ul/li[2]/div/@style").text,
+                            let shoesAbility2Match = shoesAbility2Style.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
+                            let shoesAbility3Style = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[3]/ul/li[3]/div/@style").text,
+                            let shoesAbility3Match = shoesAbility3Style.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch)
+                        {
+                            let prepend = "https://splatoon.nintendo.net"
+                            
+                            let weaponURL = "\(prepend)\(weaponStyle.substringWithRange(weaponMatch))"
+                            
+                            let headURL = "\(prepend)\(headStyle.substringWithRange(headMatch))"
+                            let headAbility1URL = "\(prepend)\(headAbility1Style.substringWithRange(headAbility1Match))"
+                            let headAbility2URL = "\(prepend)\(headAbility2Style.substringWithRange(headAbility2Match))"
+                            let headAbility3URL = "\(prepend)\(headAbility3Style.substringWithRange(headAbility3Match))"
+                            
+                            let clothingURL = "\(prepend)\(clothingStyle.substringWithRange(clothingMatch))"
+                            let clothingAbility1URL = "\(prepend)\(clothingAbility1Style.substringWithRange(clothingAbility1Match))"
+                            let clothingAbility2URL = "\(prepend)\(clothingAbility2Style.substringWithRange(clothingAbility2Match))"
+                            let clothingAbility3URL = "\(prepend)\(clothingAbility3Style.substringWithRange(clothingAbility3Match))"
+                            
+                            let shoesURL = "\(prepend)\(shoesStyle.substringWithRange(shoesMatch))"
+                            let shoesAbility1URL = "\(prepend)\(shoesAbility1Style.substringWithRange(shoesAbility1Match))"
+                            let shoesAbility2URL = "\(prepend)\(shoesAbility2Style.substringWithRange(shoesAbility2Match))"
+                            let shoesAbility3URL = "\(prepend)\(shoesAbility3Style.substringWithRange(shoesAbility3Match))"
+                            
+                            log.debug("weaponURL: \(weaponURL)")
+                            
+                            log.debug("headURL: \(headURL)")
+                            log.debug("headAbility1URL: \(headAbility1URL)")
+                            log.debug("headAbility2URL: \(headAbility2URL)")
+                            log.debug("headAbility3URL: \(headAbility3URL)")
+                            
+                            log.debug("clothingURL: \(clothingURL)")
+                            log.debug("clothingAbility1URL: \(clothingAbility1URL)")
+                            log.debug("clothingAbility2URL: \(clothingAbility2URL)")
+                            log.debug("clothingAbility3URL: \(clothingAbility3URL)")
+                            
+                            log.debug("shoesURL: \(shoesURL)")
+                            log.debug("shoesAbility1URL: \(shoesAbility1URL)")
+                            log.debug("shoesAbility2URL: \(shoesAbility2URL)")
+                            log.debug("shoesAbility3URL: \(shoesAbility3URL)")
                         }
-                        else if let doc = Kanna.HTML(html: response.result.value!, encoding: NSUTF8StringEncoding) {
-                            log.debug("Loaded HTML: \(doc.title!)")
-                            
-                            if
-                                let weaponStyle = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[1]/div[2]/div/@style").text,
-                                let weaponMatch = weaponStyle.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
-                                
-                                let headStyle = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/@style").text,
-                                let headMatch = headStyle.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
-                                let headAbility1Style = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[1]/ul/li[1]/div/@style").text,
-                                let headAbility1Match = headAbility1Style.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
-                                let headAbility2Style = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[1]/ul/li[2]/div/@style").text,
-                                let headAbility2Match = headAbility2Style.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
-                                let headAbility3Style = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[1]/ul/li[3]/div/@style").text,
-                                let headAbility3Match = headAbility3Style.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
-                                
-                                let clothingStyle = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/@style").text,
-                                let clothingMatch = headStyle.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
-                                let clothingAbility1Style = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[2]/ul/li[1]/div/@style").text,
-                                let clothingAbility1Match = clothingAbility1Style.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
-                                let clothingAbility2Style = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[2]/ul/li[2]/div/@style").text,
-                                let clothingAbility2Match = clothingAbility2Style.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
-                                let clothingAbility3Style = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[2]/ul/li[3]/div/@style").text,
-                                let clothingAbility3Match = clothingAbility3Style.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
-                                
-                                let shoesStyle = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[3]/div[1]/@style").text,
-                                let shoesMatch = headStyle.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
-                                let shoesAbility1Style = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[3]/ul/li[1]/div/@style").text,
-                                let shoesAbility1Match = shoesAbility1Style.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
-                                let shoesAbility2Style = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[3]/ul/li[2]/div/@style").text,
-                                let shoesAbility2Match = shoesAbility2Style.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch),
-                                let shoesAbility3Style = doc.xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[3]/ul/li[3]/div/@style").text,
-                                let shoesAbility3Match = shoesAbility3Style.rangeOfString("(?<=')[^']+", options: .RegularExpressionSearch)
-                            {
-                                let prepend = "https://splatoon.nintendo.net"
-                                
-                                let weaponURL = "\(prepend)\(weaponStyle.substringWithRange(weaponMatch))"
-                                
-                                let headURL = "\(prepend)\(headStyle.substringWithRange(headMatch))"
-                                let headAbility1URL = "\(prepend)\(headAbility1Style.substringWithRange(headAbility1Match))"
-                                let headAbility2URL = "\(prepend)\(headAbility2Style.substringWithRange(headAbility2Match))"
-                                let headAbility3URL = "\(prepend)\(headAbility3Style.substringWithRange(headAbility3Match))"
-                                
-                                let clothingURL = "\(prepend)\(clothingStyle.substringWithRange(clothingMatch))"
-                                let clothingAbility1URL = "\(prepend)\(clothingAbility1Style.substringWithRange(clothingAbility1Match))"
-                                let clothingAbility2URL = "\(prepend)\(clothingAbility2Style.substringWithRange(clothingAbility2Match))"
-                                let clothingAbility3URL = "\(prepend)\(clothingAbility3Style.substringWithRange(clothingAbility3Match))"
-                                
-                                let shoesURL = "\(prepend)\(shoesStyle.substringWithRange(shoesMatch))"
-                                let shoesAbility1URL = "\(prepend)\(shoesAbility1Style.substringWithRange(shoesAbility1Match))"
-                                let shoesAbility2URL = "\(prepend)\(shoesAbility2Style.substringWithRange(shoesAbility2Match))"
-                                let shoesAbility3URL = "\(prepend)\(shoesAbility3Style.substringWithRange(shoesAbility3Match))"
-                                
-                                log.debug("weaponURL: \(weaponURL)")
-                                
-                                log.debug("headURL: \(headURL)")
-                                log.debug("headAbility1URL: \(headAbility1URL)")
-                                log.debug("headAbility2URL: \(headAbility2URL)")
-                                log.debug("headAbility3URL: \(headAbility3URL)")
-                                
-                                log.debug("clothingURL: \(clothingURL)")
-                                log.debug("clothingAbility1URL: \(clothingAbility1URL)")
-                                log.debug("clothingAbility2URL: \(clothingAbility2URL)")
-                                log.debug("clothingAbility3URL: \(clothingAbility3URL)")
-                                
-                                log.debug("shoesURL: \(shoesURL)")
-                                log.debug("shoesAbility1URL: \(shoesAbility1URL)")
-                                log.debug("shoesAbility2URL: \(shoesAbility2URL)")
-                                log.debug("shoesAbility3URL: \(shoesAbility3URL)")
-                            }
-                            
-//                            profile.username = doc.xpath("//h2[@class=\"profile-username\"]").text
-                            
-                        }
-                }
+                        
+                        //                            profile.username = doc.xpath("//h2[@class=\"profile-username\"]").text
+                        
+                    }
+            }
         }
         else if indexPath.section == 1 {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)

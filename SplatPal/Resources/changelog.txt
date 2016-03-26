@@ -1,4 +1,9 @@
-Version 1.0.3 (1479)
+Version 1.1.0 (1489)
+- Added missing weapon descriptions
+- New loadouts are added to the top of the list
+- Loadouts can be manually reordered
+
+Version 1.0.3 (1480)
 - Bugfixes
 
 Version 1.0.2 (1458)
