@@ -8,6 +8,7 @@ PODS:
   - Fabric (1.6.7)
   - Kanna (1.0.5)
   - MGSwipeTableCell (1.5.4)
+  - SwiftGen (0.8.0)
   - SwiftyJSON (2.3.2)
   - XCGLogger (3.2)
 
@@ -20,6 +21,7 @@ DEPENDENCIES:
   - Fabric
   - Kanna (~> 1.0.0)
   - MGSwipeTableCell
+  - SwiftGen
   - SwiftyJSON (~> 2.0)
   - XCGLogger (~> 3.0)
 
@@ -32,9 +34,10 @@ SPEC CHECKSUMS:
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   Kanna: 1df5cd995dc1f3a282e3dcf7521cfef2f069ac4d
   MGSwipeTableCell: cffd3378af74eb991911f132c5f3911261fda860
+  SwiftGen: d27095418addd706b18da94bc8d9552e8d8148c3
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   XCGLogger: da1f341f4bb8979db6e1df64232f04d9698402d4
 
-PODFILE CHECKSUM: cce60db6d49bdb0b24bd04771dad81dcabe16157
+PODFILE CHECKSUM: b412706052ca4298c7cef8bfb2473df3c6cbf0c0
 
 COCOAPODS: 1.0.0.beta.5

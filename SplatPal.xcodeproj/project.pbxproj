@@ -236,6 +236,9 @@
 		0AB09B3B1C205F2700A8A682 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB09B381C205F2700A8A682 /* star.png */; };
 		0AB09B3C1C205F2700A8A682 /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB09B391C205F2700A8A682 /* star@2x.png */; };
 		0AB09B3D1C205F2700A8A682 /* star@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB09B3A1C205F2700A8A682 /* star@3x.png */; };
+		0AC039111CA840580063A195 /* Matches.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC039101CA840580063A195 /* Matches.storyboard */; };
+		0AC039131CA842310063A195 /* StoryboardSplitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC039121CA842310063A195 /* StoryboardSplitter.swift */; };
+		0AC039161CA8448D0063A195 /* SwiftGenStoryboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC039151CA8448D0063A195 /* SwiftGenStoryboards.swift */; };
 		0AC607891C189B36006EECA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC607881C189B36006EECA7 /* AppDelegate.swift */; };
 		0AC607901C189B36006EECA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC6078E1C189B36006EECA7 /* Main.storyboard */; };
 		0AC607921C189B36006EECA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607911C189B36006EECA7 /* Assets.xcassets */; };
@@ -825,6 +828,9 @@
 		0AB09B381C205F2700A8A682 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = Images/star.png; sourceTree = "<group>"; };
 		0AB09B391C205F2700A8A682 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star@2x.png"; path = "Images/star@2x.png"; sourceTree = "<group>"; };
 		0AB09B3A1C205F2700A8A682 /* star@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star@3x.png"; path = "Images/star@3x.png"; sourceTree = "<group>"; };
+		0AC039101CA840580063A195 /* Matches.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Matches.storyboard; sourceTree = "<group>"; };
+		0AC039121CA842310063A195 /* StoryboardSplitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSplitter.swift; sourceTree = "<group>"; };
+		0AC039151CA8448D0063A195 /* SwiftGenStoryboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGenStoryboards.swift; sourceTree = "<group>"; };
 		0AC607851C189B36006EECA7 /* SplatPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplatPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC607881C189B36006EECA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AC6078F1C189B36006EECA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -1422,7 +1428,9 @@
 			isa = PBXGroup;
 			children = (
 				0AC6078E1C189B36006EECA7 /* Main.storyboard */,
+				0AC039101CA840580063A195 /* Matches.storyboard */,
 				0AC607931C189B36006EECA7 /* LaunchScreen.storyboard */,
+				0AC039121CA842310063A195 /* StoryboardSplitter.swift */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -1479,6 +1487,14 @@
 				0AA23E211C1B6E280002BCC2 /* abilityTenacity.png */,
 			);
 			name = Abilities;
+			sourceTree = "<group>";
+		};
+		0AC039171CA844960063A195 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				0AC039151CA8448D0063A195 /* SwiftGenStoryboards.swift */,
+			);
+			name = SwiftGen;
 			sourceTree = "<group>";
 		};
 		0AC6077C1C189B36006EECA7 = {
@@ -1543,6 +1559,7 @@
 		0AC607C01C189ED4006EECA7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0AC039171CA844960063A195 /* SwiftGen */,
 				0A948AC21C1CC4F700CCC4DB /* data.min.json */,
 				0AA23E431C1B7A760002BCC2 /* changelog.txt */,
 				0AC607961C189B36006EECA7 /* Info.plist */,
@@ -1975,6 +1992,7 @@
 				0A15E65F1C29C5F80098BBF0 /* Purge Frameworks */,
 				CD0D5DEDE83F349F186C5DC2 /* 📦 Embed Pods Frameworks */,
 				B719FA12ED0E4484CF7944EC /* 📦 Copy Pods Resources */,
+				0AC039141CA842C70063A195 /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -2261,6 +2279,7 @@
 				0ADF9BD21C1DF2DE002D7E81 /* gearBlueSeaSlugs.png in Resources */,
 				0ADF9C0E1C1DF2DE002D7E81 /* gearLayeredVectorLS.png in Resources */,
 				0A9AD9BC1C29F5BE00CDFBE7 /* weaponSplash-o-matic.png in Resources */,
+				0AC039111CA840580063A195 /* Matches.storyboard in Resources */,
 				0ADF9BB71C1DF2DE002D7E81 /* gearBaby-JellyShirt.png in Resources */,
 				0A9AD9AE1C29F5BE00CDFBE7 /* weaponNeoSploosh-o-matic.png in Resources */,
 				0A9AD9BB1C29F5BE00CDFBE7 /* weaponSloshingMachineNeo.png in Resources */,
@@ -2764,6 +2783,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" e9e0fd3a066ecdbf0929f4b7ad16a4dc16d5468b 29c867f398edb79a7f762f24fb3193b235728bdceb51a924c84ba7c78564ee4d";
 		};
+		0AC039141CA842C70063A195 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen storyboards --output ${SRCROOT}/SplatPal/SwiftGenStoryboards.swift ${SRCROOT}/SplatPal/";
+		};
 		0C0F4F159175C2443F85083F /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -3036,6 +3069,8 @@
 				0A4FC2891C769434007D6E7F /* Gear.swift in Sources */,
 				0A6AFEF91C2870D20073884B /* SplatData.swift in Sources */,
 				0A3503ED1C27270C009C6A48 /* NotificationsTableViewController.swift in Sources */,
+				0AC039131CA842310063A195 /* StoryboardSplitter.swift in Sources */,
+				0AC039161CA8448D0063A195 /* SwiftGenStoryboards.swift in Sources */,
 				0A9AD9321C29DB0700CDFBE7 /* LoadoutViewController.swift in Sources */,
 				0AA23E051C1B6DB90002BCC2 /* IconSelectionView.swift in Sources */,
 				0AC607B91C189BD8006EECA7 /* MapsTableViewController.swift in Sources */,

@@ -14,6 +14,7 @@ global_pods
 
 pod 'Fabric'
 pod 'Crashlytics'
+pod 'SwiftGen'
 
 pod 'MGSwipeTableCell'
 pod 'Kanna', '~> 1.0.0'
