@@ -29,15 +29,30 @@
 			<key>orderHint</key>
 			<integer>10</integer>
 		</dict>
+		<key>ElasticTransition.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>22</integer>
+		</dict>
 		<key>Kanna.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
+		<key>LTMorphingLabel.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>24</integer>
+		</dict>
 		<key>MGSwipeTableCell.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>12</integer>
+		</dict>
+		<key>MotionAnimation.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>23</integer>
 		</dict>
 		<key>Pods-SplatPal.xcscheme</key>
 		<dict>
@@ -97,7 +112,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>0DBA1B8EBF05D656F83E8200895590E2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0DCBD6C869DCC15AF62D43471CB4592C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0EFA6D3610E60BCEEE841CCFD92F4D45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1C9674A8BF970C51C460F3C31A82CF1B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>20EE510C33B653D0D39E8015461CA777</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,6 +147,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>3BC65627E17334315AA2C7D9661C7DF0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4E1263BFF45F6446CF3DE29AE234C893</key>
 		<dict>
 			<key>primary</key>
@@ -122,7 +162,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>7843F7EE625CADF6CBA895412A0FEFEE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8440C1C6E39324F51C115C4C1E763FBA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>89C69EB624EC8137588D9568F2E11964</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A21D2716232933D84E5E029BE159DD3D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -138,6 +193,11 @@
 			<true/>
 		</dict>
 		<key>B956BB13A718A4CC239A978CEA170E1B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BE5F600B878AD3C9AE26B6008A933820</key>
 		<dict>
 			<key>primary</key>
 			<true/>

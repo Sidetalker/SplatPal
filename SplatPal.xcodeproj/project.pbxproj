@@ -24,48 +24,36 @@
 		0A36DEBB1C31DD06001E6DE4 /* StagePiranhaPit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A36DEBA1C31DD06001E6DE4 /* StagePiranhaPit.jpg */; };
 		0A3B774C1C4C298900C06E31 /* rainmakerIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774B1C4C298900C06E31 /* rainmakerIcon@2x.png */; };
 		0A3B77541C4C299100C06E31 /* rainmakerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774D1C4C299100C06E31 /* rainmakerIcon.png */; };
-		0A3B77551C4C299100C06E31 /* rainmakerIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774E1C4C299100C06E31 /* rainmakerIcon.svg */; };
 		0A3B77561C4C299100C06E31 /* rainmakerIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774F1C4C299100C06E31 /* rainmakerIcon@3x.png */; };
 		0A3B77571C4C299100C06E31 /* zonesIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77501C4C299100C06E31 /* zonesIcon.png */; };
-		0A3B77581C4C299100C06E31 /* zonesIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77511C4C299100C06E31 /* zonesIcon.svg */; };
 		0A3B77591C4C299100C06E31 /* zonesIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77521C4C299100C06E31 /* zonesIcon@2x.png */; };
 		0A3B775A1C4C299100C06E31 /* zonesIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77531C4C299100C06E31 /* zonesIcon@3x.png */; };
 		0A3B775B1C4C3AAB00C06E31 /* rainmakerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774D1C4C299100C06E31 /* rainmakerIcon.png */; };
-		0A3B775C1C4C3AAB00C06E31 /* rainmakerIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774E1C4C299100C06E31 /* rainmakerIcon.svg */; };
 		0A3B775D1C4C3AAB00C06E31 /* rainmakerIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774F1C4C299100C06E31 /* rainmakerIcon@3x.png */; };
 		0A3B775E1C4C3AAB00C06E31 /* zonesIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77501C4C299100C06E31 /* zonesIcon.png */; };
-		0A3B775F1C4C3AAB00C06E31 /* zonesIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77511C4C299100C06E31 /* zonesIcon.svg */; };
 		0A3B77601C4C3AAB00C06E31 /* zonesIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77521C4C299100C06E31 /* zonesIcon@2x.png */; };
 		0A3B77611C4C3AAB00C06E31 /* zonesIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77531C4C299100C06E31 /* zonesIcon@3x.png */; };
 		0A3B77621C4C3AAB00C06E31 /* rainmakerIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774B1C4C298900C06E31 /* rainmakerIcon@2x.png */; };
 		0A3B77631C4C3AAC00C06E31 /* rainmakerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774D1C4C299100C06E31 /* rainmakerIcon.png */; };
-		0A3B77641C4C3AAC00C06E31 /* rainmakerIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774E1C4C299100C06E31 /* rainmakerIcon.svg */; };
 		0A3B77651C4C3AAC00C06E31 /* rainmakerIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774F1C4C299100C06E31 /* rainmakerIcon@3x.png */; };
 		0A3B77661C4C3AAC00C06E31 /* zonesIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77501C4C299100C06E31 /* zonesIcon.png */; };
-		0A3B77671C4C3AAC00C06E31 /* zonesIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77511C4C299100C06E31 /* zonesIcon.svg */; };
 		0A3B77681C4C3AAC00C06E31 /* zonesIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77521C4C299100C06E31 /* zonesIcon@2x.png */; };
 		0A3B77691C4C3AAC00C06E31 /* zonesIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B77531C4C299100C06E31 /* zonesIcon@3x.png */; };
 		0A3B776A1C4C3AAC00C06E31 /* rainmakerIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B774B1C4C298900C06E31 /* rainmakerIcon@2x.png */; };
 		0A3B776F1C4C3AE700C06E31 /* towerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776B1C4C3AE700C06E31 /* towerIcon.png */; };
-		0A3B77701C4C3AE700C06E31 /* towerIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776C1C4C3AE700C06E31 /* towerIcon.svg */; };
 		0A3B77711C4C3AE700C06E31 /* towerIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776D1C4C3AE700C06E31 /* towerIcon@2x.png */; };
 		0A3B77721C4C3AE700C06E31 /* towerIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776E1C4C3AE700C06E31 /* towerIcon@3x.png */; };
 		0A3B77731C4C3AEB00C06E31 /* towerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776B1C4C3AE700C06E31 /* towerIcon.png */; };
-		0A3B77741C4C3AEB00C06E31 /* towerIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776C1C4C3AE700C06E31 /* towerIcon.svg */; };
 		0A3B77751C4C3AEB00C06E31 /* towerIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776D1C4C3AE700C06E31 /* towerIcon@2x.png */; };
 		0A3B77761C4C3AEB00C06E31 /* towerIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776E1C4C3AE700C06E31 /* towerIcon@3x.png */; };
 		0A3B77771C4C3AEB00C06E31 /* towerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776B1C4C3AE700C06E31 /* towerIcon.png */; };
-		0A3B77781C4C3AEB00C06E31 /* towerIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776C1C4C3AE700C06E31 /* towerIcon.svg */; };
 		0A3B77791C4C3AEB00C06E31 /* towerIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776D1C4C3AE700C06E31 /* towerIcon@2x.png */; };
 		0A3B777A1C4C3AEB00C06E31 /* towerIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B776E1C4C3AE700C06E31 /* towerIcon@3x.png */; };
 		0A3B777B1C4C425500C06E31 /* squid.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607F51C191F09006EECA7 /* squid.png */; };
 		0A3B777C1C4C425600C06E31 /* squid.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607F51C191F09006EECA7 /* squid.png */; };
-		0A3B777E1C4C4B3400C06E31 /* squidIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B777D1C4C4B3400C06E31 /* squidIcon.svg */; };
-		0A3B77831C4C4B4600C06E31 /* squidIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B777D1C4C4B3400C06E31 /* squidIcon.svg */; };
 		0A3B77841C4C4B4600C06E31 /* squidIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51931C25F208006ABE9B /* squidIcon.png */; };
 		0A3B77851C4C4B4600C06E31 /* squidIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51941C25F208006ABE9B /* squidIcon@2x.png */; };
 		0A3B77861C4C4B4600C06E31 /* squidIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51951C25F208006ABE9B /* squidIcon@3x.png */; };
-		0A3B77871C4C4B4700C06E31 /* squidIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B777D1C4C4B3400C06E31 /* squidIcon.svg */; };
 		0A3B77881C4C4B4700C06E31 /* squidIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51931C25F208006ABE9B /* squidIcon.png */; };
 		0A3B77891C4C4B4700C06E31 /* squidIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51941C25F208006ABE9B /* squidIcon@2x.png */; };
 		0A3B778A1C4C4B4700C06E31 /* squidIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4C51951C25F208006ABE9B /* squidIcon@3x.png */; };
@@ -239,6 +227,15 @@
 		0AC039111CA840580063A195 /* Matches.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC039101CA840580063A195 /* Matches.storyboard */; };
 		0AC039131CA842310063A195 /* StoryboardSplitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC039121CA842310063A195 /* StoryboardSplitter.swift */; };
 		0AC039161CA8448D0063A195 /* SwiftGenStoryboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC039151CA8448D0063A195 /* SwiftGenStoryboards.swift */; };
+		0AC0391C1CA8460F0063A195 /* SplatTrackMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC0391B1CA8460F0063A195 /* SplatTrackMainViewController.swift */; };
+		0AC039231CA84A8D0063A195 /* lose.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC0391D1CA84A8D0063A195 /* lose.png */; };
+		0AC039241CA84A8D0063A195 /* lose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC0391E1CA84A8D0063A195 /* lose@2x.png */; };
+		0AC039251CA84A8D0063A195 /* lose@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC0391F1CA84A8D0063A195 /* lose@3x.png */; };
+		0AC039261CA84A8D0063A195 /* win.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC039201CA84A8D0063A195 /* win.png */; };
+		0AC039271CA84A8D0063A195 /* win@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC039211CA84A8D0063A195 /* win@2x.png */; };
+		0AC039281CA84A8D0063A195 /* win@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC039221CA84A8D0063A195 /* win@3x.png */; };
+		0AC0392A1CA850C60063A195 /* SplatKDRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC039291CA850C60063A195 /* SplatKDRViewController.swift */; };
+		0AC0392C1CA8538E0063A195 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC0392B1CA8538E0063A195 /* Match.swift */; };
 		0AC607891C189B36006EECA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC607881C189B36006EECA7 /* AppDelegate.swift */; };
 		0AC607901C189B36006EECA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC6078E1C189B36006EECA7 /* Main.storyboard */; };
 		0AC607921C189B36006EECA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC607911C189B36006EECA7 /* Assets.xcassets */; };
@@ -648,17 +645,13 @@
 		0A3826621C4B092E0065B2B8 /* SplatWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SplatWatch.entitlements; sourceTree = "<group>"; };
 		0A3B774B1C4C298900C06E31 /* rainmakerIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rainmakerIcon@2x.png"; path = "Images/rainmakerIcon@2x.png"; sourceTree = "<group>"; };
 		0A3B774D1C4C299100C06E31 /* rainmakerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rainmakerIcon.png; path = Images/rainmakerIcon.png; sourceTree = "<group>"; };
-		0A3B774E1C4C299100C06E31 /* rainmakerIcon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = rainmakerIcon.svg; path = Images/rainmakerIcon.svg; sourceTree = "<group>"; };
 		0A3B774F1C4C299100C06E31 /* rainmakerIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rainmakerIcon@3x.png"; path = "Images/rainmakerIcon@3x.png"; sourceTree = "<group>"; };
 		0A3B77501C4C299100C06E31 /* zonesIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zonesIcon.png; path = Images/zonesIcon.png; sourceTree = "<group>"; };
-		0A3B77511C4C299100C06E31 /* zonesIcon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = zonesIcon.svg; path = Images/zonesIcon.svg; sourceTree = "<group>"; };
 		0A3B77521C4C299100C06E31 /* zonesIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zonesIcon@2x.png"; path = "Images/zonesIcon@2x.png"; sourceTree = "<group>"; };
 		0A3B77531C4C299100C06E31 /* zonesIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zonesIcon@3x.png"; path = "Images/zonesIcon@3x.png"; sourceTree = "<group>"; };
 		0A3B776B1C4C3AE700C06E31 /* towerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = towerIcon.png; path = Images/towerIcon.png; sourceTree = "<group>"; };
-		0A3B776C1C4C3AE700C06E31 /* towerIcon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = towerIcon.svg; path = Images/towerIcon.svg; sourceTree = "<group>"; };
 		0A3B776D1C4C3AE700C06E31 /* towerIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "towerIcon@2x.png"; path = "Images/towerIcon@2x.png"; sourceTree = "<group>"; };
 		0A3B776E1C4C3AE700C06E31 /* towerIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "towerIcon@3x.png"; path = "Images/towerIcon@3x.png"; sourceTree = "<group>"; };
-		0A3B777D1C4C4B3400C06E31 /* squidIcon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = squidIcon.svg; path = Images/squidIcon.svg; sourceTree = "<group>"; };
 		0A3B778B1C51A6F900C06E31 /* StageAncho-VGames.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "StageAncho-VGames.jpg"; path = "Images/Stages/StageAncho-VGames.jpg"; sourceTree = "<group>"; };
 		0A41A9461C4AF61E00D80E15 /* SplatWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplatWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A41A9491C4AF61F00D80E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -831,6 +824,15 @@
 		0AC039101CA840580063A195 /* Matches.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Matches.storyboard; sourceTree = "<group>"; };
 		0AC039121CA842310063A195 /* StoryboardSplitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSplitter.swift; sourceTree = "<group>"; };
 		0AC039151CA8448D0063A195 /* SwiftGenStoryboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGenStoryboards.swift; sourceTree = "<group>"; };
+		0AC0391B1CA8460F0063A195 /* SplatTrackMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplatTrackMainViewController.swift; sourceTree = "<group>"; };
+		0AC0391D1CA84A8D0063A195 /* lose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lose.png; path = Images/splatTrack/lose.png; sourceTree = "<group>"; };
+		0AC0391E1CA84A8D0063A195 /* lose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lose@2x.png"; path = "Images/splatTrack/lose@2x.png"; sourceTree = "<group>"; };
+		0AC0391F1CA84A8D0063A195 /* lose@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lose@3x.png"; path = "Images/splatTrack/lose@3x.png"; sourceTree = "<group>"; };
+		0AC039201CA84A8D0063A195 /* win.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = win.png; path = Images/splatTrack/win.png; sourceTree = "<group>"; };
+		0AC039211CA84A8D0063A195 /* win@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "win@2x.png"; path = "Images/splatTrack/win@2x.png"; sourceTree = "<group>"; };
+		0AC039221CA84A8D0063A195 /* win@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "win@3x.png"; path = "Images/splatTrack/win@3x.png"; sourceTree = "<group>"; };
+		0AC039291CA850C60063A195 /* SplatKDRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplatKDRViewController.swift; sourceTree = "<group>"; };
+		0AC0392B1CA8538E0063A195 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		0AC607851C189B36006EECA7 /* SplatPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplatPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC607881C189B36006EECA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AC6078F1C189B36006EECA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -1265,6 +1267,7 @@
 			isa = PBXGroup;
 			children = (
 				0A4FC2881C769434007D6E7F /* Gear.swift */,
+				0AC0392B1CA8538E0063A195 /* Match.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1280,6 +1283,7 @@
 		0A4FC28C1C76A1C0007D6E7F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0AC039181CA845C10063A195 /* SplatTrack */,
 				0AA018C51CA6F4C5002D8687 /* Views */,
 				0AA018C41CA6F497002D8687 /* Storyboards */,
 				0AC607B81C189BD8006EECA7 /* MapsTableViewController.swift */,
@@ -1497,6 +1501,15 @@
 			name = SwiftGen;
 			sourceTree = "<group>";
 		};
+		0AC039181CA845C10063A195 /* SplatTrack */ = {
+			isa = PBXGroup;
+			children = (
+				0AC0391B1CA8460F0063A195 /* SplatTrackMainViewController.swift */,
+				0AC039291CA850C60063A195 /* SplatKDRViewController.swift */,
+			);
+			name = SplatTrack;
+			sourceTree = "<group>";
+		};
 		0AC6077C1C189B36006EECA7 = {
 			isa = PBXGroup;
 			children = (
@@ -1599,25 +1612,6 @@
 		0AC607DE1C18AAA6006EECA7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				0A0370DF1C7A9063001CDB20 /* bookmarkStar.png */,
-				0A0370E01C7A9063001CDB20 /* bookmarkStar@2x.png */,
-				0A0370E11C7A9063001CDB20 /* bookmarkStar@3x.png */,
-				0A3B777D1C4C4B3400C06E31 /* squidIcon.svg */,
-				0A4C51931C25F208006ABE9B /* squidIcon.png */,
-				0A4C51941C25F208006ABE9B /* squidIcon@2x.png */,
-				0A4C51951C25F208006ABE9B /* squidIcon@3x.png */,
-				0A3B774D1C4C299100C06E31 /* rainmakerIcon.png */,
-				0A3B776B1C4C3AE700C06E31 /* towerIcon.png */,
-				0A3B776C1C4C3AE700C06E31 /* towerIcon.svg */,
-				0A3B776D1C4C3AE700C06E31 /* towerIcon@2x.png */,
-				0A3B776E1C4C3AE700C06E31 /* towerIcon@3x.png */,
-				0A3B774E1C4C299100C06E31 /* rainmakerIcon.svg */,
-				0A3B774F1C4C299100C06E31 /* rainmakerIcon@3x.png */,
-				0A3B77501C4C299100C06E31 /* zonesIcon.png */,
-				0A3B77511C4C299100C06E31 /* zonesIcon.svg */,
-				0A3B77521C4C299100C06E31 /* zonesIcon@2x.png */,
-				0A3B77531C4C299100C06E31 /* zonesIcon@3x.png */,
-				0A3B774B1C4C298900C06E31 /* rainmakerIcon@2x.png */,
 				0A9AD9E11C2A11EE00CDFBE7 /* Subs */,
 				0A9AD9C81C29F5C500CDFBE7 /* Specials */,
 				0A9AD9331C29F5B300CDFBE7 /* Weapons */,
@@ -1625,6 +1619,21 @@
 				0AA23E081C1B6E140002BCC2 /* Abilities */,
 				0ADF9A9D1C1D1246002D7E81 /* Bar Icons */,
 				0ADF9AA61C1DF2CD002D7E81 /* Gear */,
+				0A0370DF1C7A9063001CDB20 /* bookmarkStar.png */,
+				0A0370E01C7A9063001CDB20 /* bookmarkStar@2x.png */,
+				0A0370E11C7A9063001CDB20 /* bookmarkStar@3x.png */,
+				0A4C51931C25F208006ABE9B /* squidIcon.png */,
+				0A4C51941C25F208006ABE9B /* squidIcon@2x.png */,
+				0A4C51951C25F208006ABE9B /* squidIcon@3x.png */,
+				0A3B774D1C4C299100C06E31 /* rainmakerIcon.png */,
+				0A3B776B1C4C3AE700C06E31 /* towerIcon.png */,
+				0A3B776D1C4C3AE700C06E31 /* towerIcon@2x.png */,
+				0A3B776E1C4C3AE700C06E31 /* towerIcon@3x.png */,
+				0A3B774F1C4C299100C06E31 /* rainmakerIcon@3x.png */,
+				0A3B77501C4C299100C06E31 /* zonesIcon.png */,
+				0A3B77521C4C299100C06E31 /* zonesIcon@2x.png */,
+				0A3B77531C4C299100C06E31 /* zonesIcon@3x.png */,
+				0A3B774B1C4C298900C06E31 /* rainmakerIcon@2x.png */,
 				0A0F6FEC1C261FAC00206883 /* itemBG.png */,
 				0A0F6FED1C261FAC00206883 /* itemBG@2x.png */,
 				0A0F6FEE1C261FAC00206883 /* itemBG@3x.png */,
@@ -1679,6 +1688,12 @@
 		0ADF9AA61C1DF2CD002D7E81 /* Gear */ = {
 			isa = PBXGroup;
 			children = (
+				0AC0391D1CA84A8D0063A195 /* lose.png */,
+				0AC0391E1CA84A8D0063A195 /* lose@2x.png */,
+				0AC0391F1CA84A8D0063A195 /* lose@3x.png */,
+				0AC039201CA84A8D0063A195 /* win.png */,
+				0AC039211CA84A8D0063A195 /* win@2x.png */,
+				0AC039221CA84A8D0063A195 /* win@3x.png */,
 				0ADF9AA71C1DF2DD002D7E81 /* gear18KAviators.png */,
 				0ADF9AA81C1DF2DD002D7E81 /* gearAcerolaRainBoots.png */,
 				0ADF9AA91C1DF2DD002D7E81 /* gearAlohaShirt.png */,
@@ -2209,15 +2224,11 @@
 				0A3B777B1C4C425500C06E31 /* squid.png in Resources */,
 				0A3B77761C4C3AEB00C06E31 /* towerIcon@3x.png in Resources */,
 				0A3B77731C4C3AEB00C06E31 /* towerIcon.png in Resources */,
-				0A3B775F1C4C3AAB00C06E31 /* zonesIcon.svg in Resources */,
-				0A3B77741C4C3AEB00C06E31 /* towerIcon.svg in Resources */,
 				0A3B775B1C4C3AAB00C06E31 /* rainmakerIcon.png in Resources */,
 				0A3B77851C4C4B4600C06E31 /* squidIcon@2x.png in Resources */,
-				0A3B77831C4C4B4600C06E31 /* squidIcon.svg in Resources */,
 				0A3B775E1C4C3AAB00C06E31 /* zonesIcon.png in Resources */,
 				0A41A94C1C4AF61F00D80E15 /* Assets-watch.xcassets in Resources */,
 				0A3B77601C4C3AAB00C06E31 /* zonesIcon@2x.png in Resources */,
-				0A3B775C1C4C3AAB00C06E31 /* rainmakerIcon.svg in Resources */,
 				0A3B77841C4C4B4600C06E31 /* squidIcon.png in Resources */,
 				0A41A94A1C4AF61F00D80E15 /* Interface.storyboard in Resources */,
 				0A3B77861C4C4B4600C06E31 /* squidIcon@3x.png in Resources */,
@@ -2231,20 +2242,16 @@
 				0A3B777C1C4C425600C06E31 /* squid.png in Resources */,
 				0A3B778A1C4C4B4700C06E31 /* squidIcon@3x.png in Resources */,
 				0A3B776A1C4C3AAC00C06E31 /* rainmakerIcon@2x.png in Resources */,
-				0A3B77641C4C3AAC00C06E31 /* rainmakerIcon.svg in Resources */,
 				0A3B77771C4C3AEB00C06E31 /* towerIcon.png in Resources */,
 				0A3B77791C4C3AEB00C06E31 /* towerIcon@2x.png in Resources */,
 				0A3B77651C4C3AAC00C06E31 /* rainmakerIcon@3x.png in Resources */,
 				0A3B77891C4C4B4700C06E31 /* squidIcon@2x.png in Resources */,
 				0A3B77681C4C3AAC00C06E31 /* zonesIcon@2x.png in Resources */,
 				0A41A9641C4AF61F00D80E15 /* Assets.xcassets in Resources */,
-				0A3B77871C4C4B4700C06E31 /* squidIcon.svg in Resources */,
 				0A3B77661C4C3AAC00C06E31 /* zonesIcon.png in Resources */,
 				0A3B77631C4C3AAC00C06E31 /* rainmakerIcon.png in Resources */,
-				0A3B77781C4C3AEB00C06E31 /* towerIcon.svg in Resources */,
 				0A3B777A1C4C3AEB00C06E31 /* towerIcon@3x.png in Resources */,
 				0A3B77691C4C3AAC00C06E31 /* zonesIcon@3x.png in Resources */,
-				0A3B77671C4C3AAC00C06E31 /* zonesIcon.svg in Resources */,
 				0A3B77881C4C4B4700C06E31 /* squidIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2310,7 +2317,6 @@
 				0ADF9C5F1C1DF2DE002D7E81 /* gearSnowyDownBoots.png in Resources */,
 				0A9AD9F51C2A11F800CDFBE7 /* subSuctionBomb.png in Resources */,
 				0ADF9BE11C1DF2DE002D7E81 /* gearCreamBasics.png in Resources */,
-				0A3B777E1C4C4B3400C06E31 /* squidIcon.svg in Resources */,
 				0A9AD9D71C29F5D000CDFBE7 /* specialBubbler.png in Resources */,
 				0AC607E51C18E8A1006EECA7 /* rankedBadge@2x.png in Resources */,
 				0A9AD9801C29F5BE00CDFBE7 /* weapon.96Gal.png in Resources */,
@@ -2370,6 +2376,7 @@
 				0ADF9C2C1C1DF2DE002D7E81 /* gearPilotGoggles.png in Resources */,
 				0ADF9AA11C1D1255002D7E81 /* clothesIcon.png in Resources */,
 				0AA23E361C1B6E280002BCC2 /* abilitySpecialDurationUp.png in Resources */,
+				0AC039231CA84A8D0063A195 /* lose.png in Resources */,
 				0A9AD98F1C29F5BE00CDFBE7 /* weaponCustomJetSquelcher.png in Resources */,
 				0ADF9BF51C1DF2DE002D7E81 /* gearGasMask.png in Resources */,
 				0AC607E01C18ACF7006EECA7 /* Paintball_Beta_4a.otf in Resources */,
@@ -2385,7 +2392,6 @@
 				0AC607D81C18A629006EECA7 /* StageMuseumd'Alfonsino.jpg in Resources */,
 				0AA23E231C1B6E280002BCC2 /* abilityBombSniffer.png in Resources */,
 				0ADF9BD61C1DF2DE002D7E81 /* gearCamoLayeredLS.png in Resources */,
-				0A3B77581C4C299100C06E31 /* zonesIcon.svg in Resources */,
 				0ADF9BEA1C1DF2DE002D7E81 /* gearDesignerHeadphones.png in Resources */,
 				0ADF9C3C1C1DF2DE002D7E81 /* gearRedHi-Horses.png in Resources */,
 				0AC607DC1C18A629006EECA7 /* StageWalleyeWarehouse.jpg in Resources */,
@@ -2406,14 +2412,15 @@
 				0AA23E221C1B6E280002BCC2 /* abilityBombRangeUp.png in Resources */,
 				0ADF9BD11C1DF2DE002D7E81 /* gearBlueSailorSuit.png in Resources */,
 				0ADF9BC01C1DF2DE002D7E81 /* gearBlackAnchorTee.png in Resources */,
+				0AC039281CA84A8D0063A195 /* win@3x.png in Resources */,
 				0A9AD9DE1C29FA8800CDFBE7 /* GearView.xib in Resources */,
 				0ADF9C891C1DF2DE002D7E81 /* gearTraditionalHeadband.png in Resources */,
 				0AA23DFE1C1B6D870002BCC2 /* weaponsIcon@2x.png in Resources */,
 				0ADF9C601C1DF2DE002D7E81 /* gearSoccerCleats.png in Resources */,
 				0A0370E31C7A9063001CDB20 /* bookmarkStar@2x.png in Resources */,
+				0AC039241CA84A8D0063A195 /* lose@2x.png in Resources */,
 				0ADF9CA31C1DF2DE002D7E81 /* gearWhitePufferTee.png in Resources */,
 				0AC607D21C18A629006EECA7 /* StageBluefinDepot.jpg in Resources */,
-				0A3B77701C4C3AE700C06E31 /* towerIcon.svg in Resources */,
 				0AC607DB1C18A629006EECA7 /* StageUrchinUnderpass.jpg in Resources */,
 				0A9AD9F01C2A11F800CDFBE7 /* subSeeker.png in Resources */,
 				0ADF9BB31C1DF2DE002D7E81 /* gearArmorJacketReplica.png in Resources */,
@@ -2506,6 +2513,7 @@
 				0A0370E41C7A9063001CDB20 /* bookmarkStar@3x.png in Resources */,
 				0ADF9BEB1C1DF2DE002D7E81 /* gearFakeContacts.png in Resources */,
 				0ADF9BBB1C1DF2DE002D7E81 /* gearBaseballJersey.png in Resources */,
+				0AC039261CA84A8D0063A195 /* win.png in Resources */,
 				0AC607951C189B36006EECA7 /* LaunchScreen.storyboard in Resources */,
 				0A9AD98E1C29F5BE00CDFBE7 /* weaponCustomHydraSplatling.png in Resources */,
 				0ADF9C9E1C1DF2DE002D7E81 /* gearWhiteInkyRider.png in Resources */,
@@ -2535,7 +2543,6 @@
 				0A9AD9F21C2A11F800CDFBE7 /* subSplatBomb.png in Resources */,
 				0ADF9C041C1DF2DE002D7E81 /* gearHeroJacketReplica.png in Resources */,
 				0A4C51151C24633C006ABE9B /* splatIcon.png in Resources */,
-				0A3B77551C4C299100C06E31 /* rainmakerIcon.svg in Resources */,
 				0ADF9C651C1DF2DE002D7E81 /* gearSportyBobbleHat.png in Resources */,
 				0AA23DFD1C1B6D870002BCC2 /* weaponsIcon.png in Resources */,
 				0ADF9BBF1C1DF2DE002D7E81 /* gearBlack8-BitFishFry.png in Resources */,
@@ -2610,6 +2617,7 @@
 				0ADF9C031C1DF2DE002D7E81 /* gearHeroHeadsetReplica.png in Resources */,
 				0A9AD99C1C29F5BE00CDFBE7 /* weaponHeroChargerReplica.png in Resources */,
 				0ADF9C331C1DF2DE002D7E81 /* gearProTrailBoots.png in Resources */,
+				0AC039251CA84A8D0063A195 /* lose@3x.png in Resources */,
 				0ADF9C8B1C1DF2DE002D7E81 /* gearTrailBoots.png in Resources */,
 				0ADF9C091C1DF2DE002D7E81 /* gearJetCap.png in Resources */,
 				0ADF9C2B1C1DF2DE002D7E81 /* gearPearlTee.png in Resources */,
@@ -2683,6 +2691,7 @@
 				0A4C51171C24633C006ABE9B /* splatIcon@3x.png in Resources */,
 				0ADF9C4D1C1DF2DE002D7E81 /* gearSagePolo.png in Resources */,
 				0ADF9BAF1C1DF2DE002D7E81 /* gearAlohaShirt.png in Resources */,
+				0AC039271CA84A8D0063A195 /* win@2x.png in Resources */,
 				0A948AC31C1CC4F700CCC4DB /* data.min.json in Resources */,
 				0AC607FA1C191F09006EECA7 /* squid@3x.png in Resources */,
 				0ADF9AA31C1D1255002D7E81 /* clothesIcon@3x.png in Resources */,
@@ -3066,9 +3075,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AC0391C1CA8460F0063A195 /* SplatTrackMainViewController.swift in Sources */,
 				0A4FC2891C769434007D6E7F /* Gear.swift in Sources */,
 				0A6AFEF91C2870D20073884B /* SplatData.swift in Sources */,
+				0AC0392C1CA8538E0063A195 /* Match.swift in Sources */,
 				0A3503ED1C27270C009C6A48 /* NotificationsTableViewController.swift in Sources */,
+				0AC0392A1CA850C60063A195 /* SplatKDRViewController.swift in Sources */,
 				0AC039131CA842310063A195 /* StoryboardSplitter.swift in Sources */,
 				0AC039161CA8448D0063A195 /* SwiftGenStoryboards.swift in Sources */,
 				0A9AD9321C29DB0700CDFBE7 /* LoadoutViewController.swift in Sources */,

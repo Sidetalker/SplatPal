@@ -5,9 +5,13 @@ PODS:
   - Crashlytics (3.7.0):
     - Fabric (~> 1.6.3)
   - Doorbell (0.0.6)
+  - ElasticTransition (2.2.0):
+    - MotionAnimation (~> 0.0.5)
   - Fabric (1.6.7)
   - Kanna (1.0.5)
+  - LTMorphingLabel (0.2.0)
   - MGSwipeTableCell (1.5.4)
+  - MotionAnimation (0.0.5)
   - SwiftGen (0.8.0)
   - SwiftyJSON (2.3.2)
   - XCGLogger (3.2)
@@ -18,8 +22,10 @@ DEPENDENCIES:
   - CoreValue (~> 0.1.6)
   - Crashlytics
   - Doorbell (~> 0.0.6)
+  - ElasticTransition
   - Fabric
   - Kanna (~> 1.0.0)
+  - LTMorphingLabel
   - MGSwipeTableCell
   - SwiftGen
   - SwiftyJSON (~> 2.0)
@@ -31,13 +37,16 @@ SPEC CHECKSUMS:
   CoreValue: f765c6f40701033b5abe264558dd6998975e6830
   Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
   Doorbell: d995ae651475acb63e49544529a4bd4bc79646db
+  ElasticTransition: e5cd2b7d42497ba06cd928922690f335ab544a25
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   Kanna: 1df5cd995dc1f3a282e3dcf7521cfef2f069ac4d
+  LTMorphingLabel: 490aa8e079f9247c7f3130f7d4b1be1d66677377
   MGSwipeTableCell: cffd3378af74eb991911f132c5f3911261fda860
+  MotionAnimation: d9d4060bf4f494dd61bf868b8969a31b1b0b6f2a
   SwiftGen: d27095418addd706b18da94bc8d9552e8d8148c3
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   XCGLogger: da1f341f4bb8979db6e1df64232f04d9698402d4
 
-PODFILE CHECKSUM: b412706052ca4298c7cef8bfb2473df3c6cbf0c0
+PODFILE CHECKSUM: 03bd69fa9de2baf6bc3e27e33c6b105dcb0b0ca4
 
 COCOAPODS: 1.0.0.beta.5

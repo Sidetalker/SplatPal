@@ -88,8 +88,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$CONFIGURATION_BUILD_DIR/Armchair/Armchair.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/CoreValue/CoreValue.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/Doorbell/Doorbell.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/ElasticTransition/ElasticTransition.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/Kanna/Kanna.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/LTMorphingLabel/LTMorphingLabel.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/MGSwipeTableCell/MGSwipeTableCell.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/MotionAnimation/MotionAnimation.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/SwiftyJSON-iOS/SwiftyJSON.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/XCGLogger/XCGLogger.framework"
 fi
@@ -98,8 +101,11 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$CONFIGURATION_BUILD_DIR/Armchair/Armchair.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/CoreValue/CoreValue.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/Doorbell/Doorbell.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/ElasticTransition/ElasticTransition.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/Kanna/Kanna.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/LTMorphingLabel/LTMorphingLabel.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/MGSwipeTableCell/MGSwipeTableCell.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/MotionAnimation/MotionAnimation.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/SwiftyJSON-iOS/SwiftyJSON.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/XCGLogger/XCGLogger.framework"
 fi
