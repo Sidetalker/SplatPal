@@ -71,8 +71,18 @@ struct StoryboardScene {
       return StoryboardScene.Main.ReviewNotificationScene.viewController() as! ReviewNotificationTableViewController
     }
   }
-  enum Matches: StoryboardSceneType {
+  enum Matches: String, StoryboardSceneType {
     static let storyboardName = "Matches"
+
+    case KdrScene = "kdr"
+    static func instantiateKdr() -> SplatKDRViewController {
+      return StoryboardScene.Matches.KdrScene.viewController() as! SplatKDRViewController
+    }
+
+    case MainScene = "main"
+    static func instantiateMain() -> SplatTrackMainViewController {
+      return StoryboardScene.Matches.MainScene.viewController() as! SplatTrackMainViewController
+    }
   }
 }
 

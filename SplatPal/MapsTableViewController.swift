@@ -310,7 +310,7 @@ class MapsTableViewController: UITableViewController {
         // Don't do any scheduling if notifications are off
         if !NSUserDefaults.standardUserDefaults().boolForKey("mapNotificationsOn") { return }
         
-        var matches = [Match]()
+        var matches = [Stage]()
         let notificationSettings = loadNotifications()
         
         // Create Match items for each upcoming map
@@ -320,8 +320,8 @@ class MapsTableViewController: UITableViewController {
             let rankedMap = matchData!["rankedMaps"][x].stringValue
             let turfMap = matchData!["turfMaps"][x].stringValue
             
-            matches.append(Match(map: turfMap, mode: "Turf War", time: startTime))
-            matches.append(Match(map: rankedMap, mode: rankedMode, time: startTime))
+            matches.append(Stage(map: turfMap, mode: "Turf War", time: startTime))
+            matches.append(Stage(map: rankedMap, mode: rankedMode, time: startTime))
         }
         
         // Schedule notifications as needed
@@ -494,7 +494,7 @@ class MapsTableViewController: UITableViewController {
     }
 }
 
-class Match {
+class Stage {
     var map: String!
     var mode: String!
     var time: NSTimeInterval!

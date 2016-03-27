@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -1639,6 +1638,25 @@ Tap this message to hide it</string>
             </objects>
             <point key="canvasLocation" x="1970" y="-739"/>
         </scene>
+        <!--Win Tracker-->
+        <scene sceneID="tlF-pB-UH0">
+            <objects>
+                <viewController id="YFW-HB-Qfd" customClass="SplatWinTrackerTab" customModule="SplatPal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q4a-e9-Wui"/>
+                        <viewControllerLayoutGuide type="bottom" id="O4B-bb-0zd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vhP-8p-SWX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Win Tracker" image="splatIcon.png" id="OdY-aw-0ao"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DXH-IB-4Av" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1026" y="-1179"/>
+        </scene>
         <!--Loadouts-->
         <scene sceneID="rYX-W7-e8t">
             <objects>
@@ -2317,9 +2335,10 @@ Tap this message to hide it</string>
                     </tabBar>
                     <connections>
                         <segue destination="Spt-Db-0Ga" kind="relationship" relationship="viewControllers" id="usC-aU-Frt"/>
-                        <segue destination="r0e-A2-1Fy" kind="relationship" relationship="viewControllers" id="kE0-1Q-fl9"/>
-                        <segue destination="qB1-1u-vDb" kind="relationship" relationship="viewControllers" id="Atf-O0-JzW"/>
                         <segue destination="TZR-Re-Mo2" kind="relationship" relationship="viewControllers" id="CVO-7y-to3"/>
+                        <segue destination="YFW-HB-Qfd" kind="relationship" relationship="viewControllers" id="ufL-kq-Pjt"/>
+                        <segue destination="qB1-1u-vDb" kind="relationship" relationship="viewControllers" id="Atf-O0-JzW"/>
+                        <segue destination="r0e-A2-1Fy" kind="relationship" relationship="viewControllers" id="kE0-1Q-fl9"/>
                         <segue destination="sRx-pn-jkx" kind="relationship" relationship="viewControllers" id="Nui-V2-Kok"/>
                         <segue destination="xvr-yH-U4u" kind="relationship" relationship="viewControllers" id="Q4Y-F1-Pjg"/>
                     </connections>
@@ -3223,6 +3242,7 @@ Tap this message to hide it</string>
         <image name="settingsIcon.png" width="25" height="25"/>
         <image name="specialBubbler.png" width="128" height="128"/>
         <image name="specialEcholocator.png" width="128" height="128"/>
+        <image name="splatIcon.png" width="25" height="25"/>
         <image name="star.png" width="30" height="30"/>
         <image name="subInkMine.png" width="128" height="128"/>
         <image name="subSplatBomb.png" width="128" height="128"/>

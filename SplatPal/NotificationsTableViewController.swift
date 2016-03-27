@@ -170,7 +170,7 @@ class Notification {
         return rep
     }
     
-    func containsMatch(match: Match) -> Bool {
+    func containsMatch(match: Stage) -> Bool {
         if !enabled { return false }
         
         var modeMatch = false

@@ -42,6 +42,12 @@ class PlaceholderView: UIView {
     }
 }
 
+class SplatViewController: UIViewController {
+    override func prefersStatusBarHidden() -> Bool {
+        return NSUserDefaults.standardUserDefaults().boolForKey("hideStatusBar")
+    }
+}
+
 extension String {
     var length: Int {
         get {

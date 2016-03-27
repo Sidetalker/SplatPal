@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rQE-gh-nWc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Paintball_Beta_4a.otf">
+            <string>ProjectPaintball</string>
+            <string>ProjectPaintball</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Win Tracker-->
+        <scene sceneID="5at-Vp-lIt">
+            <objects>
+                <viewController storyboardIdentifier="main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rQE-gh-nWc" customClass="SplatTrackMainViewController" customModule="SplatPal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tgH-AM-Wdr"/>
+                        <viewControllerLayoutGuide type="bottom" id="uua-kc-FSt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xgh-kJ-Wwx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yFI-SU-Xrv">
+                                <rect key="frame" x="0.0" y="28" width="600" height="572"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ped-Cw-XD0">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="286"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haO-iI-uWV">
+                                                <rect key="frame" x="200" y="43" width="200" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="haO-iI-uWV" secondAttribute="height" multiplier="1:1" id="2ID-sF-88C"/>
+                                                    <constraint firstAttribute="width" constant="200" id="w0L-xY-2Tz"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="win.png"/>
+                                                <connections>
+                                                    <action selector="winTapped:" destination="rQE-gh-nWc" eventType="touchUpInside" id="bOA-LE-3zu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="haO-iI-uWV" firstAttribute="centerX" secondItem="ped-Cw-XD0" secondAttribute="centerX" id="m87-dw-hOS"/>
+                                            <constraint firstItem="haO-iI-uWV" firstAttribute="centerY" secondItem="ped-Cw-XD0" secondAttribute="centerY" id="oAr-EH-wcB"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vip-HA-c9b">
+                                        <rect key="frame" x="0.0" y="286" width="600" height="286"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJw-aL-avK">
+                                                <rect key="frame" x="200" y="43" width="200" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="DX6-Z1-bm1"/>
+                                                    <constraint firstAttribute="width" secondItem="bJw-aL-avK" secondAttribute="height" multiplier="1:1" id="Lra-Vr-xG2"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="lose.png"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="Lra-Vr-xG2"/>
+                                                        <exclude reference="DX6-Z1-bm1"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="lossTapped:" destination="rQE-gh-nWc" eventType="touchUpInside" id="T2q-1u-S0s"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="bJw-aL-avK" firstAttribute="centerX" secondItem="vip-HA-c9b" secondAttribute="centerX" id="CGX-50-nOV"/>
+                                            <constraint firstItem="bJw-aL-avK" firstAttribute="centerY" secondItem="vip-HA-c9b" secondAttribute="centerY" id="NqK-YD-wkK"/>
+                                            <constraint firstItem="bJw-aL-avK" firstAttribute="width" secondItem="bJw-aL-avK" secondAttribute="height" multiplier="1:1" id="nov-Mz-Wfq"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="nov-Mz-Wfq"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bJw-aL-avK" firstAttribute="width" secondItem="haO-iI-uWV" secondAttribute="width" id="CeQ-5q-m1n"/>
+                                    <constraint firstItem="bJw-aL-avK" firstAttribute="height" secondItem="haO-iI-uWV" secondAttribute="height" id="IzG-Gv-E44"/>
+                                    <constraint firstItem="ped-Cw-XD0" firstAttribute="height" secondItem="vip-HA-c9b" secondAttribute="height" id="bJ5-wl-yQp"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yFI-SU-Xrv" firstAttribute="top" secondItem="tgH-AM-Wdr" secondAttribute="bottom" constant="8" id="Fmd-LU-vXZ"/>
+                            <constraint firstItem="yFI-SU-Xrv" firstAttribute="leading" secondItem="Xgh-kJ-Wwx" secondAttribute="leadingMargin" constant="-20" id="lVF-Zm-END"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yFI-SU-Xrv" secondAttribute="trailing" constant="-20" id="mv7-T1-wZi"/>
+                            <constraint firstItem="uua-kc-FSt" firstAttribute="top" secondItem="yFI-SU-Xrv" secondAttribute="bottom" id="rqa-Zw-b6D"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Win Tracker" image="splatIcon.png" id="08Q-hg-jCg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Mi-fc-fyP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1674" y="-1747"/>
+        </scene>
+        <!--SplatKDR View Controller-->
+        <scene sceneID="scI-dv-GO4">
+            <objects>
+                <viewController storyboardIdentifier="kdr" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jun-mb-87k" customClass="SplatKDRViewController" customModule="SplatPal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wf1-sH-d6y"/>
+                        <viewControllerLayoutGuide type="bottom" id="421-gQ-ke9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8ct-HL-Sae">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="51" borderStyle="bezel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dPC-WH-ghI">
+                                <rect key="frame" x="240" y="93" width="120" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Eoi-Bs-Dmk"/>
+                                    <constraint firstAttribute="height" constant="60" id="G4c-dI-9ft"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="35"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many kills?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yf-4U-V4R">
+                                <rect key="frame" x="177" y="40" width="246.5" height="33"/>
+                                <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dPC-WH-ghI" firstAttribute="centerX" secondItem="8ct-HL-Sae" secondAttribute="centerX" id="Gsw-Go-95n"/>
+                            <constraint firstItem="2Yf-4U-V4R" firstAttribute="top" secondItem="Wf1-sH-d6y" secondAttribute="bottom" constant="20" id="Lyv-gt-PIL"/>
+                            <constraint firstItem="2Yf-4U-V4R" firstAttribute="centerX" secondItem="8ct-HL-Sae" secondAttribute="centerX" id="g9i-zE-Y0R"/>
+                            <constraint firstItem="dPC-WH-ghI" firstAttribute="top" secondItem="2Yf-4U-V4R" secondAttribute="bottom" constant="20" id="oOT-sf-k4K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblTitle" destination="2Yf-4U-V4R" id="cv0-dL-JMd"/>
+                        <outlet property="txtEntry" destination="dPC-WH-ghI" id="nfW-01-5SC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GEV-qD-Cns" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-998" y="-1747"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lose.png" width="200" height="200"/>
+        <image name="splatIcon.png" width="25" height="25"/>
+        <image name="win.png" width="200" height="200"/>
+    </resources>
+</document>
