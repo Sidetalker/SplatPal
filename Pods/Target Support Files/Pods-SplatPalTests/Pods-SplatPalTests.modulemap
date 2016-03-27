@@ -1,0 +1,6 @@
+framework module Pods_SplatPalTests {
+  umbrella header "Pods-SplatPalTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

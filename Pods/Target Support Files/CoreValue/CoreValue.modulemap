@@ -1,0 +1,6 @@
+framework module CoreValue {
+  umbrella header "CoreValue-umbrella.h"
+
+  export *
+  module * { export * }
+}

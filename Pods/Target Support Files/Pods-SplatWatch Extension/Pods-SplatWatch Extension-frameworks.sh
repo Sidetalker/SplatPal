@@ -84,10 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-SplatWatch Extension/Alamofire.framework"
-  install_framework "Pods-SplatWatch Extension/SwiftyJSON.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/Alamofire-watchOS/Alamofire.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/SwiftyJSON-watchOS/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-SplatWatch Extension/Alamofire.framework"
-  install_framework "Pods-SplatWatch Extension/SwiftyJSON.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/Alamofire-watchOS/Alamofire.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/SwiftyJSON-watchOS/SwiftyJSON.framework"
 fi

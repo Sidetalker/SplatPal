@@ -541,9 +541,12 @@
 		0ADF9CB01C1DF2DE002D7E81 /* gearZinkLayeredLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9BAA1C1DF2DE002D7E81 /* gearZinkLayeredLS.png */; };
 		0ADF9CB11C1DF2DE002D7E81 /* gearZinkLS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9BAB1C1DF2DE002D7E81 /* gearZinkLS.png */; };
 		0ADF9CB21C1DF2DE002D7E81 /* gearZombieHi-Horses.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF9BAC1C1DF2DE002D7E81 /* gearZombieHi-Horses.png */; };
-		2569047F96449E8575D58713 /* Pods_SplatWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20F906FCCAD5C4E556D42F8 /* Pods_SplatWatch_Extension.framework */; };
-		A80951C10B13C21AEA494E71 /* Pods_SplatPal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBDCB17D189739D652437DA /* Pods_SplatPal.framework */; };
-		C26CBDF8FE9A042550A84847 /* Pods_SplatWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C430A69EE99A04B17E0712 /* Pods_SplatWidget.framework */; };
+		0EA86774E09370581C3224C2 /* Pods_SplatPal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F02E52600C194276BE8F1DCB /* Pods_SplatPal.framework */; };
+		278A0E09F33B11C9AC85EA0B /* Pods_SplatWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDC53FE9D3E3D79627CE302 /* Pods_SplatWatch_Extension.framework */; };
+		49B5C3EEF3C0D87B3A8355C5 /* Pods_SplatWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71128E3D13FBE8AA9F332493 /* Pods_SplatWatch.framework */; };
+		75301D7A1F1DB83718AB99AE /* Pods_SplatPalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72BCF07113F4F54A5569B395 /* Pods_SplatPalTests.framework */; };
+		D18117B4CD395F984223EFD1 /* Pods_SplatWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4C275ED9003DD92DC74278 /* Pods_SplatWidget.framework */; };
+		DF68D7904A60C2552F346566 /* Pods_SplatPalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF82DFCBFB6A5A9C7483E2CF /* Pods_SplatPalUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -621,7 +624,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		04573E61435B391F9524E97B /* Pods-SplatPal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatPal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplatPal/Pods-SplatPal.debug.xcconfig"; sourceTree = "<group>"; };
+		01C07ED5EFB0DA68C94AB381 /* Pods-SplatWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatWatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplatWatch/Pods-SplatWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		0898D5121146CF1046C30F0E /* Pods-SplatPal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatPal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplatPal/Pods-SplatPal.debug.xcconfig"; sourceTree = "<group>"; };
 		0A0370DF1C7A9063001CDB20 /* bookmarkStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookmarkStar.png; path = Images/bookmarkStar.png; sourceTree = "<group>"; };
 		0A0370E01C7A9063001CDB20 /* bookmarkStar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bookmarkStar@2x.png"; path = "Images/bookmarkStar@2x.png"; sourceTree = "<group>"; };
 		0A0370E11C7A9063001CDB20 /* bookmarkStar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bookmarkStar@3x.png"; path = "Images/bookmarkStar@3x.png"; sourceTree = "<group>"; };
@@ -1134,14 +1138,22 @@
 		0ADF9BAA1C1DF2DE002D7E81 /* gearZinkLayeredLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearZinkLayeredLS.png; path = Images/gear/gearZinkLayeredLS.png; sourceTree = "<group>"; };
 		0ADF9BAB1C1DF2DE002D7E81 /* gearZinkLS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearZinkLS.png; path = Images/gear/gearZinkLS.png; sourceTree = "<group>"; };
 		0ADF9BAC1C1DF2DE002D7E81 /* gearZombieHi-Horses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gearZombieHi-Horses.png"; path = "Images/gear/gearZombieHi-Horses.png"; sourceTree = "<group>"; };
-		1F17E541D5268368D962836C /* Pods-SplatWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplatWidget/Pods-SplatWidget.release.xcconfig"; sourceTree = "<group>"; };
-		1FBC42DFF3D15E3C277DEED6 /* Pods-SplatWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplatWatch Extension/Pods-SplatWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		3297FDF7A703D876943BE2E6 /* Pods-SplatPal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatPal.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplatPal/Pods-SplatPal.release.xcconfig"; sourceTree = "<group>"; };
-		552E39D512A78F01AB6482EA /* Pods-SplatWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplatWatch Extension/Pods-SplatWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
-		8FBDCB17D189739D652437DA /* Pods_SplatPal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplatPal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		92C430A69EE99A04B17E0712 /* Pods_SplatWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplatWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9981F1D3F6C6C41A6CE0060D /* Pods-SplatWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplatWidget/Pods-SplatWidget.debug.xcconfig"; sourceTree = "<group>"; };
-		A20F906FCCAD5C4E556D42F8 /* Pods_SplatWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplatWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D4C275ED9003DD92DC74278 /* Pods_SplatWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplatWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29048C250E1BC88316CE65B0 /* Pods-SplatWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplatWidget/Pods-SplatWidget.release.xcconfig"; sourceTree = "<group>"; };
+		3FDC53FE9D3E3D79627CE302 /* Pods_SplatWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplatWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A9C2805542E1DB68D9A52BA /* Pods-SplatWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatWatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplatWatch/Pods-SplatWatch.release.xcconfig"; sourceTree = "<group>"; };
+		4D8EE5060D8B6B870DFF327A /* Pods-SplatWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplatWidget/Pods-SplatWidget.debug.xcconfig"; sourceTree = "<group>"; };
+		54BF6FB7D92E1A430C1E84DC /* Pods-SplatPal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatPal.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplatPal/Pods-SplatPal.release.xcconfig"; sourceTree = "<group>"; };
+		5BE01127CB594224DC73BA74 /* Pods-SplatPalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatPalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplatPalTests/Pods-SplatPalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		71128E3D13FBE8AA9F332493 /* Pods_SplatWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplatWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72BCF07113F4F54A5569B395 /* Pods_SplatPalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplatPalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8492E8EC38C519F4A853F378 /* Pods-SplatWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplatWatch Extension/Pods-SplatWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		BFCD64B1FE6DD6F5E390204D /* Pods-SplatPalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatPalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplatPalTests/Pods-SplatPalTests.release.xcconfig"; sourceTree = "<group>"; };
+		D750132198AB90F45C08EB10 /* Pods-SplatPalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatPalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SplatPalUITests/Pods-SplatPalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E5081EF0502B1CB98A6DDD7C /* Pods-SplatPalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatPalUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplatPalUITests/Pods-SplatPalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F02E52600C194276BE8F1DCB /* Pods_SplatPal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplatPal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2A1993632630914065F726D /* Pods-SplatWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplatWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplatWatch Extension/Pods-SplatWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		FF82DFCBFB6A5A9C7483E2CF /* Pods_SplatPalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplatPalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1150,7 +1162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A3503F61C286A30009C6A48 /* NotificationCenter.framework in Frameworks */,
-				C26CBDF8FE9A042550A84847 /* Pods_SplatWidget.framework in Frameworks */,
+				D18117B4CD395F984223EFD1 /* Pods_SplatWidget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1158,7 +1170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2569047F96449E8575D58713 /* Pods_SplatWatch_Extension.framework in Frameworks */,
+				278A0E09F33B11C9AC85EA0B /* Pods_SplatWatch_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1166,7 +1178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A80951C10B13C21AEA494E71 /* Pods_SplatPal.framework in Frameworks */,
+				0EA86774E09370581C3224C2 /* Pods_SplatPal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1174,6 +1186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75301D7A1F1DB83718AB99AE /* Pods_SplatPalTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1181,6 +1194,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF68D7904A60C2552F346566 /* Pods_SplatPalUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		513381671CF6E68BA38980B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49B5C3EEF3C0D87B3A8355C5 /* Pods_SplatWatch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1469,8 +1491,8 @@
 				0A41A9471C4AF61E00D80E15 /* SplatWatch */,
 				0A41A9561C4AF61F00D80E15 /* SplatWatch Extension */,
 				0AC607861C189B36006EECA7 /* Products */,
-				B81E0E35C30F8CE205ED4CC2 /* Pods */,
 				E826F755AD1976281175B248 /* Frameworks */,
+				460BF1D709AC9408F3190F21 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1906,15 +1928,21 @@
 			name = Gear;
 			sourceTree = "<group>";
 		};
-		B81E0E35C30F8CE205ED4CC2 /* Pods */ = {
+		460BF1D709AC9408F3190F21 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				04573E61435B391F9524E97B /* Pods-SplatPal.debug.xcconfig */,
-				3297FDF7A703D876943BE2E6 /* Pods-SplatPal.release.xcconfig */,
-				9981F1D3F6C6C41A6CE0060D /* Pods-SplatWidget.debug.xcconfig */,
-				1F17E541D5268368D962836C /* Pods-SplatWidget.release.xcconfig */,
-				1FBC42DFF3D15E3C277DEED6 /* Pods-SplatWatch Extension.debug.xcconfig */,
-				552E39D512A78F01AB6482EA /* Pods-SplatWatch Extension.release.xcconfig */,
+				0898D5121146CF1046C30F0E /* Pods-SplatPal.debug.xcconfig */,
+				54BF6FB7D92E1A430C1E84DC /* Pods-SplatPal.release.xcconfig */,
+				5BE01127CB594224DC73BA74 /* Pods-SplatPalTests.debug.xcconfig */,
+				BFCD64B1FE6DD6F5E390204D /* Pods-SplatPalTests.release.xcconfig */,
+				E5081EF0502B1CB98A6DDD7C /* Pods-SplatPalUITests.debug.xcconfig */,
+				D750132198AB90F45C08EB10 /* Pods-SplatPalUITests.release.xcconfig */,
+				01C07ED5EFB0DA68C94AB381 /* Pods-SplatWatch.debug.xcconfig */,
+				4A9C2805542E1DB68D9A52BA /* Pods-SplatWatch.release.xcconfig */,
+				F2A1993632630914065F726D /* Pods-SplatWatch Extension.debug.xcconfig */,
+				8492E8EC38C519F4A853F378 /* Pods-SplatWatch Extension.release.xcconfig */,
+				4D8EE5060D8B6B870DFF327A /* Pods-SplatWidget.debug.xcconfig */,
+				29048C250E1BC88316CE65B0 /* Pods-SplatWidget.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1922,10 +1950,13 @@
 		E826F755AD1976281175B248 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8FBDCB17D189739D652437DA /* Pods_SplatPal.framework */,
 				0A3503F51C286A30009C6A48 /* NotificationCenter.framework */,
-				92C430A69EE99A04B17E0712 /* Pods_SplatWidget.framework */,
-				A20F906FCCAD5C4E556D42F8 /* Pods_SplatWatch_Extension.framework */,
+				F02E52600C194276BE8F1DCB /* Pods_SplatPal.framework */,
+				72BCF07113F4F54A5569B395 /* Pods_SplatPalTests.framework */,
+				FF82DFCBFB6A5A9C7483E2CF /* Pods_SplatPalUITests.framework */,
+				71128E3D13FBE8AA9F332493 /* Pods_SplatWatch.framework */,
+				3FDC53FE9D3E3D79627CE302 /* Pods_SplatWatch_Extension.framework */,
+				0D4C275ED9003DD92DC74278 /* Pods_SplatWidget.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1937,13 +1968,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A3504011C286A30009C6A48 /* Build configuration list for PBXNativeTarget "SplatWidget" */;
 			buildPhases = (
-				215122E5BEB3DC062E3E5AB8 /* Check Pods Manifest.lock */,
+				58B583400CEF19117C4B7D31 /* 📦 Check Pods Manifest.lock */,
 				0A3503F01C286A30009C6A48 /* Sources */,
 				0A3503F11C286A30009C6A48 /* Frameworks */,
 				0A3503F21C286A30009C6A48 /* Resources */,
-				44256824AE07CB62BD52232A /* Embed Pods Frameworks */,
-				F91631E6638DAB94F6ABD909 /* Copy Pods Resources */,
 				0A15E65F1C29C5F80098BBF0 /* Purge Frameworks */,
+				CD0D5DEDE83F349F186C5DC2 /* 📦 Embed Pods Frameworks */,
+				B719FA12ED0E4484CF7944EC /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1958,8 +1989,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A41A96F1C4AF61F00D80E15 /* Build configuration list for PBXNativeTarget "SplatWatch" */;
 			buildPhases = (
+				32E29673669FC17671B2D7BB /* 📦 Check Pods Manifest.lock */,
 				0A41A9441C4AF61E00D80E15 /* Resources */,
 				0A41A96E1C4AF61F00D80E15 /* Embed App Extensions */,
+				513381671CF6E68BA38980B9 /* Frameworks */,
+				541424FB0AE9A7604FA4A82C /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1975,12 +2009,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A41A96D1C4AF61F00D80E15 /* Build configuration list for PBXNativeTarget "SplatWatch Extension" */;
 			buildPhases = (
-				8E57D07B282FC0E5480AC24A /* Check Pods Manifest.lock */,
+				5E3AE31741D1E582A7CF6032 /* 📦 Check Pods Manifest.lock */,
 				0A41A94E1C4AF61F00D80E15 /* Sources */,
 				0A41A94F1C4AF61F00D80E15 /* Frameworks */,
 				0A41A9501C4AF61F00D80E15 /* Resources */,
-				172D522A5E11D44F64649288 /* Embed Pods Frameworks */,
-				8DD8E33A7A1DD388D2CF303E /* Copy Pods Resources */,
+				0C0F4F159175C2443F85083F /* 📦 Embed Pods Frameworks */,
+				9CE553F61B9663FC0F2395A5 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1995,16 +2029,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AC607AF1C189B36006EECA7 /* Build configuration list for PBXNativeTarget "SplatPal" */;
 			buildPhases = (
-				DF3E91F8ADCBFC5CCA76D8C5 /* Check Pods Manifest.lock */,
+				737CF5BC70CD37D9BFB8C59F /* 📦 Check Pods Manifest.lock */,
 				0AC607811C189B36006EECA7 /* Sources */,
 				0AC607821C189B36006EECA7 /* Frameworks */,
 				0AC607831C189B36006EECA7 /* Resources */,
-				F40E3C39911A168DC9236B4F /* Embed Pods Frameworks */,
-				6DE13733E107E53992802EEA /* Copy Pods Resources */,
 				0AA23E3E1C1B75410002BCC2 /* Update Build Number */,
 				0AA23E451C1B89E20002BCC2 /* Fabric */,
 				0A3504041C286A30009C6A48 /* Embed App Extensions */,
 				0A41A9701C4AF61F00D80E15 /* Embed Watch Content */,
+				45A929879CAD603E6BDDC5C5 /* 📦 Embed Pods Frameworks */,
+				2089F09A9C7046F8BC9D82DD /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2021,9 +2055,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AC607B21C189B36006EECA7 /* Build configuration list for PBXNativeTarget "SplatPalTests" */;
 			buildPhases = (
+				12F655637BFC6F5D529D90EA /* 📦 Check Pods Manifest.lock */,
 				0AC607971C189B36006EECA7 /* Sources */,
 				0AC607981C189B36006EECA7 /* Frameworks */,
 				0AC607991C189B36006EECA7 /* Resources */,
+				EECFBE8ACEF4614618A252A1 /* 📦 Embed Pods Frameworks */,
+				14524C3A7173F23BA52263B0 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2039,9 +2076,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AC607B51C189B36006EECA7 /* Build configuration list for PBXNativeTarget "SplatPalUITests" */;
 			buildPhases = (
+				7F26A722AE447595956B5DBF /* 📦 Check Pods Manifest.lock */,
 				0AC607A21C189B36006EECA7 /* Sources */,
 				0AC607A31C189B36006EECA7 /* Frameworks */,
 				0AC607A41C189B36006EECA7 /* Resources */,
+				1B63BF244A7DF6B2BCA2E0C8 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2725,14 +2764,14 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" e9e0fd3a066ecdbf0929f4b7ad16a4dc16d5468b 29c867f398edb79a7f762f24fb3193b235728bdceb51a924c84ba7c78564ee4d";
 		};
-		172D522A5E11D44F64649288 /* Embed Pods Frameworks */ = {
+		0C0F4F159175C2443F85083F /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2740,14 +2779,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplatWatch Extension/Pods-SplatWatch Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		215122E5BEB3DC062E3E5AB8 /* Check Pods Manifest.lock */ = {
+		12F655637BFC6F5D529D90EA /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2755,29 +2794,44 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		44256824AE07CB62BD52232A /* Embed Pods Frameworks */ = {
+		14524C3A7173F23BA52263B0 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplatWidget/Pods-SplatWidget-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplatPalTests/Pods-SplatPalTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6DE13733E107E53992802EEA /* Copy Pods Resources */ = {
+		1B63BF244A7DF6B2BCA2E0C8 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplatPalUITests/Pods-SplatPalUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2089F09A9C7046F8BC9D82DD /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2785,29 +2839,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplatPal/Pods-SplatPal-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8DD8E33A7A1DD388D2CF303E /* Copy Pods Resources */ = {
+		32E29673669FC17671B2D7BB /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplatWatch Extension/Pods-SplatWatch Extension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8E57D07B282FC0E5480AC24A /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2815,29 +2854,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		DF3E91F8ADCBFC5CCA76D8C5 /* Check Pods Manifest.lock */ = {
+		45A929879CAD603E6BDDC5C5 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F40E3C39911A168DC9236B4F /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2845,19 +2869,139 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplatPal/Pods-SplatPal-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F91631E6638DAB94F6ABD909 /* Copy Pods Resources */ = {
+		541424FB0AE9A7604FA4A82C /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplatWatch/Pods-SplatWatch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58B583400CEF19117C4B7D31 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5E3AE31741D1E582A7CF6032 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		737CF5BC70CD37D9BFB8C59F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7F26A722AE447595956B5DBF /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9CE553F61B9663FC0F2395A5 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplatWatch Extension/Pods-SplatWatch Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B719FA12ED0E4484CF7944EC /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplatWidget/Pods-SplatWidget-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD0D5DEDE83F349F186C5DC2 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplatWidget/Pods-SplatWidget-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EECFBE8ACEF4614618A252A1 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SplatPalTests/Pods-SplatPalTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2991,12 +3135,12 @@
 /* Begin XCBuildConfiguration section */
 		0A3504021C286A30009C6A48 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9981F1D3F6C6C41A6CE0060D /* Pods-SplatWidget.debug.xcconfig */;
+			baseConfigurationReference = 4D8EE5060D8B6B870DFF327A /* Pods-SplatWidget.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SplatWidget/SplatWidget.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = "$(inherited)";
 				INFOPLIST_FILE = SplatWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -3009,12 +3153,12 @@
 		};
 		0A3504031C286A30009C6A48 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F17E541D5268368D962836C /* Pods-SplatWidget.release.xcconfig */;
+			baseConfigurationReference = 29048C250E1BC88316CE65B0 /* Pods-SplatWidget.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SplatWidget/SplatWidget.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = "$(inherited)";
 				INFOPLIST_FILE = SplatWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -3027,6 +3171,7 @@
 		};
 		0A41A9691C4AF61F00D80E15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01C07ED5EFB0DA68C94AB381 /* Pods-SplatWatch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-watchy";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -3047,6 +3192,7 @@
 		};
 		0A41A96A1C4AF61F00D80E15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A9C2805542E1DB68D9A52BA /* Pods-SplatWatch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-watchy";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -3067,7 +3213,7 @@
 		};
 		0A41A96B1C4AF61F00D80E15 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FBC42DFF3D15E3C277DEED6 /* Pods-SplatWatch Extension.debug.xcconfig */;
+			baseConfigurationReference = F2A1993632630914065F726D /* Pods-SplatWatch Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "SplatWatch Extension/SplatWatch Extension.entitlements";
@@ -3085,7 +3231,7 @@
 		};
 		0A41A96C1C4AF61F00D80E15 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 552E39D512A78F01AB6482EA /* Pods-SplatWatch Extension.release.xcconfig */;
+			baseConfigurationReference = 8492E8EC38C519F4A853F378 /* Pods-SplatWatch Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "SplatWatch Extension/SplatWatch Extension.entitlements";
@@ -3186,7 +3332,7 @@
 		};
 		0AC607B01C189B36006EECA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04573E61435B391F9524E97B /* Pods-SplatPal.debug.xcconfig */;
+			baseConfigurationReference = 0898D5121146CF1046C30F0E /* Pods-SplatPal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -3208,7 +3354,7 @@
 		};
 		0AC607B11C189B36006EECA7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3297FDF7A703D876943BE2E6 /* Pods-SplatPal.release.xcconfig */;
+			baseConfigurationReference = 54BF6FB7D92E1A430C1E84DC /* Pods-SplatPal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -3228,6 +3374,7 @@
 		};
 		0AC607B31C189B36006EECA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BE01127CB594224DC73BA74 /* Pods-SplatPalTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SplatPalTests/Info.plist;
@@ -3240,6 +3387,7 @@
 		};
 		0AC607B41C189B36006EECA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFCD64B1FE6DD6F5E390204D /* Pods-SplatPalTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SplatPalTests/Info.plist;
@@ -3252,6 +3400,7 @@
 		};
 		0AC607B61C189B36006EECA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5081EF0502B1CB98A6DDD7C /* Pods-SplatPalUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3266,6 +3415,7 @@
 		};
 		0AC607B71C189B36006EECA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D750132198AB90F45C08EB10 /* Pods-SplatPalUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

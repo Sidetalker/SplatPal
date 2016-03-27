@@ -20,6 +20,7 @@ pod 'Kanna', '~> 1.0.0'
 pod 'XCGLogger', '~> 3.0'
 pod 'Doorbell', '~> 0.0.6'
 pod 'Armchair', '~> 0.1.1'
+pod 'CoreValue', '~> 0.1.6'
 
 end
 

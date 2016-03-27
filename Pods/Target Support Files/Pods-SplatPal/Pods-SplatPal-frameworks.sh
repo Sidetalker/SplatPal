@@ -84,20 +84,22 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-SplatPal/Alamofire.framework"
-  install_framework "Pods-SplatPal/Armchair.framework"
-  install_framework "Pods-SplatPal/Doorbell.framework"
-  install_framework "Pods-SplatPal/Kanna.framework"
-  install_framework "Pods-SplatPal/MGSwipeTableCell.framework"
-  install_framework "Pods-SplatPal/SwiftyJSON.framework"
-  install_framework "Pods-SplatPal/XCGLogger.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/Alamofire-iOS/Alamofire.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/Armchair/Armchair.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/CoreValue/CoreValue.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/Doorbell/Doorbell.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/Kanna/Kanna.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/MGSwipeTableCell/MGSwipeTableCell.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/SwiftyJSON-iOS/SwiftyJSON.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/XCGLogger/XCGLogger.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-SplatPal/Alamofire.framework"
-  install_framework "Pods-SplatPal/Armchair.framework"
-  install_framework "Pods-SplatPal/Doorbell.framework"
-  install_framework "Pods-SplatPal/Kanna.framework"
-  install_framework "Pods-SplatPal/MGSwipeTableCell.framework"
-  install_framework "Pods-SplatPal/SwiftyJSON.framework"
-  install_framework "Pods-SplatPal/XCGLogger.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/Alamofire-iOS/Alamofire.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/Armchair/Armchair.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/CoreValue/CoreValue.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/Doorbell/Doorbell.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/Kanna/Kanna.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/MGSwipeTableCell/MGSwipeTableCell.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/SwiftyJSON-iOS/SwiftyJSON.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/XCGLogger/XCGLogger.framework"
 fi

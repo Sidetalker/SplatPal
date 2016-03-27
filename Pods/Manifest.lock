@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (3.3.0)
   - Armchair (0.1.1)
+  - CoreValue (0.1.6)
   - Crashlytics (3.7.0):
     - Fabric (~> 1.6.3)
   - Doorbell (0.0.6)
@@ -13,6 +14,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 3.0)
   - Armchair (~> 0.1.1)
+  - CoreValue (~> 0.1.6)
   - Crashlytics
   - Doorbell (~> 0.0.6)
   - Fabric
@@ -24,6 +26,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: 9054db4a1b1ca9e363223183e01cea380159a27c
   Armchair: 276f0dadba704b562870613301bdf7b595a29315
+  CoreValue: f765c6f40701033b5abe264558dd6998975e6830
   Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
   Doorbell: d995ae651475acb63e49544529a4bd4bc79646db
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
@@ -32,4 +35,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   XCGLogger: da1f341f4bb8979db6e1df64232f04d9698402d4
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: cce60db6d49bdb0b24bd04771dad81dcabe16157
+
+COCOAPODS: 1.0.0.beta.5

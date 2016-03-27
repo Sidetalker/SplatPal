@@ -4,100 +4,110 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire-iOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>Alamofire-watchOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>Armchair.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>CoreValue.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
 		</dict>
 		<key>Doorbell.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
+			<key>orderHint</key>
+			<integer>10</integer>
 		</dict>
 		<key>Kanna.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
+			<key>orderHint</key>
+			<integer>11</integer>
 		</dict>
 		<key>MGSwipeTableCell.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-SplatPal-Alamofire.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-SplatPal-SwiftyJSON.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
+			<key>orderHint</key>
+			<integer>12</integer>
 		</dict>
 		<key>Pods-SplatPal.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
+			<key>orderHint</key>
+			<integer>13</integer>
 		</dict>
-		<key>Pods-SplatWatch Extension-Alamofire.xcscheme</key>
+		<key>Pods-SplatPalTests.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
+			<key>orderHint</key>
+			<integer>14</integer>
 		</dict>
-		<key>Pods-SplatWatch Extension-SwiftyJSON.xcscheme</key>
+		<key>Pods-SplatPalUITests.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
+			<key>orderHint</key>
+			<integer>15</integer>
 		</dict>
 		<key>Pods-SplatWatch Extension.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
+			<key>orderHint</key>
+			<integer>17</integer>
 		</dict>
-		<key>Pods-SplatWidget-Alamofire.xcscheme</key>
+		<key>Pods-SplatWatch.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-SplatWidget-SwiftyJSON.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
+			<key>orderHint</key>
+			<integer>16</integer>
 		</dict>
 		<key>Pods-SplatWidget.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
+		<key>SwiftyJSON-iOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
+		<key>SwiftyJSON-watchOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>20</integer>
 		</dict>
 		<key>XCGLogger.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
+			<key>orderHint</key>
+			<integer>21</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0D2335A8D774DE3E6E31FA24BFA2711C</key>
+		<key>063E3C59C1B7382B70A98D5EF8052B8D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1F23D6CAC0CF85F02368298105A3D6FC</key>
+		<key>0808655D76A7C79C165D288509A49844</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2C519EA488ED20CAB5C1D8CED6EBDAFE</key>
+		<key>0EFA6D3610E60BCEEE841CCFD92F4D45</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2DEF0C7FF9D1C7024028F34A97B996A2</key>
+		<key>2968E8745D5D9C2C750E5E12436973C9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>36BDF063CCE078CF8F680542CC68061D</key>
+		<key>3B8BCC2488507644C67DE74C421F310F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -107,22 +117,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5157A3FC0A33F6619EC32F1F6A8A14A5</key>
+		<key>5116B36702BC5941894167DFD3A41E32</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5F237571F9A0AF2DBA3D83FD778D62CD</key>
+		<key>89C69EB624EC8137588D9568F2E11964</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>61A8438EBA00F5FD5CA95C772AF4A296</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AD6D8065CC3A78C76A1FB27B04D15B03</key>
+		<key>ABE573BEA3DB6D2F2E1025FB16DA3833</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -132,7 +137,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B728FEB019774F33F6642676BFBECA09</key>
+		<key>B956BB13A718A4CC239A978CEA170E1B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -142,7 +147,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>CFA6479675BEE58E0FF59C3E8BAC0298</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DCDC1318C62513101FC3FE6A5DFFE967</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>E962E449B565E508E27A71EBB14844F8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F8AB94BA643B563C7619D17701147FF2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
