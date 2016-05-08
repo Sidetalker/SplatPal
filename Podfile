@@ -1,4 +1,4 @@
-platform :ios, '8.0'
+platform :ios, '9.0'
 use_frameworks!
 
 def global_pods
@@ -19,6 +19,7 @@ pod 'SwiftGen'
 pod 'LTMorphingLabel'
 pod 'MGSwipeTableCell'
 pod 'ElasticTransition'
+pod 'TCDInputView', '~> 0.1.0'
 pod 'Kanna', '~> 1.0.0'
 pod 'XCGLogger', '~> 3.0'
 pod 'Doorbell', '~> 0.0.6'

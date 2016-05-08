@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import LTMorphingLabel
+import TCDInputView
 
 enum SplatKDRViewType {
     case Kills
@@ -22,29 +24,36 @@ enum SplatKDRViewType {
     }
 }
 
-class SplatKDRViewController: SplatViewController, UITextFieldDelegate {
-    @IBOutlet weak var lblTitle: UILabel! {
+class SplatKDRViewController: SplatViewController, UITextFieldDelegate, LTMorphingLabelDelegate {
+    @IBOutlet weak var lblTitle: LTMorphingLabel! {
         didSet {
+            lblTitle.morphingEnabled = false
             lblTitle.text = type.title()
+            lblTitle.delegate = self
         }
     }
-    @IBOutlet weak var txtEntry: UITextField! {
-        didSet {
-            txtEntry.text = nil
-            txtEntry.delegate = self
-        }
-    }
+    
+    @IBOutlet weak var txtInput: TextField!
     
     var type: SplatKDRViewType!
     var match: Match!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        txtInput.becomeFirstResponder()
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        dismissViewControllerAnimated(true, completion: nil)
+        if type == .Kills {
+            type = .Deaths
+//            txtEntry.text = nil
+            lblTitle.morphingEnabled = true
+            lblTitle.text = type.title()
+        } else if type == .Deaths {
+            
+        }
+        
         return false
     }
 }

@@ -94,6 +94,11 @@
 			<key>orderHint</key>
 			<integer>20</integer>
 		</dict>
+		<key>TCDInputView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>25</integer>
+		</dict>
 		<key>XCGLogger.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -142,12 +147,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>32F681F3BFA38FC46B3BDF8BAAFC13FA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>3B8BCC2488507644C67DE74C421F310F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>3BC65627E17334315AA2C7D9661C7DF0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>45A6D66DB1476CC0689DFF81CE34E9EC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -177,6 +192,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>958A7FC9B6E22AE6EFDE98E4FFF498A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A21D2716232933D84E5E029BE159DD3D</key>
 		<dict>
 			<key>primary</key>
@@ -198,6 +218,11 @@
 			<true/>
 		</dict>
 		<key>BE5F600B878AD3C9AE26B6008A933820</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C50593215358BEB1620088E1FAF5AD32</key>
 		<dict>
 			<key>primary</key>
 			<true/>

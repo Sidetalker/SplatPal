@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '958A7FC9B6E22AE6EFDE98E4FFF498A2'
-               BlueprintName = 'XCGLogger'
+               BlueprintIdentifier = '45A6D66DB1476CC0689DFF81CE34E9EC'
+               BlueprintName = 'TCDInputView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'XCGLogger.framework'>
+               BuildableName = 'TCDInputView.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
