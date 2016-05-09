@@ -266,7 +266,7 @@
          }
       }
    ],
-   "gear":[  
+      "gear":[  
       {  
          "category":"Headgear",
          "ability":"Last-Ditch Effort",
@@ -274,6 +274,12 @@
          "rarity":"3",
          "cost":"12,000",
          "name":"18K Aviators"
+       "name_fr-fr":"Lunettes de soleil 18 carats",
+       "name_fr-ca":"Lunettes de soleil 18 ct",
+       "name_es-es":"Gafas aviador oro",
+       "name_es-xl":"Gafas aviador retro",
+       "name_de":"Sonnenbrille 18K",
+       "name_it":"Occhiali da sole 18K"
       },
       {  
          "category":"Shoes",
@@ -283,6 +289,11 @@
          "cost":"600",
          "name":"Acerola Rain Boots",
          "name_eu":"Acerola Wellies"
+       "name_fr-fr":"Bottes de pluie cerise",
+       "name_es-es":"Bota de agua roja",
+       "name_es-xl":"Botas de lluvia rojas",
+       "name_de":"Kirschrote Gummistiefel",
+       "name_it":"Stivali di gomma rossi"
       },
       {  
          "category":"Clothing",
@@ -291,6 +302,11 @@
          "rarity":"1",
          "cost":"700",
          "name":"Aloha Shirt"
+       "name_fr-fr":"Chemisette tropiques"
+       "name_fr-ca":"Chemise hawaïenne ",
+       "name_es-es":"Camisa tropical",
+       "name_de":"Hawaïhemd",
+       "name_it":"Camicia floreale"
       },
       {  
          "category":"Clothing",
@@ -298,7 +314,12 @@
          "brand":"SquidForce",
          "rarity":"2",
          "cost":"3,000",
-         "name":"Anchor Sweat"
+         "name":"Anchor Sweat",
+       "name_fr-fr":"Sweat ancre",
+       "name_fr-ca":"Coton ouaté ancre",
+       "name_es-es":"Sudadera ancla",
+       "name_de":"Anker-Sweatshirt",
+       "name_it":"Maglione ancora"      
       },
       {  
          "category":"Shoes",
@@ -307,7 +328,13 @@
          "rarity":"3",
          "cost":"N/A",
          "name":"Armor Boot Replicas",
-         "name_eu":"Armour Boot Replicas"
+         "name_eu":"Armour Boot Replicas",
+       "name_fr-fr":"Bottes encrifugées (répliques)",
+       "name_fr-ca":"Bottes encrifugées (rép.)",
+       "name_es-es":"Bota reforzada (réplica)",
+       "name_es-xl":"Botas armadura réplica",
+       "name_de":"Rüstungsstiefel Replik",
+       "name_it":"Stivali d'armatura replica"       
       },
       {  
          "category":"Headgear",
@@ -316,7 +343,13 @@
          "rarity":"3",
          "cost":"N/A",
          "name":"Armor Helmet Replica",
-         "name_eu":"Armour Helmet Replica"
+         "name_eu":"Armour Helmet Replica",
+       "name_fr-fr":"Casque encrifugé (réplique)",
+       "name_fr-ca":"Casque encrifugé (rép.)",
+       "name_es-es":"Casco reforzado (réplica)",
+       "name_es-xl":"Casco armadura réplica",
+       "name_de":"Rüstungshelm Replik",
+       "name_it":"Casco d'armatura replica"      
       },
       {  
          "category":"Clothing",
@@ -325,7 +358,13 @@
          "rarity":"3",
          "cost":"N/A",
          "name":"Armor Jacket Replica",
-         "name_eu":"Armour Jacket Replica"
+         "name_eu":"Armour Jacket Replica",
+       "name_fr-fr":"Anorak encrifugé (réplique)",
+       "name_fr-ca":"Anorak encrifugé (rép.)",
+       "name_es-es":"Chaqueta reforzada (réplica)",
+       "name_es-xl":"Chaqueta armadura réplica",
+       "name_de":"Rüstungsjacke Replik",
+       "name_it":"Giacca d'armatura replica"     
       },
       {  
          "category":"Headgear",
@@ -333,7 +372,13 @@
          "brand":"Zink",
          "rarity":"1",
          "cost":"300",
-         "name":"B-ball Headband"
+         "name":"B-ball Headband",
+       "name_fr-fr":"Bandeau de basket",
+       "name_fr-ca":"Bandeau de baseball",
+       "name_es-es":"Cinta baloncesto",
+       "name_es-xl":"Cinta de baloncesto",
+       "name_de":"Basketballstirnband",
+       "name_it":"Fascia da basket"     
       },
       {  
          "category":"Clothing",
@@ -342,7 +387,11 @@
          "rarity":"1",
          "cost":"800",
          "name":"B-ball Jersey (Away)",
-         "name_eu":"B-ball Vest (Away)"
+         "name_eu":"B-ball Vest (Away)",
+       "name_fr-fr":"Maillot de basket (extérieur)",
+       "name_es-es":"Baloncesto visitante",
+       "name_de":"Basketball-Auswärtstrikot",
+       "name_it":"Canotta (trasferta)"     
       },
       {  
          "category":"Clothing",
@@ -351,7 +400,11 @@
          "rarity":"2",
          "cost":"2300",
          "name":"B-ball Jersey (Home)",
-         "name_eu":"B-ball Vest (Home)"
+         "name_eu":"B-ball Vest (Home)",
+       "name_fr-fr":"Maillot de basket (domicile)",
+       "name_es-es":"Baloncesto local",
+       "name_de":"Basketball-Heimtrikot",
+       "name_it":"Canotta (casa)"       
       },
       {  
          "category":"Clothing",
@@ -360,7 +413,12 @@
          "rarity":"2",
          "cost":"2,200",
          "name":"Baby-Jelly Shirt",
-         "name_eu":"Baby Jelly Shirt"
+         "name_eu":"Baby Jelly Shirt",
+       "name_fr-fr":"Chemise méduses",
+       "name_es-es":"Camisa medusas",
+       "name_es-xl":"Camisa aguamalas",
+       "name_de":"Quallen-Hemd",
+       "name_it":"Camicia meduse"       
       },
       {  
          "category":"Headgear",
@@ -368,7 +426,12 @@
          "brand":"Zekko",
          "rarity":"1",
          "cost":"700",
-         "name":"Backwards Cap"
+         "name":"Backwards Cap",
+       "name_fr-fr":"Casquette à l'envers",
+       "name_es-es":"Gorra vuelta",
+       "name_es-xl":"Gorra invertida",
+       "name_de":"Umgedrehte Kappe",
+       "name_it":"Berretto girato"      
       },
       {  
          "category":"Headgear",
@@ -376,7 +439,11 @@
          "brand":"Inkline",
          "rarity":"2",
          "cost":"2,200",
-         "name":"Bamboo Hat"
+         "name":"Bamboo Hat",
+       "name_fr-fr":"Chapeau zen",
+       "name_es-es":"Sombrero cónico",
+       "name_de":"Bambushut",
+       "name_it":"Cappello orientale"      
       },
       {  
          "category":"Shoes",
@@ -384,7 +451,13 @@
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"600",
-         "name":"Banana Basics"
+         "name":"Banana Basics",
+       "name_fr-fr":"Tennis banane",
+       "name_fr-ca":"Espadrilles banane",
+       "name_es-es":"Bamba plátano",
+       "name_es-xl":"Tenis plátano",
+       "name_de":"Bananen-Leinenschuhe",
+       "name_it":"Classiche banana"     
       },
       {  
          "category":"Clothing",
@@ -392,7 +465,12 @@
          "brand":"Firefin",
          "rarity":"3",
          "cost":"10,000",
-         "name":"Baseball Jersey"
+         "name":"Baseball Jersey",
+       "name_fr-fr":"Maillot baseball long",
+       "name_fr-ca":"Gilet de baseball",
+       "name_es-es":"Uniforme béisbol",
+       "name_de":"Baseball-Lagen-Hoodie",
+       "name_it":"Maglia da baseball"
       },
       {  
          "category":"Clothing",
@@ -400,7 +478,12 @@
          "brand":"SquidForce",
          "rarity":"1",
          "cost":"N/A",
-         "name":"Basic Tee"
+         "name":"Basic Tee",
+       "name_fr-fr":"T-shirt basique",
+       "name_fr-ca":"T-shirt de base",
+       "name_es-es":"Camiseta básica",
+       "name_de":"Alltagsshirt",
+       "name_it":"T-shirt recluta"
       },
       {  
          "category":"Clothing",
@@ -408,7 +491,12 @@
          "brand":"Inkline",
          "rarity":"2",
          "cost":"3,000",
-         "name":"Berry Ski Jacket"
+         "name":"Berry Ski Jacket",
+       "name_fr-fr":"Anorak framboise",
+       "name_es-es":"Chubasquero frambuesa",
+       "name_es-xl":"Rompevientos fresa",
+       "name_de":"Lila Anorak",
+       "name_it":"Giacca da sci viola"
       },
       {  
          "category":"Headgear",
@@ -417,7 +505,13 @@
          "rarity":"3",
          "cost":"11,000",
          "name":"Bike Helmet",
-         "name_eu":"Cycle Helmet"
+         "name_eu":"Cycle Helmet",
+       "name_fr-fr":"Casque de cycliste",
+       "name_fr-ca":"Casque de vélo",
+       "name_es-es":"Casco ciclista",
+       "name_es-xl":"Casco de ciclista",
+       "name_de":"Fahrradhelm",
+       "name_it":"Casco da bici"
       },
       {  
          "category":"Clothing",
@@ -425,7 +519,12 @@
          "brand":"Firefin",
          "rarity":"1",
          "cost":"600",
-         "name":"Black 8-Bit FishFry"
+         "name":"Black 8-Bit FishFry",
+       "name_fr-fr":"T-shirt 8 bits noir",
+       "name_es-es":"Retrocamiseta negra",
+       "name_es-xl":"Camiseta retro negra",
+       "name_de":"Schwarzes Rilax-Pixel-Shirt",
+       "name_it":"T-shirt 8 bit nera"
       },
       {  
          "category":"Clothing",
@@ -433,7 +532,11 @@
          "brand":"SquidForce",
          "rarity":"2",
          "cost":"2,800",
-         "name":"Black Anchor Tee"
+         "name":"Black Anchor Tee",
+       "name_fr-fr":"T-shirt ancre noir",
+       "name_es-es":"Ancla negra",
+       "name_de":"Schwarzes Anker-Shirt",
+       "name_it":"T-shirt ancora nera"
       },
       {  
          "category":"Headgear",
@@ -441,7 +544,12 @@
          "brand":"Zekko",
          "rarity":"2",
          "cost":"2,800",
-         "name":"Black Arrowbands"
+         "name":"Black Arrowbands",
+       "name_fr-fr":"Lunettes noires à élastique",
+       "name_es-es":"Gafas deportivas negras",
+       "name_es-xl":"Gafas ajustables negras",
+       "name_de":"Schwarze Sportbandbrille",
+       "name_it":"Occhiali spessi"
       },
       {  
          "category":"Clothing",
@@ -449,7 +557,13 @@
          "brand":"Rockenberg",
          "rarity":"1",
          "cost":"800",
-         "name":"Black Baseball LS"
+         "name":"Black Baseball LS",
+       "name_fr-fr":"Haut sportif noir",
+       "name_fr-ca":"Gilet sportif noir",
+       "name_es-es":"Béisbol negra",
+       "name_es-xl":"Béisbol negra manga larga",
+       "name_de":"Schwarzes Baseball-Shirt",
+       "name_it":"Maglia sport nera"
       },
       {  
          "category":"Clothing",
@@ -457,7 +571,13 @@
          "brand":"Rockenberg",
          "rarity":"3",
          "cost":"10,100",
-         "name":"Black Inky Rider"
+         "name":"Black Inky Rider",
+       "name_fr-fr":"Blouson en cuir noir",
+       "name_fr-ca":"Manteau cuir noir",
+       "name_es-es":"Chupa motera negra",
+       "name_es-xl":"Chaqueta roquera negra",
+       "name_de":"Schwarze Bikerjacke",
+       "name_it":"Chiodo nero"
       },
       {  
          "category":"Clothing",
@@ -465,7 +585,13 @@
          "brand":"Zekko",
          "rarity":"2",
          "cost":"3,000",
-         "name":"Black LS"
+         "name":"Black LS",
+       "name_fr-fr":"Haut noir",
+       "name_fr-ca":"Gilet noir",
+       "name_es-es":"Negra larga",
+       "name_es-xl":"Negra a rayas manga larga",
+       "name_de":"Schwarzes Longsleeve",
+       "name_it":"Maglia nera"
       },
       {  
          "category":"Clothing",
@@ -473,7 +599,13 @@
          "brand":"SquidForce",
          "rarity":"1",
          "cost":"500",
-         "name":"Black Layered LS"
+         "name":"Black Layered LS",
+       "name_fr-fr":"Haut double noir",
+       "name_fr-ca":"Gilet double noir et blanc",
+       "name_es-es":"Negra doble",
+       "name_es-xl":"Camiseta de capas negra",
+       "name_de":"Schwarzes Lagen-Shirt",
+       "name_it":"A strati nera"
       },
       {  
          "category":"Clothing",
@@ -481,7 +613,12 @@
          "brand":"KOG",
          "rarity":"1",
          "cost":"800",
-         "name":"Black Pipe Tee"
+         "name":"Black Pipe Tee",
+       "name_fr-fr":"T-shirt tuyau noir",
+       "name_es-es":"Negra tuberías",
+       "name_es-xl":"Camiseta tubos negros",
+       "name_de":"Schwarzes Röhren-Shirt",
+       "name_it":"T-shirt nera tubo"
       },
       {  
          "category":"Clothing",
@@ -489,7 +626,12 @@
          "brand":"Zekko",
          "rarity":"1",
          "cost":"500",
-         "name":"Black Polo"
+         "name":"Black Polo",
+       "name_fr-fr":"Polo noir Ezko",
+       "name_fr-ca":"Polo noir",
+       "name_es-es":"Polo negro",
+       "name_de":"Schwarzes Polohemd",
+       "name_it":"Polo nera"
       },
       {  
          "category":"Shoes",
@@ -497,7 +639,12 @@
          "brand":"Zink",
          "rarity":"2",
          "cost":"2,000",
-         "name":"Black Seahorses"
+         "name":"Black Seahorses",
+       "name_fr-fr":"Hippo noires",
+       "name_es-es":"Hipocampo negra",
+       "name_es-xl":"Hipocampo negros",
+       "name_de":"Schwarze Low-Top-Sneaker",
+       "name_it":"Runner bianconere"
       },
       {  
          "category":"Clothing",
@@ -505,7 +652,11 @@
          "brand":"Tentatek",
          "rarity":"1",
          "cost":"500",
-         "name":"Black Squideye"
+         "name":"Black Squideye",
+       "name_fr-fr":"T-shirt OculR noir",
+       "name_es-es":"   Ojos calamar negra",
+       "name_de":"Schwarzes Krakenaugen-Shirt",
+       "name_it":"T-shirt neroseppia"
       },
       {  
          "category":"Clothing",
@@ -513,7 +664,11 @@
          "brand":"SquidForce",
          "rarity":"1",
          "cost":"400",
-         "name":"Black Tee"
+         "name":"Black Tee",
+       "name_fr-fr":"T-shirt noir",
+       "name_es-es":"Camiseta negra",
+       "name_de":"Schwarzes Shirt",
+       "name_it":"T-shirt nera"
       },
       {  
          "category":"Shoes",
@@ -521,7 +676,13 @@
          "brand":"Tentatek",
          "rarity":"1",
          "cost":"500",
-         "name":"Black Trainers"
+         "name":"Black Trainers",
+       "name_fr-fr":"   Baskets noires",
+       "name_fr-ca":"Espadrilles noires",
+       "name_es-es":"Deportiva negra",
+       "name_es-xl":"Deportivos negros",
+       "name_de":"Schwarze Turnschuhe",
+       "name_it":"Runner nere"
       },
       {  
          "category":"Headgear",
@@ -530,7 +691,13 @@
          "rarity":"1",
          "cost":"700",
          "name":"Blowfish Bell Hat",
-         "name_eu":"Fugu Bell Hat"
+         "name_eu":"Fugu Bell Hat",
+       "name_fr-fr":"Cloche Friture",
+       "name_fr-ca":"Cloche Arki",
+       "name_es-es":"Sombrero de campana",
+       "name_es-xl":"Sombrero cloché",
+       "name_de":"Kugelfisch-Glockenhut",
+       "name_it":"Cappello pesce palla"
       },
       {  
          "category":"Shoes",
@@ -538,7 +705,13 @@
          "brand":"Zekko",
          "rarity":"1",
          "cost":"800",
-         "name":"Blue Lo-Tops"
+         "name":"Blue Lo-Tops",
+       "name_fr-fr":"Tennis bleues",
+       "name_fr-ca":"Espadrilles bleues   ",
+       "name_es-es":"Tenis azul",
+       "name_es-xl":"Tenis azules",
+       "name_de":"Blaue Low-Tops",
+       "name_it":"Basse blu"
       },
       {  
          "category":"Shoes",
@@ -547,7 +720,12 @@
          "rarity":"3",
          "cost":"12,000",
          "name":"Blue Moto Boots",
-         "name_eu":"Blue Biker Boots"
+         "name_eu":"Blue Biker Boots",
+       "name_fr-fr":"Bottes de moto bleues",
+       "name_es-es":"Bota motorista azul",
+       "name_es-xl":"Botas de motociclista azules",
+       "name_de":"Stivali da moto blu",
+       "name_it":"Blaue Biker-Stiefel"
       },
       {  
          "category":"Clothing",
@@ -555,7 +733,12 @@
          "brand":"Inkline",
          "rarity":"1",
          "cost":"400",
-         "name":"Blue Peaks Tee"
+         "name":"Blue Peaks Tee",
+       "name_fr-fr":"T-shirt Abysma bleu",
+       "name_fr-ca":"T-shirt bleu",
+       "name_es-es":"Cumbres azul",
+       "name_de":"Eisgipfel-Shirt",
+       "name_it":"T-shirt cime blu"
       },
       {  
          "category":"Clothing",
@@ -563,7 +746,12 @@
          "brand":"Forge",
          "rarity":"3",
          "cost":"11000",
-         "name":"Blue Sailor Suit"
+         "name":"Blue Sailor Suit",
+       "name_fr-fr":"   Uniforme marin bleu",
+       "name_es-es":"Uniforme marinero azul",
+       "name_es-xl":"Uniforme naval azul",
+       "name_de":"Blaues Matrosen-Shirt",
+       "name_it":"Felpa marinara blu"
       },
       {  
          "category":"Shoes",
@@ -571,7 +759,12 @@
          "brand":"Tentatek",
          "rarity":"1",
          "cost":"800",
-         "name":"Blue Sea Slugs"
+         "name":"Blue Sea Slugs",
+       "name_fr-fr":"Anguilles bleues",
+       "name_es-es":"Zapatilla azul",
+       "name_es-xl":"Anguilas azules",
+       "name_de":"Blaue Laufschuhe",
+       "name_it":"Swimmer blue"
       },
       {  
          "category":"Shoes",
@@ -580,7 +773,12 @@
          "rarity":"1",
          "cost":"300",
          "name":"Blue Slip-Ons",
-         "name_eu":"Blue Plimsolls"
+         "name_eu":"Blue Plimsolls",
+       "name_fr-fr":"Mocassins bleus",
+       "name_es-es":"Playera azul",
+       "name_es-xl":"Mocasines azules",
+       "name_de":"Blaue Slip-ons",
+       "name_it":"Espadrillas blu"
       },
       {  
          "category":"Shoes",
@@ -588,7 +786,13 @@
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"700",
-         "name":"Blueberry Casuals"
+         "name":"Blueberry Casuals",
+       "name_fr-fr":"Chaussures myrtille",
+       "name_fr-ca":"Chaussures bleuets",
+       "name_es-es":"Zapato azul",
+       "name_es-xl":"Zapatos azules",
+       "name_de":"Blaue Halbschuhe",
+       "name_it":"Comfort blu"
       },
       {  
          "category":"Headgear",
@@ -596,7 +800,12 @@
          "brand":"Splash Mob",
          "rarity":"2",
          "cost":"2,000",
-         "name":"Bobble Hat"
+         "name":"Bobble Hat",
+       "name_fr-fr":"Bonnet à pompon",
+       "name_fr-ca":"Tuque à pompon",
+       "name_es-es":"Gorro con borla",
+       "name_de":"Pudelmütze",
+       "name_it":"Pon pon di lana"
       },
       {  
          "category":"Shoes",
@@ -604,7 +813,13 @@
          "brand":"Inkline",
          "rarity":"1",
          "cost":"450",
-         "name":"Bubble Rain Boots"
+         "name":"Bubble Rain Boots",
+       "name_fr-fr":"Bottines de pluie bulles",
+       "name_fr-ca":"Bottes de pluie bulles",
+       "name_es-es":"Bota de lluvia",
+       "name_es-xl":"Botas de lluvia burbujas",
+       "name_de":"Gummistiefeletten",
+       "name_it":"Stivaletti da pioggia"
       },
       {  
          "category":"Clothing",
@@ -613,7 +828,13 @@
          "rarity":"1",
          "cost":"600",
          "name":"Camo Layered LS",
-         "name_eu":"Layered Camo LS"
+         "name_eu":"Layered Camo LS",
+       "name_fr-fr":"Haut double à motif",
+       "name_fr-ca":"Gilet double à motif",
+       "name_es-es":"Camuflaje doble",
+       "name_es-xl":"Camiseta de capas camuflaje",
+       "name_de":"Tarn-Lagen-Shirt",
+       "name_it":"A strati mimetica"
       },
       {  
          "category":"Headgear",
@@ -622,7 +843,12 @@
          "rarity":"2",
          "cost":"2,500",
          "name":"Camo Mesh",
-         "name_eu":"Camo Mesh Cap"
+         "name_eu":"Camo Mesh Cap",
+       "name_fr-fr":"Casquette filet camouflage",
+       "name_es-es":"Gorra camuflaje",
+       "name_es-xl":"Gorra camuflada",
+       "name_de":"Tarn-Netzkappe",
+       "name_it":"Berretto Mimetico"
       },
       {  
          "category":"Clothing",
@@ -630,7 +856,12 @@
          "brand":"Firefin",
          "rarity":"3",
          "cost":"9,000",
-         "name":"Camo Zip Hoodie"
+         "name":"Camo Zip Hoodie",
+       "name_fr-fr":"Sweat zippé camouflage",
+       "name_fr-ca":"Coton ouaté zippé camouflage",
+       "name_es-es":"Sudadera camuflaje",
+       "name_de":"Tarn-Hoodie",
+       "name_it":"Felpa zip mimetica"
       },
       {  
          "category":"Headgear",
@@ -638,7 +869,11 @@
          "brand":"Inkline",
          "rarity":"1",
          "cost":"800",
-         "name":"Camping Hat"
+         "name":"Camping Hat",
+       "name_fr-fr":"Chapeau de camping",
+       "name_es-es":"Sombrero acampada",
+       "name_de":"Anglerhut",
+       "name_it":"Cappello relax"
       },
       {  
          "category":"Clothing",
@@ -646,7 +881,11 @@
          "brand":"Firefin",
          "rarity":"1",
          "cost":"500",
-         "name":"Carnivore Tee"
+         "name":"Carnivore Tee",
+       "name_fr-fr":"T-shirt prédateur",
+       "name_es-es":"Camiseta leopardo",
+       "name_de":"Leo-Print-Shirt",
+       "name_it":"T-shirt leopardata"
       },
       {  
          "category":"Shoes",
@@ -654,7 +893,11 @@
          "brand":"Rockenberg",
          "rarity":"2",
          "cost":"2,800",
-         "name":"Cherry Kicks"
+         "name":"Cherry Kicks",
+       "name_fr-fr":"Compensées roses",
+       "name_es-es":"Suela extra rosa",
+       "name_de":"Kirsch-Plateau-Sneaker",
+       "name_it":"Rialzate rosa"
       },
       {  
          "category":"Shoes",
@@ -662,7 +905,12 @@
          "brand":"Krak-On",
          "rarity":"2",
          "cost":"1800",
-         "name":"Choco Clogs"
+         "name":"Choco Clogs",
+       "name_fr-fr":"Sabots chocolat",
+       "name_es-es":"Zueco chocolate",
+       "name_es-xl":"Zuecos chocolate",
+       "name_de":"Schokobraune Clogs",
+       "name_it":"Zoccoli marroni"
       },
       {  
          "category":"Clothing",
@@ -670,7 +918,13 @@
          "brand":"Takoroka",
          "rarity":"2",
          "cost":"1,800",
-         "name":"Choco Layered LS"
+         "name":"Choco Layered LS",
+       "name_fr-fr":"Haut double Cubic",
+       "name_fr-ca":"Gilet double Pionic",
+       "name_es-es":"Chocolate doble",
+       "name_es-xl":"Camiseta de capas chocolate",
+       "name_de":"Schoko-Lagen-Shirt",
+       "name_it":"A strati marrone"
       },
       {  
          "category":"Headgear",
@@ -678,7 +932,12 @@
          "brand":"Skalop",
          "rarity":"2",
          "cost":"1500",
-         "name":"Classic Straw Boater"
+         "name":"Classic Straw Boater",
+       "name_fr-fr":"Canotier sombre",
+       "name_es-es":"Sombrero de paja clásico   ",
+       "name_es-xl":"Canotier de noche",
+       "name_de":"Klassischer Boater",
+       "name_it":"Cappello di paglia classico"
       },
       {  
          "category":"Shoes",
@@ -686,7 +945,13 @@
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"500",
-         "name":"Clownfish Basics"
+         "name":"Clownfish Basics",
+       "name_fr-fr":"Tennis poisson-clown",
+       "name_fr-ca":"Espadrilles poisson-clown",
+       "name_es-es":"Bamba pez payaso",
+       "name_es-xl":"Tenis pez payaso",
+       "name_de":"Clownfisch-Leinenschuhe",
+       "name_it":"Clownfish classiche"
       },
       {  
          "category":"Shoes",
@@ -694,7 +959,12 @@
          "brand":"Takoroka",
          "rarity":"3",
          "cost":"9,000",
-         "name":"Crazy Arrows"
+         "name":"Crazy Arrows",
+       "name_fr-fr":"Flèches délirium",
+       "name_fr-ca":"Flèches en folie",
+       "name_es-es":"Velcro multicolor",
+       "name_de":"Bunte Pfeilschuhe",
+       "name_it":"Arrow arcobaleno"
       },
       {  
          "category":"Shoes",
@@ -702,7 +972,13 @@
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"0",
-         "name":"Cream Basics"
+         "name":"Cream Basics",
+       "name_fr-fr":"Tennis crème",
+       "name_fr-ca":"Espadrilles crème",
+       "name_es-es":"Bamba crema",
+       "name_es-xl":"Tenis crema",
+       "name_de":"Weiße Leinenschuhe",
+       "name_it":"Classiche crema"
       },
       {  
          "category":"Shoes",
@@ -710,7 +986,13 @@
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"500",
-         "name":"Cream Hi-Tops"
+         "name":"Cream Hi-Tops",
+       "name_fr-fr":"Tennis montantes crème",
+       "name_fr-ca":"Espadrilles hautes crème",
+       "name_es-es":"Bamba alta crema",
+       "name_es-xl":"Tenis bota crema",
+       "name_de":"Leinen-High-Tops",
+       "name_it":"Sneaker crema"
       },
       {  
          "category":"Shoes",
@@ -718,7 +1000,13 @@
          "brand":"Inkline",
          "rarity":"2",
          "cost":"3,000",
-         "name":"Custom Trail Boots"
+         "name":"Custom Trail Boots",
+       "name_fr-fr":"Chaussures rando exclusives",
+       "name_fr-ca":"Bottes rando bleues",
+       "name_es-es":"Bota montaña especial",
+       "name_es-xl":"Botas de montaña especiales",
+       "name_de":"Spezial-Wanderstiefel",
+       "name_it":"Trekking colorate"
       },
       {  
          "category":"Shoes",
@@ -726,7 +1014,13 @@
          "brand":"Tentatek",
          "rarity":"1",
          "cost":"700",
-         "name":"Cyan Trainers"
+         "name":"Cyan Trainers",
+       "name_fr-fr":"Baskets turquoise",
+       "name_fr-ca":"Espadrilles turquoise",
+       "name_es-es":"Deportiva celeste",
+       "name_es-xl":"Deportivos cian",
+       "name_de":"Türkise Turnschuhe",
+       "name_it":"Runner verdeacqua"
       },
       {  
          "category":"Headgear",
@@ -734,7 +1028,11 @@
          "brand":"Tentatek",
          "rarity":"2",
          "cost":"2,400",
-         "name":"Cycle King Cap"
+         "name":"Cycle King Cap",
+       "name_fr-fr":"Casquette de cycliste pro",
+       "name_es-es":"Gorra rey de la montaña",
+       "name_de":"Champion Radlermütze",
+       "name_it":"Cappello re della bici"
       },
       {  
          "category":"Clothing",
@@ -742,7 +1040,12 @@
          "brand":"Tentatek",
          "rarity":"2",
          "cost":"2,400",
-         "name":"Cycle King Jersey"
+         "name":"Cycle King Jersey",
+       "name_fr-fr":"Maillot de cycliste pro",
+       "name_es-es":"Maillot rey de la montaña",
+       "name_es-xl":"Jersey rey de la montaña",
+       "name_de":"Champion-Radlertrikot",
+       "name_it":"Maglia re della bici"
       },
       {  
          "category":"Headgear",
@@ -750,7 +1053,11 @@
          "brand":"Zink",
          "rarity":"1",
          "cost":"800",
-         "name":"Cycling Cap"
+         "name":"Cycling Cap",
+       "name_fr-fr":"Casquette de cycliste",
+       "name_es-es":"Gorra ciclista",
+       "name_de":"Radlermütze",
+       "name_it":"Berretto da ciclista"
       },
       {  
          "category":"Clothing",
@@ -758,7 +1065,12 @@
          "brand":"Zink",
          "rarity":"2",
          "cost":"2,900",
-         "name":"Cycling Shirt"
+         "name":"Cycling Shirt",
+       "name_fr-fr":"Maillot de cycliste",
+       "name_es-es":"Maillot ciclista",
+       "name_es-xl":"Jersey ciclista",
+       "name_de":"Radlertrikot",
+       "name_it":"Maglia da ciclista"
       },
       {  
          "category":"Clothing",
@@ -767,7 +1079,13 @@
          "rarity":"3",
          "cost":"10,000",
          "name":"Dark Urban Vest",
-         "name_eu":"Dark Urban Gilet"
+         "name_eu":"Dark Urban Gilet",
+       "name_fr-fr":"Gilet urbain noir",
+       "name_fr-ca":"Veste urbaine foncée",
+       "name_es-es":"Anorak urbano noche",
+       "name_es-xl":"Chaleco oscuro",
+       "name_de":"Nachtblaue Steppweste",
+       "name_it":"Gilè urbano"
       },
       {  
          "category":"Headgear",
@@ -776,7 +1094,13 @@
          "rarity":"2",
          "cost":"2,500",
          "name":"Designer Headphones",
-         "name_eu":"Colourful Headphones"
+         "name_eu":"Colourful Headphones",
+       "name_fr-fr":"Casque coloré",
+       "name_fr-ca":"Casque multicolore",
+       "name_es-es":"Auriculares multicolor",
+       "name_es-xl":"Auriculares de diseñador",
+       "name_de":"Pastell-Kopfhörer",
+       "name_it":"Cuffie colorate"
       },
       {  
          "category":"Clothing",
@@ -784,7 +1108,12 @@
          "brand":"Takoroka",
          "rarity":"1",
          "cost":"800",
-         "name":"FC Albacore"
+         "name":"FC Albacore",
+       "name_fr-fr":"Maillot FC Germon",
+       "name_es-es":"Camiseta Rayo Rodaballo",
+       "name_es-xl":"Atlético Arrecife",
+       "name_de":"FC-Bonito-Triko",
+       "name_it":"SSC Trigliese"
       },
       {  
          "category":"Headgear",
@@ -792,7 +1121,13 @@
          "brand":"Tentatek",
          "rarity":"2",
          "cost":"2,000",
-         "name":"Fake Contacts"
+         "name":"Fake Contacts",
+       "name_fr-fr":"Lentilles sans correction",
+       "name_fr-ca":"Faux verres correcteurs",
+       "name_es-es":"Lentillas sin graduación",
+       "name_es-xl":"Lentes de contacto sin graduación",
+       "name_de":"Getönte Kontaktlinsen",
+       "name_it":"Lenti a contatto finte"
       },
       {  
          "category":"Clothing",
@@ -801,7 +1136,13 @@
          "rarity":"2",
          "cost":"2,500",
          "name":"Firefin Navy Sweat",
-         "name_eu":"Firefin Sweat Navy"
+         "name_eu":"Firefin Sweat Navy",
+       "name_fr-fr":"Sweat Friture marin",
+       "name_fr-ca":"Coton ouaté Arki marin",
+       "name_es-es":"Sudadera Chokkor",
+       "name_es-xl":"Sudadera Shachi",
+       "name_de":"Blaues Rilax-Sweatshirt",
+       "name_it":"Felpa Torryd"
       },
       {  
          "category":"Headgear",
@@ -809,7 +1150,13 @@
          "brand":"Firefin",
          "rarity":"1",
          "cost":"500",
-         "name":"FishFry Visor"
+         "name":"FishFry Visor",
+       "name_fr-fr":"Visière Friture",
+       "name_fr-ca":"Visière Arki",
+       "name_es-es":"Visera de marca",
+       "name_es-xl":"Visera Sofrito",
+       "name_de":"Rilax-Schirmband",
+       "name_it":"Visiera cool"
       },
       {  
          "category":"Headgear",
@@ -818,7 +1165,12 @@
          "rarity":"2",
          "cost":"2,000",
          "name":"Five-Panel Cap",
-         "name_eu":"5-Panel Cap"
+         "name_eu":"5-Panel Cap",
+       "name_fr-fr":"Casquette multi-face",
+       "name_es-es":"Gorra parches",
+       "name_es-xl":"Gorra de parches",
+       "name_de":"5-Panel-Kappe",
+       "name_it":"Berretto multifase"
       },
       {  
          "category":"Clothing",
@@ -827,7 +1179,13 @@
          "rarity":"3",
          "cost":"11000",
          "name":"Forest Vest",
-         "name_eu":"Forest Gilet"
+         "name_eu":"Forest Gilet",
+       "name_fr-fr":"Gilet sylvestre",
+       "name_fr-ca":"Veste sylvestre",
+       "name_es-es":"Anorak jungla",
+       "name_es-xl":"Chaleco jungla",
+       "name_de":"Outdoor-Steppweste",
+       "name_it":"Piumino trekking"
       },
       {  
          "category":"Clothing",
@@ -835,7 +1193,13 @@
          "brand":"Forge",
          "rarity":"2",
          "cost":"2900",
-         "name":"Forge Inkling Parka"
+         "name":"Forge Inkling Parka",
+       "name_fr-fr":"Parka Focus INK",
+       "name_fr-ca":"Manteau Fosia INK",
+       "name_es-es":"Abrigo inkling Forima",
+       "name_es-xl":"Abrigo Forima IK",
+       "name_de":"Focus-Inkling-Parka",
+       "name_it":"Parka Inkling Fortia"
       },
       {  
          "category":"Clothing",
@@ -843,7 +1207,13 @@
          "brand":"Forge",
          "rarity":"2",
          "cost":"2,700",
-         "name":"Forge Octarian Jacket"
+         "name":"Forge Octarian Jacket",
+       "name_fr-fr":"Parka Focus OCT",
+       "name_fr-ca":"Manteau Fosia OCT",
+       "name_es-es":"Abrigo octariano Forima",
+       "name_es-xl":"Abrigo Forima OT",
+       "name_de":"Focus-Oktarianer-Parka",
+       "name_it":"Parka octariano Fortia"
       },
       {  
          "category":"Clothing",
@@ -851,7 +1221,12 @@
          "brand":"Firefin",
          "rarity":"1",
          "cost":"750",
-         "name":"Fugu Tee"
+         "name":"Fugu Tee",
+       "name_fr-fr":"T-shirt Friture",
+       "name_fr-ca":"T-shirt Arki charbon",
+       "name_es-es":"Camiseta pez globo",
+       "name_de":"Kugelfisch-Shirt",
+       "name_it":"T-shirt pesce palla"
       },
       {  
          "category":"Headgear",
@@ -859,7 +1234,11 @@
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"600",
-         "name":"Full Moon Glasses"
+         "name":"Full Moon Glasses",
+       "name_fr-fr":"Lunettes rondes",
+       "name_es-es":"Gafas redondas",
+       "name_de":"Rund-Hornbrille",
+       "name_it":"Occhiali rotondi"
       },
       {  
          "category":"Headgear",
@@ -867,7 +1246,11 @@
          "brand":"Forge",
          "rarity":"3",
          "cost":"11,000",
-         "name":"Gas Mask"
+         "name":"Gas Mask",
+       "name_fr-fr":"Masque à gaz",
+       "name_es-es":"Máscara antigás",
+       "name_de":"Gasmaske",
+       "name_it":"Maschera antigas"
       },
       {  
          "category":"Shoes",
@@ -875,7 +1258,13 @@
          "brand":"Zink",
          "rarity":"2",
          "cost":"3,000",
-         "name":"Gold Hi-Horses"
+         "name":"Gold Hi-Horses",
+       "name_fr-fr":"Hippo montantes or",
+       "name_fr-ca":"Hippo hautes or",
+       "name_es-es":"Hipocampo-A oro",
+       "name_es-xl":"Tenis bota oro",
+       "name_de":"Goldene High-Top-Sneaker",
+       "name_it":"Alte dorate"
       },
       {  
          "category":"Headgear",
@@ -883,7 +1272,13 @@
          "brand":"Zink",
          "rarity":"1",
          "cost":"400",
-         "name":"Golf Visor"
+         "name":"Golf Visor",
+       "name_fr-fr":"Visière de golf",
+       "name_fr-ca":"Visière de golf",
+       "name_es-es":"Visera golf",
+       "name_es-xl":"Visera de golf",
+       "name_de":"Schirmband",
+       "name_it":"Visiera da golf"
       },
       {  
          "category":"Clothing",
@@ -891,7 +1286,12 @@
          "brand":"Skalop",
          "rarity":"1",
          "cost":"400",
-         "name":"Grape Tee"
+         "name":"Grape Tee",
+       "name_fr-fr":"T-shirt violet",
+       "name_fr-ca":"T-shirt fuchsia",
+       "name_es-es":"Camiseta morada",
+       "name_de":"Lila Shirt",
+       "name_it":"T-shirt fucsia"
       },
       {  
          "category":"Clothing",
@@ -900,7 +1300,12 @@
          "rarity":"1",
          "cost":"800",
          "name":"Gray College Sweat",
-         "name_eu":"Grey College Sweat"
+         "name_eu":"Grey College Sweat",
+       "name_fr-fr":"Sweat université gris",
+       "name_fr-ca":"Coton ouaté université gris",
+       "name_es-es":"Sudadera gris",
+       "name_de":"Graues Sweatshirt",
+       "name_it":"Felpa college grigia"
       },
       {  
          "category":"Clothing",
@@ -909,7 +1314,12 @@
          "rarity":"2",
          "cost":"2,800",
          "name":"Gray Mixed Shirt",
-         "name_eu":"Grey Mixed Shirt"
+         "name_eu":"Grey Mixed Shirt",
+       "name_fr-fr":"Chemise grise",
+       "name_es-es":"Camisa tonos grises",
+       "name_es-xl":"Camisa tonos gris",
+       "name_de":"Graues Karodetail-Hemd",
+       "name_it":"Camicia grigia"
       },
       {  
          "category":"Clothing",
@@ -918,7 +1328,11 @@
          "rarity":"1",
          "cost":"500",
          "name":"Gray Vector Tee",
-         "name_eu":"Grey Vector Tee"
+         "name_eu":"Grey Vector Tee",
+       "name_fr-fr":"T-shirt fléché gris",
+       "name_es-es":"Vectores gris",
+       "name_de":"Graues Profil-Shirt",
+       "name_it":"T-shirt grigia frecce"
       },
       {  
          "category":"Clothing",
@@ -927,7 +1341,11 @@
          "rarity":"2",
          "cost":"2,000",
          "name":"Green-Check Shirt",
-         "name_eu":"Green Check Shirt"
+         "name_eu":"Green Check Shirt",
+       "name_fr-fr":"Chemise vichy verte",
+       "name_es-es":"Camisa cuadros verdes",
+       "name_de":"Grünes Karohemd",
+       "name_it":"Camicia a quadri"
       },
       {  
          "category":"Clothing",
@@ -935,7 +1353,13 @@
          "brand":"Splash Mob",
          "rarity":"2",
          "cost":"1,700",
-         "name":"Green Cardigan"
+         "name":"Green Cardigan",
+       "name_fr-fr":"Gilet vert",
+       "name_fr-ca":"Cardigan vert",
+       "name_es-es":"Chaqueta de punto verde",
+       "name_es-xl":"Cárdigan verde",
+       "name_de":"Grüner Cardigan",
+       "name_it":"Cardigan verde"
       },
       {  
          "category":"Shoes",
@@ -944,7 +1368,12 @@
          "rarity":"2",
          "cost":"1,600",
          "name":"Green Rain Boots",
-         "name_eu":"Moss-Green Wellies"
+         "name_eu":"Moss-Green Wellies",
+       "name_fr-fr":"Bottes de pluie vertes",
+       "name_es-es":"Bota de agua verde",
+       "name_es-xl":"Botas de lluvia verdes",
+       "name_de":"Moosgrüne Gummistiefel",
+       "name_it":"Stivali di gomma verdi"
       },
       {  
          "category":"Clothing",
@@ -952,7 +1381,13 @@
          "brand":"Inkline",
          "rarity":"1",
          "cost":"700",
-         "name":"Green Striped LS"
+         "name":"Green Striped LS",
+       "name_fr-fr":"Haut rayé ver",
+       "name_fr-ca":"Gilet rayé vert",
+       "name_es-es":"Verde larga rayas",
+       "name_es-xl":"Verde a rayas manga larga",
+       "name_de":"Grünes Streifen-Longsleeve",
+       "name_it":"Maglia biancoverde"
       },
       {  
          "category":"Clothing",
@@ -960,7 +1395,12 @@
          "brand":"Forge",
          "rarity":"2",
          "cost":"1,500",
-         "name":"Green Tee"
+         "name":"Green Tee",
+       "name_fr-fr":"T-shirt double vert",
+       "name_es-es":"Camiseta verde",
+       "name_es-xl":"Camiseta verde oliva",
+       "name_de":"Grünes Lagen-Shirt",
+       "name_it":"T-shirt verde"
       },
       {  
          "category":"Clothing",
@@ -968,7 +1408,12 @@
          "brand":"Firefin",
          "rarity":"2",
          "cost":"2,800",
-         "name":"Green Zip Hoodie"
+         "name":"Green Zip Hoodie",
+       "name_fr-fr":"Sweat zippé vert",
+       "name_fr-ca":"Coton ouaté zippé vert",
+       "name_es-es":"Sudadera verde",
+       "name_de":"Tannengrüner Hoodie",
+       "name_it":"Felpa zip verde"
       },
       {  
          "category":"Clothing",
@@ -976,7 +1421,11 @@
          "brand":"Firefin",
          "rarity":"1",
          "cost":"500",
-         "name":"Herbivore Tee"
+         "name":"Herbivore Tee",
+       "name_fr-fr":"T-shirt proie",
+       "name_es-es":"Camiseta cebra",
+       "name_de":"Zebra-Shirt",
+       "name_it":"T-shirt zebra"
       },
       {  
          "category":"Headgear",
@@ -984,7 +1433,13 @@
          "brand":"Cuttlegear",
          "rarity":"2",
          "cost":"N/A",
-         "name":"Hero Headset Replica"
+         "name":"Hero Headset Replica",
+       "name_fr-fr":"Casque héroïque (réplique)",
+       "name_fr-ca":"Casque héroïque (rép.)",
+       "name_es-es":"Auriculares de élite (réplica)",
+       "name_es-xl":"Auriculares de élite réplica",
+       "name_de":"Helden-Headset Replik",
+       "name_it":"Cuffie élite replica"
       },
       {  
          "category":"Clothing",
@@ -992,7 +1447,13 @@
          "brand":"Cuttlegear",
          "rarity":"2",
          "cost":"N/A",
-         "name":"Hero Jacket Replica"
+         "name":"Hero Jacket Replica",
+       "name_fr-fr":"Veste héroïque (réplique)",
+       "name_fr-ca":"Veste héroïque (rép.)",
+       "name_es-es":"Sudadera de élite (réplica)",
+       "name_es-xl":"Sudadera de élite réplica",
+       "name_de":"Heldenjacke Replik",
+       "name_it":"Giubbino élite replica"
       },
       {  
          "category":"Shoes",
@@ -1000,7 +1461,13 @@
          "brand":"Cuttlegear",
          "rarity":"2",
          "cost":"N/A",
-         "name":"Hero Runner Replicas"
+         "name":"Hero Runner Replicas",
+       "name_fr-fr":"Baskets héroïques (répliques)",
+       "name_fr-ca":"Espadrilles héroïques (rép.)",
+       "name_es-es":"Deportiva de élite (réplica)",
+       "name_es-xl":"Deportivos de élite réplica",
+       "name_de":"Heldenschuhe Replik",
+       "name_it":"Runner élite replica"
       },
       {  
          "category":"Shoes",
@@ -1009,7 +1476,13 @@
          "rarity":"1",
          "cost":"500",
          "name":"Hunter Hi-Tops",
-         "name_eu":"Dark Green Hi-Tops"
+         "name_eu":"Dark Green Hi-Tops",
+       "name_fr-fr":"Tennis montantes algue",
+       "name_fr-ca":"Espadrilles hautes algue",
+       "name_es-es":"Bamba alta oliva",
+       "name_es-xl":"Tenis bota olivo",
+       "name_de":"Tannengrüne Leinen-High-Tops",
+       "name_it":"Sneaker verde scuro"
       },
       {  
          "category":"Shoes",
@@ -1017,7 +1490,12 @@
          "brand":"Tentatek",
          "rarity":"3",
          "cost":"8,200",
-         "name":"Icy Down Boots"
+         "name":"Icy Down Boots",
+       "name_fr-fr":"Après-skis glacier",
+       "name_es-es":"Bota de hielo",
+       "name_es-xl":"Botas antárticas",
+       "name_de":"Blaue Tarn-Daunenstiefel",
+       "name_it":"Stivali da ghiaccio"
       },
       {  
          "category":"Clothing",
@@ -1025,7 +1503,12 @@
          "brand":"Inkline",
          "rarity":"1",
          "cost":"400",
-         "name":"Ivory Peaks Tee"
+         "name":"Ivory Peaks Tee",
+       "name_fr-fr":"T-shirt Abysma ivoire",
+       "name_fr-ca":"T-shirt beige",
+       "name_es-es":"Cumbres marfil",
+       "name_de":"Schneegipfel-Shirt",
+       "name_it":"T-shirt cime avorio"
       },
       {  
          "category":"Headgear",
@@ -1033,7 +1516,12 @@
          "brand":"Firefin",
          "rarity":"1",
          "cost":"700",
-         "name":"Jet Cap"
+         "name":"Jet Cap",
+       "name_fr-fr":"Casquette réacteur",
+       "name_es-es":"Gorra moderna",
+       "name_es-xl":"Gorra jet",
+       "name_de":"Jet-Kappe",
+       "name_it":"Berretto Jet"
       },
       {  
          "category":"Headgear",
@@ -1041,7 +1529,12 @@
          "brand":"Zekko",
          "rarity":"1",
          "cost":"400",
-         "name":"Jogging Headband"
+         "name":"Jogging Headband",
+       "name_fr-fr":"Bandeau de jogging",
+       "name_es-es":"Cinta atletismo",
+       "name_es-xl":"Cinta de caminata",
+       "name_de":"Laufstirnband",
+       "name_it":"Fascia da jogging"
       },
       {  
          "category":"Headgear",
@@ -1050,7 +1543,12 @@
          "rarity":"3",
          "cost":"9,000",
          "name":"Jungle Hat",
-         "name_eu":"Safari Hat"
+         "name_eu":"Safari Hat",
+       "name_fr-fr":"Chapeau de safari",
+       "name_es-es":"Sombrero safari",
+       "name_es-xl":"Sombrero Camuflado",
+       "name_de":"Tarnhut",
+       "name_it":"Cappello safari"
       },
       {  
          "category":"Clothing",
@@ -1058,7 +1556,13 @@
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"800",
-         "name":"Krak-On 528"
+         "name":"Krak-On 528",
+       "name_fr-fr":"Blouson Krakers 528",
+       "name_fr-ca":"Manteau Krakeurs 528",
+       "name_es-es":"Chaqueta Meddux 528",
+       "name_es-xl":"Meddux 528",
+       "name_de":"Medusa 528",
+       "name_it":"Cnydarya 528"
       },
       {  
          "category":"Shoes",
@@ -1067,7 +1571,13 @@
          "rarity":"3",
          "cost":"8,000",
          "name":"LE Lo-Tops",
-         "name_eu":"Ltd Edition Lo-Tops"
+         "name_eu":"Ltd Edition Lo-Tops",
+       "name_fr-fr":"Tennis édition limitée",
+       "name_fr-ca":"Espadrilles édition limitée",
+       "name_es-es":"Tenis especial",
+       "name_es-xl":"Tenis edición limitada",
+       "name_de":"Limitierte Low-Tops",
+       "name_it":"Basse limited"
       },
       {  
          "category":"Shoes",
@@ -1076,7 +1586,13 @@
          "rarity":"2",
          "cost":"2,600",
          "name":"LE Soccer Cleats",
-         "name_eu":"LE Football Studs"
+         "name_eu":"LE Football Studs",
+       "name_fr-fr":"Chaussures à crampons DX",
+       "name_fr-ca":"Souliers de soccer DX",
+       "name_es-es":"Bota de tacos extra",
+       "name_es-xl":"Tacos primera división",
+       "name_de":"Deluxe-Stollenschuhe",
+       "name_it":"Scarpe da calcio deluxe"
       },
       {  
          "category":"Clothing",
@@ -1084,7 +1600,13 @@
          "brand":"SquidForce",
          "rarity":"3",
          "cost":"8,500",
-         "name":"Layered Anchor LS"
+         "name":"Layered Anchor LS",
+       "name_fr-fr":"Haut double ancre",
+       "name_fr-ca":"Gilet double ancre",
+       "name_es-es":"Ancla doble",
+       "name_es-xl":"Ancla de capas",
+       "name_de":"Schwarzes Anker-Lagen-Shirt",
+       "name_it":"A strati ancora"
       },
       {  
          "category":"Clothing",
@@ -1092,7 +1614,13 @@
          "brand":"Takoroka",
          "rarity":"2",
          "cost":"2,500",
-         "name":"Layered Vector LS"
+         "name":"Layered Vector LS",
+       "name_fr-fr":"Haut double fléché",
+       "name_fr-ca":"Gilet double fléché",
+       "name_es-es":"Vectores doble",
+       "name_es-xl":"Vectores de capas",
+       "name_de":"Lagen-Profil-Shirt",
+       "name_it":"A strati frecce"
       },
       {  
          "category":"Headgear",
@@ -1100,7 +1628,11 @@
          "brand":"Cuttlegear",
          "rarity":"3",
          "cost":"N/A",
-         "name":"Legendary Cap"
+         "name":"Legendary Cap",
+       "name_fr-fr":"Casquette légendaire",
+       "name_es-es":"Gorra legendaria",
+       "name_de":"Legendäre Mütze",
+       "name_it":"Cappello leggendario"
       },
       {  
          "category":"Headgear",
@@ -1108,7 +1640,12 @@
          "brand":"Inkline",
          "rarity":"1",
          "cost":"700",
-         "name":"Lightweight Cap"
+         "name":"Lightweight Cap",
+       "name_fr-fr":"Casquette légère",
+       "name_es-es":"Gorra futurista",
+       "name_es-xl":"Gorra ligera",
+       "name_de":"Camper-Kappe",
+       "name_it":"Berretto leggero"
       },
       {  
          "category":"Clothing",
@@ -1116,7 +1653,11 @@
          "brand":"Splash Mob",
          "rarity":"1",
          "cost":"700",
-         "name":"Linen Shirt"
+         "name":"Linen Shirt",
+       "name_fr-fr":"Chemisette en lin",
+       "name_es-es":"Camisa lino",
+       "name_de":"Leinenhemd",
+       "name_it":"Camicia di lino"
       },
       {  
          "category":"Clothing",
@@ -1124,7 +1665,12 @@
          "brand":"Zekko",
          "rarity":"2",
          "cost":"2,900",
-         "name":"Logo Aloha Shirt"
+         "name":"Logo Aloha Shirt",
+       "name_fr-fr":"Chemisette à logos",
+       "name_es-es":"Camisa marcas",
+       "name_es-xl":"Camisa logos",
+       "name_de":"Logo-Hawaiihemd",
+       "name_it":"Camicia hawaiana"
       },
       {  
          "category":"Clothing",
@@ -1132,7 +1678,11 @@
          "brand":"Rockenberg",
          "rarity":"1",
          "cost":"800",
-         "name":"Lumberjack Shirt"
+         "name":"Lumberjack Shirt",
+       "name_fr-fr":"Chemise à carreaux",
+       "name_es-es":"Camisa cuadros ocres",
+       "name_de":"Holzfäller-Hemd",
+       "name_it":"Camicia scozzese"
       },
       {  
          "category":"Shoes",
@@ -1140,7 +1690,12 @@
          "brand":"Splash Mob",
          "rarity":"1",
          "cost":"750",
-         "name":"Mawcasins"
+         "name":"Mawcasins",
+       "name_fr-fr":"Mocassins carnassier",
+       "name_es-es":"Mocasín escualo",
+       "name_es-xl":"Tiburones",
+       "name_de":"Karnivor-Schnürer",
+       "name_it":"Scarpe squalo"
       },
       {  
          "category":"Clothing",
@@ -1148,7 +1703,12 @@
          "brand":"Skalop",
          "rarity":"1",
          "cost":"400",
-         "name":"Mint Tee"
+         "name":"Mint Tee",
+       "name_fr-fr":"T-shirt menthe",
+       "name_fr-ca":"T-shirt turquoise",
+       "name_es-es":"Camiseta turquesa",
+       "name_de":"Minzgrünes Shirt",
+       "name_it":"T-shirt verdeacqua"
       },
       {  
          "category":"Shoes",
@@ -1157,7 +1717,12 @@
          "rarity":"2",
          "cost":"3,000",
          "name":"Moto Boots",
-         "name_eu":"Biker Boots"
+         "name_eu":"Biker Boots",
+       "name_fr-fr":"Bottes de moto",
+       "name_es-es":"Bota motorista",
+       "name_es-xl":"Botas de motociclista",
+       "name_de":"Biker-Stiefel",
+       "name_it":"Stivali da moto"
       },
       {  
          "category":"Clothing",
@@ -1166,7 +1731,13 @@
          "rarity":"3",
          "cost":"11,000",
          "name":"Mountain Vest",
-         "name_eu":"Mountain Gilet"
+         "name_eu":"Mountain Gilet",
+       "name_fr-fr":"Gilet de montagne",
+       "name_fr-ca":"Veste de montagne",
+       "name_es-es":"Anorak montaña",
+       "name_es-xl":"Chaleco montaña",
+       "name_de":"Kletter-Steppweste",
+       "name_it":"Piumino montagna"
       },
       {  
          "category":"Clothing",
@@ -1174,7 +1745,12 @@
          "brand":"Splash Mob",
          "rarity":"1",
          "cost":"800",
-         "name":"Navy College Sweat"
+         "name":"Navy College Sweat",
+       "name_fr-fr":"Sweat université bleu",
+       "name_fr-ca":"Coton ouaté université bleu",
+       "name_es-es":"Sudadera marinera",
+       "name_de":"Marineblaues Sweatshirt",
+       "name_it":"Felpa college blu"
       },
       {  
          "category":"Clothing",
@@ -1182,7 +1758,13 @@
          "brand":"Splash Mob",
          "rarity":"2",
          "cost":"2,300",
-         "name":"Navy Striped LS"
+         "name":"Navy Striped LS",
+       "name_fr-fr":"Haut rayé marin",
+       "name_fr-ca":"Gilet rayé marin",
+       "name_es-es":"Marinera larga",
+       "name_es-xl":"Marinera manga larga",
+       "name_de":"Blaues Streifen-Longsleeve",
+       "name_it":"Maglia navy a righe"
       },
       {  
          "category":"Shoes",
@@ -1191,7 +1773,12 @@
          "rarity":"1",
          "cost":"700",
          "name":"Neon Sea Slugs",
-         "name_eu":"Neon Green Sea Slugs"
+         "name_eu":"Neon Green Sea Slugs",
+       "name_fr-fr":"Anguilles vert fluo",
+       "name_es-es":"Zapatilla verde neón",
+       "name_es-xl":"Anguilas verde neón",
+       "name_de":"Neongrüne Laufschuhe",
+       "name_it":"Swimmer verdi fluo"
       },
       {  
          "category":"Headgear",
@@ -1200,7 +1787,12 @@
          "rarity":"2",
          "cost":"2800",
          "name":"Noise Cancelers",
-         "name_eu":"Noise Cancellers"
+         "name_eu":"Noise Cancellers",
+       "name_fr-fr":"Casque DJ",
+       "name_es-es":"Cascos antirruido",
+       "name_es-xl":"Auriculares antirruido",
+       "name_de":"Gehörschutz",
+       "name_it":"Cuffie antirumore"
       },
       {  
          "category":"Clothing",
@@ -1208,7 +1800,11 @@
          "brand":"Cuttlegear",
          "rarity":"3",
          "cost":"N/A",
-         "name":"Octo Tee"
+         "name":"Octo Tee",
+       "name_fr-fr":"T-shirt octarien",
+       "name_es-es":"Camiseta pulpo",
+       "name_de":"Okto-Shirt",
+       "name_it":"T-shirt octo"
       },
       {  
          "category":"Headgear",
@@ -1216,7 +1812,11 @@
          "brand":"Firefin",
          "rarity":"3",
          "cost":"8800",
-         "name":"Octoglasses"
+         "name":"Octoglasses",
+       "name_fr-fr":"Lunettes octogonales",
+       "name_es-es":"Octogafas",
+       "name_de":"Oktobrille",
+       "name_it":"Octocchiali"
       },
       {  
          "category":"Clothing",
@@ -1225,7 +1825,13 @@
          "rarity":"2",
          "cost":"N/A",
          "name":"Octoling Armor",
-         "name_eu":"Octoling Armour"
+         "name_eu":"Octoling Armour",
+       "name_fr-fr":"Plastron Octaling",
+       "name_fr-ca":"Plastron octaling",
+       "name_es-es":"Pulpoarmadura",
+       "name_es-xl":"Octoarmadura",
+       "name_de":"Okto-Rüstung",
+       "name_it":"Corazza Octoling"
       },
       {  
          "category":"Shoes",
@@ -1233,7 +1839,13 @@
          "brand":"Cuttlegear",
          "rarity":"2",
          "cost":"N/A",
-         "name":"Octoling Boots"
+         "name":"Octoling Boots",
+       "name_fr-fr":"Rangers Octaling",
+       "name_fr-ca":"Bottes octaling",
+       "name_es-es":"Pulpobota",
+       "name_es-xl":"Octobotas",
+       "name_de":"Okto-Kampfstiefel",
+       "name_it":"Stivali Octoling"
       },
       {  
          "category":"Headgear",
@@ -1242,7 +1854,13 @@
          "rarity":"2",
          "cost":"N/A",
          "name":"Octoling Goggles",
-         "name_eu":"Octoling Scope"
+         "name_eu":"Octoling Scope",
+       "name_fr-fr":"Lunettes Octaling",
+       "name_fr-ca":"Lunettes octaling",
+       "name_es-es":"Pulposcopio",
+       "name_es-xl":"Gafas de octoling",
+       "name_de":"Oktoskop",
+       "name_it":"Visore Octoling"
       },
       {  
          "category":"Clothing",
@@ -1250,7 +1868,13 @@
          "brand":"Inkline",
          "rarity":"3",
          "cost":"11,000",
-         "name":"Olive Ski Jacket"
+         "name":"Olive Ski Jacket",
+       "name_fr-fr":"Anorak vert anis",
+       "name_fr-ca":"Anorak vert lime",
+       "name_es-es":"Chubasquero lima",
+       "name_es-xl":"Rompevientos lima",
+       "name_de":"Grüner Anorak",
+       "name_it":"Giacca da sci verde"
       },
       {  
          "category":"Shoes",
@@ -1258,7 +1882,11 @@
          "brand":"Takoroka",
          "rarity":"1",
          "cost":"700",
-         "name":"Orange Arrows"
+         "name":"Orange Arrows",
+       "name_fr-fr":"Flèches orange",
+       "name_es-es":"Velcro naranja",
+       "name_de":"Orange Pfeilschuhe",
+       "name_it":"Arrow arancioblu"
       },
       {  
          "category":"Clothing",
@@ -1266,7 +1894,13 @@
          "brand":"Splash Mob",
          "rarity":"1",
          "cost":"700",
-         "name":"Orange Cardigan"
+         "name":"Orange Cardigan",
+       "name_fr-fr":"Gilet orange",
+       "name_fr-ca":"Cardigan orange",
+       "name_es-es":"Chaqueta de punto naranja",
+       "name_es-xl":"Cárdigan naranja",
+       "name_de":"Oranger Cardigan",
+       "name_it":"Cardigan arancione"
       },
       {  
          "category":"Shoes",
@@ -1274,7 +1908,12 @@
          "brand":"Zekko",
          "rarity":"1",
          "cost":"800",
-         "name":"Orange Lo-Tops"
+         "name":"Orange Lo-Tops",
+       "name_fr-fr":"Tennis orange",
+       "name_fr-ca":"Espadrilles orange",
+       "name_es-es":"Tenis naranja",
+       "name_de":"Orange Low-Tops",
+       "name_it":"Basse arancioni"
       },
       {  
          "category":"Shoes",
@@ -1282,7 +1921,12 @@
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"600",
-         "name":"Oyster Clogs"
+         "name":"Oyster Clogs",
+       "name_fr-fr":"Sabots huître",
+       "name_es-es":"Zueco gris",
+       "name_es-xl":"Zuecos grises",
+       "name_de":"Austerngraue Clogs",
+       "name_it":"Zoccoli grigi"
       },
       {  
          "category":"Headgear",
@@ -1290,7 +1934,13 @@
          "brand":"Forge",
          "rarity":"3",
          "cost":"10,000",
-         "name":"Paintball Mask"
+         "name":"Paintball Mask",
+       "name_fr-fr":"Masque motocross",
+       "name_fr-ca":"Masque protecteur",
+       "name_es-es":"Máscara protectora",
+       "name_es-xl":"Visor de paintball",
+       "name_de":"Paintballhelm",
+       "name_it":"Maschera paintball"
       },
       {  
          "category":"Headgear",
@@ -1298,7 +1948,12 @@
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"750",
-         "name":"Paisley Bandana"
+         "name":"Paisley Bandana",
+       "name_fr-fr":"Bandana faune marine",
+       "name_es-es":"Pañuelo clásico",
+       "name_es-xl":"Pañuelo cachemira",
+       "name_de":"Klassisches Bandana",
+       "name_it":"Bandana paisley"
       },
       {  
          "category":"Clothing",
@@ -1306,7 +1961,13 @@
          "brand":"Tentatek",
          "rarity":"1",
          "cost":"800",
-         "name":"Part-Time Pirate"
+         "name":"Part-Time Pirate",
+       "name_fr-fr":"Haut double crâne",
+       "name_fr-ca":"Gilet presque pirate",
+       "name_es-es":"Pirata doble",
+       "name_es-xl":"Pirata de capas",
+       "name_de":"Piraten-Lagen-Shirt",
+       "name_it":"A strati pirata"
       },
       {  
          "category":"Clothing",
@@ -1314,7 +1975,11 @@
          "brand":"Skalop",
          "rarity":"1",
          "cost":"400",
-         "name":"Pearl Tee"
+         "name":"Pearl Tee",
+       "name_fr-fr":"T-shirt perles",
+       "name_es-es":"Camiseta perlas",
+       "name_de":"Perlen-Shirt",
+       "name_it":"T-shirt perlata"
       },
       {  
          "category":"Headgear",
@@ -1322,7 +1987,12 @@
          "brand":"Forge",
          "rarity":"3",
          "cost":"9,800",
-         "name":"Pilot Goggles"
+         "name":"Pilot Goggles",
+       "name_fr-fr":"Lunettes d'aviateur",
+       "name_es-es":"Gafas de piloto",
+       "name_es-xl":"Gafas de aviador",
+       "name_de":"Pilotenbrille",
+       "name_it":"Occhiali da pilota"
       },
       {  
          "category":"Shoes",
@@ -1330,7 +2000,13 @@
          "brand":"Tentatek",
          "rarity":"1",
          "cost":"500",
-         "name":"Pink Trainers"
+         "name":"Pink Trainers",
+       "name_fr-fr":"Baskets roses",
+       "name_fr-ca":"Espadrilles roses",
+       "name_es-es":"Deportiva rosa",
+       "name_es-xl":"Deportivos rosas",
+       "name_de":"Pinke Turnschuhe",
+       "name_it":"Runner rosa"
       },
       {  
          "category":"Clothing",
@@ -1339,7 +2015,11 @@
          "rarity":"1",
          "cost":"700",
          "name":"Pirate-Stripe Tee",
-         "name_eu":"Pirate Stripes Tee"
+         "name_eu":"Pirate Stripes Tee",
+       "name_fr-fr":"T-shirt rayé pirate",
+       "name_es-es":"Camiseta pirata",
+       "name_de":"Piraten-Shirt",
+       "name_it":"T-shirt da pirata"
       },
       {  
          "category":"Shoes",
@@ -1347,7 +2027,12 @@
          "brand":"Krak-On",
          "rarity":"2",
          "cost":"2000",
-         "name":"Plum Casuals"
+         "name":"Plum Casuals",
+       "name_fr-fr":"Chaussures prune",
+       "name_es-es":"Zapato morado",
+       "name_es-xl":"Zapatos púrpura",
+       "name_de":"Lila Halbschuhe",
+       "name_it":"Comfort viola"
       },
       {  
          "category":"Clothing",
@@ -1356,7 +2041,12 @@
          "rarity":"2",
          "cost":"N/A",
          "name":"Power Armor",
-         "name_eu":"Power Armour"
+         "name_eu":"Power Armour",
+       "name_fr-fr":"Armure méca",
+       "name_fr-ca":"Armure de puissance",
+       "name_es-es":"Tecnoarmadura",
+       "name_de":"Exo-Rüstung",
+       "name_it":"Armatura hi-tech"
       },
       {  
          "category":"Shoes",
@@ -1364,7 +2054,13 @@
          "brand":"amiibo",
          "rarity":"2",
          "cost":"N/A",
-         "name":"Power Boots"
+         "name":"Power Boots",
+       "name_fr-fr":"Bottes méca",
+       "name_fr-ca":"Bottes technos",
+       "name_es-es":"Tecnobota",
+       "name_es-xl":"Tecnobotas",
+       "name_de":"Exo-Stiefel",
+       "name_it":"Stivali hi-tech"
       },
       {  
          "category":"Headgear",
@@ -1372,7 +2068,13 @@
          "brand":"amiibo",
          "rarity":"2",
          "cost":"N/A",
-         "name":"Power Mask"
+         "name":"Power Mask",
+       "name_fr-fr":"Casque méca",
+       "name_fr-ca":"Casque futuriste",
+       "name_es-es":"Tecnomáscara",
+       "name_es-xl":"Máscara futurista",
+       "name_de":"Exo-Helm",
+       "name_it":"Maschera hi-tech"
       },
       {  
          "category":"Shoes",
@@ -1380,7 +2082,13 @@
          "brand":"Inkline",
          "rarity":"3",
          "cost":"9,800",
-         "name":"Pro Trail Boots"
+         "name":"Pro Trail Boots",
+       "name_fr-fr":"Chaussures rando pro",
+       "name_fr-ca":"Bottes rando pro",
+       "name_es-es":"Bota montaña pro",
+       "name_es-xl":"Botas de montaña pro",
+       "name_de":"Profi-Wanderstiefel",
+       "name_it":"Trekking pro"
       },
       {  
          "category":"Shoes",
@@ -1388,7 +2096,13 @@
          "brand":"Rockenberg",
          "rarity":"3",
          "cost":"9,000",
-         "name":"Punk Cherries"
+         "name":"Punk Cherries",
+       "name_fr-fr":"Bottines punk grenat",
+       "name_fr-ca":"Bottines punk rouges",
+       "name_es-es":"Bota clásica roja",
+       "name_es-xl":"Botas cerezo",
+       "name_de":"Rotbraune Punkstiefel",
+       "name_it":"Anfibi melanzana"
       },
       {  
          "category":"Shoes",
@@ -1396,7 +2110,12 @@
          "brand":"Rockenberg",
          "rarity":"2",
          "cost":"N/A",
-         "name":"Punk Whites"
+         "name":"Punk Whites",
+       "name_fr-fr":"Bottines punk blanches",
+       "name_es-es":"Bota clásica blanca",
+       "name_es-xl":"Botas roqueras",
+       "name_de":"Weiße Punkstiefel",
+       "name_it":"Anfibi bianchi"
       },
       {  
          "category":"Shoes",
@@ -1404,7 +2123,12 @@
          "brand":"Rockenberg",
          "rarity":"2",
          "cost":"3,000",
-         "name":"Punk Yellows"
+         "name":"Punk Yellows",
+       "name_fr-fr":"Bottines punk jaunes",
+       "name_es-es":"Bota clásica amarilla",
+       "name_es-xl":"Botas mostaza",
+       "name_de":"Gelbe Punkstiefel",
+       "name_it":""
       },
       {  
          "category":"Clothing",
@@ -1412,7 +2136,13 @@
          "brand":"Takoroka",
          "rarity":"1",
          "cost":"600",
-         "name":"Purple Camo LS"
+         "name":"Purple Camo LS",
+       "name_fr-fr":"Haut à motif violet",
+       "name_fr-ca":"Gilet à motif mauve",
+       "name_es-es":"Camuflaje morada",
+       "name_es-xl":"Camuflaje morado manga larga",
+       "name_de":"Lila Tarn-Longsleeve",
+       "name_it":"Mimetica viola"
       },
       {  
          "category":"Shoes",
@@ -1420,7 +2150,13 @@
          "brand":"Zink",
          "rarity":"1",
          "cost":"800",
-         "name":"Purple Hi-Horses"
+         "name":"Purple Hi-Horses",
+       "name_fr-fr":"Hippo montantes violettes",
+       "name_fr-ca":"Hippo hautes mauves",
+       "name_es-es":"Hipocampo-A morada",
+       "name_es-xl":"Tenis bota morados",
+       "name_de":"Lila High-Top-Sneaker",
+       "name_it":"Alte gialloviola"
       },
       {  
          "category":"Shoes",
@@ -1428,7 +2164,13 @@
          "brand":"Tentatek",
          "rarity":"1",
          "cost":"800",
-         "name":"Purple Sea Slugs"
+         "name":"Purple Sea Slugs",
+       "name_fr-fr":"Anguilles violettes",
+       "name_fr-ca":"Anguilles mauves",
+       "name_es-es":"Zapatilla morada",
+       "name_es-xl":"Anguilas morados",
+       "name_de":"Lila Laufschuhe",
+       "name_it":"Swimmer viola"
       },
       {  
          "category":"Clothing",
@@ -1437,7 +2179,11 @@
          "rarity":"1",
          "cost":"300",
          "name":"Rainy-Day Tee",
-         "name_eu":"Rainy Day Tee"
+         "name_eu":"Rainy Day Tee",
+       "name_fr-fr":"T-shirt jour de pluie",
+       "name_es-es":"Camiseta lluvia",
+       "name_de":"Regenblaues Shirt",
+       "name_it":"T-shirt blupioggia"
       },
       {  
          "category":"Clothing",
@@ -1446,7 +2192,11 @@
          "rarity":"2",
          "cost":"2,000",
          "name":"Red-Check Shirt",
-         "name_eu":"Red Check Shirt"
+         "name_eu":"Red Check Shirt",
+       "name_fr-fr":"Chemise de bûcheron",
+       "name_es-es":"Camisa cuadros rojos",
+       "name_de":"Rotes Karohemd",
+       "name_it":"Camicia a scacchi"
       },
       {  
          "category":"Shoes",
@@ -1454,7 +2204,13 @@
          "brand":"Zink",
          "rarity":"1",
          "cost":"800",
-         "name":"Red Hi-Horses"
+         "name":"Red Hi-Horses",
+       "name_fr-fr":"Hippo montantes rouges",
+       "name_fr-ca":"Hippo hautes rouges",
+       "name_es-es":"Hipocampo-A roja",
+       "name_es-xl":"Tenis bota rojos",
+       "name_de":"Rote High-Top-Sneaker",
+       "name_it":"Alte biancorosse"
       },
       {  
          "category":"Shoes",
@@ -1462,7 +2218,13 @@
          "brand":"Krak-On",
          "rarity":"2",
          "cost":"1,800",
-         "name":"Red Hi-Tops"
+         "name":"Red Hi-Tops",
+       "name_fr-fr":"Tennis montantes rouges",
+       "name_fr-ca":"Tennis montantes rouges",
+       "name_es-es":"Bamba alta roja",
+       "name_es-xl":"Tenis bota rojos",
+       "name_de":"Rote Leinen-High-Tops",
+       "name_it":"Sneaker rosse"
       },
       {  
          "category":"Shoes",
@@ -1470,7 +2232,12 @@
          "brand":"Tentatek",
          "rarity":"3",
          "cost":"8,000",
-         "name":"Red Sea Slugs"
+         "name":"Red Sea Slugs",
+       "name_fr-fr":"Anguilles rouges",
+       "name_es-es":"Zapatilla roja",
+       "name_es-xl":"Anguilas rojos",
+       "name_de":"Rote Laufschuhe",
+       "name_it":"Swimmer rosse"
       },
       {  
          "category":"Shoes",
@@ -1479,7 +2246,12 @@
          "rarity":"1",
          "cost":"300",
          "name":"Red Slip-Ons",
-         "name_eu":"Red Plimsolls"
+         "name_eu":"Red Plimsolls",
+       "name_fr-fr":"Mocassins rouges",
+       "name_es-es":"Playera roja",
+       "name_es-xl":"Mocasines rojos",
+       "name_de":"Rote Slip-ons",
+       "name_it":"Espadrillas rosse"
       },
       {  
          "category":"Clothing",
@@ -1487,7 +2259,11 @@
          "brand":"Takoroka",
          "rarity":"1",
          "cost":"500",
-         "name":"Red Vector Tee"
+         "name":"Red Vector Tee",
+       "name_fr-fr":"T-shirt fléché rouge",
+       "name_es-es":"Vectores roja",
+       "name_de":"Rotes Profil-Shirt",
+       "name_it":"T-shirt rossa frecce"
       },
       {  
          "category":"Shoes",
@@ -1495,7 +2271,12 @@
          "brand":"Rockenberg",
          "rarity":"3",
          "cost":"11,000",
-         "name":"Red Work Boots"
+         "name":"Red Work Boots",
+       "name_fr-fr":"Bottes sécurité rouges",
+       "name_es-es":"Bota piel roja",
+       "name_es-xl":"Botas de trabajo rojas",
+       "name_de":"Rote Arbeitsstiefel",
+       "name_it":"Scarponi rossi"
       },
       {  
          "category":"Clothing",
@@ -1503,7 +2284,13 @@
          "brand":"Zekko",
          "rarity":"1",
          "cost":"800",
-         "name":"Reel Sweat"
+         "name":"Reel Sweat",
+       "name_fr-fr":"Sweat bobine",
+       "name_fr-ca":"Coton ouaté cylindre gris",
+       "name_es-es":"Sudadera flechas",
+       "name_es-xl":"Sudadera pesca",
+       "name_de":"Pfeillogo-Sweatshirt",
+       "name_it":"Maglione giravolta"
       },
       {  
          "category":"Clothing",
@@ -1511,7 +2298,13 @@
          "brand":"Skalop",
          "rarity":"3",
          "cost":"8200",
-         "name":"Reggae Tee"
+         "name":"Reggae Tee",
+       "name_fr-fr":"T-shirt psychédélique",
+       "name_fr-ca":"T-shirt Arki blanc",
+       "name_es-es":"Charanga calamar",
+       "name_es-xl":"Camiseta serenata",
+       "name_de":"Reggae-Shirt",
+       "name_it":"T-shirt reggae"
       },
       {  
          "category":"Clothing",
@@ -1519,7 +2312,13 @@
          "brand":"Zink",
          "rarity":"3",
          "cost":"9,000",
-         "name":"Retro Gamer Jersey"
+         "name":"Retro Gamer Jersey",
+       "name_fr-fr":"Blouson rétro",
+       "name_fr-ca":"Manteau sport rétro",
+       "name_es-es":"Chaqueta retro",
+       "name_es-xl":"Chaqueta deportiva retro",
+       "name_de":"Retro-Gamer-Jacke",
+       "name_it":"Felpa rétro"
       },
       {  
          "category":"Headgear",
@@ -1527,7 +2326,12 @@
          "brand":"Splash Mob",
          "rarity":"1",
          "cost":"500",
-         "name":"Retro Specs"
+         "name":"Retro Specs",
+       "name_fr-fr":"Lunettes rétro",
+       "name_es-es":"Retrogafas",
+       "name_es-xl":"Gafas retro",
+       "name_de":"Retrobrille",
+       "name_it":"Occhiali rétro"
       },
       {  
          "category":"Clothing",
@@ -1535,7 +2339,12 @@
          "brand":"SquidForce",
          "rarity":"3",
          "cost":"9,000",
-         "name":"Retro Sweat"
+         "name":"Retro Sweat",
+       "name_fr-fr":"Sweat rétro",
+       "name_fr-ca":"Coton ouaté rétro",
+       "name_es-es":"Sudadera retro",
+       "name_de":"Retro-Sweatshirt",
+       "name_it":"Maglione vintage"
       },
       {  
          "category":"Shoes",
@@ -1543,7 +2352,13 @@
          "brand":"Rockenberg",
          "rarity":"1",
          "cost":"700",
-         "name":"Roasted Brogues"
+         "name":"Roasted Brogues",
+       "name_fr-fr":"Richelieu classiques",
+       "name_fr-ca":"Chaussures classiques",
+       "name_es-es":"Zapato formal",
+       "name_es-xl":"Zapatos brogue tostados",
+       "name_de":"Unibrogues",
+       "name_it":"Eleganti marroni"
       },
       {  
          "category":"Clothing",
@@ -1551,7 +2366,11 @@
          "brand":"Rockenberg",
          "rarity":"1",
          "cost":"500",
-         "name":"Rockenberg Black"
+         "name":"Rockenberg Black",
+       "name_fr-fr":"T-shirt Iormungand noir",
+       "name_es-es":"Rockenberg negra",
+       "name_de":"Schwarzes Rockberg-Shirt",
+       "name_it":"Rockenburg nera"
       },
       {  
          "category":"Clothing",
@@ -1559,7 +2378,11 @@
          "brand":"Rockenberg",
          "rarity":"2",
          "cost":"2,500",
-         "name":"Rockenberg White"
+         "name":"Rockenberg White",
+       "name_fr-fr":"T-shirt Iormungand blanc",
+       "name_es-es":"Rockenberg blanca",
+       "name_de":"Weißes Rockberg-Shirt",
+       "name_it":"Rockenburg bianca"
       },
       {  
          "category":"Clothing",
@@ -1567,7 +2390,12 @@
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"750",
-         "name":"Rodeo Shirt"
+         "name":"Rodeo Shirt",
+       "name_fr-fr":"Chemise excentrique",
+       "name_es-es":"Camisa de época",
+       "name_es-xl":"Camisa ranchera",
+       "name_de":"Rodeo-Hemd",
+       "name_it":"Camicia hipsterica"
       },
       {  
          "category":"Clothing",
@@ -1576,7 +2404,11 @@
          "rarity":"1",
          "cost":"600",
          "name":"Round-Collar Shirt",
-         "name_eu":"Round Collar Shirt"
+         "name_eu":"Round Collar Shirt",
+       "name_fr-fr":"Chemisette grise",
+       "name_es-es":"Camisa cuello redondo",
+       "name_de":"Bubikragen-Hemd",
+       "name_it":"Camicia corta grigia"
       },
       {  
          "category":"Headgear",
@@ -1584,7 +2416,11 @@
          "brand":"The SQUID GIRL",
          "rarity":"2",
          "cost":"1,600",
-         "name":"SQUID GIRL Hat"
+         "name":"SQUID GIRL Hat",
+       "name_fr-fr":"Coiffe SQUID GIRL",
+       "name_es-es":"Gorro SQUID GIRL",
+       "name_de":"SQUID GIRL-Hut",
+       "name_it":"Cappuccio SQUID GIRL"
       },
       {  
          "category":"Shoes",
@@ -1592,7 +2428,12 @@
          "brand":"The SQUID GIRL",
          "rarity":"2",
          "cost":"1700",
-         "name":"SQUID GIRL Shoes"
+         "name":"SQUID GIRL Shoes",
+       "name_fr-fr":"Chaussures SQUID GIRL",
+       "name_es-es":"Zapato SQUID GIRL",
+       "name_es-xl":"Zapatos SQUID GIRL",
+       "name_de":"SQUID GIRL-Schuhe",
+       "name_it":"Scarpe SQUID GIRL"
       },
       {  
          "category":"Clothing",
@@ -1600,7 +2441,12 @@
          "brand":"The SQUID GIRL",
          "rarity":"2",
          "cost":"2,000",
-         "name":"SQUID GIRL Tunic"
+         "name":"SQUID GIRL Tunic",
+       "name_fr-fr":"Tunique SQUID GIRL",
+       "name_es-es":"Uniforme SQUID GIRL",
+       "name_es-xl":"Traje SQUID GIRL",
+       "name_de":"SQUID GIRL-Tunika",
+       "name_it":"Vestito SQUID GIRL"
       },
       {  
          "category":"Headgear",
@@ -1609,7 +2455,13 @@
          "rarity":"2",
          "cost":"2300",
          "name":"Safari Hat",
-         "name_eu":"Jungle Hat"
+         "name_eu":"Jungle Hat",
+       "name_fr-fr":"Chapeau de Brousse",
+       "name_fr-ca":"",
+       "name_es-es":"Sombrero camuflaje",
+       "name_es-xl":"",
+       "name_de":"Hummer-Tropenhut",
+       "name_it":"Cappello giungla"
       },
       {  
          "category":"Clothing",
@@ -1618,7 +2470,11 @@
          "rarity":"1",
          "cost":"400",
          "name":"Sage Polo",
-         "name_eu":"Sage Green Polo"
+         "name_eu":"Sage Green Polo",
+       "name_fr-fr":"Polo vert clair",
+       "name_es-es":"Polo lima",
+       "name_de":"Hellgrünes Polohemd",
+       "name_it":"Polo verde chiaro"
       },
       {  
          "category":"Clothing",
@@ -1627,7 +2483,11 @@
          "rarity":"1",
          "cost":"700",
          "name":"Sailor-Stripe Tee",
-         "name_eu":"Sailor Stripes Tee"
+         "name_eu":"Sailor Stripes Tee",
+       "name_fr-fr":"T-shirt rayé marin",
+       "name_es-es":"Camiseta marinera",
+       "name_de":"Marine-Shirt",
+       "name_it":"T-shirt da marinaio"
       },
       {  
          "category":"Headgear",
@@ -1635,7 +2495,12 @@
          "brand":"amiibo",
          "rarity":"2",
          "cost":"N/A",
-         "name":"Samurai Helmet"
+         "name":"Samurai Helmet",
+       "name_fr-fr":"Casque de samouraï",
+       "name_es-es":"Casco samurái",
+       "name_es-xl":"Casco de samurái",
+       "name_de":"Samurai-Helm",
+       "name_it":"Elmo da samurai"
       },
       {  
          "category":"Clothing",
@@ -1643,7 +2508,12 @@
          "brand":"amiibo",
          "rarity":"2",
          "cost":"N/A",
-         "name":"Samurai Jacket"
+         "name":"Samurai Jacket",
+       "name_fr-fr":"Haut de samouraï",
+       "name_fr-ca":"Armure samouraï",
+       "name_es-es":"Armadura samurái",
+       "name_de":"Samurai-Rüstung",
+       "name_it":"Armatura samurai"
       },
       {  
          "category":"Shoes",
@@ -1651,7 +2521,13 @@
          "brand":"amiibo",
          "rarity":"2",
          "cost":"N/A",
-         "name":"Samurai Shoes"
+         "name":"Samurai Shoes",
+       "name_fr-fr":"Bottes de samouraï",
+       "name_fr-ca":"Sandales de samouraï",
+       "name_es-es":"Sandalia samurái",
+       "name_es-xl":"Sandalias samurái",
+       "name_de":"Samurai-Schuhe",
+       "name_it":"Calzature da samurai"
       },
       {  
          "category":"Clothing",
@@ -1659,7 +2535,13 @@
          "brand":"Zink",
          "rarity":"2",
          "cost":"3,000",
-         "name":"School Jersey"
+         "name":"School Jersey",
+       "name_fr-fr":"Blouson d'écolier",
+       "name_fr-ca":"Manteau sport bleu",
+       "name_es-es":"Chaqueta de chándal",
+       "name_es-xl":"Chaqueta deportiva azul",
+       "name_de":"Sportjacke",
+       "name_it":"Felpa scolastica"
       },
       {  
          "category":"Shoes",
@@ -1667,7 +2549,12 @@
          "brand":"amiibo",
          "rarity":"2",
          "cost":"N/A",
-         "name":"School Shoes"
+         "name":"School Shoes",
+       "name_fr-fr":"Mocassins scolaires",
+       "name_es-es":"Mocasín escolar",
+       "name_es-xl":"Zapatos escolares",
+       "name_de":"Schuluniform-Schuhe",
+       "name_it":"Mocassini neri"
       },
       {  
          "category":"Clothing",
@@ -1675,7 +2562,11 @@
          "brand":"amiibo",
          "rarity":"2",
          "cost":"N/A",
-         "name":"School Uniform"
+         "name":"School Uniform",
+       "name_fr-fr":"Uniforme scolaire",
+       "name_es-es":"Uniforme escolar",
+       "name_de":"Schuluniform",
+       "name_it":"Uniforme scolastica"
       },
       {  
          "category":"Shoes",
@@ -1683,7 +2574,13 @@
          "brand":"Splash Mob",
          "rarity":"1",
          "cost":"800",
-         "name":"Shark Moccasins"
+         "name":"Shark Moccasins",
+       "name_fr-fr":"Mocassins squale",
+       "name_fr-ca":"Mocassins requin",
+       "name_es-es":"Mocasín caimán",
+       "name_es-xl":"Caimanes",
+       "name_de":"Hai-Schnürer",
+       "name_it":"Scarpe aggressive"
       },
       {  
          "category":"Clothing",
@@ -1692,7 +2589,11 @@
          "rarity":"3",
          "cost":"8,400",
          "name":"Shirt & Tie",
-         "name_eu":"Shirt and Tie"
+         "name_eu":"Shirt and Tie",
+       "name_fr-fr":"Chemise cravate",
+       "name_es-es":"Camisa con corbata",
+       "name_de":"Hemd mit Krawatte",
+       "name_it":"Camicia con cravatta"
       },
       {  
          "category":"Headgear",
@@ -1700,7 +2601,13 @@
          "brand":"Inkline",
          "rarity":"1",
          "cost":"600",
-         "name":"Short Beanie"
+         "name":"Short Beanie",
+       "name_fr-fr":"Bonnet court",
+       "name_fr-ca":"Tuque courte",
+       "name_es-es":"Gorro liso",
+       "name_es-xl":"Gorrito liso",
+       "name_de":"Beanie",
+       "name_it":"Zuccotto"
       },
       {  
          "category":"Clothing",
@@ -1709,7 +2616,11 @@
          "rarity":"1",
          "cost":"400",
          "name":"Shrimp-Pink Polo",
-         "name_eu":"Pink Shrimp Polo"
+         "name_eu":"Pink Shrimp Polo",
+       "name_fr-fr":"Polo rose crevette",
+       "name_es-es":"Polo salmón",
+       "name_de":"Krabbencocktail-Polohemd",
+       "name_it":"Polo rosa"
       },
       {  
          "category":"Headgear",
@@ -1717,7 +2628,13 @@
          "brand":"Skalop",
          "rarity":"2",
          "cost":"2,500",
-         "name":"Skate Helmet"
+         "name":"Skate Helmet",
+       "name_fr-fr":"   Casque de skate",
+       "name_fr-ca":"Casque de planchiste",
+       "name_es-es":"Casco skate",
+       "name_es-xl":"Casco de patinador",
+       "name_de":"Skateboardhelm",
+       "name_it":"Casco da skate"
       },
       {  
          "category":"Headgear",
@@ -1725,7 +2642,12 @@
          "brand":"Forge",
          "rarity":"2",
          "cost":"1550",
-         "name":"Skull Bandana"
+         "name":"Skull Bandana",
+       "name_fr-fr":"Bandana crâne",
+       "name_es-es":"Pañuelo calavera",
+       "name_es-xl":"Pañuelo colmillos",
+       "name_de":"Totenkopf-Bandana",
+       "name_it":"Bandana teschio"
       },
       {  
          "category":"Clothing",
@@ -1734,7 +2656,13 @@
          "rarity":"1",
          "cost":"500",
          "name":"Sky-Blue Squideye",
-         "name_eu":"Sky Blue Squideye"
+         "name_eu":"Sky Blue Squideye",
+       "name_fr-fr":"T-shirt OculR bleu clair",
+       "name_fr-ca":"T-shirt OculR bleu ciel",
+       "name_es-es":"Ojos calamar azul",
+       "name_es-xl":"Ojos calamar azul cielo",
+       "name_de":"Hellblaues Krakenaugen-Shirt",
+       "name_it":"Maglia azzurromare"
       },
       {  
          "category":"Clothing",
@@ -1742,7 +2670,13 @@
          "brand":"Takoroka",
          "rarity":"2",
          "cost":"1,800",
-         "name":"Slipstream United"
+         "name":"Slipstream United",
+       "name_fr-fr":"Maillot AS Vortex",
+       "name_fr-ca":"",
+       "name_es-es":"Camiseta Chipirona FC",
+       "name_es-xl":"C.D. Cardumen",
+       "name_de":"FC-Barrakuda-Trikot",
+       "name_it":"AS Medusana"
       },
       {  
          "category":"Headgear",
@@ -1751,7 +2685,11 @@
          "rarity":"2",
          "cost":"3,000",
          "name":"Snorkel Mask",
-         "name_eu":"Snorkel"
+         "name_eu":"Snorkel",
+       "name_fr-fr":"Masque et tuba",
+       "name_es-es":"Gafas con tubo",
+       "name_de":"Schnorchel",
+       "name_it":"Maschera con tubo"
       },
       {  
          "category":"Shoes",
@@ -1759,7 +2697,12 @@
          "brand":"Tentatek",
          "rarity":"3",
          "cost":"8,000",
-         "name":"Snowy Down Boots"
+         "name":"Snowy Down Boots",
+       "name_fr-fr":"Après-skis poudreuse",
+       "name_es-es":"Bota de nieve",
+       "name_es-xl":"Botas árcticas",
+       "name_de":"Weiße Daunenstiefel",
+       "name_it":"Stivali da neve"
       },
       {  
          "category":"Shoes",
@@ -1768,7 +2711,13 @@
          "rarity":"3",
          "cost":"9,600",
          "name":"Soccer Cleats",
-         "name_eu":"Football Studs"
+         "name_eu":"Football Studs",
+       "name_fr-fr":"Chaussures à crampons",
+       "name_fr-ca":"Souliers de soccer",
+       "name_es-es":"Bota de tacos",
+       "name_es-xl":"Tacos",
+       "name_de":"Stollenschuhe",
+       "name_it":"Scarpe da calcio"
       },
       {  
          "category":"Headgear",
@@ -1777,7 +2726,13 @@
          "rarity":"3",
          "cost":"8000",
          "name":"Soccer Headband",
-         "name_eu":"Football Headband"
+         "name_eu":"Football Headband",
+       "name_fr-fr":"Bandeau de foot",
+       "name_fr-ca":"Bandeau de soccer",
+       "name_es-es":"Cinta fútbol",
+       "name_es-xl":"Cinta futbolista",
+       "name_de":"Fußballstirnband",
+       "name_it":"Fascia da calcio"
       },
       {  
          "category":"Headgear",
@@ -1785,7 +2740,11 @@
          "brand":"Forge",
          "rarity":"3",
          "cost":"9700",
-         "name":"Special Forces Beret"
+         "name":"Special Forces Beret",
+       "name_fr-fr":"Béret unité spéciale",
+       "name_es-es":"Boina fuerzas especiales",
+       "name_de":"Barett",
+       "name_it":"Berretto trote speciali"
       },
       {  
          "category":"Headgear",
@@ -1793,7 +2752,12 @@
          "brand":"Forge",
          "rarity":"2",
          "cost":"2,800",
-         "name":"Splash Goggles"
+         "name":"Splash Goggles",
+       "name_fr-fr":"Masque de plongée",
+       "name_es-es":"Gafas de buceo",
+       "name_es-xl":"Gafas de buzo",
+       "name_de":"Taucherbrille",
+       "name_it":"Maschera da sub"
       },
       {  
          "category":"Clothing",
@@ -1801,7 +2765,12 @@
          "brand":"SquidForce",
          "rarity":"3",
          "cost":"N/A",
-         "name":"Splatfest Tee"
+         "name":"Splatfest Tee",
+       "name_fr-fr":"T-shirt festif",
+       "name_es-es":"Camiseta festiva",
+       "name_es-xl":"",
+       "name_de":"Splatfest-Shirt",
+       "name_it":"T-shirt festival"
       },
       {  
          "category":"Headgear",
@@ -1809,7 +2778,13 @@
          "brand":"Skalop",
          "rarity":"1",
          "cost":"800",
-         "name":"Sporty Bobble Hat"
+         "name":"Sporty Bobble Hat",
+       "name_fr-fr":"Bonnet ski à pompon",
+       "name_fr-ca":"Tuque de ski à pompon",
+       "name_es-es":"Gorro con borla negro",
+       "name_es-xl":"Gorro con borla llamativo",
+       "name_de":"Winter-Pudelmütze",
+       "name_it":"Pon pon sportivo"
       },
       {  
          "category":"Headgear",
@@ -1817,7 +2792,12 @@
          "brand":"Zink",
          "rarity":"1",
          "cost":"400",
-         "name":"Squash Headband"
+         "name":"Squash Headband",
+       "name_fr-fr":"Bandeau de squash",
+       "name_es-es":"Cinta squash",
+       "name_es-xl":"Cinta de squash",
+       "name_de":"Squashstirnband",
+       "name_it":"Fascia da squash"
       },
       {  
          "category":"Clothing",
@@ -1826,7 +2806,13 @@
          "rarity":"1",
          "cost":"800",
          "name":"Squid-Pattern Waistcoat",
-         "name_eu":"Squid Pattern Waistcoat"
+         "name_eu":"Squid Pattern Waistcoat",
+       "name_fr-fr":"Gilet motif calamar",
+       "name_fr-ca":"Veste motif calamar",
+       "name_es-es":"Chaleco con camisa",
+       "name_es-xl":"Chaleco calamar",
+       "name_de":"Karohemd mit Weste",
+       "name_it":"Gilè calamaro"
       },
       {  
          "category":"Headgear",
@@ -1834,7 +2820,11 @@
          "brand":"Skalop",
          "rarity":"3",
          "cost":"8,500",
-         "name":"Squid-Stitch Cap"
+         "name":"Squid-Stitch Cap",
+       "name_fr-fr":"Casquette pied-de-poulpe",
+       "name_es-es":"Gorra bicolor",
+       "name_de":"Pfeilmuster-Kappe",
+       "name_it":"Berretto hip-hop"
       },
       {  
          "category":"Shoes",
@@ -1843,7 +2833,12 @@
          "rarity":"2",
          "cost":"1,500",
          "name":"Squid-Stitch Slip-Ons",
-         "name_eu":"Squid-Stitch Plimsolls"
+         "name_eu":"Squid-Stitch Plimsolls",
+       "name_fr-fr":"Mocassins pied-de-poulpe",
+       "name_es-es":"Playera bicolor",
+       "name_es-xl":"Mocasines bicolor",
+       "name_de":"Pfeil-Slip-ons",
+       "name_it":"Espadrillas hip-hop"
       },
       {  
          "category":"Clothing",
@@ -1851,7 +2846,12 @@
          "brand":"Skalop",
          "rarity":"1",
          "cost":"400",
-         "name":"Squid-Stitch Tee"
+         "name":"Squid-Stitch Tee",
+       "name_fr-fr":"T-shirt pied-de-poulpe",
+       "name_es-es":"Camiseta bicolor",
+       "name_es-xl":"Camiseta bicolor estampada",
+       "name_de":"Pfeilmuster-Shirt",
+       "name_it":"T-shirt hip-hop"
       },
       {  
          "category":"Headgear",
@@ -1859,7 +2859,13 @@
          "brand":"amiibo",
          "rarity":"2",
          "cost":"N/A",
-         "name":"Squid Hairclip"
+         "name":"Squid Hairclip",
+       "name_fr-fr":"Barrette seiche",
+       "name_fr-ca":"Barrette calmar",
+       "name_es-es":"Horquilla calamar",
+       "name_es-xl":"Pasador de calamar",
+       "name_de":"Tintenfisch-Spange",
+       "name_it":"Fermaglio calamaro"
       },
       {  
          "category":"Headgear",
@@ -1867,7 +2873,13 @@
          "brand":"Skalop",
          "rarity":"3",
          "cost":"9500",
-         "name":"Squid Nordic"
+         "name":"Squid Nordic",
+       "name_fr-fr":"Bonnet sports d'hiver",
+       "name_fr-ca":"Tuque sports d'hiver",
+       "name_es-es":"Gorro de punto",
+       "name_es-xl":"Gorro alpino con gafas",
+       "name_de":"Wintersportmütze",
+       "name_it":"Cappello da neve"
       },
       {  
          "category":"Clothing",
@@ -1875,7 +2887,12 @@
          "brand":"Zekko",
          "rarity":"3",
          "cost":"8,900",
-         "name":"Squid Satin Jacket"
+         "name":"Squid Satin Jacket",
+       "name_fr-fr":"Blouson calamar",
+       "name_fr-ca":"Manteau satin calmar",
+       "name_es-es":"Chaqueta satinada calamar",
+       "name_de":"Katzen-Baseballjacke",
+       "name_it":"Giubbino furia"
       },
       {  
          "category":"Clothing",
@@ -1883,7 +2900,13 @@
          "brand":"SquidForce",
          "rarity":"1",
          "cost":"600",
-         "name":"Squidmark LS"
+         "name":"Squidmark LS",
+       "name_fr-fr":"Haut K-Rex",
+       "name_fr-ca":"Gilet Kalmarus",
+       "name_es-es":"Calamar larga",
+       "name_es-xl":"Calamar manga larga",
+       "name_de":"Kalmar-Longsleeve",
+       "name_it":"Maglia da battaglia"
       },
       {  
          "category":"Clothing",
@@ -1891,7 +2914,12 @@
          "brand":"SquidForce",
          "rarity":"1",
          "cost":"800",
-         "name":"Squidmark Sweat"
+         "name":"Squidmark Sweat",
+       "name_fr-fr":"Sweat jaune K-Rex",
+       "name_fr-ca":"Coton ouaté Kalmarus",
+       "name_es-es":"Sudadera mostaza",
+       "name_de":"Kalmar-Sweatshirt",
+       "name_it":"Maglione CalamaX"
       },
       {  
          "category":"Clothing",
@@ -1899,7 +2927,13 @@
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"650",
-         "name":"Squidstar Waistcoat"
+         "name":"Squidstar Waistcoat",
+       "name_fr-fr":"Veston motif étoile",
+       "name_fr-ca":"Veste motif étoile",
+       "name_es-es":"Chaleco con camisa lisa",
+       "name_es-xl":"Chaleco de domingo",
+       "name_de":"Kalmarstern-Weste",
+       "name_it":"Gilè aquilamaro"
       },
       {  
          "category":"Headgear",
@@ -1907,7 +2941,12 @@
          "brand":"Skalop",
          "rarity":"2",
          "cost":"2,300",
-         "name":"Squidvader Cap"
+         "name":"Squidvader Cap",
+       "name_fr-fr":"Casquette Sea Invader",
+       "name_es-es":"Gorra calamarciano",
+       "name_es-xl":"Gorra calalienígena",
+       "name_de":"Inkvader-Kappe",
+       "name_it":"Berretto Inkvaders"
       },
       {  
          "category":"Shoes",
@@ -1916,7 +2955,13 @@
          "rarity":"1",
          "cost":"800",
          "name":"Squink Wingtips",
-         "name_eu":"Squid Ink Brogues"
+         "name_eu":"Squid Ink Brogues",
+       "name_fr-fr":"Richelieu encre-de-seiche",
+       "name_fr-ca":"Chaussures sépia",
+       "name_es-es":"Zapato clásico",
+       "name_es-xl":"Zapatos brogue",
+       "name_de":"Sepibrogues",
+       "name_it":"Eleganti nero di seppia"
       },
       {  
          "category":"Headgear",
@@ -1924,7 +2969,11 @@
          "brand":"Forge",
          "rarity":"3",
          "cost":"9,800",
-         "name":"Stealth Goggles"
+         "name":"Stealth Goggles",
+       "name_fr-fr":"Casque vision nocturne",
+       "name_es-es":"Visor nocturno",
+       "name_de":"Nachtsichtgerät",
+       "name_it":"Casco a infrarossi"
       },
       {  
          "category":"Shoes",
@@ -1932,7 +2981,13 @@
          "brand":"Splash Mob",
          "rarity":"1",
          "cost":"700",
-         "name":"Strapping Reds"
+         "name":"Strapping Reds",
+       "name_fr-fr":"Baskets à scratch rouges",
+       "name_fr-ca":"Espadrilles rouges",
+       "name_es-es":"Bamba ultrarroja",
+       "name_es-xl":"Tenis ultrarrojos",
+       "name_de":"Ultrarote Klettsneaker",
+       "name_it":"Ultrarosse a strappo"
       },
       {  
          "category":"Shoes",
@@ -1940,7 +2995,13 @@
          "brand":"Splash Mob",
          "rarity":"3",
          "cost":"10,000",
-         "name":"Strapping Whites"
+         "name":"Strapping Whites",
+       "name_fr-fr":"Baskets à scratch blanches",
+       "name_fr-ca":"Espadrilles blanches",
+       "name_es-es":"Bamba ultrablanca",
+       "name_es-xl":"Tenis ultrablancos",
+       "name_de":"Ultraweiße Klettsneaker",
+       "name_it":"Ultrabianche a strappo"
       },
       {  
          "category":"Headgear",
@@ -1948,7 +3009,12 @@
          "brand":"Skalop",
          "rarity":"1",
          "cost":"500",
-         "name":"Straw Boater"
+         "name":"Straw Boater",
+       "name_fr-fr":"Canotier",
+       "name_es-es":"Sombrero de paja",
+       "name_es-xl":"Canotier",
+       "name_de":"Boater",
+       "name_it":"Cappello di paglia"
       },
       {  
          "category":"Headgear",
@@ -1957,7 +3023,12 @@
          "rarity":"1",
          "cost":"600",
          "name":"Streetstyle Cap",
-         "name_eu":"Fashion Cap"
+         "name_eu":"Fashion Cap",
+       "name_fr-fr":"Casquette branchée",
+       "name_es-es":"Gorra de diseño",
+       "name_es-xl":"Gorra turquesa",
+       "name_de":"Style-Kappe",
+       "name_it":"Berretto alla moda"
       },
       {  
          "category":"Headgear",
@@ -1965,7 +3036,13 @@
          "brand":"Splash Mob",
          "rarity":"2",
          "cost":"1,500",
-         "name":"Striped Beanie"
+         "name":"Striped Beanie",
+       "name_fr-fr":"Bonnet à rayures",
+       "name_fr-ca":"Tuque à rayures",
+       "name_es-es":"Gorro a rayas",
+       "name_es-xl":"Gorrito rayado",
+       "name_de":"Streifen-Beanie",
+       "name_it":"Zuccotto a righe"
       },
       {  
          "category":"Clothing",
@@ -1973,7 +3050,13 @@
          "brand":"Inkline",
          "rarity":"1",
          "cost":"700",
-         "name":"Striped Peaks LS"
+         "name":"Striped Peaks LS",
+       "name_fr-fr":"Haut Abysma",
+       "name_fr-ca":"Gilet Abysma",
+       "name_es-es":"Cumbres larga",
+       "name_es-xl":"Cumbres a rayas manga larga",
+       "name_de":"Streifengipfel-Longsleeve",
+       "name_it":"Maglia cime e righe"
       },
       {  
          "category":"Clothing",
@@ -1981,7 +3064,12 @@
          "brand":"Takoroka",
          "rarity":"2",
          "cost":"2,300",
-         "name":"Striped Rugby"
+         "name":"Striped Rugby",
+       "name_fr-fr":"Haut rayé rugby",
+       "name_fr-ca":"Gilet rayé rugby",
+       "name_es-es":"Rugby rayas",
+       "name_de":"Gestreiftes Lang-Polohemd",
+       "name_it":"Maglia rugby a righe"
       },
       {  
          "category":"Clothing",
@@ -1989,7 +3077,11 @@
          "brand":"Splash Mob",
          "rarity":"2",
          "cost":"2,200",
-         "name":"Striped Shirt"
+         "name":"Striped Shirt",
+       "name_fr-fr":"Chemise à rayures",
+       "name_es-es":"Camisa rayas",
+       "name_de":"Streifenhemd",
+       "name_it":"Camicia a righe"
       },
       {  
          "category":"Headgear",
@@ -1997,7 +3089,11 @@
          "brand":"Forge",
          "rarity":"2",
          "cost":"2,800",
-         "name":"Studio Headphones"
+         "name":"Studio Headphones",
+       "name_fr-fr":"Casque pro",
+       "name_es-es":"Auriculares pro",
+       "name_de":"Studio-Kopfhörer",
+       "name_it":"Cuffie pro"
       },
       {  
          "category":"Headgear",
@@ -2005,7 +3101,12 @@
          "brand":"Tentatek",
          "rarity":"2",
          "cost":"2,600",
-         "name":"Sun Visor"
+         "name":"Sun Visor",
+       "name_fr-fr":"Visière bronzette",
+       "name_fr-ca":"Visière orange",
+       "name_es-es":"Visera transparente",
+       "name_de":"Sonnen-Schirmband",
+       "name_it":"Visiera parasole"
       },
       {  
          "category":"Clothing",
@@ -2014,7 +3115,11 @@
          "rarity":"1",
          "cost":"300",
          "name":"Sunny-Day Tee",
-         "name_eu":"Sunny Day Tee"
+         "name_eu":"Sunny Day Tee",
+       "name_fr-fr":"T-shirt belle journée",
+       "name_es-es":"Camiseta sol",
+       "name_de":"Sonnenoranges Shirt",
+       "name_it":"T-shirt solearancio"
       },
       {  
          "category":"Headgear",
@@ -2022,7 +3127,13 @@
          "brand":"Takoroka",
          "rarity":"1",
          "cost":"400",
-         "name":"Takoroka Mesh"
+         "name":"Takoroka Mesh",
+       "name_fr-fr":"Casquette filet Cubic",
+       "name_fr-ca":"Casquette filet Pionic",
+       "name_es-es":"Gorra malla Sepioca",
+       "name_es-xl":"Gorra Pulpioka",
+       "name_de":"Kalamati-Netzkappe",
+       "name_it":"Berretto Sepia"
       },
       {  
          "category":"Shoes",
@@ -2030,7 +3141,13 @@
          "brand":"Rockenberg",
          "rarity":"2",
          "cost":"3,000",
-         "name":"Tan Work Boots"
+         "name":"Tan Work Boots",
+       "name_fr-fr":"Bottes sécurité nubuck",
+       "name_fr-ca":"Bottes sécurité beige",
+       "name_es-es":"Bota piel marrón",
+       "name_es-xl":"Botas de trabajo marrones",
+       "name_de":"Arbeitsstiefel",
+       "name_it":"Scarponi marroni"
       },
       {  
          "category":"Headgear",
@@ -2038,7 +3155,12 @@
          "brand":"Tentatek",
          "rarity":"1",
          "cost":"300",
-         "name":"Tennis Headband"
+         "name":"Tennis Headband",
+       "name_fr-fr":"Bandeau de tennis",
+       "name_es-es":"Cinta tenis",
+       "name_es-xl":"Cinta de tenis",
+       "name_de":"Tennisstirnband",
+       "name_it":"Fascia da tennis"
       },
       {  
          "category":"Headgear",
@@ -2046,7 +3168,12 @@
          "brand":"Forge",
          "rarity":"3",
          "cost":"11,000",
-         "name":"Tentacles Helmet"
+         "name":"Tentacles Helmet",
+       "name_fr-fr":"Casque football US",
+       "name_fr-ca":"Casque de football",
+       "name_es-es":"Casco fútbol americano",
+       "name_de":"Tentacles-Helm",
+       "name_it":"Casco tentacoli"
       },
       {  
          "category":"Headgear",
@@ -2055,7 +3182,12 @@
          "rarity":"1",
          "cost":"350",
          "name":"Tinted Shades",
-         "name_eu":"Coloured Shades"
+         "name_eu":"Coloured Shades",
+       "name_fr-fr":"Lunettes colorées",
+       "name_fr-ca":"Lunettes teintées",
+       "name_es-es":"Gafas tintadas",
+       "name_de":"Getönte Brille",
+       "name_it":"Occhiali colorati"
       },
       {  
          "category":"Clothing",
@@ -2063,7 +3195,11 @@
          "brand":"Famitsu",
          "rarity":"2",
          "cost":"2,000",
-         "name":"Traditional Apron"
+         "name":"Traditional Apron",
+       "name_fr-fr":"Tablier traditionnel",
+       "name_es-es":"Delantal tradicional",
+       "name_de":"Traditionelle Schürze",
+       "name_it":"Grembiule folcloristico"
       },
       {  
          "category":"Headgear",
@@ -2071,7 +3207,11 @@
          "brand":"Famitsu",
          "rarity":"2",
          "cost":"1600",
-         "name":"Traditional Headband"
+         "name":"Traditional Headband",
+       "name_fr-fr":"Bandeau traditionnel",
+       "name_es-es":"Cinta tradicional",
+       "name_de":"Traditionelles Stirnband",
+       "name_it":"Fascia folcloristica"
       },
       {  
          "category":"Shoes",
@@ -2079,7 +3219,13 @@
          "brand":"Famitsu",
          "rarity":"2",
          "cost":"1700",
-         "name":"Traditional Sandals"
+         "name":"Traditional Sandals",
+       "name_fr-fr":"Geta traditionnelles",
+       "name_fr-ca":"Sandales traditionnelles",
+       "name_es-es":"Sandalia tradicional",
+       "name_es-xl":"Sandalias tradicionales",
+       "name_de":"Traditionelle Sandalen",
+       "name_it":"Zoccoli folcloristici"
       },
       {  
          "category":"Shoes",
@@ -2087,7 +3233,13 @@
          "brand":"Inkline",
          "rarity":"2",
          "cost":"2,800",
-         "name":"Trail Boots"
+         "name":"Trail Boots",
+       "name_fr-fr":"Chaussures rando",
+       "name_fr-ca":"Bottes de rando",
+       "name_es-es":"Bota montaña",
+       "name_es-xl":"Botas de montaña",
+       "name_de":"Wanderstiefel",
+       "name_it":"Scarpe da trekking"
       },
       {  
          "category":"Headgear",
@@ -2095,7 +3247,12 @@
          "brand":"Forge",
          "rarity":"2",
          "cost":"3000",
-         "name":"Treasure Hunter"
+         "name":"Treasure Hunter",
+       "name_fr-fr":"Cloche d'aventurier",
+       "name_es-es":"Gorro buscatesoros",
+       "name_es-xl":"Sombrero buscatesoros",
+       "name_de":"Expeditionshelm",
+       "name_it":"Cappello avventuriero"
       },
       {  
          "category":"Clothing",
@@ -2104,7 +3261,12 @@
          "rarity":"1",
          "cost":"700",
          "name":"Tricolor Rugby",
-         "name_eu":"Tricolour Rugby"
+         "name_eu":"Tricolour Rugby",
+       "name_fr-fr":"Haut rayé tricolore",
+       "name_fr-ca":"Gilet rayé tricolore",
+       "name_es-es":"Rugby tricolor",
+       "name_de":"Trikolor-Lang-Polohemd",
+       "name_it":"Maglia rugby tricolore"
       },
       {  
          "category":"Shoes",
@@ -2112,7 +3274,11 @@
          "brand":"Rockenberg",
          "rarity":"2",
          "cost":"2,800",
-         "name":"Turquoise Kicks"
+         "name":"Turquoise Kicks",
+       "name_fr-fr":"Compensées turquoise",
+       "name_es-es":"Suela extra turquesa",
+       "name_de":"Türkise Plateau-Sneaker",
+       "name_it":"Rialzate turchesi"
       },
       {  
          "category":"Headgear",
@@ -2121,7 +3287,12 @@
          "rarity":"1",
          "cost":"700",
          "name":"Two-Stripe Mesh",
-         "name_eu":"2-Stripe Mesh Cap"
+         "name_eu":"2-Stripe Mesh Cap",
+       "name_fr-fr":"Casquette à 2 bandes",
+       "name_es-es":"Gorra con líneas",
+       "name_es-xl":"Gorra de dos bandas",
+       "name_de":"Zweistreifen-Netzkappe",
+       "name_it":"Berretto a righe"
       },
       {  
          "category":"Headgear",
@@ -2129,7 +3300,13 @@
          "brand":"Skalop",
          "rarity":"1",
          "cost":"600",
-         "name":"Urchins Cap"
+         "name":"Urchins Cap",
+       "name_fr-fr":"Casquette baseball",
+       "name_fr-ca":"Casquette d'oursins",
+       "name_es-es":"Gorra béisbol",
+       "name_es-xl":"Gorra de Erizos",
+       "name_de":"Urchins-Kappe",
+       "name_it":"Berretto AS Riccidimare"
       },
       {  
          "category":"Clothing",
@@ -2137,7 +3314,13 @@
          "brand":"Zink",
          "rarity":"1",
          "cost":"700",
-         "name":"Urchins Jersey"
+         "name":"Urchins Jersey",
+       "name_fr-fr":"Chemisette baseball",
+       "name_fr-ca":"Gilet d'oursins",
+       "name_es-es":"Camisa béisbol",
+       "name_es-xl":"Camisa Erizos",
+       "name_de":"Urchins-Baseball-Trikot",
+       "name_it":"Divisa AS Riccidimare"
       },
       {  
          "category":"Clothing",
@@ -2145,7 +3328,13 @@
          "brand":"Splash Mob",
          "rarity":"1",
          "cost":"700",
-         "name":"Varsity Baseball LS"
+         "name":"Varsity Baseball LS",
+       "name_fr-fr":"Haut université",
+       "name_fr-ca":"Gilet baseball université",
+       "name_es-es":"Béisbol universitario",
+       "name_es-xl":"Béisbol universitario manga larga",
+       "name_de":"Grau-blaues Baseball-Shirt",
+       "name_it":"Maglia college"
       },
       {  
          "category":"Clothing",
@@ -2153,7 +3342,13 @@
          "brand":"Zekko",
          "rarity":"3",
          "cost":"12,000",
-         "name":"Varsity Jacket"
+         "name":"Varsity Jacket",
+       "name_fr-fr":"Blouson université",
+       "name_fr-ca":"Manteau université",
+       "name_es-es":"Cazadora estudiante",
+       "name_es-xl":"Chaqueta estudiante",
+       "name_de":"Rot-weiße Collegejacke",
+       "name_it":"Giubbino da stadio"
       },
       {  
          "category":"Clothing",
@@ -2162,7 +3357,11 @@
          "rarity":"3",
          "cost":"9,000",
          "name":"Vintage Check Shirt",
-         "name_eu":"Vintage Check"
+         "name_eu":"Vintage Check",
+       "name_fr-fr":"Chemise à carreaux rétro",
+       "name_es-es":"Camisa cuadros retro",
+       "name_de":"Retro-Karohemd",
+       "name_it":"Camicia vintage"
       },
       {  
          "category":"Headgear",
@@ -2170,7 +3369,13 @@
          "brand":"Skalop",
          "rarity":"3",
          "cost":"10,000",
-         "name":"Visor Skate Helmet"
+         "name":"Visor Skate Helmet",
+       "name_fr-fr":"Casque de skate pro",
+       "name_fr-ca":"Casque de planchiste pro",
+       "name_es-es":"Casco skate con visera",
+       "name_es-xl":"Casco de patinador + visera",
+       "name_de":"Schirmhelm",
+       "name_it":"Casco con visiera"
       },
       {  
          "category":"Clothing",
@@ -2178,7 +3383,12 @@
          "brand":"Firefin",
          "rarity":"1",
          "cost":"600",
-         "name":"White 8-Bit FishFry"
+         "name":"White 8-Bit FishFry",
+       "name_fr-fr":"T-shirt 8 bits blanc",
+       "name_es-es":"Retrocamiseta blanca",
+       "name_es-xl":"Camiseta retro blanca",
+       "name_de":"Weißes Rilax-Pixel-Shirt",
+       "name_it":"T-shirt 8 bit bianca"
       },
       {  
          "category":"Clothing",
@@ -2186,7 +3396,11 @@
          "brand":"SquidForce",
          "rarity":"3",
          "cost":"8,000",
-         "name":"White Anchor Tee"
+         "name":"White Anchor Tee",
+       "name_fr-fr":"T-shirt ancre blanc",
+       "name_es-es":"Ancla blanca",
+       "name_de":"Weißes Anker-Shirt",
+       "name_it":"T-shirt ancora bianca"
       },
       {  
          "category":"Headgear",
@@ -2194,7 +3408,12 @@
          "brand":"Zekko",
          "rarity":"3",
          "cost":"8,000",
-         "name":"White Arrowbands"
+         "name":"White Arrowbands",
+       "name_fr-fr":"Lunettes blanches à élastique",
+       "name_es-es":"Gafas ajustables blancas",
+       "name_es-xl":"Gafas deportivas blancas",
+       "name_de":"Weiße Sportbandbrille",
+       "name_it":"Occhiali bianchi"
       },
       {  
          "category":"Shoes",
@@ -2202,7 +3421,12 @@
          "brand":"Takoroka",
          "rarity":"2",
          "cost":"2,500",
-         "name":"White Arrows"
+         "name":"White Arrows",
+       "name_fr-fr":"Flèches blanches",
+       "name_es-es":"Velcro blanca",
+       "name_es-xl":"Velcro blancos",
+       "name_de":"Weiße Pfeilschuhe",
+       "name_it":"Arrow bianche"
       },
       {  
          "category":"Clothing",
@@ -2210,7 +3434,13 @@
          "brand":"Rockenberg",
          "rarity":"1",
          "cost":"800",
-         "name":"White Baseball LS"
+         "name":"White Baseball LS",
+       "name_fr-fr":"Haut sportif blanc",
+       "name_fr-ca":"Gilet sportif blanc et noir",
+       "name_es-es":"Béisbol blanca",
+       "name_es-xl":"Béisbol blanca manga larga",
+       "name_de":"Weißes Baseball-Shirt",
+       "name_it":"Maglia sport bianca"
       },
       {  
          "category":"Headgear",
@@ -2218,7 +3448,11 @@
          "brand":"SquidForce",
          "rarity":"1",
          "cost":"N/A",
-         "name":"White Headband"
+         "name":"White Headband",
+       "name_fr-fr":"Bandeau blanc",
+       "name_es-es":"Cinta blanca",
+       "name_de":"Weißes Stirnband",
+       "name_it":"Fascia bianca"
       },
       {  
          "category":"Clothing",
@@ -2226,7 +3460,13 @@
          "brand":"Rockenberg",
          "rarity":"3",
          "cost":"11,800",
-         "name":"White Inky Rider"
+         "name":"White Inky Rider",
+       "name_fr-fr":"Blouson en cuir blanc",
+       "name_fr-ca":"Manteau cuir blanc",
+       "name_es-es":"Chupa motera blanca",
+       "name_es-xl":"Chaqueta roquera blanca",
+       "name_de":"Weiße Bikerjacke",
+       "name_it":"Chiodo bianco"
       },
       {  
          "category":"Shoes",
@@ -2234,7 +3474,11 @@
          "brand":"Rockenberg",
          "rarity":"1",
          "cost":"800",
-         "name":"White Kicks"
+         "name":"White Kicks",
+       "name_fr-fr":"Compensées blanches",
+       "name_es-es":"Suela extra blanca",
+       "name_de":"Weiße Plateau-Sneaker",
+       "name_it":"Rialzate bianche"
       },
       {  
          "category":"Clothing",
@@ -2242,7 +3486,13 @@
          "brand":"SquidForce",
          "rarity":"1",
          "cost":"600",
-         "name":"White LS"
+         "name":"White LS",
+       "name_fr-fr":"Haut blanc",
+       "name_fr-ca":"Gilet blanc",
+       "name_es-es":"Kalamas blanca larga",
+       "name_es-xl":"Kalamas blanca manga larga",
+       "name_de":"Weißes Longsleeve",
+       "name_it":"Maglia bianca"
       },
       {  
          "category":"Clothing",
@@ -2250,7 +3500,13 @@
          "brand":"SquidForce",
          "rarity":"1",
          "cost":"500",
-         "name":"White Layered LS"
+         "name":"White Layered LS",
+       "name_fr-fr":"Haut double blanc",
+       "name_fr-ca":"Gilet double blanc",
+       "name_es-es":"Blanca doble",
+       "name_es-xl":"Camiseta de capas blanca",
+       "name_de":"Weißes Lagen-Shirt",
+       "name_it":"A strati bianca"
       },
       {  
          "category":"Clothing",
@@ -2258,7 +3514,13 @@
          "brand":"KOG",
          "rarity":"1",
          "cost":"700",
-         "name":"White Line Tee"
+         "name":"White Line Tee",
+       "name_fr-fr":"T-shirt ligne blanc",
+       "name_fr-ca":"T-shirt blanc 1 ligne",
+       "name_es-es":"Blanca con línea",
+       "name_es-xl":"Camiseta a rayas blanca",
+       "name_de":"Weißes Linien-Shirt",
+       "name_it":"T-shirt bianca linea"
       },
       {  
          "category":"Clothing",
@@ -2266,7 +3528,12 @@
          "brand":"Forge",
          "rarity":"2",
          "cost":"3,000",
-         "name":"White Sailor Suit"
+         "name":"White Sailor Suit",
+       "name_fr-fr":"Uniforme marin blanc",
+       "name_es-es":"Uniforme marinero blanco",
+       "name_es-xl":"Uniforme naval blanco",
+       "name_de":"Weißes Matrosen-Shirt",
+       "name_it":"Felpa marinara bianca"
       },
       {  
          "category":"Shoes",
@@ -2274,7 +3541,12 @@
          "brand":"Zink",
          "rarity":"1",
          "cost":"600",
-         "name":"White Seahorses"
+         "name":"White Seahorses",
+       "name_fr-fr":"Hippo blanches",
+       "name_es-es":"Hipocampo blanca",
+       "name_es-xl":"Hipocampo blancos",
+       "name_de":"Weiße Low-Top-Sneaker",
+       "name_it":"Runner bianche"
       },
       {  
          "category":"Clothing",
@@ -2282,7 +3554,11 @@
          "brand":"Splash Mob",
          "rarity":"2",
          "cost":"1,800",
-         "name":"White Shirt"
+         "name":"White Shirt",
+       "name_fr-fr":"Chemisette blanche",
+       "name_es-es":"Camisa blanca",
+       "name_de":"Weißes Kurzarmhemd",
+       "name_it":"Camicia bianca"
       },
       {  
          "category":"Clothing",
@@ -2290,7 +3566,13 @@
          "brand":"Splash Mob",
          "rarity":"2",
          "cost":"2,300",
-         "name":"White Striped LS"
+         "name":"White Striped LS",
+       "name_fr-fr":"Haut rayé blanc",
+       "name_fr-ca":"Gilet rayé blanc",
+       "name_es-es":"Blanca larga rayas",
+       "name_es-xl":"Blanca a rayas manga larga",
+       "name_de":"Weißes Streifen-Longsleeve",
+       "name_it":"Maglia a righe"
       },
       {  
          "category":"Clothing",
@@ -2298,7 +3580,11 @@
          "brand":"SquidForce",
          "rarity":"1",
          "cost":"400",
-         "name":"White Tee"
+         "name":"White Tee",
+       "name_fr-fr":"T-shirt blanc",
+       "name_es-es":"Camiseta blanca",
+       "name_de":"Weißes Shirt",
+       "name_it":"T-shirt bianca"
       },
       {  
          "category":"Clothing",
@@ -2306,7 +3592,13 @@
          "brand":"SquidForce",
          "rarity":"1",
          "cost":"500",
-         "name":"Yellow Layered LS"
+         "name":"Yellow Layered LS",
+       "name_fr-fr":"Haut double moutarde",
+       "name_fr-ca":"Gilet double moutarde",
+       "name_es-es":"Mostaza doble",
+       "name_es-xl":"Camiseta de capas amarilla",
+       "name_de":"Gelbes Lagen-Shirt",
+       "name_it":"A strati gialla"
       },
       {  
          "category":"Shoes",
@@ -2314,7 +3606,12 @@
          "brand":"Zink",
          "rarity":"2",
          "cost":"1,500",
-         "name":"Yellow Seahorses"
+         "name":"Yellow Seahorses",
+       "name_fr-fr":"Hippo jaunes",
+       "name_es-es":"Hipocampo amarilla",
+       "name_es-xl":"Hipocampo amarillos",
+       "name_de":"Gelbe Low-Top-Sneaker",
+       "name_it":"Runner verdeoro"
       },
       {  
          "category":"Clothing",
@@ -2323,7 +3620,13 @@
          "rarity":"2",
          "cost":"3,000",
          "name":"Yellow Urban Vest",
-         "name_eu":"Yellow Urban Gilet"
+         "name_eu":"Yellow Urban Gilet",
+       "name_fr-fr":"Gilet urbain jaune",
+       "name_fr-ca":"Veste urbaine jaune",
+       "name_es-es":"Anorak urbano día",
+       "name_es-xl":"Chaleco amarillo",
+       "name_de":"Gelbe Steppweste",
+       "name_it":"Gilè urbano giallo"
       },
       {  
          "category":"Clothing",
@@ -2331,7 +3634,13 @@
          "brand":"Zekko",
          "rarity":"2",
          "cost":"2,900",
-         "name":"Zapfish Satin Jacket"
+         "name":"Zapfish Satin Jacket",
+       "name_fr-fr":"Blouson poisson-charge",
+       "name_fr-ca":"Manteau poisson-charge",
+       "name_es-es":"Chaqueta satinada siluro",
+       "name_es-xl":"Chaqueta satinada volbagre",
+       "name_de":"Elektrowels-Baseballjacke",
+       "name_it":"Giubbino pesciscossa"
       },
       {  
          "category":"Clothing",
@@ -2339,7 +3648,13 @@
          "brand":"Zekko",
          "rarity":"1",
          "cost":"800",
-         "name":"Zekko Baseball LS"
+         "name":"Zekko Baseball LS",
+       "name_fr-fr":"Haut sportif Ezko",
+       "name_fr-ca":"Gilet sportif Ezko",
+       "name_es-es":"Béisbol Ezko",
+       "name_es-xl":"Béisbol Zekko manga larga",
+       "name_de":"Zekko-Baseball-Shirt",
+       "name_it":"Maglia Ezko"
       },
       {  
          "category":"Clothing",
@@ -2347,7 +3662,13 @@
          "brand":"Zekko",
          "rarity":"2",
          "cost":"2,800",
-         "name":"Zekko Hoodie"
+         "name":"Zekko Hoodie",
+       "name_fr-fr":"Sweat capuche Ezko",
+       "name_fr-ca":"Coton ouaté à capuchon Ezko",
+       "name_es-es":"Sudadera Ezko",
+       "name_es-xl":"Sudadera Zekko",
+       "name_de":"Zekko-Hoodie",
+       "name_it":"Felpa Ezko"
       },
       {  
          "category":"Headgear",
@@ -2355,7 +3676,12 @@
          "brand":"Zekko",
          "rarity":"1",
          "cost":"500",
-         "name":"Zekko Mesh"
+         "name":"Zekko Mesh",
+       "name_fr-fr":"Casquette filet Ezko",
+       "name_es-es":"Gorra malla Ezko",
+       "name_es-xl":"Gorra Zekko",
+       "name_de":"Zekko-Netzkappe",
+       "name_it":"Berretto Ezko"
       },
       {  
          "category":"Clothing",
@@ -2363,7 +3689,13 @@
          "brand":"Zink",
          "rarity":"1",
          "cost":"500",
-         "name":"Zink LS"
+         "name":"Zink LS",
+       "name_fr-fr":"Haut Leviathus",
+       "name_fr-ca":"Gilet Leviathus",
+       "name_es-es":"Tintaz larga",
+       "name_es-xl":"Tintaz manga larga",
+       "name_de":"Sagitron-Longsleeve",
+       "name_it":"Maglia nera logo"
       },
       {  
          "category":"Clothing",
@@ -2371,7 +3703,13 @@
          "brand":"Zink",
          "rarity":"1",
          "cost":"600",
-         "name":"Zink Layered LS"
+         "name":"Zink Layered LS",
+       "name_fr-fr":"Haut double Leviathus",
+       "name_fr-ca":"Gilet double Leviathus",
+       "name_es-es":"Tintaz doble",
+       "name_es-xl":"Tintaz de capas",
+       "name_de":"Sagitron-Lagen-Shirt",
+       "name_it":"A strati Totanic"
       },
       {  
          "category":"Shoes",
@@ -2379,7 +3717,13 @@
          "brand":"Zink",
          "rarity":"1",
          "cost":"800",
-         "name":"Zombie Hi-Horses"
+         "name":"Zombie Hi-Horses",
+       "name_fr-fr":"Hippo montantes zombi",
+       "name_fr-ca":"Hippo hautes zombi",
+       "name_es-es":"Hipocampo-A zombi",
+       "name_es-xl":"Tenis bota zombi",
+       "name_de":"Zombie-High-Top-Sneaker",
+       "name_it":"Alte Zombie"
       }
    ],
    "weapons":[  
