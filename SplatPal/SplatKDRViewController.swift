@@ -33,7 +33,7 @@ class SplatKDRViewController: SplatViewController, UITextFieldDelegate, LTMorphi
         }
     }
     
-    @IBOutlet weak var txtInput: TextField!
+//    @IBOutlet weak var txtInput: TextField!
     
     var type: SplatKDRViewType!
     var match: Match!
@@ -41,7 +41,7 @@ class SplatKDRViewController: SplatViewController, UITextFieldDelegate, LTMorphi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        txtInput.becomeFirstResponder()
+//        txtInput.becomeFirstResponder()
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {

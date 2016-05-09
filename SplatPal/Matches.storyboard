@@ -141,7 +141,6 @@
                     </view>
                     <connections>
                         <outlet property="lblTitle" destination="2Yf-4U-V4R" id="cv0-dL-JMd"/>
-                        <outlet property="txtInput" destination="dPC-WH-ghI" id="4Iw-Cv-OxP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GEV-qD-Cns" userLabel="First Responder" sceneMemberID="firstResponder"/>
