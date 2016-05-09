@@ -14,6 +14,7 @@ PODS:
   - MotionAnimation (0.0.5)
   - SwiftGen (0.8.0)
   - SwiftyJSON (2.3.2)
+  - TCDInputView (0.1.0)
   - XCGLogger (3.2)
 
 DEPENDENCIES:
@@ -29,6 +30,7 @@ DEPENDENCIES:
   - MGSwipeTableCell
   - SwiftGen
   - SwiftyJSON (~> 2.0)
+  - TCDInputView (~> 0.1.0)
   - XCGLogger (~> 3.0)
 
 SPEC CHECKSUMS:
@@ -45,8 +47,9 @@ SPEC CHECKSUMS:
   MotionAnimation: d9d4060bf4f494dd61bf868b8969a31b1b0b6f2a
   SwiftGen: d27095418addd706b18da94bc8d9552e8d8148c3
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  TCDInputView: 2c18f9024f5deb6cd94d962f7eba3e1b9682a262
   XCGLogger: da1f341f4bb8979db6e1df64232f04d9698402d4
 
-PODFILE CHECKSUM: 03bd69fa9de2baf6bc3e27e33c6b105dcb0b0ca4
+PODFILE CHECKSUM: f4a4e8117e70892f56e680372ce1d1efdee82ec3
 
 COCOAPODS: 1.0.0.beta.5

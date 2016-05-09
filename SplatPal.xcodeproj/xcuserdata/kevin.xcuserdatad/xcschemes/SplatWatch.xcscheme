@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0720"
+   LastUpgradeVersion = "0730"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0A3AA9F01C4AE71900ADC5CE"
+               BlueprintIdentifier = "0A41A9451C4AF61E00D80E15"
                BuildableName = "SplatWatch.app"
                BlueprintName = "SplatWatch"
                ReferencedContainer = "container:SplatPal.xcodeproj">
@@ -42,7 +42,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0A3AA9FC1C4AE71A00ADC5CE"
+               BlueprintIdentifier = "0A41A9511C4AF61F00D80E15"
                BuildableName = "SplatWatch Extension.appex"
                BlueprintName = "SplatWatch Extension"
                ReferencedContainer = "container:SplatPal.xcodeproj">
@@ -60,7 +60,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0A3AA9F01C4AE71900ADC5CE"
+            BlueprintIdentifier = "0A41A9451C4AF61E00D80E15"
             BuildableName = "SplatWatch.app"
             BlueprintName = "SplatWatch"
             ReferencedContainer = "container:SplatPal.xcodeproj">
@@ -85,7 +85,7 @@
          RemotePath = "/SplatPal">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0A3AA9F01C4AE71900ADC5CE"
+            BlueprintIdentifier = "0A41A9451C4AF61E00D80E15"
             BuildableName = "SplatWatch.app"
             BlueprintName = "SplatWatch"
             ReferencedContainer = "container:SplatPal.xcodeproj">
@@ -94,7 +94,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0A3AA9F01C4AE71900ADC5CE"
+            BlueprintIdentifier = "0A41A9451C4AF61E00D80E15"
             BuildableName = "SplatWatch.app"
             BlueprintName = "SplatWatch"
             ReferencedContainer = "container:SplatPal.xcodeproj">
@@ -115,7 +115,7 @@
          RemotePath = "/SplatPal">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0A3AA9F01C4AE71900ADC5CE"
+            BlueprintIdentifier = "0A41A9451C4AF61E00D80E15"
             BuildableName = "SplatWatch.app"
             BlueprintName = "SplatWatch"
             ReferencedContainer = "container:SplatPal.xcodeproj">
@@ -124,7 +124,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0A3AA9F01C4AE71900ADC5CE"
+            BlueprintIdentifier = "0A41A9451C4AF61E00D80E15"
             BuildableName = "SplatWatch.app"
             BlueprintName = "SplatWatch"
             ReferencedContainer = "container:SplatPal.xcodeproj">

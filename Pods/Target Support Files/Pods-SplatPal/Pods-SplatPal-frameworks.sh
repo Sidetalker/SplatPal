@@ -94,6 +94,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$CONFIGURATION_BUILD_DIR/MGSwipeTableCell/MGSwipeTableCell.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/MotionAnimation/MotionAnimation.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/SwiftyJSON-iOS/SwiftyJSON.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/TCDInputView/TCDInputView.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/XCGLogger/XCGLogger.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -107,5 +108,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$CONFIGURATION_BUILD_DIR/MGSwipeTableCell/MGSwipeTableCell.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/MotionAnimation/MotionAnimation.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/SwiftyJSON-iOS/SwiftyJSON.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/TCDInputView/TCDInputView.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/XCGLogger/XCGLogger.framework"
 fi

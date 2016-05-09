@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5116B36702BC5941894167DFD3A41E32"
+               BlueprintIdentifier = "C50593215358BEB1620088E1FAF5AD32"
                BuildableName = "Pods_SplatPal.framework"
                BlueprintName = "Pods-SplatPal"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5116B36702BC5941894167DFD3A41E32"
+            BlueprintIdentifier = "C50593215358BEB1620088E1FAF5AD32"
             BuildableName = "Pods_SplatPal.framework"
             BlueprintName = "Pods-SplatPal"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5116B36702BC5941894167DFD3A41E32"
+            BlueprintIdentifier = "C50593215358BEB1620088E1FAF5AD32"
             BuildableName = "Pods_SplatPal.framework"
             BlueprintName = "Pods-SplatPal"
             ReferencedContainer = "container:Pods.xcodeproj">
