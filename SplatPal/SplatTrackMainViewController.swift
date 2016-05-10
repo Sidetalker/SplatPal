@@ -10,10 +10,25 @@ import UIKit
 import ElasticTransition
 
 class SplatTrackMainViewController: SplatViewController {
+    let itsNotReadyYetBro = true
+    
     var currentMatch: Match?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if itsNotReadyYetBro {
+            let overlay = UIView(frame: view.frame)
+            overlay.backgroundColor = UIColor(white: 0.2, alpha: 0.6)
+            
+            let lblInfo = UILabel(frame: view.frame)
+            lblInfo.text = "Not ready quite yet, coming soon!"
+            lblInfo.textColor = .whiteColor()
+            lblInfo.textAlignment = .Center
+            
+            view.addSubview(overlay)
+            view.addSubview(lblInfo)
+        }
     }
     
     override func prefersStatusBarHidden() -> Bool {
