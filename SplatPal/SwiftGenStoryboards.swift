@@ -79,9 +79,9 @@ struct StoryboardScene {
       return StoryboardScene.Matches.KdrScene.viewController() as! SplatKDRViewController
     }
 
-    case MainScene = "main"
-    static func instantiateMain() -> SplatTrackMainViewController {
-      return StoryboardScene.Matches.MainScene.viewController() as! SplatTrackMainViewController
+    case SplatyScene = "splaty"
+    static func instantiateSplaty() -> SplatTrackMainViewController {
+      return StoryboardScene.Matches.SplatyScene.viewController() as! SplatTrackMainViewController
     }
   }
 }

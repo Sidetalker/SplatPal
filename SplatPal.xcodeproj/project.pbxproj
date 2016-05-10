@@ -2031,6 +2031,7 @@
 				0A15E65F1C29C5F80098BBF0 /* Purge Frameworks */,
 				CD0D5DEDE83F349F186C5DC2 /* 📦 Embed Pods Frameworks */,
 				B719FA12ED0E4484CF7944EC /* 📦 Copy Pods Resources */,
+				0A593C5C1CE16DB5009D368D /* Bullshit fix */,
 				0AC039141CA842C70063A195 /* SwiftGen */,
 			);
 			buildRules = (
@@ -2072,6 +2073,7 @@
 				0A41A9501C4AF61F00D80E15 /* Resources */,
 				0C0F4F159175C2443F85083F /* 📦 Embed Pods Frameworks */,
 				9CE553F61B9663FC0F2395A5 /* 📦 Copy Pods Resources */,
+				0A593C5D1CE172A0009D368D /* Bullshit fix */,
 			);
 			buildRules = (
 			);
@@ -2796,6 +2798,34 @@
 			shellPath = /bin/sh;
 			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\nrm -fr Frameworks\nfi";
 		};
+		0A593C5C1CE16DB5009D368D /* Bullshit fix */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bullshit fix";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\nrm -fr Frameworks\nfi";
+		};
+		0A593C5D1CE172A0009D368D /* Bullshit fix */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bullshit fix";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
 		0AA23E3E1C1B75410002BCC2 /* Update Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -3219,7 +3249,7 @@
 				CODE_SIGN_ENTITLEMENTS = SplatWidget/SplatWidget.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = "$(inherited)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				INFOPLIST_FILE = SplatWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -3237,7 +3267,7 @@
 				CODE_SIGN_ENTITLEMENTS = SplatWidget/SplatWidget.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = "$(inherited)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				INFOPLIST_FILE = SplatWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
