@@ -8,7 +8,6 @@
 
 import UIKit
 import LTMorphingLabel
-import TCDInputView
 
 enum SplatKDRViewType {
     case Kills
