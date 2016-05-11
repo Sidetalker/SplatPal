@@ -9,6 +9,7 @@
 import UIKit
 import SwiftyJSON
 import MGSwipeTableCell
+import Crashlytics
 
 let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
@@ -61,6 +62,11 @@ class GearTableViewController: UITableViewController {
                 alphaSectionHeaders.append(String(currentLetter))
             }
         }
+        
+        let contentType = gearData.first?.locale ?? "en"
+        let contentId = UIDevice.currentDevice().identifierForVendor?.UUIDString
+        
+        Answers.logContentViewWithName("Gear guide view", contentType: contentType, contentId: contentId, customAttributes: nil)
         
         tableView.reloadData()
     }

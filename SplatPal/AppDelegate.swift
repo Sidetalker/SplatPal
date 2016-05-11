@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Configure Fabric modules
-        Fabric.with([Crashlytics.self])
+        Fabric.with([Crashlytics.self, Answers.self])
         
         // Intialize Armchair
         Armchair.appID("1067040948")
