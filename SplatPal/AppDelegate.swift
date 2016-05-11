@@ -82,12 +82,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             jsonData = NSData(contentsOfFile: brandPath)
         {
             let jsonResult = JSON(data: jsonData)
-            let preferredLanguage = NSLocale.preferredLanguages()[0]
-            var localeMod = ""
-            
-            if (preferredLanguage != "en-US" && preferredLanguage != "en") {
-                localeMod = "eu"
-            }
+            let availableLanguages = ["fr-FR", "fr-CA", "es-ES", "es-XL", "de", "it", "eu", "en"]
+            let localeMod = NSLocale.preferredLanguages().filter { availableLanguages.contains($0) }.first ?? "en"
             
             brandData = jsonResult["brands"].arrayValue
             gearData = jsonResult["gear"].arrayValue.map { Gear(data: $0, locale: localeMod) }

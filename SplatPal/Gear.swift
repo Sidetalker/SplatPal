@@ -26,16 +26,8 @@ class Gear {
     init() { }
     
     init(data: JSON, locale: String) {
-        var nameString = "name_\(locale)"
-        self.locale = locale
-        
-        if data[nameString].string == nil {
-            nameString = "name"
-        }
-        
         if let
-            name = data["name"].string,
-            localizedName = data[nameString].string,
+            name = data["name_en"].string,
             category = data["category"].string,
             ability = data["ability"].string,
             brand = data["brand"].string,
@@ -44,7 +36,6 @@ class Gear {
             rarity = Int(rarityString)
         {
             self.name = name
-            self.localizedName = localizedName
             self.shortName = name.removeWhitespace()
             self.category = category
             self.ability = ability
@@ -57,6 +48,23 @@ class Gear {
             self.initialized = true
         } else {
             log.error("Could not initialize gear (\(name))")
+        }
+        
+        self.locale = locale
+        self.localizedName = data["name_\(locale)"].stringValue
+        
+        if localizedName.characters.count == 0 {
+            let index = locale.startIndex.advancedBy(2)
+            let localeBase = locale.substringToIndex(index)
+            
+            switch localeBase {
+            case "fr":
+                localizedName = data["name_fr-FR"].stringValue
+            case "es":
+                localizedName = data["name_es-ES"].stringValue
+            default:
+                localizedName = name
+            }
         }
     }
     

@@ -51,11 +51,11 @@ class GearTableViewController: UITableViewController {
         var currentLetter: Character = "?"
         
         for gear in newData {
-            if gear.name[0] == currentLetter {
+            if gear.localizedName[0] == currentLetter {
                 gearDisplayData[gearDisplayData.count - 1].append(gear)
                 gearDetailDisplaying[gearDetailDisplaying.count - 1].append(false)
             } else {
-                currentLetter = gear.name[0]
+                currentLetter = gear.localizedName[0]
                 gearDisplayData.append([gear])
                 gearDetailDisplaying.append([false])
                 alphaSectionHeaders.append(String(currentLetter))
