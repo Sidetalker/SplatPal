@@ -26,6 +26,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3sl-mi-PmM" customClass="PlaceholderView" customModule="SplatPal" customModuleProvider="target">
+                                <rect key="frame" x="20" y="20" width="560" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haO-iI-uWV">
+                                        <rect key="frame" x="180" y="50" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="haO-iI-uWV" secondAttribute="height" multiplier="1:1" id="nqZ-aM-gCq"/>
+                                        </constraints>
+                                        <state key="normal" image="win.png"/>
+                                        <connections>
+                                            <action selector="winTapped:" destination="pda-Vd-896" eventType="touchUpInside" id="NbF-tt-Mqg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99842697380000001" green="0.63754705300000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="haO-iI-uWV" firstAttribute="centerY" secondItem="3sl-mi-PmM" secondAttribute="centerY" id="SQe-GT-5e7"/>
+                                    <constraint firstItem="haO-iI-uWV" firstAttribute="centerX" secondItem="3sl-mi-PmM" secondAttribute="centerX" id="ziX-1F-NhU"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZI-Gm-grd" customClass="PlaceholderView" customModule="SplatPal" customModuleProvider="target">
                                 <rect key="frame" x="20" y="300" width="560" height="300"/>
                                 <subviews>
@@ -47,26 +67,6 @@
                                     <constraint firstItem="bJw-aL-avK" firstAttribute="centerY" secondItem="FZI-Gm-grd" secondAttribute="centerY" id="caN-xK-k7G"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3sl-mi-PmM" customClass="PlaceholderView" customModule="SplatPal" customModuleProvider="target">
-                                <rect key="frame" x="20" y="20" width="560" height="300"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haO-iI-uWV">
-                                        <rect key="frame" x="180" y="50" width="200" height="200"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="haO-iI-uWV" secondAttribute="height" multiplier="1:1" id="nqZ-aM-gCq"/>
-                                        </constraints>
-                                        <state key="normal" image="win.png"/>
-                                        <connections>
-                                            <action selector="winTapped:" destination="pda-Vd-896" eventType="touchUpInside" id="NbF-tt-Mqg"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.99842697380000001" green="0.63754705300000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="haO-iI-uWV" firstAttribute="centerY" secondItem="3sl-mi-PmM" secondAttribute="centerY" id="SQe-GT-5e7"/>
-                                    <constraint firstItem="haO-iI-uWV" firstAttribute="centerX" secondItem="3sl-mi-PmM" secondAttribute="centerX" id="ziX-1F-NhU"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -77,23 +77,59 @@
                             <constraint firstAttribute="trailingMargin" secondItem="3sl-mi-PmM" secondAttribute="trailing" id="9Jy-Ci-4pB"/>
                             <constraint firstItem="FZI-Gm-grd" firstAttribute="width" secondItem="yYj-17-Lb0" secondAttribute="width" multiplier="0.5" id="Eci-6h-wkY"/>
                             <constraint firstItem="haO-iI-uWV" firstAttribute="width" secondItem="bJw-aL-avK" secondAttribute="width" id="LbO-aw-HOB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3sl-mi-PmM" secondAttribute="trailing" constant="112" id="NjD-Fb-gfi">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="FZI-Gm-grd" firstAttribute="width" secondItem="yYj-17-Lb0" secondAttribute="width" multiplier="0.5" id="PO6-QV-0sz"/>
+                            <constraint firstItem="3JH-AM-mhN" firstAttribute="top" secondItem="3sl-mi-PmM" secondAttribute="bottom" constant="180" id="TpC-KI-9lB">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="3sl-mi-PmM" firstAttribute="width" secondItem="yYj-17-Lb0" secondAttribute="width" multiplier="0.5" id="VpO-Xa-M4U"/>
                             <constraint firstItem="3sl-mi-PmM" firstAttribute="height" secondItem="yYj-17-Lb0" secondAttribute="height" multiplier="0.5" id="Yby-Gx-t3B"/>
                             <constraint firstItem="FZI-Gm-grd" firstAttribute="height" secondItem="yYj-17-Lb0" secondAttribute="height" multiplier="0.5" id="d07-j3-nc6"/>
                             <constraint firstItem="3sl-mi-PmM" firstAttribute="width" secondItem="yYj-17-Lb0" secondAttribute="width" multiplier="0.5" id="hOq-Y8-NRG"/>
                             <constraint firstItem="3JH-AM-mhN" firstAttribute="top" secondItem="FZI-Gm-grd" secondAttribute="bottom" id="hkF-qf-Eq4"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="FZI-Gm-grd" secondAttribute="trailing" id="k2W-nQ-fMX"/>
+                            <constraint firstItem="FZI-Gm-grd" firstAttribute="top" secondItem="Ie5-lp-V62" secondAttribute="bottom" constant="110" id="j0w-Se-sr4">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="FZI-Gm-grd" secondAttribute="trailing" id="k2W-nQ-fMX">
+                                <variation key="heightClass=compact" constant="-20"/>
+                            </constraint>
                             <constraint firstItem="3sl-mi-PmM" firstAttribute="top" secondItem="Ie5-lp-V62" secondAttribute="bottom" id="mdb-tF-KFB"/>
-                            <constraint firstItem="3sl-mi-PmM" firstAttribute="leading" secondItem="yYj-17-Lb0" secondAttribute="leadingMargin" id="myw-aI-9Yp"/>
+                            <constraint firstItem="3sl-mi-PmM" firstAttribute="leading" secondItem="yYj-17-Lb0" secondAttribute="leadingMargin" id="myw-aI-9Yp">
+                                <variation key="heightClass=compact" constant="-20"/>
+                            </constraint>
                             <constraint firstItem="3JH-AM-mhN" firstAttribute="top" secondItem="3sl-mi-PmM" secondAttribute="bottom" constant="180" id="wU7-dh-Opp">
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
+                            <constraint firstItem="3sl-mi-PmM" firstAttribute="height" secondItem="yYj-17-Lb0" secondAttribute="height" multiplier="0.5" id="zRL-je-dJy"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="NjD-Fb-gfi"/>
+                                <exclude reference="VpO-Xa-M4U"/>
                                 <exclude reference="hOq-Y8-NRG"/>
+                                <exclude reference="zRL-je-dJy"/>
                                 <exclude reference="2pJ-lo-5gr"/>
                                 <exclude reference="Eci-6h-wkY"/>
+                                <exclude reference="PO6-QV-0sz"/>
+                                <exclude reference="j0w-Se-sr4"/>
+                                <exclude reference="TpC-KI-9lB"/>
                                 <exclude reference="wU7-dh-Opp"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="9Jy-Ci-4pB"/>
+                                <exclude reference="NjD-Fb-gfi"/>
+                                <include reference="VpO-Xa-M4U"/>
+                                <exclude reference="Yby-Gx-t3B"/>
+                                <exclude reference="zRL-je-dJy"/>
+                                <exclude reference="5NG-MW-xXa"/>
+                                <include reference="PO6-QV-0sz"/>
+                                <exclude reference="d07-j3-nc6"/>
+                                <include reference="j0w-Se-sr4"/>
+                                <include reference="TpC-KI-9lB"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -112,7 +148,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pvK-it-oAk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1643" y="-1747"/>
+            <point key="canvasLocation" x="-1643" y="-1747.5"/>
         </scene>
         <!--SplatKDR View Controller-->
         <scene sceneID="scI-dv-GO4">
@@ -126,7 +162,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="51" borderStyle="bezel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dPC-WH-ghI" customClass="TextField" customModule="TCDInputView">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="51" borderStyle="bezel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dPC-WH-ghI" customClass="TextField" customModule="TCDInputView">
                                 <rect key="frame" x="240" y="93" width="120" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="Eoi-Bs-Dmk"/>
@@ -134,12 +170,21 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="35"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="340" y="95" width="120" height="60"/>
+                                </variation>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many kills?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yf-4U-V4R" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How many kills?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yf-4U-V4R" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
                                 <rect key="frame" x="176.5" y="40" width="247" height="33"/>
                                 <fontDescription key="fontDescription" name="ProjectPaintball" family="Project Paintball" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="176" y="40" width="247" height="33"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="290.5" y="40" width="219" height="35"/>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

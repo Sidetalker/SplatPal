@@ -15,6 +15,9 @@ import SwiftyJSON
 import Alamofire
 import Armchair
 
+let availableLanguages = ["en", "fr-FR", "fr-CA", "fr", "es-ES", "es-XL", "es", "de", "it", "eu"]
+let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
 let log = XCGLogger.defaultInstance()
 let feedback = Doorbell(apiKey: "huNJHAdBmvWXZKIMHrdYjdZ0XZJEL03aReY71ASNWY8hhguVXb2oZhLMD5ji8ERv", appId: "2756")
 
@@ -34,6 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Configure Fabric modules
         Fabric.with([Crashlytics.self, Answers.self])
+        Crashlytics.sharedInstance().setUserIdentifier(UIDevice.currentDevice().identifierForVendor?.UUIDString)
         
         // Intialize Armchair
         Armchair.appID("1067040948")
@@ -78,12 +82,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func loadJSONData() {
         if let
-            brandPath = NSBundle.mainBundle().pathForResource("data.min", ofType: "json"),
-            jsonData = NSData(contentsOfFile: brandPath)
+            dataPath = NSBundle.mainBundle().pathForResource("data.min", ofType: "json"),
+            jsonData = NSData(contentsOfFile: dataPath)
         {
             let jsonResult = JSON(data: jsonData)
-            let availableLanguages = ["fr-FR", "fr-CA", "es-ES", "es-XL", "de", "it", "eu", "en"]
-            let localeMod = NSLocale.preferredLanguages().filter { availableLanguages.contains($0) }.first ?? "en"
+            let localeMod = NSLocale.preferredLanguages().filter {
+                let index = $0.startIndex.advancedBy(2, limit: $0.endIndex)
+                return availableLanguages.contains($0) || availableLanguages.contains($0.substringToIndex(index))
+            }.first ?? "en"
             
             brandData = jsonResult["brands"].arrayValue
             gearData = jsonResult["gear"].arrayValue.map { Gear(data: $0, locale: localeMod) }

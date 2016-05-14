@@ -1,3 +1,10 @@
+Version 1.1.0 (1635)
+- Localization improvements, bugfixes
+
+Version 1.1.0 (1624)
+- Manual localization configuration added
+- Please write in if your localization was not properly detected
+
 Version 1.1.0 (1598)
 - Super special shoutout to Rii for help with localization!
 - French, German, Spanish AND Italian gear localizations

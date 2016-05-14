@@ -11,8 +11,6 @@ import SwiftyJSON
 import MGSwipeTableCell
 import Crashlytics
 
-let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
 func abilityUpForBrand(brandName: String) -> String {
     return abilityForBrand(brandName, up: true)
 }

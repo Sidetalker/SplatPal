@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import Crashlytics
+import SwiftyJSON
+
+// MARK: - SettingsTableViewController
 
 class SettingsTableViewController: UITableViewController, UIApplicationDelegate {
     @IBOutlet weak var swtMapNotifications: UISwitch!
@@ -22,6 +26,8 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
     
     let prefs = NSUserDefaults.standardUserDefaults()
     let nnid = NNID.sharedInstance
+    
+    // MARK: Initializations
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,6 +62,8 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
     override func prefersStatusBarHidden() -> Bool {
         return prefs.boolForKey("hideStatusBar")
     }
+    
+    // MARK: Logic manipulation
     
     func toggleMapNotificationUI(on: Bool) {
         if on {
@@ -104,6 +112,8 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
         }
     }
     
+    // MARK: TableView BS
+    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
@@ -128,6 +138,8 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
         }
     }
     
+    // MARK: IBActions
+    
     @IBAction func mapNotificationsToggled(sender: AnyObject) {
         toggleMapNotificationUI((sender as! UISwitch).on)
     }
@@ -148,6 +160,8 @@ class SettingsTableViewController: UITableViewController, UIApplicationDelegate 
         }
     }
 }
+
+// MARK: - NNIDSettingsTableViewController
 
 class NNIDSettingsTableViewController: UITableViewController, UITextFieldDelegate {
     @IBOutlet weak var cellLoginStatus: UITableViewCell!
@@ -171,6 +185,8 @@ class NNIDSettingsTableViewController: UITableViewController, UITextFieldDelegat
     var loggedIn = false
     var loggingIn = false
     
+    // MARK: Initializations
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -185,6 +201,8 @@ class NNIDSettingsTableViewController: UITableViewController, UITextFieldDelegat
         updateUI(nnid.cookie != "")
         loginSpinner.hidden = true
     }
+    
+    // MARK: Core Logic
     
     func logout() {
         nnid.updateCookie("")
@@ -227,6 +245,8 @@ class NNIDSettingsTableViewController: UITableViewController, UITextFieldDelegat
         }
     }
     
+    // MARK: UI manipulation
+    
     func updateUI(loggedIn: Bool) {
         self.loggedIn = loggedIn
         
@@ -253,6 +273,8 @@ class NNIDSettingsTableViewController: UITableViewController, UITextFieldDelegat
         return true
     }
     
+    // MARK: TableView Shenanigans
+    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
@@ -261,7 +283,111 @@ class NNIDSettingsTableViewController: UITableViewController, UITextFieldDelegat
         }
     }
     
+    // MARK: IBActions
+    
     @IBAction func saveLoginSwitched(sender: AnyObject) {
         nnid.updateSaveLogin((sender as! UISwitch).on)
+    }
+}
+
+// MARK: - SettingsTableViewController
+
+class LocaleTableViewController: UITableViewController {
+    let prefs = NSUserDefaults.standardUserDefaults()
+    let deviceLocale = NSLocale(localeIdentifier: NSLocale.preferredLanguages()[0])
+    var selectedIndex = -1
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        guard let index = availableLanguages.indexOf(gearData[0].locale) else {
+            log.error("Locale is somehow not in availableLanguages (dis impossible yo)")
+            CLSLogv("Locale mismatch in Settings", getVaList([]))
+            return
+        }
+        
+        selectedIndex = index
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return prefs.boolForKey("hideStatusBar")
+    }
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return section == 0 ? 2 : availableLanguages.count
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        switch indexPath.section {
+        case 0:
+            // Sorry about the mediocre readability here, friend
+            let cell = UITableViewCell(style: .Default, reuseIdentifier: nil)
+            let deviceLocaleString = deviceLocale.displayNameForKey(NSLocaleIdentifier, value: NSLocale.preferredLanguages()[0]) ?? "Unknown"
+            let selectedLocaleString = deviceLocale.displayNameForKey(NSLocaleIdentifier, value: gearData[0].locale) ?? "Unknown"
+            
+            let localeString = NSMutableAttributedString(
+                string: indexPath.row == 0 ? "Device Locale: \(deviceLocaleString)" : "Selected Locale: \(selectedLocaleString)")
+            
+            localeString.beginEditing()
+            localeString.addAttribute(NSFontAttributeName,
+                                      value: UIFont.boldSystemFontOfSize(UIFont.labelFontSize()),
+                                      range: NSMakeRange(0, indexPath.row == 0 ? 14 : 16))
+            localeString.endEditing()
+            
+            cell.textLabel?.attributedText = localeString
+            
+            return cell
+        case 1:
+            let cellId = "localeCell"
+            let cell = tableView.dequeueReusableCellWithIdentifier(cellId) ?? UITableViewCell(style: .Default, reuseIdentifier: cellId)
+            cell.textLabel?.text = deviceLocale.displayNameForKey(NSLocaleIdentifier, value: availableLanguages[indexPath.row])
+            cell.accessoryType = indexPath.row == selectedIndex ? .Checkmark : .None
+            
+            return cell
+        default:
+            return UITableViewCell()
+        }
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        if let
+            dataPath = NSBundle.mainBundle().pathForResource("data.min", ofType: "json"),
+            jsonData = NSData(contentsOfFile: dataPath)
+        {
+            let jsonResult = JSON(data: jsonData)
+            let localeMod = availableLanguages[indexPath.row]
+            
+            brandData = jsonResult["brands"].arrayValue
+            gearData = jsonResult["gear"].arrayValue.map { Gear(data: $0, locale: localeMod) }
+            gearData.sortInPlace { $0.localizedName < $1.localizedName }
+            
+            for vc in tabBarController!.viewControllers! {
+                if
+                    let gearVC = vc as? GearGuideViewController,
+                    let gearTable = gearVC.gearTable
+                {
+                    gearTable.updateDisplay(gearData)
+                    gearTable.tableView.reloadData()
+                }
+            }
+            
+            tableView.beginUpdates()
+            
+            let indexPaths = [indexPath, NSIndexPath(forRow: selectedIndex, inSection: 1), NSIndexPath(forRow: 1, inSection: 0)]
+            selectedIndex = indexPath.row
+            
+            tableView.reloadRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
+            
+            tableView.endUpdates()
+        } else {
+            log.error("Couldn't change locale to setting selection (dis impossible yo)")
+            CLSLogv("Weirddd locale mismatch in Settings", getVaList([]))
+        }
     }
 }

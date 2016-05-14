@@ -59,11 +59,14 @@ class Gear {
             
             switch localeBase {
             case "fr":
-                localizedName = data["name_fr-FR"].stringValue
+                self.localizedName = data["name_fr-FR"].stringValue
+                self.locale = "fr"
             case "es":
-                localizedName = data["name_es-ES"].stringValue
+                self.localizedName = data["name_es-ES"].stringValue
+                self.locale = "es"
             default:
-                localizedName = name
+                self.localizedName = name
+                self.locale = "en"
             }
         }
     }

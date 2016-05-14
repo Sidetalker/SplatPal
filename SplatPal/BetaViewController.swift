@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Crashlytics
 
 class BetaViewController: UIViewController {
     @IBOutlet weak var txtChangeLog: UITextView!
@@ -45,6 +46,7 @@ class BetaViewController: UIViewController {
     
     @IBAction func btnFeedbackTapped(sender: AnyObject) {
         feedback.showFeedbackDialogInViewController(self, completion: { error, isCanceled in
+            Crashlytics.sharedInstance().setUserEmail(feedback.email)
             if error != nil { log.error("Feedback error: \(error)") }
         })
     }
