@@ -4513,6 +4513,87 @@
          "cost":"13400",
          "special":"Bomb Rush",
          "sub":"Burst Bomb"
+      },
+      {  
+         "sub":"Splat Bomb",
+         "level":"20",
+         "baseDmg":"38",
+         "range":"15",
+         "cost":"16400",
+         "special":"Inkzooka",
+         "name":"Sploosh-o-matic 7"
+      },
+      {  
+         "sub":"Burst Bomb",
+         "level":"20",
+         "baseDmg":"20",
+         "range":"32",
+         "cost":"20000",
+         "special":"Kraken",
+         "name":"Aerospray PG"
+      },
+      {  
+         "sub":"Point Sensor",
+         "level":"20",
+         "baseDmg":"28",
+         "range":"50",
+         "cost":"7000",
+         "special":"Kraken",
+         "name":"N-ZAP '83"
+      },
+      {  
+         "sub":"Burst Bomb",
+         "level":"20",
+         "baseDmg":"50",
+         "range":"35",
+         "cost":"14000",
+         "special":"Killer Wail",
+         "name":"Grim Range Blaster"
+      },
+      {  
+         "sub":"Splash Wall",
+         "level":"20",
+         "baseDmg":"41",
+         "range":"68",
+         "cost":"12400",
+         "special":"Bubbler",
+         "name":"Cherry H-3 Nozzlenose"
+      },
+      {  
+         "sub":"Splash Wall",
+         "level":"20",
+         "baseDmg":"140",
+         "range":"55",
+         "cost":"5000",
+         "special":"Inkzooka",
+         "name":"Cherry H-3 Nozzlenose"
+      },
+      {  
+         "sub":"Splash Wall",
+         "level":"20",
+         "baseDmg":"40",
+         "range":"87",
+         "cost":"4700",
+         "special":"Echolocator",
+         "name":"Bento Splat Charger"
+      },
+      {  
+         "sub":"Splash Wall",
+         "level":"20",
+         "baseDmg":"40",
+         "range":"90",
+         "cost":"11500",
+         "special":"Echolocator",
+         "name":"Bento Splatterscope"
+      },
+      {  
+         "sub":"Sprinkler",
+         "level":"20",
+         "baseDmg":"28",
+         "range":"78",
+         "cost":"17900",
+         "special":"Killer Wail",
+         "name":"Heavy Splatling Remix"
       }
    ]
 }
