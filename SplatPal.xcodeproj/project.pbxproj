@@ -89,6 +89,8 @@
 		0A593C591CE156EA009D368D /* weaponTemperedDynamoRoller.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A593C511CE156EA009D368D /* weaponTemperedDynamoRoller.png */; };
 		0A593C5A1CE156EA009D368D /* weaponBerrySplattershotPro.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A593C521CE156EA009D368D /* weaponBerrySplattershotPro.png */; };
 		0A593C5B1CE156EA009D368D /* weaponWasabiSplattershot.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A593C531CE156EA009D368D /* weaponWasabiSplattershot.png */; };
+		0A63A4581E48ED4100EDF03B /* gearCoroCoroHoodie.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A63A4561E48ED4100EDF03B /* gearCoroCoroHoodie.png */; };
+		0A63A4591E48ED4100EDF03B /* gearCoroCoroCap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A63A4571E48ED4100EDF03B /* gearCoroCoroCap.png */; };
 		0A6AFEF91C2870D20073884B /* SplatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6AFEF81C2870D20073884B /* SplatData.swift */; };
 		0A6AFEFA1C2870D20073884B /* SplatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6AFEF81C2870D20073884B /* SplatData.swift */; };
 		0A948AC31C1CC4F700CCC4DB /* data.min.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A948AC21C1CC4F700CCC4DB /* data.min.json */; };
@@ -232,6 +234,7 @@
 		0AB09B3B1C205F2700A8A682 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB09B381C205F2700A8A682 /* star.png */; };
 		0AB09B3C1C205F2700A8A682 /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB09B391C205F2700A8A682 /* star@2x.png */; };
 		0AB09B3D1C205F2700A8A682 /* star@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB09B3A1C205F2700A8A682 /* star@3x.png */; };
+		0AB330941E4D58C300C58594 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB330931E4D58C300C58594 /* TabBarController.swift */; };
 		0AC039111CA840580063A195 /* Matches.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC039101CA840580063A195 /* Matches.storyboard */; };
 		0AC039131CA842310063A195 /* StoryboardSplitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC039121CA842310063A195 /* StoryboardSplitter.swift */; };
 		0AC039161CA8448D0063A195 /* SwiftGenStoryboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC039151CA8448D0063A195 /* SwiftGenStoryboards.swift */; };
@@ -703,6 +706,8 @@
 		0A593C511CE156EA009D368D /* weaponTemperedDynamoRoller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponTemperedDynamoRoller.png; path = Images/weapons/weaponTemperedDynamoRoller.png; sourceTree = "<group>"; };
 		0A593C521CE156EA009D368D /* weaponBerrySplattershotPro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponBerrySplattershotPro.png; path = Images/weapons/weaponBerrySplattershotPro.png; sourceTree = "<group>"; };
 		0A593C531CE156EA009D368D /* weaponWasabiSplattershot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weaponWasabiSplattershot.png; path = Images/weapons/weaponWasabiSplattershot.png; sourceTree = "<group>"; };
+		0A63A4561E48ED4100EDF03B /* gearCoroCoroHoodie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearCoroCoroHoodie.png; path = Images/gear/gearCoroCoroHoodie.png; sourceTree = "<group>"; };
+		0A63A4571E48ED4100EDF03B /* gearCoroCoroCap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gearCoroCoroCap.png; path = Images/gear/gearCoroCoroCap.png; sourceTree = "<group>"; };
 		0A6AFEF81C2870D20073884B /* SplatData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplatData.swift; sourceTree = "<group>"; };
 		0A948AC21C1CC4F700CCC4DB /* data.min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.min.json; path = Resources/data.min.json; sourceTree = "<group>"; };
 		0A9AD9311C29DB0700CDFBE7 /* LoadoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadoutViewController.swift; sourceTree = "<group>"; };
@@ -846,6 +851,7 @@
 		0AB09B381C205F2700A8A682 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = Images/star.png; sourceTree = "<group>"; };
 		0AB09B391C205F2700A8A682 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star@2x.png"; path = "Images/star@2x.png"; sourceTree = "<group>"; };
 		0AB09B3A1C205F2700A8A682 /* star@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star@3x.png"; path = "Images/star@3x.png"; sourceTree = "<group>"; };
+		0AB330931E4D58C300C58594 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		0AC039101CA840580063A195 /* Matches.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Matches.storyboard; sourceTree = "<group>"; };
 		0AC039121CA842310063A195 /* StoryboardSplitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSplitter.swift; sourceTree = "<group>"; };
 		0AC039151CA8448D0063A195 /* SwiftGenStoryboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGenStoryboards.swift; sourceTree = "<group>"; };
@@ -1326,6 +1332,7 @@
 				0AA23E411C1B78450002BCC2 /* BetaViewController.swift */,
 				0A4BF6AD1C22201800BB4834 /* SettingsTableViewController.swift */,
 				0A3503EC1C27270C009C6A48 /* NotificationsTableViewController.swift */,
+				0AB330931E4D58C300C58594 /* TabBarController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -1354,6 +1361,8 @@
 		0A9AD9331C29F5B300CDFBE7 /* Weapons */ = {
 			isa = PBXGroup;
 			children = (
+				0A63A4561E48ED4100EDF03B /* gearCoroCoroHoodie.png */,
+				0A63A4571E48ED4100EDF03B /* gearCoroCoroCap.png */,
 				0AF017F31D221A3F00B38F1E /* weaponBentoSplatterscope.png */,
 				0AF017E11D221A0600B38F1E /* weaponHeavySplatlingRemix.png */,
 				0AF017E31D221A0600B38F1E /* weaponBentoSplatCharger.png */,
@@ -2508,6 +2517,7 @@
 				0AA23E241C1B6E280002BCC2 /* abilityColdBlooded.png in Resources */,
 				0ADF9C4F1C1DF2DE002D7E81 /* gearSamuraiHelmet.png in Resources */,
 				0ADF9C161C1DF2DE002D7E81 /* gearMawcasins.png in Resources */,
+				0A63A4591E48ED4100EDF03B /* gearCoroCoroCap.png in Resources */,
 				0ADF9C1D1C1DF2DE002D7E81 /* gearNoiseCancelers.png in Resources */,
 				0ADF9BE51C1DF2DE002D7E81 /* gearCycleKingCap.png in Resources */,
 				0ADF9BC11C1DF2DE002D7E81 /* gearBlackArrowbands.png in Resources */,
@@ -2567,6 +2577,7 @@
 				0ADF9BBB1C1DF2DE002D7E81 /* gearBaseballJersey.png in Resources */,
 				0AC039261CA84A8D0063A195 /* win.png in Resources */,
 				0AC607951C189B36006EECA7 /* LaunchScreen.storyboard in Resources */,
+				0A63A4581E48ED4100EDF03B /* gearCoroCoroHoodie.png in Resources */,
 				0A9AD98E1C29F5BE00CDFBE7 /* weaponCustomHydraSplatling.png in Resources */,
 				0ADF9C9E1C1DF2DE002D7E81 /* gearWhiteInkyRider.png in Resources */,
 				0ADF9C311C1DF2DE002D7E81 /* gearPowerBoots.png in Resources */,
@@ -3183,6 +3194,7 @@
 				0AA23E071C1B6DB90002BCC2 /* SplatAppStyle.swift in Sources */,
 				0AA23E041C1B6DB90002BCC2 /* BrandGuideViewController.swift in Sources */,
 				0AA23E421C1B78450002BCC2 /* BetaViewController.swift in Sources */,
+				0AB330941E4D58C300C58594 /* TabBarController.swift in Sources */,
 				0AC607FE1C194ACE006EECA7 /* Helpers.swift in Sources */,
 				0A4FC28E1C76A3D2007D6E7F /* GearCell.swift in Sources */,
 			);

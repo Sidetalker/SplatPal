@@ -1,5 +1,5 @@
-{  
-   "maps":[  
+{
+   "maps":[
       "Arowana Mall",
       "Blackbelly Skatepark",
       "Saltspray Rig",
@@ -17,13 +17,13 @@
       "Piranha Pit",
       "Ancho-V Games"
    ],
-   "modes":[  
+   "modes":[
       "Turf War",
       "Splat Zones",
       "Tower Control",
       "Rainmaker"
    ],
-   "abilities":{  
+   "abilities":{
       "Ink Saver (Main)":"Decreases amount of ink consumed by your main weapon.",
       "Special Duration Up":"Increases usage time of special weapons.",
       "Quick Respawn":"Decreases respawn time after getting splatted.",
@@ -50,7 +50,7 @@
       "Ink Recovery Up":"Increases ink-tank refill rate while submerged in squid form.",
       "None":"None"
    },
-   "abilitiesEnum":[  
+   "abilitiesEnum":[
       "Ink Saver (Main)",
       "Special Duration Up",
       "Quick Respawn",
@@ -77,197 +77,197 @@
       "Ink Recovery Up",
       "None"
    ],
-   "brands":[  
-      {  
+   "brands":[
+      {
          "name":"amiibo",
-         "abilityUp":{  
+         "abilityUp":{
             "name":"None",
             "description":"None"
          },
-         "abilityDown":{  
+         "abilityDown":{
             "name":"None",
             "description":"None"
          }
       },
-      {  
+      {
          "name":"Cuttlegear",
-         "abilityUp":{  
+         "abilityUp":{
             "name":"None",
             "description":"None"
          },
-         "abilityDown":{  
+         "abilityDown":{
             "name":"None",
             "description":"None"
          }
       },
-      {  
+      {
          "name":"Famitsu",
-         "abilityUp":{  
+         "abilityUp":{
             "name":"None",
             "description":"None"
          },
-         "abilityDown":{  
+         "abilityDown":{
             "name":"None",
             "description":"None"
          }
       },
-      {  
+      {
          "name":"Firefin",
-         "abilityUp":{  
+         "abilityUp":{
             "name":"Ink Saver (Sub)",
             "description":"Reduces the amount of ink consumed by your Sub weapon."
          },
-         "abilityDown":{  
+         "abilityDown":{
             "name":"Ink Recovery Up",
             "description":"Increases Ink tank refill rate while submerged in Squid form."
          }
       },
-      {  
+      {
          "name":"Forge",
-         "abilityUp":{  
+         "abilityUp":{
             "name":"Special Duration Up",
             "description":"Increases usage time of Special weapons."
          },
-         "abilityDown":{  
+         "abilityDown":{
             "name":"Ink Saver (Sub)",
             "description":"Reduces the amount of ink consumed by your Sub weapon."
          }
       },
-      {  
+      {
          "name":"Inkline",
-         "abilityUp":{  
+         "abilityUp":{
             "name":"Defence Up",
             "description":"Reduces damage taken from all attacks."
          },
-         "abilityDown":{  
+         "abilityDown":{
             "name":"Damage Up",
             "description":"Increases the Attack of all your Main, Sub and Special weapons."
          }
       },
-      {  
+      {
          "name":"KOG",
-         "abilityUp":{  
+         "abilityUp":{
             "name":"None",
             "description":"None"
          },
-         "abilityDown":{  
+         "abilityDown":{
             "name":"None",
             "description":"None"
          }
       },
-      {  
+      {
          "name":"Krak-On",
-         "abilityUp":{  
+         "abilityUp":{
             "name":"Swim Speed Up",
             "description":"Increases movement speed while in Squid form."
          },
-         "abilityDown":{  
+         "abilityDown":{
             "name":"Defence Up",
             "description":"Reduces damage taken from all attacks."
          }
       },
-      {  
+      {
          "name":"Rockenberg",
-         "abilityUp":{  
+         "abilityUp":{
             "name":"Run Speed Up",
             "description":"Increases movement speed while in Inkling form."
          },
-         "abilityDown":{  
+         "abilityDown":{
             "name":"Swim Speed Up",
             "description":"Increases movement speed while in Squid form."
          }
       },
-      {  
+      {
          "name":"Skalop",
-         "abilityUp":{  
+         "abilityUp":{
             "name":"Quick Respawn",
             "description":"Decreases respawn time after getting splatted."
          },
-         "abilityDown":{  
+         "abilityDown":{
             "name":"Special Saver",
             "description":"Reduces the amount your Special Gauge decreases after getting splatted."
          }
       },
-      {  
+      {
          "name":"Splash Mob",
-         "abilityUp":{  
+         "abilityUp":{
             "name":"Ink Saver (Main)",
             "description":"Reduces the amount of ink consumed by your Main weapon."
          },
-         "abilityDown":{  
+         "abilityDown":{
             "name":"Run Speed Up",
             "description":"Increases movement speed while in Inkling form."
          }
       },
-      {  
+      {
          "name":"SquidForce",
-         "abilityUp":{  
+         "abilityUp":{
             "name":"Damage Up",
             "description":"Increases the Attack of all your Main, Sub and Special weapons."
          },
-         "abilityDown":{  
+         "abilityDown":{
             "name":"Ink Saver (Main)",
             "description":"Reduces the amount of ink consumed by your Main weapon."
          }
       },
-      {  
+      {
          "name":"Takoroka",
-         "abilityUp":{  
+         "abilityUp":{
             "name":"Special Charge Up",
             "description":"Increases Special Gauge recharge rate."
          },
-         "abilityDown":{  
+         "abilityDown":{
             "name":"Special Duration Up",
             "description":"Increases usage time of Special weapons."
          }
       },
-      {  
+      {
          "name":"Tentatek",
-         "abilityUp":{  
+         "abilityUp":{
             "name":"Ink Recovery Up",
             "description":"Increases Ink tank refill rate while submerged in Squid form."
          },
-         "abilityDown":{  
+         "abilityDown":{
             "name":"Quick Super Jump",
             "description":"Makes your Super Jumps faster."
          }
       },
-      {  
+      {
          "name":"The SQUID GIRL",
-         "abilityUp":{  
+         "abilityUp":{
             "name":"None",
             "description":"None"
          },
-         "abilityDown":{  
+         "abilityDown":{
             "name":"None",
             "description":"None"
          }
       },
-      {  
+      {
          "name":"Zekko",
-         "abilityUp":{  
+         "abilityUp":{
             "name":"Special Saver",
             "description":"Reduces the amount your Special Gauge decreases after getting splatted."
          },
-         "abilityDown":{  
+         "abilityDown":{
             "name":"Special Charge Up",
             "description":"Increases Special Gauge recharge rate."
          }
       },
-      {  
+      {
          "name":"Zink",
-         "abilityUp":{  
+         "abilityUp":{
             "name":"Quick Super Jump",
             "description":"Makes your Super Jumps faster."
          },
-         "abilityDown":{  
+         "abilityDown":{
             "name":"Quick Respawn",
             "description":"Decreases respawn time after getting splatted."
          }
       }
    ],
-   "gear":[  
-      {  
+   "gear":[
+      {
          "category":"Headgear",
          "ability":"Last-Ditch Effort",
          "brand":"Rockenberg",
@@ -281,21 +281,21 @@
          "name_de":"Sonnenbrille 18K",
          "name_it":"Occhiali da sole 18K"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Run Speed Up",
          "brand":"Inkline",
          "rarity":"3",
          "cost":"600",
          "name_en":"Acerola Rain Boots",
-         "name_eu":"Acerola Wellies",
+         "name_en_GB":"Acerola Wellies",
          "name_fr-FR":"Bottes de pluie cerise",
          "name_es-ES":"Bota de agua roja",
          "name_es-XL":"Botas de lluvia rojas",
          "name_de":"Kirschrote Gummistiefel",
          "name_it":"Stivali di gomma rossi"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ink Recovery Up",
          "brand":"Forge",
@@ -308,7 +308,7 @@
          "name_de":"Hawaïhemd",
          "name_it":"Camicia floreale"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Cold Blooded",
          "brand":"SquidForce",
@@ -321,14 +321,14 @@
          "name_de":"Anker-Sweatshirt",
          "name_it":"Maglione ancora"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Ink Saver (Main)",
          "brand":"Cuttlegear",
          "rarity":"3",
          "cost":"N/A",
          "name_en":"Armor Boot Replicas",
-         "name_eu":"Armour Boot Replicas",
+         "name_en_GB":"Armour Boot Replicas",
          "name_fr-FR":"Bottes encrifugées (répliques)",
          "name_fr-CA":"Bottes encrifugées (rép.)",
          "name_es-ES":"Bota reforzada (réplica)",
@@ -336,14 +336,14 @@
          "name_de":"Rüstungsstiefel Replik",
          "name_it":"Stivali d'armatura replica"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Tenacity",
          "brand":"Cuttlegear",
          "rarity":"3",
          "cost":"N/A",
          "name_en":"Armor Helmet Replica",
-         "name_eu":"Armour Helmet Replica",
+         "name_en_GB":"Armour Helmet Replica",
          "name_fr-FR":"Casque encrifugé (réplique)",
          "name_fr-CA":"Casque encrifugé (rép.)",
          "name_es-ES":"Casco reforzado (réplica)",
@@ -351,14 +351,14 @@
          "name_de":"Rüstungshelm Replik",
          "name_it":"Casco d'armatura replica"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Charge Up",
          "brand":"Cuttlegear",
          "rarity":"3",
          "cost":"N/A",
          "name_en":"Armor Jacket Replica",
-         "name_eu":"Armour Jacket Replica",
+         "name_en_GB":"Armour Jacket Replica",
          "name_fr-FR":"Anorak encrifugé (réplique)",
          "name_fr-CA":"Anorak encrifugé (rép.)",
          "name_es-ES":"Chaqueta reforzada (réplica)",
@@ -366,7 +366,7 @@
          "name_de":"Rüstungsjacke Replik",
          "name_it":"Giacca d'armatura replica"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Opening Gambit",
          "brand":"Zink",
@@ -380,47 +380,63 @@
          "name_de":"Basketballstirnband",
          "name_it":"Fascia da basket"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ink Saver (Sub)",
          "brand":"Zink",
          "rarity":"1",
          "cost":"800",
          "name_en":"B-ball Jersey (Away)",
-         "name_eu":"B-ball Vest (Away)",
+         "name_en_GB":"B-ball Vest (Away)",
          "name_fr-FR":"Maillot de basket (extérieur)",
          "name_es-ES":"Baloncesto visitante",
          "name_de":"Basketball-Auswärtstrikot",
          "name_it":"Canotta (trasferta)"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Saver",
          "brand":"Zink",
          "rarity":"2",
          "cost":"2300",
          "name_en":"B-ball Jersey (Home)",
-         "name_eu":"B-ball Vest (Home)",
+         "name_en_GB":"B-ball Vest (Home)",
          "name_fr-FR":"Maillot de basket (domicile)",
          "name_es-ES":"Baloncesto local",
          "name_de":"Basketball-Heimtrikot",
          "name_it":"Canotta (casa)"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Defence Up",
          "brand":"Splash Mob",
          "rarity":"2",
          "cost":"2,200",
          "name_en":"Baby-Jelly Shirt",
-         "name_eu":"Baby Jelly Shirt",
+         "name_en_GB":"Baby Jelly Shirt",
          "name_fr-FR":"Chemise méduses",
          "name_es-ES":"Camisa medusas",
          "name_es-XL":"Camisa aguamalas",
          "name_de":"Quallen-Hemd",
          "name_it":"Camicia meduse"
       },
-      {  
+      {
+         "category":"Clothing",
+         "ability":"Cold Blooded",
+         "brand":"Zekko",
+         "rarity":"3",
+         "cost":"10,800",
+         "name_en":"CoroCoro Hoodie"
+      },
+      {
+         "category":"Headgear",
+         "ability":"Damage Up",
+         "brand":"Zekko",
+         "rarity":"3",
+         "cost":"8,700",
+         "name_en":"CoroCoro Cap"
+      },
+      {
          "category":"Headgear",
          "ability":"Quick Respawn",
          "brand":"Zekko",
@@ -433,7 +449,7 @@
          "name_de":"Umgedrehte Kappe",
          "name_it":"Berretto girato"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Ink Saver (Main)",
          "brand":"Inkline",
@@ -445,7 +461,7 @@
          "name_de":"Bambushut",
          "name_it":"Cappello orientale"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Bomb Sniffer",
          "brand":"Krak-On",
@@ -459,7 +475,7 @@
          "name_de":"Bananen-Leinenschuhe",
          "name_it":"Classiche banana"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Charge Up",
          "brand":"Firefin",
@@ -472,7 +488,7 @@
          "name_de":"Baseball-Lagen-Hoodie",
          "name_it":"Maglia da baseball"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Quick Respawn",
          "brand":"SquidForce",
@@ -485,7 +501,7 @@
          "name_de":"Alltagsshirt",
          "name_it":"T-shirt recluta"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Duration Up",
          "brand":"Inkline",
@@ -498,14 +514,14 @@
          "name_de":"Lila Anorak",
          "name_it":"Giacca da sci viola"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Ink Recovery Up",
          "brand":"Skalop",
          "rarity":"3",
          "cost":"11,000",
          "name_en":"Bike Helmet",
-         "name_eu":"Cycle Helmet",
+         "name_en_GB":"Cycle Helmet",
          "name_fr-FR":"Casque de cycliste",
          "name_fr-CA":"Casque de vélo",
          "name_es-ES":"Casco ciclista",
@@ -513,7 +529,7 @@
          "name_de":"Fahrradhelm",
          "name_it":"Casco da bici"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Defence Up",
          "brand":"Firefin",
@@ -526,7 +542,7 @@
          "name_de":"Schwarzes Rilax-Pixel-Shirt",
          "name_it":"T-shirt 8 bit nera"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Recon",
          "brand":"SquidForce",
@@ -538,7 +554,7 @@
          "name_de":"Schwarzes Anker-Shirt",
          "name_it":"T-shirt ancora nera"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Tenacity",
          "brand":"Zekko",
@@ -551,7 +567,7 @@
          "name_de":"Schwarze Sportbandbrille",
          "name_it":"Occhiali spessi"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Swim Speed Up",
          "brand":"Rockenberg",
@@ -565,7 +581,7 @@
          "name_de":"Schwarzes Baseball-Shirt",
          "name_it":"Maglia sport nera"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Bomb Range Up",
          "brand":"Rockenberg",
@@ -579,7 +595,7 @@
          "name_de":"Schwarze Bikerjacke",
          "name_it":"Chiodo nero"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Quick Super Jump",
          "brand":"Zekko",
@@ -593,7 +609,7 @@
          "name_de":"Schwarzes Longsleeve",
          "name_it":"Maglia nera"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ink Saver (Main)",
          "brand":"SquidForce",
@@ -607,7 +623,7 @@
          "name_de":"Schwarzes Lagen-Shirt",
          "name_it":"A strati nera"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Saver",
          "brand":"KOG",
@@ -620,7 +636,7 @@
          "name_de":"Schwarzes Röhren-Shirt",
          "name_it":"T-shirt nera tubo"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Recon",
          "brand":"Zekko",
@@ -633,7 +649,7 @@
          "name_de":"Schwarzes Polohemd",
          "name_it":"Polo nera"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Swim Speed Up",
          "brand":"Zink",
@@ -646,7 +662,7 @@
          "name_de":"Schwarze Low-Top-Sneaker",
          "name_it":"Runner bianconere"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Run Speed Up",
          "brand":"Tentatek",
@@ -658,7 +674,7 @@
          "name_de":"Schwarzes Krakenaugen-Shirt",
          "name_it":"T-shirt neroseppia"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Duration Up",
          "brand":"SquidForce",
@@ -670,7 +686,7 @@
          "name_de":"Schwarzes Shirt",
          "name_it":"T-shirt nera"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Quick Respawn",
          "brand":"Tentatek",
@@ -684,14 +700,14 @@
          "name_de":"Schwarze Turnschuhe",
          "name_it":"Runner nere"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Ink Recovery Up",
          "brand":"Firefin",
          "rarity":"1",
          "cost":"700",
          "name_en":"Blowfish Bell Hat",
-         "name_eu":"Fugu Bell Hat",
+         "name_en_GB":"Fugu Bell Hat",
          "name_fr-FR":"Cloche Friture",
          "name_fr-CA":"Cloche Arki",
          "name_es-ES":"Sombrero de campana",
@@ -699,7 +715,7 @@
          "name_de":"Kugelfisch-Glockenhut",
          "name_it":"Cappello pesce palla"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Defence Up",
          "brand":"Zekko",
@@ -713,21 +729,21 @@
          "name_de":"Blaue Low-Tops",
          "name_it":"Basse blu"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Ink Resistance Up",
          "brand":"Rockenberg",
          "rarity":"3",
          "cost":"12,000",
          "name_en":"Blue Moto Boots",
-         "name_eu":"Blue Biker Boots",
+         "name_en_GB":"Blue Biker Boots",
          "name_fr-FR":"Bottes de moto bleues",
          "name_es-ES":"Bota motorista azul",
          "name_es-XL":"Botas de motociclista azules",
          "name_de":"Stivali da moto blu",
          "name_it":"Blaue Biker-Stiefel"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ink Saver (Sub)",
          "brand":"Inkline",
@@ -740,7 +756,7 @@
          "name_de":"Eisgipfel-Shirt",
          "name_it":"T-shirt cime blu"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Bomb Range Up",
          "brand":"Forge",
@@ -753,7 +769,7 @@
          "name_de":"Blaues Matrosen-Shirt",
          "name_it":"Felpa marinara blu"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Special Charge Up",
          "brand":"Tentatek",
@@ -766,21 +782,21 @@
          "name_de":"Blaue Laufschuhe",
          "name_it":"Swimmer blue"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Bomb Range Up",
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"300",
          "name_en":"Blue Slip-Ons",
-         "name_eu":"Blue Plimsolls",
+         "name_en_GB":"Blue Plimsolls",
          "name_fr-FR":"Mocassins bleus",
          "name_es-ES":"Playera azul",
          "name_es-XL":"Mocasines azules",
          "name_de":"Blaue Slip-ons",
          "name_it":"Espadrillas blu"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Ink Saver (Sub)",
          "brand":"Krak-On",
@@ -794,7 +810,7 @@
          "name_de":"Blaue Halbschuhe",
          "name_it":"Comfort blu"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Quick Super Jump",
          "brand":"Splash Mob",
@@ -807,7 +823,7 @@
          "name_de":"Pudelmütze",
          "name_it":"Pon pon di lana"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Damage Up",
          "brand":"Inkline",
@@ -821,14 +837,14 @@
          "name_de":"Gummistiefeletten",
          "name_it":"Stivaletti da pioggia"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Charge Up",
          "brand":"SquidForce",
          "rarity":"1",
          "cost":"600",
          "name_en":"Camo Layered LS",
-         "name_eu":"Layered Camo LS",
+         "name_en_GB":"Layered Camo LS",
          "name_fr-FR":"Haut double à motif",
          "name_fr-CA":"Gilet double à motif",
          "name_es-ES":"Camuflaje doble",
@@ -836,21 +852,21 @@
          "name_de":"Tarn-Lagen-Shirt",
          "name_it":"A strati mimetica"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Swim Speed Up",
          "brand":"Firefin",
          "rarity":"2",
          "cost":"2,500",
          "name_en":"Camo Mesh",
-         "name_eu":"Camo Mesh Cap",
+         "name_en_GB":"Camo Mesh Cap",
          "name_fr-FR":"Casquette filet camouflage",
          "name_es-ES":"Gorra camuflaje",
          "name_es-XL":"Gorra camuflada",
          "name_de":"Tarn-Netzkappe",
          "name_it":"Berretto Mimetico"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Quick Respawn",
          "brand":"Firefin",
@@ -863,7 +879,7 @@
          "name_de":"Tarn-Hoodie",
          "name_it":"Felpa zip mimetica"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Special Duration Up",
          "brand":"Inkline",
@@ -875,7 +891,7 @@
          "name_de":"Anglerhut",
          "name_it":"Cappello relax"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Defence Up",
          "brand":"Firefin",
@@ -887,7 +903,7 @@
          "name_de":"Leo-Print-Shirt",
          "name_it":"T-shirt leopardata"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Stealth Jump",
          "brand":"Rockenberg",
@@ -899,7 +915,7 @@
          "name_de":"Kirsch-Plateau-Sneaker",
          "name_it":"Rialzate rosa"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Quick Respawn",
          "brand":"Krak-On",
@@ -912,7 +928,7 @@
          "name_de":"Schokobraune Clogs",
          "name_it":"Zoccoli marroni"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ink Saver (Sub)",
          "brand":"Takoroka",
@@ -926,7 +942,7 @@
          "name_de":"Schoko-Lagen-Shirt",
          "name_it":"A strati marrone"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Special Duration Up",
          "brand":"Skalop",
@@ -939,7 +955,7 @@
          "name_de":"Klassischer Boater",
          "name_it":"Cappello di paglia classico"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Special Charge Up",
          "brand":"Krak-On",
@@ -953,7 +969,7 @@
          "name_de":"Clownfisch-Leinenschuhe",
          "name_it":"Clownfish classiche"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Stealth Jump",
          "brand":"Takoroka",
@@ -966,7 +982,7 @@
          "name_de":"Bunte Pfeilschuhe",
          "name_it":"Arrow arcobaleno"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Special Saver",
          "brand":"Krak-On",
@@ -980,7 +996,7 @@
          "name_de":"Weiße Leinenschuhe",
          "name_it":"Classiche crema"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Stealth Jump",
          "brand":"Krak-On",
@@ -994,7 +1010,7 @@
          "name_de":"Leinen-High-Tops",
          "name_it":"Sneaker crema"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Special Duration Up",
          "brand":"Inkline",
@@ -1008,7 +1024,7 @@
          "name_de":"Spezial-Wanderstiefel",
          "name_it":"Trekking colorate"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Damage Up",
          "brand":"Tentatek",
@@ -1022,7 +1038,7 @@
          "name_de":"Türkise Turnschuhe",
          "name_it":"Runner verdeacqua"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Defence Up",
          "brand":"Tentatek",
@@ -1034,7 +1050,7 @@
          "name_de":"Champion Radlermütze",
          "name_it":"Cappello re della bici"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Defence Up",
          "brand":"Tentatek",
@@ -1047,7 +1063,7 @@
          "name_de":"Champion-Radlertrikot",
          "name_it":"Maglia re della bici"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Bomb Range Up",
          "brand":"Zink",
@@ -1059,7 +1075,7 @@
          "name_de":"Radlermütze",
          "name_it":"Berretto da ciclista"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Cold Blooded",
          "brand":"Zink",
@@ -1072,14 +1088,14 @@
          "name_de":"Radlertrikot",
          "name_it":"Maglia da ciclista"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Cold Blooded",
          "brand":"Firefin",
          "rarity":"3",
          "cost":"10,000",
          "name_en":"Dark Urban Vest",
-         "name_eu":"Dark Urban Gilet",
+         "name_en_GB":"Dark Urban Gilet",
          "name_fr-FR":"Gilet urbain noir",
          "name_fr-CA":"Veste urbaine foncée",
          "name_es-ES":"Anorak urbano noche",
@@ -1087,14 +1103,14 @@
          "name_de":"Nachtblaue Steppweste",
          "name_it":"Gilè urbano"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Ink Saver (Sub)",
          "brand":"Forge",
          "rarity":"2",
          "cost":"2,500",
          "name_en":"Designer Headphones",
-         "name_eu":"Colourful Headphones",
+         "name_en_GB":"Colourful Headphones",
          "name_fr-FR":"Casque coloré",
          "name_fr-CA":"Casque multicolore",
          "name_es-ES":"Auriculares multicolor",
@@ -1102,7 +1118,7 @@
          "name_de":"Pastell-Kopfhörer",
          "name_it":"Cuffie colorate"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Damage Up",
          "brand":"Takoroka",
@@ -1115,7 +1131,7 @@
          "name_de":"FC-Bonito-Triko",
          "name_it":"SSC Trigliese"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Special Charge Up",
          "brand":"Tentatek",
@@ -1129,14 +1145,14 @@
          "name_de":"Getönte Kontaktlinsen",
          "name_it":"Lenti a contatto finte"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Bomb Range Up",
          "brand":"Firefin",
          "rarity":"2",
          "cost":"2,500",
          "name_en":"Firefin Navy Sweat",
-         "name_eu":"Firefin Sweat Navy",
+         "name_en_GB":"Firefin Sweat Navy",
          "name_fr-FR":"Sweat Friture marin",
          "name_fr-CA":"Coton ouaté Arki marin",
          "name_es-ES":"Sudadera Chokkor",
@@ -1144,7 +1160,7 @@
          "name_de":"Blaues Rilax-Sweatshirt",
          "name_it":"Felpa Torryd"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Special Charge Up",
          "brand":"Firefin",
@@ -1158,28 +1174,28 @@
          "name_de":"Rilax-Schirmband",
          "name_it":"Visiera cool"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Comeback",
          "brand":"Zekko",
          "rarity":"2",
          "cost":"2,000",
          "name_en":"Five-Panel Cap",
-         "name_eu":"5-Panel Cap",
+         "name_en_GB":"5-Panel Cap",
          "name_fr-FR":"Casquette multi-face",
          "name_es-ES":"Gorra parches",
          "name_es-XL":"Gorra de parches",
          "name_de":"5-Panel-Kappe",
          "name_it":"Berretto multifase"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ink Recovery Up",
          "brand":"Inkline",
          "rarity":"3",
          "cost":"11000",
          "name_en":"Forest Vest",
-         "name_eu":"Forest Gilet",
+         "name_en_GB":"Forest Gilet",
          "name_fr-FR":"Gilet sylvestre",
          "name_fr-CA":"Veste sylvestre",
          "name_es-ES":"Anorak jungla",
@@ -1187,7 +1203,7 @@
          "name_de":"Outdoor-Steppweste",
          "name_it":"Piumino trekking"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Run Speed Up",
          "brand":"Forge",
@@ -1201,7 +1217,7 @@
          "name_de":"Focus-Inkling-Parka",
          "name_it":"Parka Inkling Fortia"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Haunt",
          "brand":"Forge",
@@ -1215,7 +1231,7 @@
          "name_de":"Focus-Oktarianer-Parka",
          "name_it":"Parka octariano Fortia"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Swim Speed Up",
          "brand":"Firefin",
@@ -1228,7 +1244,7 @@
          "name_de":"Kugelfisch-Shirt",
          "name_it":"T-shirt pesce palla"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Quick Super Jump",
          "brand":"Krak-On",
@@ -1240,7 +1256,7 @@
          "name_de":"Rund-Hornbrille",
          "name_it":"Occhiali rotondi"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Tenacity",
          "brand":"Forge",
@@ -1252,7 +1268,7 @@
          "name_de":"Gasmaske",
          "name_it":"Maschera antigas"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Run Speed Up",
          "brand":"Zink",
@@ -1266,7 +1282,7 @@
          "name_de":"Goldene High-Top-Sneaker",
          "name_it":"Alte dorate"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Run Speed Up",
          "brand":"Zink",
@@ -1280,7 +1296,7 @@
          "name_de":"Schirmband",
          "name_it":"Visiera da golf"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ink Recovery Up",
          "brand":"Skalop",
@@ -1293,61 +1309,61 @@
          "name_de":"Lila Shirt",
          "name_it":"T-shirt fucsia"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Swim Speed Up",
          "brand":"Splash Mob",
          "rarity":"1",
          "cost":"800",
          "name_en":"Gray College Sweat",
-         "name_eu":"Grey College Sweat",
+         "name_en_GB":"Grey College Sweat",
          "name_fr-FR":"Sweat université gris",
          "name_fr-CA":"Coton ouaté université gris",
          "name_es-ES":"Sudadera gris",
          "name_de":"Graues Sweatshirt",
          "name_it":"Felpa college grigia"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Quick Super Jump",
          "brand":"Zekko",
          "rarity":"2",
          "cost":"2,800",
          "name_en":"Gray Mixed Shirt",
-         "name_eu":"Grey Mixed Shirt",
+         "name_en_GB":"Grey Mixed Shirt",
          "name_fr-FR":"Chemise grise",
          "name_es-ES":"Camisa tonos grises",
          "name_es-XL":"Camisa tonos gris",
          "name_de":"Graues Karodetail-Hemd",
          "name_it":"Camicia grigia"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Quick Super Jump",
          "brand":"Takoroka",
          "rarity":"1",
          "cost":"500",
          "name_en":"Gray Vector Tee",
-         "name_eu":"Grey Vector Tee",
+         "name_en_GB":"Grey Vector Tee",
          "name_fr-FR":"T-shirt fléché gris",
          "name_es-ES":"Vectores gris",
          "name_de":"Graues Profil-Shirt",
          "name_it":"T-shirt grigia frecce"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Bomb Range Up",
          "brand":"Zekko",
          "rarity":"2",
          "cost":"2,000",
          "name_en":"Green-Check Shirt",
-         "name_eu":"Green Check Shirt",
+         "name_en_GB":"Green Check Shirt",
          "name_fr-FR":"Chemise vichy verte",
          "name_es-ES":"Camisa cuadros verdes",
          "name_de":"Grünes Karohemd",
          "name_it":"Camicia a quadri"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Recon",
          "brand":"Splash Mob",
@@ -1361,21 +1377,21 @@
          "name_de":"Grüner Cardigan",
          "name_it":"Cardigan verde"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Stealth Jump",
          "brand":"Inkline",
          "rarity":"2",
          "cost":"1,600",
          "name_en":"Green Rain Boots",
-         "name_eu":"Moss-Green Wellies",
+         "name_en_GB":"Moss-Green Wellies",
          "name_fr-FR":"Bottes de pluie vertes",
          "name_es-ES":"Bota de agua verde",
          "name_es-XL":"Botas de lluvia verdes",
          "name_de":"Moosgrüne Gummistiefel",
          "name_it":"Stivali di gomma verdi"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ninja Squid",
          "brand":"Inkline",
@@ -1389,7 +1405,7 @@
          "name_de":"Grünes Streifen-Longsleeve",
          "name_it":"Maglia biancoverde"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Saver",
          "brand":"Forge",
@@ -1402,7 +1418,7 @@
          "name_de":"Grünes Lagen-Shirt",
          "name_it":"T-shirt verde"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Duration Up",
          "brand":"Firefin",
@@ -1415,7 +1431,7 @@
          "name_de":"Tannengrüner Hoodie",
          "name_it":"Felpa zip verde"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ninja Squid",
          "brand":"Firefin",
@@ -1427,7 +1443,7 @@
          "name_de":"Zebra-Shirt",
          "name_it":"T-shirt zebra"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Run Speed Up",
          "brand":"Cuttlegear",
@@ -1441,7 +1457,7 @@
          "name_de":"Helden-Headset Replik",
          "name_it":"Cuffie élite replica"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Swim Speed Up",
          "brand":"Cuttlegear",
@@ -1455,7 +1471,7 @@
          "name_de":"Heldenjacke Replik",
          "name_it":"Giubbino élite replica"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Quick Super Jump",
          "brand":"Cuttlegear",
@@ -1469,14 +1485,14 @@
          "name_de":"Heldenschuhe Replik",
          "name_it":"Runner élite replica"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Ink Recovery Up",
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"500",
          "name_en":"Hunter Hi-Tops",
-         "name_eu":"Dark Green Hi-Tops",
+         "name_en_GB":"Dark Green Hi-Tops",
          "name_fr-FR":"Tennis montantes algue",
          "name_fr-CA":"Espadrilles hautes algue",
          "name_es-ES":"Bamba alta oliva",
@@ -1484,7 +1500,7 @@
          "name_de":"Tannengrüne Leinen-High-Tops",
          "name_it":"Sneaker verde scuro"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Stealth Jump",
          "brand":"Tentatek",
@@ -1497,7 +1513,7 @@
          "name_de":"Blaue Tarn-Daunenstiefel",
          "name_it":"Stivali da ghiaccio"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Haunt",
          "brand":"Inkline",
@@ -1510,7 +1526,7 @@
          "name_de":"Schneegipfel-Shirt",
          "name_it":"T-shirt cime avorio"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Special Saver",
          "brand":"Firefin",
@@ -1523,7 +1539,7 @@
          "name_de":"Jet-Kappe",
          "name_it":"Berretto Jet"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Ink Saver (Sub)",
          "brand":"Zekko",
@@ -1536,21 +1552,21 @@
          "name_de":"Laufstirnband",
          "name_it":"Fascia da jogging"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Ink Saver (Main)",
          "brand":"Firefin",
          "rarity":"3",
          "cost":"9,000",
          "name_en":"Jungle Hat",
-         "name_eu":"Safari Hat",
+         "name_en_GB":"Safari Hat",
          "name_fr-FR":"Chapeau de safari",
          "name_es-ES":"Sombrero safari",
          "name_es-XL":"Sombrero Camuflado",
          "name_de":"Tarnhut",
          "name_it":"Cappello safari"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Run Speed Up",
          "brand":"Krak-On",
@@ -1564,14 +1580,14 @@
          "name_de":"Medusa 528",
          "name_it":"Cnydarya 528"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Ink Saver (Sub)",
          "brand":"Zekko",
          "rarity":"3",
          "cost":"8,000",
          "name_en":"LE Lo-Tops",
-         "name_eu":"Ltd Edition Lo-Tops",
+         "name_en_GB":"Ltd Edition Lo-Tops",
          "name_fr-FR":"Tennis édition limitée",
          "name_fr-CA":"Espadrilles édition limitée",
          "name_es-ES":"Tenis especial",
@@ -1579,14 +1595,14 @@
          "name_de":"Limitierte Low-Tops",
          "name_it":"Basse limited"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Ink Resistance Up",
          "brand":"Takoroka",
          "rarity":"2",
          "cost":"2,600",
          "name_en":"LE Soccer Cleats",
-         "name_eu":"LE Football Studs",
+         "name_en_GB":"LE Football Studs",
          "name_fr-FR":"Chaussures à crampons DX",
          "name_fr-CA":"Souliers de soccer DX",
          "name_es-ES":"Bota de tacos extra",
@@ -1594,7 +1610,7 @@
          "name_de":"Deluxe-Stollenschuhe",
          "name_it":"Scarpe da calcio deluxe"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Run Speed Up",
          "brand":"SquidForce",
@@ -1608,7 +1624,7 @@
          "name_de":"Schwarzes Anker-Lagen-Shirt",
          "name_it":"A strati ancora"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Saver",
          "brand":"Takoroka",
@@ -1622,7 +1638,7 @@
          "name_de":"Lagen-Profil-Shirt",
          "name_it":"A strati frecce"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Damage Up",
          "brand":"Cuttlegear",
@@ -1634,7 +1650,7 @@
          "name_de":"Legendäre Mütze",
          "name_it":"Cappello leggendario"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Swim Speed Up",
          "brand":"Inkline",
@@ -1647,7 +1663,7 @@
          "name_de":"Camper-Kappe",
          "name_it":"Berretto leggero"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Bomb Range Up",
          "brand":"Splash Mob",
@@ -1659,7 +1675,7 @@
          "name_de":"Leinenhemd",
          "name_it":"Camicia di lino"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ink Recovery Up",
          "brand":"Zekko",
@@ -1672,7 +1688,7 @@
          "name_de":"Logo-Hawaiihemd",
          "name_it":"Camicia hawaiana"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ink Saver (Main)",
          "brand":"Rockenberg",
@@ -1684,7 +1700,7 @@
          "name_de":"Holzfäller-Hemd",
          "name_it":"Camicia scozzese"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Ink Recovery Up",
          "brand":"Splash Mob",
@@ -1697,7 +1713,7 @@
          "name_de":"Karnivor-Schnürer",
          "name_it":"Scarpe squalo"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Defence Up",
          "brand":"Skalop",
@@ -1710,28 +1726,28 @@
          "name_de":"Minzgrünes Shirt",
          "name_it":"T-shirt verdeacqua"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Quick Respawn",
          "brand":"Rockenberg",
          "rarity":"2",
          "cost":"3,000",
          "name_en":"Moto Boots",
-         "name_eu":"Biker Boots",
+         "name_en_GB":"Biker Boots",
          "name_fr-FR":"Bottes de moto",
          "name_es-ES":"Bota motorista",
          "name_es-XL":"Botas de motociclista",
          "name_de":"Biker-Stiefel",
          "name_it":"Stivali da moto"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Swim Speed Up",
          "brand":"Inkline",
          "rarity":"3",
          "cost":"11,000",
          "name_en":"Mountain Vest",
-         "name_eu":"Mountain Gilet",
+         "name_en_GB":"Mountain Gilet",
          "name_fr-FR":"Gilet de montagne",
          "name_fr-CA":"Veste de montagne",
          "name_es-ES":"Anorak montaña",
@@ -1739,7 +1755,7 @@
          "name_de":"Kletter-Steppweste",
          "name_it":"Piumino montagna"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Damage Up",
          "brand":"Splash Mob",
@@ -1752,7 +1768,7 @@
          "name_de":"Marineblaues Sweatshirt",
          "name_it":"Felpa college blu"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Damage Up",
          "brand":"Splash Mob",
@@ -1766,35 +1782,35 @@
          "name_de":"Blaues Streifen-Longsleeve",
          "name_it":"Maglia navy a righe"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Ink Resistance Up",
          "brand":"Tentatek",
          "rarity":"1",
          "cost":"700",
          "name_en":"Neon Sea Slugs",
-         "name_eu":"Neon Green Sea Slugs",
+         "name_en_GB":"Neon Green Sea Slugs",
          "name_fr-FR":"Anguilles vert fluo",
          "name_es-ES":"Zapatilla verde neón",
          "name_es-XL":"Anguilas verde neón",
          "name_de":"Neongrüne Laufschuhe",
          "name_it":"Swimmer verdi fluo"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Quick Respawn",
          "brand":"Forge",
          "rarity":"2",
          "cost":"2800",
          "name_en":"Noise Cancelers",
-         "name_eu":"Noise Cancellers",
+         "name_en_GB":"Noise Cancellers",
          "name_fr-FR":"Casque DJ",
          "name_es-ES":"Cascos antirruido",
          "name_es-XL":"Auriculares antirruido",
          "name_de":"Gehörschutz",
          "name_it":"Cuffie antirumore"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Haunt",
          "brand":"Cuttlegear",
@@ -1806,7 +1822,7 @@
          "name_de":"Okto-Shirt",
          "name_it":"T-shirt octo"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Last-Ditch Effort",
          "brand":"Firefin",
@@ -1818,14 +1834,14 @@
          "name_de":"Oktobrille",
          "name_it":"Octocchiali"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ink Saver (Sub)",
          "brand":"Cuttlegear",
          "rarity":"2",
          "cost":"N/A",
          "name_en":"Octoling Armor",
-         "name_eu":"Octoling Armour",
+         "name_en_GB":"Octoling Armour",
          "name_fr-FR":"Plastron Octaling",
          "name_fr-CA":"Plastron octaling",
          "name_es-ES":"Pulpoarmadura",
@@ -1833,7 +1849,7 @@
          "name_de":"Okto-Rüstung",
          "name_it":"Corazza Octoling"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Special Saver",
          "brand":"Cuttlegear",
@@ -1847,14 +1863,14 @@
          "name_de":"Okto-Kampfstiefel",
          "name_it":"Stivali Octoling"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Bomb Range Up",
          "brand":"Cuttlegear",
          "rarity":"2",
          "cost":"N/A",
          "name_en":"Octoling Goggles",
-         "name_eu":"Octoling Scope",
+         "name_en_GB":"Octoling Scope",
          "name_fr-FR":"Lunettes Octaling",
          "name_fr-CA":"Lunettes octaling",
          "name_es-ES":"Pulposcopio",
@@ -1862,7 +1878,7 @@
          "name_de":"Oktoskop",
          "name_it":"Visore Octoling"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Recon",
          "brand":"Inkline",
@@ -1876,7 +1892,7 @@
          "name_de":"Grüner Anorak",
          "name_it":"Giacca da sci verde"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Ink Saver (Main)",
          "brand":"Takoroka",
@@ -1888,7 +1904,7 @@
          "name_de":"Orange Pfeilschuhe",
          "name_it":"Arrow arancioblu"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Charge Up",
          "brand":"Splash Mob",
@@ -1902,7 +1918,7 @@
          "name_de":"Oranger Cardigan",
          "name_it":"Cardigan arancione"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Swim Speed Up",
          "brand":"Zekko",
@@ -1915,7 +1931,7 @@
          "name_de":"Orange Low-Tops",
          "name_it":"Basse arancioni"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Run Speed Up",
          "brand":"Krak-On",
@@ -1928,7 +1944,7 @@
          "name_de":"Austerngraue Clogs",
          "name_it":"Zoccoli grigi"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Comeback",
          "brand":"Forge",
@@ -1942,7 +1958,7 @@
          "name_de":"Paintballhelm",
          "name_it":"Maschera paintball"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Ink Saver (Sub)",
          "brand":"Krak-On",
@@ -1955,7 +1971,7 @@
          "name_de":"Klassisches Bandana",
          "name_it":"Bandana paisley"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Damage Up",
          "brand":"Tentatek",
@@ -1969,7 +1985,7 @@
          "name_de":"Piraten-Lagen-Shirt",
          "name_it":"A strati pirata"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ink Saver (Sub)",
          "brand":"Skalop",
@@ -1981,7 +1997,7 @@
          "name_de":"Perlen-Shirt",
          "name_it":"T-shirt perlata"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Bomb Range Up",
          "brand":"Forge",
@@ -1994,7 +2010,7 @@
          "name_de":"Pilotenbrille",
          "name_it":"Occhiali da pilota"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Bomb Range Up",
          "brand":"Tentatek",
@@ -2008,20 +2024,20 @@
          "name_de":"Pinke Turnschuhe",
          "name_it":"Runner rosa"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Duration Up",
          "brand":"Splash Mob",
          "rarity":"1",
          "cost":"700",
          "name_en":"Pirate-Stripe Tee",
-         "name_eu":"Pirate Stripes Tee",
+         "name_en_GB":"Pirate Stripes Tee",
          "name_fr-FR":"T-shirt rayé pirate",
          "name_es-ES":"Camiseta pirata",
          "name_de":"Piraten-Shirt",
          "name_it":"T-shirt da pirata"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Damage Up",
          "brand":"Krak-On",
@@ -2034,21 +2050,21 @@
          "name_de":"Lila Halbschuhe",
          "name_it":"Comfort viola"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Quick Respawn",
          "brand":"amiibo",
          "rarity":"2",
          "cost":"N/A",
          "name_en":"Power Armor",
-         "name_eu":"Power Armour",
+         "name_en_GB":"Power Armour",
          "name_fr-FR":"Armure méca",
          "name_fr-CA":"Armure de puissance",
          "name_es-ES":"Tecnoarmadura",
          "name_de":"Exo-Rüstung",
          "name_it":"Armatura hi-tech"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Ink Saver (Main)",
          "brand":"amiibo",
@@ -2062,7 +2078,7 @@
          "name_de":"Exo-Stiefel",
          "name_it":"Stivali hi-tech"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Defence Up",
          "brand":"amiibo",
@@ -2076,7 +2092,7 @@
          "name_de":"Exo-Helm",
          "name_it":"Maschera hi-tech"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Bomb Sniffer",
          "brand":"Inkline",
@@ -2090,7 +2106,7 @@
          "name_de":"Profi-Wanderstiefel",
          "name_it":"Trekking pro"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Bomb Sniffer",
          "brand":"Rockenberg",
@@ -2104,7 +2120,7 @@
          "name_de":"Rotbraune Punkstiefel",
          "name_it":"Anfibi melanzana"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Special Charge Up",
          "brand":"Rockenberg",
@@ -2117,7 +2133,7 @@
          "name_de":"Weiße Punkstiefel",
          "name_it":"Anfibi bianchi"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Special Saver",
          "brand":"Rockenberg",
@@ -2130,7 +2146,7 @@
          "name_de":"Gelbe Punkstiefel",
          "name_it":""
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Bomb Range Up",
          "brand":"Takoroka",
@@ -2144,7 +2160,7 @@
          "name_de":"Lila Tarn-Longsleeve",
          "name_it":"Mimetica viola"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Special Duration Up",
          "brand":"Zink",
@@ -2158,7 +2174,7 @@
          "name_de":"Lila High-Top-Sneaker",
          "name_it":"Alte gialloviola"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Run Speed Up",
          "brand":"Tentatek",
@@ -2172,33 +2188,33 @@
          "name_de":"Lila Laufschuhe",
          "name_it":"Swimmer viola"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ink Saver (Main)",
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"300",
          "name_en":"Rainy-Day Tee",
-         "name_eu":"Rainy Day Tee",
+         "name_en_GB":"Rainy Day Tee",
          "name_fr-FR":"T-shirt jour de pluie",
          "name_es-ES":"Camiseta lluvia",
          "name_de":"Regenblaues Shirt",
          "name_it":"T-shirt blupioggia"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ink Saver (Main)",
          "brand":"Zekko",
          "rarity":"2",
          "cost":"2,000",
          "name_en":"Red-Check Shirt",
-         "name_eu":"Red Check Shirt",
+         "name_en_GB":"Red Check Shirt",
          "name_fr-FR":"Chemise de bûcheron",
          "name_es-ES":"Camisa cuadros rojos",
          "name_de":"Rotes Karohemd",
          "name_it":"Camicia a scacchi"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Ink Saver (Main)",
          "brand":"Zink",
@@ -2212,7 +2228,7 @@
          "name_de":"Rote High-Top-Sneaker",
          "name_it":"Alte biancorosse"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Ink Resistance Up",
          "brand":"Krak-On",
@@ -2226,7 +2242,7 @@
          "name_de":"Rote Leinen-High-Tops",
          "name_it":"Sneaker rosse"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Special Saver",
          "brand":"Tentatek",
@@ -2239,21 +2255,21 @@
          "name_de":"Rote Laufschuhe",
          "name_it":"Swimmer rosse"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Quick Super Jump",
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"300",
          "name_en":"Red Slip-Ons",
-         "name_eu":"Red Plimsolls",
+         "name_en_GB":"Red Plimsolls",
          "name_fr-FR":"Mocassins rouges",
          "name_es-ES":"Playera roja",
          "name_es-XL":"Mocasines rojos",
          "name_de":"Rote Slip-ons",
          "name_it":"Espadrillas rosse"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ink Saver (Main)",
          "brand":"Takoroka",
@@ -2265,7 +2281,7 @@
          "name_de":"Rotes Profil-Shirt",
          "name_it":"T-shirt rossa frecce"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Quick Super Jump",
          "brand":"Rockenberg",
@@ -2278,7 +2294,7 @@
          "name_de":"Rote Arbeitsstiefel",
          "name_it":"Scarponi rossi"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Duration Up",
          "brand":"Zekko",
@@ -2292,7 +2308,7 @@
          "name_de":"Pfeillogo-Sweatshirt",
          "name_it":"Maglione giravolta"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Saver",
          "brand":"Skalop",
@@ -2306,7 +2322,7 @@
          "name_de":"Reggae-Shirt",
          "name_it":"T-shirt reggae"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Quick Respawn",
          "brand":"Zink",
@@ -2320,7 +2336,7 @@
          "name_de":"Retro-Gamer-Jacke",
          "name_it":"Felpa rétro"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Quick Respawn",
          "brand":"Splash Mob",
@@ -2333,7 +2349,7 @@
          "name_de":"Retrobrille",
          "name_it":"Occhiali rétro"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Defence Up",
          "brand":"SquidForce",
@@ -2346,7 +2362,7 @@
          "name_de":"Retro-Sweatshirt",
          "name_it":"Maglione vintage"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Defence Up",
          "brand":"Rockenberg",
@@ -2360,7 +2376,7 @@
          "name_de":"Unibrogues",
          "name_it":"Eleganti marroni"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Damage Up",
          "brand":"Rockenberg",
@@ -2372,7 +2388,7 @@
          "name_de":"Schwarzes Rockberg-Shirt",
          "name_it":"Rockenburg nera"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ink Recovery Up",
          "brand":"Rockenberg",
@@ -2384,7 +2400,7 @@
          "name_de":"Weißes Rockberg-Shirt",
          "name_it":"Rockenburg bianca"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Quick Super Jump",
          "brand":"Krak-On",
@@ -2397,20 +2413,20 @@
          "name_de":"Rodeo-Hemd",
          "name_it":"Camicia hipsterica"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ink Saver (Sub)",
          "brand":"Rockenberg",
          "rarity":"1",
          "cost":"600",
          "name_en":"Round-Collar Shirt",
-         "name_eu":"Round Collar Shirt",
+         "name_en_GB":"Round Collar Shirt",
          "name_fr-FR":"Chemisette grise",
          "name_es-ES":"Camisa cuello redondo",
          "name_de":"Bubikragen-Hemd",
          "name_it":"Camicia corta grigia"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Opening Gambit",
          "brand":"The SQUID GIRL",
@@ -2422,7 +2438,7 @@
          "name_de":"SQUID GIRL-Hut",
          "name_it":"Cappuccio SQUID GIRL"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Swim Speed Up",
          "brand":"The SQUID GIRL",
@@ -2435,7 +2451,7 @@
          "name_de":"SQUID GIRL-Schuhe",
          "name_it":"Scarpe SQUID GIRL"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Damage Up",
          "brand":"The SQUID GIRL",
@@ -2448,14 +2464,14 @@
          "name_de":"SQUID GIRL-Tunika",
          "name_it":"Vestito SQUID GIRL"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Last-Ditch Effort",
          "brand":"Forge",
          "rarity":"2",
          "cost":"2300",
          "name_en":"Safari Hat",
-         "name_eu":"Jungle Hat",
+         "name_en_GB":"Jungle Hat",
          "name_fr-FR":"Chapeau de Brousse",
          "name_fr-CA":"",
          "name_es-ES":"Sombrero camuflaje",
@@ -2463,33 +2479,33 @@
          "name_de":"Hummer-Tropenhut",
          "name_it":"Cappello giungla"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Cold Blooded",
          "brand":"Splash Mob",
          "rarity":"1",
          "cost":"400",
          "name_en":"Sage Polo",
-         "name_eu":"Sage Green Polo",
+         "name_en_GB":"Sage Green Polo",
          "name_fr-FR":"Polo vert clair",
          "name_es-ES":"Polo lima",
          "name_de":"Hellgrünes Polohemd",
          "name_it":"Polo verde chiaro"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Run Speed Up",
          "brand":"Splash Mob",
          "rarity":"1",
          "cost":"700",
          "name_en":"Sailor-Stripe Tee",
-         "name_eu":"Sailor Stripes Tee",
+         "name_en_GB":"Sailor Stripes Tee",
          "name_fr-FR":"T-shirt rayé marin",
          "name_es-ES":"Camiseta marinera",
          "name_de":"Marine-Shirt",
          "name_it":"T-shirt da marinaio"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Damage Up",
          "brand":"amiibo",
@@ -2502,7 +2518,7 @@
          "name_de":"Samurai-Helm",
          "name_it":"Elmo da samurai"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Charge Up",
          "brand":"amiibo",
@@ -2515,7 +2531,7 @@
          "name_de":"Samurai-Rüstung",
          "name_it":"Armatura samurai"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Special Duration Up",
          "brand":"amiibo",
@@ -2529,7 +2545,7 @@
          "name_de":"Samurai-Schuhe",
          "name_it":"Calzature da samurai"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ninja Squid",
          "brand":"Zink",
@@ -2543,7 +2559,7 @@
          "name_de":"Sportjacke",
          "name_it":"Felpa scolastica"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Ink Saver (Sub)",
          "brand":"amiibo",
@@ -2556,7 +2572,7 @@
          "name_de":"Schuluniform-Schuhe",
          "name_it":"Mocassini neri"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ink Recovery Up",
          "brand":"amiibo",
@@ -2568,7 +2584,7 @@
          "name_de":"Schuluniform",
          "name_it":"Uniforme scolastica"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Bomb Range Up",
          "brand":"Splash Mob",
@@ -2582,20 +2598,20 @@
          "name_de":"Hai-Schnürer",
          "name_it":"Scarpe aggressive"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Saver",
          "brand":"Splash Mob",
          "rarity":"3",
          "cost":"8,400",
          "name_en":"Shirt & Tie",
-         "name_eu":"Shirt and Tie",
+         "name_en_GB":"Shirt and Tie",
          "name_fr-FR":"Chemise cravate",
          "name_es-ES":"Camisa con corbata",
          "name_de":"Hemd mit Krawatte",
          "name_it":"Camicia con cravatta"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Ink Saver (Main)",
          "brand":"Inkline",
@@ -2609,20 +2625,20 @@
          "name_de":"Beanie",
          "name_it":"Zuccotto"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ninja Squid",
          "brand":"Splash Mob",
          "rarity":"1",
          "cost":"400",
          "name_en":"Shrimp-Pink Polo",
-         "name_eu":"Pink Shrimp Polo",
+         "name_en_GB":"Pink Shrimp Polo",
          "name_fr-FR":"Polo rose crevette",
          "name_es-ES":"Polo salmón",
          "name_de":"Krabbencocktail-Polohemd",
          "name_it":"Polo rosa"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Special Saver",
          "brand":"Skalop",
@@ -2636,7 +2652,7 @@
          "name_de":"Skateboardhelm",
          "name_it":"Casco da skate"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Special Saver",
          "brand":"Forge",
@@ -2649,14 +2665,14 @@
          "name_de":"Totenkopf-Bandana",
          "name_it":"Bandana teschio"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Cold Blooded",
          "brand":"Tentatek",
          "rarity":"1",
          "cost":"500",
          "name_en":"Sky-Blue Squideye",
-         "name_eu":"Sky Blue Squideye",
+         "name_en_GB":"Sky Blue Squideye",
          "name_fr-FR":"T-shirt OculR bleu clair",
          "name_fr-CA":"T-shirt OculR bleu ciel",
          "name_es-ES":"Ojos calamar azul",
@@ -2664,7 +2680,7 @@
          "name_de":"Hellblaues Krakenaugen-Shirt",
          "name_it":"Maglia azzurromare"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Defence Up",
          "brand":"Takoroka",
@@ -2678,20 +2694,20 @@
          "name_de":"FC-Barrakuda-Trikot",
          "name_it":"AS Medusana"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Damage Up",
          "brand":"Forge",
          "rarity":"2",
          "cost":"3,000",
          "name_en":"Snorkel Mask",
-         "name_eu":"Snorkel",
+         "name_en_GB":"Snorkel",
          "name_fr-FR":"Masque et tuba",
          "name_es-ES":"Gafas con tubo",
          "name_de":"Schnorchel",
          "name_it":"Maschera con tubo"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Quick Super Jump",
          "brand":"Tentatek",
@@ -2704,14 +2720,14 @@
          "name_de":"Weiße Daunenstiefel",
          "name_it":"Stivali da neve"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Bomb Sniffer",
          "brand":"Takoroka",
          "rarity":"3",
          "cost":"9,600",
          "name_en":"Soccer Cleats",
-         "name_eu":"Football Studs",
+         "name_en_GB":"Football Studs",
          "name_fr-FR":"Chaussures à crampons",
          "name_fr-CA":"Souliers de soccer",
          "name_es-ES":"Bota de tacos",
@@ -2719,14 +2735,14 @@
          "name_de":"Stollenschuhe",
          "name_it":"Scarpe da calcio"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Tenacity",
          "brand":"Tentatek",
          "rarity":"3",
          "cost":"8000",
          "name_en":"Soccer Headband",
-         "name_eu":"Football Headband",
+         "name_en_GB":"Football Headband",
          "name_fr-FR":"Bandeau de foot",
          "name_fr-CA":"Bandeau de soccer",
          "name_es-ES":"Cinta fútbol",
@@ -2734,7 +2750,7 @@
          "name_de":"Fußballstirnband",
          "name_it":"Fascia da calcio"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Opening Gambit",
          "brand":"Forge",
@@ -2746,7 +2762,7 @@
          "name_de":"Barett",
          "name_it":"Berretto trote speciali"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Defence Up",
          "brand":"Forge",
@@ -2759,7 +2775,7 @@
          "name_de":"Taucherbrille",
          "name_it":"Maschera da sub"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Saver",
          "brand":"SquidForce",
@@ -2772,7 +2788,7 @@
          "name_de":"Splatfest-Shirt",
          "name_it":"T-shirt festival"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Tenacity",
          "brand":"Skalop",
@@ -2786,7 +2802,7 @@
          "name_de":"Winter-Pudelmütze",
          "name_it":"Pon pon sportivo"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Damage Up",
          "brand":"Zink",
@@ -2799,14 +2815,14 @@
          "name_de":"Squashstirnband",
          "name_it":"Fascia da squash"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Duration Up",
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"800",
          "name_en":"Squid-Pattern Waistcoat",
-         "name_eu":"Squid Pattern Waistcoat",
+         "name_en_GB":"Squid Pattern Waistcoat",
          "name_fr-FR":"Gilet motif calamar",
          "name_fr-CA":"Veste motif calamar",
          "name_es-ES":"Chaleco con camisa",
@@ -2814,7 +2830,7 @@
          "name_de":"Karohemd mit Weste",
          "name_it":"Gilè calamaro"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Opening Gambit",
          "brand":"Skalop",
@@ -2826,21 +2842,21 @@
          "name_de":"Pfeilmuster-Kappe",
          "name_it":"Berretto hip-hop"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Defence Up",
          "brand":"Krak-On",
          "rarity":"2",
          "cost":"1,500",
          "name_en":"Squid-Stitch Slip-Ons",
-         "name_eu":"Squid-Stitch Plimsolls",
+         "name_en_GB":"Squid-Stitch Plimsolls",
          "name_fr-FR":"Mocassins pied-de-poulpe",
          "name_es-ES":"Playera bicolor",
          "name_es-XL":"Mocasines bicolor",
          "name_de":"Pfeil-Slip-ons",
          "name_it":"Espadrillas hip-hop"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Swim Speed Up",
          "brand":"Skalop",
@@ -2853,7 +2869,7 @@
          "name_de":"Pfeilmuster-Shirt",
          "name_it":"T-shirt hip-hop"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Swim Speed Up",
          "brand":"amiibo",
@@ -2867,7 +2883,7 @@
          "name_de":"Tintenfisch-Spange",
          "name_it":"Fermaglio calamaro"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Comeback",
          "brand":"Skalop",
@@ -2881,7 +2897,7 @@
          "name_de":"Wintersportmütze",
          "name_it":"Cappello da neve"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Quick Respawn",
          "brand":"Zekko",
@@ -2894,7 +2910,7 @@
          "name_de":"Katzen-Baseballjacke",
          "name_it":"Giubbino furia"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Haunt",
          "brand":"SquidForce",
@@ -2908,7 +2924,7 @@
          "name_de":"Kalmar-Longsleeve",
          "name_it":"Maglia da battaglia"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Bomb Range Up",
          "brand":"SquidForce",
@@ -2921,7 +2937,7 @@
          "name_de":"Kalmar-Sweatshirt",
          "name_it":"Maglione CalamaX"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Cold Blooded",
          "brand":"Krak-On",
@@ -2935,7 +2951,7 @@
          "name_de":"Kalmarstern-Weste",
          "name_it":"Gilè aquilamaro"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Special Charge Up",
          "brand":"Skalop",
@@ -2948,14 +2964,14 @@
          "name_de":"Inkvader-Kappe",
          "name_it":"Berretto Inkvaders"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Quick Respawn",
          "brand":"Rockenberg",
          "rarity":"1",
          "cost":"800",
          "name_en":"Squink Wingtips",
-         "name_eu":"Squid Ink Brogues",
+         "name_en_GB":"Squid Ink Brogues",
          "name_fr-FR":"Richelieu encre-de-seiche",
          "name_fr-CA":"Chaussures sépia",
          "name_es-ES":"Zapato clásico",
@@ -2963,7 +2979,7 @@
          "name_de":"Sepibrogues",
          "name_it":"Eleganti nero di seppia"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Swim Speed Up",
          "brand":"Forge",
@@ -2975,7 +2991,7 @@
          "name_de":"Nachtsichtgerät",
          "name_it":"Casco a infrarossi"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Ink Resistance Up",
          "brand":"Splash Mob",
@@ -2989,7 +3005,7 @@
          "name_de":"Ultrarote Klettsneaker",
          "name_it":"Ultrarosse a strappo"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Ink Saver (Sub)",
          "brand":"Splash Mob",
@@ -3003,7 +3019,7 @@
          "name_de":"Ultraweiße Klettsneaker",
          "name_it":"Ultrabianche a strappo"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Quick Super Jump",
          "brand":"Skalop",
@@ -3016,21 +3032,21 @@
          "name_de":"Boater",
          "name_it":"Cappello di paglia"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Ink Saver (Sub)",
          "brand":"Skalop",
          "rarity":"1",
          "cost":"600",
          "name_en":"Streetstyle Cap",
-         "name_eu":"Fashion Cap",
+         "name_en_GB":"Fashion Cap",
          "name_fr-FR":"Casquette branchée",
          "name_es-ES":"Gorra de diseño",
          "name_es-XL":"Gorra turquesa",
          "name_de":"Style-Kappe",
          "name_it":"Berretto alla moda"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Opening Gambit",
          "brand":"Splash Mob",
@@ -3044,7 +3060,7 @@
          "name_de":"Streifen-Beanie",
          "name_it":"Zuccotto a righe"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Quick Super Jump",
          "brand":"Inkline",
@@ -3058,7 +3074,7 @@
          "name_de":"Streifengipfel-Longsleeve",
          "name_it":"Maglia cime e righe"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Run Speed Up",
          "brand":"Takoroka",
@@ -3071,7 +3087,7 @@
          "name_de":"Gestreiftes Lang-Polohemd",
          "name_it":"Maglia rugby a righe"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Quick Super Jump",
          "brand":"Splash Mob",
@@ -3083,7 +3099,7 @@
          "name_de":"Streifenhemd",
          "name_it":"Camicia a righe"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Ink Saver (Main)",
          "brand":"Forge",
@@ -3095,7 +3111,7 @@
          "name_de":"Studio-Kopfhörer",
          "name_it":"Cuffie pro"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Bomb Range Up",
          "brand":"Tentatek",
@@ -3108,20 +3124,20 @@
          "name_de":"Sonnen-Schirmband",
          "name_it":"Visiera parasole"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Charge Up",
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"300",
          "name_en":"Sunny-Day Tee",
-         "name_eu":"Sunny Day Tee",
+         "name_en_GB":"Sunny Day Tee",
          "name_fr-FR":"T-shirt belle journée",
          "name_es-ES":"Camiseta sol",
          "name_de":"Sonnenoranges Shirt",
          "name_it":"T-shirt solearancio"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Defence Up",
          "brand":"Takoroka",
@@ -3135,7 +3151,7 @@
          "name_de":"Kalamati-Netzkappe",
          "name_it":"Berretto Sepia"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Bomb Range Up",
          "brand":"Rockenberg",
@@ -3149,7 +3165,7 @@
          "name_de":"Arbeitsstiefel",
          "name_it":"Scarponi marroni"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Comeback",
          "brand":"Tentatek",
@@ -3162,7 +3178,7 @@
          "name_de":"Tennisstirnband",
          "name_it":"Fascia da tennis"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Run Speed Up",
          "brand":"Forge",
@@ -3175,21 +3191,21 @@
          "name_de":"Tentacles-Helm",
          "name_it":"Casco tentacoli"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Last-Ditch Effort",
          "brand":"Zekko",
          "rarity":"1",
          "cost":"350",
          "name_en":"Tinted Shades",
-         "name_eu":"Coloured Shades",
+         "name_en_GB":"Coloured Shades",
          "name_fr-FR":"Lunettes colorées",
          "name_fr-CA":"Lunettes teintées",
          "name_es-ES":"Gafas tintadas",
          "name_de":"Getönte Brille",
          "name_it":"Occhiali colorati"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Quick Respawn",
          "brand":"Famitsu",
@@ -3201,7 +3217,7 @@
          "name_de":"Traditionelle Schürze",
          "name_it":"Grembiule folcloristico"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Comeback",
          "brand":"Famitsu",
@@ -3213,7 +3229,7 @@
          "name_de":"Traditionelles Stirnband",
          "name_it":"Fascia folcloristica"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Run Speed Up",
          "brand":"Famitsu",
@@ -3227,7 +3243,7 @@
          "name_de":"Traditionelle Sandalen",
          "name_it":"Zoccoli folcloristici"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Ink Recovery Up",
          "brand":"Inkline",
@@ -3241,7 +3257,7 @@
          "name_de":"Wanderstiefel",
          "name_it":"Scarpe da trekking"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Ink Recovery Up",
          "brand":"Forge",
@@ -3254,21 +3270,21 @@
          "name_de":"Expeditionshelm",
          "name_it":"Cappello avventuriero"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Quick Respawn",
          "brand":"Takoroka",
          "rarity":"1",
          "cost":"700",
          "name_en":"Tricolor Rugby",
-         "name_eu":"Tricolour Rugby",
+         "name_en_GB":"Tricolour Rugby",
          "name_fr-FR":"Haut rayé tricolore",
          "name_fr-CA":"Gilet rayé tricolore",
          "name_es-ES":"Rugby tricolor",
          "name_de":"Trikolor-Lang-Polohemd",
          "name_it":"Maglia rugby tricolore"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Special Charge Up",
          "brand":"Rockenberg",
@@ -3280,21 +3296,21 @@
          "name_de":"Türkise Plateau-Sneaker",
          "name_it":"Rialzate turchesi"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Special Saver",
          "brand":"Krak-On",
          "rarity":"1",
          "cost":"700",
          "name_en":"Two-Stripe Mesh",
-         "name_eu":"2-Stripe Mesh Cap",
+         "name_en_GB":"2-Stripe Mesh Cap",
          "name_fr-FR":"Casquette à 2 bandes",
          "name_es-ES":"Gorra con líneas",
          "name_es-XL":"Gorra de dos bandas",
          "name_de":"Zweistreifen-Netzkappe",
          "name_it":"Berretto a righe"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Bomb Range Up",
          "brand":"Skalop",
@@ -3308,7 +3324,7 @@
          "name_de":"Urchins-Kappe",
          "name_it":"Berretto AS Riccidimare"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Run Speed Up",
          "brand":"Zink",
@@ -3322,7 +3338,7 @@
          "name_de":"Urchins-Baseball-Trikot",
          "name_it":"Divisa AS Riccidimare"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Recon",
          "brand":"Splash Mob",
@@ -3336,7 +3352,7 @@
          "name_de":"Grau-blaues Baseball-Shirt",
          "name_it":"Maglia college"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Damage Up",
          "brand":"Zekko",
@@ -3350,20 +3366,20 @@
          "name_de":"Rot-weiße Collegejacke",
          "name_it":"Giubbino da stadio"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Haunt",
          "brand":"Rockenberg",
          "rarity":"3",
          "cost":"9,000",
          "name_en":"Vintage Check Shirt",
-         "name_eu":"Vintage Check",
+         "name_en_GB":"Vintage Check",
          "name_fr-FR":"Chemise à carreaux rétro",
          "name_es-ES":"Camisa cuadros retro",
          "name_de":"Retro-Karohemd",
          "name_it":"Camicia vintage"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Last-Ditch Effort",
          "brand":"Skalop",
@@ -3377,7 +3393,7 @@
          "name_de":"Schirmhelm",
          "name_it":"Casco con visiera"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Recon",
          "brand":"Firefin",
@@ -3390,7 +3406,7 @@
          "name_de":"Weißes Rilax-Pixel-Shirt",
          "name_it":"T-shirt 8 bit bianca"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ninja Squid",
          "brand":"SquidForce",
@@ -3402,7 +3418,7 @@
          "name_de":"Weißes Anker-Shirt",
          "name_it":"T-shirt ancora bianca"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Special Duration Up",
          "brand":"Zekko",
@@ -3415,7 +3431,7 @@
          "name_de":"Weiße Sportbandbrille",
          "name_it":"Occhiali bianchi"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Special Duration Up",
          "brand":"Takoroka",
@@ -3428,7 +3444,7 @@
          "name_de":"Weiße Pfeilschuhe",
          "name_it":"Arrow bianche"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Quick Super Jump",
          "brand":"Rockenberg",
@@ -3442,7 +3458,7 @@
          "name_de":"Weißes Baseball-Shirt",
          "name_it":"Maglia sport bianca"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Ink Recovery Up",
          "brand":"SquidForce",
@@ -3454,7 +3470,7 @@
          "name_de":"Weißes Stirnband",
          "name_it":"Fascia bianca"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Duration Up",
          "brand":"Rockenberg",
@@ -3468,7 +3484,7 @@
          "name_de":"Weiße Bikerjacke",
          "name_it":"Chiodo bianco"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Swim Speed Up",
          "brand":"Rockenberg",
@@ -3480,7 +3496,7 @@
          "name_de":"Weiße Plateau-Sneaker",
          "name_it":"Rialzate bianche"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ink Recovery Up",
          "brand":"SquidForce",
@@ -3494,7 +3510,7 @@
          "name_de":"Weißes Longsleeve",
          "name_it":"Maglia bianca"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Saver",
          "brand":"SquidForce",
@@ -3508,7 +3524,7 @@
          "name_de":"Weißes Lagen-Shirt",
          "name_it":"A strati bianca"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Swim Speed Up",
          "brand":"KOG",
@@ -3522,7 +3538,7 @@
          "name_de":"Weißes Linien-Shirt",
          "name_it":"T-shirt bianca linea"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ink Saver (Main)",
          "brand":"Forge",
@@ -3535,7 +3551,7 @@
          "name_de":"Weißes Matrosen-Shirt",
          "name_it":"Felpa marinara bianca"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Ink Recovery Up",
          "brand":"Zink",
@@ -3548,7 +3564,7 @@
          "name_de":"Weiße Low-Top-Sneaker",
          "name_it":"Runner bianche"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ink Recovery Up",
          "brand":"Splash Mob",
@@ -3560,7 +3576,7 @@
          "name_de":"Weißes Kurzarmhemd",
          "name_it":"Camicia bianca"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Quick Respawn",
          "brand":"Splash Mob",
@@ -3574,7 +3590,7 @@
          "name_de":"Weißes Streifen-Longsleeve",
          "name_it":"Maglia a righe"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ink Saver (Sub)",
          "brand":"SquidForce",
@@ -3586,7 +3602,7 @@
          "name_de":"Weißes Shirt",
          "name_it":"T-shirt bianca"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Quick Super Jump",
          "brand":"SquidForce",
@@ -3600,7 +3616,7 @@
          "name_de":"Gelbes Lagen-Shirt",
          "name_it":"A strati gialla"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Bomb Sniffer",
          "brand":"Zink",
@@ -3613,14 +3629,14 @@
          "name_de":"Gelbe Low-Top-Sneaker",
          "name_it":"Runner verdeoro"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Haunt",
          "brand":"Firefin",
          "rarity":"2",
          "cost":"3,000",
          "name_en":"Yellow Urban Vest",
-         "name_eu":"Yellow Urban Gilet",
+         "name_en_GB":"Yellow Urban Gilet",
          "name_fr-FR":"Gilet urbain jaune",
          "name_fr-CA":"Veste urbaine jaune",
          "name_es-ES":"Anorak urbano día",
@@ -3628,7 +3644,7 @@
          "name_de":"Gelbe Steppweste",
          "name_it":"Gilè urbano giallo"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Charge Up",
          "brand":"Zekko",
@@ -3642,7 +3658,7 @@
          "name_de":"Elektrowels-Baseballjacke",
          "name_it":"Giubbino pesciscossa"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Defence Up",
          "brand":"Zekko",
@@ -3656,7 +3672,7 @@
          "name_de":"Zekko-Baseball-Shirt",
          "name_it":"Maglia Ezko"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Ninja Squid",
          "brand":"Zekko",
@@ -3670,7 +3686,7 @@
          "name_de":"Zekko-Hoodie",
          "name_it":"Felpa Ezko"
       },
-      {  
+      {
          "category":"Headgear",
          "ability":"Quick Super Jump",
          "brand":"Zekko",
@@ -3683,7 +3699,7 @@
          "name_de":"Zekko-Netzkappe",
          "name_it":"Berretto Ezko"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Special Duration Up",
          "brand":"Zink",
@@ -3697,7 +3713,7 @@
          "name_de":"Sagitron-Longsleeve",
          "name_it":"Maglia nera logo"
       },
-      {  
+      {
          "category":"Clothing",
          "ability":"Damage Up",
          "brand":"Zink",
@@ -3711,7 +3727,7 @@
          "name_de":"Sagitron-Lagen-Shirt",
          "name_it":"A strati Totanic"
       },
-      {  
+      {
          "category":"Shoes",
          "ability":"Special Charge Up",
          "brand":"Zink",
@@ -3726,8 +3742,8 @@
          "name_it":"Alte Zombie"
       }
    ],
-   "weapons":[  
-      {  
+   "weapons":[
+      {
          "name":".52 Gal",
          "level":"5",
          "fire":"30",
@@ -3737,7 +3753,7 @@
          "special":"Killer Wail",
          "sub":"Splash Wall"
       },
-      {  
+      {
          "name":".52 Gal Deco",
          "level":"11",
          "fire":"30",
@@ -3747,7 +3763,7 @@
          "special":"Inkstrike",
          "sub":"Seeker"
       },
-      {  
+      {
          "name":".96 Gal",
          "level":"12",
          "fire":"15",
@@ -3757,7 +3773,7 @@
          "special":"Echolocator",
          "sub":"Sprinkler"
       },
-      {  
+      {
          "name":".96 Gal Deco",
          "level":"14",
          "fire":"15",
@@ -3767,7 +3783,7 @@
          "special":"Kraken",
          "sub":"Splash Wall"
       },
-      {  
+      {
          "name":"Aerospray MG",
          "level":"7",
          "fire":"100",
@@ -3777,7 +3793,7 @@
          "special":"Inkzooka",
          "sub":"Seeker"
       },
-      {  
+      {
          "sub":"Ink Mine",
          "level":"13",
          "fire":"100",
@@ -3786,7 +3802,7 @@
          "special":"Inkstrike",
          "name":"Aerospray RG"
       },
-      {  
+      {
          "name":"Bamboozler 14 Mk I",
          "level":"15",
          "fullcharge":"80",
@@ -3796,7 +3812,7 @@
          "special":"Killer Wail",
          "sub":"Splash Wall"
       },
-      {  
+      {
          "name":"Bamboozler 14 Mk II",
          "level":"17",
          "fullcharge":"80",
@@ -3806,7 +3822,7 @@
          "special":"Echolocator",
          "sub":"Disruptor"
       },
-      {  
+      {
          "sub":"Disruptor",
          "level":"9",
          "fire":"20",
@@ -3815,7 +3831,7 @@
          "special":"Killer Wail",
          "name":"Blaster"
       },
-      {  
+      {
          "sub":"Burst Bomb",
          "level":"10",
          "range":"20",
@@ -3823,7 +3839,7 @@
          "special":"Inkzooka",
          "name":"Carbon Roller"
       },
-      {  
+      {
          "sub":"Seeker",
          "level":"13",
          "range":"20",
@@ -3831,7 +3847,7 @@
          "special":"Bomb Rush",
          "name":"Carbon Roller Deco"
       },
-      {  
+      {
          "name":"Classic Squiffer",
          "level":"6",
          "fullcharge":"140",
@@ -3841,7 +3857,7 @@
          "special":"Bubbler",
          "sub":"Point Sensor"
       },
-      {  
+      {
          "sub":"Point Sensor",
          "level":"17",
          "fire":"20",
@@ -3850,7 +3866,7 @@
          "special":"Bubbler",
          "name":"Custom Blaster"
       },
-      {  
+      {
          "name":"Custom Dual Squelcher",
          "level":"18",
          "fire":"55",
@@ -3860,7 +3876,7 @@
          "special":"Killer Wail",
          "sub":"Squid Beakon"
       },
-      {  
+      {
          "name":"Custom E-liter 3K",
          "level":"19",
          "fullcharge":"180",
@@ -3870,7 +3886,7 @@
          "special":"Kraken",
          "sub":"Squid Beakon"
       },
-      {  
+      {
          "name":"Custom E-liter 3K Scope",
          "level":"20",
          "fullcharge":"180",
@@ -3880,7 +3896,7 @@
          "special":"Kraken",
          "sub":"Squid Beakon"
       },
-      {  
+      {
          "sub":"Sprinkler",
          "level":"20",
          "baseDmg":"28",
@@ -3889,7 +3905,7 @@
          "special":"Bubbler",
          "name":"Custom Hydra Splatling"
       },
-      {  
+      {
          "sub":"Burst Bomb",
          "level":"15",
          "fire":"40",
@@ -3899,7 +3915,7 @@
          "special":"Kraken",
          "name":"Custom Jet Squelcher"
       },
-      {  
+      {
          "sub":"Splat Bomb",
          "level":"17",
          "fire":"10",
@@ -3908,7 +3924,7 @@
          "special":"Kraken",
          "name":"Custom Range Blaster"
       },
-      {  
+      {
          "name":"Custom Splattershot Jr.",
          "level":"2",
          "fire":"75",
@@ -3919,7 +3935,7 @@
          "special":"Echolocator",
          "sub":"Disruptor"
       },
-      {  
+      {
          "sub":"Splat Bomb",
          "level":"16",
          "fire":"55",
@@ -3929,7 +3945,7 @@
          "special":"Echolocator",
          "name":"Dual Squelcher"
       },
-      {  
+      {
          "sub":"Sprinkler",
          "level":"15",
          "range":"72",
@@ -3937,7 +3953,7 @@
          "special":"Echolocator",
          "name":"Dynamo Roller"
       },
-      {  
+      {
          "name":"E-liter 3K",
          "level":"18",
          "fullcharge":"180",
@@ -3947,7 +3963,7 @@
          "special":"Echolocator",
          "sub":"Burst Bomb"
       },
-      {  
+      {
          "name":"E-liter 3K Scope",
          "level":"19",
          "fullcharge":"180",
@@ -3957,7 +3973,7 @@
          "special":"Echolocator",
          "sub":"Burst Bomb"
       },
-      {  
+      {
          "name":"Forge Splattershot Pro",
          "level":"20",
          "fire":"40",
@@ -3967,7 +3983,7 @@
          "special":"Inkzooka",
          "sub":"Point Sensor"
       },
-      {  
+      {
          "sub":"Splat Bomb",
          "level":"20",
          "range":"72",
@@ -3975,7 +3991,7 @@
          "special":"Inkstrike",
          "name":"Gold Dynamo Roller"
       },
-      {  
+      {
          "name":"H-3 Nozzlenose",
          "level":"10",
          "fire":"30",
@@ -3986,7 +4002,7 @@
          "special":"Echolocator",
          "sub":"Suction Bomb"
       },
-      {  
+      {
          "name":"H-3 Nozzlenose D",
          "level":"14",
          "fire":"30",
@@ -3997,7 +4013,7 @@
          "special":"Inkzooka",
          "sub":"Point Sensor"
       },
-      {  
+      {
          "sub":"Splash Wall",
          "level":"6",
          "baseDmg":"28",
@@ -4006,7 +4022,7 @@
          "special":"Inkstrike",
          "name":"Heavy Splatling"
       },
-      {  
+      {
          "sub":"Point Sensor",
          "level":"9",
          "baseDmg":"28",
@@ -4015,7 +4031,7 @@
          "special":"Kraken",
          "name":"Heavy Splatling Deco"
       },
-      {  
+      {
          "sub":"Splat Bomb",
          "level":"3",
          "range":"85",
@@ -4023,7 +4039,7 @@
          "special":"Bomb Rush",
          "name":"Hero Charger Replica"
       },
-      {  
+      {
          "sub":"Suction Bomb",
          "level":"3",
          "range":"55",
@@ -4031,7 +4047,7 @@
          "special":"Killer Wail",
          "name":"Hero Roller Replica"
       },
-      {  
+      {
          "name":"Hero Shot Replica",
          "level":"3",
          "fire":"55",
@@ -4041,7 +4057,7 @@
          "special":"Bomb Rush",
          "sub":"Burst Bomb"
       },
-      {  
+      {
          "sub":"Splat Bomb",
          "level":"11",
          "baseDmg":"28",
@@ -4050,7 +4066,16 @@
          "special":"Echolocator",
          "name":"Hydra Splatling"
       },
-      {  
+      {
+         "sub":"Splash Wall",
+         "level":"20",
+         "baseDmg":"140",
+         "range":"55",
+         "cost":"5000",
+         "special":"Inkzooka",
+         "name":"CoroCoro Splat Roller"
+      },
+      {
          "sub":"Sprinkler",
          "level":"8",
          "range":"10",
@@ -4058,7 +4083,7 @@
          "special":"Inkstrike",
          "name":"Inkbrush"
       },
-      {  
+      {
          "sub":"Ink Mine",
          "level":"11",
          "range":"10",
@@ -4066,7 +4091,7 @@
          "special":"Bubbler",
          "name":"Inkbrush Nouveau"
       },
-      {  
+      {
          "sub":"Splash Wall",
          "level":"8",
          "fire":"40",
@@ -4076,7 +4101,7 @@
          "special":"Inkstrike",
          "name":"Jet Squelcher"
       },
-      {  
+      {
          "name":"Kelp Splat Charger",
          "level":"4",
          "fullcharge":"160",
@@ -4086,7 +4111,7 @@
          "special":"Killer Wail",
          "sub":"Sprinkler"
       },
-      {  
+      {
          "name":"Kelp Splatterscope",
          "level":"17",
          "fullcharge":"160",
@@ -4096,7 +4121,7 @@
          "special":"Killer Wail",
          "sub":"Sprinkler"
       },
-      {  
+      {
          "sub":"Squid Beakon",
          "level":"7",
          "range":"55",
@@ -4104,7 +4129,7 @@
          "special":"Kraken",
          "name":"Krak-On Splat Roller"
       },
-      {  
+      {
          "name":"L-3 Nozzlenose",
          "level":"9",
          "fire":"65",
@@ -4115,7 +4140,7 @@
          "special":"Killer Wail",
          "sub":"Disruptor"
       },
-      {  
+      {
          "name":"L-3 Nozzlenose D",
          "level":"13",
          "fire":"65",
@@ -4126,7 +4151,7 @@
          "special":"Kraken",
          "sub":"Burst Bomb"
       },
-      {  
+      {
          "sub":"Ink Mine",
          "level":"11",
          "fire":"30",
@@ -4135,7 +4160,7 @@
          "special":"Inkzooka",
          "name":"Luna Blaster"
       },
-      {  
+      {
          "sub":"Splat Bomb",
          "level":"15",
          "fire":"30",
@@ -4144,7 +4169,7 @@
          "special":"Bomb Rush",
          "name":"Luna Blaster Neo"
       },
-      {  
+      {
          "sub":"Suction Bomb",
          "level":"8",
          "baseDmg":"28",
@@ -4153,7 +4178,7 @@
          "special":"Inkzooka",
          "name":"Mini Splatling"
       },
-      {  
+      {
          "name":"N-ZAP '85",
          "level":"5",
          "fire":"75",
@@ -4163,7 +4188,7 @@
          "special":"Echolocator",
          "sub":"Splat Bomb"
       },
-      {  
+      {
          "name":"N-ZAP '89",
          "level":"8",
          "fire":"75",
@@ -4174,7 +4199,7 @@
          "special":"Inkstrike",
          "sub":"Sprinkler"
       },
-      {  
+      {
          "name":"Neo Splash-o-matic",
          "level":"9",
          "fire":"75",
@@ -4185,7 +4210,7 @@
          "special":"Inkzooka",
          "sub":"Burst Bomb"
       },
-      {  
+      {
          "name":"Neo Sploosh-o-matic",
          "level":"18",
          "fire":"75",
@@ -4196,7 +4221,7 @@
          "special":"Kraken",
          "sub":"Point Sensor"
       },
-      {  
+      {
          "name":"New Squiffer",
          "level":"11",
          "fullcharge":"140",
@@ -4206,7 +4231,7 @@
          "special":"Inkzooka",
          "sub":"Ink Mine"
       },
-      {  
+      {
          "sub":"Squid Beakon",
          "level":"12",
          "range":"25",
@@ -4214,7 +4239,7 @@
          "special":"Kraken",
          "name":"Octobrush"
       },
-      {  
+      {
          "sub":"Splat Bomb",
          "level":"16",
          "range":"25",
@@ -4222,7 +4247,7 @@
          "special":"Inkzooka",
          "name":"Octobrush Nouveau"
       },
-      {  
+      {
          "name":"Octoshot Replica",
          "level":"40",
          "fire":"55",
@@ -4232,7 +4257,7 @@
          "special":"Inkzooka",
          "sub":"Suction Bomb"
       },
-      {  
+      {
          "sub":"Splash Wall",
          "level":"14",
          "fire":"10",
@@ -4241,7 +4266,7 @@
          "special":"Inkstrike",
          "name":"Range Blaster"
       },
-      {  
+      {
          "sub":"Ink Mine",
          "level":"14",
          "fire":"40",
@@ -4250,7 +4275,7 @@
          "special":"Bubbler",
          "name":"Rapid Blaster"
       },
-      {  
+      {
          "sub":"Suction Bomb",
          "level":"19",
          "fire":"40",
@@ -4259,7 +4284,7 @@
          "special":"Bomb Rush",
          "name":"Rapid Blaster Deco"
       },
-      {  
+      {
          "sub":"Seeker",
          "level":"16",
          "fire":"30",
@@ -4268,7 +4293,7 @@
          "special":"Inkzooka",
          "name":"Rapid Blaster Pro"
       },
-      {  
+      {
          "sub":"Disruptor",
          "level":"20",
          "fire":"30",
@@ -4277,7 +4302,7 @@
          "special":"Killer Wail",
          "name":"Rapid Blaster Pro Deco"
       },
-      {  
+      {
          "name":"Slosher",
          "level":"5",
          "baseDmg":"70",
@@ -4287,7 +4312,7 @@
          "special":"Inkstrike",
          "sub":"Burst Bomb"
       },
-      {  
+      {
          "name":"Slosher Deco",
          "level":"10",
          "baseDmg":"70",
@@ -4297,7 +4322,7 @@
          "special":"Kraken",
          "sub":"Splash Wall"
       },
-      {  
+      {
          "sub":"Splat Bomb",
          "level":"12",
          "attack":"95",
@@ -4306,7 +4331,7 @@
          "special":"Bomb Rush",
          "name":"Sloshing Machine"
       },
-      {  
+      {
          "sub":"Point Sensor",
          "level":"18",
          "attack":"95",
@@ -4315,7 +4340,7 @@
          "special":"Inkzooka",
          "name":"Sloshing Machine Neo"
       },
-      {  
+      {
          "name":"Splash-o-matic",
          "level":"7",
          "fire":"75",
@@ -4326,7 +4351,7 @@
          "special":"Bomb Rush",
          "sub":"Suction Bomb"
       },
-      {  
+      {
          "name":"Splat Charger",
          "level":"3",
          "fullcharge":"160",
@@ -4336,7 +4361,7 @@
          "special":"Bomb Rush",
          "sub":"Splat Bomb"
       },
-      {  
+      {
          "sub":"Suction Bomb",
          "level":"3",
          "range":"55",
@@ -4344,7 +4369,7 @@
          "special":"Killer Wail",
          "name":"Splat Roller"
       },
-      {  
+      {
          "name":"Splatterscope",
          "level":"13",
          "fullcharge":"160",
@@ -4354,7 +4379,7 @@
          "special":"Bomb Rush",
          "sub":"Splat Bomb"
       },
-      {  
+      {
          "name":"Splattershot",
          "level":"2",
          "fire":"55",
@@ -4364,7 +4389,7 @@
          "special":"Bomb Rush",
          "sub":"Burst Bomb"
       },
-      {  
+      {
          "name":"Splattershot Jr.",
          "level":"1",
          "fire":"75",
@@ -4375,7 +4400,7 @@
          "special":"Bubbler",
          "sub":"Splat Bomb"
       },
-      {  
+      {
          "name":"Splattershot Pro",
          "level":"10",
          "fire":"40",
@@ -4385,7 +4410,7 @@
          "special":"Inkstrike",
          "sub":"Splat Bomb"
       },
-      {  
+      {
          "name":"Sploosh-o-matic",
          "level":"12",
          "fire":"75",
@@ -4396,7 +4421,7 @@
          "special":"Killer Wail",
          "sub":"Squid Beakon"
       },
-      {  
+      {
          "name":"Tentatek Splattershot",
          "level":"4",
          "fire":"55",
@@ -4406,7 +4431,7 @@
          "special":"Inkzooka",
          "sub":"Suction Bomb"
       },
-      {  
+      {
          "name":"Tri-Slosher",
          "level":"9",
          "baseDmg":"62",
@@ -4416,7 +4441,7 @@
          "special":"Bubbler",
          "sub":"Disruptor"
       },
-      {  
+      {
          "name":"Tri-Slosher Nouveau",
          "level":"15",
          "baseDmg":"62",
@@ -4426,7 +4451,7 @@
          "special":"Echolocator",
          "sub":"Seeker"
       },
-      {  
+      {
          "sub":"Disruptor",
          "level":"13",
          "baseDmg":"28",
@@ -4435,7 +4460,7 @@
          "special":"Bubbler",
          "name":"Zink Mini Splatling"
       },
-      {  
+      {
          "name":"Wasabi Splattershot",
          "level":"20",
          "baseDmg":"35",
@@ -4446,7 +4471,7 @@
          "special":"Inkstrike",
          "sub":"Splat Bomb"
       },
-      {  
+      {
          "name":"Berry Splattershot Pro",
          "level":"20",
          "baseDmg":"42",
@@ -4456,7 +4481,7 @@
          "special":"Bomb Rush",
          "sub":"Suction Bomb"
       },
-      {  
+      {
          "name":"Tempered Dynamo Roller",
          "level":"20",
          "baseDmg":"160",
@@ -4465,7 +4490,7 @@
          "special":"Killer Wail",
          "sub":"Seeker"
       },
-      {  
+      {
          "name":"Permanent Inkbrush",
          "level":"20",
          "baseDmg":"62",
@@ -4475,7 +4500,7 @@
          "special":"Kraken",
          "sub":"Splat Bomb"
       },
-      {  
+      {
          "name":"Soda Slosher",
          "level":"20",
          "baseDmg":"70",
@@ -4485,7 +4510,7 @@
          "special":"Inkzooka",
          "sub":"Splat Bomb"
       },
-      {  
+      {
          "name":"Fresh Squiffer",
          "level":"20",
          "baseDmg":"40",
@@ -4495,7 +4520,7 @@
          "special":"Kraken",
          "sub":"Suction Bomb"
       },
-      {  
+      {
          "name":"Bamboozler 14 Mk III",
          "level":"20",
          "baseDmg":"30",
@@ -4505,7 +4530,7 @@
          "special":"Inkstrike",
          "sub":"Burst Bomb"
       },
-      {  
+      {
          "name":"Refurbished Mini Splatling",
          "level":"20",
          "baseDmg":"28",
@@ -4514,7 +4539,7 @@
          "special":"Bomb Rush",
          "sub":"Burst Bomb"
       },
-      {  
+      {
          "sub":"Splat Bomb",
          "level":"20",
          "baseDmg":"38",
@@ -4523,7 +4548,7 @@
          "special":"Inkzooka",
          "name":"Sploosh-o-matic 7"
       },
-      {  
+      {
          "sub":"Burst Bomb",
          "level":"20",
          "baseDmg":"20",
@@ -4532,7 +4557,7 @@
          "special":"Kraken",
          "name":"Aerospray PG"
       },
-      {  
+      {
          "sub":"Point Sensor",
          "level":"20",
          "baseDmg":"28",
@@ -4541,7 +4566,7 @@
          "special":"Kraken",
          "name":"N-ZAP '83"
       },
-      {  
+      {
          "sub":"Burst Bomb",
          "level":"20",
          "baseDmg":"50",
@@ -4550,7 +4575,7 @@
          "special":"Killer Wail",
          "name":"Grim Range Blaster"
       },
-      {  
+      {
          "sub":"Splash Wall",
          "level":"20",
          "baseDmg":"41",
@@ -4559,7 +4584,7 @@
          "special":"Bubbler",
          "name":"Cherry H-3 Nozzlenose"
       },
-      {  
+      {
          "sub":"Splash Wall",
          "level":"20",
          "baseDmg":"140",
@@ -4568,7 +4593,7 @@
          "special":"Inkzooka",
          "name":"Cherry H-3 Nozzlenose"
       },
-      {  
+      {
          "sub":"Splash Wall",
          "level":"20",
          "baseDmg":"40",
@@ -4577,7 +4602,7 @@
          "special":"Echolocator",
          "name":"Bento Splat Charger"
       },
-      {  
+      {
          "sub":"Splash Wall",
          "level":"20",
          "baseDmg":"40",
@@ -4586,7 +4611,7 @@
          "special":"Echolocator",
          "name":"Bento Splatterscope"
       },
-      {  
+      {
          "sub":"Sprinkler",
          "level":"20",
          "baseDmg":"28",

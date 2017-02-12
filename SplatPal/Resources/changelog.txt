@@ -1,3 +1,11 @@
+Version 1.1.1 (1672)
+- Fixed CoroCoro Cap being listed under clothing
+- Fixed crash when viewing gear in Spanish or French
+- Added UK english to localization
+
+Version 1.1.0 (1661)
+- CoroCoro gear, finally re-releasing to the App Store 
+
 Version 1.1.0 (1652)
 - Sheldon v2
 

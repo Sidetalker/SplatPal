@@ -363,6 +363,9 @@ class LocaleTableViewController: UITableViewController {
             let jsonResult = JSON(data: jsonData)
             let localeMod = availableLanguages[indexPath.row]
             
+            NSUserDefaults.standardUserDefaults().setObject(localeMod, forKey: "localeMod")
+            NSUserDefaults.standardUserDefaults().synchronize()
+            
             brandData = jsonResult["brands"].arrayValue
             gearData = jsonResult["gear"].arrayValue.map { Gear(data: $0, locale: localeMod) }
             gearData.sortInPlace { $0.localizedName < $1.localizedName }

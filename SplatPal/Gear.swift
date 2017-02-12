@@ -69,6 +69,11 @@ class Gear {
                 self.locale = "en"
             }
         }
+        
+        if localizedName.characters.count == 0 {
+            self.localizedName = name
+            self.locale = "en"
+        }
     }
     
     func getImage() -> UIImage? {

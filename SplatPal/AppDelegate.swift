@@ -15,7 +15,7 @@ import SwiftyJSON
 import Alamofire
 import Armchair
 
-let availableLanguages = ["en", "fr-FR", "fr-CA", "fr", "es-ES", "es-XL", "es", "de", "it", "eu"]
+let availableLanguages = ["en", "en-GB", "fr-FR", "fr-CA", "fr", "es-ES", "es-XL", "es", "de", "it"]
 let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 let log = XCGLogger.defaultInstance()
@@ -86,13 +86,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             jsonData = NSData(contentsOfFile: dataPath)
         {
             let jsonResult = JSON(data: jsonData)
-            let localeMod = NSLocale.preferredLanguages().filter {
-                let index = $0.startIndex.advancedBy(2, limit: $0.endIndex)
-                return availableLanguages.contains($0) || availableLanguages.contains($0.substringToIndex(index))
-            }.first ?? "en"
+            
+            var localeMod = NSUserDefaults.standardUserDefaults().stringForKey("localeMod")
+            
+            if localeMod == nil {
+                localeMod = NSLocale.preferredLanguages().filter {
+                    let index = $0.startIndex.advancedBy(2, limit: $0.endIndex)
+                    return availableLanguages.contains($0) || availableLanguages.contains($0.substringToIndex(index))
+                }.first
+            }
+            
+            if localeMod == nil {
+                localeMod = "en"
+            }
             
             brandData = jsonResult["brands"].arrayValue
-            gearData = jsonResult["gear"].arrayValue.map { Gear(data: $0, locale: localeMod) }
+            gearData = jsonResult["gear"].arrayValue.map { Gear(data: $0, locale: localeMod!) }
             gearData.sortInPlace { $0.localizedName < $1.localizedName }
             weaponData = jsonResult["weapons"].arrayValue
             weaponData.sortInPlace { $0["name"].stringValue < $1["name"].stringValue }
