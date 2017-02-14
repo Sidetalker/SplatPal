@@ -1,4 +1,7 @@
-Version 1.1.1 (1672)
+Version 1.1.2 (1684)
+- I don’t wanna talk about it
+
+Version 1.1.1 (1676)
 - Fixed CoroCoro Cap being listed under clothing
 - Fixed crash when viewing gear in Spanish or French
 - Added UK english to localization

@@ -60,13 +60,10 @@ class Gear {
             switch localeBase {
             case "fr":
                 self.localizedName = data["name_fr-FR"].stringValue
-                self.locale = "fr"
             case "es":
                 self.localizedName = data["name_es-ES"].stringValue
-                self.locale = "es"
             default:
                 self.localizedName = name
-                self.locale = "en"
             }
         }
         

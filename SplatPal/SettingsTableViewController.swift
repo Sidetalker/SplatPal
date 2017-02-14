@@ -290,7 +290,7 @@ class NNIDSettingsTableViewController: UITableViewController, UITextFieldDelegat
     }
 }
 
-// MARK: - SettingsTableViewController
+// MARK: - LocaleTableViewController
 
 class LocaleTableViewController: UITableViewController {
     let prefs = NSUserDefaults.standardUserDefaults()

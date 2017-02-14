@@ -2347,7 +2347,7 @@ Tap this message to hide it</string>
             </objects>
             <point key="canvasLocation" x="-268" y="-424"/>
         </scene>
-        <!--Beta-->
+        <!--Details-->
         <scene sceneID="GvG-cG-Ier">
             <objects>
                 <viewController id="xvr-yH-U4u" customClass="BetaViewController" customModule="SplatPal" customModuleProvider="target" sceneMemberID="viewController">
@@ -2401,7 +2401,7 @@ Tap this message to hide it</string>
                             <constraint firstItem="wej-0a-w1d" firstAttribute="top" secondItem="X8w-TH-miR" secondAttribute="bottom" constant="20" id="yO5-39-sGb"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Beta" image="betaIcon.png" id="vrq-Sp-pjh"/>
+                    <tabBarItem key="tabBarItem" title="Details" image="betaIcon.png" id="vrq-Sp-pjh"/>
                     <connections>
                         <outlet property="txtChangeLog" destination="DrU-dw-t2r" id="TAb-eB-jNL"/>
                     </connections>
